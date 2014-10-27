@@ -21,7 +21,7 @@ GetOptions('help|h'=>\$help, 'man|m' => \$man, 'phenotype|p' => \$is_phenotype,
    #Enter the input term                                    
    my $input_term = $ARGV[0];
    my $query_term = $input_term;
-      $query_term =~ s/'s\b//g;
+      $query_term =~ s/\bs\b//g;
       $query_term =~ s/\W+/ /g;  
    my $ont = $parser->next_ontology();
    my $is_a = Bio::Ontology::RelationshipType->get_instance("IS_A");
@@ -39,7 +39,7 @@ GetOptions('help|h'=>\$help, 'man|m' => \$man, 'phenotype|p' => \$is_phenotype,
    	   for my $each_name (@search_list)
    	   {
    	   	  my $each_name_change = $each_name;
-   	   	     $each_name_change =~ s/'s\b//g;
+   	   	     $each_name_change =~ s/\bs\b//g;
    	   	     $each_name_change =~ s/\W+/ /g; 
    	   	  if( $each_name_change =~ /\b$query_term\b/i )
    	   	  {

@@ -35,6 +35,7 @@ my $ORPHANET_SOURCE_MAX = 7.0;
 my $GENE_REVIEW_SCORE = 1.0;
 my $GWAS_SCORE_WEIGHT = 0.25;
 my %repeat_check=();
+my %repeat_no_score_check=();
 print OUT join("\t",qw/GENE	DISEASE	DISEASE_ID SCORE SOURCE/)."\n";
 
 my $i=0;
@@ -45,12 +46,13 @@ for my $line (<GENE_ID>)
 	if($i==0) { $i++;next;  }
 	chomp($line);
 	my ($id, $gene, $synonyms) = split("\t", $line);
+	$gene = uc $gene;
 	if($synonyms eq "-") {$synonyms = "";
 		$gene_hash{$gene} = $gene;
 	}
 	else {
 		$synonyms =~s/\|/,/g;
-		$gene_hash{$gene} = "$gene,$synonyms";
+		$gene_hash{$gene} = uc "$gene,$synonyms";
 	}
 }
 seek GENE_ID, 0,0;
@@ -60,6 +62,7 @@ for my $line (<GENE_ID>)
 	if($i==0) { $i++;next;  }
 	chomp($line);
 	my ($id, $gene, $synonyms) = split("\t", $line);
+	$gene = uc $gene;
 	if($synonyms eq "-") {
 		next;
 	}
@@ -68,7 +71,7 @@ for my $line (<GENE_ID>)
 		$synonyms = join(",", @synonyms); 
 		for my $each (@synonyms)
 		{
-				$gene_hash{$each} = "$gene,$synonyms" if(not defined $gene_hash{$each});
+				$gene_hash{$each} = uc "$gene,$synonyms" if(not defined $gene_hash{$each});
 		};
 	}
 }
@@ -80,7 +83,7 @@ for my $line (<OMIM>){   #GENE	DISEASE	MIM_NUMBER	SOURCE_CODE	LINGKAGE_INFO
 	chomp($line);
 	my @words=split("\t",$line);
 	$words[0]=~/^(\w+)/;
-	my $gene=$1;
+	my $gene=uc $1;
 	my $disease_id="OMIM:".$words[2];
 	my $disease = $words[1];
 	   $disease = getRidOfSusceptibility($disease);
@@ -98,6 +101,7 @@ for my $line (<CLINVAR>){                   #GENE	DISEASE	MIM_NUMBER	SOURCE_COUN
 	 if($i==0){$i++;next;}
 	 chomp($line);
 	 my @words=split("\t",$line);
+	    $words[0] = uc $words[0];
 	 my $disease = $words[1];
 	    $disease = getRidOfSusceptibility($disease);
 	    $disease = eliminateNonWords($disease);
@@ -120,6 +124,7 @@ for my $line(<ORPHANET>){   #GENE	DISEASE	ORPHANET_NUMBER	SOURCE_COUNT	LINKAGE_I
 	if($i==0){$i++;next;}
 	chomp($line);
 	my @words=split("\t",$line);
+	   $words[0] = uc $words[0];
 	my $disease = $words[1];
        $disease = getRidOfSusceptibility($disease);
        $disease = eliminateNonWords($disease);
@@ -137,6 +142,7 @@ for my $line(<GENEREVIEWS>){     #GENE	DISEASE	OMIM_NUMBER
 	chomp($line);
 	my @words=split("\t",$line);
 	next if ($words[0] =~ /not applicable/i);
+	$words[0] = uc $words[0];
 	my $disease_id="OMIM:".$words[2];
 	my $disease = $words[1];
        $disease = getRidOfSusceptibility($disease);
@@ -147,7 +153,9 @@ for my $line(<GENEREVIEWS>){     #GENE	DISEASE	OMIM_NUMBER
 	 $repeat_check{$repeat_line} = 1;
 	
 }
+
 $i=0;
+
 for my $line (<GWAS>){          #GENE DISEASE PUBMED_NUMBER RAW_SCORE          
 	if ($i==0) {$i++; next;}
 	chomp ($line);
@@ -159,18 +167,30 @@ for my $line (<GWAS>){          #GENE DISEASE PUBMED_NUMBER RAW_SCORE
 	        $words[0] eq "other genes"  or 
 	        $words[0] eq "NR"           or
 	        not $words[3]);
-    $words[0] =~ s/^(.*?)\s.+$/\1/;        
+    $words[0] =~ s/^(.*?)\s.+$/\1/;  
+    $words[0] = uc $words[0];      
 	my $disease_id = "PUBMED:".$words[2];
 	my $gene_score = $GWAS_SCORE_WEIGHT * $words[3];
 	#my $gene_score = $GWAS_SCORE_WEIGHT * calculateGwasScore($words[3]);
+	my $repeat_line = join ("\t", ($gene_hash{$words[0]},$disease, $disease_id, "GWAS"));
+    if($gene_hash{$words[0]} and $disease and $disease_id)
+    {
+    if(not $repeat_no_score_check{$repeat_line})
+    {
+    $repeat_no_score_check{$repeat_line} = $gene_score;
+    }
+    else
+    {
+    $repeat_no_score_check{$repeat_line} = $gene_score if($gene_score > $repeat_no_score_check{$repeat_line});
+    }
+    }
+ }
+for my $line (keys %repeat_no_score_check)
+{
+	my @words = split("\t",$line);
+	print TEMP join("\t", (@words[0..2], $repeat_no_score_check{$line}, "GWAS"))."\n";
 	
-	my $repeat_line = join ("\t", ($gene_hash{$words[0]}, $disease_id, $gene_score, "GWAS"));
-	my $output = join ("\t", ($gene_hash{$words[0]}, $disease, $disease_id, $gene_score, "GWAS"));
-	
-	print TEMP $output."\n" if ($gene_hash{$words[0]} and $gene_score and not $repeat_check{$repeat_line});
-	$repeat_check{$repeat_line} = 1;
 }
-
 
 
 #Finally sort items and choose unique ones
@@ -205,6 +225,7 @@ sub getRidOfSusceptibility{
 	@_==1 or die "input illegal!!";
 	$_[0] =~ s/^(.*?)\W*susc?eptibi?lity( to)?,?.*/$1/i;
 	$_[0] =~ s/autism \d+/autism/gi;
+	$_[0] =~ s/\berthematosus\b/erythematosus/gi;
 	return $_[0];
 }
 sub eliminateNonWords{
