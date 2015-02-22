@@ -1,4 +1,4 @@
-.libPaths(Sys.getenv("PWD"))
+.libPaths(paste(Sys.getenv("PWD"),'/external', sep=''))
 library("wordcloud");
 args = commandArgs(TRUE);
 disease_count = read.table(args[1]);

@@ -1,6 +1,2 @@
-*.tar.gz
-deletions.bed
-disease
 lib/humandb
-lib/compiled_database/*
-!lib/compiled_database/*.pl
+bin
