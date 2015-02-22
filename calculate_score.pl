@@ -21,7 +21,7 @@ my @words = split("\t", $head);
 for(my $i=0;$i<@words;$i++)
 {
       $index_hash{"gene"} = $i if($words[$i] eq "Gene.refgene");  
-      $index_hash{"RadialSVM"} = $i if($words[$i]=~/(^RadialSVM_score$)|(^ljb23_metasvm$)/i);
+      $index_hash{"RadialSVM"} = $i if($words[$i]=~/(^RadialSVM_score$)|(^ljb\d+_metasvm$)/i);
 }
 my $min_svm = "+inf";
 my $max_svm = "-inf";

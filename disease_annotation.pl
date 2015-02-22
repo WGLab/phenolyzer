@@ -10,8 +10,8 @@ my $out_directory = cwd();
 my $dirname = dirname(__FILE__);
 chdir $dirname;
 
-our $VERSION = 			 'v1.0.1';
-our $LAST_CHANGED_DATE = '$LastChangedDate: 2014-09-18 (18, September, 2014) $';
+our $VERSION = 			 'v1.0.5';
+our $LAST_CHANGED_DATE = '$LastChangedDate: 2015-02-21 (21, Feburary, 2015) $';
 our ($verbose, $help, $man,$buildver,$bedfile);
 our ($query_diseases,$if_file,$if_exact_match,$prediction,$is_phenotype,$if_wordcloud);
 our ($out, $database_directory, $if_logistic_regression);
@@ -1288,7 +1288,7 @@ Example:
           perl disease_annotation.pl sleep -p
           perl disease_annotation.pl disease -f -p -ph
           
-Version:  1.01      $Last Changed Date: 10-17-2014 by Hui Yang        
+Version:  1.0.5      $Last Changed Date: 02-21-2015 by Hui Yang        
 
 =head1 OPTIONS      
 
