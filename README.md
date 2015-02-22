@@ -4,7 +4,7 @@ Phenolyzer is a software that implements phenotype-based prioritization of candi
 ## Introduction
 Prior biological knowledge and phenotype information may help pinpoint disease contributory genes in whole genome/exome sequencing studies on human diseases. We developed a computational tool called Phenolyzer, which follows a biologist's natural thought processes through four steps: term interpretation, seed gene generation, seed gene growth and data integration. Compared to competing approaches, Phenolyzer has superior performance on finding known disease genes, and on prioritizing recently published novel disease genes.
 
-## Synopse
+## Synopsis
 
 - print help message
 ```
