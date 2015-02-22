@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Matrix Crossproduct</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for crossprod {slam}"><tr><td>crossprod {slam}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>
+Matrix Crossproduct
+</h2>
+
+<h3>Description</h3>
+
+<p>Compute the matrix cross-product of a sparse and a dense or sparse matrix.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+tcrossprod_simple_triplet_matrix(x, y = NULL)
+##
+crossprod_simple_triplet_matrix(x, y = NULL)
+matprod_simple_triplet_matrix(x, y)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x, y</code></td>
+<td>
+<p>a matrix in <code>simple_triplet_matrix</code>-form and/or a dense
+matrix, where one must be of the form indicated by the suffix.
+</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>Function <code>tcrossprod_simple_triplet_matrix</code> implements fast computation 
+of <code>x %*% t(x)</code> and <code>x %*% t(y)</code> (<code>tcrossprod</code>). The
+remaining functions are (optimized) wrappers.
+</p>
+
+
+<h3>Value</h3>
+
+<p>A double matrix, with appropriate <code>dimnames</code> taken from <code>x</code>
+and <code>y</code>.
+</p>
+
+
+<h3>Note</h3>
+
+<p>The computation is delegated to <code>tcrossprod</code> if <code>y</code> (or <code>x</code>
+if <code>y == NULL</code>) contains any of the special values <code>NA</code>,
+<code>NaN</code>, or <code>Inf</code>.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Christian Buchta
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code><a href="../../base/html/crossprod.html">crossprod</a></code> for dense-on-dense computations.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## 
+x &lt;- matrix(c(1, 0, 0, 2, 1, 0), nrow = 3)
+x
+s &lt;- as.simple_triplet_matrix(x)
+tcrossprod_simple_triplet_matrix(s, x)
+##
+tcrossprod_simple_triplet_matrix(s)
+##
+tcrossprod_simple_triplet_matrix(s[1L, ], s[2:3, ])
+</pre>
+
+<hr><div align="center">[Package <em>slam</em> version 0.1-32 <a href="00Index.html">Index</a>]</div>
+</body></html>

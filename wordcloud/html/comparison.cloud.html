@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Plot a comparison cloud</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for comparison.cloud {wordcloud}"><tr><td>comparison.cloud {wordcloud}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>
+Plot a comparison cloud
+</h2>
+
+<h3>Description</h3>
+
+<p>Plot a cloud comparing the frequencies of words across documents.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+comparison.cloud(term.matrix,scale=c(4,.5),max.words=300,
+	random.order=FALSE,rot.per=.1,
+	colors=brewer.pal(ncol(term.matrix),"Dark2"),
+	use.r.layout=FALSE,title.size=3,...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>term.matrix</code></td>
+<td>
+<p>A term frequency matrix whose rows represent words and whose columns represent documents.</p>
+</td></tr>
+<tr valign="top"><td><code>scale</code></td>
+<td>
+<p>A vector of length 2 indicating the range of the size of the words. </p>
+</td></tr>
+<tr valign="top"><td><code>max.words</code></td>
+<td>
+<p>Maximum number of words to be plotted. least frequent terms dropped</p>
+</td></tr>
+<tr valign="top"><td><code>random.order</code></td>
+<td>
+<p>plot words in random order. If false, they will be plotted in decreasing frequency</p>
+</td></tr>
+<tr valign="top"><td><code>rot.per</code></td>
+<td>
+<p>proportion words with 90 degree rotation</p>
+</td></tr>
+<tr valign="top"><td><code>colors</code></td>
+<td>
+<p>color words from least to most frequent</p>
+</td></tr>
+<tr valign="top"><td><code>use.r.layout</code></td>
+<td>
+<p>if false, then c++ code is used for collision detection, otherwise R is used</p>
+</td></tr>
+<tr valign="top"><td><code>title.size</code></td>
+<td>
+<p>Size of document titles</p>
+</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+<p>Additional parameters to be passed to text (and strheight,strwidth).</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>Let <i>p_{i,j}</i> be the rate at which word i occurs in document j, and <i>p_j</i> be the
+average across documents(<i>&sum;_ip_{i,j}/ndocs</i>). The size of each word is mapped to its maximum deviation
+( <i>max_i(p_{i,j}-p_j)</i> ), and its angular position is determined by the document where that maximum occurs.
+</p>
+
+
+<h3>Value</h3>
+
+<p>nothing
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+if(require(tm)){
+	data(SOTU)
+	corp &lt;- SOTU
+	corp &lt;- tm_map(corp, removePunctuation)
+	corp &lt;- tm_map(corp, content_transformer(tolower))
+	corp &lt;- tm_map(corp, removeNumbers)
+	corp &lt;- tm_map(corp, function(x)removeWords(x,stopwords()))
+
+	term.matrix &lt;- TermDocumentMatrix(corp)
+	term.matrix &lt;- as.matrix(term.matrix)
+	colnames(term.matrix) &lt;- c("SOTU 2010","SOTU 2011")
+	comparison.cloud(term.matrix,max.words=40,random.order=FALSE)
+	commonality.cloud(term.matrix,max.words=40,random.order=FALSE)
+}
+
+</pre>
+
+<hr><div align="center">[Package <em>wordcloud</em> version 2.5 <a href="00Index.html">Index</a>]</div>
+</body></html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Form Row and Column Sums and Means</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for sums {slam}"><tr><td>sums {slam}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>
+Form Row and Column Sums and Means
+</h2>
+
+<h3>Description</h3>
+
+<p>Form row and column sums and means for sparse arrays (currently
+<code>simple_triplet_matrix</code> only).
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+row_sums(x, na.rm = FALSE, dims = 1, ...)
+col_sums(x, na.rm = FALSE, dims = 1, ...)
+row_means(x, na.rm = FALSE, dims = 1, ...)
+col_means(x, na.rm = FALSE, dims = 1, ...)
+
+## S3 method for class 'simple_triplet_matrix'
+row_sums(x, na.rm = FALSE, dims = 1, ...)
+## S3 method for class 'simple_triplet_matrix'
+col_sums(x, na.rm = FALSE, dims = 1, ...)
+## S3 method for class 'simple_triplet_matrix'
+row_means(x, na.rm = FALSE, dims = 1, ...)
+## S3 method for class 'simple_triplet_matrix'
+col_means(x, na.rm = FALSE, dims = 1, ...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x</code></td>
+<td>
+<p>a sparse array containing numeric, integer, or logical values.
+</p>
+</td></tr>
+<tr valign="top"><td><code>na.rm</code></td>
+<td>
+<p>logical. Should missing values (including <code>NaN</code>)
+be omitted from the calculations?
+</p>
+</td></tr>
+<tr valign="top"><td><code>dims</code></td>
+<td>
+<p>currently not used for sparse arrays.
+</p>
+</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+<p>currently not used for sparse arrays.
+</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>Provides fast summation over the rows or columns of sparse matrices in
+<code>simple_triplet</code>-form.
+</p>
+
+
+<h3>Value</h3>
+
+<p>A numeric (double) array of suitable size, or a vector if the result
+is one-dimensional. The <code>dimnames</code> (or <code>names</code> for a vector
+result) are taken from the original array.
+</p>
+
+
+<h3>Note</h3>
+
+<p>Results are always of storage type <code>double</code> to avoid (integer)
+overflows.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Christian Buchta
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code>simple_triplet_matrix</code>, <code><a href="../../base/html/colSums.html">colSums</a></code> for dense
+numeric arrays.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+##
+x &lt;- matrix(c(1, 0, 0, 2, 1, NA), nrow = 3)
+x
+s &lt;- as.simple_triplet_matrix(x)
+row_sums(s)
+row_sums(s, na.rm = TRUE)
+col_sums(s)
+col_sums(s, na.rm = TRUE)
+</pre>
+
+<hr><div align="center">[Package <em>slam</em> version 0.1-32 <a href="00Index.html">Index</a>]</div>
+</body></html>

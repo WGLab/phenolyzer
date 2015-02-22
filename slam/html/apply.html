@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Apply Functions Over Sparse Matrix Margins</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for apply {slam}"><tr><td>apply {slam}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>
+Apply Functions Over Sparse Matrix Margins
+</h2>
+
+<h3>Description</h3>
+
+<p>Apply functions to (the cross-pairs of) the rows or columns of a sparse
+matrix.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+rowapply_simple_triplet_matrix(x, FUN, ...)
+colapply_simple_triplet_matrix(x, FUN, ...)
+
+crossapply_simple_triplet_matrix(x, y = NULL, FUN, ...) 
+tcrossapply_simple_triplet_matrix(x, y = NULL, FUN, ...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x, y</code></td>
+<td>
+<p>a matrix in <code>simple_triplet_matrix</code>-form or, one of
+<code>x</code> and <code>y</code>, of class <code>matrix</code>.
+</p>
+</td></tr>
+<tr valign="top"><td><code>FUN</code></td>
+<td>
+<p>the name of the function to be applied.
+</p>
+</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+<p>optional arguments to <code>FUN</code>.
+</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p><code>colapply_simple_triplet_matrix</code> temporarily expands each column of
+<code>x</code> to dense <code>vector</code> representation and applies the function
+specified in <code>FUN</code>.
+</p>
+<p><code>crossapply_simple_triplet_matrix</code> temporarily expands each cross-pair
+of columns of <code>x</code> (and <code>y</code>) to dense <code>vector</code> representation
+and applies the function specified in <code>FUN</code>.
+</p>
+<p>Note that if <code>y = NULL</code> then only the entries in the lower triangle
+and the diagonal are computed, assuming that <code>FUN</code> is symmetric.
+</p>
+
+
+<h3>Value</h3>
+
+<p>A <code>vector</code> (<code>matrix</code>) of length (dimensionality) of the margin(s)
+used. The type depends on the result of <code>FUN</code>.
+</p>
+<p>Note that the result of <code>colapply_simple_triplet_matrix</code> is never
+simplified to <code>matrix</code>.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Christian Buchta
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code><a href="../../base/html/apply.html">apply</a></code> for dense-on-dense computations.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## 
+x &lt;- matrix(c(1, 0, 0, 2, 1, 0), nrow = 3, 
+    dimnames = list(1:3, LETTERS[1:2]))
+x
+s &lt;- as.simple_triplet_matrix(x)
+colapply_simple_triplet_matrix(s, FUN = var)
+##
+simplify2array(colapply_simple_triplet_matrix(s, identity))
+##
+crossapply_simple_triplet_matrix(s, FUN = var)
+</pre>
+
+<hr><div align="center">[Package <em>slam</em> version 0.1-32 <a href="00Index.html">Index</a>]</div>
+</body></html>

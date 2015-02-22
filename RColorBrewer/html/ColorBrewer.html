@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: ColorBrewer palettes</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for RColorBrewer {RColorBrewer}"><tr><td>RColorBrewer {RColorBrewer}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>ColorBrewer palettes</h2>
+
+<h3>Description</h3>
+
+<p>Creates nice looking color palettes especially for thematic maps</p>
+
+
+<h3>Usage</h3>
+
+<pre>brewer.pal(n, name)
+display.brewer.pal(n, name)
+display.brewer.all(n=NULL, type="all", select=NULL, exact.n=TRUE)
+brewer.pal.info
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>n</code></td>
+<td>
+<p>Number of different colors in the palette, minimum 3, maximum depending on palette</p>
+</td></tr>
+<tr valign="top"><td><code>name</code></td>
+<td>
+<p>A palette name from the lists below</p>
+</td></tr>
+<tr valign="top"><td><code>type</code></td>
+<td>
+<p>One of the string &quot;div&quot;, &quot;qual&quot;, &quot;seq&quot;, or &quot;all&quot; </p>
+</td></tr>
+<tr valign="top"><td><code>select</code></td>
+<td>
+<p>A list of names of existing palettes</p>
+</td></tr>
+<tr valign="top"><td><code>exact.n</code></td>
+<td>
+<p>If TRUE, only display palettes with a color number given by n</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p><code>brewer.pal</code> makes the color palettes from ColorBrewer
+available as R palettes.
+</p>
+<p><code>display.brewer.pal()</code> displays the selected palette in a graphics window.
+</p>
+<p><code>display.brewer.all()</code> displays the a few palettes simultanueously in a graphics window.
+</p>
+<p><code>brewer.pal.info</code> returns information about the available palettes as a dataframe.
+<code>brewer.pal.info</code> is not a function, it is a variable. This might change in the future.
+</p>
+<p>For details and an interactive palette selection tools see http://colorbrewer.org.
+It is free to use, although ColorBrewer's designers would appreciate it if you could cite the ColorBrewer project 
+if you decide to use one of our color schemes.
+</p>
+<p>There are 3 types of palettes, sequential, diverging, and qualitative.<br>
+<br>
+1. Sequential palettes are suited to ordered data that progress from low to high. 
+Lightness steps dominate the look of these schemes, with light colors for low data values 
+to dark colors for high data values. 
+<br>
+2. Diverging palettes put equal emphasis on mid-range critical values and extremes at both ends 
+of the data range. The critical class or break in the middle of the legend is emphasized 
+with light colors and low and high extremes are emphasized with dark colors that have 
+contrasting hues. 
+<br>
+3. Qualitative palettes do not imply magnitude differences between legend classes, 
+and hues are used to create the primary visual differences between classes. 
+Qualitative schemes are best suited to representing nominal or categorical data.
+</p>
+<p>The sequential palettes names are
+<br>
+Blues
+BuGn
+BuPu
+GnBu
+Greens
+Greys
+Oranges
+OrRd
+PuBu
+PuBuGn     
+PuRd
+Purples
+RdPu
+Reds
+YlGn
+YlGnBu
+YlOrBr
+YlOrRd
+</p>
+<p>All the sequential palettes are available in variations from 3 different values up to 9 different values.
+</p>
+<p>The diverging palettes are <br>
+BrBG
+PiYG
+PRGn
+PuOr
+RdBu
+RdGy
+RdYlBu
+RdYlGn
+Spectral
+</p>
+<p>All the diverging palettes are available in variations from 3 different values up to 11 different values.
+</p>
+<p>For qualitative palettes, the lowest number of distinct values available always is 3, but the largest number
+is different for different palettes. It is given together with the palette names in the following table.
+</p>
+
+<table summary="Rd table">
+<tr>
+ <td align="left">
+Accent  </td><td align="right">  8    </td>
+</tr>
+<tr>
+ <td align="left">
+Dark2   </td><td align="right">  8    </td>
+</tr>
+<tr>
+ <td align="left">
+Paired  </td><td align="right">  12   </td>
+</tr>
+<tr>
+ <td align="left">
+Pastel1 </td><td align="right">  9    </td>
+</tr>
+<tr>
+ <td align="left">
+Pastel2 </td><td align="right">  8    </td>
+</tr>
+<tr>
+ <td align="left">
+Set1    </td><td align="right">  9    </td>
+</tr>
+<tr>
+ <td align="left">
+Set2    </td><td align="right">  8    </td>
+</tr>
+<tr>
+ <td align="left">
+Set3    </td><td align="right">  12   
+</td>
+</tr>
+
+</table>
+
+<p>ColorBrewer is
+Copyright (c) 2002 Cynthia Brewer, Mark Harrower, and The Pennsylvania State University. 
+All rights reserved.
+<br>
+The ColorBrewer palettes have been included in this R package with permission of the copyright holder.
+<br>
+For license details see the file <code>COPYING</code> included in this package.
+</p>
+
+
+<h3>Value</h3>
+
+<p>A palette
+<br>
+You will get an error when you ask for a nonexisting palette,
+and you will get a warning if a palette you asked for exists
+but not with as many different leves as you asked for. 
+</p>
+
+
+<h3>Note</h3>
+
+<p>More information on ColorBrewer is available at its Website, 
+<a href="http://www.colorbrewer.org">http://www.colorbrewer.org</a>.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Erich Neuwirth, University of Vienna,
+<a href="mailto:erich.neuwirth@univie.ac.at">erich.neuwirth@univie.ac.at</a>, with contributions by
+John Maindonald, Australian National University,
+<a href="mailto:john.maindonald@anu.edu.au">john.maindonald@anu.edu.au</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## create a sequential palette for usage and show colors
+mypalette&lt;-brewer.pal(7,"Greens")
+image(1:7,1,as.matrix(1:7),col=mypalette,xlab="Greens (sequential)",
+       ylab="",xaxt="n",yaxt="n",bty="n")
+Sys.sleep(2)
+## display a divergent palette
+display.brewer.pal(7,"BrBG")
+Sys.sleep(2)
+## display a qualitative palette
+display.brewer.pal(7,"Accent")
+Sys.sleep(2)
+## display a palettes simultanoeusly
+display.brewer.all(n=10, exact.n=FALSE)
+Sys.sleep(2)
+display.brewer.all(n=10)
+Sys.sleep(2)
+display.brewer.all()
+Sys.sleep(2)
+display.brewer.all(type="div")
+Sys.sleep(2)
+display.brewer.all(type="seq")
+Sys.sleep(2)
+display.brewer.all(type="qual") 
+Sys.sleep(2)
+display.brewer.all(n=5,type="div",exact.n=TRUE)
+Sys.sleep(2)
+brewer.pal.info
+brewer.pal.info["Blues",]
+brewer.pal.info["Blues",]$maxcolors
+</pre>
+
+<hr><div align="center">[Package <em>RColorBrewer</em> version 1.0-5 <a href="00Index.html">Index</a>]</div>
+</body></html>

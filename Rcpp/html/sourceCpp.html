@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Source C++ Code from a File or String</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for sourceCpp {Rcpp}"><tr><td>sourceCpp {Rcpp}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>
+Source C++ Code from a File or String
+</h2>
+
+<h3>Description</h3>
+
+<p><code>sourceCpp</code> parses the specified C++ file or source code and looks for functions marked with the <code><a href="exportAttribute.html">Rcpp::export</a></code> attribute
+and RCPP_MODULE declarations. A shared library is then built and its exported functions and Rcpp modules are made available in the specified environment.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+sourceCpp(file = "", code = NULL, env = globalenv(), 
+          embeddedR = TRUE, rebuild = FALSE, 
+          showOutput = verbose, verbose = getOption("verbose"))
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>file</code></td>
+<td>
+
+<p>A character string giving the path name of a file
+</p>
+</td></tr>
+<tr valign="top"><td><code>code</code></td>
+<td>
+
+<p>A character string with source code. If supplied, the code is taken from this string instead of a file. 
+</p>
+</td></tr>
+<tr valign="top"><td><code>env</code></td>
+<td>
+
+<p>Environment where the R functions and modules should be made available.
+</p>
+</td></tr>
+<tr valign="top"><td><code>embeddedR</code></td>
+<td>
+
+<p><code>TRUE</code> to run embedded R code chunks.
+</p>
+</td></tr>
+<tr valign="top"><td><code>rebuild</code></td>
+<td>
+
+<p>Force a rebuild of the shared library.
+</p>
+</td></tr>
+<tr valign="top"><td><code>showOutput</code></td>
+<td>
+
+<p><code>TRUE</code> to print <code>R CMD SHLIB</code> output to the console.
+</p>
+</td></tr>
+<tr valign="top"><td><code>verbose</code></td>
+<td>
+
+<p><code>TRUE</code> to print detailed information about generated code to the console.
+</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>If the <code>code</code> parameter is provided then the <code>file</code> parameter is ignored.
+</p>
+<p>Functions exported using <code>sourceCpp</code> must meet several conditions, 
+including being defined in the global namespace and having return types 
+that are compatible with <code>Rcpp::wrap</code> and parameter types that are 
+compatible with <code>Rcpp::as</code>. 
+See the <code><a href="exportAttribute.html">Rcpp::export</a></code> documentation for more details.
+</p>
+<p>Content of Rcpp Modules will be automatically loaded into the specified 
+environment using the <code><a href="Module.html">Module</a></code> and 
+<code><a href="populate.html">populate</a></code> functions. 
+</p>
+<p>If the source file has compilation dependencies on other 
+packages (e.g. <span class="pkg">Matrix</span>, <span class="pkg">RcppArmadillo</span>) then an 
+<code><a href="dependsAttribute.html">Rcpp::depends</a></code> attribute 
+should be provided naming these dependencies. 
+</p>
+<p>It's possible to embed chunks of R code within a C++ source file by 
+including the R code within a block comment with the 
+prefix of <code>/*** R</code>. For example:
+</p>
+<PRE>
+/*** R
+
+# Call the fibonacci function defined in C++
+fibonacci(10)
+
+*/
+</PRE>
+Multiple R code chunks can be included in a C++ file. R code is sourced after the C++ compliation is completed so all functions and modules will be available to the R code.   
+
+
+<h3>Value</h3>
+
+<p>Returns (invisibly) a list with two elements: 
+</p>
+
+<table summary="Rd table">
+<tr>
+ <td align="left">
+        <code>functions</code> </td><td align="left"> Names of exported functions</td>
+</tr>
+<tr>
+ <td align="left">
+        <code>modules</code> </td><td align="left"> Names of Rcpp modules</td>
+</tr>
+<tr>
+ <td align="left">
+    </td>
+</tr>
+
+</table>
+
+
+
+<h3>Note</h3>
+
+<p>The <code>sourceCpp</code> function will not rebuild the shared library if the source file has not changed since the last compilation.
+</p>
+<p>The <code>sourceCpp</code> function is designed for compiling a standalone source file whose only dependencies are R packages. If you are compiling more than one source file or have external dependencies then you should create an R package rather than using <code>sourceCpp</code>. Note that the <code><a href="exportAttribute.html">Rcpp::export</a></code> attribute can also be used within packages via the <code><a href="compileAttributes.html">compileAttributes</a></code> function.
+</p>
+<p>If you are sourcing a C++ file from within the <code>src</code> directory of a package then the package's <code>LinkingTo</code> dependencies, <code>inst/include</code>, and <code>src</code> directories are automatically included in the compilation.
+</p>
+<p>If no <code>Rcpp::export</code> attributes or <code>RCPP_MODULE</code> declarations are found within the source file then a warning is printed to the console. You can disable this warning by setting the <code>rcpp.warnNoExports</code> option to <code>FALSE</code>.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code><a href="exportAttribute.html">Rcpp::export</a></code>, <code><a href="dependsAttribute.html">Rcpp::depends</a></code>, <code><a href="cppFunction.html">cppFunction</a></code>, <code><a href="evalCpp.html">evalCpp</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Not run: 
+
+sourceCpp("fibonacci.cpp")
+
+sourceCpp(code='
+  #include &lt;Rcpp.h&gt;
+
+  // [[Rcpp::export]]
+  int fibonacci(const int x) {
+    if (x == 0) return(0);
+    if (x == 1) return(1);
+    return (fibonacci(x - 1)) + fibonacci(x - 2);
+  }'
+)
+
+
+## End(Not run)
+</pre>
+
+<hr><div align="center">[Package <em>Rcpp</em> version 0.11.1 <a href="00Index.html">Index</a>]</div>
+</body></html>

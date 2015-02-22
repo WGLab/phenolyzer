@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Simple Triplet Matrix</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for simple_triplet_matrix {slam}"><tr><td>simple_triplet_matrix {slam}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>Simple Triplet Matrix</h2>
+
+<h3>Description</h3>
+
+<p>Data structures and operators for sparse matrices based on
+simple triplet representation.</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+simple_triplet_matrix(i, j, v, nrow = max(i), ncol = max(j),
+                      dimnames = NULL)
+simple_triplet_zero_matrix(nrow, ncol = nrow, mode = "double")
+simple_triplet_diag_matrix(v, nrow = length(v))
+
+as.simple_triplet_matrix(x)
+is.simple_triplet_matrix(x)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>i, j</code></td>
+<td>
+<p>Integer vectors of row and column indices, respectively.</p>
+</td></tr>
+<tr valign="top"><td><code>v</code></td>
+<td>
+<p>Vector of values.</p>
+</td></tr>
+<tr valign="top"><td><code>nrow, ncol</code></td>
+<td>
+<p>Integer values specifying the number of rows and
+columns, respectively. Defaults are the maximum row and column indices, respectively.</p>
+</td></tr>
+<tr valign="top"><td><code>dimnames</code></td>
+<td>
+<p>A <code>dimnames</code> attribute for the matrix:
+<code>NULL</code> or a <code>list</code> of
+length 2 giving the row and column names respectively.  An
+empty list is treated as <code>NULL</code>,
+and a list of length one as
+row names.  The list can be named, and the list names will be
+used as names for the dimensions.</p>
+</td></tr>
+<tr valign="top"><td><code>mode</code></td>
+<td>
+<p>Character string specifying the mode of the values.</p>
+</td></tr>
+<tr valign="top"><td><code>x</code></td>
+<td>
+<p>An <font face="Courier New,Courier" color="#666666"><b>R</b></font> object.</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p><code>simple_triplet_matrix</code> is a generator for
+a class of &ldquo;lightweight&rdquo; sparse matrices, &ldquo;simply&rdquo;
+represented by triplets <code>(i, j, v)</code> of row indices <code>i</code>, column
+indices <code>j</code>, and values <code>v</code>, respectively.
+<code>simple_triplet_zero_matrix</code> and
+<code>simple_triplet_diag_matrix</code> are convenience functions for the
+creation of empty and diagonal matrices.
+</p>
+<p>Currently implemented operations include the addition, subtraction,
+multiplication and division of compatible simple triplet matrices,
+as well as the multiplication and division of a simple triplet matrix
+and a vector.  Comparisons of the elements of a simple triplet
+matrices with a number are also provided. In addition, 
+methods for indexing, combining by rows
+(<code>rbind</code>) and columns (<code>cbind</code>), transposing (<code>t</code>),
+concatenating (<code>c</code>), and detecting/extracting duplicated and
+unique rows are implemented.
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code><a href="array.html">simple_sparse_array</a></code> for sparse arrays.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+x &lt;- matrix(c(1, 0, 0, 2), nrow = 2)
+s &lt;- as.simple_triplet_matrix(x)
+identical(x, as.matrix(s))
+
+simple_triplet_matrix(c(1, 4), c(1, 2), c(1, 2))
+simple_triplet_zero_matrix(3)
+simple_triplet_diag_matrix(1:3)
+
+cbind(rbind(x, t(x)), rbind(x, x))
+</pre>
+
+<hr><div align="center">[Package <em>slam</em> version 0.1-32 <a href="00Index.html">Index</a>]</div>
+</body></html>

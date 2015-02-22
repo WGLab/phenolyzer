@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Text Plot</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for textplot {wordcloud}"><tr><td>textplot {wordcloud}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>
+Text Plot
+</h2>
+
+<h3>Description</h3>
+
+<p>An x y plot of non-overlapping text
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+textplot(x, y, words, cex=1,new=TRUE, show.lines=TRUE, ...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>x</code></td>
+<td>
+<p>x coordinates</p>
+</td></tr>
+<tr valign="top"><td><code>y</code></td>
+<td>
+<p>y coordinates</p>
+</td></tr>
+<tr valign="top"><td><code>words</code></td>
+<td>
+<p>the text to plot</p>
+</td></tr>
+<tr valign="top"><td><code>cex</code></td>
+<td>
+<p>font size</p>
+</td></tr>
+<tr valign="top"><td><code>new</code></td>
+<td>
+<p>should a new plot be created</p>
+</td></tr>
+<tr valign="top"><td><code>show.lines</code></td>
+<td>
+<p>if true, then lines are plotted between x,y and the word, for those words not covering their x,y coordinates</p>
+</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+<p>Additional parameters to be passed to wordlayout and text.</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>nothing
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+#calculate standardized MDS coordinates
+dat &lt;- sweep(USArrests,2,colMeans(USArrests))
+dat &lt;- sweep(dat,2,sqrt(diag(var(dat))),"/")
+loc &lt;- cmdscale(dist(dat))
+
+#plot with no overlap
+textplot(loc[,1],loc[,2],rownames(loc))
+
+#scale by urban population size
+textplot(loc[,1],loc[,2],rownames(loc),cex=USArrests$UrbanPop/max(USArrests$UrbanPop))
+
+#x limits sets x bounds of plot, and forces all words to be in bounds
+textplot(loc[,1],loc[,2],rownames(loc),xlim=c(-3.5,3.5)) 
+
+#compare to text (many states unreadable)
+plot(loc[,1],loc[,2],type="n")
+text(loc[,1],loc[,2],rownames(loc))
+
+</pre>
+
+<hr><div align="center">[Package <em>wordcloud</em> version 2.5 <a href="00Index.html">Index</a>]</div>
+</body></html>

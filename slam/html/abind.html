@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Combine Sparse Arrays</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for abind {slam}"><tr><td>abind {slam}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>Combine Sparse Arrays</h2>
+
+<h3>Description</h3>
+
+<p>Combine a sequence of (sparse) arrays, matrices, or vectors
+into a single sparse array of the same or higher dimension.</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+
+abind_simple_sparse_array(..., MARGIN = 1L)
+extend_simple_sparse_array(x, MARGIN = 0L)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>...</code></td>
+<td>
+<p><font face="Courier New,Courier" color="#666666"><b>R</b></font> objects of (or coercible to) class <code>simple_sparse_array</code>.</p>
+</td></tr>
+<tr valign="top"><td><code>MARGIN</code></td>
+<td>
+<p>The dimension along which to bind the arrays.</p>
+</td></tr>
+<tr valign="top"><td><code>x</code></td>
+<td>
+<p>An object of class <code>simple_sparse_array</code>.</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p><code>abind_simple_sparse_array</code> automatically extends the dimensions
+of the elements of &lsquo;...&rsquo; before it combines them along the
+dimension specified in <code>MARGIN</code>. If a negative value is specified
+first all elements are extended left of the target dimension.
+</p>
+<p><code>extend_simple_sparse_array</code> inserts one (or more) one-level
+dimension(s) into <code>x</code> to the right of the position(s) specified in
+<code>MARGIN</code>, or to the left if specified in negative terms. Note that
+the target positions must all be in the range of the dimensions of <code>x</code>
+(see Examples).
+</p>
+
+
+<h3>Value</h3>
+
+<p>An object of class <code>simple_sparse_array</code> where the <code>dimnames</code>
+are taken from the elements of &lsquo;...&rsquo;.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Christian Buchta
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code><a href="array.html">simple_sparse_array</a></code> for sparse arrays.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## automatic
+abind_simple_sparse_array(1:3, array(4:6, c(1,3)))
+abind_simple_sparse_array(1:3, array(4:6, c(3,1)), MARGIN = 2L)
+
+## manual
+abind_simple_sparse_array(1:3, 4:6)
+abind_simple_sparse_array(1:3, 4:6, MARGIN = -2L)   ## by columns
+abind_simple_sparse_array(1:3, 4:6, MARGIN = -1L)   ## by rows
+
+##
+a &lt;- as.simple_sparse_array(1:3)
+a
+extend_simple_sparse_array(a, c( 0L, 1L))
+extend_simple_sparse_array(a, c(-1L,-2L))   ## the same
+extend_simple_sparse_array(a, c( 1L, 1L))
+</pre>
+
+<hr><div align="center">[Package <em>slam</em> version 0.1-32 <a href="00Index.html">Index</a>]</div>
+</body></html>

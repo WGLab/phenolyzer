@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: (Deprecated) Rcpp Linker Flags</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for LdFlags {Rcpp}"><tr><td>LdFlags {Rcpp}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>(Deprecated) Rcpp Linker Flags</h2>
+
+<h3>Description</h3>
+
+<p>In previous versions of Rcpp, <code>LdFlags</code> and <code>RcppLdFlags</code>  
+were used to return the required flags and options for the system linker to 
+link to the Rcpp user library. Since we no longer build or ship a 
+user library, these functions now return an empty string.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+LdFlags()
+RcppLdFlags()
+</pre>
+
+
+<h3>Value</h3>
+
+<p>An empty string.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Dirk Eddelbuettel and Romain Francois</p>
+
+
+<h3>References</h3>
+
+<p>Dirk Eddelbuettel and Romain Francois (2011). <span class="pkg">Rcpp</span>: Seamless R
+and C++ Integration. <EM>Journal of Statistical Software</EM>,
+<B>40(8)</B>, 1-18. URL http://www.jstatsoft.org/v40/i08/ and
+available as <code>vignette("Rcpp-introduction")</code>.
+</p>
+
+<hr><div align="center">[Package <em>Rcpp</em> version 0.11.1 <a href="00Index.html">Index</a>]</div>
+</body></html>

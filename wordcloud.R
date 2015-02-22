@@ -1,4 +1,4 @@
-.libPaths("/home/huiyang/R/x86_64-redhat-linux-gnu-library/3.0")
+.libPaths(Sys.getenv("PWD"))
 library("wordcloud");
 args = commandArgs(TRUE);
 disease_count = read.table(args[1]);

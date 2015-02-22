@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Read and Write Sparse Matrix Format Files</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for foreign {slam}"><tr><td>foreign {slam}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>Read and Write Sparse Matrix Format Files</h2>
+
+<h3>Description</h3>
+
+<p>Read and write CLUTO sparse matrix format files, or the CCS format
+variant employed by the MC toolkit.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+read_stm_CLUTO(file)
+write_stm_CLUTO(x, file)
+read_stm_MC(file, scalingtype = NULL)
+write_stm_MC(x, file)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>file</code></td>
+<td>
+<p>a character string with the name of the file to read or
+write.</p>
+</td></tr>
+<tr valign="top"><td><code>x</code></td>
+<td>
+<p>a matrix object.</p>
+</td></tr>
+<tr valign="top"><td><code>scalingtype</code></td>
+<td>
+<p>a character string specifying the type of scaling
+to be used, or <code>NULL</code> (default), in which case the scaling will
+be inferred from the names of the files with non-zero entries found
+(see <B>Details</B>).
+</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>Documentation for CLUTO including its sparse matrix format is
+available from <a href="http://www-users.cs.umn.edu/~karypis/cluto/">http://www-users.cs.umn.edu/~karypis/cluto/</a>.
+</p>
+<p><code>read_stm_CLUTO</code> reads CLUTO sparse matrices, returning a
+<a href="matrix.html">simple triplet matrix</a>.
+</p>
+<p><code>write_stm_CLUTO</code> writes CLUTO sparse matrices.
+Argument <code>x</code> must be coercible to a simple triplet matrix via
+<code><a href="matrix.html">as.simple_triplet_matrix</a></code>.
+</p>
+<p>MC is a toolkit for creating vector models from text documents (see 
+<a href="http://www.cs.utexas.edu/users/dml/software/mc/">http://www.cs.utexas.edu/users/dml/software/mc/</a>).  It employs a
+variant of Compressed Column Storage (CCS) sparse matrix format,
+writing data into several files with suitable names: e.g., a file with
+&lsquo;<span class="file">_dim</span>&rsquo; appended to the base file name stores the matrix
+dimensions.  The non-zero entries are stored in a file the name of
+which indicates the scaling type used: e.g., &lsquo;<span class="file">_tfx_nz</span>&rsquo; indicates
+scaling by term frequency (<span class="samp">t</span>), inverse document frequency
+(<span class="samp">f</span>) and no normalization (<span class="samp">x</span>).  See &lsquo;<span class="file">README</span>&rsquo; in the
+MC sources for more information.
+</p>
+<p><code>read_stm_MC</code> reads such sparse matrix information with argument
+<code>file</code> giving the path with the base file name, and returns a
+<a href="matrix.html">simple triplet matrix</a>.
+</p>
+<p><code>write_stm_MC</code> writes matrices in MC CCS sparse matrix format.
+Argument <code>x</code> must be coercible to a simple triplet matrix via
+<code><a href="matrix.html">as.simple_triplet_matrix</a></code>.
+</p>
+
+<hr><div align="center">[Package <em>slam</em> version 0.1-32 <a href="00Index.html">Index</a>]</div>
+</body></html>

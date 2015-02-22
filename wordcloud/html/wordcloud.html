@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Plot a word cloud</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for wordcloud {wordcloud}"><tr><td>wordcloud {wordcloud}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>
+Plot a word cloud
+</h2>
+
+<h3>Description</h3>
+
+<p>Plot a word cloud
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+wordcloud(words,freq,scale=c(4,.5),min.freq=3,max.words=Inf,
+	random.order=TRUE, random.color=FALSE, rot.per=.1,
+	colors="black",ordered.colors=FALSE,use.r.layout=FALSE,
+	fixed.asp=TRUE, ...)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>words</code></td>
+<td>
+<p>the words</p>
+</td></tr>
+<tr valign="top"><td><code>freq</code></td>
+<td>
+<p>their frequencies</p>
+</td></tr>
+<tr valign="top"><td><code>scale</code></td>
+<td>
+<p>A vector of length 2 indicating the range of the size of the words. </p>
+</td></tr>
+<tr valign="top"><td><code>min.freq</code></td>
+<td>
+<p>words with frequency below min.freq will not be plotted</p>
+</td></tr>
+<tr valign="top"><td><code>max.words</code></td>
+<td>
+<p>Maximum number of words to be plotted. least frequent terms dropped</p>
+</td></tr>
+<tr valign="top"><td><code>random.order</code></td>
+<td>
+<p>plot words in random order. If false, they will be plotted in decreasing frequency</p>
+</td></tr>
+<tr valign="top"><td><code>random.color</code></td>
+<td>
+<p>choose colors randomly from the colors. If false, the color is chosen based on the frequency</p>
+</td></tr>
+<tr valign="top"><td><code>rot.per</code></td>
+<td>
+<p>proportion words with 90 degree rotation</p>
+</td></tr>
+<tr valign="top"><td><code>colors</code></td>
+<td>
+<p>color words from least to most frequent</p>
+</td></tr>
+<tr valign="top"><td><code>ordered.colors</code></td>
+<td>
+<p>if true, then colors are assigned to words in order</p>
+</td></tr>
+<tr valign="top"><td><code>use.r.layout</code></td>
+<td>
+<p>if false, then c++ code is used for collision detection, otherwise R is used</p>
+</td></tr>
+<tr valign="top"><td><code>fixed.asp</code></td>
+<td>
+<p>if TRUE, the aspect ratio is fixed. Variable aspect ratio only supported if rot.per==0</p>
+</td></tr>
+<tr valign="top"><td><code>...</code></td>
+<td>
+<p>Additional parameters to be passed to text (and strheight,strwidth).</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>If freq is missing, then words can either be a character vector, or Corpus. If it is a
+vector and freq is missing, standard stop words will be removed prior to plotting.
+</p>
+
+
+<h3>Value</h3>
+
+<p>nothing
+</p>
+
+
+<h3>See Also</h3>
+
+<p><code><a href="../../graphics/html/text.html">text</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+wordcloud(c(letters, LETTERS, 0:9), seq(1, 1000, len = 62))
+
+if(require(tm)){
+
+	##### 			from character 		#####
+	wordcloud(
+"Many years ago the great British explorer George Mallory, who 
+was to die on Mount Everest, was asked why did he want to climb 
+it. He said, \"Because it is there.\"
+
+Well, space is there, and we're going to climb it, and the 
+moon and the planets are there, and new hopes for knowledge 
+and peace are there. And, therefore, as we set sail we ask 
+God's blessing on the most hazardous and dangerous and greatest 
+adventure on which man has ever embarked.",
+	,random.order=FALSE)
+
+## Not run: 
+	data(crude)
+	crude &lt;- tm_map(crude, removePunctuation)
+	crude &lt;- tm_map(crude, function(x)removeWords(x,stopwords()))
+	
+	##### 			from corpus 		#####
+	wordcloud(crude)
+	
+	
+	##### 		from frequency counts 	#####
+	tdm &lt;- TermDocumentMatrix(crude)
+	m &lt;- as.matrix(tdm)
+	v &lt;- sort(rowSums(m),decreasing=TRUE)
+	d &lt;- data.frame(word = names(v),freq=v)
+	
+	wordcloud(d$word,d$freq)
+
+	#A bigger cloud with a minimum frequency of 2
+	wordcloud(d$word,d$freq,c(8,.3),2)
+
+	#Now lets try it with frequent words plotted first
+	wordcloud(d$word,d$freq,c(8,.5),2,,FALSE,.1)
+
+	##### 			with colors 		#####
+	if(require(RColorBrewer)){
+
+		pal &lt;- brewer.pal(9,"BuGn")
+		pal &lt;- pal[-(1:4)]
+		wordcloud(d$word,d$freq,c(8,.3),2,,FALSE,,.15,pal)
+
+
+		pal &lt;- brewer.pal(6,"Dark2")
+		pal &lt;- pal[-(1)]
+		wordcloud(d$word,d$freq,c(8,.3),2,,TRUE,,.15,pal)
+		
+		#random colors
+		wordcloud(d$word,d$freq,c(8,.3),2,,TRUE,TRUE,.15,pal)
+	}
+	##### 			with font 			#####
+
+	wordcloud(d$word,d$freq,c(8,.3),2,,TRUE,,.15,pal,
+		vfont=c("gothic english","plain"))
+
+	wordcloud(d$word,d$freq,c(8,.3),2,100,TRUE,,.15,pal,vfont=c("script","plain"))
+	
+	wordcloud(d$word,d$freq,c(8,.3),2,100,TRUE,,.15,pal,vfont=c("serif","plain"))
+
+## End(Not run)
+}
+
+
+</pre>
+
+<hr><div align="center">[Package <em>wordcloud</em> version 2.5 <a href="00Index.html">Index</a>]</div>
+</body></html>
