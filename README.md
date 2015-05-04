@@ -4,31 +4,38 @@ Phenolyzer is a software that implements phenotype-based prioritization of candi
 ## Introduction
 Prior biological knowledge and phenotype information may help pinpoint disease contributory genes in whole genome/exome sequencing studies on human diseases. We developed a computational tool called Phenolyzer, which follows a biologist's natural thought processes through four steps: term interpretation, seed gene generation, seed gene growth and data integration. Compared to competing approaches, Phenolyzer has superior performance on finding known disease genes, and on prioritizing recently published novel disease genes.
 
+## Pre-requisites
+- Download the databases for CNV annotation (No need to do this for other functions)
+```
+perl annotate_variation.pl -downdb -buildver hg19 -webfrom annovar refGene ../lib/humandb
+perl annotate_variation.pl -downdb -buildver hg18 -webfrom annovar refGene ../lib/humandb
+```
+
 ## Synopsis
 
-- print help message
+- Print help message
 ```
 perl disease_annotation.pl --help
 ```
 
 - Prioritize 'sleep' genes: 
 ```
-perl disease_annotation.pl sleep -p -ph -logistic -out sleep/out
+perl disease_annotation.pl sleep -p -ph -logistic -out out/sleep/out
 ```
 
 - Use the terms in 'disease' file:
 ```
-perl disease_annotation.pl disease -f -p -ph -logistic -out disease/out
+perl disease_annotation.pl disease -f -p -ph -logistic -out out/disease/out
 ```
 
 - Use the cnv.bed region:
 ```
-perl disease_annotation.pl alzheimer -bedfile cnv.bed -p -ph -logistic -out alzheimer/out
+perl disease_annotation.pl alzheimer -bedfile cnv.bed -p -ph -logistic -out out/alzheimer/out
 ```
 
 - Use the Mentha gene-gene interaction database as Addon
 ```
-perl disease_annotation.pl alzheimer -p -ph -logistic -out alzheimer/out -addon_gg DB_MENTHA_GENE_GENE_INTERACTION -addon_gg_weight 0.05
+perl disease_annotation.pl alzheimer -p -ph -logistic -out out/alzheimer_addon/out -addon_gg DB_MENTHA_GENE_GENE_INTERACTION -addon_gg_weight 0.05
 ```
 
 ## License Agreement
