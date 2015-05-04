@@ -1,2 +1,2 @@
-!lib/humandb
 lib/humandb/*
+!lib/humandb/tmp
