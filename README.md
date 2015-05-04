@@ -4,6 +4,12 @@ Phenolyzer is a software that implements phenotype-based prioritization of candi
 ## Introduction
 Prior biological knowledge and phenotype information may help pinpoint disease contributory genes in whole genome/exome sequencing studies on human diseases. We developed a computational tool called Phenolyzer, which follows a biologist's natural thought processes through four steps: term interpretation, seed gene generation, seed gene growth and data integration. Compared to competing approaches, Phenolyzer has superior performance on finding known disease genes, and on prioritizing recently published novel disease genes.
 
+## Releases
+Phenolyzer is also available as a web-sever at [here](phenolyzer.usc.edu).
+
+## Mannual
+The more detailed manual is available at [here](http://phenolyzer.usc.edu/download/Phenolyzer_manual_20150503.pdf) 
+
 ## Pre-requisites
 - Download the databases for CNV annotation (No need to do this for other functions)
 ```
