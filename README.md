@@ -8,7 +8,7 @@ Prior biological knowledge and phenotype information may help pinpoint disease c
 Phenolyzer is also available as a web-sever at [here](http://phenolyzer.usc.edu).
 
 ## Mannual
-The more detailed manual is available at [here](http://phenolyzer.usc.edu/download/Phenolyzer_manual_20150503.pdf) 
+The more detailed manual is available at [here](http://phenolyzer.usc.edu/download/Phenolyzer_manual.pdf) 
 
 ## Installation
 Please clone the repository into your computer:
