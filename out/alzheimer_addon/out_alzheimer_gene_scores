@@ -1,0 +1,554 @@
+Tuple number in the gene_disease database for the term alzheimer: 215
+APP	Normalized score: 0.0200913621262458	Raw Score: 4.31964285714286
+OMIM:104300 (CLINVAR)	alzheimer disease	0.0625
+OMIM:104300 (OMIM)	alzheimer disease 1 familial	1
+OMIM:606889 (GENE_REVIEWS)	alzheimer disease 4	1
+OMIM:607822 (GENE_REVIEWS)	alzheimer disease type 3	1
+OMIM:605714 (OMIM)	cerebral amyloid angiopathy dutch italian iowa flemish arctic variants	0.4
+ORPHANET:1020 (ORPHANET)	early onset autosomal dominant alzheimer disease	0.857142857142857
+
+PSEN1	Normalized score: 0.0188953488372093	Raw Score: 4.0625
+OMIM:606889 (GENE_REVIEWS)	alzheimer disease 4	1
+OMIM:607822 (OMIM)	alzheimer disease type 3	1
+OMIM:607822 (CLINVAR)	alzheimer disease type 3	0.0625
+OMIM:607822 (GENE_REVIEWS)	alzheimer disease type 3	1
+ORPHANET:1020 (ORPHANET)	early onset autosomal dominant alzheimer disease	1
+
+PSEN2	Normalized score: 0.0188953488372093	Raw Score: 4.0625
+OMIM:606889 (OMIM)	alzheimer disease 4	1
+OMIM:606889 (GENE_REVIEWS)	alzheimer disease 4	1
+OMIM:607822 (GENE_REVIEWS)	alzheimer disease type 3	1
+OMIM:606889 (CLINVAR)	alzheimer disease type 4	0.0625
+ORPHANET:1020 (ORPHANET)	early onset autosomal dominant alzheimer disease	1
+
+SORL1	Normalized score: 0.00942691029667774	Raw Score: 2.02678571378571
+OMIM:104300 (CLINVAR)	alzheimer disease	0.0625
+PUBMED:23565137 (GWAS)	alzheimer disease	0.2499999995
+OMIM:104300 (OMIM)	alzheimer disease pathogenesis association with	1
+ORPHANET:1020 (ORPHANET)	early onset autosomal dominant alzheimer disease	0.714285714285714
+
+APOE	Normalized score: 0.00872093023255814	Raw Score: 1.875
+PUBMED:22832961 22245343 22245343 21627779 20460622 20061627 19734902 19734903 19125160 18823527 17998437 17975299 (GWAS)	alzheimer disease	0.25
+PUBMED:23565137 22005931 20885792 17474819 (GWAS)	alzheimer disease	0.25
+OMIM:104310 (OMIM)	alzheimer disease 2	1
+PUBMED:23562540 23562540 23419831 21123754 (GWAS)	alzheimer disease biomarkers	0.25
+OMIM:104310 (CLINVAR)	alzheimer disease type 2	0.0625
+OMIM:606889 (CLINVAR)	alzheimer disease type 4	0.0625
+
+ACE	Normalized score: 0.00494186046511628	Raw Score: 1.0625
+OMIM:104300 (OMIM)	alzheimer disease	1
+OMIM:104300 (CLINVAR)	alzheimer disease	0.0625
+
+APBB2	Normalized score: 0.00494186046511628	Raw Score: 1.0625
+OMIM:104300 (CLINVAR)	alzheimer disease	0.0625
+OMIM:104300 (OMIM)	alzheimer disease late onset	1
+
+GBA	Normalized score: 0.00494186046511628	Raw Score: 1.0625
+OMIM:127750 (OMIM)	lewy body dementia	1
+OMIM:127750 (CLINVAR)	lewy body dementia	0.0625
+
+HFE	Normalized score: 0.00494186046511628	Raw Score: 1.0625
+OMIM:104300 (OMIM)	alzheimer disease	1
+OMIM:104300 (CLINVAR)	alzheimer disease	0.0625
+
+SNCA	Normalized score: 0.00494186046511628	Raw Score: 1.0625
+OMIM:127750 (OMIM)	dementia lewy body	1
+OMIM:127750 (CLINVAR)	lewy body dementia	0.0625
+
+PLAU	Normalized score: 0.00494186046511628	Raw Score: 1.0625
+OMIM:104300 (CLINVAR)	alzheimer disease	0.0625
+OMIM:104300 (OMIM)	alzheimer disease late onset	1
+
+MPO	Normalized score: 0.00494186046511628	Raw Score: 1.0625
+OMIM:104300 (OMIM)	alzheimer disease	1
+OMIM:104300 (CLINVAR)	alzheimer disease	0.0625
+
+A2M	Normalized score: 0.00494186046511628	Raw Score: 1.0625
+OMIM:104300 (OMIM)	alzheimer disease	1
+OMIM:104300 (CLINVAR)	alzheimer disease	0.0625
+
+NOS3	Normalized score: 0.00494186046511628	Raw Score: 1.0625
+OMIM:104300 (CLINVAR)	alzheimer disease	0.0625
+OMIM:104300 (OMIM)	alzheimer disease late onset	1
+
+PRNP	Normalized score: 0.00398671096345515	Raw Score: 0.857142857142857
+ORPHANET:280397 (ORPHANET)	familial alzheimer like prion disease	0.857142857142857
+
+PAXIP1	Normalized score: 0.00377906976744186	Raw Score: 0.8125
+OMIM:104300 (OMIM)	alzheimer disease	0.75
+OMIM:104300 (CLINVAR)	alzheimer disease	0.0625
+
+BLMH	Normalized score: 0.00377906976744186	Raw Score: 0.8125
+OMIM:104300 (OMIM)	alzheimer disease	0.75
+OMIM:104300 (CLINVAR)	alzheimer disease	0.0625
+
+ADAM10	Normalized score: 0.00377906976744186	Raw Score: 0.8125
+OMIM:615590 (OMIM)	alzheimer disease 18	0.75
+OMIM:615590 (CLINVAR)	alzheimer disease 18	0.0625
+
+SNCB	Normalized score: 0.00377906976744186	Raw Score: 0.8125
+OMIM:127750 (OMIM)	dementia lewy body	0.75
+OMIM:127750 (CLINVAR)	lewy body dementia	0.0625
+
+PLD3	Normalized score: 0.00348837209302326	Raw Score: 0.75
+OMIM:615711 (OMIM)	alzheimer disease 19 late onset	0.75
+
+TOMM40	Normalized score: 0.00348837209302326	Raw Score: 0.75
+PUBMED:23565137 22005931 20885792 (GWAS)	alzheimer disease	0.25
+PUBMED:22832961 20061627 19734902 19125160 18823527 (GWAS)	alzheimer disease	0.25
+PUBMED:23562540 23562540 23419831 21123754 21123754 (GWAS)	alzheimer disease biomarkers	0.25
+
+APOC1	Normalized score: 0.00348837209301744	Raw Score: 0.74999999999875
+PUBMED:22832961 17998437 (GWAS)	alzheimer disease	0.25
+PUBMED:22005931 (GWAS)	alzheimer disease	0.24999999999975
+PUBMED:23419831 (GWAS)	alzheimer disease biomarkers	0.249999999999
+
+PVRL2	Normalized score: 0.00348837209290691	Raw Score: 0.749999999974985
+PUBMED:22159054 18823527 (GWAS)	alzheimer disease	0.249999999999985
+PUBMED:23565137 22005931 20885792 (GWAS)	alzheimer disease	0.25
+PUBMED:23419831 (GWAS)	alzheimer disease biomarkers	0.249999999975
+
+AD6	Normalized score: 0.00232558139534884	Raw Score: 0.5
+OMIM:104300 (OMIM)	alzheimer disease 6	0.5
+
+BIN1	Normalized score: 0.00232558139534876	Raw Score: 0.499999999999983
+PUBMED:22832961 22005930 21627779 21460840 (GWAS)	alzheimer disease	0.249999999999993
+PUBMED:21460841 21390209 21390209 (GWAS)	alzheimer disease	0.24999999999999
+
+CR1	Normalized score: 0.0023255813947674	Raw Score: 0.49999999987499
+PUBMED:21460841 (GWAS)	alzheimer disease	0.249999999875
+PUBMED:21460840 19734903 (GWAS)	alzheimer disease	0.24999999999999
+
+PICALM	Normalized score: 0.00232558139410465	Raw Score: 0.4999999997325
+PUBMED:21460841 (GWAS)	alzheimer disease	0.2499999999825
+PUBMED:22832961 21627779 19734902 (GWAS)	alzheimer disease	0.24999999975
+
+ABCA7	Normalized score: 0.00232558139302326	Raw Score: 0.4999999995
+PUBMED:21460840 (GWAS)	alzheimer disease	0.25
+PUBMED:23571587 21460841 (GWAS)	alzheimer disease	0.2499999995
+
+CLU	Normalized score: 0.00232558130162791	Raw Score: 0.49999997985
+PUBMED:21627779 19734902 19734903 (GWAS)	alzheimer disease	0.24999999985
+PUBMED:21460841 (GWAS)	alzheimer disease	0.24999998
+
+CD33	Normalized score: 0.00232557441627907	Raw Score: 0.4999984995
+PUBMED:18976728 (GWAS)	alzheimer disease	0.2499985
+PUBMED:21460841 (GWAS)	alzheimer disease	0.2499999995
+
+AD7	Normalized score: 0.00174418604651163	Raw Score: 0.375
+OMIM:606187 (OMIM)	alzheimer disease 7	0.375
+
+AD16	Normalized score: 0.00174418604651163	Raw Score: 0.375
+OMIM:300756 (OMIM)	alzheimer disease 16	0.375
+
+AD11	Normalized score: 0.00174418604651163	Raw Score: 0.375
+OMIM:609790 (OMIM)	alzheimer disease 11	0.375
+
+AD5	Normalized score: 0.00174418604651163	Raw Score: 0.375
+OMIM:104300 (OMIM)	alzheimer disease 5	0.375
+
+AD8	Normalized score: 0.00174418604651163	Raw Score: 0.375
+OMIM:104300 (OMIM)	alzheimer disease 8	0.375
+
+AD15	Normalized score: 0.00174418604651163	Raw Score: 0.375
+OMIM:611155 (OMIM)	alzheimer disease 15	0.375
+
+AD13	Normalized score: 0.00174418604651163	Raw Score: 0.375
+OMIM:611152 (OMIM)	alzheimer disease 13	0.375
+
+AD14	Normalized score: 0.00174418604651163	Raw Score: 0.375
+OMIM:611154 (OMIM)	alzheimer disease 14	0.375
+
+AD12	Normalized score: 0.00174418604651163	Raw Score: 0.375
+OMIM:611073 (OMIM)	alzheimer disease 12	0.375
+
+AD10	Normalized score: 0.00174418604651163	Raw Score: 0.375
+OMIM:104300 (OMIM)	alzheimer disease 10	0.375
+
+AD17	Normalized score: 0.00174418604651163	Raw Score: 0.375
+OMIM:615080 (OMIM)	alzheimer disease 17	0.375
+
+AD9	Normalized score: 0.00174418604651163	Raw Score: 0.375
+OMIM:104300 (OMIM)	alzheimer disease 9 late onset	0.375
+
+CEACAM16	Normalized score: 0.00116279069767442	Raw Score: 0.25
+PUBMED:23565137 (GWAS)	alzheimer disease	0.25
+
+BCL3	Normalized score: 0.00116279069767442	Raw Score: 0.25
+PUBMED:23565137 (GWAS)	alzheimer disease	0.25
+
+PPP1R37	Normalized score: 0.00116279069767442	Raw Score: 0.25
+PUBMED:23565137 (GWAS)	alzheimer disease	0.25
+
+MS4A4E	Normalized score: 0.0011627906976744	Raw Score: 0.249999999999995
+PUBMED:21460840 (GWAS)	alzheimer disease	0.249999999999995
+
+MS4A6A	Normalized score: 0.0011627906976744	Raw Score: 0.249999999999995
+PUBMED:21460840 (GWAS)	alzheimer disease	0.249999999999995
+
+MAN2A1	Normalized score: 0.00116279069767337	Raw Score: 0.249999999999775
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999999999775
+
+PGAM5P1	Normalized score: 0.00116279069767337	Raw Score: 0.249999999999775
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999999999775
+
+TREM2	Normalized score: 0.00116279069767209	Raw Score: 0.2499999999995
+PUBMED:23150908 (GWAS)	alzheimer disease	0.2499999999995
+
+MS4A4A	Normalized score: 0.00116279069766512	Raw Score: 0.249999999998
+PUBMED:21460841 (GWAS)	alzheimer disease	0.249999999998
+
+BCAS3	Normalized score: 0.00116279069766279	Raw Score: 0.2499999999975
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499999999975
+
+BZW2	Normalized score: 0.00116279069760465	Raw Score: 0.249999999985
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999999985
+
+TSPAN13	Normalized score: 0.00116279069760465	Raw Score: 0.249999999985
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999999985
+
+RRAS2	Normalized score: 0.00116279069759302	Raw Score: 0.2499999999825
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499999999825
+
+SPON1	Normalized score: 0.00116279069759302	Raw Score: 0.2499999999825
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499999999825
+
+PSMA1	Normalized score: 0.00116279069759302	Raw Score: 0.2499999999825
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499999999825
+
+FRMD4A	Normalized score: 0.00116279069755814	Raw Score: 0.249999999975
+PUBMED:22430674 (GWAS)	alzheimer disease	0.249999999975
+
+GAB2	Normalized score: 0.00116279069755814	Raw Score: 0.249999999975
+PUBMED:17553421 (GWAS)	alzheimer disease	0.249999999975
+
+MTHFD1L	Normalized score: 0.00116279069744186	Raw Score: 0.24999999995
+PUBMED:20885792 (GWAS)	alzheimer disease	0.24999999995
+
+EPHA1	Normalized score: 0.00116279069697674	Raw Score: 0.24999999985
+PUBMED:21460841 (GWAS)	alzheimer disease	0.24999999985
+
+CACNA1G	Normalized score: 0.00116279069651163	Raw Score: 0.24999999975
+PUBMED:23535033 (GWAS)	alzheimer disease	0.24999999975
+
+GRIN3B	Normalized score: 0.00116279069534884	Raw Score: 0.2499999995
+PUBMED:23571587 (GWAS)	alzheimer disease	0.2499999995
+
+HMHA1	Normalized score: 0.00116279069534884	Raw Score: 0.2499999995
+PUBMED:23571587 (GWAS)	alzheimer disease	0.2499999995
+
+GLIS3	Normalized score: 0.00116279069418605	Raw Score: 0.24999999925
+PUBMED:23562540 23562540 (GWAS)	alzheimer disease biomarkers	0.24999999925
+
+GMNC	Normalized score: 0.00116279069186047	Raw Score: 0.24999999875
+PUBMED:23562540 (GWAS)	alzheimer disease biomarkers	0.24999999875
+
+SNAR-I	Normalized score: 0.00116279069186047	Raw Score: 0.24999999875
+PUBMED:23562540 (GWAS)	alzheimer disease biomarkers	0.24999999875
+
+CCDC50	Normalized score: 0.00116279069186047	Raw Score: 0.24999999875
+PUBMED:23562540 (GWAS)	alzheimer disease biomarkers	0.24999999875
+
+UTS2B	Normalized score: 0.00116279069186047	Raw Score: 0.24999999875
+PUBMED:23562540 (GWAS)	alzheimer disease biomarkers	0.24999999875
+
+CD2AP	Normalized score: 0.0011627906872093	Raw Score: 0.24999999775
+PUBMED:21460841 (GWAS)	alzheimer disease	0.24999999775
+
+SAP30L	Normalized score: 0.00116279068604651	Raw Score: 0.2499999975
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499999975
+
+CTNNA2	Normalized score: 0.00116279068604651	Raw Score: 0.2499999975
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499999975
+
+ANKRD55	Normalized score: 0.00116279068604651	Raw Score: 0.2499999975
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499999975
+
+PDE7B	Normalized score: 0.00116279068604651	Raw Score: 0.2499999975
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499999975
+
+CLMN	Normalized score: 0.0011627906744186	Raw Score: 0.249999995
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999995
+
+MYO16	Normalized score: 0.0011627906744186	Raw Score: 0.249999995
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999995
+
+TGM6	Normalized score: 0.0011627906627907	Raw Score: 0.2499999925
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499999925
+
+BCHE	Normalized score: 0.0011627906627907	Raw Score: 0.2499999925
+PUBMED:23419831 (GWAS)	alzheimer disease biomarkers	0.2499999925
+
+FLJ45256	Normalized score: 0.00116279065116279	Raw Score: 0.24999999
+PUBMED:23535033 (GWAS)	alzheimer disease	0.24999999
+
+NCR2	Normalized score: 0.00116279065116279	Raw Score: 0.24999999
+PUBMED:23562540 (GWAS)	alzheimer disease biomarkers	0.24999999
+
+CRADD	Normalized score: 0.00116279063953488	Raw Score: 0.2499999875
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499999875
+
+GPC6	Normalized score: 0.00116279061627907	Raw Score: 0.2499999825
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499999825
+
+FMN2	Normalized score: 0.00116279061627907	Raw Score: 0.2499999825
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499999825
+
+OSBPL7	Normalized score: 0.00116279060465116	Raw Score: 0.24999998
+PUBMED:23535033 (GWAS)	alzheimer disease	0.24999998
+
+MRPL10	Normalized score: 0.00116279060465116	Raw Score: 0.24999998
+PUBMED:23535033 (GWAS)	alzheimer disease	0.24999998
+
+SP6	Normalized score: 0.00116279060465116	Raw Score: 0.24999998
+PUBMED:23535033 (GWAS)	alzheimer disease	0.24999998
+
+MOBP	Normalized score: 0.00116279058139535	Raw Score: 0.249999975
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999975
+
+AFF1	Normalized score: 0.00116279046511628	Raw Score: 0.24999995
+PUBMED:23535033 (GWAS)	alzheimer disease	0.24999995
+
+CYCS	Normalized score: 0.00116279046511628	Raw Score: 0.24999995
+PUBMED:23535033 (GWAS)	alzheimer disease	0.24999995
+
+PCDH11X	Normalized score: 0.00116279046511628	Raw Score: 0.24999995
+PUBMED:19136949 (GWAS)	alzheimer disease	0.24999995
+
+CELF2	Normalized score: 0.00116279046511628	Raw Score: 0.24999995
+PUBMED:21379329 (GWAS)	alzheimer disease	0.24999995
+
+PCED1B	Normalized score: 0.00116279034883721	Raw Score: 0.249999925
+PUBMED:19118814 (GWAS)	alzheimer disease	0.249999925
+
+SLC2A9	Normalized score: 0.00116279034883721	Raw Score: 0.249999925
+PUBMED:22005930 22005930 (GWAS)	alzheimer disease	0.249999925
+
+SLC4A8	Normalized score: 0.00116279034883721	Raw Score: 0.249999925
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999925
+
+PPP1R3B	Normalized score: 0.00116279034883721	Raw Score: 0.249999925
+PUBMED:22832961 (GWAS)	alzheimer disease	0.249999925
+
+GABRG3	Normalized score: 0.00116279034883721	Raw Score: 0.249999925
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999925
+
+ANO4	Normalized score: 0.00116279023255814	Raw Score: 0.2499999
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499999
+
+VAT1L	Normalized score: 0.00116279023255814	Raw Score: 0.2499999
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499999
+
+STK32B	Normalized score: 0.00116279011627907	Raw Score: 0.249999875
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999875
+
+DCHS2	Normalized score: 0.00116279011627907	Raw Score: 0.249999875
+PUBMED:22005931 (GWAS)	alzheimer disease	0.249999875
+
+PARVB	Normalized score: 0.00116279011627907	Raw Score: 0.249999875
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999875
+
+EXOC4	Normalized score: 0.00116279011627907	Raw Score: 0.249999875
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999875
+
+ST18	Normalized score: 0.00116279011627907	Raw Score: 0.249999875
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999875
+
+NKAIN2	Normalized score: 0.00116279	Raw Score: 0.24999985
+PUBMED:23535033 (GWAS)	alzheimer disease	0.24999985
+
+EFNA5	Normalized score: 0.00116279	Raw Score: 0.24999985
+PUBMED:23419831 (GWAS)	alzheimer disease biomarkers	0.24999985
+
+VSNL1	Normalized score: 0.00116279	Raw Score: 0.24999985
+PUBMED:22005930 (GWAS)	alzheimer disease	0.24999985
+
+RFC3	Normalized score: 0.00116279	Raw Score: 0.24999985
+PUBMED:20061627 (GWAS)	alzheimer disease	0.24999985
+
+PPAPDC1A	Normalized score: 0.00116279	Raw Score: 0.24999985
+PUBMED:23535033 (GWAS)	alzheimer disease	0.24999985
+
+ITGA6	Normalized score: 0.00116279	Raw Score: 0.24999985
+PUBMED:23419831 (GWAS)	alzheimer disease biomarkers	0.24999985
+
+ARHGAP20	Normalized score: 0.00116278988372093	Raw Score: 0.249999825
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999825
+
+NCS1	Normalized score: 0.00116278988372093	Raw Score: 0.249999825
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999825
+
+LUZP2	Normalized score: 0.00116278976744186	Raw Score: 0.2499998
+PUBMED:22881374 (GWAS)	alzheimer disease	0.2499998
+
+EDIL3	Normalized score: 0.00116278976744186	Raw Score: 0.2499998
+PUBMED:23419831 (GWAS)	alzheimer disease biomarkers	0.2499998
+
+CSMD1	Normalized score: 0.00116278976744186	Raw Score: 0.2499998
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499998
+
+MEGF10	Normalized score: 0.00116278976744186	Raw Score: 0.2499998
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499998
+
+DMXL1	Normalized score: 0.00116278965116279	Raw Score: 0.249999775
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999775
+
+PRRC2C	Normalized score: 0.00116278965116279	Raw Score: 0.249999775
+PUBMED:23535033 (GWAS)	alzheimer disease	0.249999775
+
+ATXN7L1	Normalized score: 0.00116278953488372	Raw Score: 0.24999975
+PUBMED:22881374 (GWAS)	alzheimer disease	0.24999975
+
+TTLL7	Normalized score: 0.00116278953488372	Raw Score: 0.24999975
+PUBMED:20061627 (GWAS)	alzheimer disease	0.24999975
+
+MMP3	Normalized score: 0.00116278953488372	Raw Score: 0.24999975
+PUBMED:22832961 (GWAS)	alzheimer disease	0.24999975
+
+ELMO1	Normalized score: 0.00116278953488372	Raw Score: 0.24999975
+PUBMED:23535033 (GWAS)	alzheimer disease	0.24999975
+
+ITGA1	Normalized score: 0.00116278953488372	Raw Score: 0.24999975
+PUBMED:23419831 (GWAS)	alzheimer disease biomarkers	0.24999975
+
+CCDC134	Normalized score: 0.00116278953488372	Raw Score: 0.24999975
+PUBMED:21123754 (GWAS)	alzheimer disease biomarkers	0.24999975
+
+MPZL1	Normalized score: 0.00116278953488372	Raw Score: 0.24999975
+PUBMED:22881374 (GWAS)	alzheimer disease	0.24999975
+
+EPC2	Normalized score: 0.00116278953488372	Raw Score: 0.24999975
+PUBMED:21123754 21123754 (GWAS)	alzheimer disease biomarkers	0.24999975
+
+MMP12	Normalized score: 0.00116278953488372	Raw Score: 0.24999975
+PUBMED:22832961 (GWAS)	alzheimer disease	0.24999975
+
+HECW1	Normalized score: 0.00116278953488372	Raw Score: 0.24999975
+PUBMED:23535033 (GWAS)	alzheimer disease	0.24999975
+
+SLC4A1AP	Normalized score: 0.00116278837209302	Raw Score: 0.2499995
+PUBMED:22159054 (GWAS)	alzheimer disease	0.2499995
+
+SLC9A9	Normalized score: 0.00116278837209302	Raw Score: 0.2499995
+PUBMED:23374588 (GWAS)	response to cholinesterase inhibitors in alzheimer disease	0.2499995
+
+RELN	Normalized score: 0.00116278837209302	Raw Score: 0.2499995
+PUBMED:20452100 (GWAS)	alzheimer disease	0.2499995
+
+LIPC	Normalized score: 0.00116278837209302	Raw Score: 0.2499995
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499995
+
+LIMS2	Normalized score: 0.00116278837209302	Raw Score: 0.2499995
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499995
+
+PIK3R1	Normalized score: 0.00116278837209302	Raw Score: 0.2499995
+PUBMED:23419831 (GWAS)	alzheimer disease biomarkers	0.2499995
+
+CAMK4	Normalized score: 0.00116278837209302	Raw Score: 0.2499995
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499995
+
+NFIB	Normalized score: 0.00116278837209302	Raw Score: 0.2499995
+PUBMED:23419831 (GWAS)	alzheimer disease biomarkers	0.2499995
+
+LOC390956	Normalized score: 0.00116278837209302	Raw Score: 0.2499995
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499995
+
+PLEKHG1	Normalized score: 0.00116278837209302	Raw Score: 0.2499995
+PUBMED:23535033 (GWAS)	alzheimer disease	0.2499995
+
+ZNF224	Normalized score: 0.00116278837209302	Raw Score: 0.2499995
+PUBMED:19118814 (GWAS)	alzheimer disease	0.2499995
+
+MSRA	Normalized score: 0.00116278720930233	Raw Score: 0.24999925
+PUBMED:20452100 (GWAS)	alzheimer disease	0.24999925
+
+RNFT2	Normalized score: 0.00116278720930233	Raw Score: 0.24999925
+PUBMED:22005931 (GWAS)	alzheimer disease	0.24999925
+
+ADAMTS9	Normalized score: 0.00116278720930233	Raw Score: 0.24999925
+PUBMED:22005931 (GWAS)	alzheimer disease	0.24999925
+
+ARID1B	Normalized score: 0.00116278720930233	Raw Score: 0.24999925
+PUBMED:23419831 (GWAS)	alzheimer disease biomarkers	0.24999925
+
+HRK	Normalized score: 0.00116278720930233	Raw Score: 0.24999925
+PUBMED:22005931 (GWAS)	alzheimer disease	0.24999925
+
+CDON	Normalized score: 0.00116278720930233	Raw Score: 0.24999925
+PUBMED:22881374 (GWAS)	alzheimer disease	0.24999925
+
+STK24	Normalized score: 0.00116278604651163	Raw Score: 0.249999
+PUBMED:22159054 (GWAS)	alzheimer disease	0.249999
+
+NUAK1	Normalized score: 0.00116278604651163	Raw Score: 0.249999
+PUBMED:23419831 (GWAS)	alzheimer disease biomarkers	0.249999
+
+C12ORF75	Normalized score: 0.00116278604651163	Raw Score: 0.249999
+PUBMED:23419831 (GWAS)	alzheimer disease biomarkers	0.249999
+
+VLDLR	Normalized score: 0.00116278604651163	Raw Score: 0.249999
+PUBMED:22005931 (GWAS)	alzheimer disease	0.249999
+
+KCNV2	Normalized score: 0.00116278604651163	Raw Score: 0.249999
+PUBMED:22005931 (GWAS)	alzheimer disease	0.249999
+
+ZNF320	Normalized score: 0.00116278488372093	Raw Score: 0.24999875
+PUBMED:22005930 (GWAS)	alzheimer disease	0.24999875
+
+PAX2	Normalized score: 0.00116278372093023	Raw Score: 0.2499985
+PUBMED:20061627 (GWAS)	alzheimer disease	0.2499985
+
+POLN	Normalized score: 0.00116278372093023	Raw Score: 0.2499985
+PUBMED:22159054 (GWAS)	alzheimer disease	0.2499985
+
+PCNX	Normalized score: 0.00116278372093023	Raw Score: 0.2499985
+PUBMED:22881374 (GWAS)	alzheimer disease	0.2499985
+
+MIR1275	Normalized score: 0.00116278255813953	Raw Score: 0.24999825
+PUBMED:22005931 (GWAS)	alzheimer disease	0.24999825
+
+RP11-341A22.2	Normalized score: 0.00116278255813953	Raw Score: 0.24999825
+PUBMED:22005930 (GWAS)	alzheimer disease	0.24999825
+
+LEMD2	Normalized score: 0.00116278255813953	Raw Score: 0.24999825
+PUBMED:22005931 (GWAS)	alzheimer disease	0.24999825
+
+MLN	Normalized score: 0.00116278255813953	Raw Score: 0.24999825
+PUBMED:22005931 (GWAS)	alzheimer disease	0.24999825
+
+STK11	Normalized score: 0.00116278139534884	Raw Score: 0.249998
+PUBMED:22005930 (GWAS)	alzheimer disease	0.249998
+
+SASH1	Normalized score: 0.00116278139534884	Raw Score: 0.249998
+PUBMED:20061627 (GWAS)	alzheimer disease	0.249998
+
+RIMBP2	Normalized score: 0.00116278139534884	Raw Score: 0.249998
+PUBMED:22005930 (GWAS)	alzheimer disease	0.249998
+
+SEC11C	Normalized score: 0.00116278139534884	Raw Score: 0.249998
+PUBMED:22005931 (GWAS)	alzheimer disease	0.249998
+
+DIP2C	Normalized score: 0.00116278139534884	Raw Score: 0.249998
+PUBMED:22005930 (GWAS)	alzheimer disease	0.249998
+
+DISC1	Normalized score: 0.00116278023255814	Raw Score: 0.24999775
+PUBMED:19118814 (GWAS)	alzheimer disease	0.24999775
+
+ZNF592	Normalized score: 0.00116278023255814	Raw Score: 0.24999775
+PUBMED:22005931 (GWAS)	alzheimer disease	0.24999775
+
+EFR3A	Normalized score: 0.00116278023255814	Raw Score: 0.24999775
+PUBMED:23374588 (GWAS)	response to cholinesterase inhibitors in alzheimer disease	0.24999775
+
+ALPK3	Normalized score: 0.00116278023255814	Raw Score: 0.24999775
+PUBMED:22005931 (GWAS)	alzheimer disease	0.24999775
+
+SLC28A1	Normalized score: 0.00116278023255814	Raw Score: 0.24999775
+PUBMED:22005931 (GWAS)	alzheimer disease	0.24999775
+
+CNTNAP2	Normalized score: 0.00116278023255814	Raw Score: 0.24999775
+PUBMED:22159054 (GWAS)	alzheimer disease	0.24999775
+
+MPP7	Normalized score: 0.00116278023255814	Raw Score: 0.24999775
+PUBMED:22005930 (GWAS)	alzheimer disease	0.24999775
+

@@ -1,0 +1,11 @@
+ANNOVAR Version:
+	$Date$
+ANNOVAR Information:
+	For questions, comments, documentation, bug reports and program update, please visit http://www.openbioinformatics.org/annovar/
+ANNOVAR Command:
+	./lib/compiled_database/../../bin/annotate_variation.pl -geneanno -buildver hg19 -outfile /home/huiyang/Phenolyzer_all/command_line/out/alzheimer/out /home/huiyang/Phenolyzer_all/command_line/out/alzheimer/out.avinput ./lib/compiled_database/../humandb
+ANNOVAR Started:
+	Wed Apr 29 22:48:52 2015
+NOTICE: Reading gene annotation from lib/compiled_database/../humandb/hg19_refGene.txt ... Done with 42158 transcripts (including 7475 without coding sequence annotation) for 23749 unique genes
+NOTICE: Finished gene-based annotation on 113411 genetic variants in /home/huiyang/Phenolyzer_all/command_line/out/alzheimer/out.avinput
+NOTICE: Output files were written to /home/huiyang/Phenolyzer_all/command_line/out/alzheimer/out.variant_function, /home/huiyang/Phenolyzer_all/command_line/out/alzheimer/out.exonic_variant_function

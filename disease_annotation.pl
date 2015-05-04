@@ -785,7 +785,7 @@ sub annovar_annotate{
     my $sc;
        $sc = "perl $path/../../bin/convert2annovar.pl -format bed $out_directory/$bedfile > $out.avinput";
     system ($sc) and die "Error: cannot execute system command $sc\n";	
-      $sc = "perl $path/../../bin/annotate_variation.pl -geneanno -buildver $buildver -outfile $out $out.avinput $database_directory/../humandb";
+      $sc = "perl $path/../../bin/annotate_variation.pl -geneanno -buildver $buildver -outfile $out $out.avinput $path/../humandb";
     system ($sc) and die "Error: cannot execute system command $sc\n";	
     my ($countregion, $countexonic) = qw/0 0/;
     my ($totallen);
@@ -820,7 +820,7 @@ $path =~s/\/$//;
 $work_path ||= cwd();
 $out or $out="out";
 $out = "$out_directory/$out";
-(-d dirname($out)) or mkdir(dirname($out)) or die "ERROR: $out is not legal output!!";
+(-d dirname($out)) or system("mkdir ".dirname($out)) and die "ERROR: $out is not legal output!!";
 
 
 $disease_count_file =       "DB_COMPILED_DISEASE_COUNT";
@@ -1247,7 +1247,7 @@ sub TextStandardize {
         -h, --help                      print help message
         -m, --man                       print complete documentation
         -v, --verbose                   use verbose output
-        -out <string>		            output file name prefix (default:out)
+        -out <string>                   output file name prefix (default:out)
         -d, --directory                 compiled database directory (default is ./lib/compiled_database)
         -f, --file                      the input will be treated as file names(both diseases and genes)
         -p, --prediction                Use the Protein interaction and Biosystem database to predict unreported gene 
