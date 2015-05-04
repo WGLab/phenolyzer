@@ -23,8 +23,8 @@ cd phenolyzer
 ## Pre-requisites
 - Download the databases for CNV annotation (No need to do this for other functions)
 ```
-perl bin/annotate_variation.pl -downdb -buildver hg19 -webfrom annovar refGene ../lib/humandb
-perl bin/annotate_variation.pl -downdb -buildver hg18 -webfrom annovar refGene ../lib/humandb
+perl bin/annotate_variation.pl -downdb -buildver hg19 -webfrom annovar refGene lib/humandb
+perl bin/annotate_variation.pl -downdb -buildver hg18 -webfrom annovar refGene lib/humandb
 ```
 
 ## Synopsis
