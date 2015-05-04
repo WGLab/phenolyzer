@@ -10,6 +10,12 @@ Phenolyzer is also available as a web-sever at [here](http://phenolyzer.usc.edu)
 ## Mannual
 The more detailed manual is available at [here](http://phenolyzer.usc.edu/download/Phenolyzer_manual_20150503.pdf) 
 
+## Installation
+Please clone the repository into your computer:
+```
+git clone https://github.com/WangGenomicsLab/phenolyzer
+```
+
 ## Pre-requisites
 - Download the databases for CNV annotation (No need to do this for other functions)
 ```
