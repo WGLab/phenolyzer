@@ -15,6 +15,10 @@ Please clone the repository into your computer:
 ```
 git clone https://github.com/WangGenomicsLab/phenolyzer
 ```
+Then enter phenolyzer directory:
+```
+cd phenolyzer
+```
 
 ## Pre-requisites
 - Download the databases for CNV annotation (No need to do this for other functions)
