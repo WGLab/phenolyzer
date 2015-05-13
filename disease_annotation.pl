@@ -14,15 +14,16 @@ our $VERSION = 			 'v1.0.5';
 our $LAST_CHANGED_DATE = '$LastChangedDate: 2015-02-21 (21, Feburary, 2015) $';
 our ($verbose, $help, $man,$buildver,$bedfile);
 our ($query_diseases,$if_file,$if_exact_match,$prediction,$is_phenotype,$if_wordcloud);
+our ($if_hi, $if_rvis);
 our ($out, $database_directory, $if_logistic_regression);
 our ($HPRD_WEIGHT, $BIOSYSTEM_WEIGHT, $GENE_FAMILY_WEIGHT, %GENE_WEIGHT, $HTRI_WEIGHT, $GENE_DISEASE_WEIGHT, $INTERCEPT);
 
-my  ($ctd_disease_file, $hprd_file, $biosystem_file, $disease_count_file, $gene_disease_score_file,
+our  ($ctd_disease_file, $hprd_file, $biosystem_file, $disease_count_file, $gene_disease_score_file,
      $hpo_annotation_file, $gene_annotation_file, $omim_disease_id_file, $biosystem_to_info_file,
-     $gene_family_file, $htri_file, $omim_description_file, 
-     $addon_gene_disease_score_file, $addon_gene_gene_score_file,
+     $gene_family_file, $htri_file, $omim_description_file, $hi_gene_score_file, $rvis_gene_score_file,
+     $addon_gene_disease_score_file, $addon_gene_gene_score_file, 
      $addon_gene_disease_weight, $addon_gene_gene_weight, 
-     $genelist, @genes, %gene_hash, %gene_id, 
+     $genelist, @genes, %gene_hash, %gene_id, %hi_score, %rvis_score,
      $path, $work_path );
 
 # %gene_hash ( $gene => "Not Annotated" or "Chr:Pos1 - Pos2")
@@ -31,6 +32,7 @@ GetOptions('verbose|v'=>\$verbose, 'help|h'=>\$help, 'man|m'=>\$man,'file|f'=>\$
               'work_directory|w=s'=>\$work_path,'out=s'=>\$out,'prediction|p'=>\$prediction,
               'buildver=s'=>\$buildver,'bedfile=s'=>\$bedfile,'gene=s'=>\$genelist,'phenotype|ph'=>\$is_phenotype,
               'exact'=>\$if_exact_match, 'logistic'=>\$if_logistic_regression, 
+              'haploinsufficiency|hi'=>\$if_hi, 'intolerance|it'=>\$if_rvis,
               'addon=s'=>\$addon_gene_disease_score_file,'addon_gg=s'=>\$addon_gene_gene_score_file,
               'addon_weight=s'=>\$addon_gene_disease_weight, 'addon_gg_weight=s'=>\$addon_gene_gene_weight,
               'hprd_weight=s'=>\$HPRD_WEIGHT, 'biosystem_weight=s'=>\$BIOSYSTEM_WEIGHT, 
@@ -211,12 +213,14 @@ print STDERR "------------------------------------------------------------------
            @{$output{$_}} = @{$item->{$_}} for keys %$item;
            open (MERGE,    ">$out.merge_gene_scores") or die;
            open (ANNOTATED,">$out.annotated_gene_scores") if (%gene_hash and not $prediction);
-           open (SEED_GENE_LIST, ">$out.seed_gene_list");
-           print SEED_GENE_LIST join("\t", qw(Rank Gene ID Score))."\n";
+           open (my $seed_fh, ">$out.seed_gene_list");
+           my $annotated_seed_fh;
+          #### header for seed gene list #### 
+           printHeader($seed_fh, 0);
            if (%gene_hash and not $prediction) 
            {
-           	  open (ANNOTATED_GENE_LIST, ">$out.annotated_gene_list");
-           	  print ANNOTATED_GENE_LIST join("\t", qw(Rank Gene ID Score))."\n";
+           	  open ($annotated_seed_fh, ">$out.annotated_gene_list");
+           	  printHeader($annotated_seed_fh,0);
            };
            print MERGE     "Tuple number in the gene_disease databse for all the terms: $count \n"; 
            print ANNOTATED "Tuple number in the gene_disease databse for all the terms: $count \n"
@@ -229,6 +233,7 @@ print STDERR "------------------------------------------------------------------
            }
            my $rank = 0;
            my $annotated_rank = 0;
+           my (%hi_out, %rvis_out);
            for my $gene(sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output)
            {
            	       $rank++;
@@ -263,13 +268,34 @@ print STDERR "------------------------------------------------------------------
                    print ANNOTATED $gene."\tID:$gene_id{$gene} ".$gene_hash{$gene}."\t$normalized_score\n".$content."\n"
                    if ($gene_hash{$gene} and not $prediction);
                    
-                  #Normalize score for the genelist
+                  #Normalized score for the genelist
                   $normalized_score = sprintf('%.4g', $normalized_score);
-                  print SEED_GENE_LIST $rank."\t".$gene."\t".$gene_id{$gene}."\t".$normalized_score."\n";
-                  print ANNOTATED_GENE_LIST ++$annotated_rank."\t".$gene."\t".$gene_id{$gene}."\t".$normalized_score."\n"
-                  if ($gene_hash{$gene} and not $prediction);  
+                  print $seed_fh $rank."\t".$gene."\t".$gene_id{$gene}."\t".$normalized_score;
+                  if($if_hi){
+                  	  $hi_score{$gene} = 0 if not defined $hi_score{$gene};
+                  	  print $seed_fh "\t$hi_score{$gene}";
+                  }
+                  if($if_rvis){
+                  	  $rvis_score{$gene} = 0 if not defined $rvis_score{$gene};
+                  	  print $seed_fh "\t$rvis_score{$gene}";
+                  }
+                  print $seed_fh "\n";
+                  #Normalized score for the annotation list
+                  if ($gene_hash{$gene} and not $prediction){
+                     print $annotated_seed_fh join("\t",(++$annotated_rank, $gene, $gene_id{$gene}, $normalized_score));
+                     if($if_hi){
+                     	$hi_score{$gene} = 0 if not defined $hi_score{$gene};
+                     	print $annotated_seed_fh "\t$hi_score{$gene}";
+                     }
+                     if($if_rvis){
+                     	$rvis_score{$gene} = 0 if not defined $rvis_score{$gene};
+                  	    print $annotated_seed_fh "\t$rvis_score{$gene}";
+                     }
+                     print $annotated_seed_fh "\n";
+                  }
            }  
                close (MERGE);
+               close ($seed_fh);
                close (ANNOTATED) if (%gene_hash and not $prediction);  
                close (ANNOTATED_GENE_LIST) if (%gene_hash and not $prediction);  
       
@@ -279,19 +305,20 @@ print STDERR "------------------------------------------------------------------
     	($max_score, $min_score) = (0, 1);
         my $predicted_item = predict_genes($item);
         my %predicted_output = ();
-         @{$predicted_output{$_}} = @{$predicted_item->{$_}} for keys %$predicted_item;
+        my $annotated_fh;
+        @{$predicted_output{$_}} = @{$predicted_item->{$_}} for keys %$predicted_item;
         if(%gene_hash)
         {
         open (ANNOTATED,">$out.annotated_gene_scores") ;
-        open (ANNOTATED_GENE_LIST, ">$out.annotated_gene_list");
-        print ANNOTATED_GENE_LIST join("\t", qw(Rank Gene ID Score Status))."\n";
+        open ($annotated_fh, ">$out.annotated_gene_list");
+        printHeader($annotated_fh,1);
         }
 	    open (PREDICTED, ">$out.predicted_gene_scores");
-	    open (GENE_LIST,">$out.final_gene_list");
-	    print GENE_LIST join("\t", qw(Rank Gene ID Score Status))."\n";
-	      print  PREDICTED   "Tuple number in the gene_disease databse for all the terms: $count \n"; 
-	      print  ANNOTATED   "Tuple number in the gene_disease databse for all the terms: $count \n"
-	      if %gene_hash; 
+	    open (my $final_fh,">$out.final_gene_list");
+	    printHeader($final_fh, 1);
+	    print  PREDICTED   "Tuple number in the gene_disease databse for all the terms: $count \n"; 
+	    print  ANNOTATED   "Tuple number in the gene_disease databse for all the terms: $count \n"
+	    if %gene_hash; 
 	    
 	     #Find the max and min score
            for my $gene (keys %predicted_output)
@@ -326,12 +353,32 @@ print STDERR "------------------------------------------------------------------
                    if ($gene_hash{$gene});
                    #Normalize score for the genelist
                    $normalized_score = sprintf('%.4g', $normalized_score);
-                   print GENE_LIST $rank."\t".$gene."\t".$gene_id{$gene}."\t".$normalized_score."\t".$status."\n";
-                   print ANNOTATED_GENE_LIST ++$annotated_rank."\t".$gene."\t".$gene_id{$gene}."\t"
-                   .$normalized_score."\t".$status."\n"
-                   if ($gene_hash{$gene});
+                   print $final_fh $rank."\t".$gene."\t".$gene_id{$gene}."\t".$normalized_score."\t".$status;
+                   if($if_hi){
+                   	 $hi_score{$gene} = 0 if not defined $hi_score{$gene};
+                   	 print $final_fh "\t$hi_score{$gene}";
+                   }
+                   if($if_rvis){
+                   	 $rvis_score{$gene} = 0 if not defined $rvis_score{$gene};
+                   	 print $final_fh "\t$rvis_score{$gene}";
+                   }
+                   print $final_fh "\n";
+                   
+                   if ($gene_hash{$gene}){
+                     print $annotated_fh  join("\t",(++$annotated_rank,$gene,$gene_id{$gene},$normalized_score,$status)) ;
+                     if($if_hi){
+                     	$hi_score{$gene} = 0 if not defined $hi_score{$gene};
+                     	print $annotated_fh "\t$hi_score{$gene}";
+                     }
+                     if($if_rvis){
+                   	 $rvis_score{$gene} = 0 if not defined $rvis_score{$gene};
+                   	 print $annotated_fh "\t$rvis_score{$gene}";
+                     }
+                     print $annotated_fh "\n";
+                   }
             }  
             close (PREDICTED);
+            close ($final_fh);
             close (ANNOTATED) if %gene_hash; 
             close (ANNOTATED_GENE_LIST) if (%gene_hash);
     }
@@ -835,6 +882,8 @@ $omim_disease_id_file = "DB_COMPILED_OMIM_ID_DISEASE";
 $gene_family_file = "DB_HGNC_GENE_FAMILY";
 $htri_file = "DB_HTRI_TRANSCRIPTION_INTERACTION";
 $omim_description_file = "DB_OMIM_DESCRIPTION";
+$hi_gene_score_file = "DB_HI_SCORE";
+$rvis_gene_score_file = "DB_RVIS_SCORE";
 my %gene_transform;
 if (defined $if_file) {                                     #The disease input will come from file
 	 print STDERR  "NOTICE: The file name option was used!! \n";
@@ -847,8 +896,30 @@ if (defined $if_file) {                                     #The disease input w
 	 $genelist=join("\t",@input);
 	 }
 }
-                     
-open (GENE_ID, "$path/$gene_annotation_file");
+#build the haploinsufficiency hash
+if($if_hi){
+	print STDERR "NOTICE:The haploinsufficency score is used!\n";
+	open (HI, "$path/$hi_gene_score_file") or die;
+    for (<HI>){
+    	s/[\r\n+]//g;
+    	my ($gene, $score) = split("\t");
+    	$hi_score{$gene} = $score;
+    }
+    close(HI);   
+}
+#build the gene intolerance shash
+if($if_rvis){
+	print STDERR "NOTICE:The gene intolerance score is used!\n";
+	open(RVIS, "$path/$rvis_gene_score_file") or die;
+	for (<RVIS>){
+		s/[\r\n]+//g;
+		my ($gene, $score) = split("\t");
+		$rvis_score{$gene} = $score;
+	}
+}
+
+# Read information from refGene database                 
+open (GENE_ID, "$path/$gene_annotation_file") or die;
 my $i=0;
 for my $line (<GENE_ID>)
 {
@@ -884,12 +955,11 @@ if(defined $genelist){                                      #THE genelist will b
     if($individual_term=~/^\W*$/){next;}
     $individual_term=~s/^\W*(.*?)\W*$/$1/;                 #Get rid of the whitespaces in the beginnning and end
     my $upper_gene = uc $individual_term;
-    if($gene_transform{$upper_gene})
-    {
-    $gene_hash{$gene_transform{$upper_gene}} ="-" unless defined $gene_hash{$gene_transform{$upper_gene}};
+    if($gene_transform{$upper_gene}){
+      $gene_hash{$gene_transform{$upper_gene}} ="-" unless defined $gene_hash{$gene_transform{$upper_gene}};
+      }
     }
-                                   }
-                     }
+    }
                      
 $i=0;
 seek GENE_ID,0,0;
@@ -900,8 +970,7 @@ for my $line (<GENE_ID>)
 	my ($id, $gene, $synonyms) = split("\t", $line);
     $gene_id{$gene} = $id;
     $gene_id{uc $gene} = $id;
-}
-      
+}   
 close (GENE_ID);	 
 
 
@@ -1238,7 +1307,24 @@ sub TextStandardize {
 	return $word;
 } 
  	 
- 	 
+sub printHeader{
+	@_==2 or die "ERROR: printHeader() must take tw oarguments";
+	my ($fh, $if_predict) = @_;
+	if (not $if_predict){
+    print $fh join("\t", qw(Rank Gene ID Score));
+    }
+     else{
+  	    print $fh join("\t", qw(Rank Gene ID Score Status));
+    }
+    if($if_hi){
+      print $fh "\tHaploinsufficiencyScore";
+    }
+    if($if_rvis){
+      print $fh "\tGeneIntoleranceScore";
+    }
+    print $fh "\n";
+	
+} 
 =head1 SYNOPSIS
 
  disease_annotation.pl [arguments] <disease_names or disease_filename>
@@ -1253,6 +1339,8 @@ sub TextStandardize {
         -p, --prediction                Use the Protein interaction and Biosystem database to predict unreported gene 
                                         disease relations (like HPRD human protein interaction, Biosystem database and so on)
         -ph, --phenotype                the input term is also treated as a phenotype, the HPO annotation and OMIM description would be used      
+        -hi, --haploinsufficiency       use haploinsufficiency score as weight to prioritize dominant disease genes
+        -it, --intolerance              use gene intolerance score as weight to prioritize severe disease genes
         --bedfile                       the bed file as a genomic region used for selection and annotation of the genes
         --buildver                      the build version (hg18 or hg19) to annotate the bedfile
         --wordcloud                     generates a wordcloud of the interpretated diseases if used (not working if you input 'all diseases')
