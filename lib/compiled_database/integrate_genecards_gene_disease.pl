@@ -12,7 +12,7 @@ for my $line (<GENECARDS>)
     next if(not $gene_transform{uc $gene});
 	$gene=$gene_transform{uc $gene};
 	my @diseases= split(/, /,$disease);
-	@diseases = map { $_=TextStandardize($_);lc $_;  } @diseases;
+	@diseases = map { $_=TextStandardize($_);$_=GetRidOfSusceptibility($_);lc $_;  } @diseases;
 	$output_hash{join("\t",($gene, $_, "unknown", 0.25, "GENE_CARDS"))}=1 for @diseases;
 }
 print OUT $_."\n" for (keys %output_hash);
@@ -59,7 +59,12 @@ sub TextStandardize {
 	$word=~s/\bshow all\b//ig;
 	return $word;
 } 
- 	 
+ sub GetRidOfSusceptibility{
+	@_==1 or die "input illegal!!";
+	$_[0] =~ s/^(.*?)\W*susc?eptibi?lity( to)?,?.*/$1/i;
+	$_[0] =~ s/autism \d+/autism/gi;
+	return $_[0];
+} 
  	 
  	 
  	 

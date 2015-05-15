@@ -10,8 +10,8 @@ my $out_directory = cwd();
 my $dirname = dirname(__FILE__);
 chdir $dirname;
 
-our $VERSION = 			 'v1.0.5';
-our $LAST_CHANGED_DATE = '$LastChangedDate: 2015-02-21 (21, Feburary, 2015) $';
+our $VERSION = 			 'v0.0.2';
+our $LAST_CHANGED_DATE = '$LastChangedDate: 2015-05-13 $';
 our ($verbose, $help, $man,$buildver,$bedfile);
 our ($query_diseases,$if_file,$if_exact_match,$prediction,$is_phenotype,$if_wordcloud);
 our ($if_hi, $if_rvis);
@@ -898,7 +898,7 @@ if (defined $if_file) {                                     #The disease input w
 }
 #build the haploinsufficiency hash
 if($if_hi){
-	print STDERR "NOTICE:The haploinsufficency score is used!\n";
+	print STDERR "NOTICE: The haploinsufficency score is used!\n";
 	open (HI, "$path/$hi_gene_score_file") or die;
     for (<HI>){
     	s/[\r\n+]//g;
@@ -909,7 +909,7 @@ if($if_hi){
 }
 #build the gene intolerance shash
 if($if_rvis){
-	print STDERR "NOTICE:The gene intolerance score is used!\n";
+	print STDERR "NOTICE: The gene intolerance score is used!\n";
 	open(RVIS, "$path/$rvis_gene_score_file") or die;
 	for (<RVIS>){
 		s/[\r\n]+//g;

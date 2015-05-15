@@ -45,6 +45,7 @@ for my $line (<DIS_GEN_NET>){
 	my ($gene, $disease, $score, $disease_id) = @words[6,9,1,8];
 	$disease =~s/"//g;
 	 $disease = TextStandardize($disease);
+	 $disease = GetRidOfSusceptibility($disease);
 	$gene=$gene_transform{uc $gene};
 	my $repeat_line = join ("\t", ($gene, $disease_id, $score, "DISGENET"));
     my $output = join ("\t", ($gene, $disease, $disease_id, $score, "DISGENET"));
@@ -68,6 +69,7 @@ for my $line (<GAD>){
 	$disease =~s/\bIII\b/3/g;
 	$disease =~s/\bI\b/1/g;
 	 $disease = TextStandardize($disease);
+	 $disease = GetRidOfSusceptibility($disease);
 	 $disease = lc $disease;
 	if($if_association and $gene and $disease!~/^\W*$/ and $pubmed_id >0 )
 	{	
@@ -104,7 +106,12 @@ sub TextStandardize {
 	$word=~s/\bshow all\b//ig;
 	return $word;
 } 
- 	 
+sub GetRidOfSusceptibility{
+	@_==1 or die "input illegal!!";
+	$_[0] =~ s/^(.*?)\W*susc?eptibi?lity( to)?,?.*/$1/i;
+	$_[0] =~ s/autism \d+/autism/gi;
+	return $_[0];
+}
  	 
  	 
  	 

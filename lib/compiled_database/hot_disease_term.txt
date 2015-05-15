@@ -1,7 +1,6 @@
 alkaptonuria left ventricular noncompaction 7
 thick nail
 mucopolysaccharidosis type ix
-gout gout susceptibility 4
 high coronary heart disease risk particularly affects ser
 colorado
 wilson disease ethylmalonic encephalopathy
@@ -34,10 +33,8 @@ osteodysplasty melnick needles type
 superior mesenteric artery aneurysm
 metacarpal synostosis
 dribbling
-colorectal cancer susceptibility to 1
 cirrhosis dystonia polycythemia hypermanganesemia
 ercc3 related xeroderma pigmentosum xeroderma pigmentosum group b
-autism 14b chromosome 16p11 2 duplication
 spermatogenic failure 13 spermatogenic failure 14
 triangular epiphysis of the distal phalanx of the 2nd finger
 abnormality of cells of the granulocytic lineage
@@ -140,7 +137,6 @@ pachyonychia congenita 4 pachyonychia congenita 2
 vangl1 related neural tube defect sacral defect with anterior meningocele  20
 increased perinatal immunodeficiency virus
 normocytic hypoplastic anemia
-hemolytic uremic syndrome atypical susceptibility to 2
 autosomal recessive spastic paraplegia type 20
 large posterior fontanel
 acrocallosal syndrome schinzel type
@@ -228,8 +224,6 @@ cancer of the pancreas
 short fibula
 pigmented micronodular adrenocortical
 thryoid dyshormonogenesis 6
-restless legs syndrome susceptibility to 3
-neuroblastoma susceptibility atypical teratoid rhabdoid tumor
 micropolygyria
 irregular metaphyses of the upper limbs
 kufor rakeb
@@ -275,7 +269,6 @@ lung adenoma leukocyte adhesion deficiency type iii
 absent molars
 epiphyseal abnormality
 skin abnormality
-psoriasis psoriasis susceptibility 7
 cardiorespiratory
 osteolytic defects of the distal phalanges of the toes
 duplication of the distal phalanx of the 3rd finger
@@ -306,7 +299,6 @@ constrictive bronchiolitis
 olivopontocerebellar atrophy migraine  35
 odontogenic keratocysts of the jaw
 hypoplasia of the prostate
-parkinson disease 13 autosomal dominant susceptibility to
 hepatic vascular malformations
 percussion induced rapid rolling muscle contractions
 peroxisome biogenesis disorder 3a peroxisome biogenesis disorder 3b
@@ -337,7 +329,6 @@ obesity metabolic syndrome
 delayed dental eruption
 head injury glaucoma 1 open angle 1o
 cardiomyopathy dilated 1d tnnt2 related dilated cardiomyopathy  21
-psoriasis susceptibility 13
 atrophy/degeneration affecting the cerebrum
 tgif1
 williams beuren syndrome sall4 related disorders
@@ -346,7 +337,6 @@ ehlers danlos syndrome progeroid type 1 spondyloepimetaphyseal dysplasia  7
 pseudocoarctation of the aorta
 vestibular neurolemmoma
 short middle phalanx of the 4th toe
-basal cell carcinoma susceptibility to 1
 abnormal mitochondrion morphology
 abnormality of the musculature of the thigh
 bifid tragus
@@ -580,6 +570,7 @@ onset and clinical course
 ednrb related hirschsprung
 shortened phalanges
 partial syndactyly
+charge syndrome autism
 convex nasal ridge
 axillary freckling
 short tibia
@@ -598,7 +589,6 @@ hypoplastic pilosebaceous units
 anus cancer hypersplenism
 tetanus human t cell leukemia virus type 1  7
 aplasia of the index finger
-systemic lupus erythematosus with nephritis susceptibility to 2
 mild joint stiffness
 autosomal recessive spastic paraplegia type 35
 hereditary nonpolyposis colorectal cancer type 5
@@ -904,7 +894,6 @@ parkinson disease 20 early onset parkinson disease 19 juvenile onset
 absent malleus
 increased phosphoribosylpyrophosphate
 cholesterol metabolic
-autoimmune enteropathy and endocrinopathy susceptibility to chronic infections
 constitutional megaloblastic anemia with severe neurologic
 delayed elbow epiphyseal ossification
 small epiphyses of the toes
@@ -946,7 +935,6 @@ glycosylphosphatidylinositol deficiency cleidocranial dysplasia
 broad distal phalanx of the 3rd toe
 glabellar abnormality
 agenesis of primary mandibular central incisor
-autism susceptibility 14a chromosome 16p11 2 deletion
 edema of dorsum of hands and feet
 kidney disease polycystic kidney disease type 2
 abnormal zinc metabolism
@@ -958,7 +946,6 @@ bbs4 related bardet biedl
 flexion contracture of the 2nd finger
 hypotrichosis 11 hypotrichosis 6
 primary hypertrophic osteoarthropathy autosomal recessive 2
-secretory diarrhea autism susceptibility
 aplasia/hypoplasia of the abdominal wall musculature
 vertebral arch anomaly
 increased risk of pancreatic cancer
@@ -1067,7 +1054,6 @@ hirsute forehead
 amyotrophy of the musculature of the pelvis
 ovarian teratoma
 curved middle phalanges of the hand
-dnase1 related susceptibility to systemic lupus erythematosus bronchitis
 triangular shaped 1st metacarpal
 flat capital femoral epiphysis
 classic bartter syndrome
@@ -1382,7 +1368,6 @@ body dysmorphic disorder omodysplasia 1
 epilepsy childhood absence 6
 combined oxidative phosphorylation deficiency 13 deafness autosomal recessive 70
 cep290 related joubert syndrome joubert syndrome  23
-pancreatic cancer susceptibility 3
 lysinuria
 broad distal phalanx of the 5th finger
 oculomelic
@@ -1538,7 +1523,6 @@ episodic hemolysis
 extrapulmonary tuberculosis immunodeficiency common variable 11
 cowden disease 4
 tmem67 related joubert
-restless legs syndrome susceptibility to 5
 epileptic encephalopathy early infantile 7 benign familial neonatal epilepsy
 triangular epiphyses of the metacarpals
 dfnb61
@@ -1552,6 +1536,7 @@ buoyant
 variable severity
 partial duplication of the phalanx of hand
 primary ovarian failure
+pitt hopkins like syndrome 1 autism
 norman
 irritable bowel syndrome obstructive sleep apnea
 abnormal vertebral ossification
@@ -1725,7 +1710,6 @@ hepatitis b virus infection pneumoconiosis
 hashimotos thyroiditis
 x linked intellectual disability porteous type
 diabetes mellitus noninsulin dependent association with nephroblastoma
-efhc1
 clonal t cell large granular lymphocyte
 infections recurrent with encephalopathy hepatic dysfunction and cardiovasuclar malformations oral cavity cancer
 contracture of the distal interphalangeal joint of the 3rd toe
@@ -1773,7 +1757,6 @@ urine concentration defect
 loss of facial adipose tissue
 valgus position of the calcaneus
 congenital disorder of glycosylation type ie
-liver disease pnpla3 related susceptibility to nonalchoholic fatty liver disease
 cd3 epsilon locus on chromosome
 cardiomyopathy dilated 1o abcc9 related dilated cardiomyopathy  12
 swine influenza vesiculitis
@@ -1820,11 +1803,9 @@ acromesomelia
 chromosome xp11 23 p11 22 duplication
 xeroderma pigmentosum type 1
 dyskinesia10
-hemolytic uremic syndrome atypical susceptibility to 5
 bracket epiphyses of the hallux
 menstrual irregularity
 urofacial syndrome 2 lrig2 related urofacial syndrome
-sycp3 related pregnancy loss susceptibility to spermatogenic failure 4
 retinal hemorrhages
 arthrogryposis multiplex congenita
 muscular dystrophy dystroglycanopathy limb girdle type c 7
@@ -1834,7 +1815,6 @@ meningococcemia stachybotrys chartarum  10
 encephalocele encephaloceles  16
 papillary renal cell carcinoma renal clear cell carcinoma  6
 hyperelastic skin
-psoriasis psoriasis susceptibility 11
 patchy hypo and hyperpigmentation
 spherocytosis type 2
 enlargement of the costochondral junction
@@ -1909,7 +1889,6 @@ cone shaped epiphyses of the 4th toe
 abnormality of pattern reversal visual evoked potentials
 craniosynostosis radial aplasia
 peripheral opacification of the cornea
-autism susceptibility 13
 duane retraction syndrome alk negative anaplastic large cell lymphoma
 long qt syndrome 5 jervell and lange nielsen syndrome 2  11
 thrombocytopenia 2 ankrd26 related thrombocytopenia 2
@@ -1955,7 +1934,6 @@ aplasia/hypoplasia of the 3rd toe
 mixed respiratory and metabolic acidosis
 dfna22
 eeg with diffuse acceleration
-obesity severe bmiq9 obesity susceptibility to mc3r related
 double thumb distal phalanges
 double calcaneal ossification center
 poliosis
@@ -2030,7 +2008,6 @@ thick helix
 hypertensive crisis
 spondylocostal dysostosis 2
 autosomal recessive congenital stationary night blindness suppression amblyopia  7
-asthma related traits susceptibility to 3
 focal dermal hypoplasia methanol poisoning
 odontogenic myxoma benign mammary dysplasia  6
 short metatarsal bone
@@ -2148,7 +2125,6 @@ schizophrenia mental retardation autosomal dominant
 stippling of the epiphyses of the distal phalanges of the hand
 mitochondrial complex v deficiency mitochondrial complex v deficiency nuclear type 1
 chronic lymphocytic leukemia esophageal squamous cell carcinoma
-autism 14b chromosome 16p11 2 duplication syndrome
 elevated plasma pyrophosphate
 crohn disease rheumatoid arthritis sclerosis systemic
 hiv 1 acquired immunodeficiency
@@ -2383,7 +2359,6 @@ pleural lymphangiectasia
 increased tendency to fractures
 immunodeficiency common variable 11 dacryoadenitis  11
 familial febrile seizures 8
-autoimmune enteropathy and endocrinopathy susceptibility to chronic infections syndrome
 propping zerres
 inspiratory stridor
 abnormality of thyroid physiology
@@ -2558,12 +2533,10 @@ ataxia spinocerebellar ataxia autosomal recessive 4
 muscular hypotonia of the trunk
 8p23 1 microdeletion syndrome
 spinocerebellar ataxia 34 ichthyosis spastic quadriplegia and mental retardation  10
-pancreatic cancer susceptibility 1 pancreatic cancer 1  6
 tmem67 related meckel
 hereditary motor and sensory neuropathy okinawa
 erythrokeratoderma
 cataract congenital nuclear autosomal recessive 2 cataract 39 multiple types autosomal dominant  7
-autosomal dominant mendelian susceptibility to mycobacterial
 hyperprolinemia schizophrenia 4  6
 scalp hypotrichosis
 curry hall
@@ -2674,7 +2647,6 @@ fg syndrome
 broad distal phalanx of finger
 genu recurvatum
 facial flushing after alcohol intake
-lung cancer susceptibility 2 congenital generalized lipodystrophy
 marfan syndrome ehlers danlos syndrome  29
 park7 related parkinson
 aortic valve insufficiency organophosphate poisoning sensitivity to  17
@@ -2782,7 +2754,6 @@ generalized lymphadenopathy
 atrophodermia vermiculata
 congenital toxoplasmosis vasculitis due to ada2 deficiency  6
 alzheimer disease type 3 with spastic paraparesis and unusual plaques
-attention deficit hyperactivity disorder autism susceptibility
 cystic fibrosis wolfram
 adenoma sebaceum
 calcified placenta
@@ -2826,7 +2797,6 @@ eczema herpeticum cellulitis
 supernumerary tooth
 exfoliation syndrome oral submucous fibrosis  24
 aplasia of the sweat glands
-melanoma cutaneous malignant susceptibility to 3
 long hallux
 anaphylactoid purpura
 3p deletion syndrome
@@ -3086,7 +3056,6 @@ cystic renal dysplasia
 stroke ischemic cerebrovascular
 absent nails
 impaired fsh and lh secretion
-malignant hyperthermia susceptibility type 6
 liddle syndrome scnn1g related
 glaucomatous visual field defect
 homocystinuria disorders of intracellular cobalamin metabolism
@@ -3159,7 +3128,6 @@ stoltzfus
 young syndrome
 partially duplicated kidney
 epcam
-diabetes mellitus insulin dependent 22 hiv infection susceptibility  21
 everted upper lip vermilion
 familial hypertrophic cardiomyopathy 8
 skin dimples
@@ -3167,7 +3135,6 @@ hemianoptic blurring of vision
 congenital knee dislocation atelosteogenesis type 3  13
 heart disease ischemic atherosclerosis coronary hyperlipidemia
 abnormality of the abdominal musculature
-cr2 related common variable immune deficiency cr2 related susceptibility to systemic lupus erythematosus
 man1b1 cdg pelvic inflammatory disease
 obsessive compulsive disorder tourette
 hypermagnesemia
@@ -3175,7 +3142,6 @@ hypertrophic auricular cartilage
 cone shaped epiphyses of the 5th toe
 profound depletion of t4+ lymphocytes
 deviated middle finger
-pancreatic cancer susceptibility
 abnormality of facial skeleton
 optic disc pallor
 joint contractures of the 2nd toe
@@ -3540,7 +3506,6 @@ agent
 paired helical filaments
 pre b cell acute lymphoblastic leukemia leukemia acute pre b cell  7
 linitis plastica malignant ovarian cyst  12
-dnase1 related susceptibility to systemic lupus erythematosus bronchitis  9
 elevated blood creatine phosphokinase
 familial hypothyroidism suprasellar meningioma  10
 meckel syndrome 8
@@ -3620,7 +3585,6 @@ mental retardation autosomal dominant 10 16q24 3 microdeletion syndrome
 x linked hydrocephalus syndrome
 diabetes type 2 insulin glucose c peptide fatty acid
 hypoplastic colon
-lung cancer susceptibility lung cancer susceptibility 3
 cramp fasciculation
 occult macular dystrophy acute erythroid leukemia  6
 moyamoya disease 4
@@ -3699,7 +3663,6 @@ slender finger
 absent middle phalanx of the 3rd toe
 corpus cavernosum sclerosis
 conjugate
-asthma related traits susceptibility to 8
 schizophrenia schizophrenia 10
 migraine familial basilar atp1a2 related alternating hemiplegia of childhood
 midline defect of the nose
@@ -3770,7 +3733,6 @@ cognitive delay
 easily subluxated first metacarpophalangeal joints
 aplasia of the middle phalanx of the 3rd finger
 absence of the sacrum
-artery disease lung cancer susceptibility
 necatoriasis trichostrongylosis  7
 lower limb undergrowth
 distal shortening of limbs
@@ -3877,7 +3839,6 @@ neurodegeneration with brain iron accumulation disorders hypogonadism alopecia d
 nodular malignant melanoma lung adenoma  24
 interstitial pneumonitis
 mitochondrial complex deficiency nuclear type 4 mitochondrial complex v deficiency nuclear type 1
-mendelian susceptibility to mycobacterial diseases due to partial stat1 deficiency
 testicular teratoma
 trichorhinophalangeal dysplasia
 footdrop
@@ -3913,7 +3874,6 @@ sleep disorder brain
 agricultural
 autosomal recessive polycystic kidney
 sclerosis of the phalanges of the thumb
-microvascular complications of diabetes susceptibility to 6
 craniometaphyseal dysplasia brain glioma  20
 hyperosmolar dehydration
 abnormal renal corticomedullary differentiation
@@ -3929,7 +3889,6 @@ metopic suture patent to nasal root
 small proximal phalanx of big toe
 plasminogen activator inhibitor 1
 goldmann favre syndrome achromatopsia  7
-migraine familial typical susceptibility to
 breast ovarian cancer familial 3 rad51c related fanconi anemia  9
 charcot marie tooth disease type 2l
 barth syndrome mental retardation autosomal dominant 22
@@ -3968,7 +3927,6 @@ thenar muscle weakness
 sulfite oxidase deficiency due to molybdenum cofactor deficiency type b
 molar tooth sign on mri
 advanced tooth eruption
-bleeding disorder platelet type 13 susceptibility to
 psychiatric disturbances
 gingival hypertrophy coronary heart
 chromosome 2q31 1 duplication
@@ -4166,7 +4124,6 @@ mucolipidosis type 4
 ivory epiphysis of the distal phalanx of the 5th finger
 salaam convulsions
 familial amyloidotic polyneuropathy type 1
-alk related neuroblastoma susceptibility gallbladder adenocarcinoma
 blepharochalasis entropion
 intrahepatic cholestasis fatty acid oxidation disorders
 cornelia de lange syndrome short stature auditory canal atresia mandibular hypoplasia skeletal abnormalities
@@ -4177,7 +4134,6 @@ tegumentary leishmaniasis susceptibility
 systemic lupus erythematosus susceptitbility to
 thin hypoplastic alae nasi
 familial restrictive cardiomyopathy 1
-autism susceptibility to x linked 1
 abnormality of the gingiva
 kcnq1 related familial atrial fibrillation jervell lange nielsen
 subacute myeloid leukemia severe congenital neutropenia
@@ -4185,7 +4141,6 @@ complete duplication of the distal phalanx of the 2nd finger
 3 beta hydroxysteroid dehydrogenase deficiency 3 beta hydroxysteroid dehydrogenase deficient congenital adrenal hyperplasia  8
 hypoplastic 5th metacarpal
 symphalangism affecting the proximal phalanges of the hand
-psoriasis susceptibility 6
 deep white matter hypodensities
 steroid resistant nephrotic syndrome sclerosing cholangitis
 fried syndrome
@@ -4205,7 +4160,6 @@ legg calve perthes disease bacterial vaginosis
 chronic obstructive airway
 fg syndrome type 1
 abdominal distention
-bleeding disorder platelet type 13
 neoplasm of the lungs
 loss of definition of corticomedullary differentiation
 col4a4
@@ -4445,7 +4399,6 @@ congenital laryngeal stridor
 anophthalmia microphthalmia microphthalmia syndromic 11
 alzheimer disease mitochondrial
 preaxial polydactyly 2
-fanconi anemia complementation group d1 pancreatic cancer susceptibility 2  50
 aortic aneurysm familial thoracic 8 phosphoglycerate kinase deficiency  6
 enlarged epiphysis of the middle phalanx of the 2nd finger
 adrenoleukodystrophy zellweger
@@ -4929,7 +4882,6 @@ morbilliform rash
 small epiphyses of the 4th finger
 spastic paraplegia 44
 areflexia in lower limbs
-hemolytic uremic syndrome atypical susceptibility to 6
 pde6g related retinitis pigmentosa retinitis pigmentosa
 krt6a
 advanced bone age
@@ -5069,7 +5021,6 @@ congenital nonbullous ichthyosiform erythroderma
 poor speech
 vaginal pyocele
 circulating levels of plasminogen activator inhibitor
-epilepsy juvenile absence susceptibility to 2 epilepsy idiopathic generalized 11  11
 chromoblastomycosis abacavir hypersensitivity
 acute myocardial infarction bladder squamous cell carcinoma  6
 liver agenesis
@@ -5299,7 +5250,6 @@ abnormally low pitched voice
 costeff
 osteosarcoma spina bifida
 follicular lymphoma follicular lymphoma 1
-autism susceptibility 14a chromosome 16p11 2 deletion syndrome 593kb
 cutaneous leiomyosarcoma dermatofibrosarcoma protuberans  80
 abnormality of lens shape
 megalocornea 1 x linked 309300
@@ -5580,7 +5530,6 @@ recurrent skin infections
 distal muscle weakness
 mild short stature
 skin papilloma cocoon syndrome
-malignant hyperthermia susceptibility malignant hyperthermia susceptibility type 4
 dyserythropoietic anemia congenital type iv
 acute promyelocytic leukemia x linked charcot marie tooth
 decreased corneal sensation
@@ -5781,11 +5730,11 @@ multiple rectal polyps
 retinal hypopigmentation
 inflammatory abnormality of the skin
 radial deviation of the 4th finger
-autism 19 hypopharynx cancer  6
 bidirectional ventricular ectopy
 distal tapering of metatarsals
 eeg with parietal focal spike waves
 mixed cell
+autism hypopharynx cancer
 t wave alternans
 itgb4
 breast adenocarcinoma sjogren larsson syndrome
@@ -5802,7 +5751,6 @@ peripheral retinal avascularization
 posterior helix pit
 anomaly of the retina
 x linked hydrocephalus
-mendelian susceptibility to mycobacterial diseases due to complete ifngammar2 deficiency
 methylmalonic aciduria
 fused labia minora
 abnormality of primary molar morphology
@@ -5814,7 +5762,6 @@ porencephaly microcephaly bilateral congenital cataract
 midface hyperplasia
 prominent floating ribs
 stature qtl 19
-mycobacterium tuberculosis susceptibility to 1
 abnormality of the intrahepatic bile duct
 paroxysmal extreme pain disorder episodic pain syndrome familial 2
 thbd related atypical hemolytic uremic syndrome hemolytic uremic syndrome atypical 6  41
@@ -5920,10 +5867,8 @@ lissencephaly syndrome norman roberts type
 attenuated ch diak higashi
 vitiligo autoimmune disease 3
 proximal tibial and fibular fusion
-restless legs syndrome susceptibility to 2
 bullet vertebral body
 congenital neuromuscular
-attention deficit hyperactivity disorder susceptibility to 7
 renal cell carcinoma 4
 muscle cramps on exercise
 pancreas adenocarcinoma episodic ataxia type 1
@@ -6004,7 +5949,6 @@ atrial septal aneurysm
 paragangliomas 1
 anus cancer hypersplenism  20
 brachymelic dwarfism
-autoimmune disease susceptibility to 3
 abnormality of pyramidal motor function
 ciliary dyskinesia primary 23 ciliary dyskinesia primary 19
 camptodactyly of 2nd finger
@@ -6108,7 +6052,6 @@ neurological speech impairment
 usher syndrome type if
 reduced ejection fraction
 aplasia of the phalanges of the 3rd toe
-systemic lupus erythematosus with nephritis susceptibility to 1
 absence of subcutaneous fat over entire body except buttocks
 renal cortical adenoma
 achalasia alacrima achalasia and mental retardation
@@ -6333,7 +6276,6 @@ fifth finger distal interphalangeal joint symphalangism
 herpes simplex borna
 progressive pes cavus
 eeg with generalized spikes
-ovarian epithelial cancer bard1 related susceptibility to breast cancer
 flat nose
 hereditary sensory and autonomic neuropathy type iic
 paranasal sinus hypoplasia
@@ -6382,7 +6324,6 @@ scheuermann
 focal retinal infarction
 single maxillary central incisor
 alpha thalassemia myelodysplasia syndrome
-chek2 related susceptibility to breast and colorectal cancer li fraumeni
 reduced iga levels
 anisospondyly
 treacher collins syndrome 2 lissencephaly 3  6
@@ -6674,7 +6615,6 @@ ipex syndrome
 osteochondroma thanatophoric dysplasia
 nephroblastoma superficial basal cell carcinoma
 unilateral polymicrogyria
-migraine familial typical susceptibility to 2
 multiple deep venous thrombosis
 gastroenteritis homocystinuria  13
 acquired polycythemia leukemia acute myeloid reduced survival in  28
@@ -6799,7 +6739,6 @@ delayed mineralization of pubic bone
 lysosomal storage disease mucopolysaccharidosis type iiic
 maple syrup urine disease type 3 dihydrolipoamide dehydrogenase e3 deficiency  7
 congenital stationary night blindness type 2b night blindness congenital stationary 2b autosomal recessive  7
-psoraisis susceptibility 9
 kiss1r
 hepatic veno occlusive disease immunodeficiency
 gigantism due to ghrf hypersecretion hypopituitarism  24
@@ -6868,6 +6807,7 @@ gonadal calcification
 sulfite oxidase deficiency due to molybdenum cofactor deficiency type a
 patchy sclerosis of the proximal phalanges of the hand
 prolong qt interval on ekg
+liver disease pnpla3 related
 absent metatarsal bone
 bifid nose manitoba oculotrichoanal
 midline defect of mandible
@@ -6932,7 +6872,6 @@ periarteritis
 muscular dystrophy selcen
 patchy sclerosis of toe phalanx
 vaginal hydrocele
-breast cancer susceptibility leigh disease
 endometrial stromal sarcoma membranous glomerulonephritis antenatal  24
 hyposerinemia
 superficial siderosis of the central nervous system atransferrinemia  38
@@ -7635,7 +7574,6 @@ widened metacarpal shaft
 short distal phalanx of the 2nd finger
 pomgnt1
 mody type i
-microvascular complications of diabetes susceptibility to 7
 unilateral paralysis of the vocal cord
 tongue fasciculation
 eruptiva
@@ -7729,7 +7667,6 @@ primary adrenal insufficiency
 macular retinal pigment epithelial mottling
 aortic disease erythromelalgia  7
 nontoxic goiter faslg related autoimmune lymphoproliferative syndrome  25
-epilepsy juvenile absence susceptibility to 2 epilepsy idiopathic generalized 11
 lead poisoning gallbladder
 gonadotropin excess
 absent microvilli on the surface of peripheral blood lymphocytes
@@ -7795,7 +7732,6 @@ small testes
 abnormality of the lymphatic vessels
 colonic diverticulosis
 cone shaped epiphysis of the proximal phalanx of the little finger
-asthma related traits susceptibility to 1
 endemic goiter transient congenital hypothyroidism
 charcot marie tooth disease x linked recessive 3
 abnormality of the arachnoidea
@@ -7961,7 +7897,6 @@ hooked nose
 dnaaf2
 obstructive sleep apnoea
 osteosclerosis of bones
-autism 19 hypopharynx cancer
 cranial nerve involvement
 small abnormally formed scapula
 herpes simplex human t cell leukemia virus type 1
@@ -8193,7 +8128,6 @@ obesity papillon lefevre
 extrahepatic portal hypertension
 sclerosis of the phalanges of the hand
 schizophrenia 10
-mycobacterium tuberculosis susceptibility to 3
 numerous nevi
 glutaric aciduria 1
 body dysmorphic disorder omodysplasia
@@ -8368,7 +8302,6 @@ non compaction cardiomyopathy
 acrofacial dysostosis nager
 amyotrophic lateral sclerosis spinocerebellar ataxia
 preterm premature rupture of the membranes conjunctival
-leprosy leprosy susceptiblity to 6
 myotonic dystrophy chorea
 anteriorly displaced urethral meatus
 candidiasis familial 1
@@ -8498,7 +8431,6 @@ abnormal urinary electrolyte concentration
 sclerosis of hallux phalanx
 lipedema
 retinyl
-fanconi anemia complementation group d1 pancreatic cancer susceptibility 2
 hypoplastic cerebellar vermis 
 slowed horizontal saccades
 increased muscle lipid content
@@ -8548,7 +8480,6 @@ narrow small joints of the hand
 sickle cell disease granulocytopenia  9
 overriding aorta
 subglottic stenosis
-major depressive disorder myocardial infarction susceptibility to 1  6
 heritability
 progressive osseous heteroplasia mazabraud
 cutaneous melanoma which is largely independent of skin type and hair color
@@ -8881,7 +8812,6 @@ corticosteroid binding globulin deficiency prostate
 conoid incisor
 corneal ulcer elliptocytosis
 hypoparathyroidism sensorineural deafness and renal
-ovarian epithelial cancer bard1 related susceptibility to breast cancer  8
 digenic inheritance
 kininogen deficiency
 abnormality of the pineal gland
@@ -8942,7 +8872,6 @@ hypothalamic gonadotropin releasing hormone
 intracellular curvilinear profiles on ultrastructural analysis
 lung adenocarcinoma mucoepidermoid carcinoma
 histopathological
-susceptibility to autoimmune disease
 tatton brown rahman syndrome
 3 methylcrotonyl coa carboxylase 1 deficiency mccc1 related 3 methylcrotonyl coa carboxylase deficiency  6
 sclerotic cranial sutures
@@ -8954,7 +8883,6 @@ cataract congenital cataract 8 multiple
 fasting plasma glucose level qtl 5
 tuberous sclerosis complex insulinoma  6
 atrial septal defect ostium primum
-restless legs syndrome susceptibility to 1
 short proximal phalanx of toe
 crouzon syndrome acanthosis nigricans
 cone shaped epiphysis of the distal phalanx of the 3rd toe
@@ -9015,7 +8943,6 @@ incomplete breech presentation
 fancc
 ivory epiphyses of the 5th toe
 pachydermoperiostosis syndrome
-charge syndrome autism 18
 duplication of the proximal phalanx of the third toe
 oculocutaneous albinism type 4 oculocutaneous albinism type 1
 abnormality of the mastoid
@@ -9066,7 +8993,6 @@ aberrant melanosome maturation
 wiskott aldrich syndrome ganglioneuroblastoma
 short distal phalanges
 visceral leishmaniasis kala azar 1
-glioma susceptibility 1
 breast ovarian cancer familial 1 brca1 hereditary breast and ovarian cancer
 enlarged epiphysis of the middle phalanx of the 2nd toe
 cenani lenz syndactyly
@@ -9146,7 +9072,6 @@ hemiatrophy of upper limb
 norman roberts lissencephaly
 pla2g6
 epilepsy progressive myoclonic 2b nhlrc1 related lafora
-gout susceptibility 4
 schizophrenia partington
 patent ductus arteriosus aortic
 atrophy of the corpus callosum
@@ -9161,7 +9086,6 @@ cystinosis late onset juvenile or adolescent nephropathic type
 complete trisomy
 coronary heart disease 9
 lower back pain
-malignant hyperthermia susceptibility malignant hyperthermia susceptibility type 3
 cervical vertebral facet hypoplasia
 intrahepatic cholestasis of pregnancy severe pre eclampsia
 chondroid chordoma primary malignant melanoma of the cervix
@@ -9333,7 +9257,6 @@ hammock mitral valve
 chronic obstructive pulmonary disease copd lung function
 atherosclerosis peripheral artery disease
 behavioral abnormality
-pancreatic cancer susceptibility 1 pancreatic cancer 1
 replacement
 cervical vertebral dysplasia
 subcortical laminal heteropia x linked dcx related disorders  15
@@ -9465,7 +9388,6 @@ abnormality of the helix
 polr1d
 midnasal atresia
 plantar hyperkeratoses
-mycobacterium tuberculosis susceptibility to 2
 hypoplastic acetabulae
 amnestic disorder substance dependence  14
 decreased serum estradiol
@@ -9554,7 +9476,6 @@ ptosis congenital ptosis hereditary congenital 1
 lipoma of corpus callosum
 cannabis dependence fatty acid hydroxylase associated neurodegeneration
 short distal phalanx of finger
-asthma related traits susceptibility to 6
 hypoplastic epiglottis
 retinal dysplasia
 erlenmeyer flask femora
@@ -9619,7 +9540,6 @@ vasculitis in the skin
 flat line eeg
 generalized amyotrophy
 hyperglycaemia
-paraganglioma tmem127 related susceptibility to pheochromocytoma  7
 exaggerated startle response
 lewy bodies
 22q13 3 deletion syndrome
@@ -9703,7 +9623,6 @@ chondritis of pinna
 osborne waves
 ulcerative colitis inflammatory bowel disease 2
 5q14 3 microdeletion syndrome mental retardation stereotypic movements epilepsy and or cerebral malformations
-hemolytic uremic syndrome atypical susceptibility to 3
 contracture of the interphalangeal joint of the hallux
 intellectual disability facial dysmorphism syndrome due to setd5 haploinsufficiency mental retardation autosomal dominant 23
 scapula alata
@@ -9883,7 +9802,6 @@ ibuprofen
 chronic sural axonal neuropathy
 turnover
 increased spinal bone density
-scoliosis idiopathic susceptibility to 5
 cross fusion of the forearm bones
 autosomal recessive limb girdle muscular dystrophy type 2s
 enlarged vestibular aqueduct foxi1 related pendred syndrome
@@ -9933,7 +9851,6 @@ eeg with abnormally slow frequencies
 three rows of eyelashes
 ehlers danlos syndrome autosomal dominant hypermobility type ehlers danlos syndrome autosomal recessive due to tenascin x deficiency
 thenar muscle hypoplasia
-secretory diarrhea autism susceptibility 17
 posterior pituitary dysplasia
 laron syndrome with immunodeficiency
 mouth neoplasm
@@ -10035,7 +9952,6 @@ thrombocyte
 glycogen storage disease due to glucose 6 phosphatase deficiency type b
 presbycusis 2
 abnormality of the hip girdle musculature
-malignant hyperthermia susceptibility type 2
 cardiomyopathy dilated 1n tcap related dilated cardiomyopathy  12
 irgat
 diffuse palmoplantar keratoderma
@@ -10336,7 +10252,6 @@ abnormality of iron homeostasis
 craniofaciosynostosis
 spondylometaepiphyseal dysplasia short limb hand type spondyloepimetaphyseal dysplasia
 slc26a4 related pendred syndrome
-delayed sleep phase syndrome susceptibility to
 flat nasal root
 muscular dystrophy dystroglycanopathy type b 3
 non secretory adrenocortical adenoma
@@ -10397,7 +10312,6 @@ spinal cord anterior horn cell degeneration
 hydrarthrosis septic arthritis
 shovel shaped maxillary central incisors
 high narrow palate
-anus cancer obesity susceptibility to cartpt related  6
 peutz jegher
 partial beta eeg
 legal blindness
@@ -10419,7 +10333,6 @@ prostate cancer progression of prostate cancer somatic  8
 congenital disorder of glycosylation congenital disorder of glycosylation type il
 dfnb 3 nonsyndromic hearing loss and deafness deafness autosomal recessive 3
 bracket epiphysis of the proximal phalanx of the 3rd finger
-hemolytic uremic syndrome atypical susceptibility to 1
 subluxation of metacarpal phalangeal joints
 fiber splitting
 decreased fetal movements
@@ -10482,7 +10395,6 @@ abnormality of the foot
 hydrocephalus with hirschsprung disease
 subacute cutaneous lupus erythematosus silver russell
 labyrinthitis cold induced sweating
-hirschsprung disease susceptibility to 4
 ptch1 related holoprosencephaly ovarian fibroma  43
 right aortic arch with left descending aorta and left ductus arteriosus
 isolated autosomal dominant hypomagnesemia glaudemans type benign neonatal seizures  9
@@ -10602,7 +10514,6 @@ krt13
 sensory and motor nerve conduction abnormalities
 atrial situs inversus
 partial/complete duplication of the distal phalanx of the 2nd toe
-attention deficit hyperactivity disorder autism susceptibility 16
 ivory epiphyses of the 4th toe
 cardiomyopathy dilated 1n tcap related dilated cardiomyopathy
 blood pressure arterial cholesterol insulin resistance metabolic
@@ -10664,7 +10575,6 @@ lhermitte
 valvular heart
 leber congenital amaurosis 10 senior loken
 large eyes
-glioma susceptibility 6
 scleromalacia
 esophageal squamous cell carcinoma somatic spinocerebellar ataxia autosomal recessive 12
 abnormality of the hypothalamus
@@ -10782,7 +10692,6 @@ toenail dysplasia
 congenital lamellar cataracts
 aplasia/hypoplasia of the distal phalanx of the 4th finger
 widow peak
-neuroblastoma susceptibility neuroblastoma 6
 myopia 19
 mental retardation autosomal recessive 5 dubowitz
 nose cancer
@@ -10801,7 +10710,6 @@ dnaaf1
 relapsing polychondritis pre b cell acute lymphoblastic leukemia
 lenz majewski hyperostosis
 ectopic anterior pituitary
-restless legs syndrome susceptibility to 4
 decreased enamel mineralisation
 cbld cblf
 absent epiphysis of the middle phalanx of the 3rd toe
@@ -10889,7 +10797,6 @@ dysplastic ears
 coronal cleft vertebrae
 irregular metacarpals
 neutrophil specific granule deficiency cholelithiasis
-asperger syndrome x linked susceptibility to 1
 recurrent fungal infections
 thrombophilia due to activated protein c resistance vesicoureteral reflux 2
 midline facial capillary hemangioma
@@ -10963,7 +10870,6 @@ agenesis of corpus callosum
 dysplastic corpus callosum
 laryngeal abnormalities
 pectus excavatum/carinatum
-autism susceptibility 15
 dorfman chanarin
 external ear position defect
 odontogenic myxoma keratoderma palmoplantar punctate
@@ -11228,7 +11134,6 @@ keratoconjunctivitis eosinophilic esophagitis  36
 renal tuberculosis diffuse glomerulonephritis  7
 complex glycerol kinase deficiency x linked mental retardation 21  6
 broad inferior crus of antihelix
-psoriatic arthritis psoriasis susceptibility 4
 amyotrophic lateral sclerosis type 9
 shawl scrotum
 abnormality of vitamin d metabolism
@@ -11297,7 +11202,6 @@ shwachman diamond syndrome leukemia
 michels syndrome 3mc syndrome 1
 yemenite deaf blind hypopigmentation syndrome waardenburg syndrome type iva  22
 medial calcification of small arteries
-lung cancer susceptibility lung cancer susceptibility 5
 curved distal phalanges of the hand
 subjective
 autosomal dominant focal dystonia dyt7 type dystonia 7 torsion
@@ -11312,7 +11216,6 @@ pulmonary aterial intimal fibrosis
 prader willi syndrome due to maternal uniparental disomy of chromosome 15 prader willi syndrome due to translocation  7
 acth independent macronodular adrenal hyperplasia 2
 oculodigitoesophagoduodenal syndrome
-palb2 related cancer susceptibility pancreatic cancer 3
 decreased number of small peripheral myelinated nerve fibers
 double outlet right ventricle with subaortic ventricular septal defect without pulmonary stenosis
 renal disease end stage vascular endothelial growth factor
@@ -11403,7 +11306,6 @@ osseus
 loose skin
 abnormality of the humeral epiphyseal plate
 hypoplastic areola
-paraganglioma tmem127 related susceptibility to pheochromocytoma
 fifth finger mid phalanx hypoplasia
 peroxisome biogenesis disorder 4a maternally inherited leigh
 drowsiness
@@ -11437,7 +11339,6 @@ complete duplication of the proximal phalanx of the 5th toe
 tendency
 hyperglobulinemic purpura schwartz jampel syndrome type 1  22
 retinal bleeding
-sycp3 related pregnancy loss susceptibility to spermatogenic failure 4  6
 wedged vertebrae
 strudwick syndrome
 flattened acetabular roof
@@ -11485,7 +11386,6 @@ abnormality of the trapezium
 cephalohaematoma
 stature qtl 16
 striae distensae
-hiv infection susceptibility idiopathic anterior uveitis  9
 hodgkin disease x linked pseudoautosomal
 pectus deformity
 early infantile epileptic encephalopathy 14
@@ -11494,7 +11394,6 @@ intermittent microsaccadic pursuits
 short palm
 progressive loss of facial adipose tissue
 absence of labia majora
-spondyloarthropathy susceptibility to 3
 immunodeficiency common variable 11 inflammatory bowel
 pigmentary skin changes
 coffin lowry syndrome x linked nonsyndromic deafness
@@ -11502,7 +11401,6 @@ posterior vertebral hypoplasia
 long sightedness.
 long eyelashes
 familial hypertrophic cardiomyopathy hypertrophic cardiomyopathy  8
-psoriasis susceptibility 1 skin
 sall4 related disorders duane radial ray syndrome  14
 malrotation of colon
 hydroxyphenylpyruvic aciduria
@@ -11593,7 +11491,6 @@ elevated iga
 abnormal metacarpal morphology
 hyperimmunoglobulin e recurrent infection syndrome autosomal recessive
 allergic conjunctivitis primary polycythemia
-cr2 related common variable immune deficiency cr2 related susceptibility to systemic lupus erythematosus  19
 acral ulceration and osteomyelitis leading to autoamputation of the digits
 chronic pain diabetic neuropathy
 encephalocele encephaloceles
@@ -11865,7 +11762,6 @@ pediatric multiple sclerosis carpal tunnel syndrome  10
 familial hyperreninemic hypoaldosteronism type 1
 hypoplasia of the femoral head
 absent forearm
-mycobacterium tuberculosis infection protection against autosomal recessive mendelian susceptibility to mycobacterial diseases due to partial ifngammar1 deficiency  27
 paranoid personality disorder hydrops ectopic calcification moth eaten skeletal dysplasia  14
 classic rett syndrome ataxic cerebral palsy  6
 labyrinthitis bbs10 related bardet biedl
@@ -12012,7 +11908,6 @@ oesophagitis
 diaphragmatic sequestrum
 multiple unerupted teeth
 complex palmar dermatoglyphic pattern
-gata2
 molarization of premolar
 autoinflammatory syndrome with pyogenic bacterial infection and amylopectinosis glycogen storage disease iv
 pleomorphic malignant fibrous histiocytoma chondroblastic osteosarcoma
@@ -12243,7 +12138,6 @@ williams beuren region duplication syndrome
 transient arthritis candidiasis familial 4 autosomal recessive
 wisconsin
 periosteal
-gout gout susceptibility
 congenital disorder of glycosylation type if
 absent epiphyses of the fingers
 absent nail of big toe
@@ -12304,7 +12198,6 @@ fascioscapulohumeral muscular dystrophy 2 digenic facioscapulohumeral muscular d
 genitourinary tract tumors
 cln4b disease
 pulmonary fibrosis pigeon breeders
-hemolytic uremic syndrome atypical susceptibility to 4
 abnormal external genitalia
 small proximal middle finger phalanx
 hip contractures
@@ -12343,7 +12236,6 @@ heart valve disease subacute delirium  73
 osteosclerosis of the clavicle
 atp7a related copper transport disorders spinal muscular atrophy distal x linked 3
 isaacs syndrome
-psoriasis psoriasis susceptibility 10
 renal artery stenosis
 muscle lipidosis
 neurogenic bladder deafness autosomal dominant
@@ -12409,7 +12301,6 @@ fibrous dysplasia of the bones
 amyoplasia
 pemphigoid gestationis bullous skin
 invaginated nipples
-susceptibility to autoimmune
 asperger syndrome heroin dependence
 spinal canal stenosis
 miller dieker syndrome chromosome 17p deletion  7
@@ -12535,7 +12426,6 @@ spondylarthropathy spondyloarthropathy 3
 amyotrophy involving the extremities
 atherosclerosis erythromelalgia  6
 juvenile diabetes mellitus
-schizophrenia susceptibility
 abnormality of the epiphysis of the terminal phalanx of the little finger
 lissencephaly x linked 2
 dysfibrinogenemia alpha type causing bleeding diathesis
@@ -12883,7 +12773,6 @@ small bowel agenesis
 abnormality of the epiphysis of the proximal phalanx of the hallux
 hashimoto pritzker
 congenital neutropenia
-colorectal cancer susceptibility to 10
 joint dislocations in young adult
 lamellar ichthyosis type 1
 increased urinary potassium
@@ -12919,6 +12808,7 @@ cerebellar hemisphere hypoplasia
 supernumerary vertebrae
 complete duplication of the middle phalanx of the 2nd finger
 alopecia alopecia neurologic defects and endocrinopathy syndrome
+artery disease lung cancer
 onset at birth
 wide symphysis of pubis
 giant pigmented hairy nevus
@@ -13145,7 +13035,6 @@ prominent supraorbital arches in adult
 klippel trenaunay syndrome weber syndrome
 wide foramen magnum
 hypoplasia of inferior vermis
-glioma susceptibility 8
 abnormal neuron morphology
 insulin like growth factor binding protein 5
 retinal arteriolar constriction
@@ -13185,7 +13074,6 @@ forward facing earlobe
 bone infarction
 abnormality of the endocardium
 senile plaques
-palb2 related cancer susceptibility pancreatic cancer 3  17
 sprengel deformity
 lumbar hemivertebrae
 familial juvenile hyperuricemic nephropathy nlgn4 related x linked mental retardation
@@ -13272,7 +13160,6 @@ multiple glomerular cysts
 visuospatial
 stature qtl 10
 bloch
-autism susceptibility 12
 ivory epiphysis of the distal phalanx of the 2nd toe
 absent atrioventricular node
 falls
@@ -13302,7 +13189,6 @@ aneurysm of an abdominal artery
 synostosis involving the 3rd metacarpal
 broad hallux phalanx
 serpin
-allergy and asthma susceptibility tyrosine kinase 2 deficiency  24
 abnormality of the nostrils
 peroxisome biogenesis disorders zellweger syndrome spectrum peroxisome biogenesis disorder 13a
 pulmonary artery atresia
@@ -13320,7 +13206,6 @@ chronic myelomonocytic leukemia tatton brown rahman syndrome
 infertility ciliary dyskinesia primary 28
 diabetes type 2 kidney failure chronic
 cutaneous anergy
-hodgkin disease susceptibility pseudoautosomal
 aplasia/hypoplasia of toe
 aplasia/hypoplasia of the radius
 breast cancer oculocerebrorenal syndrome
@@ -13393,6 +13278,7 @@ parathyroid absence
 absent smooth pursuit
 indistinct philtrum
 proximal/middle symphalangism of the 2nd finger
+wilms tumor type 1 wilms tumor
 abnormality of the immune system
 intrahepatic duct deficiency
 scoliosis idiopathic 2 autoimmune
@@ -13584,7 +13470,6 @@ alzheimer disease 2
 delayed closure of fontanel
 anterior basal encephalocele
 abnormal rapid eye movement sleep
-microvascular complications of diabetes susceptibility to 3
 retinitis retinitis pigmentosa  8
 delayed speech acquisition
 hepatocellular carcinoma wieacker wolf
@@ -13662,7 +13547,6 @@ hyperalphalipoproteinemia cetp related hyperalphalipoproteinemia  21
 toxic epidermal necrolysis stevens johnson syndrome
 spinocerebellar ataxia autosomal recessive 1 ataxia oculomotor apraxia
 blond hair
-glioma susceptibility 7
 disproportionate shortening of the tibia
 pomt1 related muscle
 psoriasis gitelman syndrome
@@ -13697,7 +13581,6 @@ aplasia of the middle phalanges of the toes
 focal epilepsy nicotine addiction  16
 kostmann syndrome
 hypoplasia of the semicircular canal
-systemic lupus erythematosus with hemolytic anemia susceptibility to
 folliculotropic
 loss of renal function
 deceleration of head growth
@@ -13891,7 +13774,6 @@ hyperglobulinemic purpura schwartz jampel
 slitlike anterior chamber angles in children
 spinocerebellar tract degeneration
 congenital melanosis bulbi
-allergy and asthma susceptibility tyrosine kinase 2 deficiency
 early respiratory failure
 delayed dental development
 progressive extrapyramidal muscular rigidity
@@ -13914,7 +13796,6 @@ urinary tract neoplasia
 rett syndrome epilepsy x linked with variable learning disabilities and behavior disorders
 hypoplastic/absent metacarpal bones
 ethylene glycol poisoning alcohol related birth defect
-hiv infection susceptibility idiopathic anterior uveitis
 irregular femoral epiphyses
 middle ear malformation
 thin metacarpal cortices
@@ -13972,7 +13853,6 @@ peroneal muscle weakness
 febrile convulsions familial 10
 methylmalonic aciduria and homocystinuria cbld type
 camptodactyly of the 4th finger
-myocardial infarction susceptibility microcystic meningioma
 type ii transferrin isoform profile
 multiple intestinal polyps
 coned epiphyses
@@ -14043,7 +13923,6 @@ bilateral renal hypoplasia renal coloboma syndrome  17
 thrombasthenia of glanzmann and naegeli itga2b related macrothrombocytopenia autosomal dominant tubb1 related
 curved distal phalanx of the 5th finger
 aneurysm glaucoma  7
-vitiligo associated multiple autoimmune disease susceptibility 6
 short proximal phalanx of the third finger
 infertility sertoli cell only
 recurrent aspiration pneumonia
@@ -14159,7 +14038,6 @@ primary progressive multiple sclerosis oral erosive lichen  20
 trophic changes
 tuberous sclerosis coffin lowry syndrome
 6q16 deletion syndrome
-japanese encephalitis mendelian susceptibility to mycobacterial
 muscular cardiac diverticulum
 venezuelan equine encephalitis borna disease
 corneal scarring
@@ -14178,7 +14056,6 @@ aneurysm osteoarthritis
 anarthria
 fatty acids abnormal
 mesomelia of the upper limbs
-epilepsy idiopathic generalized susceptibility to 10
 epigastric auras
 hypoplastic palate
 mondini malformation
@@ -14231,7 +14108,6 @@ sertoli cell only syndrome persistent fetal circulation syndrome  7
 repsonse
 delayed maturation of the hand bones
 spastic paraplegia 12 autosomal dominant spastic paraplegia 12
-vitiligo associated multiple autoimmune disease susceptibility 1 autoimmune disease 1  9
 epiphyseal abnormality of middle phalanx of the 2nd finger
 diphosphoglycerate
 cerebral palsy spastic quadriplegic 3
@@ -14372,7 +14248,6 @@ distal arthrogryposis type 1b
 alcoholic cardiomyopathy myostatin related muscle hypertrophy
 cortical blindness deafness dystonia syndrome
 increased upper to lower segment ratio
-autism susceptibility 3
 carbamoyl phosphate synthase i deficiency disease
 abnormality of renal calyx morphology
 coumarin resistance nicotine addiction protection from  6
@@ -14386,7 +14261,6 @@ charcot marie tooth disease type 3 charcot marie tooth disease type 1
 peg shaped maxillary lateral incisors
 hypercholesterolemia familial hyperlipidemia  19
 bowing of the legs
-spondyloarthropathy susceptibility to 2
 williams beuren syndrome hypertensive retinopathy
 broad proximal phalanx of the 4th toe
 combined immunodeficiency
@@ -14416,7 +14290,6 @@ hyperphalangy of index finger
 double vision
 duodenogastric reflux paralytic ileus
 adenomatous colonic polyposis
-basal cell carcinoma susceptibility to
 sternal anomalies
 partial duplication of the middle phalanx of the 5th finger
 central y shaped metacarpal
@@ -14746,7 +14619,6 @@ shortening of all proximal phalanges of the fingers
 arrhythmogenic right ventricular dysplasia cardiomyopathy 5 arrhythmogenic right ventricular dysplasia 5
 lymphoma follicular somatic leukemia lymphoma b cell 2  35
 dnai2
-neuroblastoma susceptibility atypical teratoid rhabdoid tumor  8
 vitiligo fetal hydantoin
 gentamicin
 coronary atherosclerotic heart
@@ -14777,7 +14649,6 @@ rapsn related fetal akinesia deformation sequence multiple pterygium syndrome le
 alpha chain disease gamma heavy chain disease  6
 stippling of the epiphyses of the 3rd toe
 short distal phalanx of the fourth toe
-hirschsprung disease susceptibility to 3
 cone shaped epiphyses of the toes
 wrinkly skin syndrome atp6v0a2 related cutis laxa
 osteolytic defects of the phalanges of the 3rd toe
@@ -14968,8 +14839,7 @@ medication
 zmpste24
 patent ductus arteriosus aortic disease
 toxic epidermal necrolysis stevens johnson
-asperger syndrome susceptibility 2
-herpes simplex encephalitis susceptibility to
+autismb chromosome 16p11 2 duplication
 corneal ectasia irregular astigmatism  12
 juvenile spinal muscular atrophy spinal muscular atrophy type 2
 fanconi anemia complementation group m fance related fanconi anemia  7
@@ -14993,7 +14863,6 @@ broad phalanx of the toes
 achondrogenesis type ia achondrogenesis
 lymphoproliferative disease x linked
 ivory epiphyses of the 2nd toe
-mendelian susceptibility to mycobacterial diseases due to complete il12rb1 deficiency
 right ventricular failure
 increased renal tubular phosphate reabsorption
 autoamputation of digits
@@ -15004,7 +14873,6 @@ pkp1 related ectodermal dysplasia skin fragility syndrome hereditary mucoepithel
 transposition of the great arteries dextro looped 1 cardiac anomalies developmental delay facial dysmorphism
 congenital contractures lethal congenital contractural
 abnormality of fatty tissue
-breast cancer susceptibility leigh
 thin nail
 abnormality of the cerebrum
 conotruncal anomaly face
@@ -15080,7 +14948,6 @@ abnormality of shoulder musculature
 trichorrhexis nodosa
 pseudobulbar signs
 high immunoglobulin e
-malignant hyperthermia susceptibility type 3
 pallister hall syndrome 3q21q26 syndrome
 horizontal eyebrow
 humeral ulnar synostosis
@@ -15150,7 +15017,6 @@ orofaciodigital syndrome type1
 muscular dystrophy dystroglycanopathy ciliary dyskinesia primary 21
 aspiration pneumonitis asphyxiating thoracic dystrophy 2  7
 invasive malignant thymoma sclerosing hepatic carcinoma  47
-major depressive disorder myocardial infarction susceptibility to 1
 delayed eruption
 partial abdominal muscle agenesis
 primary cutaneous marginal zone b cell lymphoma lymphoma malt somatic
@@ -15171,7 +15037,6 @@ presentations
 cardiac teratoma
 embryonal neoplasia
 spastic paraplegia 25 autosomal recessive spastic paraplegia
-fibrous histiocytoma allergy and asthma susceptibility  11
 defect in alveolar ridge
 abnormal form of ears
 non type 1 diabetes mellitus
@@ -15560,7 +15425,6 @@ intractable diarrhea
 undermodelled forearm bones
 venous thrombosis protection against indeterminate cell histiocytosis
 deciduous teeth retention
-mendelian susceptibility to mycobacterial diseases due to complete ifngammar1 deficiency
 palate telangiectasia
 aplasia of the distal phalanx of the 3rd toe
 abnormal palmar dermal ridges
@@ -15736,7 +15600,6 @@ partial cellular immunodeficiency
 paraganglioma of head and neck
 surfactant dysfunction small bowel adenocarcinoma  8
 triangular shaped thumb phalanx
-psoriasis susceptibility 2
 odontogenic myxoma benign mammary dysplasia
 enlarged cerebral ventricles
 radial dislocation
@@ -15936,7 +15799,6 @@ absent nasal septal cartilage
 violent behavior
 hypercholesterolemia familial due to ldlr defect modifier of coronary artery
 intellectual disability developmental delay contractures
-scoliosis idiopathic susceptibility to 3
 thrombocytopenia 2 thrombocytopenia 4
 hypoalbuminaemia
 midphalangeal hypoplasia
@@ -16090,7 +15952,6 @@ hypoplastic/small middle phalanx of the 3rd toe
 major depressive disorder major depressive disorder 2
 autoagression
 partial/complete duplication of phalanges of the 4th finger
-neuroblastoma susceptibility neuroblastoma 4
 complication in hemodialysis peripheral nervous system disease  30
 central hypoventilation syndrome multiple endocrine neoplasia type 2a
 achalasia addisonianism alacrima
@@ -16188,7 +16049,6 @@ muscle hypotrophy
 aplasia/hypoplasia of the tarsal bones
 abnormality of toe
 hypoplasia of right ventricle
-asperger syndrome susceptibility 1
 pseudohypoparathyroidism type ia
 enlarged epiphysis of the proximal phalanx of the 4th finger
 tooth and nail
@@ -16207,7 +16067,6 @@ esophageal ulceration
 exostosis of the external auditory canal
 ureterolithiasis canavan disease
 moderate short stature
-malignant hyperthermia susceptibility to
 dandy walker like malformation with atrioventricular septal defect spastic paraplegia
 krebs
 patchy palmoplantar keratoderma
@@ -16371,6 +16230,7 @@ multiple system atrophy parkinsonian type
 17p13 3 microduplication syndrome distal 17p13 3 microdeletion syndrome
 propping
 stippling of the epiphyses of the 2nd toe
+chek2
 mild canavan disease
 delayed onset of glycogenosis type 2
 multilayered
@@ -16397,7 +16257,6 @@ hyperextensibility of the knee
 osteomyelitis or necrosis
 proximal tapering of metacarpals
 dermatomyosis
-autism susceptibility 6
 high maternal serum chorionic gonadotropin
 cap myopathy 1 gallbladder
 liver arteriovenous malformation
@@ -16520,7 +16379,6 @@ papillary thyroid carcinoma down
 atrophy of the cerebellar vermis
 cavernous hemangioma of the face
 epidermolytic hyperkeratosis chordoma  26
-autoimmune disease susceptibility to 2
 metacarpal/metaphyseal cupping
 abnormality of fatty acid anion metabolism
 autosomal dominant limb girdle muscular dystrophy type 1d
@@ -16853,7 +16711,6 @@ broad eyebrow
 subcutaneous calcification
 camptodactyly of the 2nd toe
 abnormality of teeth spacing
-hirschsprung disease susceptibility to 2
 meningococcemia stenotrophomonas maltophilia  12
 first metacarpals hypoplastic
 abnormality of the intrinsic pathway
@@ -16976,7 +16833,6 @@ wittmaack ekbom
 underdeveloped muscles
 abnormality of the dentate nucleus
 aplasia of the proximal phalanx of the 4th toe
-autism susceptibility 5
 duplication of the proximal phalanx of the fourth toe
 epilepsy idiopathic generalized 6 timothy syndrome  7
 vitamin b9 deficiency
@@ -17202,6 +17058,7 @@ irregular ossification of hand bones
 toxic encephalopathy spondylometaphyseal dysplasia sedaghatian
 vulvovaginal candidiasis tarsal tunnel
 isolated congenital digital clubbing primary hypertrophic osteoarthropathy autosomal recessive
+parkinson disease 13 autosomal dominant
 vcl related dilated cardiomyopathy cardiomyopathy familial hypertrophic 15
 multiple small vertebral fractures
 pulmonary artery hypoplasia
@@ -17318,7 +17175,6 @@ recurrent infections associated with rare immunoglobulin isotypes deficiency lig
 spinal cord lesions
 absent antitragus
 immunodeficiency 9 myopathy tubular aggregate
-graves disease susceptibility to x linked 1
 ptpn11 related leopard syndrome metachondromatosis  21
 mesomelic limb shortening
 spastic paraplegia 48 autosomal recessive spastic paraplegia
@@ -17413,13 +17269,11 @@ pes equinus
 midline central nervous system lipomas
 von hippel lindau type 2a
 bile duct disease sm ahnmd
-scoliosis idiopathic susceptibility to 4
 axenfeld rieger syndrome type 1 iridogoniodysgenesis dominant type  19
 elevated alkaline phosphatase of bone origin
 enlarged mandible
 mitochondrial dna depletion syndrome encephalomyopathic form with variable craniofacial anomalies
 bbs4 related bardet biedl syndrome pigmentary retinopathy  28
-asperger syndrome susceptibility 3
 abnormality of fibular epiphyses
 metaphyseal dysostosis
 retinal cone dystrophy 2
@@ -17799,7 +17653,6 @@ methylmalonic aciduria vitamin b12 responsive due to defect in synthesis of aden
 tctn2
 molar tooth sign on brain imaging
 alzheimer disease familial type 3
-asthma related traits susceptibility to 2
 tuberous sclerosis complex insulinoma
 weill marchesani syndrome tracheal stenosis
 postaxial polydactyly of foot
@@ -18245,7 +18098,6 @@ skull asymmetry
 abnormality of globe size
 abnormality of zinc homeostasis
 aipl1 related retinitis pigmentosa leber congenital amaurosis 4  11
-systemic lupus erythematosus with hemolytic anemia susceptibility to 1
 nephronophthisis 16 microvascular complications of diabetes 6
 epilepsy familial adult myoclonic 3
 macular holes placental insufficiency  26
@@ -18273,7 +18125,6 @@ sacrococcygeal teratoma neural tube defects
 breast hypertrophy
 chronic colitis
 machado joseph disease type 1
-gout susceptibility
 endometriosis endometriosis 1
 hospitalization
 limb girdle muscular dystrophy type 2s
@@ -18407,13 +18258,11 @@ synostosis involving tarsal bones
 methylacetoacetic
 limited elbow flexion/extension
 duplication of terminal thumb phalanx
-melanoma cutaneous malignant susceptibility to 7
 macula abnormality
 neonatal hypotonia
 delayed eruption of deciduous teeth
 lama3 related junctional epidermolysis bullosa cardiomyopathy dilated 1jj
 spina bifida occulta at l5
-glioma susceptibility 4
 partial/complete duplication of the middle phalanges of the hand
 metaphyseal cupping of proximal phalanges
 increased startle response
@@ -18421,7 +18270,6 @@ microsomia
 upward slanted palpebral fissures
 thick vermilion border
 hemifacial spasm 5 fluorouracil toxicity
-autosomal recessive mendelian susceptibility to mycobacterial diseases due to partial ifngammar2 deficiency autosomal dominant mendelian susceptibility to mycobacterial diseases due to partial ifngammar2 deficiency  11
 accelerated linear growth
 central hypothyroidism
 restrictive behaviour
@@ -18572,7 +18420,6 @@ atherosclerosis erythromelalgia
 subungual hyperkeratosis
 prominent supraorbital ridge
 pelvic asymmetry
-autism susceptibility to x linked 5
 ocular pain
 complete atrioventricular septal defect
 decreased plasma total carnitine
@@ -18953,7 +18800,6 @@ bowed legs
 partial duplication of the middle phalanges of the hand
 contiguous gene
 abnormality of the iris
-lung cancer susceptibility 2 congenital generalized lipodystrophy type 4
 ventricular septal defect foxh1 related holoprosencephaly  8
 hypoplasia of the uterus
 contracture of the distal interphalangeal joint of the 5th finger
@@ -18968,7 +18814,6 @@ duplication of the proximal phalanx of the 4th toe
 severe visual impairment
 cataract 23 cataract 10 multiple types
 map
-epilepsy juvenile myoclonic susceptiblity to 9
 biosynthesis
 neuronal migration disorder
 hyperekplexia 2
@@ -18981,7 +18826,6 @@ cataract 39 multiple types
 abnormality of the midbrain
 hamel cerebro palato cardiac syndrome
 primary ciliary dyskinesia18 heatr2 related primary ciliary dyskinesia ciliary dyskinesia primary 18
-japanese encephalitis mendelian susceptibility to mycobacterial diseases due to complete isg15 deficiency
 oligocone trichromacy achromatopsia 4  7
 absence of lymph node germinal center
 speech delay
@@ -19000,7 +18844,6 @@ charcot marie tooth disease type 2b2 charcot marie tooth neuropathy type 2b2
 bracket epiphysis of the proximal phalanx of the thumb
 abnormality of the oral cavity
 prolinuria
-autism susceptibility x linked 1 asperger syndrome susceptibility x linked 1
 atypical nevi in non sun exposed areas
 kmt2d related kabuki syndrome kabuki syndrome 1
 carotid intimal medial thickness 2
@@ -19220,7 +19063,6 @@ cataract posterior polar 5
 dfna23
 thrombocytopenia neonatal alloimmune purpura posttransfusion
 hyperlipidaemia
-schizophrenia susceptibility 18
 ventricular escape rhythms
 crohns disease inflammatory bowel disease 18
 glra1 related hyperekplexia molybdenum cofactor deficiency  6
@@ -19289,14 +19131,12 @@ decreased size of nerve terminals
 polysplenia
 long foot
 neuronopathy distal hereditary motor type iib
-malignant hyperthermia susceptibility malignant hyperthermia susceptibility type 2
 pleomorphic rhabdomyosarcoma osteitis fibrosa
 ovoid vertebrae
 pleomorphic lipoma growth hormone secreting pituitary adenoma
 epihyseal plate abnormality of the upper limbs
 rh negative blood
 thoracolumbosacral spina bifida aperta prothrombin related thrombophilia
-attention deficit hyperactivity disorder susceptibility to
 horners syndrome connective tissue benign neoplasm  13
 prpf6
 prematurely aged face
@@ -19366,7 +19206,6 @@ high myopia sensorineural deafness
 amino acid levels abnormal
 toxic megacolon cerebral palsy spastic quadriplegic 2
 partial duplication of the proximal phalanx of the 2nd toe
-thyrotoxic periodic paralysis susceptibility to 1
 decreased smell sensation
 isolated microphthalmia 5 late onset retinal degeneration  8
 double outlet right ventricle with non committed ventricular septal defect without pulmonary stenosis
@@ -19709,7 +19548,6 @@ upbeat nystagmus
 46 xy sex reversal type 6
 cervical squamous cell carcinoma idiopathic pulmonary fibrosis  7
 carotene
-autism susceptibility x linked 4
 widened gap 1st
 abnormality of the systemic arterial tree
 cauda equina syndrome
@@ -19734,10 +19572,8 @@ cd43 defectively expressed on surface of blood cells
 hemiplegia/hemiparesis
 elfin ear
 methemoglobinemia type 4
-epilepsy childhood absence susceptibility to 4
 decreased subcutaneous adipose tissue
 white eyelashes
-glomerulosclerosis focal segmental 4 end stage renal disease nondiabetic susceptibility to  9
 evolutionary
 common variable immune deficiency menieres disease  31
 follicular lymphoma follicular lymphoma
@@ -19782,7 +19618,6 @@ fragmentation of the epiphyses of the phalanges of the hand
 genital neoplasia
 severe osteoporosis
 broad femoral metaphyses
-melanoma cutaneous malignant susceptibility to 4
 raf1 related leopard
 absent right sided atrioventricular connection
 agricultural workers diseases
@@ -19883,7 +19718,6 @@ lungs
 tia
 stippling of the epiphysis of the middle phalanx of the 5th finger
 bare lymphocyte syndrome type ii complementation group a bare lymphocyte syndrome type ii complementation group d  24
-autism susceptibility to x linked 2
 bronchopulmonary sequestration
 pachyonychia congenita 3
 irregular epiphyses of the middle phalanges of the hand
@@ -19938,7 +19772,6 @@ glucose tolerance insulin vascular disease
 abnormality of the lower limb
 elevated serum parathyroid hormone
 elbow dislocation
-autoimmune disease susceptibility to 4
 persian
 neoplasm of the larynx
 lipid storage disease primary sclerosing cholangitis  8
@@ -20212,7 +20045,6 @@ variegate porphyria porphyria cutanea tarda  8
 iodine contrast allergy
 symphalangism of the proximal phalanx of the 2nd finger with the 2nd metatcarpal
 actn2 related familial hypertrophic cardiomyopathy actn2 related dilated cardiomyopathy
-diabetes mellitus insulin dependent 22 hiv infection susceptibility
 baroreflex
 atherosclerosis diabetes
 persistent primary dentition
@@ -20584,16 +20416,17 @@ keloids conjunctivochalasis  8
 wetzburger
 inherited acute myeloid leukemia acute myeloid leukemia with cebpa somatic mutations
 downturned corners of mouth
+loeys dietz syndrome type 1 multiple self healing squamous epithelioma
 agammaglobulinemia non bruton type
 action
 large artery calcification
 steatocystoma multiplex nrtn related hirschsprung
 glrb related hyperekplexia hyperekplexia 2 autosomal recessive  7
+autismb
 toledo
 abnormality of the upper limb
 bronchiolitis obliterans organizing pneumonia west nile encephalitis  6
 retinitis pigmentosa 31 topors related retinitis pigmentosa
-glioma susceptibility 5
 non classic cystic fibrosis like syndrome
 bullet shaped proximal phalanx of the 3rd finger
 synostosis involving bones of the hand
@@ -20624,14 +20457,12 @@ supraventricular tachycardia with a concealed accessory connection
 spondyloarthropathy 1 synovitis chronic
 overfriendliness
 meckel syndrome 8 tctn2 related joubert syndrome  6
-chek2 related susceptibility to breast and colorectal cancer li fraumeni syndrome chek2 related  26
 cerebral hypoplasia
 urinary incontinence
 adrenal carcinoma thyroid medullary carcinoma
 human t cell leukemia virus type 2 epilepsy familial adult myoclonic 5  9
 bifid tongue
 oral cavity cancer hemolytic anemia due to glutathione peroxidase deficiency  6
-anus cancer obesity susceptibility to cartpt related
 abnormality of the internal auditory canal
 spatulate thumbs
 broad phalanges
@@ -20646,8 +20477,8 @@ impaired vision
 small distal phalanx of hallux
 phaeochromocytomas
 neoplasia of the nose
+autismb chromosome 16p11 2 duplication syndrome
 balos
-fibrous histiocytoma allergy and asthma susceptibility
 mitochondrial complex deficiency nuclear
 gracile long bones
 primary autosomal recessive microcephaly 2
@@ -20730,7 +20561,6 @@ hb barts hydrops fetalis alpha thalassemia intellectual disability syndrome link
 neoplasm of head and neck
 misalignment of teeth
 epithelioid sarcoma periapical granuloma  7
-psoriasis susceptibility 1 skin disease  6
 perirectal abscess
 cutis marmorata
 blepharophimosis intellectual deficit syndrome mkb type
@@ -20757,7 +20587,6 @@ cngb3 related stargardt
 bulbous tips of toes
 movement disease guanidinoacetate methyltransferase deficiency  7
 diminished vibratory sensation in the legs
-asperger syndrome x linked susceptibility to 2
 rudimentary uterus
 episodic flaccid weakness
 macroglobulinemia waldenstrom 2
@@ -20773,7 +20602,6 @@ connective tissue nevi
 generalized microdontia
 spurs of radial diaphysis
 griscelli syndrome leukocyte adhesion deficiency
-autosomal recessive mendelian susceptibility to mycobacterial
 mitochondrial complex iii deficiency nuclear type 2
 nephronophthisis 14 joubert syndrome 2
 ldl cholesterol level qtl2 cystadenoma  21
@@ -20783,7 +20611,6 @@ cerebellar hemorrhage
 developmental dysplasia of the hip 2
 distal finger flexion creases absent
 absent epiphysis of the proximal phalanx of the 5th toe
-epilepsy juvenile myoclonic susceptiblity to
 autonomic auras
 neoplasm of the pancreas
 short fibulae
@@ -20860,7 +20687,6 @@ zunich kaye
 quadriceps muscle weakness
 cervicitis eosinophilic colitis
 guillain barre syndrome familial
-mycobacterium tuberculosis infection protection against autosomal recessive mendelian susceptibility to mycobacterial
 d
 autoimmune inflammatory
 cone rod dystrophy 18 preeclampsia eclampsia 5
@@ -20969,7 +20795,6 @@ hypoplastic nostrils
 neoplasm of the nose
 lupus erythematosus systemic lupus erythematosus with nephritis 2
 thrombotic thrombocytopenic purpura congenital thrombotic thrombocytopenic purpura
-breast ovarian cancer familial susceptibility to 3
 pancreatic cancer 1
 tracheal ectopic calcification
 small thorax
@@ -21006,7 +20831,6 @@ achalasia brain ischemia
 tolosa hunt syndrome
 acquired abnormal hair pattern
 writers
-asthma related traits susceptibility to 7
 cranial nerve compression
 listeria meningitis partial adenosine deaminase deficiency
 increased serum iron
@@ -21040,7 +20864,6 @@ cholesterol ester storage disease lysosomal acid lipase deficiency  9
 congenital miosis
 anomalous origin of coronary artery from the pulmonary artery
 bartter syndrome type 4
-herpes simplex encephalitis susceptibility to 2
 thrombocytopenia paris trousseau
 pulmonary venoocclusive disease dracunculiasis
 hair pulling
@@ -21105,7 +20928,6 @@ cytochrome c oxidase deficiency disease intrahepatic cholangiocarcinoma
 prpf3
 hyposmia
 autoimmune polyendocrinopathy type 2
-microvascular complications of diabetes susceptibility to 2
 limitation of knee mobility
 sparse absent scalp hair
 right bundle branch block newborn respiratory distress syndrome
@@ -21269,7 +21091,6 @@ paroxysmal drowsiness
 spasmus nutans
 skin nodule
 morphological abnormality of the pyramidal tract
-focal segmental glomerulosclerosis 4
 hair disease beta mannosidosis
 parkinsons disease autosomal recessive juvenile parkinson disease
 isoleucine
@@ -21517,7 +21338,6 @@ bilateral cleft lip and cleft palate
 wide capital femoral epiphyses
 hiccup
 alcoholic liver cirrhosis alcohol dependence protection against
-malignant hyperthermia susceptibility malignant hyperthermia susceptibility type 6
 muscular dystrophy dystroglycanopathy congenital with mental retardation type b 3
 ectropion of lower eyelids
 calf hypertrophy
@@ -21806,7 +21626,6 @@ pleural empyema hypermobility syndrome  12
 abnormal localization of kidney
 elevated circulating catecholamine level
 transposition of the great arteries double outlet right ventricle  27
-epilepsy juvenile absence susceptibility to 1 efhc1 related juvenile myoclonic epilepsy  8
 increased levels of igg
 recql4
 reticulocytopenia
@@ -21836,7 +21655,6 @@ arrhythmogenic right ventricular cardiomyopathy type 5
 disseminata
 thumb hypoplasia
 nonprogressive course
-lung cancer susceptibility lung cancer susceptibility 4
 ehlers danlos syndrome type viic
 binge
 birth weight less than 10th percentile
@@ -21858,7 +21676,6 @@ symphalangism affecting the phalanges of the 3rd toe
 absent tarsals
 epimerase deficiency galactosemia mayer rokitansky kuster hauser
 autosomal recessive limb girdle muscular dystrophy type 2l
-epilepsy juvenile absence susceptibility to 1 efhc1 related juvenile myoclonic epilepsy
 mosaic variegated aneuploidy syndrome 1 premature chromatid separation trait  7
 heteroallelic
 canavan disease prostate disease  12
@@ -21886,7 +21703,6 @@ macular scarring
 pyruvate kinase deficiency oral cavity cancer
 hand tremor
 biliary tract abnormality
-autism susceptibility 1
 norbury
 aplasia/hypoplasia of the tongue
 hematemesis
@@ -21986,7 +21802,6 @@ large terminal thumb phalanx epiphysis
 microvascular complications of diabetes 2 primary polycythemia  59
 t cell large granular lymphocyte leukemia large granular lymphocyte leukemia  8
 pcdh19
-vitiligo associated multiple autoimmune disease susceptiblity 6
 urinary urgency
 localized scleroderma colorectal cancer 3
 abnormality of deciduous teeth
@@ -22051,13 +21866,11 @@ fusion of middle ear ossicles
 generalized osteoporosis
 thickening of the alae nasi
 deformed tarsal bones
-mendelian susceptibility to mycobacterial diseases due to complete il12b deficiency
 rieger syndrome
 superiorly displaced ears
 collagenoma
 epileptic encephalopathy early infantile 25
 x linked sideroblastic anemia hyperferritinemia cataract syndrome
-melanoma cutaneous malignant susceptibility to 5
 oculopharyngeal muscular dystrophy oculopharyngodistal myopathy  6
 radial deviation of thumb terminal phalanx
 thalassemia due to hb lepore thalassemia delta  7
@@ -22079,7 +21892,6 @@ gaucher like disease
 static congenital hemeralopia
 lung cancer dengue disease
 deep palmar crease
-thyrotoxic periodic paralysis susceptibility to 2
 indented helix
 familial platelet syndrome with predisposition to acute myelogenous leukemia
 chronic myeloid leukemia distal 22q11 2 microdeletion
@@ -22111,7 +21923,6 @@ deep tendon reflexes absent
 hamstring contractures
 power
 pancreatic dysplasia
-restless legs syndrome susceptibility to 6
 osteolysis of patellae
 nycturia
 congenital microcephaly
@@ -22121,7 +21932,6 @@ fingerprint intracellular accumulation of autofluorescent lipopigment storage ma
 triglycerides insulin cardiovascular disease risk
 atherosclerosis spermatogenic failure 12
 transient ischemic attack
-myelodysplastic syndrome susceptibility gata2 related
 gad65
 waisman parkinsonism mental retardation syndrome
 chronic tubulointerstitial nephritis
@@ -22428,7 +22238,6 @@ syncope axenfeld rieger
 abnormality of the cerebral ventricles
 duplication of the distal phalanx of the 3rd toe
 cerebrospinal fluid protein increased
-autism susceptibility 8
 heteropia
 primary atrial arrhythmia
 ventricular fibrillation paroxysmal familial 1
@@ -22459,7 +22268,6 @@ rabson mendenhall syndrome turner syndrome  43
 hypermyelinated retinal fibers
 ttc21b related joubert
 hypoprothrombinemia
-autism susceptibility x linked 3
 adrenal gland hypoplasia
 wandering
 short middle phalanx of the 5th finger
@@ -22648,7 +22456,6 @@ fibrous tissue neoplasm
 calcaneonavicular fusion
 detached retina
 knee joint valgus deformity
-epilepsy juvenile myoclonic susceptibility to 5
 acvr2b
 ivory epiphysis of the distal phalanx of the 4th toe
 aplasia of the 1st metacarpal
@@ -22695,7 +22502,6 @@ patchy sclerosis of distal toe phalanx
 acetyl carnitine deficiency carnitine palmitoyltransferase 1a deficiency
 stereotypy
 erbs palsy sexual disorder  16
-cartpt
 threatening
 cataract 38 autosomal recessive cataract 22 autosomal recessive  6
 bracket epiphyses of the 2nd toe
@@ -22707,7 +22513,6 @@ cpt ii deficiency lethal neonatal glycogen storage
 gastrointestinal atresia
 lymphoma follicular somatic leukemia lymphoma b cell 2
 death in adolescence
-malignant hyperthermia susceptibility type 4
 warsaw breakage syndrome mutagen sensitivity  20
 intestinal obstruction lichen sclerosus
 duplication of distal phalanx of toe
@@ -22982,6 +22787,7 @@ darwin notch of helix
 polycystic ovaries
 lipoblastoma adenomas salivary gland pleomorphic
 abnormality of the sublingual glands
+glomerulosclerosis focal segmental 4 end stage renal disease nondiabetic
 median arcuate ligament
 dystrophia myotonica 2
 osteolytic defects of the distal phalanx of the 4th finger
@@ -23286,7 +23092,6 @@ chin with h shaped crease
 cerebellar glioma
 tinea unguium albinism oculocutaneous
 nontoxic goiter vitamin d dependent rickets type ii  39
-autism susceptibility 11
 delta shaped epiphyses of the 4th finger
 enlarged cisterna magna
 spinocerebellar ataxia 29 congenital nonprogressive spinocerebellar ataxia
@@ -23296,7 +23101,6 @@ usher syndrome type iiia
 abnormal epiphyseal ossification
 bone marrow necrosis cellular leiomyoma
 atypical autism fraxf syndrome
-myocardial infarction susceptibility microcystic meningioma  32
 skin picking
 single median maxillary incisor
 pseudoepiphyses of middle phalanx of middle finger
@@ -23606,6 +23410,7 @@ cardiac conduction defects
 acute disseminated intravascular coagulation
 shoulder dystocia
 malaria miller
+autism hypopharynx cancer  6
 focal epilepsy kohlschutter tonz syndrome
 hepatic failure early onset and neurologic disorder hepatic failure early onset and neurologic disorder due to cytochrome c oxidase deficiency
 conspicious happy aspect
@@ -23636,7 +23441,6 @@ absent deep tendon reflexes
 multicentric carpotarsal osteolysis
 familial idiopathic basal ganglia calcification basal ganglia cancification idiopathic
 dyschromatosis universalis hereditaria dyschromatosis universalis hereditaria 2
-autism susceptibility to x linked 3
 giant hypertrophic gastritis
 hemophagocytic lymphohistiocytosis familial hemophagocytic lymphohistiocytosis familial 4
 terminal phalangeal hypoplasia of hand
@@ -23659,7 +23463,6 @@ polyglandular autoimmune syndrome type i
 prader willi syndrome albrights hereditary osteodystrophy
 cerebellar granular layer atrophy
 sclerosis of the proximal phalanx of the 4th toe
-psoriasis psoriasis susceptibility 8
 noonan syndrome colorectal cancer hereditary nonpolyposis type 1  52
 lenticonus
 hepatic encephalopathy deep brain stimulation for parkinsons disease  11
@@ -23670,7 +23473,6 @@ congenital antithrombin deficiency type 3
 asthma protection against ethmoid sinusitis
 bilateral renal atrophy
 congenital malformation of the great arteries
-systemic lupus erythematosus with nephritis susceptibility to 3
 downslanting palpebral fissure
 coro1a
 centripetal obesity
@@ -23811,7 +23613,6 @@ multiple bilateral pneumothoraces
 polydactyly affecting the 4th toe
 serpinh1 related osteogenesis imperfecta osteogenesis imperfecta type x  21
 hypoplasia of the toe
-leprosy leprosy susceptiblity to
 hypoplastic calf muscles
 factor xi deficiency autosomal dominant factor xi deficiency autosomal recessive
 generalized hypotonia
@@ -24074,7 +23875,6 @@ differentiating neuroblastoma ellis van creveld syndrome
 myotonia ciliary dyskinesia primary 24
 ichthyosis congenital autosomal recessive 2 ichthyosis congenital autosomal recessive 1
 decreased adipose tissue around neck
-melanoma cutaneous malignant susceptibility to 2
 cortisone reductase deficiency cortisone reductase deficiency 2
 prolonged bleeding after dental extraction
 short 2nd toe
@@ -24138,7 +23938,6 @@ mild ehlers danlos
 osteolytic defects of bones
 severe global developmental delay
 ichthyosis congenital autosomal recessive 1 ichthyosis congenital autosomal recessive
-psoraisis susceptibility
 radio
 contractures of the joints of the lower limbs
 dend syndrome
@@ -24370,7 +24169,6 @@ hypoplastic absent eccrine sweat glands
 telangiectasia of the
 mental retardation x linked lujan syndrome
 abnormal ventriculo arterial connection
-asperger syndrome susceptibility 4
 aplasia involving bones of the upper limbs
 delayed opacification of the epiphyses
 retinoblastoma heavy chain
@@ -24438,7 +24236,6 @@ decreased t cell activation
 retinitis pigmentosa 12 autosomal recessive crb1 related retinitis pigmentosa  11
 neoplasm of striated muscle
 absent epiphysis of the distal phalanx of the thumb
-autosomal dominant mendelian susceptibility to mycobacterial diseases due to partial ifngammar1 deficiency
 shuffling gait
 small epiphysis of the proximal phalanx of the hallux
 avian influenza wilson mikity
@@ -24504,7 +24301,6 @@ serpinh1
 proctitis spastic paraplegia 64
 ventricular septum abnormality
 recurrent infections in infancy and early childhood
-psoriatic arthritis psoriasis susceptibility 5
 aplasia/hypoplasia of the middle phalanx of the 3rd finger
 aortic aneurysm aortic aneurysm familial thoracic
 venoocclusive disease after bone marrow transplantation
@@ -24736,7 +24532,6 @@ familial steroid resistant nephrotic syndrome with sensorineural deafness
 occipital meningocele
 butterfly facial telangiectasia
 salt and pepper syndrome
-epilepsy juvenile myoclonic susceptibility to
 abnormality of the ulnar epiphyses
 dysfibrinogenemia beta
 dfna10 nonsyndromic hearing loss and deafness deafness autosomal dominant 10
@@ -24766,7 +24561,6 @@ axillary apocrine gland hypoplasia
 autoinflammation antibody deficiency and immune dysregulation
 duplication of the distal phalanx of the 5th finger
 leukemia noonan
-sick sinus syndrome 3 susceptibility to
 arts syndrome t cell large granular lymphocyte leukemia
 enlarged kidneys
 marden walker syndrome
@@ -24812,7 +24606,6 @@ aggressive behaviour
 colorblindness protan osteonecrosis  10
 craniosynostosis radial aplasia syndrome
 mu chain
-microvascular complications of diabetes susceptibility to 4
 idiopathic central precocious puberty precocious puberty central 2
 cardiogenic shock viral meningitis  18
 underdeveloped penis
@@ -24885,7 +24678,6 @@ mullerian aplasia and hyperandrogenism serkal
 narrow forehead
 mobitz ii atrioventricular block
 glucocorticoid deficiency due to acth unresponsiveness glucocorticoid deficiency
-pitt hopkins like syndrome 1 autism susceptibility 15  11
 hyper ige syndrome and severe eczema atopy
 aplasia/hypoplasia of the tibia
 neonatal short trunk short stature
@@ -24929,7 +24721,6 @@ cleft uvula
 hordeolum externum
 bullet shaped proximal phalanges of the toes
 panic disorder tryptophan hydroxylase deficiency
-breast ovarian cancer familial susceptibility to 2
 largely
 rps7 related diamond blackfan anemia diamond blackfan anemia
 abnormal social behaviour
@@ -25039,7 +24830,6 @@ large kidneys
 midline notch of upper alveolar ridge
 nail patella syndrome barth syndrome
 acute myeloid leukemia west
-asthma related traits susceptibility to 4
 neuroendocrine tumor colorectal adenoma
 col11a2
 symphalangism affecting the proximal phalanx of the 2nd toe
@@ -25114,7 +24904,6 @@ ivory epiphysis of the middle phalanx of the 5th toe
 prominent xiphoid process
 abnormal skin pigmentation
 chromosome 19p13 13 deletion
-wilms tumor type 1 wilms tumor susceptibility 5
 lymphedema microcephaly and chorioretinopathy
 muscle fiber tubular aggregates
 attention deficit hyperactivity disorder 7
@@ -25364,14 +25153,12 @@ autosomal dominant hyper ige syndrome
 spinocerebellar ataxia 34 ichthyosis spastic quadriplegia and mental retardation
 recurrent corneal erosions
 abnormal length of corpus callosum
-autism susceptibility x linked 1 asperger
 glycogen storage disease due to aldolase a deficiency
 caliciviridae
 cortical thickening of hand bones
 chronic gastritis
 beta mannosidosis mucopolysaccharidisis type iiia
 shortened pr interval
-alk related neuroblastoma susceptibility gallbladder adenocarcinoma  27
 bullet shaped 4th toe phalanx
 complement component c2 deficiency macular degeneration age related 14 reduced risk of  9
 heart disease ischemic hypercholesterolemia
@@ -25465,7 +25252,6 @@ postaxial polydactyly type a1
 arid1b
 enlarged adrenal glands
 increased variation in fiber size
-malignant hyperthermia susceptibility to 5
 anterior subcapsular cataract
 overfolded helices
 abnormal renal physiology
@@ -25600,10 +25386,8 @@ mandibular hypoplasia deafness progeroid syndrome
 limited hip extension
 small hand
 myocardial infarction coronary artery disease  28
-psoriasis psoriasis susceptibility 3
 short penis
 exudative pleural effusion
-autoimmune disease susceptibility to 6
 prostate cancer multiple endocrine neoplasia type 2a
 protein avoidance
 macrovesicular steatosis
@@ -25736,7 +25520,6 @@ sagliker syndrome
 flexion contractures of hips
 nitidus
 aplasia/hypoplasia of the distal phalanx of the 5th toe
-loeys dietz syndrome type 1 multiple self healing squamous epithelioma susceptiblity to
 charcot marie tooth disease demyelinating type 1e
 distorted red blood cells resembling keratocytes
 double outlet right ventricle with subpulmonary ventricular septal defect without pulmonary stenosis
@@ -25812,7 +25595,6 @@ short nail
 limb girdle muscular dystrophy type 2q epidermolysis bullosa with pyloric atresia  9
 zlotogora syndrome orofacial cleft 7  8
 pseudopolyarthritis
-neuroblastoma susceptibility to 3
 cardiomyopathy dilated 1d tnnt2 related dilated cardiomyopathy
 gonadal neoplasm
 hereditary cerebral hemorrhage with amyloidosis italian
@@ -25941,7 +25723,6 @@ cat eye syndrome talipes equinovarus
 methylmalonic aciduria and homocystinuria cblj type cbij
 triangular epiphyses of the thumb
 macular pucker
-vitiligo associated multiple autoimmune disease susceptibility 1
 maple syrup urine disease type 2 atrophy of testis  6
 human granulocytic anaplasmosis hyper ige
 abnormality of the incisor
@@ -26200,7 +25981,6 @@ congenital hip dislocation
 dents disease connective tissue benign neoplasm  18
 cone shaped epiphysis of the proximal phalanx of the 2nd finger
 obesity and
-obesity severe bmiq9 obesity susceptibility to mc3r related  8
 inferior mesenteric artery aneurysm
 triangular epiphysis of the proximal phalanx of the 3rd toe
 delayed humeral epiphyseal ossification
@@ -26305,12 +26085,10 @@ hoarse voice due to vocal cord paresis
 everted antitragus
 familial hypertrophic cardiomyopathy 7
 stippling of the epiphysis of the proximal phalanx of the 4th finger
-autism susceptibility 7
 c1-c2 vertebral abnormality
 thoracolumbar kyphoscoliosis
 antineutrophil antibodies
 hypoplastic labia
-scoliosis idiopathic susceptibility to 2
 intellectual deficit birk barel type
 hypochromic anaemia
 linear hyperpigmentation
@@ -26464,11 +26242,9 @@ head circumference small for gestational age
 right ventricular outlet obstruction
 seasonal affective disorder cyclothymic disorder
 large fontanel
-glioma susceptibility 2
 interleukin 10
 angulated antihelix
 onychophagy
-neuroblastoma susceptibility to
 recurrent staphylococcal infections
 flna related x linked cardiac valvular dysplasia oto palato digital
 pseudohypoaldosteronism pseudohypoaldosteronism type iib  6
@@ -26761,7 +26537,6 @@ anorexia nervosa anorexia nervosa
 downturned corners of the mouth
 methylmalonic aciduria and homocystinuria type cblf intrinsic factor deficiency  6
 distal hereditary motor neuronopathy type 5b
-microvascular complications of diabetes susceptibility to 5
 dysaesthesia
 peeling skin syndrome nor polyagglutination syndrome
 intrahepatic cholestasis of pregnancy alcoholic liver cirrhosis
@@ -26857,7 +26632,6 @@ broad ulnar metaphysis
 peripheral retinal pigmentation abnormalities
 increased urinary o linked sialopeptides
 recurrent pneumonia
-asthma related traits susceptibility to 5
 epidermal inclusion cyst 
 6q terminal deletion syndrome periventricular nodular heterotopia 6
 abnormality of the scrotum
@@ -27042,6 +26816,7 @@ glutaric acidemia type i
 non syndromic cleft lip and palate
 fanconi anemia complementation group m fancm related fanconi anemia
 concentration of surfactant protein d
+autoimmune enteropathy and endocrinopathy
 kif1b
 schimke immuno osseous dysplasia
 mental retardation x linked 94
@@ -27114,6 +26889,7 @@ pseudohypoaldosteronism type iie
 agammaglobulinemia 5 autosomal dominant
 skin hair eye pigmentation 7 blond brown hair
 heart transplant
+leprosy leprosy
 metaphyseal dysplasia spondylo megaepiphyseal metaphyseal dysplasia
 mental retardation autosomal recessive 28
 pancreatoblastoma idiopathic pulmonary fibrosis
@@ -27123,10 +26899,10 @@ hypertension with brachydactyly
 body mass index quantitative trait locus 10
 macular degeneration age related 9
 familial primary hypomagnesemia with hypercalciuria and nephrocalcinosis without severe ocular involvement
-phox2b related neuroblastoma susceptibility
 triplet
 arthrogryposis distal type 5d
 serum level of interleukin 6 soluble receptor
+hepatic fibrosis severe
 prostate cancer hereditary 11
 convulsions benign familial infantile 2
 lipopolysaccharide
@@ -27142,7 +26918,6 @@ severe combined immunodeficiency due to coro1a deficiency
 unresponsive
 vitamin b12 plasma level quantitative trait locus
 folinic acid responsive seizures cortical blindness
-kcnj11 related susceptibility to noninsulin dependent diabetes mellitus
 juvenile myoclonic epilepsy dentin dysplasia
 juvenile dermatomyositis
 ehlers danlos syndrome kyphoscoliotic type
@@ -27205,6 +26980,7 @@ beta cell function insulin
 follicular thyroid carcinoma ovarian cancer
 chromosome 5p13 duplication syndrome
 hypercortisolism
+mycobacterium tuberculosis infection protection against autosomal recessive mendelian
 5q35 microduplication syndrome
 muscle filaminopathy
 fibrochondrogenesis 1
@@ -27222,6 +26998,7 @@ roifman chitayat
 aneurysm intracranial berry 7
 tuberculosis bells palsy
 lornoxicam pharmacokinetics
+fanconi anemia complementation group d1 pancreatic cancer
 leukemia myeloid chronic atypical bcr abl negative
 pigment dispersion syndrome
 spinocerebellar ataxia 35
@@ -27232,6 +27009,7 @@ sounds
 waisman
 acute zonal occult outer retinopathy
 glomerulopathy lupus nephritis
+diarrhea breast cancer
 epidermylysis
 sry related 46 xy dsd and 46 xy cgd
 apolipoprotein e
@@ -27328,7 +27106,6 @@ vitamin b6 plasma level qtl 1
 febrile seizures familial 4 usher
 epilepsy progressive myoclonic 1a epilepsy progressive myoclonic 4 with or without renal failure
 altitude sickness
-thyrotoxic periodic paralysis susceptibility to
 immune response to synthetic polypeptide irgat
 males
 immunoglobin a nephropathy
@@ -27438,14 +27215,12 @@ blood pressure arterial atherosclerosis
 polycystic ovary syndrome pregnancy loss recurrent
 hypoxia acute myeloid leukemia
 vitamin b12 plasma level quantitative trait locus 1
-renal dysplasia cystic susceptibility to
 metacarpals 4 and 5 fusion
 hair curly
 heart lymphoma
 atopic eczema
 cardiovascular disease cerebrovascular disease
 d l 2 hydroxyglutaric aciduria
-spondyloarthropathy susceptibility to
 alexander disease type ii
 immunodeficiency due to cd25 deficiency
 hereditary thrombophilia
@@ -27468,7 +27243,6 @@ heart cancer
 congenital muscular dystrophy with integrin alpha 7 deficiency
 butterfly shaped pigment dystrophy
 non hodgkin lymphoma somatic
-epilepsy idiopathic generalized susceptibility to 8
 cleft lip with or without cleft palate
 high or low factor xiii specific activity
 type 2m von willebrand
@@ -27506,7 +27280,6 @@ obesity generalized anxiety disorder
 dominant optic atrophy optic atrophy
 pancreatic cystadenoma
 recurrent acute pancreatitis
-multiple self healing squamous epithelioma susceptiblity to
 amyotrophic lateral sclerosis amyotrophic lateral sclerosis 5 juvenile recessive
 gastric adenocarcinoma clear cell renal cell carcinoma
 ichthyosis congenital autosomal recessive 7
@@ -27638,7 +27411,6 @@ body mass glucose tolerance insulin obesity
 pgm cdg
 rlbp1 related fundus albipunctatus
 classical ocular phenotype
-migraine familial typical
 performance on the wisconsin card sorting test
 atypical dentin dysplasia due to smoc2 deficiency
 cerebral lipidosis
@@ -27656,11 +27428,13 @@ cogans
 cholinergic urticaria brain compression
 alcoholic liver cirrhosis headache
 adult onset leukoencephalopathy with axonal spheroids and pigmented glia
+chek2 related
 polysubstance abuse
 brain cancer oral leukoplakia
 grapp
 violent suicidal behavior
 urinary bladder neck obstruction
+ryr1 related malignant hyperthermia
 esophageal cancer major depressive disorder
 addiction to heroin
 leukemia transient of down syndrome
@@ -27752,9 +27526,9 @@ phytanic acid storage
 thiamine metabolism dysfunction syndrome 5
 sting associated vasculopathy infantile onset
 reduced coronary artery calcification
-colorectal cancer susceptibility to
 dok7 related fetal akinesia deformation sequence
 jmp syndrome
+lung cancer osteoporosis postmenopausal
 unusual
 pyridoxal phosphate responsive seizures
 harlequin type ichthyosis
@@ -27888,7 +27662,6 @@ tmem165 cdg
 aldosterone to renin ratio raised
 megalencephaly autosomal recessive isolated megalencephaly
 infectious mononucleosis rheumatoid arthritis
-breast cancer susceptibility multiple myeloma
 spina bifida craniorachischisis
 cholesterol hdl triglycerides lipids
 pulmonary large cell neuroendocrine carcinoma vaccinia
@@ -27973,6 +27746,7 @@ microcephaly progressive seizures and cerebral and cerebellar atrophy
 hla dqa1 differential expression
 inclusion body myopathy with early onset paget disease with or without frontotemporal dementia 2
 febrile seizures familial 10
+breast ovarian cancer familial 4 rad51d related familial
 immunodeficiency due to masp 2 deficiency
 adenomyosis endometriosis
 nemaline myopathy 9 severe congenital nemaline myopathy
@@ -28206,7 +27980,6 @@ facial palsy
 morvans
 delayed graft function acute rejection episodes and long term graft dysfunction
 complement component c1s deficiency
-psoriatic arthritis psoriasis susceptibility
 mucopolysaccharidosis vi myeloid leukemia
 bresek
 spinal stenosis spondylosis
@@ -28265,6 +28038,7 @@ digit
 ras associated autoimmune leukoproliferative disease
 hyperintensity
 verapamil pharmacokinetics
+japanese encephalitis mendelian
 acrofacial dysostosis weyers type
 transcobalamin ii
 pyogenic bacterial infections recurrent due to myd88 deficiency
@@ -28272,7 +28046,6 @@ hepatitis b hepatitis b virus infection
 body mass glucose
 hepatocellular fibrolamellar carcinoma
 shortening
-breast cancer susceptibility chronic myeloid leukemia
 rom1 related retinitis pigmentosa
 mental retardation autosomal recessive 43 phimosis
 decreased blood pressure and plasma triglycerides
@@ -28367,7 +28140,6 @@ e selectin levels
 chronic symptoms in pesticide exposed workers
 heart rate risperidone metabolism
 muscular dystrophy limb girdle type 1f
-malignant hyperthermia susceptibility gas gangrene
 obesity due to congenital leptin deficiency
 bladder transitional cell papilloma
 ovarian failure premature
@@ -28480,6 +28252,7 @@ congenital and subclinical hypothyroidism
 cowden syndrome 5
 hand muscle wasting
 familial thoracic aortic aneurysm and dissection
+prognosis
 aortic valve disorder
 brittle diabetes
 kell blood group system
@@ -28495,6 +28268,7 @@ malt lymphoma primary sclerosing cholangitis
 type 2 diabetes related glucose homeostasis traits
 apolipoprotein c2 deficiency
 macrodactyly of toes unilateral
+bleeding disorder platelet type 13
 familial renal amyloidosis due to apolipoprotein aii variant
 open angle glaucoma glaucoma 1 open angle f
 adamtsl4 related eye disorders
@@ -28633,7 +28407,6 @@ myofibrillar myopathy zasp related
 increased plasma concentrations of total cholesterol
 platelet monoamine oxidase b activity
 alpha 1 antitrypsin deficiency fibromuscular dysplasia
-sle susceptibility complement component 5 deficiency
 kidney hemangiopericytoma
 somatosensory
 septo optic dysplasia sequence
@@ -28667,6 +28440,7 @@ genetically deficient metabolism of debrisoquine and other drugs
 retinal cavernous hemangioma
 myotonic dystrophy 1
 fanconis anemia gastric antral vascular ectasia
+palb2 related cancer
 spinocerebellar ataxia with axonal neuropathy autosomal recessive
 burkitts lymphoma lung adenoma
 pseudohypoparathyroidism type 1a
@@ -28820,7 +28594,6 @@ fucosidosis sparganosis
 glutaryl coa oxidase deficiency
 cfhr5 related dense deposit
 myopia 10
-breast ovarian cancer familial 4 rad51d related familial susceptibility to breast ovarian cancer
 charcot marie tooth neuropathy type 1a
 tulp1 related retinitis pigmentosa
 dyserythropoietic anemia and thrombocytopenia
@@ -28870,7 +28643,6 @@ neurodegeneration with brain iron accumulation 1
 decreased adipocyte lipolytic function
 leukoencephalopathy thalamus and brainstem anomalies high lactate
 trench
-frontal lobe epilepsy lung cancer susceptibility 2  7
 systemic lupus erythematous association with
 reduced intrapartum blood loss a possible evolutionary selection mechanism
 sebaceous gland neoplasms
@@ -28906,7 +28678,6 @@ ichthyosis short stature brachydactyly microspherophakia
 mental retardation autosomal recessive 43 mental retardation autosomal recessive
 cholesterol hdl cholesterol total insulin cortisol
 increased ovulation rate
-diabetes mellitus insulin dependent x linked
 esophageal squamous cell carcinoma intrahepatic cholangiocarcinoma
 lung adenocarcinoma lung squamous cell carcinoma
 ehlers danlos syndrome vascular like type
@@ -28957,7 +28728,6 @@ chromosome 11q deletion
 peg shaped teeth
 acetazolamide responsive myotonia
 hodgkins lymphoma nodular lymphocyte predominant hodgkin lymphoma
-alzheimer disease susceptibility to mitochondrial
 early occlusion of coronary by pass
 diamond blackfan anemia 6 rpl5 related diamond blackfan anemia
 alpha fetoprotein
@@ -28998,6 +28768,7 @@ tuberculosis infection protection against
 hiv 1 st louis encephalitis
 body mass cholesterol triglycerides blood pressure
 mental retardation x linked syndromic chudley schwartz
+gout gout
 brain tumors
 dilated cardiomyopathy 1o
 genetic polymorphism of cytochrome p450 2a6 and the body status of iron stores
@@ -29115,6 +28886,7 @@ aldh18a1
 micrencephaly corpus callosum agenesis abnormal genitalia
 sarcoma chorea acanthocytosis
 hyperuricemia hyperuricemia pulmonary hypertension renal failure and alkalosis
+cr2 related common variable immune deficiency cr2 related
 angioedema angioedema induced by ace inhibitors
 lymphocytic choriomeningitis ebola hemorrhagic fever
 sclerosing cholangitis t cell immunodeficiency recurrent infections autoimmunity and cardiac malformations
@@ -29151,7 +28923,6 @@ adiponectin serum level of qtl2
 familial prostate cancer chromosome 8p deletion
 hyperbilirubinemia transient familial neonatal
 short stature due to ghsr deficiency
-diabetes mellitus insulin dependent x linked susceptibility to
 asthma and atopy
 pineal hyperplasia and diabetes mellitus syndrome
 craniosynostosis type 2
@@ -29382,9 +29153,7 @@ obesity affective disorder
 lung small cell carcinoma
 optic nerve sheath meningioma pineal region meningioma
 asthma toluene diisocyanate induced
-vitiligo susceptibility
 driscoll
-pityriasis rubra pilaris psoriasis susceptibility 2
 fibromatosis gingival type 1
 spta1 related spherocytosis
 bilateral iliac vein thrombosis
@@ -29496,9 +29265,9 @@ b cell chronic lymphocytic leukemia congenital hypogammaglobulinemia
 tay sachs disease b variant infantile form
 melas mt th related
 malaria severe resistance to
-mycobacterium tuberculosis susceptibility to infection by tuberculosis
 arthrogryposis congenital lower limb x linked
 phenotypic heterogeneity
+kcnj11 related
 skin cancer nonmelanoma
 ciliary dyskinesia primary 19 primary ciliary dyskinesia19 lrrc6 related primary ciliary dyskinesia
 psoriasis generalized pustular
@@ -29563,6 +29332,7 @@ lupus erythematosus rheumatoid arthritis sjogren syndrome
 cherubism enchondroma
 crohn disease and celiac disease
 multiple autoimmune
+chronic inflammatory demyelinating polyneuropathy myocardial infarction
 west nile virus influenza severe
 staphylococcal infection
 cholesterol hdl triglycerides cholesterol ldl cholesterol total glucose
@@ -29821,8 +29591,8 @@ coloboma of optic disc
 mpz related intermediate charcot marie tooth neuropathy
 infertility associated with multi tailed spermatozoa and excessive dna
 papillary thyroid carcinoma kidney angiomyolipoma
-hip dysplasia beukes
 achilles tendinopathy
+hip dysplasia beukes
 short stature pituitary and cerebellar defects small sella turcica
 stimulatory g protein
 rolandic epilepsy mental retardation and speech dyspraxia autosomal dominant
@@ -29844,6 +29614,7 @@ kappa light chain deficiency
 methyl
 cyp2d7 cyp2d6 poor metabolizer phenotype
 hypertension autonomic nervous system dysfunction
+coxsackievirus b3
 atherosclerosis generalized myocardial infarct
 eeg with
 smad3 related thoracic aortic aneurysms and aortic dissections
@@ -29898,6 +29669,7 @@ thiamine deficiency
 mucolipidosis type 3
 tay sachs disease b variant adult form
 deficiency of pyrroline 5 carboxylate reductase
+major depressive disorder myocardial infarction
 polymyositis dermatomyosis
 mental retardation autosomal recessive 33
 card11
@@ -30037,7 +29809,6 @@ reduced kidney allograft survival
 sex cord gonadal stromal tumor
 chromosome 15q26 qter deletion syndrome
 high insulin concentrations in non diabetic mexican ameri
-neuroblastoma 5 neuroblastoma susceptibility
 hereditary orotic aciduria
 wiskott aldrich syndrome 2
 attention deficit hyperactivity disorder depressive disorder major
@@ -30107,7 +29878,6 @@ alkaline phosphatase plasma level of qtl
 dominant beta thalassemia
 alcohol abuse substance abuse
 docetaxel pharmacokinetics
-hepatic fibrosis severe susceptibility to due to schistosoma mansoni infection
 steroid weaning
 lep leprosy
 jmp
@@ -30241,7 +30011,6 @@ hereditary hypercarotenemia and vitamin a deficiency
 nevaprine pharmacokinetics
 congenital fibrosis of the extraocular muscles 1b
 eculizumab
-scoliosis idiopathic susceptibility to 1
 asthma aspirin intolerance
 mild familial hypercholesterolemia
 microphthalmia isolated with coloboma 9
@@ -30313,7 +30082,6 @@ abca4
 beta thalassemia major
 juvenile gout
 drug abuse
-cacna1s related malignant hyperthermia susceptibility
 craniosynostosis philadelphia
 kaposis sarcoma allergic rhinitis
 telomeric 22q13 monosomy
@@ -30404,6 +30172,7 @@ lymphoblastic leukemia acute lymphocytic leukemia
 glycoprotein 1a deficiency
 osteitis fibrosa infantile onset spinocerebellar ataxia
 cerebellar ataxia deafness and narcolepsy
+breast cancer sle
 blood group colton
 paraoxinase 1 activity
 dyschromatosis universalis hereditaria 1
@@ -30448,7 +30217,6 @@ leiner
 atherosclerosis carotid kidney failure chronic
 ovarian germ cell tumor ovarian serous cystadenocarcinoma
 duodenal ulcer gastric ulcer
-psoriasis psoriasis susceptibility 1
 multiflagellar
 body mass metabolic rate
 pelizaeus merzbacher disease transitional form
@@ -30546,7 +30314,6 @@ mutilating keratoderma
 keratoderma hereditarium mutilans
 subcutaneous mycosis
 pigment disorder reticulate
-c4b deficiency sle susceptibility
 mybpc3
 glandular
 li fraumeni syndrome 3
@@ -30566,7 +30333,6 @@ leprosy tuberculosis
 cervical adenosquamous carcinoma adenosquamous carcinoma
 ciliary dyskinesia primary 9
 imatinib
-epilepsy childhood absence susceptibility to 6
 preeclampsia hypertension pregnancy induced eclampsia
 orbital melanoma
 factor 8 deficiency acquired
@@ -30584,7 +30350,6 @@ psoriasis protection against
 facial dysmorphism immunodeficiency livedo and short stature
 paroxysmal choreoathetosis choreoathetosis spasticity episodic
 citrullinemia type ii
-orofacial cleft 6
 endometrioid and clear cell ovarian cancer
 dfnb49 nonsyndromic hearing loss and deafness hepatocellular fibrolamellar carcinoma
 spastic paraplegia 3 spastic paraplegia 3a
@@ -30712,7 +30477,6 @@ stickler sydrome type i nonsyndromic ocular
 knuckle pads leuconychia and sensorineural deafness
 severe canavan
 lymphogranuloma venereum denture stomatitis
-schistosoma mansoni infection susceptibility
 neuropathy distal hereditary motor type iia
 nephrolithiasis x linked recessive with renal failure
 repaglinide pharmacology
@@ -30813,6 +30577,7 @@ hostility
 hereditary thrombocytosis with transverse limb defect
 congenital absence of the vas deferens
 heterotaxy visceral 3 autosomal
+cacna1s related malignant hyperthermia
 vacterl hydrocephaly
 autosomal recessive hyperinsulinism due to sur1 deficiency
 hyperphosphatemic familial tumoral calcinosis fgf23 related
@@ -31087,7 +30852,6 @@ cervix carcinoma
 reduced low density lipoprotein particle size
 dominant dystrophic epidermolysis bullosa
 hydrocele keratolytic winter erythema
-diarrhea breast cancer susceptibility
 glomus tumor botulism
 dermatomycosis chronic monocytic leukemia
 recessive dystrophic epidermolysis bullosa x linked adrenal hypoplasia congenita
@@ -31113,6 +30877,7 @@ cr1 deficiency
 fetal hemoglobin quantitative trait locus 4
 benign mesothelioma lymphocytic colitis
 coronary artery disease in familial hypercholesterolemia protection against
+paraganglioma tmem127 related
 plasma caffeine metabolite ratio
 familial defective apolipoprotein b100
 attention deficit hyperactivity disorder like phenotype
@@ -31228,7 +30993,6 @@ porphyria south african type
 hypertension nadph oxidase activity
 silver spastic paraplegia
 cobblestone lissencephaly without muscular or ocular involvement
-sle
 dna topoisomerase ii inhibition of by amsacrine cervix endometriosis
 familial alzheimer like prion
 serum lipid levels
@@ -31241,7 +31005,6 @@ combined immunodeficiency due to dock8 deficiency
 dysferlinopathy miyoshi myopathy
 46 xy sex reversal 8
 breast cancer vaginal cancer
-schistosoma mansoni infection
 tige
 ichthyosis hystrix curth macklin
 hyperoxaluria primary type 1
@@ -31435,7 +31198,6 @@ exhaled nitric oxide levels
 mapping
 thyroid carcinoma follicular
 lymphedema hereditary id
-susceptibility to tuberculosis
 increased prevalence and level of insulin autoantibodies
 fat level and partitioning
 erythrokeratoderma reticular
@@ -31504,6 +31266,7 @@ cardiac arrhythmias and sudden death
 vitamin b 12 deficiency
 polycystic lipomembranous osteodysplasia with sclerosing leukoencephalopathy tyrobp related polycystic lipomembranous osteodysplasia with sclerosing leukoencephalopathy
 alzheimer disease 15
+kif1b related neuroblastoma
 cytosolic
 pancytopenia due to ikzf1 mutations pancytopenia
 fatal familial insomnia cortical malformations occipital
@@ -31689,7 +31452,6 @@ hepatitis liver cirrhosis
 x linked recessive hypophosphatemic rickets
 dysmophism
 immunodeficiency 13 unc119 related cone rod dystrophy
-neuroblastoma susceptibility polyploidy
 goitrous
 oculodigitoesophagoduodenal
 mental disorder
@@ -31709,7 +31471,6 @@ corticobasal degeneration phosphoglycerate mutase deficiency
 cog7 cdg
 corneal fragility keratoglobus blue sclerae and joint hypermobility
 impetigo listeriosis
-frontal lobe epilepsy lung cancer susceptibility 2
 diabetes mellitus gestational
 pontocerebellar hypoplasia type 3
 diabetes insipidus nephrogenic autosomal
@@ -31859,7 +31620,6 @@ pentalogy of cantrell
 mammalian microsatellite instability
 cholesterol hdl obesity
 brain stem glioma spinal cord astrocytoma
-coxsackievirus b3 susceptibility
 spastic paraplegia 29 spastic paraplegia 29 autosomal dominant
 b cell lymphoma
 viral clearance
@@ -31885,7 +31645,6 @@ myelofibrosis myeloproliferative disorder polycythemia vera thrombocythemia
 primary biliary cirrhosis wegeners granulomatosis
 mal de meleda
 hypertension cirrhotic portal
-systemic lupus erythematosus sle
 metachromatic leukodystrophy renal cell carcinoma
 hypoglycemia neonatal simulating foetopathia diabetica
 cask related disorders
@@ -31937,9 +31696,11 @@ x linked mental retardation with panhypopituitarism
 pyruvate carboxylase deficiency benign
 g6pd deficiency
 rh null regulator
+ovarian epithelial cancer bard1 related
 deafness autosomal dominant 54
 cone rod dystrophy 19
 childhood ataxia with central nervous system hypomyelination vanishing white matter eif2b4 related childhood ataxia with central nervous system hypomyelination vanishing white matter
+ovalocytosis and malaria
 male germ cell tumor thyroid lymphoma
 casr related familial isolated hypoparathyroidism
 distal renal tubular acidosis with anemia
@@ -31947,7 +31708,6 @@ van maldergem syndrome 2
 bucklers
 motion sickness space motion sickness
 colorblindness partial protan series
-max related susceptibility to pheochromocytoma
 mitochondrial dna depletion syndrome 6
 hypotrichosis simplex osteoporosis early onset autosomal dominant
 heart rate arrhythmia cardiac
@@ -32060,6 +31820,7 @@ spina bifida premature ovarian failure
 lung cancer patent ductus arteriosus
 cardiovascular response to metoprolol
 amelanotic melanoma fibrosarcoma
+anus cancer obesity
 tremor hereditary essential 3
 familial dilated cardiomyopathy with conduction defect due to lmna mutation
 pitx1
@@ -32099,15 +31860,14 @@ x linked spinal bulbar muscle atrophy
 adenocarcinoma lung adenocarcinoma
 chuvash erythrocytosis
 coronaviridae infections
-cleft lip palate ectodermal dysplasia
 renal dysplasia diffuse cystic
 vitelliform dystrophy
 bmpr1a
+cleft lip palate ectodermal dysplasia
 herns
 ltbp2
 sulfasalazine adverse effects of
 leukemia acute myeloblastic
-mycobacterial and viral infections susceptibility to autosomal recessive
 acetabular
 colorblindness tritan
 multiple congenital anomalies hypotonia seizures syndrome
@@ -32348,7 +32108,6 @@ deposition
 chrna1
 pollen induced allergic rhinitis
 insertion
-allergy and asthma
 acute erythroid leukemia
 c reactive protein cardiovascular event lipids
 methemoglobinemia type iv
@@ -32495,8 +32254,8 @@ chst3 related skeletal dysplasia
 ventricular fibrillation familial
 placental lactogen deficiency
 x linked complicated corpus callosum dysgenesis
-digeorge syndrome velocardiofacial syndrome
 bipolar disorder depressive disorder major
+digeorge syndrome velocardiofacial syndrome
 candle
 endometriosis of uterus
 retinitis pigmentosa 30 fscn2 related retinitis pigmentosa
@@ -32640,7 +32399,6 @@ beta mannosidosis alpha mannosidosis
 hiv 1 viremia
 leukemia acute promyelocytic
 ovarian diseases
-nephrolithiasis uric acid susceptibility to
 atypical glycine encephalopathy amt related glycine encephalopathy
 dilated cardiomyopathy 1p
 bipolar disorder catatonia schizophrenia
@@ -32673,6 +32431,7 @@ ehlers danlos syndrome arthrochalasia type
 aneurysm intracranial berry 4
 microvascular complications of diabetes 2
 prefrontal
+sycp3 related pregnancy loss
 fractures vertebral
 acquired pure red cell aplasia
 cyp2a6 phenotype
@@ -32731,7 +32490,6 @@ spectrin
 chrna1 related congenital myasthenic
 psychoses neuroticism
 diaper rash
-asthma susceptibility 5 melioidosis
 alpha particle carcinogenesis
 acrofacial dysostosis weyers
 aneurysmal bone cysts pseudopseudohypoparathyroidism
@@ -32833,6 +32591,7 @@ hereditary thrombophilia due to congenital protein c deficiency
 acute cholangitis
 severe feeding difficulties failure to thrive microcephaly due to asxl3 deficiency
 foxg1
+max related
 peroneal neuropathy
 frias
 csf2ra related pulmonary surfactant metabolism dysfunction
@@ -32960,6 +32719,7 @@ fatal infantile hypertonic myofibrillar myopathy
 polycystic kidney disease 1
 newborns
 citalopram adverse effects depressive disorder major
+phox2b related neuroblastoma
 chronic lymphocytic leukemia mature b cell neoplasm
 cholesterol hdl atherosclerosis coronary
 deafness autosomal recessive 83
@@ -33065,6 +32825,7 @@ plasma factor vii activity and antigen levels
 range of clinical phenotypes
 total serum calcium
 sex steroids
+asperger syndrome x linked
 gata1 related cytopenia
 catel
 nephrotic syndrome type 2
@@ -33123,7 +32884,6 @@ small cell osteogenic sarcoma west nile virus
 epilepsy progressive myoclonic 3
 presbycusis
 immunoglobulin kappa light chain deficiency
-chek2
 high density lipoprotein cholesterol low serum
 neonatal respiratory failure
 dehydrated hereditary stomatocytosis siderosis
@@ -33249,7 +33009,6 @@ esophageal squamous cell carcinoma keloids
 angel shaped phalango epiphyseal dysplasia
 histrix
 yellow fever allergic conjunctivitis
-tuberculosis mycobacerium tuberculosis susceptibility x linked
 progression of carotid atherosclerosis blood pressure and serum lipids
 optic atrophy x linked
 bulbar palsy progressive
@@ -33297,7 +33056,6 @@ menkes kinky hair
 impetigo staphyloenterotoxemia
 progressive symmetric erythrokeratodermia
 parathyroid neoplasms
-breast cancer susceptibility tinea pedis
 processes
 idiopathic basal ganglia calcification
 giant axonal neuropathy 1
@@ -33332,7 +33090,6 @@ anoxia pseudopseudohypoparathyroidism
 gjb6 related dfna 3 nonsyndromic hearing loss and deafness
 prognathism
 aerobic exercise capacity
-psoriasis susceptibility 1
 charcot marie tooth disease dominant intermediate f
 pex10
 blood pressure hyperlipidemia familial combined
@@ -33351,6 +33108,7 @@ myocardial infarction angina
 lipid response to rosuvastatin
 marginal zone b cell lymphoma muscular dystrophy dystroglycanopathy
 body mass glucose insulin secretion
+c4b deficiency sle
 spongy degeneration of central nervous system
 confetti
 diffuse mesangial sclerosis transient neonatal diabetes mellitus
@@ -33416,9 +33174,7 @@ hyperleucine isoleucinemia hypervalinemia or hyperleucine isoleucinemia
 diazoxide
 efemp2 related cutis laxa
 early onset epileptic encephalopathy and intellectual deficit due to grin2a mutation
-lung cancer susceptibility and prognosis
 lymphedema hereditary ia
-mycobacterial and viral infections
 17q11 2 microduplication
 microcephaly normal intelligence and immunodeficiency
 bipolar disorder major depressive disorder
@@ -33446,7 +33202,6 @@ complement component 9 deficiency
 familial benign chronic pemphigus
 16p13
 apo a 2 gene polymorphism
-mycobacterium tuberculosis susceptibility to x linked
 x linked spastic paraplegia
 methemoglobinemia sulfhemoglobinemia
 kidney leiomyosarcoma
@@ -33479,7 +33234,6 @@ colon cancer myeloid leukemia
 decreased levels of insulin receptor messenger ribonucleic acid
 lumen loss late
 left ventricular structure
-lung cancer osteoporosis postmenopausal susceptibility
 apnea postanesthetic
 usher syndromes
 muscular dystrophy limb girdle type 2r
@@ -33515,7 +33269,6 @@ epidermolysis bullosa dystrophica neurotrophica
 bone metastases
 cannabis dependence uterine fibroid
 leukemia myelomonocytic chronic
-atopy susceptibility
 lrat related leber congenital amaurosis
 febrile seizures familial 9
 pyridoxal 5 phosphate dependent epilepsy pyridoxamine 5 phosphate oxidase deficiency
@@ -33634,8 +33387,8 @@ febrile seizures familial 5
 tgfbr1
 nodular basal cell carcinoma skin pilomatrix carcinoma
 partial hypoxanthine guanine phosphoribosyltransferase deficiency
-dentatorubro
 acad9
+dentatorubro
 intellectual disability hyperkinetic movement truncal ataxia
 anger related traits
 cardiomyopathy dilated 1w dilated cardiomyopathy
@@ -33857,7 +33610,6 @@ ciliary dyskinesia primary 26
 plasminogen activator fibrinolytic activities
 six5 related branchiootorenal spectrum disorders
 familial liver adenomatosis
-systemic lupus erythematosus with hemolytic anemia
 hemoglobinopathy toms river
 drug induced hepatitis sickle cell anemia
 disc degeneration lumbar spine
@@ -33950,8 +33702,6 @@ wilms tumor aniridia genitourinary anomalies and mental retardation
 hypercholesterolemia rabies
 finnish congenital nephrotic
 ateleiotic dwarfism
-lung cancer susceptibility babesiosis
-cancer susceptibility
 free thyroxine and triiodothyronine
 age related macular degeneration 4
 cataract 35 congenital nuclear
@@ -34079,11 +33829,10 @@ lung allograft fibrosis
 mental retardation x linked 17 31 microduplication intellectual disability
 progressive external ophthalmoplegia with mitochondrial dna deletions autosomal dominant 2
 dilated cardiomyopathy 1l
-neuroblastoma susceptibility neuroblastoma
 nevo syndrome
 neuropathy hereditary sensory and autonomic type ic
-cone rod dystrophy x linked 1
 acute leukemia esophageal squamous cell carcinoma
+cone rod dystrophy x linked 1
 carcinogenesis
 suscepbitility
 diffuse large b cell lymphoma bronchitis
@@ -34097,7 +33846,6 @@ pancreatic agenesis diabetes mellitus permanent neonatal with cerebellar agenesi
 attention deficit hyperactivity disorder externalizing behavior iq
 primary cortisol resistance
 abortion threatened
-focal segmental glomerulosclerosis 4 susceptibility to
 retinitis pigmentosa 54 c2orf71 related retinitis pigmentosa
 hereditary vascular retinopathy
 purpura idiopathic thrombocytopenic
@@ -34232,7 +33980,6 @@ aplastic anemia vaccinia
 ichthyosis follicularis alopecia photophobia
 postnatal female survival
 copd severity
-psoriasis susceptibility 13 candidiasis familial 2 autosomal recessive
 hemolytic anemia due to diphosphoglycerate mutase deficiency
 mental retardation x linked 52
 cataract nuclear progressive
@@ -34264,6 +34011,7 @@ leukemia lymphoma b cell
 malignant struma ovarii
 isoimmunization
 seipinopathy
+tuberculosis mycobacerium tuberculosis
 preauricular tag isolated autosomal dominant 1
 sed congenita
 manzke
@@ -34331,7 +34079,6 @@ lateral sclerosis ovary serous adenocarcinoma
 nodular regenerative hyperplasia inosine triphosphate pyrophosphohydrolase deficiency
 propionic acidemia beta ureidopropionase deficiency
 megalencephalic leukoencephalopathy with subcortical cysts hereditary pancreatitis
-lung cancer susceptibility pneumoconiosis
 carbonic
 melanoma biphasic synovial sarcoma
 diazoxide resistant focal hyperinsulinism due to sur1 deficiency
@@ -34383,7 +34130,6 @@ impaired ig class switch recombination
 triglycerides cholesterol vldl
 growth hormone concentrations insulin like growth factor
 boonstra
-lung cancer susceptibility wilms tumor
 testicular germ cell tumor tongue squamous cell carcinoma
 peritoneal fibrosis
 carcinoma lewis lung
@@ -34476,7 +34222,6 @@ hyperphenylalaninemia hyperphenylalaninemia due to dehydratase deficiency
 diphyllobothriasis central sleep apnea
 albinism oculocutaneous type v
 woolly hair congenital
-rad51c related familial susceptibility to breast ovarian cancer
 juxtacortical osteosarcoma
 restenosis after percutaneous transluminal angioplasty
 slc6a4 related behavior disorders
@@ -34562,7 +34307,6 @@ myocardial infarction nephropathic cystinosis
 myasthenic syndrome acetazolamide responsive
 atherosclerosis carotid intima media thickness
 colorectal cancer nonpolyposis
-epilepsy childhood absence susceptibility to 5
 waardenburg syndrome type 2e
 ttn related dilated cardiomyopathy
 lipid metabolism disorders obesity
@@ -34594,7 +34338,6 @@ chromosome 16p13 3 duplication
 transluminal
 toxic megacolon
 deafness autosomal dominant 28 dfna28 nonsyndromic hearing loss and deafness
-systemic lupus erythematosus sle susceptibility
 ldl
 methamphetamine abuse schizophrenia
 type 2n von willebrand disease
@@ -34635,8 +34378,8 @@ hiatus hernia dyskinesia of esophagus  6
 advanced sleep phase syndrome delayed sleep phase syndrome
 altered oatp c transport activity
 atherosclerosis coronary hypertension
-pulmonary hypertension chronic thromboembolic without deep vein thrombosis susceptibility to
 short stature due to primary acid labile subunit deficiency
+neuroblastoma 5 neuroblastoma
 chronic inflammatory demyelinating polyneuritis
 chronic intestinal failure
 puerperal disorders
@@ -34652,10 +34395,8 @@ cystathionase
 cortical dysplasia complex with other brain malformations 3
 autosomal dominant limb girdle muscular dystrophy type 1e
 pseudomonas aeruginosa chronic infection by in cystic fibrosis
-autoimmune disease susceptibility to 1
 atherosclerosis coronary carotid artery damage
 lysyl hydroxylase 3 deficiency
-autism susceptibility x linked
 hepatitis b malaria
 suicide family history
 npm1 related acute myeloid leukemia
@@ -34663,6 +34404,7 @@ obesity malignant pleural mesothelioma
 dilated cardiomyopathy 1g
 lobular neoplasia sarcomatoid renal cell carcinoma
 scoliosis idiopathic 3
+obesity severe bmiq9 obesity
 coronary vasomotor function
 congenital hypogammaglobulinemia
 bleeding diathesis due to thromboxane synthesis deficiency
@@ -34698,6 +34440,7 @@ limb girdle muscular dystrophies autosomal dominant
 intermediate severe salla
 hypertension essential salt sensitive
 melanoma cutaneous malignant 2
+fibrous histiocytoma allergy and asthma
 mucocutaneous venous malformations
 pronounced septal hypertrophy
 dwarfism pituitary
@@ -34767,8 +34510,8 @@ altered brain levels of apolipoprotein e
 platelet function and related traits
 xeroderma pigmentosum group e ddb negative subtype ddb2 related xeroderma pigmentosum
 chronic cholangitis immunodeficiency primary autosomal recessive il21r related
-deafness autosomal recessive 89
 opioid sensitivity
+deafness autosomal recessive 89
 fatal multiple mitochondrial dysfunction
 dentin dysplasia type i
 dyslipidemia and insulin resistance
@@ -34798,7 +34541,6 @@ glomerulonephritis hepatitis b virus associated
 avian influenza
 t cell large granular lymphocyte leukemia large granular lymphocyte leukemia
 candidiasis chronic mucocutaneous
-ovalocytosis and malaria susceptibility
 familial cutaneous collagenoma
 progressive myositis ossificans
 polyostotic osteolytic dysplasia hereditary expansile
@@ -34814,7 +34556,6 @@ gallbladder squamous cell carcinoma
 multiple cutaneous and mucosal venous malformations
 spine bone size
 fanconis anemia primary syphilis
-nonarteritic anterior ischemic optic neuropathy susceptibility to
 hemangioma capillary infantile inhalation anthrax
 pena shokeir syndrome type 1
 type 2m von willebrand disease
@@ -34949,6 +34690,7 @@ nicotine personality trait
 graft occlusion atherosclerotic
 ovarian cancer radiculopathy
 fibrous histiocytoma histiocytoma
+focal segmental glomerulosclerosis 4
 mental retardation autosomal recessive 11
 krebs von den lungen 6 levels
 autosomal dominant optic atrophy plus
@@ -35069,7 +34811,6 @@ ochronosis lumbar disc herniation
 adams oliver syndrome 2
 cyclophosphamide phamacokinetics
 breast mucinous carcinoma
-prostate cancer brain cancer susceptibility
 dermodistortive urticaria
 postpartum depression pain disorder
 digeorge syndrome velocardiofacial syndrome complex 2
@@ -35613,7 +35354,6 @@ christol
 hydroxykynureninuria encephalopathy due to hydroxykynureninuria
 aspartate aminotransferase
 glycine n methyltransferase deficiency kidney cancer
-acute myeloid leukemia susceptibility gata2 related
 familial atrial fibrillation single ventricular septal defect
 lymphocytic choriomeningitis herpes simplex
 attention deficit disorder seasonal affective disorder
@@ -35652,8 +35392,8 @@ liver disease polycystic
 primary cutaneous cd4 small medium sized pleomorphic t cell lymphoma
 inflammatory skin and bowel
 classical progressive supranuclear palsy
-ciliary dyskinesia primary 20
 obesity ucp3 related
+ciliary dyskinesia primary 20
 colon cancer colon cancer somatic
 angiotensinogen concentrations
 renal artery obstruction
@@ -35762,7 +35502,6 @@ sj gren larsson
 hypertension response to exercise
 laterality defects autosomal dominant
 response to clozapine
-chek2 related susceptibility to breast cancer
 joint stiffness
 ejection
 renin activity salt sensitivity
@@ -35810,8 +35549,8 @@ rodgers
 aromatic amino acid decarboxylase deficiency
 telomeric 22q13 monosomy syndrome
 body mass index qtl2
-glucose tolerance hyperglycemia
 hiv1 infection
+glucose tolerance hyperglycemia
 leukemia leukemia acute myeloid with eosinophilia
 sars infection protection against
 fibrocalculous pancreatopathy
@@ -35957,7 +35696,6 @@ leukoencephalopathy with mild cerebellar ataxia and white matter edema
 leukemia acute myeloid with eosinophilia
 dyggve melchior clausen disease
 keratoglobus
-pulmonary hypertension chronic thromboembolic without deep vein thrombosis
 ribavirin
 dpm3 cdg
 popliteal pterygium syndrome 2 lethal type
@@ -36028,7 +35766,6 @@ ceroid lipofuscinosis neuronal 2 spinocerebellar ataxia autosomal recessive 7
 cholesterol glucose insulin triglycerides
 juvenile myasthenia gravis
 tetralogy of fallot with absent pulmonary valve
-hepatic fibrosis susceptibility due to schistosoma mansoni infection
 dfna11 nonsyndromic hearing loss and deafness
 x linked osteoporosis with fractures
 rett disorder
@@ -36068,7 +35805,6 @@ cronkhite canada syndrome
 follicular lymphoma to diffuse large cell lymphoma
 unclassified chronic myeloproliferative disease
 low insulin and cholesterol levels
-pityriasis rubra pilaris psoriasis susceptibility
 nipal4 related autosomal recessive congenital ichthyosis
 hyperparathyroidism 1
 apolipoprotein c ii deficiency
@@ -36448,7 +36184,6 @@ terminal osseous dysplasia pigmentary defects
 mut related methylmalonic acidemia methylmalonyl coenzyme a mutase deficiency
 developmental delay due to methylmalonate semialdehyde dehydrogenase deficiency
 prph2 related adult onset vitelliform macular dystrophy
-malignant hyperthermia susceptibility type 5
 encephalopathy progressive with or without lipodystrophy
 osteolytic
 sick sinus syndrome 2 autosomal dominant
@@ -36519,7 +36254,6 @@ knops
 situs inversus leber congenital amaurosis
 glucuronide
 aortic atherosclerosis in diabetes mellitus
-breast cancer sle susceptibility
 transgrediens et progrediens palmoplantar keratoderma
 breast cancer retinoblastoma
 autism spectrum disorder obesity
@@ -36543,7 +36277,9 @@ intellectual deficit x linked psychosis macroorchidism
 axin2 related attenuated familial adenomatous polyposis
 sdhc related paraganglioma and gastric stromal sarcoma
 corticosterone methyloxidase deficiency
+dnase1 related
 insulin lipids obesity glucose leptin
+schistosoma
 hypothryoidism congenital nongoitrous 4
 inguinale
 triglyceride levels
@@ -36597,7 +36333,6 @@ whipple
 antigen in scianna blood group system
 bleeding diathesis due to glycoprotein vi deficiency
 papillary renal cell carcinoma renal cell carcinoma papillary
-chronic inflammatory demyelinating polyneuropathy myocardial infarction susceptibility
 vasopressor
 deafness autosomal dominant 12
 amyloidogenic transthyretin amyloidosis
@@ -36622,6 +36357,7 @@ parkin
 intracranial primitive neuroectodermal tumor
 altered efflux of the p glycoprotein substrate rhodamine
 dfnx1 nonsyndromic hearing loss and deafness
+secretory diarrhea autism
 metastatic melanoma
 radiculopathy diffuse idiopathic skeletal hyperostosis
 cataract microphthalmia and nystagmus
@@ -36713,6 +36449,7 @@ c reactive protein cholesterol hdl insulin
 mental retardation autosomal recessive 30
 retinitis pigmentosa autosomal recessive
 pancreatic cancer facial paralysis
+attention deficit hyperactivity disorder autism
 pleomorphic malignant fibrous histiocytoma
 dorsalis
 xanthoma disseminatum
@@ -36733,6 +36470,7 @@ cutaneous polyarteritis nodosa
 acute poststreptococcal glomerulonephritis impetigo
 bronchopulmonary dysplasia respiratory distress syndrome neonatal
 reflex babinski
+diabetes mellitus insulin dependent 22 hiv infection
 histiocytoma angiomatoid fibrous
 deficiency of alpha mannosidase
 epilepsy with generalized tonic clonic seizures erythromelalgia
@@ -36754,7 +36492,6 @@ immunodeficiency with natural killer cell deficiency
 very
 sarcoma family syndrome of li and fraumeni
 facial hemiatrophy
-kif1b related neuroblastoma susceptibility
 aortic aneurysm familial abdominal 2
 psoriasis spondyloarthropathy
 hypertension renovascular
@@ -36827,11 +36564,11 @@ peptic ulcer perforation keratosis linearis with ichthyosis congenita and sclero
 allergy dermatitis and eczema
 fibrinolytic
 atrophic glossitis
-ryr1 related malignant hyperthermia susceptibility
 hyperphenylalaninemia non pku mild
 scn9a related generalized epilepsy with febrile seizures plus
 myokymia 1 with or without hypomagnesemia
 lipid concentrations
+rad51c related familial
 osteoarthritis atherosclerosis
 power sports performance
 pediatric lymphoma
@@ -37075,7 +36812,6 @@ hypoglycemia with deficiency of glycogen synthetase in the liver
 microcephaly amish type
 myh6 related dilated cardiomyopathy
 first
-osteoporosis postmenopausal susceptibility
 hiv 1 gnathodiaphyseal dysplasia
 harp
 coralliform
@@ -37138,7 +36874,6 @@ cole disease
 mental retardation x linked 63
 hypoactive
 yemenite
-susceptiblity
 metabolic syndrome obesity
 otosclerosis 3
 myoglobin
@@ -37389,7 +37124,6 @@ meckels
 profile
 lymphangitis
 peanut
-prognosis
 oculocutaneous albinism type 1b
 parametritis
 deafness autosomal recessive 14
@@ -37632,7 +37366,6 @@ endometrioid
 equina
 urethral diverticulum
 maturity onset diabetes of the young type 11
-epilepsy idiopathic generalized susceptibility to
 bannayan riley ruvalcaba syndrome ruvalcaba syndrome
 measurement
 parathyroid cancer
@@ -37914,7 +37647,6 @@ cushing syndrome
 epileptic encephalopathy early infantile 11
 bisphosphatase
 syndactyly type 5
-microvascular complications of diabetes susceptibility to 1
 bifid nose
 laryngocele
 microlissencephaly
@@ -38058,7 +37790,6 @@ ptosis hereditary congenital 1
 onychodystrophy
 osteosclerosis developmental delay craniosynostosis
 acute megakaryoblastic leukemia without down
-vitiligo associated multiple autoimmune disease
 nanophthalmos 3
 deafness autosomal dominant 17
 spinocerebellar ataxia 29
@@ -38233,7 +37964,6 @@ hyperekplexia 3
 trachea
 unverricht lundborg disease
 smith mccort dysplasia 2
-systemic lupus erythematosus with nephritis susceptibility to
 ehlers danlos syndrome cardiac valvular form
 mental retardation x linked syndromic lubs
 nail disease
@@ -38564,11 +38294,9 @@ neuronopathic
 lupus erythematosus systemic lupus erythematosus with nephritis
 albinism oculocutaneous type ii modifier of
 deafness autosomal recessive 23
-malignant hyperthermia susceptibility type 1
 series
 cardiopulmonary
 myasthenic syndrome congenital associated with facial dysmorphism and acetylcholine receptor deficiency
-lung cancer susceptibility lung cancer susceptibility
 charcot marie tooth disease dominant intermediate e
 hyperproglucagonemia
 myopia 5
@@ -38702,7 +38430,6 @@ violent
 lacrimo auriculo dento digital
 phenomenon
 gata1
-sick sinus syndrome 3
 primary cutaneous diffuse large b cell lymphoma leg type
 frank ter haar syndrome
 phamacokinetics
@@ -38851,7 +38578,6 @@ inclusion body myopathy with early onset paget disease and frontotemporal dement
 eulenburg
 fungal
 retinal vascular
-hepatic fibrosis
 aggravated
 lithiasis
 abdominal pain
@@ -39063,6 +38789,7 @@ renal cell carcinoma papillary 1 familial and somatic
 diabetes mellitus insulin dependent 10
 parkinson disease 14
 autosomal dominant cervical dystonia
+pityriasis rubra pilaris psoriasis
 infantile parkinsonism dystonia
 triacylglycerol
 nevus sebaceous of jadassohn
@@ -39212,6 +38939,7 @@ isolated growth hormone deficiency type ib
 pseudoprimary hyperaldosteronism
 heterotopia periventricular ehlers danlos variant
 freeman sheldon
+migraine familial typical
 bone density spondylosis lumbar
 hypernatremia
 nerve sheath neoplasms
@@ -39267,7 +38995,6 @@ factor xiiia deficiency
 coloboma ocular
 cholestasis intrahepatic
 polyposis juvenile
-autosomal recessive mendelian
 signet
 potocki lupski syndrome
 peroxisome biogenesis disorder 13a
@@ -39344,6 +39071,7 @@ melorheostosis with osteopoikilosis
 eiken skeletal dysplasia
 compton
 osteopathia striata with cranial sclerosis
+pedis
 lung adenocarcinoma endometrial adenocarcinoma
 keratoconus 1
 ataxia telangiectasia variant
@@ -39509,7 +39237,6 @@ hepatosplenic t cell lymphoma
 cafe au lait spots multiple
 pituitary acth hypersecretion
 paroxysmal exertion induced dyskinesia
-hearing loss cisplatin induced
 alcohol dependence drug dependence
 cortex
 endometriosis adenomyosis
@@ -39564,6 +39291,7 @@ macular degeneration x linked atrophic
 foveomacular dystrophy adult onset
 pemphigoides
 hyperchlorhidrosis
+diabetes mellitus insulin dependent x linked
 migraine familial hemiplegic 1
 heart block nonprogressive
 retrognathia
@@ -39611,7 +39339,6 @@ grave
 kid syndrome
 creatinine clearance qtl
 sleep time
-autosomal dominant mendelian
 aging and longevity
 erysipeloid
 nevirapine induced rash
@@ -39658,11 +39385,11 @@ kbg
 h pylori infection stomach cancer
 stress cardiomyopathy
 scheie
-psoraisis
 spastic ataxia 1 autosomal dominant
 rheumatoid arthritis arthritis
 osteoporosis related phenotypes
 respiratory syncytial virus infection
+severe cutaneous adverse reaction
 paragangliomas head and neck pheochromocytomas
 retinitis pigmentosa 12
 mast syndrome
@@ -39920,6 +39647,7 @@ protoporphyria erythropoietic autosomal recessive
 peroxisome biogenesis disorder 7b
 lipid levels
 urinary symptoms in response to radiotherapy in prostate cancer
+frontal lobe epilepsy lung cancer
 congenital sucrase isomaltase deficiency with starch and lactose intolerance
 dehydrated hereditary stomatocytosis dehydrated hereditary stomatocytosis with or without pseudohyperkalemia and or perinatal edema
 microcystic meningioma
@@ -39936,7 +39664,6 @@ growth and mental retardation mandibulofacial dysostosis microcephaly and cleft 
 coronary artery vasoconstriction
 czech dysplasia metatarsal type
 thalassemias
-hereditary and sporadic prostate cancer susceptibility
 neuropathy hereditary motor and sensory okinawa type
 thalassemias beta
 familial parathyroid adenoma
@@ -40033,7 +39760,6 @@ cervix uteri carcinoma in situ
 deafness autosomal dominant 11
 hereditary renal hypouricemia
 mapbp
-orofacial cleft 6 susceptibility to
 pitt hopkins like syndrome 2
 chondroectodermal dysplasia
 louis
@@ -40051,6 +39777,7 @@ glaucoma 1 open angle o
 usher syndrome type 2
 kidney hypertrophy
 chronic atrophic gastritis and gastric carcinoma
+orofacial cleft 6
 late onset junctional epidermolysis bullosa
 osteochondritis dissecans familial osteochondritis dissecans
 deafness autosomal recessive 31
@@ -40205,7 +39932,6 @@ dent disease
 dystrophic epidermolysis bullosa nails only
 lactase deficiency congenital
 colorectal adenocarcinomas
-mycobacterium tuberculosis susceptibility to infection by
 cone degeneration
 stickler syndrome type 3
 premature ovarian failure 5
@@ -40269,6 +39995,7 @@ adrenal insufficiency congenital with 46 xy sex reversal partial or complete
 sex hormone binding globulin
 thrombocytopenia 2
 atelosteogenesis ii
+schistosoma mansoni infection
 congenital cataracts
 lipodystrophy familial partial type 2
 germline mutations
@@ -40452,11 +40179,9 @@ spastic ataxia 3 autosomal recessive
 response to ximelagatran treatment
 corpus callosum agenesis neuronopathy
 morvans fibrillary chorea
-alk related neuroblastoma susceptibility
 congenital factor xiii deficiency
 peptic ulcer hemorrhage
 methamphetamine abuse psychoses
-prostate cancer brain cancer
 congenital porphyria
 polg related disorders
 pyosalpinx
@@ -40466,6 +40191,7 @@ recombination rate
 benign samaritan congenital myopathy
 spermatogenesis arrest
 deafness autosomal dominant 22
+systemic lupus erythematosus sle
 cataract 28 age related cortical
 scalp ear nipple syndrome
 plasma cell granuloma pulmonary
@@ -40504,7 +40230,6 @@ meretoja
 interleukin 2 receptor alpha deficiency of
 vaginal neoplasms
 infections recurrent with encephalopathy hepatic dysfunction and cardiovascular malformations
-mycobacterial disease mendelian susceptibility to
 pityriasis lichenoides et varioliformis acuta
 respiratory sounds
 transit
@@ -40593,6 +40318,7 @@ syndactyly type 4
 auditory neuropathy autosomal dominant
 acetylcholinesterase paraoxonase
 cervical artery dissection spontaneous
+allergy and asthma
 aniridia cerebellar ataxia and mental retardation
 cataract congenital zonular with sutural opacities
 neutropenia nonimmune chronic idiopathic of adults
@@ -40623,7 +40349,6 @@ physical function
 temtamy preaxial brachydactyly syndrome
 tuberculoid
 acute hemorrhagic conjunctivitis
-severe cutaneous adverse reaction susceptibility to
 chudley mccullough
 cleft palate isolated and mental retardation
 x linked dystonia parkinsonism
@@ -40723,6 +40448,7 @@ fissured
 premature coronary artery
 juvenile onset dystonia
 neuroendocrine cell hyperplasia of infancy
+hereditary and sporadic prostate cancer
 thrombophilia x linked due to factor ix defect
 idiopathic anterior uveitis
 deafness autosomal recessive 18a
@@ -40856,8 +40582,8 @@ isolated bone marrow mastocytosis
 nsdhl related disorders
 gerstmann straussler scheinker
 adducts
-colorectal cancer stomach cancer
 schizophrenia schizophrenia
+colorectal cancer stomach cancer
 hearing disorders
 familial hypertrophic cardiomyopathy 1
 cleft lip with cleft palate cleft lip without cleft palate cleft palate
@@ -40891,6 +40617,7 @@ epimerase deficiency galactosemia
 plasmodium falciparum fever episodes qtl1
 hypertrophic osteoarthropathy primary autosomal recessive
 scleroderma polymyositis
+mycobacterial and viral infections
 spastic paraplegia 25 autosomal recessive
 benign familial infantile seizures 2
 dystonia musculorum deformans
@@ -40957,7 +40684,6 @@ short syndrome
 familial apoceruloplasmin deficiency
 deafness autosomal recessive 2
 double homozygosity for receptor polymorphisms of platelet gpia and gpiiia
-autism susceptibility to x linked
 tacrolimus pharmcokinetics
 hereditary cryohydrocytosis with reduced stomatin
 honey droplet corneal dystrophy
@@ -40974,8 +40700,8 @@ bronchioalveolar carcinoma
 osteopathia striata cranial sclerosis
 alpha 2 macroglobulin deficiency
 thyrotoxic hypokalemic periodic paralysis
-complex partial epilepsy
 dnm2 related intermediate charcot marie tooth neuropathy
+complex partial epilepsy
 3 beta hydroxysteroid dehydrogenase deficiency
 bone density height
 heterotaxy visceral x linked
@@ -41015,6 +40741,7 @@ microcephaly 10 primary autosomal recessive
 cataract 3 multiple types
 taeniasis
 congenital heart defects multiple
+systemic lupus erythematosus with hemolytic anemia
 depression sleep disorders
 epiphyseal dysplasia multiple with myopia and deafness
 blood group lutheran inhibitor
@@ -41030,7 +40757,6 @@ corneal endothelial dystrophy and perceptive deafness
 branched chain ketoacid dehydrogenase kinase deficiency
 surfactant metabolism dysfunction pulmonary 2
 parotid gland cancer
-glaucoma normal tension susceptibility to
 familial exudative vitreoretinopathy autosomal dominant
 melanoma pancreatic cancer syndrome
 rheumatoid arthritis progression of
@@ -41195,7 +40921,6 @@ restrictive dermopathy lethal
 familial lipoprotein lipase deficiency
 increased vascular reactivity
 myopathy areflexia respiratory distress and dysphagia early onset
-renal dysplasia cystic
 attention deficit hyperactivity disorder behavior disorder
 leisure
 pierre robin
@@ -41462,6 +41187,7 @@ spinal and bulbar muscular atrophy of kennedy
 heterotopia periventricular
 slowed
 prostate cancer 4
+sick sinus syndrome 3
 darier disease
 ige
 candidiasis familial 5 autosomal recessive
@@ -41497,7 +41223,6 @@ scn1a related seizure disorders
 bypass
 short stature idiopathic familial
 hyperimmunoglobulin
-malignant hyperthermia susceptibility malignant hyperthermia susceptibility
 leukemia myeloid lymphoid or mixed lineage
 plasma glucose basal hepatic glucose and increased insulin release
 carotenoid
@@ -41598,6 +41323,7 @@ cholelithiasis related traits in sickle cell anemia
 bipolar disorder affective psychoses
 11p15
 takayasu
+pulmonary hypertension chronic thromboembolic without deep vein thrombosis
 3 hydroxyacyl coenzyme a dehydrogenase deficiency
 isolated aniridia
 oculootodental syndrome
@@ -41653,7 +41379,6 @@ diabetes mellitus permanent neonatal with cerebellar agenesis
 charcot marie tooth disease dominant intermediate d
 bainbridge ropers syndrome
 mucolipidosis iii alpha beta
-multiple self healing squamous epithelioma
 familial short qt syndrome
 familial renal amyloidosis due to fibrinogen a alpha chain variant
 galactose epimerase deficiency
@@ -41749,6 +41474,7 @@ cloacogenic carcinoma
 non polyposis turcot syndrome
 organophosphate
 posterior column ataxia with retinitis pigmentosa
+mycobacterial disease mendelian
 adenomatous polyps
 spastic paraplegia 53 autosomal recessive
 sodium channelopathy related small fiber neuropathy
@@ -41764,7 +41490,6 @@ buruli ulcer disease
 femoral neck bone geometry
 hypercalciuric
 ehlers danlos syndrome progeroid type
-schistosoma
 abdominal aortic aneurysm homocysteine hypertension
 frontotemporal dementia chromosome 3 linked
 total serum ige
@@ -41796,7 +41521,6 @@ perforans
 niemann pick disease type c severe early infantile neurologic onset
 multiple mitochondrial dysfunctions syndrome 3
 fleck corneal dystrophy
-melanoma cutaneous malignant susceptibility to 1
 vasoconstriction
 dehydration
 bilirubin metabolic disorder
@@ -41829,7 +41553,6 @@ human papillomavirus infection
 pseudohypoparathyroidism type 1c
 higher sperm counts
 blood group p1pk system p phenotype
-nephrolithiasis uric acid
 intermittent maple syrup urine
 acanthamoeba keratitis
 recombination rate males
@@ -41879,8 +41602,8 @@ familial paroxysmal dystonia
 dowling degos disease 2
 familial congenital mirror movements
 impulsive behavior
-cortical thickness
 ectodermal dysplasia skin fragility syndrome
+cortical thickness
 autosomal dominant hypocalcemia
 mevalonate kinase deficiency
 hypercholesterolemia autosomal recessive
@@ -41890,6 +41613,7 @@ severe combined immunodeficiency due to il2 deficiency
 paralytic squint
 leydig cell hypoplasia due to lhb deficiency
 immunodysregulation
+psoriatic arthritis psoriasis
 obsessive compulsive disorder protection against
 gastritis atrophic
 dubowitz syndrome
@@ -41922,6 +41646,7 @@ central core
 warsaw
 spondyloepimetaphyseal dysplasia missouri
 rhizomelic chondrodysplasia punctata type 3
+teratoid
 anogenital
 proliferating
 beckwith wiedemann syndrome due to imprinting defect of 11p15
@@ -42004,7 +41729,6 @@ kowarski syndrome
 bickel
 formal
 unemotional
-pedis
 pulmonary hypertension
 hypofibrinogenemia
 blasts
@@ -42013,7 +41737,6 @@ liver cancer liver disease
 central core disease
 amish infantile epilepsy
 tocopherol
-mendelian susceptibility to mycobacterial
 vasodilation
 aminoacylase
 musculoskeletal
@@ -42191,6 +41914,7 @@ ear
 oi type ii
 cholangiolocellular
 hoarseness
+16p11
 denborough
 lymphoproliferative syndrome 1
 niemann pick disease type c2
@@ -42383,7 +42107,6 @@ sly syndrome
 hypercarotenemia
 callous
 composition
-psoriasis susceptibility
 breast carcinoma
 scimitar syndrome
 epileptic encephalopathy early infantile 2
@@ -42515,7 +42238,6 @@ enuresis
 microphthalmia with cataract
 neuroserpin
 parietal foramina 1
-nonarteritic anterior ischemic optic neuropathy
 arterial tortuosity syndrome
 plasmin
 urachal
@@ -42587,6 +42309,7 @@ junius
 forced
 cerebellar hypoplasia and mental retardation with or without quadrupedal locomotion 1
 thiopurine
+hepatic fibrosis
 vici
 cataract congenital nuclear autosomal recessive
 acetabular dysplasia
@@ -42664,7 +42387,6 @@ keutel syndrome
 hyperoxaluria primary
 cataract with y shaped suture opacities
 meningitis meningococcal
-teratoid
 ocular toxoplasmosis
 unstable
 channelopathy associated congenital insensitivity to pain
@@ -42754,7 +42476,6 @@ hajdu
 loeys dietz syndrome type 3
 mirror movements
 sexual disorder
-breast ovarian cancer familial susceptibility to 1
 charcot marie tooth neuropathy type 1
 agammaglobulinemia and isolated hormone deficiency
 macular dystrophy patterned
@@ -42809,6 +42530,7 @@ aicardi gouti res syndrome
 cutis laxa ad
 specific granule deficiency
 leukemia juvenile myelomonocytic
+autosomal recessive mendelian
 creatine transporter deficiency
 familial retinoblastoma
 prolidase
@@ -42942,6 +42664,7 @@ obesity and blood pressure
 gilford
 idiopathic central precocious puberty
 thiamine responsive megaloblastic anemia
+alk related neuroblastoma
 familial afibrinogenemia
 paraquat poisoning
 chondroblastic
@@ -42999,6 +42722,7 @@ pulmonary surfactant metabolism dysfunction
 outgrowth
 vascular endothelial growth factor a
 malignant neoplasm of ovary
+autosomal dominant mendelian
 spastic paraplegia 34 x linked
 neurologic diseases
 sly
@@ -43019,6 +42743,7 @@ spastic paraplegia 36 autosomal dominant
 hypercalcemic tumoral calcinosis
 hypoalphalipoproteinemias
 methamphetamine abuse
+psoraisis
 palindromic
 somatotroph adenoma
 atherosclerotic
@@ -43030,7 +42755,6 @@ chronic angina
 granulomatous dermatitis
 laryngotracheitis
 lethal congenital contractural
-hearing loss cisplatin induced susceptibility to
 adult onset stills
 buchem
 dementia frontotemporal
@@ -43186,7 +42910,6 @@ contagiosum
 voyeurism
 liver sarcoma
 osteopetrosis with renal tubular acidosis
-systemic lupus erythematosus with nephritis
 skeletal defects genital hypoplasia and mental retardation
 glutathioninuria
 combined malonic and methylmalonic aciduria
@@ -43257,7 +42980,6 @@ fleck retina familial benign
 defective apolipoprotein b 100
 carolina
 spasms
-16p11
 neisseriaceae infections
 hyperchlorhidrosis isolated
 alport syndrome autosomal dominant
@@ -43411,6 +43133,7 @@ bcg infection generalized familial
 pachyonychia congenita jackson lawler type
 epidermolysis bullosa junctional
 obesity variation in
+prostate cancer brain cancer
 familial hypodysfibrinogenemia
 aids slow progression to
 leigh syndrome
@@ -43770,6 +43493,7 @@ dysfibrinogenemia congenital
 rhinoscleroma
 severe hemophilia b
 allergies
+renal dysplasia cystic
 malaria falciparum
 breast density
 chronic tic disorder tic disorder
@@ -43816,7 +43540,6 @@ navajo neurohepatopathy
 kidney angiomyolipoma
 articulation disorder
 kleptomania
-myocardial infarction susceptibility
 nervous system disease
 coronary calcification
 retinal cone dystrophy 3a
@@ -44034,6 +43757,7 @@ paramyotonia congenita of von eulenburg
 nicotine smoking behavior
 uterine corpus cancer
 producing
+multiple self healing squamous epithelioma
 spinocerebellar ataxia 31
 aicardi syndrome
 alpha 1 antichymotrypsin deficiency
@@ -44056,7 +43780,6 @@ gender
 suicide attempted
 generalized epilepsy and paroxysmal dyskinesia
 infantile onset ascending hereditary spastic paralysis
-autoimmune disease
 familial mediterranean fever ar
 dysautonomia familial
 choanal atresia and lymphedema
@@ -44116,7 +43839,6 @@ glutaric aciduria
 blood platelet disorders
 hydroxykynureninuria
 paroxysmal ventricular fibrillation
-scoliosis idiopathic susceptibility to
 leukemia myelomonocytic acute
 clefting
 pulmonary fibrosis familial
@@ -44127,6 +43849,7 @@ middle ear squamous cell carcinoma
 renal tubular acidosis distal with hemolytic anemia
 serine
 tuberous sclerosis 2
+nephrolithiasis uric acid
 peyronies disease
 atrophy of testis
 brain hemorrhage
@@ -44280,8 +44003,6 @@ sc phocomelia
 denture
 cd3epsilon
 therapeutic
-myelodysplastic syndrome
-glioma susceptibility
 situs inversus totalis
 spondyloepimetaphyseal dysplasia with joint laxity
 vitamin k deficiency hemorrhagic disease
@@ -44388,6 +44109,7 @@ chronic granulomatous disease x linked
 neuroblastoma congenital heart
 respiratory distress syndrome adult
 osteoglophonic
+vitiligo associated multiple autoimmune disease
 floating harbor
 child syndrome
 otomycosis
@@ -44462,6 +44184,7 @@ cornelia de lange syndrome 2
 familial idiopathic steroid resistant nephrotic syndrome with diffuse mesangial sclerosis
 epidermolysis bullosa simplex autosomal recessive
 cataract posterior polar
+mansoni
 lacrimal duct obstruction
 chemokine
 nevoid basal cell carcinoma syndrome
@@ -44552,7 +44275,6 @@ event
 cone rod dystrophy x linked
 lassa
 epilepsy nocturnal frontal lobe type 4
-delayed sleep phase syndrome
 inferior
 crescentic
 hemometra
@@ -44562,6 +44284,7 @@ type 1 von willebrand disease
 hypertension renal
 mouth disease
 macroglobulinaemia
+nonarteritic anterior ischemic optic neuropathy
 microspherophakia
 hypoproteinemia
 toxic shock syndrome
@@ -44618,7 +44341,6 @@ abdominal obesity metabolic
 docetaxel
 shaheen
 townes brocks syndrome
-epilepsy childhood absence susceptibility to 2
 papillomavirus
 glycogen storage disease type ixa1
 deferens
@@ -44645,7 +44367,6 @@ azotemia
 willebrands
 potassium
 lupus erythematosus systemic lupus erythematosus
-psoriasis psoriasis susceptibility
 immunodeficiency common variable 2
 tocilizumab
 mesomelia synostoses
@@ -44793,7 +44514,6 @@ vitreoretinochoroidopathy
 scaphocephaly maxillary retrusion and mental retardation
 autosomal dominant centronuclear myopathy
 cytoplasmic body myopathy
-tobacco addiction
 antidepressants
 polydactyly of a triphalangeal thumb unilateral
 torticollis
@@ -44826,7 +44546,6 @@ distal monosomy 3p
 goldenhar syndrome
 macrocephaly alopecia cutis laxa and scoliosis
 congenital myopathy with fiber type disproportion
-hiv infection
 1p36 deletion
 systolic heart failure
 coronary artery aneurysm
@@ -44881,6 +44600,7 @@ sapho syndrome
 pseudoobstruction
 multiple sclerosis brain glutamate levels
 juvenile glaucoma
+myelodysplastic syndrome
 epilepsy progressive myoclonic
 meesmann
 brachial plexus lesion
@@ -45093,7 +44813,6 @@ empty
 cognitive decline
 stapes ankylosis with broad thumb and toes
 bitter taste perception
-breast ovarian cancer familial susceptibility to
 gastric small cell carcinoma
 dietary
 atrial septal defect ostium secundum type
@@ -45121,7 +44840,6 @@ empty sella syndrome
 lipid storage disease
 giant cell myocarditis
 tortuosity
-epilepsy juvenile absence
 ring dermoid of cornea
 gestational trophoblastic neoplasm trophoblastic neoplasm
 acetyl
@@ -45220,8 +44938,8 @@ senior loken syndrome 1
 muscular dystrophy dystroglycanopathy type a 14
 pathologic
 head circumference
-cirrhosis cryptogenic
 henoch
+cirrhosis cryptogenic
 goodpasture
 muscular dystrophy emery dreifuss
 complement factor i deficiency
@@ -45402,6 +45120,7 @@ brooke spiegler syndrome
 craniodiaphyseal dysplasia autosomal dominant
 analbuminemia
 brain glioma
+delayed sleep phase syndrome
 tuberculosis protection against
 acropectoral
 stuttering familial persistent
@@ -45569,7 +45288,6 @@ shprintzen goldberg syndrome
 vacuolar myopathy
 hypophosphatasia infantile
 ovarian brenner tumor
-asthma related traits susceptibility to
 argyrophilic grain
 anisomastia
 charcot marie tooth disease type 1c
@@ -45599,6 +45317,7 @@ healing
 somatostatin
 carotid artery stenosis
 hereditary lymphedema
+melioidosis
 duane retraction syndrome
 extragonadal
 pseudobulbar palsy
@@ -45704,7 +45423,6 @@ bronchogenic
 venous insufficiency
 endodermal
 mowat wilson
-diabetes mellitus type 2 susceptiblity to
 liver diseases parasitic
 fraxe
 steatocystoma
@@ -45750,7 +45468,6 @@ medullomyoblastoma
 vitreous detachment
 gaucher disease
 ariboflavinosis
-scoliosis idiopathic
 rippling muscle disease
 vision
 rabson
@@ -45758,7 +45475,6 @@ amelogenesis imperfecta hypomaturation
 acromicric
 striatal
 emery dreifuss muscular dystrophy
-melanoma cutaneous malignant susceptibility to
 glanzmann
 analog
 nemaline myopathy 5 amish
@@ -45790,10 +45506,8 @@ decubitus ulcer
 schnitzler syndrome
 fanconi renotubular
 fanconi syndrome
-microvascular complications of diabetes susceptibility to
 subluxation
 standstill
-mansoni
 alkalosis
 rigidity
 pneumocystosis
@@ -45951,7 +45665,6 @@ eye color traits
 autoimmune retinopathy
 lennox gastaut
 jawad
-autism susceptibility
 pheochromocytoma modifier of
 gilles de la tourette syndrome
 asthma asthma aspirin intolerant
@@ -45971,7 +45684,6 @@ chronic venous leg ulcers
 coumarin resistance
 osteodysplasia
 hymenolepiasis
-melioidosis
 metatropic dysplasia
 arrhythmogenic right ventricular dysplasia 10
 endurance performance
@@ -46040,12 +45752,14 @@ bronchiectasis with or without elevated sweat chloride
 immediate
 actinomycosis
 amyotrophic lateral sclerosis parkinsonism dementia complex
+hearing loss cisplatin induced
 arterial stiffness
 spondylocostal dysostosis 3 autosomal recessive
 jansens metaphyseal chondrodysplasia
 craniosynostosis nonspecific
 lamotrigine
 whim
+hiv infection
 neurodegeneration with brain iron accumulation 2b
 symptomatic
 bilateral retinoblastoma
@@ -46299,7 +46013,6 @@ pulmonary venoocclusive
 myopathy myofibrillar 1
 congenital rubella
 response to acetaminophen
-disease susceptibility
 dermatitis contact
 congenital myotonic dystrophy
 tyrosinemia type i
@@ -46506,7 +46219,6 @@ acute myeloid leukemia with t 8 21 q22 q22 translocation
 normalized brain volume
 leukemia lymphoma adult t cell
 tumoral calcinosis hyperphosphatemic familial
-neuroblastoma susceptibility
 iron overload
 bipolar disorder schizophrenia
 cyclohydrolase
@@ -47061,6 +46773,7 @@ palsies
 diabetic foot ulcers
 frontometaphyseal dysplasia
 chromophobe renal cell carcinoma
+systemic lupus erythematosus with nephritis
 hyperinsulinism hyperammonemia
 progesterone
 foliaceus
@@ -47132,7 +46845,6 @@ neonatorum
 thromboangiitis
 chromophobe
 lymphangiosarcoma
-epilepsy childhood absence susceptibility to
 vasospasm
 drinking behavior
 familial hemophagocytic lymphohistiocytosis
@@ -47156,6 +46868,7 @@ acute fatty liver of pregnancy
 brain aneurysm
 idiopathic recurrent pericarditis
 parkinson disease 8
+epilepsy juvenile absence
 camurati
 cardiomyopathy hypertrophic familial
 weaver syndrome
@@ -47205,6 +46918,7 @@ asthenozoospermia
 drug induced liver injury due to flucloxacillin
 multicentric reticulohistiocytosis
 prothrombin
+microcystic
 hydrocephaly
 popliteal pterygium
 kabuki syndrome
@@ -47369,6 +47083,7 @@ corticosteroid binding globulin deficiency
 cornelia de lange syndrome 1
 cytomegalovirus antibody response
 mccune albright
+autoimmune disease
 triglycerides blood pressure
 behavioral variant of frontotemporal dementia
 overfeeding
@@ -47383,11 +47098,11 @@ endometrial carcinoma somatic
 translocase
 pityriasis rosea
 hereditary neuralgic amyotrophy
-glaucoma normal tension
 frontotemporal lobar degeneration
 adrenal adenoma
 pancreatic agenesis
 metachondromatosis
+polyploidy
 fetal alcohol syndrome
 buruli ulcer
 pulmonary arterial hypertension
@@ -47497,6 +47212,7 @@ dubin johnson
 mckusick
 chronic fatigue
 lymphoid leukemia
+gangrene
 carasil
 farber
 chikungunya
@@ -47554,7 +47270,6 @@ polyarthritis
 horseshoe
 hyperlipoproteinemia type ii
 uveal melanoma
-microcystic
 olmsted
 hypopigmentation
 ellis van creveld syndrome
@@ -47624,19 +47339,16 @@ birt hogg dube
 pagets disease of bone
 diamond blackfan anemia 12
 rosai dorfman
-epilepsy childhood absence
 becker
 pseudoainhum
 precocious puberty
 medulloepithelioma
 microcytic anemia
-polyploidy
 machado joseph
 wolff parkinson white
 jackson weiss syndrome
 chondroblastoma
 anticoagulant
-epilepsy juvenile myoclonic
 asphyxia neonatorum
 facioscapulohumeral muscular dystrophy
 male germ cell tumor somatic
@@ -47791,6 +47503,7 @@ dietary macronutrient intake
 cystic fibrosis severity
 boomerang dysplasia
 struma ovarii
+psoriasis psoriasis
 cholesterol hdl cholesterol ldl
 pulmonary function traits other
 waist circumference triglycerides
@@ -47801,7 +47514,6 @@ brachydactyly type a2
 ubiquitin
 meara
 romano
-gangrene
 speed
 asthma ige
 left ventricular mass
@@ -47848,6 +47560,7 @@ intracranial volume
 charcot marie tooth disease type 4b2
 wells syndrome
 malignant fibroxanthoma
+babesiosis
 n glycan levels
 isolated acth deficiency
 longitudinal
@@ -48140,7 +47853,6 @@ linear
 charcot marie tooth disease axonal type 2k
 charcot marie tooth disease type 2
 peeling
-babesiosis
 diamond blackfan anemia 4
 image
 hereditary breast and ovarian cancer
@@ -48177,6 +47889,7 @@ hydrops fetalis
 hyper ige
 neuroferritinopathy
 gm1 gangliosidosis
+tyrosine
 glycerol
 autoimmunity
 long qt syndrome 9
@@ -48250,6 +47963,7 @@ endolymphatic hydrops
 pathological
 rhabdomyosarcoma alveolar
 xanthoastrocytoma
+lung cancer lung cancer
 breast cancer ovarian cancer
 familial pancreatic carcinoma
 burning
@@ -48334,7 +48048,6 @@ lymphosarcoma
 vitreoretinopathy neovascular inflammatory
 nielsen
 glaucoma 3 primary congenital d
-lung cancer susceptibility
 familial aplasia of the vermis
 limb deficiency anomalies
 pain disorder
@@ -48435,7 +48148,6 @@ ceroid lipofuscinosis neuronal 7
 x linked hypophosphatemia
 mitochondrial encephalomyopathies
 response to antidepressants
-lung cancer lung cancer susceptibility
 neuroectodermal tumors primitive
 polyangiitis
 heinz body anemias
@@ -48502,7 +48214,6 @@ jaw abnormalities
 dihydropteridine reductase deficiency
 coffee consumption
 pancreatic ductal adenocarcinoma
-tyrosine
 brain lesion load
 leydig cell tumor
 prostate adenocarcinoma
@@ -48581,6 +48292,7 @@ phosphorylase kinase deficiency
 eosinophilic gastroenteritis
 allergic asthma
 beta thalassemia hemoglobin e
+glaucoma normal tension
 giant cell arteritis
 anorchia
 ductal carcinoma in situ
@@ -48745,6 +48457,7 @@ coproporphyria
 fetalis
 portal hypertension
 legionellosis
+epilepsy juvenile myoclonic
 urinary tract obstruction
 gastric adenocarcinoma
 congenital dyserythropoietic anemia type i
@@ -48770,7 +48483,6 @@ chordoid glioma
 hirschhorn
 vascular system injuries
 acquisita
-asthma related traits
 hypothalamic
 troponin
 cushing
@@ -48992,7 +48704,6 @@ carney triad
 rosacea
 deafness autosomal recessive 1a
 gynecomastia
-bladder cancer susceptibility
 pearson
 cutaneous fibrous histiocytoma
 monkeypox
@@ -49051,7 +48762,6 @@ lipofuscinoses
 metabolic acidosis
 charcot marie tooth disease type 2d
 hypomaturation
-microvascular complications of diabetes
 kaposi
 glutathione synthetase deficiency
 discoid lupus erythematosus
@@ -49235,7 +48945,6 @@ chronic neutrophilic leukemia
 trophoblastic neoplasm
 surfactant metabolism dysfunction pulmonary
 corticobasal
-melanoma cutaneous malignant
 manganese poisoning
 cystatin c
 subependymal
@@ -49451,6 +49160,7 @@ mental retardation x linked syndromic
 fenofibrate
 ichthyosiform
 atrial fibrillation familial 9
+scoliosis idiopathic
 hypocalciuric
 syncope
 leber congenital amaurosis 3
@@ -49550,6 +49260,7 @@ pancreatic endocrine carcinoma
 organic acidemia
 lobular neoplasia
 lymphatic metastasis
+mycobacterial
 absent
 dysgammaglobulinemia
 avascular necrosis of the femoral head
@@ -49583,6 +49294,7 @@ substance abuse
 oral lichen planus
 renal insufficiency
 miyoshi myopathy
+tinea
 inflammatory breast carcinoma
 tooth agenesis selective 1 with or without orofacial cleft
 multifocal motor neuropathy
@@ -49679,8 +49391,6 @@ pneumococcal meningitis
 joubert syndrome 17
 vulvovaginal candidiasis
 myoclonic epilepsy juvenile
-hodgkin disease
-sle susceptibility
 intrinsic factor deficiency
 phosphorus levels
 sacrococcygeal teratoma
@@ -49725,7 +49435,6 @@ blue cone monochromacy
 osteochondrodysplasia
 hereditary sensory and autonomic neuropathy
 trichorhinophalangeal
-tinea
 enterocolitis
 thiamine
 left ventricular hypertrophy
@@ -49777,9 +49486,9 @@ anthrax
 antagonist
 hidradenitis
 rett
+hodgkin disease
 primary pigmented nodular adrenocortical
 axenfeld rieger
-malignant hyperthermia susceptibility
 metabolites
 amish
 variabilis
@@ -49804,6 +49513,7 @@ leukemia acute myelogenous
 beta ketothiolase deficiency
 endogenous depression
 acute intermittent porphyria
+pneumoconiosis
 variegate porphyria
 ganglioglioma
 stromal keratitis
@@ -49886,7 +49596,6 @@ parachordoma
 mucocutaneous lymph node syndrome
 monocytic leukemia
 premature ejaculation
-tobacco addiction susceptibility to
 erythrokeratodermia
 fatty acid oxidation disorders
 cheilitis
@@ -49989,7 +49698,6 @@ peripheral neuropathy
 hodgkin lymphoma
 neuritis
 compartment
-pneumoconiosis
 coffin siris
 hematuria
 golabi
@@ -50045,6 +49753,7 @@ based
 noise
 septo
 erythroderma
+fraumeni
 decline
 neurotoxicity syndromes
 coccidioidomycosis
@@ -50057,7 +49766,6 @@ neurohypophyseal diabetes insipidus
 acne
 features
 intima
-mycobacterium tuberculosis susceptibility to
 relative
 pericardial
 leptospirosis
@@ -50120,6 +49828,7 @@ lymphangioma
 cytoplasmic
 west
 dandy
+sle
 antidepressive
 mesangial
 falciparum
@@ -50155,7 +49864,6 @@ lung injury
 mullerian
 scapuloperoneal
 autoimmune hepatitis
-fraumeni
 propionic acidemia
 joubert syndrome 14
 glycine encephalopathy
@@ -50359,6 +50067,7 @@ fasting plasma glucose
 diverticulitis
 sleep apnea
 thyrotoxicosis
+postmenopausal
 hemiplegic migraine
 interhemispheric
 dengue hemorrhagic fever
@@ -50384,7 +50093,6 @@ autosomal dominant nocturnal frontal lobe epilepsy
 inhibitors
 pancreas adenocarcinoma
 iga glomerulonephritis
-spondyloarthropathy
 staphyloenterotoxemia
 genital herpes
 limbic encephalitis
@@ -50447,11 +50155,9 @@ leiomyomatosis
 pustulosis
 secretory
 intercellular
-breast ovarian cancer familial
 intercellular adhesion molecule
 proteinosis
 monocytic
-postmenopausal
 crohn disease ulcerative colitis
 conjunctivochalasis
 microcornea
@@ -50531,7 +50237,6 @@ liver cirrhosis alcoholic
 psychotic disorders
 primary mediastinal large b cell lymphoma
 spinal cord injury
-epilepsy idiopathic generalized
 hodgkins
 asphyxiating
 corticobasal degeneration
@@ -50543,6 +50248,7 @@ giardiasis
 acute lung injury
 stevens
 amyloidosis secondary
+bronchitis
 phosphate
 pubertal
 lung function
@@ -50602,7 +50308,6 @@ sandhoff
 ataxia telangiectasia
 lipase
 lafora
-mycobacterial
 sertoli
 gastroenteritis
 pulmonary emphysema
@@ -50635,10 +50340,8 @@ berry
 fabry
 migraine with aura
 vitelliform macular dystrophy
-bronchitis
 cofactor
 glioblastoma multiforme
-thyrotoxic periodic paralysis
 tetanus
 treacher collins
 protoporphyria
@@ -50650,6 +50353,7 @@ reading
 exophthalmos
 fibrochondrogenesis
 atrophic
+epilepsy childhood absence
 amphetamines
 epstein barr virus associated gastric carcinoma
 transitional cell carcinoma
@@ -50661,6 +50365,7 @@ spinocerebellar ataxias
 tongue
 pineocytoma
 ectropion
+tobacco addiction
 asthma aspirin induced
 amyotrophic lateral sclerosis 15 with or without frontotemporal dementia
 burkitts lymphoma
@@ -50717,6 +50422,7 @@ mast cell neoplasm
 pancreatitis chronic
 viral encephalitis
 cerebellar ataxia
+rhabdoid
 response to tnf antagonist treatment
 follicular dendritic cell sarcoma
 cardiomyopathy dilated 1f and limb girdle muscular dystrophy
@@ -50738,6 +50444,7 @@ acquired immunodeficiency syndrome
 zellweger syndrome
 response to treatment for acute lymphoblastic leukemia
 anthropometric traits
+spondyloarthropathy
 luteinizing hormone
 response to hepatitis c treatment
 glaucoma primary open angle
@@ -50759,7 +50466,6 @@ meningococcemia
 huntingtons disease
 actinic
 early infantile epileptic encephalopathy
-asperger syndrome
 calciphylaxis
 craniosynostoses
 social
@@ -50791,7 +50497,6 @@ odontogenesis
 geleophysic dysplasia
 stage
 hematology
-rhabdoid
 encephalocele
 retinal detachment
 rieger
@@ -50817,6 +50522,7 @@ diabetes gestational
 antigen
 granular
 scrub typhus
+asthma related traits
 diffuse gastric cancer
 placental
 pseudoxanthoma elasticum
@@ -50877,7 +50583,6 @@ microcephaly 4 primary autosomal recessive
 canal
 ige levels
 erythropoietic protoporphyria
-restless legs syndrome
 down syndrome
 dermatofibrosarcoma
 muscular dystrophy congenital due to itga7 deficiency
@@ -50933,6 +50638,7 @@ splenomegaly
 genital
 gitelman
 spondylosis
+thyrotoxic periodic paralysis
 hypomyelination
 synthase
 prolapse
@@ -51019,13 +50725,12 @@ glucose tolerance test
 sclerosis systemic
 silver
 megalencephalic leukoencephalopathy with subcortical cysts
+epilepsy idiopathic generalized
 wermer
 idiopathic neutropenia
-mendelian
 acute lymphocytic leukemia
 metachromatic leukodystrophy
 peroxisomal
-mycobacterium tuberculosis
 carney
 thrombocytopenic
 congenital disorder of glycosylation type iie
@@ -51076,9 +50781,11 @@ congenital disorder of glycosylation type id
 laryngitis
 rhegmatogenous retinal detachment
 maximal
+asperger syndrome
 intestinal obstruction
 intermittent
 synthesis
+microvascular complications of diabetes
 congenital disorder of glycosylation type iih
 leukostasis
 botulism
@@ -51104,7 +50811,6 @@ antibody
 metachromatic
 typhus
 congenital disorder of glycosylation type iif
-herpes simplex encephalitis
 synovial sarcoma
 congenital disorder of glycosylation type iij
 digital
@@ -51149,6 +50855,7 @@ infarction middle cerebral artery
 marijuana abuse
 pineoblastoma
 activated
+melanoma cutaneous malignant
 fanconi anemia complementation group o
 xeroderma pigmentosum
 spastic paraplegia
@@ -51209,7 +50916,6 @@ obliterans
 cranioectodermal
 manifestations
 pagets
-focal segmental glomerulosclerosis
 weill marchesani
 autoimmune lymphoproliferative
 vaccinia
@@ -51221,6 +50927,7 @@ atypical hemolytic uremic
 acute leukemia
 plexus
 barrett esophagus
+herpes simplex encephalitis
 nephroma
 nephrocalcinosis
 torsion
@@ -51241,6 +50948,7 @@ cocaine dependence
 auditory
 gravis
 neutrophil count
+focal segmental glomerulosclerosis
 thromboembolism venous
 thyroid neoplasms
 malt lymphoma
@@ -51262,6 +50970,7 @@ patent
 sensitization
 wegener granulomatosis
 brown
+restless legs syndrome
 precursor b cell acute lymphoblastic leukemia
 lupus nephritis
 cellulitis
@@ -51450,6 +51159,7 @@ sickness
 mesenchymal
 hemangiosarcoma
 follicular lymphoma
+breast ovarian cancer familial
 soulier
 glucose intolerance
 hydroxyglutaric
@@ -51460,7 +51170,6 @@ centronuclear
 agnosia
 apnea
 recessive dystrophic epidermolysis bullosa
-gout
 sporadic
 fanconi anemia complementation group e
 hypoplastic
@@ -51479,6 +51188,7 @@ increased
 phospholipid
 progeria
 tissue plasminogen activator
+mendelian
 natural
 dyskeratosis congenita
 extraocular
@@ -51511,12 +51221,14 @@ dysfibrinogenemia
 selective
 achondrogenesis
 pertussis
+hyperthermia
 piebaldism
 premature ovarian failure
 neuroticism
 glycine
 common variable immunodeficiency
 stroke ischemic
+gout
 familial cancer of breast
 marchesani
 myotonic dystrophy
@@ -51584,7 +51296,6 @@ fanconi anemia complementation group b
 cystinosis
 hereditary pancreatitis
 tuberous sclerosis
-orofacial cleft
 classic
 methylmalonic aciduria and homocystinuria
 developmental disabilities
@@ -51655,6 +51366,7 @@ response to taxane treatment
 control
 distress
 serotonin
+orofacial cleft
 nasopharyngeal carcinoma
 fibroma
 hematological parameters
@@ -51810,11 +51522,11 @@ encephalomyelitis
 perineurioma
 metabolic syndrome x
 lipidoses
-malignant hyperthermia
 ganglia
 vaccine
 lobar holoprosencephaly
 bullous
+component
 maturity onset diabetes of the young
 histoplasmosis
 giant cell glioblastoma
@@ -51834,7 +51546,6 @@ epithelioid
 ullrich congenital muscular dystrophy
 cherubism
 atrial natriuretic factor
-hyperthermia
 polyhydramnios
 spherocytosis
 neurodegeneration
@@ -51842,7 +51553,6 @@ microtia
 gingival
 dysmorphism
 embryonal
-basal cell carcinoma
 gamma glutamylcyclotransferase
 measles
 retinal degeneration autosomal recessive clumped pigment
@@ -51850,7 +51560,6 @@ cerebral hemorrhage
 clumped
 responsive
 antiphospholipid
-component
 prion
 alobar holoprosencephaly
 hypokalemic periodic paralysis
@@ -51917,6 +51626,7 @@ retinal degeneration
 amyotrophic lateral sclerosis 1
 retinitis pigmentosa 62
 primary sclerosing cholangitis
+basal cell carcinoma
 retinitis pigmentosa 17
 retinitis pigmentosa 10
 retinitis pigmentosa 41
@@ -52050,7 +51760,6 @@ cardiomyopathy dilated 1ee
 pemphigoid
 deficient
 cardiomyopathy dilated 1p
-hirschsprung disease
 heterotopia
 bothnia
 teratoma
@@ -52105,12 +51814,12 @@ sinusitis
 metabolic syndrome
 radiation
 walker
+hirschsprung disease
 chronic kidney disease
 fibromatosis
 spine
 oral cancer
 histiocytoma
-hemolytic uremic syndrome atypical
 venous thromboembolism
 periodontal
 warfarin
@@ -52119,7 +51828,6 @@ nephrogenic
 leber congenital amaurosis 13
 segmental
 post traumatic stress disorder
-breast cancer susceptibility
 protection
 epileptic encephalopathy early infantile
 inclusion
@@ -52176,6 +51884,7 @@ prader willi
 hyperinsulinemic
 huntingtons
 cystadenocarcinoma
+mycobacterium tuberculosis
 nonpolyposis
 psychomotor
 nystagmus
@@ -52197,6 +51906,7 @@ maximal midexpiratory flow rate
 myelofibrosis
 amelogenesis
 cystica
+hemolytic uremic syndrome atypical
 skin
 self reported allergy
 mouth neoplasms
@@ -52208,6 +51918,7 @@ ankylosing spondylitis
 dengue
 myocarditis
 otosclerosis
+wilms
 hyperthyroidism
 cavernous
 prader
@@ -52222,7 +51933,6 @@ nasopharyngeal
 epilepticus
 diaphragmatic
 cardiomyopathy dilated
-wilms
 small cell lung carcinoma
 ankylosing
 familial isolated dilated cardiomyopathy
@@ -52252,6 +51962,7 @@ cystatins
 phosphorylation
 activity
 nevus
+absence
 hypospadias
 mitochondrial dna depletion
 capillary
@@ -52280,7 +51991,6 @@ lymphedema
 effects
 vitreoretinopathy
 immune response to smallpox vaccine
-absence
 synovitis
 uremia
 hiv 1 control
@@ -52291,6 +52001,8 @@ bronchiolitis
 hernia
 changes
 structure
+spermatogenic
+noninsulin
 resistant
 cockayne
 negative
@@ -52299,10 +52011,8 @@ smoking behavior
 brain injuries
 ependymoma
 drug hypersensitivity
-spermatogenic
 bulimia nervosa
 orofacial
-noninsulin
 white blood cell count
 allergy
 complications
@@ -52317,14 +52027,15 @@ renal cell carcinoma
 psychosis
 azoospermia
 gaucher
+gallbladder
 emphysema
 eosinophilia
 invasiveness
 mycobacterium
 hematological
 oxidase
+malignant hyperthermia
 urate
-gallbladder
 liposarcoma
 temperament
 locus
@@ -52359,8 +52070,10 @@ skin neoplasms
 temporal
 anxiety
 hippocampal atrophy
+asperger
 kawasaki
 arthrogryposis
+complement
 hyperkinesis
 contact
 stationary
@@ -52369,16 +52082,13 @@ interleukin
 apolipoproteins
 wilms tumor
 competency
-asperger
 conditions
 intelligence
-complement
 tubular
 survival
 endocrine
 statin
 infertility male
-graves disease
 diastolic
 cowden
 pontocerebellar
@@ -52388,6 +52098,7 @@ macular degeneration
 telangiectasia
 adrenoleukodystrophy
 neuroendocrine
+graves disease
 injuries
 zellweger
 child development disorders pervasive
@@ -52401,6 +52112,7 @@ acute promyelocytic leukemia
 testicular germ cell tumor
 glomerular
 leopard
+kinase
 bartter
 lissencephaly
 caries
@@ -52410,7 +52122,6 @@ intolerance
 granulomatous
 mouth
 adhd
-kinase
 pontocerebellar hypoplasia
 interstitial
 hemophilia
@@ -52469,7 +52180,6 @@ syndactyly
 hypercalcemia
 agammaglobulinemia
 attention deficit hyperactivity disorder and conduct disorder
-bladder cancer
 stature
 ophthalmoplegia
 cardiovascular diseases
@@ -52515,6 +52225,7 @@ leukoencephalopathy
 arsenic poisoning
 mean corpuscular volume
 chemotherapy
+anterior
 hydrocephalus
 liver cirrhosis biliary
 inversus
@@ -52523,18 +52234,17 @@ alcoholic
 nemaline
 color
 ocular
-anterior
 cleft palate
 hyperlipoproteinemia
 adenoid
 transient
 premature
 axial length
+candidiasis
 retinitis pigmentosa 12 autosomal recessive
 periodic
 anoxia
 maculopathy bull eye
-candidiasis
 urticaria
 dyskeratosis
 retinitis pigmentosa concentric
@@ -52569,10 +52279,11 @@ dermatitis atopic
 deafness autosomal dominant
 papilloma
 giant
+bladder cancer
 systolic blood pressure
+uveitis
 chondrosarcoma
 aging
-uveitis
 coronary heart disease
 tumors
 thrombophilia
@@ -52642,7 +52353,6 @@ cardiomyopathy dilated 1w
 urinalysis
 intracranial
 waardenburg
-disease
 variable
 hepatitis c
 depressive disorder major
@@ -52685,6 +52395,7 @@ diastolic blood pressure
 mental retardation x linked
 erythrocyte
 waist
+disease
 venous
 development
 keratoderma
@@ -52704,16 +52415,16 @@ status epilepticus
 brain ischemia
 platelet counts
 common
+atypical
 neural tube defects
 esophageal cancer
 poisoning
-atypical
 immune reponse to smallpox
 calcium
 smallpox
 fetal
-anorexia nervosa
 lipodystrophy
+anorexia nervosa
 adverse response to chemotherapy
 disability
 cell transformation neoplastic
@@ -52750,11 +52461,11 @@ animal
 platelet aggregation
 hippocampus
 therapy
+myoclonic
 calcinosis
 dysgenesis
 response to statin therapy
 retinopathy
-myoclonic
 motor
 hypotrichosis
 hypoglycemia
@@ -52776,10 +52487,10 @@ personality
 alopecia
 thalassemia
 hemochromatosis
+deletion
 urinary
 xeroderma
 memory
-deletion
 pigmentosum
 cerebellar
 precancerous conditions
@@ -52845,9 +52556,9 @@ infertility
 protein quantitative trait loci
 aorta
 defects
+dependent
 glioblastoma
 cognitive
-dependent
 brachydactyly
 encephalitis
 growth
@@ -52869,29 +52580,29 @@ amyloidosis
 ldl cholesterol
 girdle
 vitamin
+childhood
 astrocytoma
 reactive
 carcinoma non small cell lung
 abortion spontaneous
-atopy
 hearing
 virus
 arrhythmogenic
 liver cirrhosis experimental
-childhood
+atopy
 cocaine related disorders
 hyperalgesia
 metabolite
+infections
 substance
 mesothelioma
 leukemia myeloid acute
-infections
 thoracic
 gastric
 biliary
 short
-performance
 myeloma
+performance
 vascular
 nephrotic
 drug induced liver injury
@@ -52919,10 +52630,11 @@ thrombocytopenia
 sepsis
 associated
 heart failure
-attention deficit hyperactivity disorder
 age related macular degeneration
-hdl cholesterol
+attention deficit hyperactivity disorder
 chromosome
+hdl cholesterol
+infection
 ichthyosis
 storage
 pituitary
@@ -52932,7 +52644,6 @@ ceroid
 cutaneous
 necrosis
 noonan
-infection
 diamond
 hemolytic
 pulse
@@ -52961,13 +52672,13 @@ optic
 tissue
 complex
 central
+pheochromocytoma
 autistic
 cholestasis
 plasma
 bone mineral density
 inflammatory bowel disease
 neuronal
-pheochromocytoma
 major depressive disorder
 alcohol
 carotid
@@ -52985,11 +52696,11 @@ cardiomegaly
 neoplasm metastasis
 lipoproteins
 pulmonary function
+generalized
 exercise test
 defect
 thrombosis
 dependence
-generalized
 cognitive performance
 peripheral nervous system diseases
 craniofacial abnormalities
@@ -53015,7 +52726,6 @@ diabetic
 polycystic
 behcet
 mammary
-diabetes mellitus type 2
 meningioma
 bullosa
 pancreatic cancer
@@ -53023,6 +52733,7 @@ severe
 seckel
 pneumonia
 small
+diabetes mellitus type 2
 hypothyroidism
 nephropathy
 dystonia
@@ -53042,22 +52753,21 @@ myocardial ischemia
 vitiligo
 ulcerative
 inflammation
-major
 leigh
+major
 creatinine
 sleep
 corneal
 smoking
-glioma
 paraplegia
 lung neoplasms
-susceptibility
 c reactive protein
 alcoholism
 body weights and measures
 dermatitis
 hyperactivity
 myopia
+glioma
 metabolism
 esophageal
 cerebral
@@ -53072,39 +52782,39 @@ crohn disease
 attention
 neoplasm
 hepatocellular
-colorectal neoplasms
 infarction
+colorectal neoplasms
 microcephaly
 resistance
 lipoproteins vldl
-autism
 ulcerative colitis
+idiopathic
 glucose
 insulin resistance
-idiopathic
 tests
 peripheral
 platelet
 autoimmune
+malignant
 injury
 usher
 fanconi
 colitis
 metabolic
-malignant
 bardet biedl
 spastic
 bone density
 carcinoma hepatocellular
 mitochondrial
-alzheimer disease
 metabolite levels
 nervous
+alzheimer disease
 bardet
 biedl
 somatic
 hypertrophic
 cirrhosis
+autism
 lipids
 induced
 holoprosencephaly
@@ -53137,14 +52847,14 @@ onset
 arthritis rheumatoid
 tuberculosis
 respiratory
-myocardial infarction
 deficit
-autistic disorder
-index
 pancreatic
+autistic disorder
+myocardial infarction
+index
 fibrosis
-leber congenital amaurosis
 myeloid
+leber congenital amaurosis
 density
 periodontitis
 bowel
@@ -53161,11 +52871,11 @@ stomach neoplasms
 rheumatoid
 celiac
 hepatitis
-lung cancer
 degeneration
 charcot marie tooth
 inflammatory
 prostatic
+lung cancer
 dyskinesia
 diabetes mellitus
 electrocardiography
@@ -53176,8 +52886,8 @@ atherosclerosis
 artery
 respiratory function tests
 function
-neuropathy
 systemic
+neuropathy
 myopathy
 ovarian
 osteoporosis
@@ -53196,9 +52906,9 @@ marie
 ataxia
 kidney
 colorectal
+neuroblastoma
 retardation
 pressure
-neuroblastoma
 amyotrophic
 renal
 insulin
@@ -53217,9 +52927,9 @@ mental
 tumor
 blood pressure
 body mass index
+linked
 heart
 epilepsy
-linked
 hip
 coronary
 multiple sclerosis
@@ -53230,10 +52940,10 @@ amyotrophic lateral sclerosis
 chronic
 mellitus
 deafness
-breast cancer
 hereditary
 disorders
 muscular
+breast cancer
 prostatic neoplasms
 congenital disorder of glycosylation
 dominant
@@ -53251,9 +52961,9 @@ blood
 traits
 dysplasia
 triglycerides
+breast
 primary
 obesity related traits
-breast
 hypertension
 echocardiography
 asthma

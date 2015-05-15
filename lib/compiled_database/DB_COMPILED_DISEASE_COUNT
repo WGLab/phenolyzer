@@ -490,7 +490,6 @@ Acute myeloid leukemia	ORPHANET:519	1
 acute myeloid leukemia placenta accreta	unknown	1
 acute myeloid leukemia	PUBMED:12529664 12529664	1
 acute myeloid leukemia	PUBMED:12907599 12907599	1
-acute myeloid leukemia susceptibility gata2 related	unknown	1
 acute myeloid leukemia west syndrome	unknown	1
 Acute myeloid leukemia with 11q23 abnormalities	ORPHANET:98831	1
 Acute myeloid leukemia with CEBPA somatic mutations	ORPHANET:319480	1
@@ -1113,7 +1112,6 @@ ALK positive anaplastic large cell lymphoma	ORPHANET:300895	1
 alk positive large b cell lymphoma ectodermal dysplasia syndactyly syndrome 1	unknown	1
 ALK positive large B cell lymphoma	ORPHANET:364043	1
 alk positive large b cell lymphoma	unknown	1
-alk related neuroblastoma susceptibility gallbladder adenocarcinoma  27	unknown	1
 allan herndon dudley syndrome cerebral hypoxia	unknown	1
 allan herndon dudley syndrome iminoglycinuria	unknown	1
 Allan Herndon Dudley syndrome	ORPHANET:59	1
@@ -1139,7 +1137,7 @@ allergic rhinitis	PUBMED:16730545 16730545	1
 allergies common cold	PUBMED:11354638 11354638	1
 allergies	PUBMED:11702205 11702205	1
 Allergy and asthma	OMIM:147061	1
-allergy and asthma susceptibility tyrosine kinase 2 deficiency  24	unknown	1
+allergy and asthma	unknown	1
 allergy asthma	PUBMED:16837812 16837812	1
 allergy dermatitis and eczema	PUBMED:16614348 16614348	1
 allergy latex latex allergy	PUBMED:12209103 12209103	1
@@ -2015,7 +2013,7 @@ ANTLEY BIXLER SYNDROME WITH GENITAL ANOMALIES AND DISORDERED STEROIDOGENESIS	uml
 antley bixler syndrome without genital anomalies or disordered steroidogenesis	unknown	1
 anuria cone rod dystrophy 9	unknown	1
 anus cancer hypersplenism  20	unknown	1
-anus cancer obesity susceptibility to cartpt related  6	unknown	1
+anus cancer obesity	unknown	1
 anus cancer prostate cancer somatic  6	unknown	1
 Anus Imperforate	umls:C0003466	1
 Anus Neoplasms	umls:C0003463	1
@@ -2248,7 +2246,7 @@ arteriosclerosis obliterans alcoholic hepatitis  32	unknown	1
 arteriovenous fistulas	PUBMED:16374439 16374439	1
 Arteriovenous Malformations	umls:C0003857	1
 arteritic anterior ischemic optic neuropathy non arteritic anterior ischemic optic neuropathy	unknown	1
-artery disease lung cancer susceptibility	unknown	1
+artery disease lung cancer	unknown	1
 arthralgia	PUBMED:19180497 19180497	1
 arthritis familial mediterranean fever	PUBMED:14727057 14727057	1
 Arthritis Gouty	umls:C0003868	1
@@ -2363,14 +2361,10 @@ Asperger syndrome	OMIM:608638	1
 Asperger syndrome	OMIM:608781	1
 Asperger syndrome	OMIM:609954	1
 asperger syndrome	PUBMED:17579608 17579608	1
-asperger syndrome susceptibility 1	unknown	1
-asperger syndrome susceptibility 2	unknown	1
-asperger syndrome susceptibility 3	unknown	1
-asperger syndrome susceptibility 4	unknown	1
 Asperger syndrome X linked 1	OMIM:300494	1
 Asperger syndrome X linked 2	OMIM:300497	1
-ASPERGER SYNDROME X LINKED SUSCEPTIBILITY TO 1	umls:C1845341	1
-ASPERGER SYNDROME X LINKED SUSCEPTIBILITY TO 2	umls:C1845334	1
+ASPERGER SYNDROME X LINKED	umls:C1845334	1
+ASPERGER SYNDROME X LINKED	umls:C1845341	1
 Asphyxiating thoracic dystrophy 2	OMIM:611263	1
 Asphyxiating Thoracic Dystrophy 2	umls:C1970005	1
 asphyxiating thoracic dystrophy 2	unknown	1
@@ -2599,14 +2593,14 @@ Asthma related traits	OMIM:611403	1
 Asthma related traits	OMIM:611960	1
 ASTHMA RELATED TRAITS	OMIM:611960	1
 Asthma related traits	OMIM:613207	1
-ASTHMA RELATED TRAITS SUSCEPTIBILITY TO 1	umls:C1846534	1
-ASTHMA RELATED TRAITS SUSCEPTIBILITY TO 2	umls:C1837811	1
-ASTHMA RELATED TRAITS SUSCEPTIBILITY TO 3	umls:C1864959	1
-ASTHMA RELATED TRAITS SUSCEPTIBILITY TO 4	umls:C1970474	1
-ASTHMA RELATED TRAITS SUSCEPTIBILITY TO 5	umls:C1970224	1
-ASTHMA RELATED TRAITS SUSCEPTIBILITY TO 6	umls:C1969640	1
-ASTHMA RELATED TRAITS SUSCEPTIBILITY TO 7	umls:C2677770	1
-ASTHMA RELATED TRAITS SUSCEPTIBILITY TO 8	umls:C2750782	1
+ASTHMA RELATED TRAITS	umls:C1837811	1
+ASTHMA RELATED TRAITS	umls:C1846534	1
+ASTHMA RELATED TRAITS	umls:C1864959	1
+ASTHMA RELATED TRAITS	umls:C1969640	1
+ASTHMA RELATED TRAITS	umls:C1970224	1
+ASTHMA RELATED TRAITS	umls:C1970474	1
+ASTHMA RELATED TRAITS	umls:C2677770	1
+ASTHMA RELATED TRAITS	umls:C2750782	1
 asthma respiratory syncytial virus juvenile arthritis	PUBMED:15356575 15356575	1
 asthma respiratory syncytial virus	PUBMED:16503988 16503988	1
 asthma respiratory syncytial virus	PUBMED:17121584 17121584	1
@@ -2616,7 +2610,6 @@ asthma severity	PUBMED:10529588 10529588 10529588	1
 asthma severity	PUBMED:10931116 10931116 10931116	1
 asthma severity	PUBMED:11810274 11810274 11810274	1
 asthma smokers	PUBMED:11371409 11371409 11371409	1
-asthma susceptibility 5 melioidosis	unknown	1
 asthma toluene diisocyanate induced	PUBMED:19187332 19187332	1
 astigmatism	PUBMED:20585627 20585627	1
 astroblastoma infantile digital fibromatosis  112	unknown	1
@@ -2868,6 +2861,7 @@ atopy	PUBMED:10712310 10712310	1
 atopy	PUBMED:11306945 11306945	1
 atopy	PUBMED:11692109 11692109 11692109 11692109	1
 atopy	PUBMED:12897746 12897746 15007352 15005726 15007352 12897746	1
+atopy	PUBMED:12929084 12929084	1
 atopy	PUBMED:14515063 14515063	1
 atopy	PUBMED:14962818 14962818	1
 atopy	PUBMED:15005726 15005726 15007352 15007352 9515586 10677312 15737301	1
@@ -2883,7 +2877,6 @@ atopy	PUBMED:20028375 20028375	1
 atopy	PUBMED:8842557 8842557	1
 Atopy resistance to	OMIM:147050	1
 atopy skin papilloma	unknown	1
-atopy susceptibility	PUBMED:12929084 12929084	1
 atopy total specific ige	PUBMED:11678850 11678850 11678850	1
 atp1a3 related alternating hemiplegia of childhood dystonia 12  12	unknown	1
 atp7a related copper transport disorders spinal muscular atrophy distal x linked 3  8	unknown	1
@@ -3009,7 +3002,7 @@ attention deficit disorder with hyperactivity	PUBMED:18951430 18951430	1
 attention deficit disorder with hyperactivity	PUBMED:21473668 21473668	1
 attention deficit disorder with hyperactivity	PUBMED:21784300 21784300 21784300	1
 Attention deficit hyperactivity disorder 7	OMIM:613003	1
-attention deficit hyperactivity disorder autism susceptibility 16	unknown	1
+attention deficit hyperactivity disorder autism	unknown	1
 attention deficit hyperactivity disorder behavior disorder	PUBMED:17068621 17068621	1
 attention deficit hyperactivity disorder behavior disorder	PUBMED:17572775 17572775	1
 attention deficit hyperactivity disorder conduct disorder novelty seeking substance experimentation	PUBMED:17508994 17508994	1
@@ -3035,7 +3028,7 @@ attention deficit hyperactivity disorder	PUBMED:16774975 16774975 17501935	1
 attention deficit hyperactivity disorder	PUBMED:16893529 16893529	1
 attention deficit hyperactivity disorder	PUBMED:16959425 16959425	1
 attention deficit hyperactivity disorder	PUBMED:17010153 17010153	1
-ATTENTION DEFICIT HYPERACTIVITY DISORDER SUSCEPTIBILITY TO 7	umls:C2751802	1
+ATTENTION DEFICIT HYPERACTIVITY DISORDER	umls:C2751802	1
 attention deficit hyperactivity disorder ureterolithiasis	unknown	1
 attention problems	PUBMED:11409696 11409696	1
 Attenuated Ch diak Higashi syndrome	ORPHANET:352723	1
@@ -3085,9 +3078,9 @@ aura	PUBMED:11489292 11489292	1
 auriculocondylar syndrome 2 auriculocondylar syndrome 1	unknown	1
 Auriculocondylar syndrome 3	OMIM:615706	1
 auriculocondylar syndrome 3 question mark ears isolated  42	unknown	1
-autism 14b chromosome 16p11 2 duplication syndrome	unknown	1
-autism 19 hypopharynx cancer  6	unknown	1
+autismb chromosome 16p11 2 duplication syndrome	unknown	1
 Autism epilepsy syndrome due to branched chain ketoacid dehydrogenase kinase deficiency	ORPHANET:308410	1
+autism hypopharynx cancer  6	unknown	1
 autism obsessive compulsive disorder	PUBMED:17106428 17106428	1
 Autism	OMIM:606053	1
 Autism	OMIM:607373	1
@@ -3132,24 +3125,10 @@ Autism spectrum disorder epilepsy arthrogryposis syndrome	ORPHANET:370943	1
 autism spectrum disorder obesity	unknown	1
 autism spectrum disorder	PUBMED:15024396 15024396	1
 autism spectrum disorder specific language impairment 5	unknown	1
-autism susceptibility 11	unknown	1
-autism susceptibility 12	unknown	1
-autism susceptibility 13	unknown	1
-autism susceptibility 14a chromosome 16p11 2 deletion syndrome 593kb	unknown	1
-autism susceptibility 15	unknown	1
-autism susceptibility 1	unknown	1
-autism susceptibility 3	unknown	1
-autism susceptibility 5	unknown	1
-autism susceptibility 6	unknown	1
-autism susceptibility 7	unknown	1
-autism susceptibility 8	unknown	1
-AUTISM SUSCEPTIBILITY TO X LINKED 1	umls:C1845540	1
-AUTISM SUSCEPTIBILITY TO X LINKED 2	umls:C1845539	1
-AUTISM SUSCEPTIBILITY TO X LINKED 3	umls:C1845336	1
-AUTISM SUSCEPTIBILITY TO X LINKED 5	umls:C3275438	1
-autism susceptibility x linked 1 asperger syndrome susceptibility x linked 1	unknown	1
-autism susceptibility x linked 3	unknown	1
-autism susceptibility x linked 4	unknown	1
+AUTISM	umls:C1845336	1
+AUTISM	umls:C1845539	1
+AUTISM	umls:C1845540	1
+AUTISM	umls:C3275438	1
 autistic disorder autism spectrum disorder	unknown	1
 Autistic disorder of childhood onset	OMIM:209850	1
 autistic disorder	PUBMED:19404256 19404256	1
@@ -3175,14 +3154,14 @@ Autoimmune Diseases of the Nervous System	umls:C0751871	1
 autoimmune diseases	PUBMED:18426414 18426414 20962850	1
 autoimmune diseases	PUBMED:20511617 20511617	1
 autoimmune diseases	PUBMED:20574744 20574744	1
-AUTOIMMUNE DISEASE SUSCEPTIBILITY TO 2	umls:C1842113	1
-AUTOIMMUNE DISEASE SUSCEPTIBILITY TO 3	umls:C1842112	1
-AUTOIMMUNE DISEASE SUSCEPTIBILITY TO 4	umls:C1836258	1
-AUTOIMMUNE DISEASE SUSCEPTIBILITY TO 6	umls:C3150797	1
 Autoimmune disease syndromic multisystem	OMIM:613385	1
 AUTOIMMUNE DISEASE SYNDROMIC MULTISYSTEM	umls:C3150649	1
+AUTOIMMUNE DISEASE	umls:C1836258	1
+AUTOIMMUNE DISEASE	umls:C1842112	1
+AUTOIMMUNE DISEASE	umls:C1842113	1
+AUTOIMMUNE DISEASE	umls:C3150797	1
 autoimmune encephalitis polycystic liver disease  8	unknown	1
-autoimmune enteropathy and endocrinopathy susceptibility to chronic infections syndrome	unknown	1
+autoimmune enteropathy and endocrinopathy	unknown	1
 autoimmune enteropathy chronic mucocutaneous candidiasis  31	unknown	1
 autoimmune enteropathy usher syndrome type 1c	unknown	1
 autoimmune hemolytic anemia paroxysmal nocturnal hemoglobinuria	unknown	1
@@ -3312,7 +3291,7 @@ Autosomal dominant limb girdle muscular dystrophy type 1F	ORPHANET:55595	1
 autosomal dominant macular degeneration	PUBMED:14609921 14609921	1
 Autosomal dominant mendelian	ORPHANET:319581	1
 Autosomal dominant mendelian	ORPHANET:319589	1
-autosomal dominant mendelian susceptibility to mycobacterial diseases due to partial ifngammar1 deficiency	unknown	1
+autosomal dominant mendelian	unknown	1
 Autosomal dominant microcephaly	ORPHANET:2514	1
 autosomal dominant microcephaly polycystic kidney disease  6	unknown	1
 autosomal dominant microcephaly	unknown	1
@@ -3443,7 +3422,7 @@ Autosomal recessive limb girdle muscular dystrophy type 2T	ORPHANET:363623	1
 Autosomal recessive lower motor neuron disease with childhood onset	ORPHANET:206580	1
 Autosomal recessive mendelian	ORPHANET:319569	1
 Autosomal recessive mendelian	ORPHANET:319574	1
-autosomal recessive mendelian susceptibility to mycobacterial diseases due to partial ifngammar2 deficiency autosomal dominant mendelian susceptibility to mycobacterial diseases due to partial ifngammar2 deficiency  11	unknown	1
+autosomal recessive mendelian	unknown	1
 Autosomal recessive multiple pterygium syndrome	ORPHANET:2990	1
 autosomal recessive myogenic arthrogryposis multiplex congenita autosomal recessive cerebellar ataxia type 1  9	unknown	1
 Autosomal recessive myogenic arthrogryposis multiplex congenita	ORPHANET:319332	1
@@ -3671,7 +3650,7 @@ Basal cell carcinoma	OMIM:614740	1
 basal cell carcinoma pallister hall syndrome  9	unknown	1
 Basal cell carcinoma	PUBMED:21946351	1
 Basal cell carcinoma somatic	OMIM:601500	1
-BASAL CELL CARCINOMA SUSCEPTIBILITY TO 1	umls:C2751544	1
+BASAL CELL CARCINOMA	umls:C2751544	1
 basal ganglia calcification idiopathic 2	unknown	1
 Basal ganglia calcification idiopathic 3	OMIM:614540	1
 BASAL GANGLIA CALCIFICATION IDIOPATHIC 3	umls:C3281142	1
@@ -4111,7 +4090,7 @@ Bleeding Disorder East Texas Type	umls:C1853831	1
 Bleeding disorder platelet type 11	OMIM:614201	1
 BLEEDING DISORDER PLATELET TYPE 11	umls:C3280120	1
 Bleeding disorder platelet type 13	OMIM:614009	1
-BLEEDING DISORDER PLATELET TYPE 13 SUSCEPTIBILITY TO	umls:C3279614	1
+BLEEDING DISORDER PLATELET TYPE 13	umls:C3279614	1
 Bleeding disorder platelet type 15	OMIM:615193	1
 Bleeding disorder platelet type 17	OMIM:187900	1
 Bleeding disorder platelet type 8	OMIM:609821	1
@@ -5095,15 +5074,11 @@ breast cancer relapsing fever	unknown	1
 breast cancer retinoblastoma	unknown	1
 breast cancer risk and prenatal viability	PUBMED:11062481 11062481	1
 breast cancer risk	PUBMED:11461072 11461072	1
-breast cancer sle susceptibility	unknown	1
+breast cancer sle	unknown	1
 breast cancer small intestine adenocarcinoma	unknown	1
 breast cancer sporadic breast cancer	unknown	1
 breast cancer survival	PUBMED:19752340 19752340	1
 breast cancer survival	PUBMED:7882357 7882357	1
-breast cancer susceptibility chronic myeloid leukemia	unknown	1
-breast cancer susceptibility leigh disease	unknown	1
-breast cancer susceptibility multiple myeloma	unknown	1
-breast cancer susceptibility tinea pedis	unknown	1
 breast cancer tamoxifen prophylactic effect of	PUBMED:16361630 16361630	1
 breast cancer thyroid cancer	unknown	1
 breast cancer vaginal cancer	unknown	1
@@ -5124,11 +5099,11 @@ breast ovarian cancer familial 1	unknown	1
 Breast ovarian cancer familial 3	OMIM:613399	1
 breast ovarian cancer familial 3 rad51c related fanconi anemia  9	unknown	1
 Breast ovarian cancer familial 4	OMIM:614291	1
-breast ovarian cancer familial 4 rad51d related familial susceptibility to breast ovarian cancer	unknown	1
+breast ovarian cancer familial 4 rad51d related familial	unknown	1
 Breast ovarian cancer familial	OMIM:613399	1
 Breast ovarian cancer familial	OMIM:614291	1
-BREAST OVARIAN CANCER FAMILIAL SUSCEPTIBILITY TO 2	umls:C2675520	1
-BREAST OVARIAN CANCER FAMILIAL SUSCEPTIBILITY TO 3	umls:C3150659	1
+BREAST OVARIAN CANCER FAMILIAL	umls:C2675520	1
+BREAST OVARIAN CANCER FAMILIAL	umls:C3150659	1
 breast papillary carcinoma chronic wasting disease  6	unknown	1
 breast papillary carcinoma	unknown	1
 breast pericanalicular fibroadenoma mitochondrial respiratory chain complex iii deficiency bcs1l related  14	unknown	1
@@ -5274,7 +5249,7 @@ C3hex ability to smell	OMIM:615082	1
 C3HEX ability to smell	OMIM:615082	1
 C4a deficiency	OMIM:614380	1
 C4B deficiency	OMIM:614379	1
-c4b deficiency sle susceptibility	unknown	1
+c4b deficiency sle	unknown	1
 c4gene deletion	PUBMED:8482459 8482459	1
 C5 deficiency	OMIM:609536	1
 c6 deficiency combined c6 c7 deficiency	unknown	1
@@ -5290,7 +5265,7 @@ cabc1 related coenzyme q10 deficiency coenzyme q10 deficiency primary 4	unknown	
 Cabezas syndrome	ORPHANET:85293	1
 cachexia	PUBMED:19244371 19244371	1
 cacna1f related x linked congenital stationary night blindness	unknown	1
-cacna1s related malignant hyperthermia susceptibility	unknown	1
+cacna1s related malignant hyperthermia	unknown	1
 cacnb4 related juvenile myoclonic epilepsy	unknown	1
 CADASIL	ORPHANET:136	1
 CADASIL	umls:C0751587	1
@@ -5354,8 +5329,8 @@ cancer	PUBMED:12947057 12947057	1
 cancer	PUBMED:15229462 15229462	1
 cancer	PUBMED:15492928 15492928	1
 cancer	PUBMED:15843669 15843669	1
+cancer	PUBMED:9070254 9070254	1
 cancer	PUBMED:9542526 9542526 9542526	1
-cancer susceptibility	PUBMED:9070254 9070254	1
 cancer tissues	PUBMED:9053861 9053861	1
 candida glabrata burns	unknown	1
 candida glabrata dengue shock syndrome	unknown	1
@@ -6505,7 +6480,7 @@ Charcot Marie Tooth neuropathy X linked recessive 3	OMIM:302802	1
 charcot marie tooth neuropathy x type 1	unknown	1
 charcot marie tooth type 1b	PUBMED:12940837 12940837	1
 charcot marie tooth type 1 disease	PUBMED:10502832 10502832	1
-charge syndrome autism 18	unknown	1
+charge syndrome autism	unknown	1
 charge syndrome ischemic retinopathy	unknown	1
 Char syndrome	ORPHANET:46627	1
 Char syndrome	umls:C1868570	1
@@ -6515,8 +6490,7 @@ Ch diak Higashi syndrome	OMIM:214500	1
 Ch diak Higashi syndrome	ORPHANET:167	1
 chediak higashi syndrome salla disease	unknown	1
 Chediak Higashi Syndrome	umls:C0007965	1
-chek2 related susceptibility to breast and colorectal cancer li fraumeni syndrome chek2 related  26	unknown	1
-chek2 related susceptibility to breast cancer	unknown	1
+chek2 related	unknown	1
 chemokine ccl2	PUBMED:18464913 18464913	1
 chemokines	PUBMED:20237162 20237162 20237162	1
 chemotherapy induced leukemia	PUBMED:11553769 11553769	1
@@ -7036,7 +7010,7 @@ chronic inflammatory demyelinating polyneuritis	unknown	1
 chronic inflammatory demyelinating polyneuropathy chronic polyneuropathy  10	unknown	1
 chronic inflammatory demyelinating polyneuropathy diabetic neuropathy  14	unknown	1
 chronic inflammatory demyelinating polyneuropathy familial combined hyperlipidemia  9	unknown	1
-chronic inflammatory demyelinating polyneuropathy myocardial infarction susceptibility	unknown	1
+chronic inflammatory demyelinating polyneuropathy myocardial infarction	unknown	1
 chronic intestinal failure	unknown	1
 Chronic intestinal pseudoobstruction	ORPHANET:2978	1
 chronic intestinal vascular insufficiency bipolar disorder	unknown	1
@@ -7636,9 +7610,9 @@ colorectal cancer	PUBMED:8297127 8297127	1
 colorectal cancer	PUBMED:9347854 9347854 16456810 16618717 19789368	1
 Colorectal cancer somatic	OMIM:604258	1
 colorectal cancers	PUBMED:12118317 12118317	1
-COLORECTAL CANCER SUSCEPTIBILITY TO 10	umls:C2675481	1
-COLORECTAL CANCER SUSCEPTIBILITY TO 1	umls:C1837315	1
 colorectal cancer trichotillomania	unknown	1
+COLORECTAL CANCER	umls:C1837315	1
+COLORECTAL CANCER	umls:C2675481	1
 Colorectal cancer with chromosomal instability somatic	OMIM:602452	1
 colorectal carcinomas	PUBMED:7574421 7574421	1
 colorectal neoplasia	PUBMED:11904318 11904318	1
@@ -8591,13 +8565,13 @@ Cowden syndrome	OMIM:158350	1
 cowpox carcinoid syndrome  17	unknown	1
 Coxa plana	OMIM:150600	1
 Coxo podo patellar syndrome	ORPHANET:1509	1
-COXSACKIEVIRUS B3 SUSCEPTIBILITY	umls:C1861511	1
+COXSACKIEVIRUS B3	umls:C1861511	1
 c peptide insulin like growth factor sex hormones	PUBMED:16752222 16752222	1
 cpt deficiency hepatic type ii	unknown	1
 cpt ii deficiency lethal neonatal glycogen storage disease v  16	unknown	1
 cr1 deficiency malaria severe  19	unknown	1
 CR1 deficiency	OMIM:120620	1
-cr2 related common variable immune deficiency cr2 related susceptibility to systemic lupus erythematosus  19	unknown	1
+cr2 related common variable immune deficiency cr2 related	unknown	1
 cramp fasciculation syndrome	unknown	1
 crane heise syndrome	unknown	1
 cranial nerve palsy	unknown	1
@@ -9482,7 +9456,7 @@ delayed onset of glycogenosis type 2	PUBMED:7717400 7717400	1
 delayed renal graft function	PUBMED:19214140 19214140	1
 delayed sleep phase syndrome	PUBMED:10498237 10498237	1
 delayed sleep phase syndrome	PUBMED:12736803 12736803	1
-DELAYED SLEEP PHASE SYNDROME SUSCEPTIBILITY TO	umls:C3279991	1
+DELAYED SLEEP PHASE SYNDROME	umls:C3279991	1
 delayed sleep phase syndrome	unknown	1
 deletion insertion and alternative splicing	PUBMED:7529063 7529063	1
 Delirium Dementia Amnestic Cognitive Disorders	umls:C0029227	1
@@ -9838,7 +9812,7 @@ diabetes mellitus insulin dependent 20 hereditary persistence of alpha fetoprote
 Diabetes Mellitus Insulin Dependent 20	umls:C2675866	1
 Diabetes mellitus insulin dependent 21	OMIM:612521	1
 Diabetes Mellitus Insulin Dependent 21	umls:C2675865	1
-diabetes mellitus insulin dependent 22 hiv infection susceptibility  21	unknown	1
+diabetes mellitus insulin dependent 22 hiv infection	unknown	1
 Diabetes Mellitus Insulin Dependent 22	umls:C2675864	1
 Diabetes mellitus insulin dependent 23	OMIM:612622	1
 Diabetes Mellitus Insulin Dependent 23	umls:C2675472	1
@@ -9862,7 +9836,7 @@ Diabetes mellitus insulin dependent	OMIM:222100	1
 Diabetes mellitus insulin dependent	OMIM:601388	1
 Diabetes mellitus insulin dependent	OMIM:601942	1
 Diabetes mellitus insulin dependent X linked	OMIM:300136	1
-DIABETES MELLITUS INSULIN DEPENDENT X LINKED SUSCEPTIBILITY TO	umls:C1848042	1
+DIABETES MELLITUS INSULIN DEPENDENT X LINKED	umls:C1848042	1
 Diabetes mellitus insulin resistant with acanthosis nigricans	OMIM:610549	1
 Diabetes Mellitus Insulin Resistant with Acanthosis Nigricans	umls:C0342278	1
 diabetes mellitus kcnj11 related transient neonatal hyperinsulinemic hypoglycemia familial 2  26	unknown	1
@@ -10360,7 +10334,7 @@ Diarrhea 3 Secretory Sodium Congenital	umls:C0267663	1
 Diarrhea 4 Malabsorptive Congenital	umls:C1835888	1
 Diarrhea 5 With Tufting Enteropathy Congenital	umls:C2750737	1
 diarrhea 5 with tufting enteropathy congenital	unknown	1
-diarrhea breast cancer susceptibility	unknown	1
+diarrhea breast cancer	unknown	1
 diarrhea	PUBMED:17342646 17342646	1
 diarrhea	PUBMED:19032367 19032367	1
 Diarrhea vomiting due to trehalase deficiency	ORPHANET:103909	1
@@ -10575,7 +10549,7 @@ dna ligase iv deficiency	unknown	1
 DNA methylation	PUBMED:23725790 23725790 23725790	1
 dna oxidation	PUBMED:19932167 19932167	1
 DNA Repair Deficiency Disorders	umls:C1563696	1
-dnase1 related susceptibility to systemic lupus erythematosus bronchitis  9	unknown	1
+dnase1 related	unknown	1
 DNA topoisomerase I camptothecin resistant	OMIM:126420	1
 dna topoisomerase ii inhibition of by amsacrine cervix endometriosis	unknown	1
 DNA topoisomerase II resistance to inhibition of by amsacrine	OMIM:126430	1
@@ -11478,12 +11452,9 @@ Epilepsy childhood absence	OMIM:607681	1
 Epilepsy childhood absence	OMIM:611136	1
 Epilepsy childhood absence	OMIM:611942	1
 Epilepsy childhood absence	OMIM:612269	1
-EPILEPSY CHILDHOOD ABSENCE SUSCEPTIBILITY TO 2	umls:C1843244	1
-epilepsy childhood absence susceptibility to 4	unknown	1
-EPILEPSY CHILDHOOD ABSENCE SUSCEPTIBILITY TO 5	umls:C2677087	1
-epilepsy childhood absence susceptibility to 5	unknown	1
-EPILEPSY CHILDHOOD ABSENCE SUSCEPTIBILITY TO 6	umls:C2749872	1
-epilepsy childhood absence susceptibility to 6	unknown	1
+EPILEPSY CHILDHOOD ABSENCE	umls:C1843244	1
+EPILEPSY CHILDHOOD ABSENCE	umls:C2677087	1
+EPILEPSY CHILDHOOD ABSENCE	umls:C2749872	1
 Epilepsy Complex Partial	umls:C0085417	1
 Epilepsy Familial Adult Myoclonic 3	umls:C3150860	1
 Epilepsy familial adult myoclonic 4	OMIM:615127	1
@@ -11536,21 +11507,19 @@ Epilepsy idiopathic generalized	OMIM:609750	1
 Epilepsy idiopathic generalized	OMIM:611934	1
 Epilepsy idiopathic generalized	OMIM:612899	1
 Epilepsy idiopathic generalized	OMIM:614847	1
-EPILEPSY IDIOPATHIC GENERALIZED SUSCEPTIBILITY TO 10	umls:C2751603	1
-EPILEPSY IDIOPATHIC GENERALIZED SUSCEPTIBILITY TO 8	umls:C2752062	1
-epilepsy idiopathic generalized susceptibility to 8	unknown	1
 Epilepsy idiopathic generalized suscpetibility to 12	OMIM:614847	1
 epilepsy idiopathic generalized suscpetibility to 12	unknown	1
-epilepsy juvenile absence susceptibility to 1 efhc1 related juvenile myoclonic epilepsy  8	unknown	1
-epilepsy juvenile absence susceptibility to 2 epilepsy idiopathic generalized 11  11	unknown	1
+EPILEPSY IDIOPATHIC GENERALIZED	umls:C2751603	1
+EPILEPSY IDIOPATHIC GENERALIZED	umls:C2752062	1
+epilepsy idiopathic generalized	unknown	1
 Epilepsy juvenile myoclonic 3	OMIM:608816	1
 epilepsy juvenile myoclonic 3	unknown	1
 Epilepsy juvenile myoclonic 5	OMIM:611136	1
 epilepsy juvenile myoclonic 5	unknown	1
 epilepsy juvenile myoclonic 6	unknown	1
 Epilepsy juvenile myoclonic	OMIM:614280	1
-EPILEPSY JUVENILE MYOCLONIC SUSCEPTIBILITY TO 5	umls:C2749942	1
-epilepsy juvenile myoclonic susceptiblity to 9	unknown	1
+EPILEPSY JUVENILE MYOCLONIC	umls:C2749942	1
+epilepsy juvenile myoclonic	unknown	1
 Epilepsy lateral temporal lobe autosomal dominant	OMIM:600512	1
 Epilepsy Lateral Temporal Lobe Autosomal Dominant	umls:C1838062	1
 Epilepsy myoclonic adult familial 1	OMIM:601068	1
@@ -12378,7 +12347,7 @@ fanconi anemia complementation group b fanconi anemia complementation group m  1
 Fanconi Anemia Complementation Group B	umls:C1845292	1
 fanconi anemia complementation group c fanconis anemia	unknown	1
 FANCONI ANEMIA COMPLEMENTATION GROUP C	umls:C3468041	1
-fanconi anemia complementation group d1 pancreatic cancer susceptibility 2  50	unknown	1
+fanconi anemia complementation group d1 pancreatic cancer	unknown	1
 Fanconi Anemia Complementation Group D1	umls:C1838457	1
 fanconi anemia complementation group d1	unknown	1
 fanconi anemia complementation group d2 fancd2 related fanconi anemia  8	unknown	1
@@ -12655,7 +12624,7 @@ Fibrosis of extraocular muscles congenital 3a with or without extraocular involv
 fibrosis subcutaneous	PUBMED:16338099 16338099	1
 Fibrous dysplasia of jaw	OMIM:118400	1
 Fibrous Dysplasia Polyostotic	umls:C0016065	1
-fibrous histiocytoma allergy and asthma susceptibility  11	unknown	1
+fibrous histiocytoma allergy and asthma	unknown	1
 fibrous histiocytoma histiocytoma	unknown	1
 fibrous meningioma alox12b related autosomal recessive congenital ichthyosis  6	unknown	1
 Fibular aplasia complex brachydactyly	ORPHANET:2639	1
@@ -12718,7 +12687,7 @@ focal segmental glomerulosclerosis 2	unknown	1
 Focal segmental glomerulosclerosis 3	OMIM:607832	1
 focal segmental glomerulosclerosis 3	unknown	1
 Focal segmental glomerulosclerosis 4	OMIM:612551	1
-FOCAL SEGMENTAL GLOMERULOSCLEROSIS 4 SUSCEPTIBILITY TO	umls:C2675525	1
+FOCAL SEGMENTAL GLOMERULOSCLEROSIS 4	umls:C2675525	1
 focal segmental glomerulosclerosis 5 autosomal dominant intermediate charcot marie tooth disease type e  7	unknown	1
 Focal segmental glomerulosclerosis 5	OMIM:613237	1
 Focal Segmental Glomerulosclerosis 5	umls:C2750475	1
@@ -13350,13 +13319,6 @@ Glioma	PUBMED:21531791 21531791	1
 Glioma	PUBMED:22886559 21531791 19578367	1
 Glioma	PUBMED:22886559 21827660 21531791 19578367 19578367	1
 glioma somatic	unknown	1
-glioma susceptibility 1	unknown	1
-glioma susceptibility 2	unknown	1
-glioma susceptibility 4	unknown	1
-glioma susceptibility 5	unknown	1
-glioma susceptibility 6	unknown	1
-glioma susceptibility 7	unknown	1
-glioma susceptibility 8	unknown	1
 gliomatosis peritonei	unknown	1
 Gliosis familial progressive subcortical	OMIM:221820	1
 global cerebral hypomyelination	unknown	1
@@ -13393,7 +13355,7 @@ glomerulosclerosis focal	PUBMED:11096050 11096050	1
 Glomerulosclerosis focal segmental 1	OMIM:603278	1
 Glomerulosclerosis focal segmental 2	OMIM:603965	1
 Glomerulosclerosis focal segmental 3	OMIM:607832	1
-glomerulosclerosis focal segmental 4 end stage renal disease nondiabetic susceptibility to  9	unknown	1
+glomerulosclerosis focal segmental 4 end stage renal disease nondiabetic	unknown	1
 Glomerulosclerosis focal segmental 5	OMIM:613237	1
 Glomerulosclerosis focal segmental 6	OMIM:614131	1
 glomerulosclerosis focal segmental glomerulosclerosis  6	unknown	1
@@ -13660,7 +13622,7 @@ goodpasture syndrome autosomal recessive alport syndrome	unknown	1
 good syndrome	unknown	1
 Gorlin syndrome	OMIM:109400	1
 Gorlin syndrome	ORPHANET:377	1
-gout gout susceptibility 4	unknown	1
+gout gout	unknown	1
 gout hprt1 related	unknown	1
 Gout HPRT Related	umls:C0268117	1
 gout hyperuricemia	unknown	1
@@ -13669,7 +13631,6 @@ gout	PUBMED:12626798 12626798	1
 gout	PUBMED:16837472 16837472 21768215	1
 gout	PUBMED:20884846 20884846	1
 Gout	PUBMED:21983786	1
-gout susceptibility 4	unknown	1
 Gower muscular dystrophy	OMIM:604454	1
 gpc4 related simpson golabi behmel syndrome type 1 simpson golabi behmel syndrome type 1  6	unknown	1
 gphn related hyperekplexia	unknown	1
@@ -13753,8 +13714,8 @@ graves disease	PUBMED:7530255 7530255	1
 graves disease	PUBMED:8748133 8748133	1
 graves disease	PUBMED:9231050 9231050	1
 grave s disease	PUBMED:9848715 9848715	1
-GRAVES DISEASE SUSCEPTIBILITY TO X LINKED 1	umls:C2678151	1
 graves disease thyroiditis chronic lymphocytic	PUBMED:15272924 15272924	1
+GRAVES DISEASE	umls:C2678151	1
 graves hyperthyroidism	PUBMED:14715845 14715845	1
 graves ophthalmology graves disease	PUBMED:17608818 17608818	1
 graves ophthalmopathy	PUBMED:19734241 19734241	1
@@ -14263,12 +14224,12 @@ hemolytic disease	PUBMED:10081984 10081984	1
 hemolytic uremic syndrome atypical 2 leukemia 2 t cell acute lymphoblastic	unknown	1
 hemolytic uremic syndrome atypical 2	unknown	1
 hemolytic uremic syndrome atypical 5	unknown	1
-HEMOLYTIC UREMIC SYNDROME ATYPICAL SUSCEPTIBILITY TO 1	umls:C2749604	1
-HEMOLYTIC UREMIC SYNDROME ATYPICAL SUSCEPTIBILITY TO 2	umls:C2752040	1
-HEMOLYTIC UREMIC SYNDROME ATYPICAL SUSCEPTIBILITY TO 3	umls:C2752039	1
-HEMOLYTIC UREMIC SYNDROME ATYPICAL SUSCEPTIBILITY TO 4	umls:C2752038	1
-HEMOLYTIC UREMIC SYNDROME ATYPICAL SUSCEPTIBILITY TO 5	umls:C2752037	1
-HEMOLYTIC UREMIC SYNDROME ATYPICAL SUSCEPTIBILITY TO 6	umls:C2752036	1
+HEMOLYTIC UREMIC SYNDROME ATYPICAL	umls:C2749604	1
+HEMOLYTIC UREMIC SYNDROME ATYPICAL	umls:C2752036	1
+HEMOLYTIC UREMIC SYNDROME ATYPICAL	umls:C2752037	1
+HEMOLYTIC UREMIC SYNDROME ATYPICAL	umls:C2752038	1
+HEMOLYTIC UREMIC SYNDROME ATYPICAL	umls:C2752039	1
+HEMOLYTIC UREMIC SYNDROME ATYPICAL	umls:C2752040	1
 hemolytic uremic syndrome	PUBMED:14583443 14583443	1
 hemolytic uremic syndrome	PUBMED:18424762 18424762	1
 Hemophagocytic lymphohistiocytosis familial 2	umls:C1863727	1
@@ -14313,8 +14274,8 @@ hepatic encephalopathy	PUBMED:20820037 20820037	1
 hepatic failure early onset and neurologic disorder hepatic failure early onset and neurologic disorder due to cytochrome c oxidase deficiency  6	unknown	1
 Hepatic failure early onset and neurologic disorder	OMIM:603644	1
 Hepatic fibrosis	OMIM:604201	1
-HEPATIC FIBROSIS SEVERE SUSCEPTIBILITY TO DUE TO SCHISTOSOMA MANSONI INFECTION	umls:C1858709	1
-hepatic fibrosis susceptibility due to schistosoma mansoni infection	unknown	1
+HEPATIC FIBROSIS SEVERE	umls:C1858709	1
+hepatic fibrosis	unknown	1
 hepatic lipase deficiency boutonneuse fever  22	unknown	1
 hepatic lipase deficiency hyperlipidemia due to hepatic triglyceride lipase deficiency  10	unknown	1
 HEPATIC LIPASE DEFICIENCY	umls:C3151466	1
@@ -14651,7 +14612,7 @@ Herpes simplex encephalitis 1	OMIM:610551	1
 Herpes simplex encephalitis	OMIM:603029	1
 Herpes simplex encephalitis	OMIM:610551	1
 Herpes simplex encephalitis	OMIM:614850	1
-HERPES SIMPLEX ENCEPHALITIS SUSCEPTIBILITY TO 2	umls:C2751803	1
+HERPES SIMPLEX ENCEPHALITIS	umls:C2751803	1
 herpes simplex encephalopathy acute infection induced 6	unknown	1
 herpes simplex human t cell leukemia virus type 1	unknown	1
 herpes simplex melkersson rosenthal syndrome	unknown	1
@@ -14785,11 +14746,11 @@ hirschsprung disease	PUBMED:12631670 12631670 12631670	1
 hirschsprung disease	PUBMED:15138456 15138456 11955539 11955539 16555159 19196962 19196962	1
 hirschsprung disease	PUBMED:19196962 19196962 19196962	1
 hirschsprung disease	PUBMED:9585428 9585428 12628594	1
-HIRSCHSPRUNG DISEASE SUSCEPTIBILITY TO 2	umls:C1838564	1
-HIRSCHSPRUNG DISEASE SUSCEPTIBILITY TO 3	umls:C3150974	1
-HIRSCHSPRUNG DISEASE SUSCEPTIBILITY TO 4	umls:C3150975	1
 hirschsprung disease type 2	unknown	1
 hirschsprung disease type 3 gdnf related hirschsprung disease  30	unknown	1
+HIRSCHSPRUNG DISEASE	umls:C1838564	1
+HIRSCHSPRUNG DISEASE	umls:C3150974	1
+HIRSCHSPRUNG DISEASE	umls:C3150975	1
 hirschsprungs disease hirschsprung disease 6	unknown	1
 hirschsprungs disease hirschsprung disease 7	unknown	1
 hirschsprungs disease hirschsprung disease 8	unknown	1
@@ -14876,7 +14837,7 @@ hiv infections	PUBMED:18652916 18652916	1
 hiv infections	PUBMED:18784467 18784467	1
 hiv infections	PUBMED:19114863 19114863	1
 hiv infections	PUBMED:19620399 19620399	1
-hiv infection susceptibility idiopathic anterior uveitis  9	unknown	1
+hiv infection	unknown	1
 hiv pneumocystis carinii pneumonia	PUBMED:12761559 12761559	1
 hiv	PUBMED:11898620 11898620 12853745 15140377 15769362 15362666 16903979	1
 hiv	PUBMED:12944981 12944981 15021309 12700447 16511411	1
@@ -14925,7 +14886,7 @@ hodgkin disease	PUBMED:14735203 14735203	1
 hodgkin disease	PUBMED:21037568 21037568	1
 hodgkin disease	PUBMED:21037568 21037568 21037568	1
 hodgkin disease	PUBMED:21037568 21037568 22286212	1
-hodgkin disease susceptibility pseudoautosomal	unknown	1
+hodgkin disease	unknown	1
 Hodgkin disease X linked pseudoautosomal	umls:C1846167	1
 Hodgkin lymphoma	PUBMED:21037568 21037568	1
 Hodgkin lymphoma	PUBMED:22286212 21037568	1
@@ -16831,7 +16792,7 @@ JALILI SYNDROME	umls:C3495589	1
 Jankovic Rivera syndrome	OMIM:159950	1
 Jankovic Rivera syndrome	umls:C1834569	1
 Jansen type metaphyseal chondrodysplasia	umls:C0265295	1
-japanese encephalitis mendelian susceptibility to mycobacterial diseases due to complete isg15 deficiency	unknown	1
+japanese encephalitis mendelian	unknown	1
 japanese encephalitis ureterocele	unknown	1
 japanese spotted fever coloboma ocular with or without hearing impairment cleft lip palate and or mental retardation	unknown	1
 japanese spotted fever	unknown	1
@@ -17002,7 +16963,7 @@ kcne2 related familial atrial fibrillation	unknown	1
 kcnj10 related pendred syndrome sesame syndrome  7	unknown	1
 kcnj11 related hyperinsulinism	unknown	1
 kcnj11 related permanent neonatal diabetes mellitus	unknown	1
-kcnj11 related susceptibility to noninsulin dependent diabetes mellitus	unknown	1
+kcnj11 related	unknown	1
 kcnj13 related leber congenital amaurosis leber congenital amaurosis 16  10	unknown	1
 kcnq1 related familial atrial fibrillation jervell lange nielsen syndrome  13	unknown	1
 kcnq2 related disorders seizures benign neonatal 1  9	unknown	1
@@ -17164,7 +17125,7 @@ kidney transplant	PUBMED:17391133 17391133	1
 kidney transplant	PUBMED:17488389 17488389	1
 kid syndrome gjb4 related erythrokeratodermia variabilis  10	unknown	1
 kid syndrome sensorineural hearing loss  24	unknown	1
-kif1b related neuroblastoma susceptibility	unknown	1
+kif1b related neuroblastoma	unknown	1
 kif1b related pheochromocytoma	unknown	1
 kif21a related congenital fibrosis of the extraocular muscles	unknown	1
 kif7 related joubert syndrome	unknown	1
@@ -17568,7 +17529,7 @@ Leprosy 5	OMIM:613223	1
 leprosy inflammatory bowel disease	unknown	1
 leprosy lepromatous	PUBMED:18485489 18485489	1
 leprosy lepromatous	PUBMED:19460328 19460328	1
-leprosy leprosy susceptiblity to 6	unknown	1
+leprosy leprosy	unknown	1
 Leprosy	OMIM:246300	1
 Leprosy	OMIM:607572	1
 Leprosy	OMIM:610988	1
@@ -18059,7 +18020,7 @@ liver disease chronic	PUBMED:11333866 11333866	1
 liver disease chronic	PUBMED:15955221 15955221	1
 liver disease fatty liver disease nonalcoholic 1	unknown	1
 liver disease fatty liver disease nonalcoholic 2	unknown	1
-liver disease pnpla3 related susceptibility to nonalchoholic fatty liver disease	unknown	1
+liver disease pnpla3 related	unknown	1
 liver disease	PUBMED:11494532 11494532	1
 liver disease	PUBMED:12209361 12209361	1
 liver disease	PUBMED:15706422 15706422	1
@@ -18098,7 +18059,7 @@ LOEYS DIETZ SYNDROME TYPE 1A	umls:C1836635	1
 Loeys Dietz Syndrome Type 1b	umls:C2674876	1
 loeys dietz syndrome type 1b	unknown	1
 LOEYS DIETZ SYNDROME TYPE 1C	umls:C3151087	1
-loeys dietz syndrome type 1 multiple self healing squamous epithelioma susceptiblity to	unknown	1
+loeys dietz syndrome type 1 multiple self healing squamous epithelioma	unknown	1
 Loeys Dietz syndrome type 1	OMIM:609192	1
 Loeys Dietz Syndrome Type 2A	umls:C2674127	1
 Loeys Dietz syndrome type 2	OMIM:610168	1
@@ -18256,7 +18217,7 @@ Lung cancer	OMIM:608935	1
 Lung cancer	OMIM:612571	1
 Lung cancer	OMIM:612593	1
 Lung cancer	OMIM:614210	1
-lung cancer osteoporosis postmenopausal susceptibility	unknown	1
+lung cancer osteoporosis postmenopausal	unknown	1
 lung cancer paraneoplastic neurologic disorders	unknown	1
 lung cancer patent ductus arteriosus	unknown	1
 lung cancer post transplant lymphoproliferative disease	unknown	1
@@ -18270,7 +18231,7 @@ lung cancer	PUBMED:11361058 11361058	1
 lung cancer	PUBMED:11374839 11374839 11502663 12919725 11844595 15534883 12875622 9379505 16750013	1
 lung cancer	PUBMED:11776598 11776598 1673675 19796841 19789190	1
 lung cancer	PUBMED:11948122 11948122	1
-lung cancer	PUBMED:11955646 11955646 11802801	1
+lung cancer	PUBMED:11955646 11955646 11802801 11955646	1
 lung cancer	PUBMED:12107845 12107845 16570259	1
 lung cancer	PUBMED:12140136 12140136	1
 lung cancer	PUBMED:12141066 12141066 11813302 11375900 11375900	1
@@ -18356,14 +18317,6 @@ Lung cancer resistance to	OMIM:211980	1
 lung cancer risk	PUBMED:10698479 10698479	1
 lung cancer risk	PUBMED:11927502 11927502	1
 lung cancer smoking behavior	PUBMED:16406195 16406195	1
-lung cancer susceptibility 2 congenital generalized lipodystrophy type 4	unknown	1
-lung cancer susceptibility and prognosis	PUBMED:11955646 11955646	1
-lung cancer susceptibility babesiosis	unknown	1
-lung cancer susceptibility lung cancer susceptibility 3	unknown	1
-lung cancer susceptibility lung cancer susceptibility 4	unknown	1
-lung cancer susceptibility lung cancer susceptibility 5	unknown	1
-lung cancer susceptibility pneumoconiosis	unknown	1
-lung cancer susceptibility wilms tumor	unknown	1
 lung carcinoma	PUBMED:9624535 9624535	1
 lung carcinomas	PUBMED:12237873 12237873	1
 lung disease	PUBMED:11069835 11069835	1
@@ -18771,7 +18724,7 @@ Major depressive disorder 1	OMIM:608516	1
 Major depressive disorder 2	OMIM:608516	1
 Major depressive disorder and accelerated response to antidepressant drug treatment	OMIM:608516	1
 major depressive disorder major depressive disorder 2	unknown	1
-major depressive disorder myocardial infarction susceptibility to 1  6	unknown	1
+major depressive disorder myocardial infarction	unknown	1
 major depressive disorder	PUBMED:11121185 11121185	1
 major depressive disorder	PUBMED:14730199 14730199 12422060 19937159	1
 major depressive disorder	PUBMED:19107115 19107115	1
@@ -18870,20 +18823,14 @@ malignant glioma unverricht lundborg syndrome	unknown	1
 malignant granular cell myoblastoma	unknown	1
 Malignant hyperthermia	OMIM:145600	1
 malignant hyperthermia	PUBMED:11389482 11389482 7881417	1
-malignant hyperthermia susceptibility gas gangrene	unknown	1
-malignant hyperthermia susceptibility malignant hyperthermia susceptibility type 2	unknown	1
-malignant hyperthermia susceptibility malignant hyperthermia susceptibility type 3	unknown	1
-malignant hyperthermia susceptibility malignant hyperthermia susceptibility type 4	unknown	1
-malignant hyperthermia susceptibility malignant hyperthermia susceptibility type 6	unknown	1
-MALIGNANT HYPERTHERMIA SUSCEPTIBILITY TO 5	umls:C1866077	1
-Malignant hyperthermia susceptibility type 1	umls:C2930980	1
-Malignant hyperthermia susceptibility type 2	umls:C2930981	1
-Malignant hyperthermia susceptibility type 3	umls:C2930982	1
-Malignant hyperthermia susceptibility type 4	umls:C2930983	1
-Malignant hyperthermia susceptibility type 5	umls:C2930984	1
-malignant hyperthermia susceptibility type 5	unknown	1
-Malignant hyperthermia susceptibility type 6	umls:C2930985	1
 Malignant Hyperthermia	umls:C0024591	1
+MALIGNANT HYPERTHERMIA	umls:C1866077	1
+Malignant hyperthermia	umls:C2930980	1
+Malignant hyperthermia	umls:C2930981	1
+Malignant hyperthermia	umls:C2930982	1
+Malignant hyperthermia	umls:C2930983	1
+Malignant hyperthermia	umls:C2930984	1
+Malignant hyperthermia	umls:C2930985	1
 malignant melanoma	PUBMED:10690530 10690530	1
 malignant melanoma	PUBMED:11844511 11844511 11844511	1
 Malignant melanoma somatic	OMIM:155600	1
@@ -19044,7 +18991,7 @@ maximal midexpiratory flow rate	PUBMED:17903307 17903307 17903307	1
 maximal midexpiratory flow rate	PUBMED:17903307 17903307 17903307 17903307	1
 maximal midexpiratory flow rate	PUBMED:17903307 17903307 17903307 17903307 17903307 17903307	1
 max related hereditary paraganglioma pheochromocytoma syndrome	unknown	1
-max related susceptibility to pheochromocytoma	unknown	1
+max related	unknown	1
 May Hegglin anomaly	umls:C0340978	1
 Mazabraud syndrome	ORPHANET:57782	1
 mcardle disease	PUBMED:9152836 9152836	1
@@ -19246,11 +19193,11 @@ melanoma cutaneous malignant 9	unknown	1
 Melanoma cutaneous malignant	OMIM:601800	1
 Melanoma cutaneous malignant	OMIM:614456	1
 Melanoma cutaneous malignant	OMIM:615848	1
-MELANOMA CUTANEOUS MALIGNANT SUSCEPTIBILITY TO 2	umls:C1835044	1
-MELANOMA CUTANEOUS MALIGNANT SUSCEPTIBILITY TO 3	umls:C1836892	1
-MELANOMA CUTANEOUS MALIGNANT SUSCEPTIBILITY TO 4	umls:C1842643	1
-MELANOMA CUTANEOUS MALIGNANT SUSCEPTIBILITY TO 5	umls:C2751295	1
-MELANOMA CUTANEOUS MALIGNANT SUSCEPTIBILITY TO 7	umls:C2677089	1
+MELANOMA CUTANEOUS MALIGNANT	umls:C1835044	1
+MELANOMA CUTANEOUS MALIGNANT	umls:C1836892	1
+MELANOMA CUTANEOUS MALIGNANT	umls:C1842643	1
+MELANOMA CUTANEOUS MALIGNANT	umls:C2677089	1
+MELANOMA CUTANEOUS MALIGNANT	umls:C2751295	1
 melanoma cutaneous	PUBMED:11511307 11511307	1
 Melanoma desmoplastic neurotrophic	OMIM:613113	1
 melanoma desmoplastic neurotrophic	unknown	1
@@ -19349,11 +19296,6 @@ Mendelian	ORPHANET:319563	1
 Mendelian	ORPHANET:319595	1
 Mendelian	ORPHANET:319600	1
 Mendelian	ORPHANET:99898	1
-mendelian susceptibility to mycobacterial diseases due to complete ifngammar1 deficiency	unknown	1
-mendelian susceptibility to mycobacterial diseases due to complete ifngammar2 deficiency	unknown	1
-mendelian susceptibility to mycobacterial diseases due to complete il12b deficiency	unknown	1
-mendelian susceptibility to mycobacterial diseases due to complete il12rb1 deficiency	unknown	1
-mendelian susceptibility to mycobacterial diseases due to partial stat1 deficiency	unknown	1
 menieres disease corneal dystrophy crystalline of schnyder	unknown	1
 menieres disease endometrial adenocarcinoma	unknown	1
 menieres disease melioidosis	unknown	1
@@ -20022,12 +19964,12 @@ microvascular complications of diabetes 5	unknown	1
 microvascular complications of diabetes 6 inflammatory bowel disease 10	unknown	1
 microvascular complications of diabetes 7 porphyria cutanea tarda	unknown	1
 microvascular complications of diabetes 7	unknown	1
-MICROVASCULAR COMPLICATIONS OF DIABETES SUSCEPTIBILITY TO 2	umls:C2675471	1
-MICROVASCULAR COMPLICATIONS OF DIABETES SUSCEPTIBILITY TO 3	umls:C2675470	1
-MICROVASCULAR COMPLICATIONS OF DIABETES SUSCEPTIBILITY TO 4	umls:C2675112	1
-MICROVASCULAR COMPLICATIONS OF DIABETES SUSCEPTIBILITY TO 5	umls:C2674665	1
-MICROVASCULAR COMPLICATIONS OF DIABETES SUSCEPTIBILITY TO 6	umls:C2675128	1
-MICROVASCULAR COMPLICATIONS OF DIABETES SUSCEPTIBILITY TO 7	umls:C2673520	1
+MICROVASCULAR COMPLICATIONS OF DIABETES	umls:C2673520	1
+MICROVASCULAR COMPLICATIONS OF DIABETES	umls:C2674665	1
+MICROVASCULAR COMPLICATIONS OF DIABETES	umls:C2675112	1
+MICROVASCULAR COMPLICATIONS OF DIABETES	umls:C2675128	1
+MICROVASCULAR COMPLICATIONS OF DIABETES	umls:C2675470	1
+MICROVASCULAR COMPLICATIONS OF DIABETES	umls:C2675471	1
 microvascular function	PUBMED:12107735 12107735	1
 Microvillous inclusion disease	ORPHANET:2290	1
 microvillus inclusion disease diarrhea with microvillus atrophy 2	unknown	1
@@ -20043,7 +19985,7 @@ migraine familial basilar atp1a2 related alternating hemiplegia of childhood  15
 Migraine Familial Hemiplegic 3	umls:C1864987	1
 Migraine familial hemiplegic	OMIM:607516	1
 Migraine familial typical	OMIM:300125	1
-MIGRAINE FAMILIAL TYPICAL SUSCEPTIBILITY TO 2	umls:C1848066	1
+MIGRAINE FAMILIAL TYPICAL	umls:C1848066	1
 migraine migraine 8	unknown	1
 migraine migraine familial typical 2	unknown	1
 migraine migraine with aura 7	unknown	1
@@ -20685,7 +20627,7 @@ multiple sclerosis	PUBMED:9561979 9561979	1
 Multiple Sclerosis Relapsing Remitting	umls:C0751967	1
 multiple sclerosis rheumatoid arthritis	PUBMED:17012290 17012290	1
 multiple sclerosis rheumatoid arthritis	unknown	1
-multiple self healing squamous epithelioma susceptiblity to	unknown	1
+multiple self healing squamous epithelioma	unknown	1
 Multiple Sulfatase Deficiency Disease	umls:C0268263	1
 Multiple sulfatase deficiency	ORPHANET:585	1
 Multiple synostoses syndrome 1	umls:C0342282	1
@@ -20865,22 +20807,21 @@ mybpc3 related familial hypertrophic cardiomyopathy	unknown	1
 Mycobacerium tuberculosis	OMIM:300259	1
 mycobacterial and viral infections autosomal recessive	unknown	1
 Mycobacterial and viral infections	OMIM:613796	1
-MYCOBACTERIAL AND VIRAL INFECTIONS SUSCEPTIBILITY TO AUTOSOMAL RECESSIVE	umls:C3151088	1
+MYCOBACTERIAL AND VIRAL INFECTIONS	umls:C3151088	1
 mycobacterium abscessus periostitis  8	unknown	1
 mycobacterium chelonae	unknown	1
 mycobacterium fortuitum subvalvular aortic stenosis  18	unknown	1
 Mycobacterium Infections	umls:C0026918	1
 mycobacterium kansasii mycobacterium abscessus  20	unknown	1
-mycobacterium tuberculosis infection protection against autosomal recessive mendelian susceptibility to mycobacterial diseases due to partial ifngammar1 deficiency  27	unknown	1
+mycobacterium tuberculosis infection protection against autosomal recessive mendelian	unknown	1
 Mycobacterium tuberculosis	OMIM:611046	1
 Mycobacterium tuberculosis	OMIM:612929	1
 mycobacterium tuberculosis protection against inflammatory bowel disease 19	unknown	1
 mycobacterium tuberculosis protection against	unknown	1
-MYCOBACTERIUM TUBERCULOSIS SUSCEPTIBILITY TO 1	umls:C1842762	1
-MYCOBACTERIUM TUBERCULOSIS SUSCEPTIBILITY TO 2	umls:C1970235	1
-MYCOBACTERIUM TUBERCULOSIS SUSCEPTIBILITY TO 3	umls:C2752035	1
-mycobacterium tuberculosis susceptibility to infection by tuberculosis	unknown	1
-MYCOBACTERIUM TUBERCULOSIS SUSCEPTIBILITY TO X LINKED	umls:C1866629	1
+MYCOBACTERIUM TUBERCULOSIS	umls:C1842762	1
+MYCOBACTERIUM TUBERCULOSIS	umls:C1866629	1
+MYCOBACTERIUM TUBERCULOSIS	umls:C1970235	1
+MYCOBACTERIUM TUBERCULOSIS	umls:C2752035	1
 mycophenolic acid pharmacokinetics	PUBMED:17060857 17060857	1
 mycoses	PUBMED:19539691 19539691	1
 Myd88 deficiency	OMIM:612260	1
@@ -20896,9 +20837,9 @@ Myelodysplastic syndrome	OMIM:604443	1
 Myelodysplastic syndrome preleukemic	OMIM:147575	1
 myelodysplastic syndromes myeloid leukemia	unknown	1
 myelodysplastic syndromes	PUBMED:19638460 19638460	1
-myelodysplastic syndrome susceptibility gata2 related	unknown	1
 myelodysplastic syndromes werdnig hoffmann disease	unknown	1
 MYELODYSPLASTIC SYNDROME	umls:C3463824	1
+myelodysplastic syndrome	unknown	1
 myelofibrosis myeloproliferative disorder polycythemia vera thrombocythemia	PUBMED:17440677 17440677	1
 myelofibrosis	PUBMED:16293597 16293597	1
 Myelofibrosis	umls:C0026987	1
@@ -21033,7 +20974,6 @@ myocardial infarction stable angina of effort	PUBMED:11605530 11605530	1
 myocardial infarction stroke	PUBMED:11841441 11841441	1
 myocardial infarction stroke	PUBMED:12006921 12006921	1
 myocardial infarction sudden cardiac death	PUBMED:11514372 11514372	1
-myocardial infarction susceptibility microcystic meningioma  32	unknown	1
 myocardial infarct kidney disease	PUBMED:12748347 12748347	1
 myocardial infarct lipoprotein cerebral infarct	PUBMED:12509922 12509922	1
 myocardial infarct mortality in	PUBMED:16635594 16635594	1
@@ -21528,7 +21468,7 @@ nephrolithiasis	PUBMED:17519954 17519954	1
 nephrolithiasis	PUBMED:19616291 19616291	1
 nephrolithiasis sotos syndrome  15	unknown	1
 Nephrolithiasis type I	OMIM:310468	1
-NEPHROLITHIASIS URIC ACID SUSCEPTIBILITY TO	umls:C2700426	1
+NEPHROLITHIASIS URIC ACID	umls:C2700426	1
 Nephrolithiasis X Linked Recessive with Renal Failure	umls:C0403720	1
 nephronophthisis 11 huntington disease like 2	unknown	1
 NEPHRONOPHTHISIS 11	umls:C3150796	1
@@ -21708,7 +21648,7 @@ Neuroblastoma 2	OMIM:613013	1
 neuroblastoma 3 m syndrome	unknown	1
 Neuroblastoma 3	OMIM:613014	1
 neuroblastoma 3	unknown	1
-neuroblastoma 5 neuroblastoma susceptibility	unknown	1
+neuroblastoma 5 neuroblastoma	unknown	1
 neuroblastoma cerebellar degeneration	unknown	1
 neuroblastoma childhood leukemia	unknown	1
 neuroblastoma differentiating neuroblastoma	unknown	1
@@ -21724,11 +21664,7 @@ neuroblastoma	PUBMED:18463370 18463370 19412175 21124317	1
 neuroblastoma	PUBMED:18463370 18463370 21124317	1
 Neuroblastoma	PUBMED:19412175	1
 neuroblastoma	PUBMED:20003389 20003389	1
-neuroblastoma susceptibility atypical teratoid rhabdoid tumor  8	unknown	1
-neuroblastoma susceptibility neuroblastoma 4	unknown	1
-neuroblastoma susceptibility neuroblastoma 6	unknown	1
-neuroblastoma susceptibility polyploidy	unknown	1
-NEUROBLASTOMA SUSCEPTIBILITY TO 3	umls:C2751681	1
+NEUROBLASTOMA	umls:C2751681	1
 neurocutaneous melanosis autoimmune lymphoproliferative syndrome  26	unknown	1
 Neurocutaneous melanosis somatic	OMIM:249400	1
 neurocutaneous melanosis somatic	unknown	1
@@ -22013,7 +21949,7 @@ Non albumin protein levels	PUBMED:22558069 22558069	1
 nonalcoholic fatty liver disease	PUBMED:19961619 19961619	1
 non alcoholic fatty liver disease	PUBMED:21423719 21423719	1
 Nonalcoholic fatty liver disease	PUBMED:22719876 21423719	1
-NONARTERITIC ANTERIOR ISCHEMIC OPTIC NEUROPATHY SUSCEPTIBILITY TO	umls:C1847711	1
+NONARTERITIC ANTERIOR ISCHEMIC OPTIC NEUROPATHY	umls:C1847711	1
 nonatopic asthma and food allergy	PUBMED:12897754 12897754	1
 Non classic congenital adrenal hyperplasia due to 21 hydroxylase deficiency	ORPHANET:95698	1
 Non classic congenital lipoid adrenal hyperplasia due to STAR deficency	ORPHANET:325529	1
@@ -22337,7 +22273,7 @@ Obesity related traits	PUBMED:23251661 23251661 23251661 23251661 23251661	1
 Obesity related traits	PUBMED:23251661 23251661 23251661 23251661 23251661 23251661 23251661 23251661 23251661 23251661 23251661	1
 Obesity resistance to	OMIM:601487	1
 Obesity severe and type II diabetes	OMIM:601665	1
-obesity severe bmiq9 obesity susceptibility to mc3r related  8	unknown	1
+obesity severe bmiq9 obesity	unknown	1
 Obesity severe due to leptin deficiency	OMIM:614962	1
 Obesity severe	OMIM:602025	1
 obesity sim1 related	unknown	1
@@ -22662,8 +22598,8 @@ Orofacial cleft 4	OMIM:608371	1
 Orofacial Cleft 4	umls:C1842143	1
 orofacial cleft 4	unknown	1
 Orofacial Cleft 5	umls:C1837210	1
-OROFACIAL CLEFT 6 SUSCEPTIBILITY TO	umls:C1837213	1
-orofacial cleft 6 susceptibility to	unknown	1
+OROFACIAL CLEFT 6	umls:C1837213	1
+orofacial cleft 6	unknown	1
 Orofacial cleft 8	OMIM:129400	1
 orofacial cleft 8 spinocerebellar ataxia type12	unknown	1
 orofacial cleft 8	unknown	1
@@ -22877,7 +22813,6 @@ osteoporosis postmenopausal osteoporotic fracture  16	unknown	1
 osteoporosis postmenopausal paget disease juvenile  25	unknown	1
 osteoporosis postmenopausal paget disease juvenile  69	unknown	1
 osteoporosis postmenopausal	PUBMED:15794932 15794932	1
-osteoporosis postmenopausal susceptibility	unknown	1
 Osteoporosis pseudoglioma	ORPHANET:2788	1
 Osteoporosis pseudoglioma syndrome	OMIM:259770	1
 osteoporosis pseudoglioma syndrome sost related sclerosing bone dysplasia	unknown	1
@@ -22964,7 +22899,7 @@ Otosclerosis	umls:C0029899	1
 otospondylomegaepiphyseal dysplasia fibrochondrogenesis 2	unknown	1
 otx2 related combined pituitary hormone deficiency	unknown	1
 outcome after head injury	PUBMED:10213549 10213549	1
-ovalocytosis and malaria susceptibility	PUBMED:11719395 11719395	1
+ovalocytosis and malaria	PUBMED:11719395 11719395	1
 Ovalocytosis	OMIM:109270	1
 ovalocytosis southeast asian	unknown	1
 ovalostomatocytosis	PUBMED:8547605 8547605	1
@@ -23011,7 +22946,7 @@ ovarian cystadenoma myxedema	unknown	1
 ovarian cystic teratoma	unknown	1
 ovarian dysgenesis 1 ovarian dysgenesis 3	unknown	1
 Ovarian Dysgenesis 2	umls:C1845294	1
-ovarian epithelial cancer bard1 related susceptibility to breast cancer  8	unknown	1
+ovarian epithelial cancer bard1 related	unknown	1
 ovarian epithelial cancer bosch boonstra schaaf optic atrophy syndrome	unknown	1
 ovarian epithelial cancer chronic cystitis  8	unknown	1
 ovarian failure premature	PUBMED:18555221 18555221	1
@@ -23080,7 +23015,7 @@ pain	PUBMED:19207018 19207018	1
 pain	PUBMED:19706472 19706472	1
 pain response	PUBMED:15772909 15772909 16871067	1
 pain tolerance and opioid addiction	PUBMED:12898579 12898579	1
-palb2 related cancer susceptibility pancreatic cancer 3  17	unknown	1
+palb2 related cancer	unknown	1
 palb2 related fanconi anemia	unknown	1
 palindromic rheumatism corneal ulcer  64	unknown	1
 Pallidopyramidal syndrome	umls:C1850100	1
@@ -23155,8 +23090,6 @@ pancreatic cancer	PUBMED:19648918 19648918	1
 pancreatic cancer renal oncocytoma	unknown	1
 Pancreatic cancer somatic	OMIM:260350	1
 Pancreatic cancer somatic	OMIM:601300	1
-pancreatic cancer susceptibility 1 pancreatic cancer 1  6	unknown	1
-pancreatic cancer susceptibility 3	unknown	1
 pancreatic carcinoma	PUBMED:11505392 11505392	1
 Pancreatic carcinoma somatic	OMIM:260350	1
 pancreatic cholera silent pituitary adenoma  66	unknown	1
@@ -23279,7 +23212,7 @@ paragangliomas 4	unknown	1
 paragangliomas 5 paraganglioma  6	unknown	1
 PARAGANGLIOMAS 5	umls:C3279992	1
 paragangliomas	PUBMED:16912137 16912137	1
-paraganglioma tmem127 related susceptibility to pheochromocytoma  7	unknown	1
+paraganglioma tmem127 related	unknown	1
 paraganglioma von hippel lindau disease  7	unknown	1
 paragonimiasis intrinsic asthma  60	unknown	1
 paragonimiasis taeniasis	unknown	1
@@ -23337,7 +23270,7 @@ Parkinson Disease 11	umls:C1843211	1
 parkinson disease 11	unknown	1
 Parkinson disease 12	OMIM:300557	1
 Parkinson Disease 12	umls:C1845165	1
-PARKINSON DISEASE 13 AUTOSOMAL DOMINANT SUSCEPTIBILITY TO	umls:C1853202	1
+PARKINSON DISEASE 13 AUTOSOMAL DOMINANT	umls:C1853202	1
 parkinson disease 13 ophthalmomyiasis	unknown	1
 Parkinson disease 15	OMIM:260300	1
 Parkinson disease 16	OMIM:613164	1
@@ -23937,7 +23870,7 @@ photosensitive trichothiodystrophy nonphotosensitive trichothiodystrophy	unknown
 photosensitive trichothiodystrophy trichothiodystrophy complementation group a	unknown	1
 photosensitive trichothiodystrophy xeroderma pigmentosum	unknown	1
 phox2a related congenital fibrosis of the extraocular muscles congenital fibrosis of the extraocular muscles  9	unknown	1
-phox2b related neuroblastoma susceptibility	unknown	1
+phox2b related neuroblastoma	unknown	1
 phyh related refsum disease refsum disease	unknown	1
 Phyllodes Tumor of the Prostate	umls:C1334615	1
 physical activity	PUBMED:15597110 15597110	1
@@ -23991,7 +23924,7 @@ pineocytoma delayed sleep phase syndrome	unknown	1
 pineocytoma insomnia	unknown	1
 piperazines	PUBMED:19721433 19721433	1
 piperazines	PUBMED:20195266 20195266	1
-pitt hopkins like syndrome 1 autism susceptibility 15  11	unknown	1
+pitt hopkins like syndrome 1 autism	unknown	1
 Pitt Hopkins syndrome	ORPHANET:2896	1
 pitt hopkins syndrome	unknown	1
 Pituitary ACTH secreting adenoma	OMIM:139360	1
@@ -24907,7 +24840,7 @@ Prostate cancer 1	OMIM:601518	1
 prostate cancer 1 prostate cancer progression and metastasis of  6	unknown	1
 prostate cancer 1 usher syndrome type ii	unknown	1
 Prostate cancer aggressiveness QTL	OMIM:176807	1
-PROSTATE CANCER BRAIN CANCER SUSCEPTIBILITY	umls:C1863600	1
+PROSTATE CANCER BRAIN CANCER	umls:C1863600	1
 prostate cancer breast adenocarcinoma	unknown	1
 prostate cancer breast cancer	unknown	1
 prostate cancer bronchogenic carcinoma	unknown	1
@@ -25243,7 +25176,7 @@ pseudoxanthoma elasticum	PUBMED:17617515 17617515 16835894	1
 Pseudoxanthomatous diffuse cutaneous mastocytosis	ORPHANET:280794	1
 pseudoxanthomatous diffuse cutaneous mastocytosis	unknown	1
 Psoraisis	OMIM:607857	1
-psoraisis susceptibility 9	unknown	1
+psoraisis	unknown	1
 Psoriasiform dermatitis	Not available	1
 psoriasis bladder squamous cell carcinoma	unknown	1
 psoriasis dermatitis and eczema	PUBMED:12413772 12413772	1
@@ -25260,11 +25193,6 @@ Psoriasis	OMIM:612599	1
 Psoriasis	OMIM:612950	1
 psoriasis protection against inflammatory bowel disease 17 protection against  9	unknown	1
 Psoriasis protection against	OMIM:605606	1
-psoriasis psoriasis susceptibility 10	unknown	1
-psoriasis psoriasis susceptibility 11	unknown	1
-psoriasis psoriasis susceptibility 3	unknown	1
-psoriasis psoriasis susceptibility 7	unknown	1
-psoriasis psoriasis susceptibility 8	unknown	1
 psoriasis psoriatic arthritis	PUBMED:17388919 17388919	1
 psoriasis	PUBMED:10323458 10323458	1
 psoriasis	PUBMED:10469306 10469306	1
@@ -25314,16 +25242,11 @@ psoriasis	PUBMED:6155027 6155027	1
 psoriasis	PUBMED:9039327 9039327	1
 psoriasis	PUBMED:9886274 9886274	1
 psoriasis spondyloarthropathy	unknown	1
-psoriasis susceptibility 13 candidiasis familial 2 autosomal recessive	unknown	1
-PSORIASIS SUSCEPTIBILITY 13	umls:C3279754	1
-psoriasis susceptibility 1 skin disease  6	unknown	1
-PSORIASIS SUSCEPTIBILITY 2	umls:C1864497	1
-psoriasis susceptibility 6	unknown	1
+PSORIASIS	umls:C1864497	1
+PSORIASIS	umls:C3279754	1
 psoriasis vulgaris	PUBMED:16339849 16339849	1
 psoriatic arthritis arthritis  6	unknown	1
 psoriatic arthritis funisitis	unknown	1
-psoriatic arthritis psoriasis susceptibility 4	unknown	1
-psoriatic arthritis psoriasis susceptibility 5	unknown	1
 psoriatic arthritis	PUBMED:11390038 11390038	1
 psoriatic arthritis	PUBMED:12879366 12879366	1
 psoriatic arthritis	PUBMED:15124938 15124938	1
@@ -25406,7 +25329,7 @@ Pulmonary function	PUBMED:23932459 20010834	1
 Pulmonary function	PUBMED:23932459 21946350	1
 PULMONARY FUNCTION	umls:C3160731	1
 Pulmonary hypertension chronic thromboembolic without deep vein thrombosis	OMIM:612862	1
-PULMONARY HYPERTENSION CHRONIC THROMBOEMBOLIC WITHOUT DEEP VEIN THROMBOSIS SUSCEPTIBILITY TO	umls:C2748504	1
+PULMONARY HYPERTENSION CHRONIC THROMBOEMBOLIC WITHOUT DEEP VEIN THROMBOSIS	umls:C2748504	1
 pulmonary hypertension familial primary 1 with or without hht	unknown	1
 Pulmonary hypertension primary 2	OMIM:615342	1
 Pulmonary hypertension primary 3	OMIM:615343	1
@@ -25571,7 +25494,7 @@ Rabson Mendenhall syndrome	OMIM:262190	1
 Rabson Mendenhall syndrome	ORPHANET:769	1
 rabson mendenhall syndrome turner syndrome  43	unknown	1
 rad21 related cornelia de lange syndrome cornelia de lange syndrome 4	unknown	1
-rad51c related familial susceptibility to breast ovarian cancer	unknown	1
+rad51c related familial	unknown	1
 Radial aplasia thrombocytopenia syndrome	OMIM:274000	1
 radial artery hypertrophy	PUBMED:12566975 12566975	1
 radial hemimelia unilateral	unknown	1
@@ -25801,7 +25724,7 @@ renal disease	PUBMED:11961010 11961010	1
 renal disease	PUBMED:12138283 12138283	1
 renal disease	PUBMED:12187087 12187087	1
 Renal dysplasia cystic	OMIM:601331	1
-RENAL DYSPLASIA CYSTIC SUSCEPTIBILITY TO	umls:C3275898	1
+RENAL DYSPLASIA CYSTIC	umls:C3275898	1
 renal dysplasia cystic	unknown	1
 Renal dysplasia diffuse cystic	OMIM:601331	1
 renal dysplasia renal dysplasia cystic	unknown	1
@@ -25953,12 +25876,6 @@ restless legs syndrome	PUBMED:17637780 17637780	1
 restless legs syndrome	PUBMED:18660810 18660810 18660810 18660810 18660810 18660810 21779176	1
 Restless legs syndrome	PUBMED:21779176 17634447 17637780	1
 Restless legs syndrome	PUBMED:21779176 18660810 18660810	1
-restless legs syndrome susceptibility to 1	unknown	1
-restless legs syndrome susceptibility to 2	unknown	1
-restless legs syndrome susceptibility to 3	unknown	1
-restless legs syndrome susceptibility to 4	unknown	1
-restless legs syndrome susceptibility to 5	unknown	1
-restless legs syndrome susceptibility to 6	unknown	1
 restrictive cardiomyopathy cardiomyopathy familial restrictive 2	unknown	1
 reticular dysgenesis bleeding disorder platelet type 17  6	unknown	1
 Reticular dysgenesis	ORPHANET:33355	1
@@ -26461,7 +26378,7 @@ rumination	PUBMED:19653783 19653783	1
 ruptured intracranial aneurysms	PUBMED:10882751 10882751	1
 ruvalcaba syndrome cowden disease  14	unknown	1
 ryr1 related congenital fiber type disproportion	unknown	1
-ryr1 related malignant hyperthermia susceptibility	unknown	1
+ryr1 related malignant hyperthermia	unknown	1
 ryr1 related multiminicore disease	unknown	1
 ryr2 related catecholaminergic polymorphic ventricular tachycardia	unknown	1
 Saccharopinuria	ORPHANET:3124	1
@@ -26583,7 +26500,7 @@ Schinzel Giedion syndrome	OMIM:269150	1
 Schinzel Giedion syndrome	ORPHANET:798	1
 Schinzel Giedion syndrome	umls:C0265227	1
 Schistosoma mansoni infection	OMIM:181460	1
-schistosoma mansoni infection susceptibility	unknown	1
+schistosoma mansoni infection	unknown	1
 schistosomiasis cystadenoma	unknown	1
 Schistosomiasis	umls:C0036323	1
 schizencephaly homocysteine plasma level  96	unknown	1
@@ -26816,7 +26733,6 @@ schizophrenia schizophrenia 13	unknown	1
 schizophrenia schizophrenia 14	unknown	1
 schizophrenia substance abuse	PUBMED:16788767 16788767	1
 schizophrenia substance induced psychosis	unknown	1
-schizophrenia susceptibility 18	unknown	1
 schizophrenia tardive dyskinesia	PUBMED:11526996 11526996	1
 schizophrenia tardive dyskinesia	PUBMED:17217237 17217237 17291655	1
 schizophrenia therapeutic response	PUBMED:15722190 15722190	1
@@ -26895,10 +26811,10 @@ Scoliosis idiopathic 2	OMIM:607354	1
 scoliosis idiopathic 2	unknown	1
 scoliosis idiopathic 4	unknown	1
 Scoliosis idiopathic	OMIM:612238	1
-SCOLIOSIS IDIOPATHIC SUSCEPTIBILITY TO 2	umls:C1846366	1
-SCOLIOSIS IDIOPATHIC SUSCEPTIBILITY TO 3	umls:C1837461	1
-SCOLIOSIS IDIOPATHIC SUSCEPTIBILITY TO 4	umls:C2677108	1
-SCOLIOSIS IDIOPATHIC SUSCEPTIBILITY TO 5	umls:C2677107	1
+SCOLIOSIS IDIOPATHIC	umls:C1837461	1
+SCOLIOSIS IDIOPATHIC	umls:C1846366	1
+SCOLIOSIS IDIOPATHIC	umls:C2677107	1
+SCOLIOSIS IDIOPATHIC	umls:C2677108	1
 scoliosis	PUBMED:16648749 16648749	1
 scoliosis	PUBMED:17176459 17176459	1
 scoliosis	PUBMED:17436250 17436250	1
@@ -26958,7 +26874,7 @@ secondary ciliary dyskinesia	unknown	1
 secondary hypertrophic osteoarthropathy myoblastoma	unknown	1
 secondary hypertrophic osteoarthropathy	unknown	1
 Secondary hypothyroidism	OMIM:275100	1
-secretory diarrhea autism susceptibility 17	unknown	1
+secretory diarrhea autism	unknown	1
 SED congenita	OMIM:183900	1
 SED Maroteaux type	OMIM:184095	1
 sed namaqualand type	unknown	1
@@ -27336,7 +27252,7 @@ Sick sinus syndrome 2 autosomal dominant	OMIM:163800	1
 Sick Sinus Syndrome 2 Autosomal Dominant	umls:C1834144	1
 sick sinus syndrome 2 myh9 related disorders  20	unknown	1
 Sick sinus syndrome 2	OMIM:163800	1
-SICK SINUS SYNDROME 3 SUSCEPTIBILITY TO	umls:C3279791	1
+SICK SINUS SYNDROME 3	umls:C3279791	1
 sick sinus syndrome 3	unknown	1
 sick sinus syndrome epileptic encephalopathy early infantile 24	unknown	1
 sick sinus syndrome pallister hall syndrome	unknown	1
@@ -27492,7 +27408,6 @@ sleeping sickness yaws	unknown	1
 sleep	PUBMED:17903308 17903308 17903308 17903308 17903308 17903308	1
 sleepwalking	PUBMED:12556916 12556916	1
 sle	PUBMED:12480686 12480686	1
-sle susceptibility complement component 5 deficiency	unknown	1
 slipped capital femoral epiphysis	unknown	1
 Slow acetylator due to N acetyltransferase enzyme variant	OMIM:243400	1
 slow channel congenital myasthenic syndrome chrnb1 related congenital myasthenic syndrome  10	unknown	1
@@ -28105,8 +28020,8 @@ spondyloarthropathy anterior uveitis  7	unknown	1
 spondyloarthropathy anterior uveitis  8	unknown	1
 Spondyloarthropathy	OMIM:183840	1
 Spondyloarthropathy	OMIM:613238	1
-SPONDYLOARTHROPATHY SUSCEPTIBILITY TO 2	umls:C1866738	1
-SPONDYLOARTHROPATHY SUSCEPTIBILITY TO 3	umls:C2750474	1
+SPONDYLOARTHROPATHY	umls:C1866738	1
+SPONDYLOARTHROPATHY	umls:C2750474	1
 Spondylocarpotarsal synostosis	ORPHANET:3275	1
 Spondylocarpotarsal synostosis	umls:C1848934	1
 Spondylocheirodysplasia Ehlers Danlos Syndrome Like	umls:C2676510	1
@@ -28620,8 +28535,6 @@ Surfactant metabolism dysfunction pulmonary 4	OMIM:300770	1
 Surfactant Metabolism Dysfunction Pulmonary 4	umls:C2677877	1
 surfactant metabolism dysfunction pulmonary 4	unknown	1
 survival	PUBMED:17903295 17903295 17903295	1
-susceptibility to autoimmune disease	PUBMED:12724780 12724780	1
-susceptibility to tuberculosis	PUBMED:11281214 11281214	1
 Sveinsson choreoretinal atrophy	OMIM:108985	1
 sveinsson choreoretinal atrophy	unknown	1
 Sveinsson chorioretinal atrophy	OMIM:108985	1
@@ -28630,7 +28543,7 @@ sweat chloride elevation without cf	unknown	1
 sweat gland carcinoma atrioventricular septal defect  30	unknown	1
 swine influenza vesiculitis  7	unknown	1
 swyer syndrome	PUBMED:9341876 9341876	1
-sycp3 related pregnancy loss susceptibility to spermatogenic failure 4  6	unknown	1
+sycp3 related pregnancy loss	unknown	1
 Symmetrical dyschromatosis of extremities	OMIM:127400	1
 Symphalangism brachydactyly syndrome	OMIM:186500	1
 Symphalangism proximal 1b	OMIM:615298	1
@@ -28793,18 +28706,18 @@ Systemic lupus erythematosus	PUBMED:23273568 23053960 21408207 21408207 19838193
 Systemic lupus erythematosus	PUBMED:23273568 23053960 21408207 21408207 19838193 19165918 18204098	1
 Systemic lupus erythematosus resistance to	OMIM:601744	1
 systemic lupus erythematosus sle	PUBMED:12043886 12043886	1
-systemic lupus erythematosus sle susceptibility	unknown	1
+systemic lupus erythematosus sle	unknown	1
 Systemic lupus erythematosus susceptitbility to 11 612253	OMIM:600558	1
 Systemic lupus erythematosus susceptitbility to 11	OMIM:612253	1
 systemic lupus erythematosus systemic lupus erythematosus 8	unknown	1
 Systemic lupus erythematosus with hemolytic anemia	OMIM:607279	1
-SYSTEMIC LUPUS ERYTHEMATOSUS WITH HEMOLYTIC ANEMIA SUSCEPTIBILITY TO 1	umls:C1846533	1
+SYSTEMIC LUPUS ERYTHEMATOSUS WITH HEMOLYTIC ANEMIA	umls:C1846533	1
 Systemic lupus erythematosus with nephritis	OMIM:607965	1
 Systemic lupus erythematosus with nephritis	OMIM:607966	1
 Systemic lupus erythematosus with nephritis	OMIM:607967	1
-SYSTEMIC LUPUS ERYTHEMATOSUS WITH NEPHRITIS SUSCEPTIBILITY TO 1	umls:C1842757	1
-SYSTEMIC LUPUS ERYTHEMATOSUS WITH NEPHRITIS SUSCEPTIBILITY TO 2	umls:C1842756	1
-SYSTEMIC LUPUS ERYTHEMATOSUS WITH NEPHRITIS SUSCEPTIBILITY TO 3	umls:C1842755	1
+SYSTEMIC LUPUS ERYTHEMATOSUS WITH NEPHRITIS	umls:C1842755	1
+SYSTEMIC LUPUS ERYTHEMATOSUS WITH NEPHRITIS	umls:C1842756	1
+SYSTEMIC LUPUS ERYTHEMATOSUS WITH NEPHRITIS	umls:C1842757	1
 systemic lupus erythematous association with 6 lymphocytic vasculitis  10	unknown	1
 Systemic lupus erythematous association with	OMIM:609939	1
 systemic mastocytosis lepromatous leprosy  10	unknown	1
@@ -29299,9 +29212,9 @@ Thyrotoxic periodic paralysis 2	OMIM:613239	1
 Thyrotoxic periodic paralysis	OMIM:613239	1
 thyrotoxic periodic paralysis periodic paralyses  12	unknown	1
 thyrotoxic periodic paralysis pierre robin sequence	unknown	1
-THYROTOXIC PERIODIC PARALYSIS SUSCEPTIBILITY TO 1	umls:C2749982	1
-THYROTOXIC PERIODIC PARALYSIS SUSCEPTIBILITY TO 2	umls:C2750473	1
 thyrotoxic periodic paralysis thyrotoxic periodic paralysis 2	unknown	1
+THYROTOXIC PERIODIC PARALYSIS	umls:C2749982	1
+THYROTOXIC PERIODIC PARALYSIS	umls:C2750473	1
 thyrotoxic periodic paralysis x linked juvenile retinoschisis  7	unknown	1
 thyrotropin	PUBMED:17903292 17903292 17903292 17903292 17903292	1
 thyrotropin	PUBMED:17903292 17903292 17903292 17903292 17903292 17903292 17903292 17903292	1
@@ -29720,7 +29633,7 @@ tuberculosis extrapulmonary tuberculosis	unknown	1
 Tuberculosis infection protection against	OMIM:607948	1
 tuberculosis measles	unknown	1
 tuberculosis meningitis	PUBMED:17554342 17554342	1
-tuberculosis mycobacerium tuberculosis susceptibility x linked	unknown	1
+tuberculosis mycobacerium tuberculosis	unknown	1
 tuberculosis mycobacterium tuberculosis 2	unknown	1
 tuberculosis mycobacterium tuberculosis 3	unknown	1
 Tuberculosis	OMIM:607948	1
@@ -30385,15 +30298,13 @@ vitelliform macular dystrophy macular dystrophy	unknown	1
 vitelliform macular dystrophy paranoid schizophrenia	unknown	1
 Vitelliform Macular Dystrophy	umls:C0339510	1
 Vitiligo associated multiple autoimmune disease	OMIM:193200	1
-vitiligo associated multiple autoimmune disease susceptibility 1 autoimmune disease 1  9	unknown	1
-VITILIGO ASSOCIATED MULTIPLE AUTOIMMUNE DISEASE SUSCEPTIBILITY 1	umls:C1847835	1
-VITILIGO ASSOCIATED MULTIPLE AUTOIMMUNE DISEASE SUSCEPTIBILITY 6	umls:C3277701	1
-vitiligo associated multiple autoimmune disease susceptiblity 6	unknown	1
+VITILIGO ASSOCIATED MULTIPLE AUTOIMMUNE DISEASE	umls:C1847835	1
+VITILIGO ASSOCIATED MULTIPLE AUTOIMMUNE DISEASE	umls:C3277701	1
 vitiligo autoimmune disease 3	unknown	1
 vitiligo autoimmune disease	PUBMED:15649153 15649153	1
 vitiligo fetal hydantoin syndrome	unknown	1
 vitiligo graves disease	unknown	1
-vitiligo	PUBMED:11837458 11837458	1
+vitiligo	PUBMED:11837458 11837458 11837458	1
 vitiligo	PUBMED:16409268 16409268	1
 vitiligo	PUBMED:16409268 16409268 17021767	1
 vitiligo	PUBMED:17576235 17576235	1
@@ -30404,7 +30315,6 @@ Vitiligo	PUBMED:21326295 20410501	1
 vitiligo	PUBMED:21326295 21326295	1
 Vitiligo	PUBMED:22561518 20410501	1
 Vitiligo	PUBMED:22951725 20410501	1
-vitiligo susceptibility	PUBMED:11837458 11837458	1
 vitreoretinal degeneration myopia high with cataract and vitreoretinal degeneration  7	unknown	1
 vitreoretinal dystrophy corneal staphyloma	unknown	1
 Vitreoretinochoroidopathy dominant	OMIM:193220	1
@@ -30672,7 +30582,7 @@ Wilms tumor somatic	OMIM:194070	1
 wilms tumors	PUBMED:15459955 15459955	1
 Wilms tumor type 1	OMIM:194070	1
 wilms tumor type 1 renal hamartomas nephroblastomatosis and fetal gigantism	unknown	1
-wilms tumor type 1 wilms tumor susceptibility 5	unknown	1
+wilms tumor type 1 wilms tumor	unknown	1
 wilms tumor type 4	unknown	1
 wilms tumor wilms tumor type 3	unknown	1
 wilm tumor	PUBMED:15150775 15150775	1
@@ -31182,7 +31092,6 @@ alcohol related phenotypes nicotine	PUBMED:17226798 17226798	2
 Alexander Disease	umls:C0270726	2
 alkaline phosphatase	PUBMED:18464913 18464913	2
 alk histiocytosis	unknown	2
-alk related neuroblastoma susceptibility	unknown	2
 allergic contact dermatitis contact dermatitis	unknown	2
 Allergic dermatitis	PUBMED:23921680	2
 allergic reaction betalactam	PUBMED:17001290 17001290	2
@@ -31223,8 +31132,8 @@ alzheimer disease	PUBMED:20885792 20885792	2
 alzheimer disease	PUBMED:21460841 21460841	2
 Alzheimer disease	PUBMED:23565137 22005931 20885792	2
 Alzheimer disease	PUBMED:23571587	2
-ALZHEIMER DISEASE SUSCEPTIBILITY TO MITOCHONDRIAL	umls:C1838990	2
 Alzheimer disease type 4	OMIM:606889	2
+ALZHEIMER DISEASE	umls:C1838990	2
 Amaurosis congenita of Leber type 9	umls:C1837873	2
 Amelogenesis imperfecta pigmented hypomaturation type	umls:C1290537	2
 Amelogenesis imperfecta type IC	OMIM:204650	2
@@ -31467,7 +31376,7 @@ Autism spectrum disorder attention deficit hyperactivity disorder bipolar disord
 autism spectrum disorder mood disorder	unknown	2
 autistic disorder	PUBMED:20663923 20663923	2
 autoimmune disease 1	unknown	2
-AUTOIMMUNE DISEASE SUSCEPTIBILITY TO 1	umls:C1842979	2
+AUTOIMMUNE DISEASE	umls:C1842979	2
 autoimmune enteropathy	unknown	2
 autoimmune polyendocrine syndrome type 2	unknown	2
 autoimmune polyglandular syndrome type 2	unknown	2
@@ -32697,6 +32606,7 @@ Epilepsy generalized with febrile seizures plus type 2	OMIM:604403	2
 Epilepsy idiopathic generalized	OMIM:600669	2
 Epilepsy juvenile absence	OMIM:607631	2
 Epilepsy juvenile absence	umls:C2930918	2
+epilepsy juvenile absence	unknown	2
 Epilepsy nocturnal frontal lobe 5	OMIM:615005	2
 Epilepsy Partial with Variable Foci	umls:C1858477	2
 Epilepsy progressive myoclonic 1A	OMIM:254800	2
@@ -32903,7 +32813,7 @@ Fraser Syndrome	umls:C0265233	2
 Frasier syndrome	OMIM:136680	2
 FRAXE intellectual deficit	ORPHANET:100973	2
 Friedreich Ataxia	umls:C0016719	2
-frontal lobe epilepsy lung cancer susceptibility 2  7	unknown	2
+frontal lobe epilepsy lung cancer	unknown	2
 frontonasal dysplasia 1	unknown	2
 Frontonasal dysplasia 2	OMIM:613451	2
 Frontotemporal dementia	OMIM:600274	2
@@ -32965,7 +32875,7 @@ Glaucoma 1 open angle F	OMIM:603383	2
 Glaucoma 1 open angle G	OMIM:609887	2
 Glaucoma 3 Primary Congenital A	umls:C1856439	2
 Glaucoma 3 primary infantile B	Not available	2
-GLAUCOMA NORMAL TENSION SUSCEPTIBILITY TO	umls:C1847730	2
+GLAUCOMA NORMAL TENSION	umls:C1847730	2
 glaucoma open angle	PUBMED:21532571 21532571	2
 Glaucoma	PUBMED:20363506	2
 Glaucoma	PUBMED:20835238	2
@@ -33189,7 +33099,7 @@ hepatocellular carcinoma spastic paraplegia 53 autosomal recessive	unknown	2
 Hepatorenal Syndrome	umls:C0019212	2
 hepatosplenic t cell lymphoma	unknown	2
 hepatotoxicity leukopenia	PUBMED:16431304 16431304	2
-hereditary and sporadic prostate cancer susceptibility	PUBMED:11912155 11912155	2
+hereditary and sporadic prostate cancer	PUBMED:11912155 11912155	2
 Hereditary Angioedema Types I and II	umls:C2717905	2
 hereditary angioedema	unknown	2
 Hereditary areflexic dystasia	umls:C0205713	2
@@ -33890,7 +33800,6 @@ malignant cylindroma	unknown	2
 malignant ependymoma	unknown	2
 malignant fibrous histiocytoma of bone	unknown	2
 Malignant hyperthermia	ORPHANET:423	2
-malignant hyperthermia susceptibility type 1	unknown	2
 malignant migrating partial seizures of infancy	unknown	2
 malignant ovarian cyst	unknown	2
 Malonic aciduria	umls:C0342793	2
@@ -34269,7 +34178,6 @@ Myasthenic Syndromes Congenital	umls:C0751882	2
 mycobacterium gordonae	unknown	2
 mycobacterium kansasii	unknown	2
 Mycobacterium tuberculosis protection against	OMIM:607948	2
-mycobacterium tuberculosis susceptibility to infection by	unknown	2
 Myelodysplastic syndromes	ORPHANET:52688	2
 myeloid leukemia acute m4 m4eo subtype somatic	unknown	2
 myelopathy htlv 1 associated	PUBMED:11163081 11163081	2
@@ -34820,7 +34728,7 @@ Pituitary hormone deficiency combined 6	OMIM:613986	2
 Pituitary stalk interruption syndrome	ORPHANET:95496	2
 pityriasis lichenoides et varioliformis acuta	unknown	2
 Pityriasis rubra pilaris	OMIM:173200	2
-pityriasis rubra pilaris psoriasis susceptibility 2	unknown	2
+pityriasis rubra pilaris psoriasis	unknown	2
 pityriasis versicolor reticular dysgenesis	unknown	2
 Placenta Diseases	umls:C0032045	2
 placenta praevia	unknown	2
@@ -34994,11 +34902,10 @@ pseudoxanthoma elasticum modifier of severity of	unknown	2
 Psoriasis	OMIM:602723	2
 Psoriasis	OMIM:605606	2
 Psoriasis	OMIM:614070	2
-psoriasis psoriasis susceptibility 1	unknown	2
 psoriasis	PUBMED:19169254 19169254	2
 psoriasis	PUBMED:19169254 19169254 19169254 20953190	2
 Psoriasis	PUBMED:19169255	2
-psoriasis susceptibility 1	unknown	2
+psoriatic arthritis psoriasis	unknown	2
 psoriatic arthritis	PUBMED:16507123 16507123	2
 Psychomotor Agitation	umls:C0085631	2
 psychomotor disease	unknown	2
@@ -35241,7 +35148,7 @@ Sclerosteosis	OMIM:269500	2
 Sclerosteosis	ORPHANET:3152	2
 scn1a related seizure disorders	unknown	2
 Scoliosis idiopathic 3	OMIM:608765	2
-SCOLIOSIS IDIOPATHIC SUSCEPTIBILITY TO 1	umls:C2700406	2
+SCOLIOSIS IDIOPATHIC	umls:C2700406	2
 Scoliosis	umls:C0036439	2
 Scott syndrome	OMIM:262890	2
 SC phocomelia syndrome	OMIM:269000	2
@@ -35285,7 +35192,7 @@ Severe combined immunodeficiency with sensitivity to ionizing radiation	OMIM:602
 Severe combined immunodeficiency X linked	OMIM:300400	2
 severe congenital nemaline myopathy	unknown	2
 Severe congenital neutropenia	umls:C1853118	2
-SEVERE CUTANEOUS ADVERSE REACTION SUSCEPTIBILITY TO	umls:C1840548	2
+SEVERE CUTANEOUS ADVERSE REACTION	umls:C1840548	2
 Severe generalized recessive dystrophic epidermolysis bullosa	ORPHANET:79408	2
 severe hemophilia b	unknown	2
 Severe immunodeficiency autosomal recessive T cell negative B cell negative NK cell positive	OMIM:601457	2
@@ -35819,6 +35726,7 @@ vitamin e	PUBMED:21729881 21729881 22437554	2
 vitamin k	PUBMED:17903293 17903293 17903293	2
 Vitiligo associated autoimmune disease	ORPHANET:247871	2
 Vitiligo associated multiple autoimmune disease	OMIM:606579	2
+vitiligo associated multiple autoimmune disease	unknown	2
 vitreoretinal dystrophy	unknown	2
 Vitreoretinopathy neovascular inflammatory	OMIM:193235	2
 VITREORETINOPATHY NEOVASCULAR INFLAMMATORY	umls:C1860404	2
@@ -36011,6 +35919,7 @@ Alexander disease	OMIM:203450	3
 alkaline phosphatase	PUBMED:17903293 17903293 17903293	3
 alkaline phosphatase	PUBMED:18940312 18940312 22001757	3
 Alkaptonuria	OMIM:203500	3
+alk related neuroblastoma	unknown	3
 Allan Herndon Dudley syndrome	OMIM:300523	3
 allergic conjunctivitis	unknown	3
 allergic rhinitis	PUBMED:15120189 15120189	3
@@ -36736,7 +36645,7 @@ HbA2 levels	PUBMED:23043469	3
 hdl cholesterol	PUBMED:20031564 20031564	3
 HDL cholesterol	PUBMED:20686565 19060906	3
 HDL cholesterol	PUBMED:21909109	3
-HEARING LOSS CISPLATIN INDUCED SUSCEPTIBILITY TO	umls:C2750088	3
+HEARING LOSS CISPLATIN INDUCED	umls:C2750088	3
 hearing loss noise induced	PUBMED:17009596 17009596	3
 hearing loss	PUBMED:20068591 20068591	3
 Heart Arrest	umls:C0018790	3
@@ -37094,7 +37003,7 @@ Microphthalmia syndromic 7	OMIM:309801	3
 microphthalmia with cataract 2	unknown	3
 microphthalmia with linear skin defects syndrome	unknown	3
 micro syndrome	unknown	3
-MICROVASCULAR COMPLICATIONS OF DIABETES SUSCEPTIBILITY TO 1	umls:C2676832	3
+MICROVASCULAR COMPLICATIONS OF DIABETES	umls:C2676832	3
 microvillus inclusion disease	unknown	3
 middle ear squamous cell carcinoma	unknown	3
 migraine disorders	PUBMED:19559392 19559392	3
@@ -37163,6 +37072,7 @@ myasthenic syndrome fast channel congenital	unknown	3
 mycetoma eumycotic mycetoma	unknown	3
 mycobacterium fortuitum	unknown	3
 mycobacterium malmoense	unknown	3
+mycobacterium tuberculosis	unknown	3
 mycophenolic acid pharmacokinetics	PUBMED:17339869 17339869	3
 Mycoplasma Infections	umls:C0026936	3
 Myelodysplastic syndrome somatic	OMIM:614286	3
@@ -37170,7 +37080,6 @@ Myelofibrosis somatic	OMIM:254450	3
 myeloproliferative disorder with eosinophilia	unknown	3
 myoblastoma	unknown	3
 myocardial infarction	PUBMED:17478679 17478679	3
-myocardial infarction susceptibility	unknown	3
 myocardial infarct	PUBMED:16175505 16175505	3
 myoclonic astatic epilepsy	unknown	3
 myoepithelioma	unknown	3
@@ -38473,7 +38382,7 @@ meckel syndrome	unknown	4
 meconium ileus	unknown	4
 medulloepithelioma	unknown	4
 meier gorlin syndrome	unknown	4
-MELANOMA CUTANEOUS MALIGNANT SUSCEPTIBILITY TO 1	umls:C1835047	4
+MELANOMA CUTANEOUS MALIGNANT	umls:C1835047	4
 melorheostosis	unknown	4
 menarche	PUBMED:19448621 19448621	4
 Menarche	PUBMED:19448622	4
@@ -38527,7 +38436,7 @@ Myasthenic syndrome congenital postsynaptic slow channel	umls:C2931107	4
 MYASTHENIC SYNDROME CONGENITAL SLOW CHANNEL	umls:C0751885	4
 Myasthenic syndrome congenital type Id	umls:C1837091	4
 mycobacterial and salmonella infections	unknown	4
-Mycobacterial disease Mendelian susceptibility to	umls:C3266863	4
+Mycobacterial disease Mendelian	umls:C3266863	4
 Myelofibrosis	OMIM:254450	4
 myelofibrosis somatic	unknown	4
 Myelofibrosis with myeloid metaplasia	ORPHANET:824	4
@@ -39198,7 +39107,7 @@ diffuse astrocytoma	unknown	5
 Diffuse cutaneous systemic sclerosis	ORPHANET:220393	5
 DiGeorge Syndrome	umls:C0012236	5
 Digitotalar dysmorphism	ORPHANET:1146	5
-Disease Susceptibility	umls:C0012655	5
+Disease	umls:C0012655	5
 Disseminated atypical mycobacterial infection	OMIM:209950	5
 distal hereditary motor neuropathy	unknown	5
 donohue syndrome	unknown	5
@@ -39465,6 +39374,7 @@ Medulloblastoma	OMIM:155255	5
 Meier Gorlin syndrome	umls:C1868684	5
 membranous glomerulonephritis	unknown	5
 Menarche	PUBMED:19448620	5
+mendelian	unknown	5
 meningocele	unknown	5
 meningoencephalitis	unknown	5
 menopause age at onset	PUBMED:19448619 19448619	5
@@ -39524,7 +39434,6 @@ Nephropathy	PUBMED:21323541	5
 nephrosclerosis	unknown	5
 netherton syndrome	unknown	5
 Neural tube defect	OMIM:182940	5
-neuroblastoma susceptibility	unknown	5
 neuronal migration disorders	unknown	5
 newcastle disease	unknown	5
 niemann pick disease	unknown	5
@@ -39902,7 +39811,7 @@ breast cancer early onset	unknown	6
 breast cancer invasive ductal	unknown	6
 breast cancer protection against	unknown	6
 Breast cancer somatic	OMIM:114480	6
-BREAST OVARIAN CANCER FAMILIAL SUSCEPTIBILITY TO 1	umls:C2676676	6
+BREAST OVARIAN CANCER FAMILIAL	umls:C2676676	6
 breast reconstruction	unknown	6
 bronchiolitis obliterans organizing pneumonia	unknown	6
 brooke spiegler syndrome	unknown	6
@@ -40065,7 +39974,7 @@ eosinophilic pneumonia	unknown	6
 Epidermolysis bullosa generalized atrophic benign	OMIM:226650	6
 Epidermolysis bullosa simplex Koebner type	OMIM:131900	6
 epilepsies partial	PUBMED:20522523 20522523	6
-epilepsy childhood absence susceptibility to 2	unknown	6
+epilepsy childhood absence	unknown	6
 epilepsy generalized with febrile seizures plus type 3	unknown	6
 epilepsy juvenile myoclonic 8	unknown	6
 epilepsy nocturnal frontal lobe 1	unknown	6
@@ -40385,7 +40294,6 @@ Response to antipsychotic treatment	PUBMED:23241943	6
 Response to iloperidone treatment	PUBMED:18521091	6
 response to iloperidone treatment qt prolongation	PUBMED:18521091 18521091	6
 Resting heart rate	PUBMED:20639392	6
-restless legs syndrome	unknown	6
 Retinal arteriolar caliber	PUBMED:23776548	6
 retinal vascular occlusion	unknown	6
 retinitis pigmentosa 3	unknown	6
@@ -40733,6 +40641,7 @@ gastric adenocarcinoma	unknown	7
 gastroesophageal junction adenocarcinoma	unknown	7
 geleophysic dysplasia	unknown	7
 gemistocytic astrocytoma	unknown	7
+glioma	unknown	7
 glossitis	unknown	7
 glutathione synthetase deficiency	unknown	7
 glycine encephalopathy	unknown	7
@@ -40833,8 +40742,6 @@ Major depressive disorder	PUBMED:23377640 23377640	7
 Malaria resistance to	OMIM:611162	7
 male infertility infertility	unknown	7
 malignant fibroxanthoma	unknown	7
-malignant hyperthermia susceptibility	unknown	7
-malignant hyperthermia	unknown	7
 mastitis	unknown	7
 mccune albright syndrome	unknown	7
 Mean corpuscular volume	PUBMED:19862010	7
@@ -40934,6 +40841,7 @@ prostate cancer progression and metastasis of	unknown	7
 Prostate cancer	PUBMED:19767753	7
 protein losing enteropathy	unknown	7
 proteus syndrome	unknown	7
+psoriasis psoriasis	unknown	7
 psoriasis	PUBMED:20953190 20953190	7
 Psychomotor Disorders	umls:C0033922	7
 pulmonary edema	unknown	7
@@ -41231,7 +41139,6 @@ generalized dystonia	unknown	8
 generalized pustular psoriasis	unknown	8
 gingivitis	unknown	8
 Glycated hemoglobin levels	PUBMED:20858683	8
-gout	unknown	8
 graves disease	PUBMED:21841780 21841780	8
 Graves disease	PUBMED:23612905	8
 griscelli syndrome	unknown	8
@@ -41312,8 +41219,7 @@ limb girdle muscular dystrophy	unknown	8
 lipid storage disease	unknown	8
 lipoproteins vldl	PUBMED:17903299 17903299 17903299 17903299	8
 lung adenoma	unknown	8
-lung cancer lung cancer susceptibility	unknown	8
-lung cancer susceptibility	unknown	8
+lung cancer lung cancer	unknown	8
 lymphoblastic lymphoma	unknown	8
 Lymphoma Mantle Cell	umls:C0334634	8
 lymphopenia	unknown	8
@@ -41536,7 +41442,6 @@ Arrhythmogenic right ventricular dysplasia 8	OMIM:607450	9
 Arrhythmogenic right ventricular dysplasia 9	OMIM:609040	9
 arteritic anterior ischemic optic neuropathy	unknown	9
 Arthritis Psoriatic	umls:C0003872	9
-asperger syndrome	unknown	9
 aspergillosis	unknown	9
 Asthma	PUBMED:21804548	9
 Atrophy	umls:C0333641	9
@@ -41547,7 +41452,7 @@ autosomal recessive congenital ichthyosis	unknown	9
 autosomal recessive nonsyndromic deafness	unknown	9
 bacteremia	unknown	9
 biotin deficiency	unknown	9
-bladder cancer susceptibility	unknown	9
+bladder cancer	unknown	9
 bladder transitional cell carcinoma	unknown	9
 blue cone monochromacy	unknown	9
 body height	PUBMED:19893584 19893584	9
@@ -41605,7 +41510,7 @@ Depression	PUBMED:20800221	9
 diabetes mellitus noninsulin dependent 2	unknown	9
 diabetes mellitus noninsulin dependent late onset	unknown	9
 diabetes mellitus type 1	PUBMED:21980299 21980299	9
-diabetes mellitus type 2 susceptiblity to	unknown	9
+diabetes mellitus type 2	unknown	9
 diabetes type 2	PUBMED:18591388 18591388	9
 diabetic nephropathy	unknown	9
 Diabetic Retinopathy	umls:C0011884	9
@@ -41648,6 +41553,7 @@ gestational trophoblastic neoplasm	unknown	9
 giardiasis	unknown	9
 gilles de la tourette syndrome	unknown	9
 gingival overgrowth	unknown	9
+gout	unknown	9
 growth hormone deficiency	unknown	9
 hairy cell leukemia	unknown	9
 hdl cholesterol	PUBMED:19060906 19060906	9
@@ -42339,7 +42245,7 @@ multifocal motor neuropathy	unknown	11
 muscle glycogenosis	unknown	11
 Muscular Atrophy	umls:C0026846	11
 myasthenic syndrome congenital with pre and postsynaptic defects	unknown	11
-MYCOBACTERIUM TUBERCULOSIS SUSCEPTIBILITY TO	umls:C1834752	11
+MYCOBACTERIUM TUBERCULOSIS	umls:C1834752	11
 mycosis fungoides	unknown	11
 myelofibrosis	unknown	11
 myotonia	unknown	11
@@ -42404,7 +42310,6 @@ seminoma	unknown	11
 shigellosis	unknown	11
 sinusitis	unknown	11
 sleep apnea	unknown	11
-sle susceptibility	unknown	11
 smallpox	unknown	11
 speech disorder	unknown	11
 Spinal Dysraphism	umls:C0080178	11
@@ -42622,6 +42527,7 @@ respiration disorders	PUBMED:17903308 17903308	12
 Response to antipsychotic treatment	PUBMED:20195266	12
 response to antipsychotic treatment	PUBMED:20195266 20195266	12
 Restless Legs Syndrome	umls:C0035258	12
+restless legs syndrome	unknown	12
 Retinal Diseases	umls:C0035309	12
 rosai dorfman disease	unknown	12
 saethre chotzen syndrome	unknown	12
@@ -42630,6 +42536,7 @@ seizure disorder	unknown	12
 serum markers of iron status	PUBMED:19084217 19084217	12
 shwachman diamond syndrome	unknown	12
 sialadenitis	unknown	12
+sle	unknown	12
 small cell carcinoma	unknown	12
 small cell neuroendocrine carcinoma	unknown	12
 soft tissue sarcoma	unknown	12
@@ -42645,7 +42552,7 @@ takayasus arteritis	unknown	12
 Testicular germ cell tumor	PUBMED:23666239	12
 Tetralogy of Fallot	OMIM:187500	12
 Thromboembolism	umls:C0040038	12
-TOBACCO ADDICTION SUSCEPTIBILITY TO	umls:C1861063	12
+TOBACCO ADDICTION	umls:C1861063	12
 traumatic brain injury	unknown	12
 trypanosomiasis	unknown	12
 type 2 diabetes	PUBMED:18372903 18372903	12
@@ -42664,6 +42571,7 @@ alzheimer disease	PUBMED:22005930 22005930	13
 ankylosis	unknown	13
 aortic valve disease	unknown	13
 apolipoproteins e	PUBMED:17903299 17903299	13
+asperger syndrome	unknown	13
 Asthma Aspirin Induced	umls:C1319853	13
 atrioventricular block	unknown	13
 atrioventricular septal defect	unknown	13
@@ -42860,6 +42768,7 @@ anophthalmia microphthalmia	unknown	14
 antisocial personality disorder	unknown	14
 aortic aneurysm	unknown	14
 Ataxia	umls:C0004134	14
+autism	unknown	14
 Autosomal dominant nonsyndromic intellectual deficit	ORPHANET:178469	14
 Bipolar disorder and schizophrenia	PUBMED:20889312	14
 bipolar disorder	PUBMED:19416921 19416921	14
@@ -43126,6 +43035,7 @@ lipoproteins	PUBMED:17903299 17903299	15
 lymphocytic choriomeningitis	unknown	15
 Macular Degeneration	umls:C0242383	15
 malignant histiocytosis	unknown	15
+malignant hyperthermia	unknown	15
 malignant mesothelioma	unknown	15
 Metabolic syndrome	PUBMED:20694148	15
 metabolic syndrome x	PUBMED:22399527 22399527	15
@@ -43520,7 +43430,6 @@ polymorphous low grade adenocarcinoma	unknown	18
 prader willi syndrome	unknown	18
 primary sclerosing cholangitis	unknown	18
 pseudomyxoma peritonei	unknown	18
-psoriasis	unknown	18
 pulmonary fibrosis	unknown	18
 renovascular hypertension	unknown	18
 resistin	PUBMED:17903298 17903298	18
@@ -43689,6 +43598,7 @@ Lung cancer	OMIM:211980	21
 Mental Retardation X Linked	umls:C1136249	21
 Myasthenic syndrome congenital associated with acetylcholine receptor deficiency	OMIM:608931	21
 Pheochromocytoma	OMIM:171300	21
+psoriasis	unknown	21
 sepsis	unknown	21
 spina bifida	unknown	21
 squamous cell carcinoma of the head and neck	unknown	21
@@ -43965,7 +43875,6 @@ Memory Disorders	umls:C0025261	33
 Mitochondrial complex I deficiency	OMIM:252010	33
 pre eclampsia	unknown	33
 Stroke	umls:C0038454	33
-breast cancer susceptibility	unknown	34
 Calcinosis	umls:C0006663	34
 cholesterol hdl	PUBMED:20686565 20686565	34
 cholesterol ldl	PUBMED:17903299 17903299 17903299	34
@@ -44280,11 +44189,11 @@ Ovarian Neoplasms	umls:C0919267	87
 Weight Gain	umls:C0043094	87
 c reactive protein	PUBMED:17903293 17903293	88
 Seizures	umls:C0036572	88
-myocardial infarction	unknown	89
 Precancerous Conditions	umls:C0032927	89
 hemoglobins	PUBMED:17903294 17903294	90
 Liver Neoplasms Experimental	umls:C0023904	90
 Schizophrenia	PUBMED:23974872	90
+myocardial infarction	unknown	91
 creatinine	PUBMED:17903292 17903292	92
 hiv 1	unknown	92
 Bipolar disorder	PUBMED:21926972	93
@@ -44293,8 +44202,8 @@ HIV Infections	umls:C0019693	95
 Diabetes Mellitus Experimental	umls:C0011853	96
 parkinson disease	PUBMED:17052657 17052657	96
 Drug Induced Liver Injury	umls:C0860207	97
-neuroblastoma	unknown	97
 Carcinoma Non Small Cell Lung	umls:C0007131	98
+neuroblastoma	unknown	98
 alzheimers disease	unknown	99
 Carcinoma Adenoid Cystic	umls:C0010606	99
 hepatocellular carcinoma	unknown	99
@@ -44324,9 +44233,9 @@ Hypertension	umls:C0020538	137
 Mammary Neoplasms Animal	umls:C0024667	137
 colorectal cancer	unknown	138
 Neoplasm Metastasis	umls:C0027627	139
-lung cancer	unknown	142
 Polycystic Ovary Syndrome	umls:C0032460	143
 body height	PUBMED:17903300 17903300	144
+lung cancer	unknown	144
 Craniofacial Abnormalities	umls:C0376634	146
 Endometriosis	umls:C0014175	147
 Mammary Neoplasms Experimental	umls:C0024668	150
@@ -44348,11 +44257,11 @@ cholesterol	PUBMED:17903299 17903299	220
 body mass index	PUBMED:17903300 17903300	228
 Autistic Disorder	umls:C0004352	237
 respiratory function tests	PUBMED:17903307 17903307	245
-breast cancer	unknown	248
 body weight	PUBMED:17903300 17903300	254
 Stomach Neoplasms	umls:C0038356	259
 triglycerides	PUBMED:17903299 17903299	259
 blood pressure	PUBMED:17903302 17903302	267
+breast cancer	unknown	270
 Peripheral Nervous System Diseases	umls:C0031117	291
 cholesterol hdl	PUBMED:17903299 17903299	335
 cholesterol ldl	PUBMED:17903299 17903299	349

@@ -46,12 +46,13 @@ for my $line(<OMIM>){
 		push @{$shortname_hash{$words[1]}{omim}},$disease."\t".$words[2];
 	}
 }
-print OUTPUT join("\t",qw/GENE DISEASE OMIM_NUMBER/)."\n";
+print OUTPUT join("\t",qw/GENE DISEASE OMIM_NUMBER SCORE/)."\n";
 for my $name (keys %shortname_hash){
 	  for my $gene(@{$shortname_hash{$name}{gene}}){
 	  	for my $disease_omim(@{$shortname_hash{$name}{omim}}){
+	  		my $num = @{$shortname_hash{$name}{omim}};
 	  		$disease_omim = GetRidOfAnnotations($disease_omim);
-	  		print TEMP join("\t",($gene,$disease_omim))."\n";
+	  		print TEMP join("\t",($gene,$disease_omim, 1.0/$num))."\n";
       }
 } 
 }
