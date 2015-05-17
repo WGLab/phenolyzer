@@ -679,6 +679,7 @@ sub score_genes{                                 #Input the disease list and ret
     while($i<@diseases and $j<@disease_gene_score)
     {
     	chomp($disease_gene_score[$j]);
+    	last if(not $disease_gene_score[$j]);
     	my @words=split("\t",$disease_gene_score[$j]); #@words:[0]GENE	[1]DISEASE	[2]DISEASE_ID	[3]SCORE	[4]SOURCE
     	my ($query_disease, $inference_score) = split("\t",$diseases[$i]);
     	if($query_disease eq $words[1])  
