@@ -688,6 +688,7 @@ sub score_genes{                                 #Input the disease list and ret
     		$inference_score = 1.0 if (not $inference_score);
     		my @genes = split(",",$words[0]);
     		my $gene = $genes[0];
+    		if(not $gene){ print STDERR $disease_gene_score[$j]."\n"; $j++; next;}
     		$GENE_WEIGHT{$words[4]}= $addon_gene_disease_weight if (not defined $GENE_WEIGHT{$words[4]});
     		my $score = $words[3]*$inference_score*$GENE_WEIGHT{$words[4]};
             
