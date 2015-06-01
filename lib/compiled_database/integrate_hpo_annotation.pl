@@ -3,9 +3,9 @@ open(OUTPUT,">TEMP") or die;
 open(OUTPUT1,">DB_HPO_ANNOTATION") or die;
 
 print OUTPUT1 join("\t",("HPO_ID","SOURCE","HPO_DISEASE_NAME","FREQUENCY"))."\n";
-processing("../hpo_annotation_1.txt");
-processing("../hpo_annotation_2.txt");
-processing("../hpo_annotation_hpoteam.txt");
+processing("../phenotype_annotation.tab");
+#processing("../hpo_annotation_2.txt");
+processing("../phenotype_annotation_hpoteam.tab");
 
 sub processing
 {
@@ -18,8 +18,8 @@ while(<FILE>){
 	$line[2]=~s/^"?(?:\W?\d{3,}\s+)?(.+\w)"?$/\1/;
 	$line[2]=getRidOfSusceptibility($line[2]);
 	$line[2]=~s/(^|;)\W*(.*?)\W*/$1$2$3/g;
-
 	$line[4]=~s/^HP:(\d+)$/\1/;
+	$line[8]=~s/(\d)\s+%/$1%/;
 	
 	print OUTPUT join("\t",($line[4],$line[5],$line[2],$line[8]))."\n";
 }

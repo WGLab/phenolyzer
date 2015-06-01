@@ -1,1 +1,3 @@
+lib/*
 lib/humandb/*
+!lib/compiled_database

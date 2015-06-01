@@ -3,7 +3,6 @@ OMIM_ID	DISEASE
 100100	Eagle-Barrett syndrome
 100300	Adams-Oliver syndrome 1
 100650	Esophageal cancer, alcohol-related;Sublingual nitroglycerin
-100730	Myasthenia gravis, neonatal transient
 100800	Achondroplasia
 101000	Neurofibromatosis, type 2
 101200	Apert syndrome
@@ -12,13 +11,13 @@ OMIM_ID	DISEASE
 101800	Acrodysostosis 1, with or without hormone resistance
 101850	Keratoderma, palmoplantar, punctate type 3
 101900	Acrokeratosis verruciformis
-102200	Acromegaly;Pituitary adenoma, growth hormone-secreting;Somatostatin analog, resistance to
+102200	Acromegaly, somatic;Pituitary adenoma, growth hormone-secreting
 102300	Restless legs syndrome 1
 102370	Acromicric dysplasia
 102480	Male infertility due to acrosin deficiency
 102500	Hajdu-Cheney syndrome
 102510	Acropectorovertebral dysplasia
-102530	Globozoospermia;Spermatogenic failure 6
+102530	Spermatogenic failure 6
 102574	Alpha-actinin-3 deficiency;Sprinting performance
 102578	Leukemia, acute promyelocytic, PML/RARA type
 102700	Adenosine deaminase deficiency, partial;Severe combined immunodeficiency due to ADA deficiency
@@ -28,26 +27,25 @@ OMIM_ID	DISEASE
 103470	Waardenburg syndrome/albinism, digenic;Waardenburg syndrome/ocular albinism, digenic
 103500	Tietz albinism-deafness syndrome
 103580	Pseudohypoparathyroidism Ia
-103600	Analbuminemia;Dysalbuminemic hyperthyroxinemia
 103720	Aerodigestive tract cancer, squamous cell, alcohol-related, protection against
 103780	Alcohol dependence, protection against;Alcohol dependence, protection against;Alcohol dependence;Alcohol dependence;Alcohol dependence;Alcohol dependence
 103900	Aldosteronism, glucocorticoid-remediable
 104000	Alopecia areata 1
-104150	AFP deficiency, congenital;Hereditary persistence of alpha-fetoprotein
 104200	Alport syndrome, autosomal dominant
 104250	Congestive heart failure and beta-blocker response, modifier of
 104290	Alternating hemiplegia of childhood
 104300	Alzheimer disease 1, familial;Alzheimer disease 6;Alzheimer disease 8;Alzheimer disease-10;Alzheimer disease-5;Alzheimer disease 9, late onset;Alzheimer disease, late-onset;Alzheimer disease, late-onset;Alzheimer disease, late-onset;Alzheimer disease, pathogenesis, association with;Alzheimer disease;Alzheimer disease;Alzheimer disease;Alzheimer disease;Alzheimer disease;Alzheimer disease
 104310	Alzheimer disease-2
 104500	Amelogenesis imperfecta, type IB
-104510	Amelogenesis imperfecta, hypomaturation-hypoplastic type, with taurodontism
+104510	Amelogenesis imperfecta, type IV
+104530	Amelogenesis imperfecta, type IA
 104770	Amyloidosis, secondary
 105120	Amyloidosis, Finnish type
 105150	Cerebral amyloid angiopathy
-105200	Amyloidosis, 3 or more types;Amyloidosis, hereditary renal;Amyloidosis, renal
+105200	Amyloidosis, 3 or more types;Amyloidosis, familial visceral;Amyloidosis, renal
 105210	Amyloidosis, hereditary, transthyretin-related
 105250	Amyloidosis, primary localized cutaneous, 1
-105400	Amyotrophic lateral sclerosis 1;Amyotrophic lateral sclerosis;Amyotrophic lateral sclerosis;Amyotrophic lateral sclerosis
+105400	Amyotrophic lateral sclerosis;Amyotrophic lateral sclerosis 1;Amyotrophic lateral sclerosis;Amyotrophic lateral sclerosis
 105500	Amyotrophic lateral sclerosis-parkinsonism/dementia complex
 105550	Amyotrophic lateral sclerosis and/or frontotemporal dementia
 105580	Anal canal carcinoma
@@ -58,7 +56,7 @@ OMIM_ID	DISEASE
 106100	Angioedema, hereditary, types I and II
 106150	Preeclampsia
 106180	Angiotensin I-converting enzyme, benign serum increase;Myocardial infarction;SARS, progression of
-106210	Aniridia;Cataract with late-onset corneal dystrophy
+106210	Aniridia;Aniridia;Cataract with late-onset corneal dystrophy
 106260	Hay-Wells syndrome
 106300	Spondyloarthropathy
 106600	Tooth agenesis, selective, 1, with or without orofacial cleft
@@ -68,6 +66,7 @@ OMIM_ID	DISEASE
 107280	Alpha-1-antichymotrypsin deficiency;Cerebrovascular disease, occlusive
 107320	Antiphospholipid syndrome, familial
 107480	Townes-Brocks branchiootorenal-like syndrome;Townes-Brocks syndrome
+107600	Aplasia cutis congenita, nonsyndromic
 107670	Apolipoprotein A-II deficiency
 107680	ApoA-I and apoC-III deficiency, combined;Corneal clouding, autosomal recessive
 107741	Hyperlipoproteinemia, type III;Myocardial infarction
@@ -83,7 +82,7 @@ OMIM_ID	DISEASE
 108720	Atelosteogenesis, type I
 108721	Atelosteogenesis, type III
 108725	Atherosclerosis
-108770	Atrial standstill, digenic
+108770	Atrial standstill, digenic 
 108800	Atrial septal defect 1
 108900	Atrial septal defect 7, with or without AV conduction defects
 108962	Hypertension, salt-resistant
@@ -92,23 +91,20 @@ OMIM_ID	DISEASE
 109200	Alopecia, androgenetic, 1
 109270	Ovalocytosis
 109350	Gastroesophageal reflux
-109400	Basal cell nevus syndrome
+109400	Basal cell nevus syndrome;Basal cell nevus syndrome;Basal cell nevus syndrome
 109543	Leukemia, chronic lymphocytic
 109560	Leukemia/lymphoma, B-cell, 3
 109565	Lymphoma, B-cell
 109630	Congestive heart failure and beta-blocker response, modifier of
 109690	Beta-2-adrenoreceptor agonist, reduced response to
 109720	Biliary cirrhosis, primary, 1
-109730	Aortic valve disease
-109800	Bladder cancer, somatic;Bladder cancer, somatic;Bladder cancer, somatic;Bladder cancer;Bladder cancer, somatic
+109730	Aortic valve disease 1
+109800	Bladder cancer, somatic;Bladder cancer, somatic;Bladder cancer, somatic;Bladder cancer, somatic
 110100	Blepharophimosis, epicanthus inversus, and ptosis, type 1;Blepharophimosis, epicanthus inversus, and ptosis, type 2
-110300	Blood group, ABO system
 110450	Blood group, Colton
 110500	Blood group, Diego
-110600	Blood group, Dombrock
 110700	Blood group, Duffy system
-110750	Blood group, Gerbich
-110800	Adult i phenotype without cataract;Cataract 13 with adult i phenotype;Blood group, Ii
+110800	Adult i phenotype without cataract;Blood group, Ii
 110900	Blood group, Kell
 111000	Blood group, Kidd
 111100	Blood group, Lewis
@@ -129,10 +125,11 @@ OMIM_ID	DISEASE
 112010	Blood group, Waldner
 112050	Blood group, Wright
 112100	Blood group, Yt system
+112240	Cole-Carpenter syndrome 1
 112250	Diaphyseal medullary stenosis with malignant fibrous histiocytoma;Diaphyseal medullary stenosis with malignant fibrous histiocytoma
 112310	Boomerang dysplasia
 112410	Hypertension with brachydactyly
-112500	Brachydactyly, type A1;Brachydactyly, type A1
+112500	Brachydactyly, type A1
 112600	Brachydactyly, type A2;Brachydactyly, type A2;Brachydactyly, type A2
 113000	Brachydactyly, type B1
 113100	Brachydactyly, type C
@@ -152,20 +149,21 @@ OMIM_ID	DISEASE
 114000	Caffey disease
 114200	Camptodactyly 1
 114290	Acampomelic campomelic dysplasia;Campomelic dysplasia with autosomal sex reversal;Campomelic dysplasia
+114300	Arthrogryposis, distal, type 3
 114350	Leukemia, T-cell acute lymphoblastic
 114480	Breast cancer;Breast cancer;Breast cancer, early-onset;Breast cancer, somatic;Breast cancer, somatic;Breast cancer, somatic;Breast cancer, somatic;Breast cancer, somatic;Breast cancer, somatic;Breast cancer;Breast cancer, invasive ductal;Breast cancer, lobular;Breast cancer, male;Breast cancer, protection against;Breast cancer;Breast cancer;Breast cancer;Breast cancer;Breast cancer;Breast cancer;Breast cancer;Breast cancer;Breast cancer
-114500	Colon cancer, somatic;Colon cancer, somatic;Colon cancer, somatic;Colorectal cancer;Colorectal cancer;Colorectal cancer;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colon cancer;Colonic adenoma recurrence, reduced risk of;Colorectal cancer;Colorectal cancer;Colorectal cancer;Colorectal cancer
+114500	Colon cancer, somatic;Colon cancer, somatic;Colon cancer, somatic;Colorectal cancer;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colorectal cancer, somatic;Colon cancer;Colonic adenoma recurrence, reduced risk of;Colorectal cancer;Colorectal cancer;Colorectal cancer;Colorectal cancer
 114550	Hepatoblastoma, somatic;Hepatocellular cancer, somatic;Hepatocellular carcinoma;Hepatocellular carcinoma, childhood type;Hepatocellular carcinoma, somatic;Hepatocellular carcinoma, somatic;Hepatocellular carcinoma, somatic;Hepatocellular carcinoma, somatic;Hepatocellular carcinoma, somatic
 114580	Candidiasis, familial, 1, autosomal dominant
 114835	Carboxylesterase 1 deficiency
 114900	Carcinoid tumors, intestinal
 115080	Cardiac conduction defect
 115150	Cardiofaciocutaneous syndrome
-115195	Cardiomyopathy, familial hypertrophic, 2
-115196	Cardiomyopathy, familial hypertrophic, 3
-115197	Cardiomyopathy, familial hypertrophic, 4
+115195	Cardiomyopathy, hypertrophic, 2
+115196	Cardiomyopathy, hypertrophic, 3
+115197	Cardiomyopathy, hypertrophic, 4
 115200	Cardiomyopathy, dilated, 1A
-115210	Cardiomyopathy, familial restrictive
+115210	Cardiomyopathy, familial restrictive, 1
 115300	Hypercarotenemia and vitamin A deficiency, autosomal dominant
 115310	Paragangliomas 4
 115430	Carpal tunnel syndrome, familial
@@ -175,11 +173,13 @@ OMIM_ID	DISEASE
 115665	Cataract 8, multiple types
 115700	Cataract 4, multiple types
 115800	Cataract 29, coralliform
+115900	Cataract 42
 116100	Cataract 20, multiple types
 116200	Cataract 1, multiple types
 116300	Cataract 30, pulverulent
 116400	Cataract 41
 116600	Cataract 6, multiple types
+116700	Cataract 13 with adult i phenotype
 116800	Cataract 5, multiple types
 116860	Cavernous malformations of CNS and retina;Cerebral cavernous malformations-1;Hyperkeratotic cutaneous capillary-venous malformations associated with cerebral capillary malformations
 116920	Leukocyte adhesion deficiency
@@ -189,6 +189,7 @@ OMIM_ID	DISEASE
 117300	Dementia, familial Danish
 117360	Spinocerebellar ataxia 29, congenital nonprogressive
 117550	Sotos syndrome 1
+117650	Cerebrocostomandibular syndrome
 117800	Axillary odor, variation in;Colostrum secretion, variation in;Earwax, wet/dry
 118100	Klippel-Feil syndrome 1, autosomal dominant
 118200	Charcot-Marie-Tooth disease, type 1B
@@ -206,23 +207,23 @@ OMIM_ID	DISEASE
 119300	van der Woude syndrome
 119500	Popliteal pterygium syndrome 1
 119530	Orofacial cleft-1
-119540	Cleft palate, isolated;Glass syndrome
+119540	Cleft palate, isolated
 119600	Cleidocranial dysplasia;Cleidocranial dysplasia, forme fruste, dental anomalies only;Cleidocranial dysplasia, forme fruste, with brachydactyly
 119800	Clubfoot, congenital, with or without deficiency of long bones and/or mirror-image polydactyly
 119900	Digital clubbing, isolated congenital
 120080	Colchicine resistance
-120100	Cold-induced autoinflammatory syndrome, familial
+120100	Familial cold-induced inflammatory syndrome 1
 120120	EBD, localisata variant
 120131	Hematuria, familial benign
 120140	SED, Namaqualand type;Vitreoretinopathy with phalangeal epiphyseal dysplasia
 120200	Coloboma, ocular
 120270	Epiphyseal dysplasia, multiple, with myopathy
 120330	Papillorenal syndrome
-120430	Coloboma of optic nerve;Morning glory disc anomaly
+120430	Morning glory disc anomaly;Coloboma of optic nerve
+120433	Coloboma, ocular;Coloboma, ocular, with or without hearing impairment, cleft lip/palate, and/or mental retardation
 120435	Colorectal cancer, hereditary nonpolyposis, type 1
 120470	Esophageal carcinoma, somatic 133239
 120502	Branchiootic syndrome 2
-120520	Membranous glomerulonephritis, antenatal;Neutral endopeptidase deficiency
 120620	CR1 deficiency;SLE
 120790	Complement component 4, partial deficiency of
 120970	Cone-rod retinal dystrophy-2
@@ -236,7 +237,7 @@ OMIM_ID	DISEASE
 121820	Corneal dystrophy, epithelial basement membrane
 121850	Corneal fleck dystrophy
 121900	Corneal dystrophy, Groenouw type I
-122000	Corneal dystrophy, hereditary polymorphous posterior
+122000	Corneal dystrophy, posterior polymorphous, 1
 122100	Meesmann corneal dystrophy;Meesmann corneal dystrophy
 122200	Corneal dystrophy, lattice type I
 122470	Cornelia de Lange syndrome 1
@@ -253,9 +254,7 @@ OMIM_ID	DISEASE
 123400	Creutzfeldt-Jakob disease;Creutzfeldt-Jakob disease, variant, resistance to
 123500	Crouzon syndrome
 123700	Cutis laxa, AD
-123740	Deafness, autosomal dominant 40
 123790	Beare-Stevenson cutis gyrata syndrome
-123890	Graves disease
 124000	Mitochondrial complex III deficiency, nuclear type 1
 124080	Aldosterone to renin ratio raised;Low renin hypertension
 124200	Darier disease
@@ -277,7 +276,7 @@ OMIM_ID	DISEASE
 125800	Diabetes insipidus, nephrogenic
 125850	MODY, type I
 125851	Diabetes mellitus, gestational;MODY, type II
-125852	Diabetes mellitus, insulin-dependent, 2;Diabetes mellitus, type 1
+125852	Diabetes mellitus, insulin-dependent, 2
 125853	Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent, late onset;Diabetes mellitus, type 2;Diabetes mellitus, type II;Diabetes mellitus, non-insulin-dependent;Diabetes mellitus, noninsulin-dependent, 2;Diabetes mellitus, noninsulin-dependent, association with;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, noninsulin-dependent;Diabetes mellitus, type 2;Diabetes mellitus, type 2;Diabetes mellitus, type 2;Diabetes mellitus, type II;Diabetes;Diabetes, type 2;Diabetes, type 2;Hypertension, insulin resistance-related;Insulin resistance
 125860	Benzene toxicity;Breast cancer, poor survival after chemotherapy for;Leukemia, post-chemotherapy
 126110	Leukemia, acute myeloblastic
@@ -289,7 +288,6 @@ OMIM_ID	DISEASE
 126452	Autonomic nervous system dysfunction
 126453	Dystonia, primary cervical
 126600	Doyne honeycomb degeneration of retina
-126650	Colon cancer
 126700	Basal laminar drusen
 126800	Duane retraction syndrome 1
 126900	Dupuytren contracture 1
@@ -312,16 +310,15 @@ OMIM_ID	DISEASE
 129500	Ectodermal dysplasia 2, Clouston type
 129600	Ectopia lentis, familial
 129900	EEC syndrome-1
-130000	Ehlers-Danlos syndrome, type I;Ehlers-Danlos syndrome, type I;Ehlers-Danlos syndrome, type I
-130010	Ehlers-Danlos syndrome, type II
-130020	Ehlers-Danlos syndrome, autosomal dominant, hypermobility type;Ehlers-Danlos syndrome, type III
+130000	Ehlers-Danlos syndrome, classic type;Ehlers-Danlos syndrome, classic type;Ehlers-Danlos syndrome, classic
+130020	Ehlers-Danlos syndrome, type III
 130050	Ehlers-Danlos syndrome, type IV
 130060	Ehlers-Danlos syndrome, type VIIA;Ehlers-Danlos syndrome, type VIIB
 130070	Ehlers-Danlos syndrome, progeroid type, 1
 130080	Ehlers-Danlos syndrome, type VIII
 130600	Elliptocytosis-2
-130650	Beckwith-Wiedemann syndrome;Beckwith-Wiedemann syndrome;Beckwith-Wiedemann syndrome;Beckwith-Wiedemann syndrome
-130900	Amelogenesis imperfecta, type 3
+130650	Beckwith-Wiedemann syndrome;Beckwith-Wiedemann syndrome;Beckwith-Wiedemann syndrome;Beckwith-Wiedemann syndrome;Beckwith-Wiedemann syndrome
+130900	Amelogenesis imperfecta, type III
 131100	Multiple endocrine neoplasia 1
 131200	Endometriosis
 131240	High density lipoprotein cholesterol level QTL 7
@@ -354,15 +351,12 @@ OMIM_ID	DISEASE
 133540	Cockayne syndrome, type B
 133700	Exostoses, multiple, type 1
 133701	Exostoses, multiple, type 2
-133780	Exudative vitreoretinopathy;Retinopathy of prematurity
+133780	Exudative vitreoretinopathy 1;Retinopathy of prematurity
 134600	Fanconi renotubular syndrome 1
 134610	Familial Mediterranean fever, AD
 134637	Squamous cell carcinoma, burn scar-related, somatic
 134700	Favism
 134797	Aortic aneurysm, ascending, and dissection
-134820	Dysfibrinogenemia, alpha type, causing bleeding diathesis;Dysfibrinogenemia, alpha type, causing recurrent thrombosis
-134830	Dysfibrinogenemia, beta type;Thrombophilia, dysfibrinogenemic
-134850	Dysfibrinogenemia, gamma type;Hypofibrinogenemia, gamma type;Thrombophilia, dysfibrinogenemic
 134935	Cancer progression/metastasis
 135100	Fibrodysplasia ossificans progressiva
 135150	Birt-Hogg-Dube syndrome
@@ -371,14 +365,13 @@ OMIM_ID	DISEASE
 135400	Hypertrichosis terminalis, generalized, with or without gingival hyperplasia
 135500	Zimmermann-Laband syndrome
 135700	Fibrosis of extraocular muscles, congenital, 1;Fibrosis of extraocular muscles, congenital, 3B
-135750	Tetramelic mirror-image polydactyly;Mirror-image polydactyly
-135853	Diabetes mellitus, noninsulin-dependent
+135750	Laurin-Sandrow syndrome
 135900	Coffin-Siris syndrome
 136000	Adermatoglyphia
 136120	Fish-eye disease
 136140	Floating-Harbor syndrome
 136440	Lymphoma/leukemia, B-cell, variant
-136520	Foveal hypoplasia
+136520	Foveal hypoplasia 1
 136550	Macular dystrophy, North Carolina type
 136570	Chromosome 16p12.1 deletion syndrome, 520kb
 136630	Mental retardation, FRA12A type
@@ -389,12 +382,12 @@ OMIM_ID	DISEASE
 136900	Sorsby fundus dystrophy
 137100	Immunoglobulin A deficiency
 137181	Gamma-glutamyltransferase, familial high serum
-137192	Insomnia
 137200	Neuromyotonia and axonal neuropathy, autosomal recessive
 137215	Gastric cancer, familial diffuse, with or without cleft lip and/or palate;Gastric cancer, somatic;Gastric cancer risk after H. pylori infection;Gastric cancer risk after H. pylori infection
 137241	Plasma glucose, 2-hour, QTL 2
 137245	Lymphoma, MALT, somatic
 137440	Cerebral amyloid angiopathy, PRNP-related;Gerstmann-Straussler disease
+137550	Melanocytic nevus syndrome, congenital, somatic
 137580	Tourette syndrome;Tourette syndrome;Gilles de la Tourette syndrome
 137600	Iridogoniodysgenesis, type 2
 137750	Glaucoma 1A, primary open angle
@@ -404,24 +397,23 @@ OMIM_ID	DISEASE
 137950	Glomerulopathy with fibronectin deposits 1
 138000	Glomuvenous malformations
 138030	Hyperproglucagonemia
-138040	Cortisol resistance
 138300	Hemolytic anemia due to glutathione reductase deficiency
 138500	Hyperglycinuria;Hyperglycinuria;Hyperglycinuria
 138800	Goiter, multinodular 1, with or without Sertoli-Leydig cell tumors
 138900	Uric acid concentration, serum, QTL1
 139090	Gray platelet syndrome
 139190	Isolated growth hormone deficiency due to defect in GHRF;Gigantism due to GHRF hypersecretion
-139200	Graves disease
 139210	Myhre syndrome
 139300	Aromatase excess syndrome
-139320	Prolonged bleeding time, brachydactyly and mental retardation;Prolonged bleeding time, brachydactyly, and mental retardation
+139320	McCune-Albright syndrome, somatic, mosaic 174800
 139360	Pituitary ACTH-secreting adenoma
 139393	Neuropathy, inflammatory demyelinating
 139450	Hair, curly
 139900	Handedness
 140000	Hand-foot-uterus syndrome
-140300	Hashimoto thyroiditis;Hypothyroidism, autoimmune
+140300	Hashimoto thyroiditis;Hashimoto thyroiditis
 140350	Hawkinsinuria
+140400	Progressive familial heart block, type II
 140600	Osteoarthritis
 140700	Heinz body anemia;Heinz body anemias, alpha-;Heinz body anemias, beta-
 141200	Hematuria, benign familial
@@ -448,7 +440,6 @@ OMIM_ID	DISEASE
 142910	Low density lipoprotein cholesterol level QTL 3;Statins, attenuated cholesterol lowering by
 142945	Holoprosencephaly-3
 142946	Holoprosencephaly-4
-142981	Leukemia, acute lymphoblastic
 143095	Spondyloepiphyseal dysplasia with congenital joint dislocations
 143100	Huntington disease
 143200	Wagner syndrome 1
@@ -460,7 +451,7 @@ OMIM_ID	DISEASE
 143860	Hyperchlorhidrosis, isolated
 143870	Hypercalciuria, absorptive
 143880	Hypercalcemia, infantile
-143890	Hypercholesterolemia, familial;LDL cholesterol level QTL2;Coronary artery disease in familial hypercholesterolemia, protection against;Hypercholesterolemia, familial, due to LDLR defect, modifier of;Hypercholesterolemia, familial, modification of;Hypercholesterolemia, familial, modification of;Hypercholesterolemia;Hypercholesterolemia
+143890	Hypercholesterolemia, familial;LDL cholesterol level QTL2;Coronary artery disease in familial hypercholesterolemia, protection against;Hypercholesterolemia, familial, due to LDLR defect, modifier of;Hypercholesterolemia, familial, modifier of;Hypercholesterolemia, familial, modifier of;Hypercholesterolemia;Hypercholesterolemia
 144010	Hypercholesterolemia, due to ligand-defective apo B
 144110	Hyperhidrosis palmaris et plantaris
 144120	Hyperimmunoglobulin G1 syndrome
@@ -471,21 +462,21 @@ OMIM_ID	DISEASE
 144750	Hyperostosis, endosteal;Osteosclerosis
 145000	Hyperparathyroidism, familial primary
 145001	Hyperparathyroidism-jaw tumor syndrome;Parathyroid adenoma with cystic changes
-145250	Hyperpigmentation, familial progressive, 2
+145250	Hyperpigmentation with or without hypopigmentation
 145260	Pseudohypoaldosteronism, type IIA
 145410	Opitz GBBB syndrome, type II
-145500	Hypertension, essential;Hypertension, essential;Hypertension, essential;Blood pressure regulation QTL;Blood pressure regulation QTL;Blood pressure regulation QTL;Hypertension, essential, salt-sensitive;Hypertension, essential;Hypertension, essential;Hypertension, essential;Hypertension, essential;Hypertension, essential;Hypertension, essential;Hypertension, essential;Hypertension, essential;Hypertension, essential;Hypertension, salt-sensitive essential;Hypertension;Hypertension
+145500	Hypertension, essential;Blood pressure regulation QTL;Blood pressure regulation QTL;Blood pressure regulation QTL;Hypertension, essential, salt-sensitive;Hypertension, essential;Hypertension, essential;Hypertension, essential;Hypertension, essential;Hypertension, essential;Hypertension, essential;Hypertension, essential;Hypertension, essential;Hypertension, essential;Hypertension, essential;Hypertension, salt-sensitive essential;Hypertension;Hypertension
 145505	Hypertension, essential
 145600	King-Denborough syndrome;Malignant hyperthermia
 145650	Thyroid hormone resistance, selective pituitary
 145680	Dystransthyretinemic hyperthyroxinemia
 145701	Hypertrichosis universalis congenita, Ambras type
-145750	Hypertriglyceridemia;Hypertriglyceridemia;Hypertriglyceridemia;Hypertriglyceridemia
-145900	Dejerine-Sottas disease;Dejerine-Sottas disease;Dejerine-Sottas disease;Dejerine-Sottas disease, autosomal recessive
+145750	Hypertriglyceridemia;Hypertriglyceridemia;Hypertriglyceridemia
+145900	Dejerine-Sottas disease;Dejerine-Sottas disease;Dejerine-Sottas disease;Dejerine-Sottas disease
 145980	Hypocalciuric hypercalcemia, type I
-145981	Hypocalciuric hypercalcemia, type II;Hypocalciuric hypercalcemia, type II
+145981	Hypocalciuric hypercalcemia, type II
 146000	Hypochondroplasia
-146110	Hypogonadotropic hypogonadism 7 with or without anosmia
+146110	Hypogonadotropic hypogonadism 7 without anosmia
 146200	Hypoparathyroidism, autosomal dominant;Hypoparathyroidism, autosomal recessive;Hypoparathyroidism, familial isolated
 146255	Hypoparathyroidism, sensorineural deafness, and renal dysplasia
 146300	Hypophosphatasia, adult;Odontohypophosphatasia
@@ -493,8 +484,8 @@ OMIM_ID	DISEASE
 146450	Hypospadias 3, autosomal
 146500	Multiple system atrophy
 146510	Pallister-Hall syndrome
-146520	Hypotrichosis simplex of scalp 1
-146550	Hypotrichosis, hereditary, Marie Unna type, 1
+146520	Hypotrichosis 2
+146550	Hypotrichosis 4
 146590	Ichthyosis histrix, Curth-Macklin type
 146691	IMPDH2 enzyme activity, variation in
 146700	Ichthyosis vulgaris
@@ -515,7 +506,6 @@ OMIM_ID	DISEASE
 147750	IVIC syndrome
 147791	Jacobsen syndrome
 147891	Small patella syndrome
-147910	Kallikrein, decreased urinary activity of
 147920	Kabuki syndrome 1
 147950	Hypogonadotropic hypogonadism 2 with or without anosmia
 148000	Kaposi sarcoma
@@ -532,6 +522,7 @@ OMIM_ID	DISEASE
 149000	Klippel-Trenaunay-Weber syndrome
 149200	Bart-Pumphrey syndrome
 149400	Hyperekplexia, hereditary 1, autosomal dominant or recessive
+149700	Lacrimal duct defect
 149730	LADD syndrome;LADD syndrome;LADD syndrome
 150200	Placental lactogen deficiency
 150230	Trichorhinophalangeal syndrome, type II
@@ -543,6 +534,7 @@ OMIM_ID	DISEASE
 150800	Leiomyomatosis and renal cell cancer
 151050	Lenz-Majewski hyperostotic dwarfism
 151100	LEOPARD syndrome 1
+151200	Leri pleonosteosis chromosome duplication syndrome
 151210	Platyspondylic skeletal dysplasia, Torrance type
 151430	Leukemia/lymphoma, B-cell, 2
 151440	Leukemia, T-cell acute lymphoblastoid
@@ -553,12 +545,10 @@ OMIM_ID	DISEASE
 152200	LPA deficiency, congenital;Coronary artery disease
 152390	Atherosclerosis
 152430	Longevity 1
-152700	Systemic lupus erythematosus;Systemic lupus erythematosus;Systemic lupus erythematosus, association with;Systemic lupus erythematosus;Systemic lupus erythematosus;Systemic lupus erythematosus
-152780	Male pseudohermaphroditism due to defective LH;Hypogonadism, hypergonadotropic
+152700	Systemic lupus erythematosus;Systemic lupus erythematosus, association with;Systemic lupus erythematosus;Systemic lupus erythematosus;Systemic lupus erythematosus;Systemic lupus erythematosus
 152950	Microcephaly with or without chorioretinopathy, lymphedema, or mental retardation
-153100	Lymphedema, hereditary I
+153100	Lymphedema, hereditary, IA
 153245	Sebaceous tumors, somatic
-153390	SCID due to LCK deficiency
 153400	Lymphedema-distichiasis syndrome with renal disease and diabetes mellitus;Lymphedema-distichiasis syndrome
 153480	Bannayan-Riley-Ruvalcaba syndrome
 153550	Macrocytic anemia, refractory, due to 5q deletion, somatic
@@ -566,7 +556,7 @@ OMIM_ID	DISEASE
 153640	Fechtner syndrome
 153650	Epstein syndrome
 153670	Bernard-Soulier syndrome, type A2 
-153700	Best macular dystrophy
+153700	Vitelliform macular dystrophy 2
 153800	Macular degeneration, age-related, 2
 153880	Macular dystrophy, dominant cystoid
 154020	Hypomagnesemia-2, renal
@@ -578,10 +568,10 @@ OMIM_ID	DISEASE
 154700	Marfan syndrome
 154780	Marshall syndrome
 154800	Mast cell disease
-154870	Natural teeth remaining intact
 155100	May-Hegglin anomaly
 155240	Medullary thyroid carcinoma;Medullary thyroid carcinoma, familial
 155255	Medulloblastoma;Medulloblastoma, desmoplastic;Medulloblastoma
+155310	Visceral myopathy
 155600	Malignant melanoma, somatic;Melanoma, cutaneous malignant, 1
 155601	Melanoma, cutaneous malignant, 2
 155755	Melanoma and neural system tumor syndrome
@@ -598,9 +588,8 @@ OMIM_ID	DISEASE
 156550	Kniest dysplasia
 156600	Microcoria, congenital
 156850	Microphthalmia with cataract 1
-157140	Tauopathy and respiratory failure
 157170	Holoprosencephaly-2
-157300	Migraine, resistance to;Migraine with or without aura;Migraine without aura;Migraine
+157300	Migraine with or without aura;Migraine without aura;Migraine, resistance to;Migraine
 157600	Mirror movements 1
 157640	Progressive external ophthalmoplegia, autosomal dominant
 157700	Mitral valve prolapse, myxomatous 1
@@ -614,7 +603,7 @@ OMIM_ID	DISEASE
 158350	Cowden syndrome 1;Lhermitte-Duclos syndrome
 158580	Neuronopathy, distal hereditary motor, type VIIA
 158590	Neuropathy, distal hereditary motor, type IIA
-158600	Spinal muscular atrophy, lower extremity-predominant, AD
+158600	Spinal muscular atrophy, lower extremity-predominant 1, AD
 158810	Bethlem myopathy;Bethlem myopathy;Bethlem myopathy
 158900	Facioscapulohumeral muscular dystrophy 1
 158901	Fascioscapulohumeral muscular dystrophy 2, digenic
@@ -626,8 +615,8 @@ OMIM_ID	DISEASE
 159950	Spinal muscular atrophy with progressive myoclonic epilepsy
 160120	Episodic ataxia/myokymia syndrome
 160150	Myopathy, centronuclear;Centronuclear myopathy, autosomal, modifier of
+160190	Anhidrosis, isolated, with normal sweat glands
 160500	Laing distal myopathy
-160565	Myopathy, tubular aggregate
 160700	Myopia-2
 160800	Myotonia congenita, dominant
 160900	Myotonic dystrophy 1
@@ -654,15 +643,15 @@ OMIM_ID	DISEASE
 162820	Neutrophil chemotactic repsonse, abnormal
 162830	Neutrophilia, hereditary
 162900	Epidermal nevus, somatic;Nevus, epidermal, somatic;Nevus, epidermal, somatic;Nevus sebaceous, somatic
-163000	Capillary malformations, congenital, 1, somatic, mosaic;Capillary malformations, hereditary
-163200	SFM syndrome, somatic mosaic;Schimmelpenning-Feuerstein-Mims syndrome, somatic mosaic
+163000	Capillary malformations, congenital, 1, somatic, mosaic
+163200	SFM syndrome, somatic mosaic;Schimmelpenning-Feuerstein-Mims syndrome, somatic mosaic;Schimmelpenning-Feuerstein-Mims syndrome, somatic mosaic
 163500	Night blindness, congenital stationary, autosomal dominant 2
 163729	Coronary artery spasm 1;Placental abruption
 163800	Sick sinus syndrome 2
 163950	Noonan syndrome 1
 164009	Leukemia, acute promyelocytic, NUMA/RARA type
 164040	Leukemia, acute promyelocytic, NPM/RARA type
-164100	Nystagmus-2, autosomal dominant
+164100	Nystagmus 2, congenital, autosomal dominant
 164200	Oculodentodigital dysplasia
 164210	Hemifacial microsomia
 164230	Obsessive-compulsive disorder, protection against;Obsessive-compulsive disorder;Obsessive-compulsive disorder
@@ -684,25 +673,24 @@ OMIM_ID	DISEASE
 165720	Osteoarthritis
 165800	Osteochondritis dissecans, short stature, and early-onset osteoarthritis
 166200	Osteogenesis imperfecta, type I
-166210	OI type II;Osteogenesis imperfecta, type II
-166220	OI type IV;Osteogenesis imperfecta, type IV
+166210	Osteogenesis imperfecta, type II;Osteogenesis imperfecta, type II
+166220	Osteogenesis imperfecta, type IV;Osteogenesis imperfecta, type IV
 166250	Osteoglophonic dysplasia
 166260	Gnathodiaphyseal dysplasia
 166300	Multicentric carpotarsal osteolysis syndrome
 166350	Osseous heteroplasia, progressive
 166600	Osteopetrosis, autosomal dominant 2
 166700	Buschke-Ollendorff syndrome;Osteopoikilosis
-166710	Osteoporosis, involutional;Bone mineral density variation QTL;Osteoporosis, postmenopausal;Osteoporosis, postmenopausal;Osteoporosis;Osteoporosis;Osteoporosis;Osteoporosis;Osteoporosis
+166710	Osteoporosis, involutional;Bone mineral density variation QTL, osteoporosis;Osteoporosis, postmenopausal;Osteoporosis, postmenopausal;Osteoporosis;Osteoporosis;Osteoporosis;Osteoporosis
 166750	Otodental dysplasia chromsome deletion syndrome
 166760	Otitis media
 166780	Otofaciocervical syndrome
 166800	Otosclerosis 1
 167000	Adenocarcinoma, ovarian, somatic;Ovarian cancer, somatic;Ovarian cancer, somatic;Ovarian cancer, somatic;Ovarian carcinoma, somatic;Ovarian cancer, somatic
-167200	Pachyonychia congenita, Jadassohn-Lewandowsky type;Pachyonychia congenita, Jadassohn-Lewandowsky type
-167210	Pachyonychia congenita, Jackson-Lawler type;Pachyonychia congenita, Jackson-Lawler type
+167200	Pachyonychia congenita 1
+167210	Pachyonychia congenita 2
 167250	Paget disease of bone
 167320	Inclusion body myopathy with early-onset Paget disease and frontotemporal dementia 1
-167400	Paroxysmal extreme pain disorder
 167800	Pancreatitis, hereditary;Pancreatitis, hereditary;Pancreatitis, chronic, protection against;Pancreatitis, chronic;Pancreatitis, idiopathic
 167870	Panic disorder syndrome 1;Panic disorder
 168000	Paragangliomas 1, with or without deafness
@@ -712,13 +700,13 @@ OMIM_ID	DISEASE
 168470	Humoral hypercalcemia of malignancy
 168500	Parietal foramina 1
 168550	Parietal foramina with cleidocranial dysplasia
-168600	Parkinson disease, late-onset;Parkinson disease;Parkinson disease;Parkinson disease
+168600	Parkinson disease, late-onset;Parkinson disease, late-onset;Parkinson disease;Parkinson disease;Parkinson disease
 168601	Parkinson disease 1
 168605	Perry syndrome
 168820	Coronary artery disease;Coronary artery spasm 2;Organophosphate poisoning, sensitivity to
 168860	Patella aplasia or hypoplasia
 169100	Char syndrome
-169150	Macular dystrophy, patterned
+169150	Macular dystrophy, patterned, 1
 169400	Pelger-Huet anomaly
 169500	Leukodystrophy, adult-onset, autosomal dominant
 169600	Hailey-Hailey disease
@@ -743,7 +731,6 @@ OMIM_ID	DISEASE
 172870	Pigmented paravenous chorioretinal atrophy
 173100	Growth hormone deficiency, isolated, type II
 173200	Pityriasis rubra pilaris
-173350	Plasminogen Tochigi disease;Plasminogen deficiency, types I and II;Thrombophilia, dysplasminogenemic
 173360	Transcription of plasminogen activator inhibitor, modulator of
 173470	Purpura, posttransfusion;Thrombocytopenia, neonatal alloimmune
 173510	Macrothrombocytopenia
@@ -756,7 +743,6 @@ OMIM_ID	DISEASE
 174300	Orofaciodigital syndrome V
 174500	Polydactyly, preaxial type II;Triphalangeal thumb, type I;Triphalangeal thumb-polysyndactyly syndrome
 174700	Polydactyly, preaxial, type IV
-174800	McCune-Albright syndrome
 174810	Osteolysis, familial expansile
 174900	Juvenile polyposis syndrome, infantile form;Polyposis, juvenile intestinal;Polyposis, juvenile intestinal
 175050	Juvenile polyposis/hereditary hemorrhagic telangiectasia syndrome
@@ -765,7 +751,7 @@ OMIM_ID	DISEASE
 175700	Greig cephalopolysyndactyly syndrome
 175780	Porencephaly 1
 175850	Porokeratosis 2, palmar, plantar, and disseminated
-175900	Porokeratosis 3, disseminated superficial actinic;Porokeratosis, disseminated superficial actinic, 1
+175900	Porokeratosis 3, disseminated superficial actinic
 176000	Porphyria, acute intermittent;Porphyria, acute intermittent, nonerythroid variant
 176100	Porphyria cutanea tarda;Porphyria, hepatoerythropoietic;Porphyria cutanea tarda
 176200	Porphyria variegata;Porphyria variegata
@@ -778,7 +764,6 @@ OMIM_ID	DISEASE
 176450	Currarino syndrome
 176500	Dementia, familial British
 176670	Hutchinson-Gilford progeria
-176730	Hyperproinsulinemia, familial, with or without diabetes
 176780	Pelvic organ prolapse
 176797	Leukemia, acute promyelocytic, PL2F/RARA type
 176807	Prostate cancer;Prostate cancer, hereditary;Prostate cancer, somatic;Prostate cancer, somatic;Prostate cancer aggressiveness QTL;Prostate cancer, familial;Prostate cancer, hereditary, 5;Prostate cancer, progression of;Prostate cancer, somatic;Prostate cancer;Prostate cancer;Prostate cancer;Prostate cancer;Prostate cancer;Prostate cancer;Prostate cancer;Prostate cancer;Prostate cancer
@@ -803,11 +788,11 @@ OMIM_ID	DISEASE
 179095	Male infertility
 179450	Ragweed sensitivity
 179502	Lymphocytic leukemia, acute T-cell
-179605	Macular dystrophy
 179620	Blood group, Raph
 179800	Renal tubular acidosis, distal, AD
 179820	Hyperproreninemia
 179850	Dowling-Degos disease 1
+180000	Retinal arteries, tortuosity of
 180020	Retinal cone dystrophy-1
 180100	Retinitis pigmentosa 1
 180104	Retinitis pigmentosa 9
@@ -819,7 +804,7 @@ OMIM_ID	DISEASE
 180385	Leukemia, acute T-cell
 180500	Axenfeld-Rieger syndrome, type 1
 180550	Ring dermoid of cornea
-180700	Robinow syndrome, autosomal dominant
+180700	Robinow syndrome, autosomal dominant 1
 180750	Robinow-Sorauf syndrome
 180800	Roussy-Levy syndrome;Roussy-Levy syndrome
 180849	Rubinstein-Taybi syndrome
@@ -841,8 +826,11 @@ OMIM_ID	DISEASE
 182100	Bombay phenotype;Norwalk virus infection, resistance to
 182212	Shprintzen-Goldberg syndrome
 182230	Growth hormone deficiency with pituitary anomalies;Pituitary hormone deficiency, combined, 5;Septooptic dysplasia
+182250	Singleton-Merten syndrome 1
 182280	Small cell cancer of the lung, somatic;Small-cell cancer of lung
 182290	Smith-Magenis syndrome
+182410	Sneddon syndrome
+182455	Somatostatin analog, resistance to
 182500	Cataract, congenital
 182600	Spastic paraplegia 3A, autosomal dominant
 182601	Spastic paraplegia 4, autosomal dominant
@@ -858,9 +846,10 @@ OMIM_ID	DISEASE
 183840	Spondyloarthropathy
 183900	SED congenita
 184095	SED, Maroteaux type
+184100	Spondyloepiphyseal dysplasia tarda, autosomal dominant
 184250	SMED Strudwick type
 184252	Spondylometaphyseal dysplasia, Kozlowski type
-184450	Stuttering, familial persistent 1
+184450	Stuttering, familial persistent, 1
 184460	Stapes ankylosis with broad thumb and toes
 184500	Steatocystoma multiplex
 184700	Polycystic ovary syndrome 1
@@ -868,6 +857,7 @@ OMIM_ID	DISEASE
 184840	Stickler syndrome, type III
 184900	Stiff skin syndrome
 185000	Stomatocytosis I
+185070	Stormorken syndrome
 185100	Strabismus
 185300	Sturge-Weber syndrome, somatic, mosaic
 185490	Superoxide dismutase, elevated extracellular
@@ -878,7 +868,7 @@ OMIM_ID	DISEASE
 186100	Syndactyly, type III
 186200	Syndactyly, type IV
 186300	Syndactyly, type V
-186500	Multiple synostosis syndrome 1
+186500	Multiple synostoses syndrome 1
 186550	Liebenberg syndrome
 186570	Tarsal-carpal coalition syndrome
 186580	Blau syndrome
@@ -893,13 +883,13 @@ OMIM_ID	DISEASE
 187300	Telangiectasia, hereditary hemorrhagic, type 1
 187370	Arthrogryposis, distal, type 10
 187395	Forebrain defects
-187500	Tetralogy of Fallot;Tetralogy of Fallot;Tetralogy of Fallot;Tetralogy of Fallot;Tetralogy of Fallot;Tetrology of Fallot
+187500	Tetralogy of Fallot;Tetralogy of Fallot;Tetralogy of Fallot;Tetralogy of Fallot;Tetralogy of Fallot;Tetralogy of Fallot;Tetrology of Fallot
 187600	Thanatophoric dysplasia, type I
 187601	Thanatophoric dysplasia, type II
 187800	Bleeding disorder, platelet-type, 16, autosomal dominant;Bleeding disorder, platelet-type, 16, autosomal dominant
 187900	Bleeding disorder, platelet-type, 17
 187950	Thrombocythemia 1;Thrombocythemia, somatic;Thrombocythemia, somatic
-188000	Thrombocytopenia 2;Thrombocytopenia-2
+188000	Thrombocytopenia-2;Thrombocytopenia 2
 188025	Thrombocytopenia, Paris-Trousseau type
 188030	Thrombocytopenic purpura, autoimmune
 188050	Thrombophilia due to thrombin defect;Thromboembolism;Venous thromboembolism;Venous thrombosis, protection against
@@ -910,6 +900,7 @@ OMIM_ID	DISEASE
 188550	Thyroid carcinoma, papillary;Thyroid carcinoma, papillary;Thyroid carcinoma, papillary;Thyroid carcinoma, papillary;Thyroid carcinoma, papillary;Thyroid carcinoma, papillary, somatic;Thyroid papillary carcinoma
 188570	Thyroid hormone resistance
 188580	Thyrotoxic periodic paralysis
+188740	Hypoplastic or aplastic tibia with polydactyly
 188830	Adrenocortical tumor, somatic,
 188890	Nicotine addiction, protection from;Nicotine addiction;Nicotine dependence, protection against;Nicotine dependence, protection against;Nicotine dependence
 189500	Ectodermal dysplasia 3, Witkop type
@@ -917,11 +908,11 @@ OMIM_ID	DISEASE
 189980	Leukemia, Philadelphia chromosome-positive, resistant to imatinib
 189990	T-cell acute lymphoblastic leukemia
 190070	Leukemia, acute myelogenous
-190090	Colon cancer, advanced
+190090	Colon cancer, advanced, somatic
 190100	Geniospasm
-190198	Leukemia, T-cell acute lymphoblastic
 190300	Essential tremor
 190320	Trichodontoosseous syndrome
+190330	Trichomegaly
 190350	Trichorhinophalangeal syndrome, type I
 190351	Trichorhinophalangeal syndrome, type III
 190440	Trigonocephaly 1
@@ -932,17 +923,17 @@ OMIM_ID	DISEASE
 191181	Cervical carcinoma
 191390	Inflammatory bowel disease 11
 191540	Urate oxidase deficiency
-191830	Renal adysplasia;Renal agenesis;Renal hypoplasia, isolated;Urogenital adysplasia
+191830	Renal agenesis;Renal hypodysplasia/aplasia 1;Renal hypoplasia, isolated
 191900	Muckle-Wells syndrome
 192315	Vasculopathy, retinal, with cerebral leukodystrophy
 192350	VACTERL association
 192430	Velocardiofacial syndrome
 192500	Long QT syndrome 1;Long QT syndrome 1, acquired
-192600	Cardiomyopathy, familial hypertrophic, 1;Cardiomyopathy, familial hypertrophic;Cardiomyopathy, hypertrophic, midventricular, digenic
+192600	Cardiomyopathy, familial hypertrophic;Cardiomyopathy, hypertrophic, 1;Cardiomyopathy, hypertrophic, 1, digenic
 192605	Ventricular tachycardia, idiopathic
 192950	Charcot-Marie-Tooth disease, foot deformity of;Vertical talus, congenital
 193000	Vesicoureteral reflux
-193003	Nystagmus 4, congenital
+193003	Nystagmus 4, congenital, autosomal dominant
 193007	Vestibulopathy, familial
 193040	Cholestasis, progressive canalicular
 193100	Hypophosphatemic rickets, autosomal dominant
@@ -950,15 +941,15 @@ OMIM_ID	DISEASE
 193220	Microcornea, rod-cone dystrophy, cataract, and posterior staphyloma;Vitreoretinochoroidopathy
 193230	Snowflake vitreoretinal degeneration
 193235	Vitreoretinopathy, neovascular inflammatory
-193300	von Hippel-Lindau syndrome;von Hippel-Lindau syndrome, modifier of
+193300	von Hippel-Lindau syndrome;von Hippel-Lindau syndrome, modifier of;von Hippel-Lindau syndrome, modifier of
 193400	von Willebrand disease, type 1
 193500	Waardenburg syndrome, type 1
 193510	Waardenburg syndrome, type 2A
 193520	Watson syndrome
-193530	Weyers acrodental dysostosis
+193530	Weyers acrodental dysostosis;Weyers acrofacial dysostosis
 193670	WHIM syndrome
 193700	Arthrogryposis, distal, type 2A
-193900	White sponge nevus;White sponge nevus
+193900	White sponge nevus 1
 194050	Williams-Beuren syndrome
 194070	Wilms tumor;Wilms tumor, somatic;Wilms tumor, type 1
 194071	Wilms tumor 2
@@ -969,7 +960,6 @@ OMIM_ID	DISEASE
 194200	Wolff-Parkinson-White syndrome
 194300	Woolly hair, autosomal dominant
 194380	Dehydrated hereditary stomatocytosis with or without pseudohyperkalemia and/or perinatal edema
-194470	Dysalbuminemic hyperzincemia
 200100	Abetalipoproteinemia
 200150	Choreoacanthocytosis
 200500	Acheiropody
@@ -995,7 +985,7 @@ OMIM_ID	DISEASE
 202200	Glucocorticoid deficiency, due to ACTH unresponsiveness
 202300	Adrenal cortical carcinoma
 202370	Peroxisome biogenesis disorder 2B
-202400	Afibrinogenemia, congenital;Afibrinogenemia, congenital
+202400	Afibrinogenemia, congenital;Afibrinogenemia, congenital;Afibrinogenemia, congenital;Hypofibrinogenemia, congenital;Hypofibrinogenemia, congenital
 202650	Agnathia-otocephaly complex
 202700	Neutropenia, severe congenital 1, autosomal dominant
 203100	Albinism, oculocutaneous, type IA
@@ -1018,6 +1008,7 @@ OMIM_ID	DISEASE
 204300	Ceroid lipofuscinosis, neuronal, Kufs type, adult onset
 204500	Ceroid lipofuscinosis, neuronal, 2
 204650	Amelogenesis imperfecta, type IC
+204690	Amelogenesis imperfecta, type IG 
 204700	Amelogenesis imperfecta, type IIA1
 204750	2-aminoadipic 2-oxoadipic aciduria
 204870	Corneal dystrophy, gelatinous drop-like
@@ -1052,9 +1043,9 @@ OMIM_ID	DISEASE
 209500	Atrichia with papular lesions
 209850	Autism
 209880	Central hypoventilation syndrome;Central hypoventilation syndrome, congenital;Central hypoventilation syndrome, congenital;Central hypoventilation syndrome, congenital;Central hypoventilation syndrome, congenital;Central hypoventilation syndrome, congenital, with or without Hirschsprung disease;Haddad syndrome
-209900	Bardet-Biedl syndrome 1;Bardet-Biedl syndrome 10;Bardet-Biedl syndrome 11;Bardet-Biedl syndrome 12;Bardet-Biedl syndrome 13;Bardet-Biedl syndrome 14;Bardet-Biedl syndrome 15;Bardet-Biedl syndrome 17;Bardet-Biedl syndrome 2;Bardet-Biedl syndrome 3;Bardet-Biedl syndrome 4;Bardet-Biedl syndrome 5;Bardet-Biedl syndrome 6;Bardet-Biedl syndrome 7;Bardet-Biedl syndrome 8;Bardet-Biedl syndrome 9;Bardet-Biedl syndrome 1, modifier of;Bardet-Biedl syndrome 14, modifier of;Bardet-Biedl syndrome, modifier of
+209900	Bardet-Biedl syndrome 1;Bardet-Biedl syndrome 1, modifier of;Bardet-Biedl syndrome 1, modifier of;Bardet-Biedl syndrome 14, modifier of
 209920	Bare lymphocyte syndrome, type II, complementation group A;Bare lymphocyte syndrome, type II, complementation group C;Bare lymphocyte syndrome, type II, complementation group D;Bare lymphocyte syndrome, type II, complementation group E;MHC class II deficiency, complementation group B
-209950	BCG and salmonella infection, disseminated;BCG infection, generalized familial;Mycobacterial infection, atypical, familial disseminated;Mycobacterial infection, atypical, familial disseminated;Mycobacterial and salmonella infections;Mycobacterial infection, atypical, familial disseminated
+209950	Immunodeficiency 27A, mycobacteriosis, AR
 210200	3-Methylcrotonyl-CoA carboxylase 1 deficiency
 210210	3-Methylcrotonyl-CoA carboxylase 2 deficiency
 210250	Sitosterolemia;Sitosterolemia
@@ -1083,23 +1074,24 @@ OMIM_ID	DISEASE
 212140	Carnitine deficiency, systemic primary
 212200	Carnosinemia
 212350	Sengers syndrome
-212550	Microphthalmia with cataract 2
+212550	Optic disc anomalies with retinal and/or macular dystrophy
 212720	Martsolf syndrome
 212750	Celiac disease;Celiac disease
 212780	Cenani-Lenz syndactyly syndrome
 212840	Cerebellar ataxia and hypogonadotropic hypogonadism
 213200	Spinocerebellar ataxia, autosomal recessive 2
 213300	Joubert syndrome 1
-213600	Basal ganglia cancification, idiopathic, 1
+213600	Basal ganglia calcification, idiopathic, 1
 213700	Cerebrotendinous xanthomatosis
+213980	Craniofacial dysmorphism, skeletal anomalies, and mental retardation syndrome
 214100	Peroxisome biogenesis disorder 1A 
 214110	Peroxisome biogenesis disorder 2A 
 214150	Cerebrooculofacioskeletal syndrome 1
-214300	Klippel-Feil syndrome 2, autosomal recessive;Klippel-Feil syndrome 2
+214300	Klippel-Feil syndrome 2
 214400	Charcot-Marie-Tooth disease, type 4A
 214450	Griscelli syndrome, type 1
 214500	Chediak-Higashi syndrome
-214700	Chloride diarrhea, congenital, Finnish type
+214700	Diarrhea 1, secretory chloride, congenital
 214800	CHARGE syndrome;CHARGE syndrome
 214900	Cholestasis-lymphedema syndrome
 214950	Bile acid synthesis defect, congenital, 4
@@ -1117,13 +1109,15 @@ OMIM_ID	DISEASE
 216360	COACH syndrome;COACH syndrome;COACH syndrome
 216400	Cockayne syndrome, type A
 216550	Cohen syndrome
+216820	Coloboma, ocular, autosomal recessive
 216900	Achromatopsia-2
 216950	C1r/C1s deficiency, combined
 217000	C2 deficiency
 217050	Combined C6/C7 deficiency
 217080	Jalili syndrome
-217090	Conjunctivitis, ligneous
-217095	Conotruncal anomaly face syndrome;Conotruncal heart malformations, variable;Double-outlet right ventricle;Double-outlet right ventricle;Persistent truncus arteriosus;Persistent truncus arteriosus
+217085	Congenital heart defects, hamartomas of tongue, and polysyndactyly
+217090	Dysplasminogenemia;Plasminogen deficiency, type I
+217095	Conotruncal anomaly face syndrome;Conotruncal heart malformations;Conotruncal heart malformations, variable;Double-outlet right ventricle;Double-outlet right ventricle;Persistent truncus arteriosus;Persistent truncus arteriosus
 217300	Cornea plana congenita, recessive
 217400	Corneal endothelial dystrophy and perceptive deafness
 217700	Corneal endothelial dystrophy 2, autosomal recessive
@@ -1133,7 +1127,7 @@ OMIM_ID	DISEASE
 218040	Congenital myopathy with excess of muscle spindles;Costello syndrome
 218330	Cranioectodermal dysplasia 1
 218340	Temtamy syndrome
-218400	Craniometaphyseal dysplasia, autosomal recessive;Craniometaphyseal dysplasia, autosomal recessive
+218400	Craniometaphyseal dysplasia, autosomal recessive
 218600	Baller-Gerold syndrome
 218700	Hypothyroidism, congenital, due to thyroid dysgenesis or hypoplasia
 218800	Crigler-Najjar syndrome, type I
@@ -1146,11 +1140,12 @@ OMIM_ID	DISEASE
 219200	Cutis laxa, autosomal recessive, type IIA
 219500	Cystathioninuria
 219700	Cystic fibrosis;Cystic fibrosis lung disease, modifier of;Pseudomonas aeruginosa
+219730	Ventriculomegaly with cystic kidney disease
 219750	Cystinosis, ocular nonnephropathic
 219800	Cystinosis, atypical nephropathic;Cystinosis, nephropathic
 219900	Cystinosis, late-onset juvenile or adolescent nephropathic
 220100	Cystinuria;Cystinuria
-220110	Cytochrome c oxidase deficiency;Mitochondrial complex IV deficiency;Mitochondrial complex IV deficiency;Mitochondrial complex IV deficiency;Mitochondrial complex IV deficiency;Mitochondrial complex IV deficiency;Mitochondrial complex IV deficiency
+220110	Mitochondrial complex IV deficiency;Mitochondrial complex IV deficiency;Mitochondrial complex IV deficiency;Mitochondrial complex IV deficiency;Mitochondrial complex IV deficiency;Mitochondrial complex IV deficiency;Mitochondrial complex IV deficiency;Mitochondrial complex IV deficiency;Mitochondrial complex IV deficiency
 220111	Leigh syndrome, French-Canadian type
 220120	D-glyceric aciduria
 220150	Hypouricemia, renal
@@ -1164,7 +1159,7 @@ OMIM_ID	DISEASE
 221750	Pituitary hormone deficiency, combined, 3
 221770	Nasu-Hakola disease;Nasu-Hakola disease
 221820	Leukoencephalopathy, diffuse hereditary, with spheroids
-221900	Retinal nonattachment, nonsyndromic congenital;Retinal nonattachment, nonsyndromic congenital
+221900	Persistent hyperplastic primary vitreous, autosomal recessive;Retinal nonattachment, nonsyndromic congenital
 222100	Diabetes mellitus, insulin-dependent-1;Diabetes mellitus, insulin-dependent;Diabetes mellitus, type 1;Diabetes mellitus, type I;Diabetes, type 1;Diabetes, type 1
 222300	Wolfram syndrome
 222400	Hernia, congenital diaphragmatic 2
@@ -1172,13 +1167,13 @@ OMIM_ID	DISEASE
 222470	Trichohepatoenteric syndrome 1
 222600	Diastrophic dysplasia;Diastrophic dysplasia, broad bone-platyspondylic variant
 222700	Lysinuric protein intolerance
-222745	DECR deficiency
+222730	Dicarboxylic aminoaciduria
 222748	Dihydropyrimidinuria
 222765	Chondrodysplasia punctata, rhizomelic, type 2
 222800	Erythrocytosis due to bisphosphoglycerate mutase deficiency
 222900	Sucrase-isomaltase deficiency, congenital
 223000	Lactase deficiency, congenital
-223100	Lactase persistance/nonpersistance
+223100	Lactase persistence/nonpersistence
 223360	Dopamine beta-hydroxylase deficiency
 223800	Dyggve-Melchior-Clausen disease
 223900	Dysautonomia, familial
@@ -1226,8 +1221,8 @@ OMIM_ID	DISEASE
 227650	Fanconi anemia, complementation group A
 227810	Fanconi-Bickel syndrome
 228000	Farber lipogranulomatosis
-228300	Fertile eunuch syndrome
-228520	Fibrochondrogenesis
+228300	Hypogonadotropic hypogonadism 23 with or without anosmia
+228520	Fibrochondrogenesis 1
 228550	Myofibromatosis, infantile, 1
 228600	Hyaline fibromatosis syndrome
 228900	Du Pan syndrome
@@ -1235,12 +1230,12 @@ OMIM_ID	DISEASE
 228960	High molecular weight kininogen deficiency;Kininogen deficiency
 228980	Fleck retina, familial benign
 229050	Folate malabsorption, hereditary
-229070	Follicle-stimulating hormone deficiency, isolated
+229070	Hypogonadotropic hypogonadism 24 without anosmia
 229100	Glutamate formiminotransferase deficiency
-229200	Brittle cornea syndrome
+229200	Brittle cornea syndrome 1
 229300	Friedreich ataxia with retained reflexes;Friedreich ataxia
 229600	Fructose intolerance
-229700	Fructose-1,6-bidphosphatase deficiency
+229700	Fructose-1,6-bisphosphatase deficiency
 229800	Fructosuria
 230000	Fucosidosis
 230200	Galactokinase deficiency with cataracts
@@ -1256,7 +1251,7 @@ OMIM_ID	DISEASE
 231005	Gaucher disease, type IIIC
 231050	Geleophysic dysplasia 1
 231070	Geroderma osteodysplasticum
-231090	Hydatidiform mole
+231090	Hydatidiform mole, recurrent, 1
 231095	Ghosal hematodiaphyseal syndrome
 231200	Bernard-Soulier syndrome, type A1 ;Bernard-Soulier syndrome, type B;Bernard-Soulier syndrome, type C;Giant platelet disorder, isolated
 231300	Glaucoma 3A, primary open angle, congenital, juvenile, or adult onset
@@ -1293,13 +1288,12 @@ OMIM_ID	DISEASE
 235000	Hemihypertrophy
 235200	Hemochromatosis;HFE hemochromatosis, modifier of
 235400	Hemolytic uremic syndrome, atypical;Hemolytic uremic syndrome, atypical;Hemolytic uremic syndrome, atypical
-235510	Hennekam lymphangiectasia-lymphedema syndrome
+235510	Hennekam lymphangiectasia-lymphedema syndrome 1
 235550	Hepatic venoocclusive disease with immunodeficiency
 235555	Bile acid synthesis defect, congenital, 2
 235700	Hemolytic anemia due to hexokinase deficiency
 235730	Mowat-Wilson syndrome
 235800	Histidinemia
-236000	Hodgkin lymphoma
 236100	Holoprosencephaly-1
 236200	Homocystinuria, B6-responsive and nonresponsive types;Thrombosis, hyperhomocysteinemic
 236250	Homocystinuria due to MTHFR deficiency
@@ -1310,11 +1304,12 @@ OMIM_ID	DISEASE
 236700	McKusick-Kaufman syndrome
 236730	Urofacial syndrome 1
 236792	L-2-hydroxyglutaric aciduria
+236800	Hydroxykynureninuria
 237300	Carbamoylphosphate synthetase I deficiency
 237310	N-acetylglutamate synthase deficiency
 237450	Hyperbilirubinemia, Rotor type, digenic;Hyperbilirubinemia, Rotor type, digenic
 237500	Dubin-Johnson syndrome
-237900	Hyperbilirubinemia, familial transcient neonatal
+237900	Hyperbilirubinemia, familial transient neonatal
 238320	Leydig cell hypoplasia with hypergonadotropic hypogonadism;Leydig cell hypoplasia with pseudohermaphroditism;Luteinizing hormone resistance, female
 238600	Lipoprotein lipase deficiency
 238700	Hyperlysinemia
@@ -1329,7 +1324,7 @@ OMIM_ID	DISEASE
 240300	Autoimmune polyendocrinopathy syndrome , type I, with or without reversible metaphyseal dysplasia
 240400	Scurvy
 240500	Immunodeficiency, common variable, 2
-240600	Glycogen storage disease, type 0
+240600	Glycogen storage disease 0, liver
 240800	Hypoglycemia of infancy, leucine-sensitive
 240900	Hypoinsulinemic hypoglycemia with hemihypertrophy
 241080	Woodhouse-Sakati syndrome
@@ -1350,9 +1345,9 @@ OMIM_ID	DISEASE
 242840	Vici syndrome
 242860	Immunodeficiency-centromeric instability-facial anomalies syndrome 1
 242900	Schimke immunoosseous dysplasia
-243000	Insensitivity to pain, channelopathy-associated
+243000	HSAN2D, autosomal recessive;Insensitivity to pain, congenital
 243060	Spermatogenic failure 5
-243150	Intestinal atresia, multiple
+243150	Gastrointestinal defects and immunodeficiency syndrome
 243300	Cholestasis, benign recurrent intrahepatic
 243310	Baraitser-Winter syndrome 1
 243400	Acetylation, slow
@@ -1361,6 +1356,7 @@ OMIM_ID	DISEASE
 243800	Johanson-Blizzard syndrome
 244200	Hypogonadotropic hypogonadism 3 with or without anosmia
 244400	Ciliary dyskinesia, primary, 1, with or without situs inversus
+244450	Kaufman oculocerebrofacial syndrome
 244460	Kenny-Caffey syndrome-1
 245000	Papillon-Lefevre syndrome
 245010	Haim-Munk syndrome
@@ -1377,7 +1373,9 @@ OMIM_ID	DISEASE
 245590	Growth hormone insensitivity with immunodeficiency
 245600	Multiple joint dislocations, short stature, craniofacial dysmorphism, and congenital heart defects
 245660	Laryngoonychocutaneous syndrome
+245800	Laurence-Moon syndrome
 245900	Norum disease
+246000	Hodgkin lymphoma
 246200	Leprechaunism
 246300	Leprosy
 246450	HMG-CoA lyase deficiency
@@ -1389,7 +1387,7 @@ OMIM_ID	DISEASE
 247200	Miller-Dieker lissencephaly syndrome
 247420	Blood group, Lutheran null
 247640	Leukemia, acute lymphoblastic
-248000	Megalencephaly, autosomal recessive
+248000	Macrocephaly/megalencephaly syndrome, autosomal recessive
 248190	Hypomagnesemia 5, renal, with ocular involvement
 248200	Fundus flavimaculatus;Macular degeneration, juvenile;Retinal dystrophy, early-onset severe;Stargardt disease 1
 248250	Hypomagnesemia 3, renal
@@ -1402,11 +1400,13 @@ OMIM_ID	DISEASE
 248500	Mannosidosis, alpha-, types I and II
 248510	Mannosidosis, beta
 248600	Maple syrup urine disease, type II;Maple syrup urine disease, type Ia;Maple syrup urine disease, type Ib
+248700	Marden-Walker syndrome
 248800	Marinesco-Sjogren syndrome
 248900	Mast syndrome
 249000	Meckel syndrome 1
 249100	Familial Mediterranean fever, AR
 249270	Thiamine-responsive megaloblastic anemia syndrome
+249400	Neurocutaneous melanosis, somatic
 249420	Frank-ter Haar syndrome
 249500	Mental retardation, autosomal recessive 1
 249700	Langer mesomelic dysplasia;Langer mesomelic dysplasia
@@ -1427,13 +1427,15 @@ OMIM_ID	DISEASE
 251200	Microcephaly 1, primary, autosomal recessive
 251255	Jawad syndrome
 251260	Nijmegen breakage syndrome
-251270	Microcephaly and chorioretinopathy with or without mental retardation
+251270	Microcephaly and chorioretinopathy, autosomal recessive, 1
 251290	Band-like calcification with simplified gyration and polymicrogyria
+251300	Galloway-Mowat syndrome
 251450	Desbuquois dysplasia
 251600	Microphthalmia, isolated 1
 251750	Microspherophakia and/or megalocornea, with ectopia lentis and with or without secondary glaucoma
 251850	Microvillus inclusion disease
 251880	Mitochondrial DNA depletion syndrome 3 
+251950	Mitochondrial myopathy with lactic acidosis
 252010	Mitochondrial complex I deficiency;Complex I, mitochondrial respiratory chain, deficiency of;Mitochondrial complex 1 deficiency;Mitochondrial complex I deficiency;Mitochondrial complex I deficiency;Mitochondrial complex I deficiency;Mitochondrial complex I deficiency;Mitochondrial complex I deficiency;Mitochondrial complex I deficiency;Mitochondrial complex I deficiency;Mitochondrial complex I deficiency;Mitochondrial complex I deficiency;Mitochondrial complex I deficiency;Mitochondrial complex I deficiency;Mitochondrial complex I deficiency;Mitochondrial complex I deficiency;Mitochondrial complex I deficiency;Mitochondrial complex I deficiency
 252011	Mitochondrial complex II deficiency;Mitochondrial respiratory chain complex II deficiency
 252150	Molybdenum cofactor deficiency A
@@ -1468,10 +1470,10 @@ OMIM_ID	DISEASE
 254090	Ullrich congenital muscular dystrophy;Ullrich congenital muscular dystrophy;Ullrich congenital muscular dystrophy
 254110	Muscular dystrophy, limb-girdle, type 2H
 254130	Miyoshi muscular dystrophy 1
-254210	Myasthenic syndrome, congenital, associated with episodic apnea
-254300	Myasthenia, limb-girdle, familial;Myasthenia, limb-girdle, familial
+254210	Myasthenic syndrome, congenital, 6, presynaptic
+254300	Myasthenic syndrome, congenital, 10
 254450	Myelofibrosis with myeloid metaplasia, somatic;Myelofibrosis, somatic;Myelofibrosis, somatic;Myelofibrosis, somatic
-254500	Multiple myeloma;Multiple myeloma, resistance to;Multiple myeloma
+254500	Multiple myeloma, resistance to;Multiple myeloma
 254600	Myeloperoxidase deficiency
 254770	Myoclonic epilepsy, juvenile
 254780	Epilepsy, progressive myoclonic 2A ;Epilepsy, progressive myoclonic 2B 
@@ -1480,9 +1482,8 @@ OMIM_ID	DISEASE
 255110	Myopathy due to CPT II deficiency
 255120	CPT deficiency, hepatic, type IA
 255125	Myopathy with lactic acidosis, hereditary
-255160	Myopathy, hyaline body
 255200	Myopathy, centronuclear, autosomal recessive
-255310	Myopathy congenital, with fiber-type disproportion;Myopathy, congenital, with fiber-type disproportion 1;Myopathy, congenital, with fiber-type disproportion
+255310	Myopathy, congenital, with fiber-type disproportion 1;Myopathy, congenital, with fiber-type disproportion;Myopathy, congenital, with fiber-type disproportion
 255320	Minicore myopathy with external ophthalmoplegia
 255500	Myopia 18
 255600	Myosclerosis, congenital
@@ -1490,7 +1491,7 @@ OMIM_ID	DISEASE
 255800	Schwartz-Jampel syndrome, type 1
 255960	Myxoma, intracardiac
 255995	Native American myopathy
-256000	Leigh syndrome due to cytochrome c oxidase deficiency;Leigh syndrome due to mitochondrial COX4 deficiency;Leigh syndrome due to mitochondrial complex 1 deficiency;Leigh syndrome due to mitochondrial complex I deficiency;Leigh syndrome due to mitochondrial complex I deficiency;Leigh syndrome due to mitochondrial complex I deficiency;Leigh syndrome due to mitochondrial complex I deficiency;Leigh syndrome due to mitochondrial complex I deficiency;Leigh syndrome due to mitochondrial complex I deficiency;Leigh syndrome;Leigh syndrome;Leigh syndrome;Leigh syndrome;Leigh syndrome;Leigh syndrome;Leigh syndrome, due to COX deficiency
+256000	Leigh syndrome;Leigh syndrome due to cytochrome c oxidase deficiency;Leigh syndrome due to mitochondrial COX4 deficiency;Leigh syndrome due to mitochondrial complex 1 deficiency;Leigh syndrome due to mitochondrial complex I deficiency;Leigh syndrome due to mitochondrial complex I deficiency;Leigh syndrome due to mitochondrial complex I deficiency;Leigh syndrome due to mitochondrial complex I deficiency;Leigh syndrome due to mitochondrial complex I deficiency;Leigh syndrome due to mitochondrial complex I deficiency;Leigh syndrome;Leigh syndrome;Leigh syndrome;Leigh syndrome;Leigh syndrome;Leigh syndrome, due to COX deficiency
 256030	Nemaline myopathy 2, autosomal recessive
 256040	Autoinflammation, lipodystrophy, and dermatosis syndrome
 256050	Atelosteogenesis II;De la Chapelle dysplasia
@@ -1499,6 +1500,7 @@ OMIM_ID	DISEASE
 256370	Nephrotic syndrome, type 4
 256450	Hyperinsulinemic hypoglycemia, familial, 1
 256500	Netherton syndrome
+256520	Neu-Laxova syndrome1
 256540	Galactosialidosis
 256550	Sialidosis, type I;Sialidosis, type II
 256600	Infantile neuroaxonal dystrophy 1
@@ -1528,8 +1530,9 @@ OMIM_ID	DISEASE
 258860	Orofaciodigital syndrome IV
 258870	Gyrate atrophy of choroid and retina with or without ornithinemia
 258900	Orotic aciduria
+259050	Primrose syndrome
 259100	Cranioosteoarthropathy;Hypertrophic osteoarthropathy, primary, autosomal recessive 1
-259420	OI type III;Osteogenesis imperfecta, type III
+259420	Osteogenesis imperfecta, type III;Osteogenesis imperfecta, type III
 259440	Osteogenesis imperfecta, type IX
 259450	Bruck syndrome 1
 259500	Osteosarcoma;Osteosarcoma, somatic;Osteosarcoma, somatic
@@ -1545,7 +1548,7 @@ OMIM_ID	DISEASE
 260005	5-oxoprolinase deficiency
 260300	Parkinson disease 15, autosomal recessive
 260350	Pancreatic cancer;Pancreatic cancer;Pancreatic cancer, somatic;Pancreatic carcinoma, somatic
-260370	Pancreatic agenesis
+260370	Pancreatic agenesis 1
 260400	Shwachman-Bodian-Diamond syndrome
 260500	Choroid plexus papilloma
 260540	Supranuclear palsy, progressive atypical
@@ -1639,9 +1642,10 @@ OMIM_ID	DISEASE
 268900	Sarcosinemia
 269000	SC phocomelia syndrome
 269150	Schinzel-Giedion midface retraction syndrome
-269160	Schizencephaly;Schizencephaly;Schizensephaly
+269160	Schizencephaly;Schizencephaly;Schizencephaly
 269250	Schneckenbecken dysplasia
-269500	Sclerosteosis
+269400	Corneal opacification and other ocular anomalies
+269500	Sclerosteosis 1
 269600	Sea-blue histiocyte disease
 269700	Lipodystrophy, congenital generalized, type 2
 269840	Selective T-cell defect
@@ -1650,13 +1654,14 @@ OMIM_ID	DISEASE
 269921	Sialuria
 270100	Heterotaxy, visceral, 5
 270200	Sjogren-Larsson syndrome
-270300	Peeling skin syndrome
+270300	Peeling skin syndrome 1
 270400	Smith-Lemli-Opitz syndrome
 270420	Diarrhea 3, secretory sodium, congenital, syndromic
 270450	Insulin-like growth factor I, resistance to
 270550	Spastic ataxia, Charlevoix-Saguenay type
 270685	Silver spastic paraplegia syndrome
 270700	Spastic paraplegia 15, autosomal recessive
+270750	Spastic paraplegia 23
 270800	Spastic paraplegia 5A, autosomal recessive
 270960	Spermatogenic failure 4
 270970	Spherocytosis, type 3
@@ -1673,12 +1678,13 @@ OMIM_ID	DISEASE
 272120	Sudden infant death syndrome
 272200	Multiple sulfatase deficiency
 272300	Sulfite oxidase deficiency
-272430	Cold-induced sweating syndrome
+272430	Cold-induced sweating syndrome 1
+272440	Filippi syndrome
 272460	Spondylocarpotarsal synostosis syndrome
 272750	GM2-gangliosidosis, AB variant
 272800	GM2-gangliosidosis, several forms;Tay-Sachs disease;Hex A pseudodeficiency
 273300	Germ cell tumors;Male germ cell tumor;Spermatocytic seminoma, somatic;Testicular tumor, somatic
-273395	Tetra-amelia, autosomal recessive
+273395	Tetra-amelia syndrome
 273750	3-M syndrome 1
 273800	Glanzmann thrombasthenia;Glanzmann thrombasthenia
 274000	Thrombocytopenia-absent radius syndrome
@@ -1712,13 +1718,14 @@ OMIM_ID	DISEASE
 276902	Usher syndrome, type 3A
 276904	Usher syndrome, type 1C
 276950	VATER association with macrocephaly and ventriculomegaly
+277170	Orofaciodigital syndrome VI
 277180	Congenital bilateral absence of vas deferens
 277300	Spondylocostal dysostosis 1, autosomal recessive
 277380	Methylmalonic aciduria and homocystinuria, cblF type
 277400	Methylmalonic aciduria and homocystinuria, cblC type
 277410	Homocystinuria, cblD type, variant 1;Methylmalonic aciduria and homocystinuria, cblD type;Methylmalonic aciduria, cblD type, variant 2
 277440	Rickets, vitamin D-resistant, type IIA
-277450	Vitamin K-dependent coagulation defect
+277450	Vitamin K-dependent clotting factors, combined deficiency of, 1
 277460	Ataxia with isolated vitamin E deficiency
 277470	Pontocerebellar hypoplasia type 2A
 277480	von Willibrand disease, type 3
@@ -1760,7 +1767,6 @@ OMIM_ID	DISEASE
 300068	Androgen insensitivity
 300071	Night blindness, congenital stationary , 2A, X-linked
 300076	Wood neuroimmunologic syndrome
-300077	Mental retardation, X-linked 29
 300082	Social cognition
 300085	Cone dystrophy, progressive X-linked, 2
 300087	X-inactivation, familial skewed
@@ -1817,6 +1823,7 @@ OMIM_ID	DISEASE
 300351	Graves disease
 300352	Cerebral creatine deficiency syndrome 1
 300354	Mental retardation, X-linked, syndromic 15 
+300355	Mental retardation, X-linked 73
 300356	Deafness, X-linked 1, progressive
 300360	Mental retardation, X-linked, with short stature
 300367	Thrombocytopenia, X-linked, with or without dyserythropoietic anemia
@@ -1831,7 +1838,7 @@ OMIM_ID	DISEASE
 300419	Mental retardation, X-linked 29 and others
 300422	FG syndrome 4;Mental retardation, with or without nystagmus
 300423	Mental retardation, X-linked, syndromic, Hedera type
-300424	Retinitis pigmentosa 23;Retinitis pigmentosa 23
+300424	Retinitis pigmentosa 23
 300425	Autism
 300428	Mental retardation, X-linked 2
 300433	Mental retardation, X-linked 81
@@ -1888,19 +1895,19 @@ OMIM_ID	DISEASE
 300604	Premature ovarian failure 2B
 300605	Retinitis pigmentosa 34
 300607	Epileptic encephalopathy, early infantile, 8
+300612	Brooks-Wisniewski-Brown syndrome
 300613	Myopia 13
 300614	Deafness, X-linked 5
 300615	Brunner syndrome
 300622	Tn polyagglutination syndrome, somatic
 300623	Fragile X tremor/ataxia syndrome
 300624	Fragile X syndrome
-300630	Mental retardation, X-linked syndromic, Fried type
 300633	Hypospadias 1, X-linked
 300635	Lymphoproliferative syndrome, X-linked, 2
-300636	Atypical mycobacteriosis, familial
+300636	Immunodeficiency 33
 300640	Invasive pneumococcal disease, recurrent isolated, 2
 300643	Rolandic epilepsy, mental retardation, and speech dyspraxia
-300645	Atypical mycobacteriosis, familial, X-linked 2
+300645	Immunodeficiency 34, mycobacteriosis, X-linked
 300650	Ocular albinism with sensorineural deafness
 300652	Angio serpiginosum
 300653	Phosphoglycerate kinase 1 deficiency
@@ -1917,7 +1924,7 @@ OMIM_ID	DISEASE
 300700	Albinism-deafness syndrome
 300703	Spinocerebellar ataxia, X-linked 5
 300704	Prostate cancer, hereditary, X-linked 2
-300705	Mental retardation, X-linked 17/31, microduplication
+300705	Xp11.22 microduplication syndrome
 300706	Mental retardation, X-linked syndromic, Turner type
 300707	STAR syndrome
 300709	Mental retardation, X-linked, syndromic 9
@@ -1964,10 +1971,11 @@ OMIM_ID	DISEASE
 300849	Mental retardation, X-linked 41
 300850	Mental retardation, X-linked 90
 300851	Mental retardation, X-linked 92
+300852	Mental retardation, X-linked 88
 300853	Immunodeficiency, X-linked, with magnesium defect, Epstein-Barr virus infection and neoplasia
 300854	Renal cell carcinoma, papillary, 1
 300855	N-terminal acetyltransferase deficiency
-300856	Hypospadias 4, X-linked, susceptibilty to
+300856	Hypospadias 4, X-linked
 300857	Amyotrophic lateral sclerosis 15, with or without frontotemporal dementia
 300858	Mental retardation, X-linked, syndromic 17
 300860	Mental retardation, X-linked syndromic, Nascimento-type
@@ -1982,7 +1990,7 @@ OMIM_ID	DISEASE
 300882	Cornelia de Lange syndrome 5
 300884	Congenital disorder of glycosylation, type Is
 300886	Mental retardation, X-linked, syndromic 32
-300887	Aplasia cutis congenita, reticulolinear, with mmicrocephaly, facial dysmorphism and other congenital anomalies
+300887	Linear skin defects with multiple congenital anomalies
 300888	Hypothyroidism, central, and testicular enlargement
 300894	Neurodegeneration with brain iron accululation 5
 300895	Ohdo syndrome, X-linked
@@ -1995,11 +2003,20 @@ OMIM_ID	DISEASE
 300912	Mental retardation, X-linked 98
 300914	Deafness, X-linked 6
 300915	Microphthalmia, syndromic 13
+300918	Olmsted syndrome, X-linked
+300919	Mental retardation, X-linked 99
+300923	Mental retardation, X-linked 100
+300928	Mental retardation, X-linked 101
+300934	Congenital disorder of glycosylation, type Iy
+300942	Chromosome Xq26.3 duplication syndrome
+300943	Pituitary adenoma, growth hormone-secreting 2
+300946	Diamond-Blackfan anemia 14 with mandibulofacial dysostosis
+300952	Linear skin defects with multiple congenital anomalies 3
 301000	Wiskott-Aldrich syndrome
 301040	Alpha-thalassemia/mental retardation syndrome
 301050	Alport syndrome
-301200	Amelogenesis imperfecta, hypoplastic/hypomaturation type 1E
-301201	Amelogenesis imperfecta-3, hypoplastic type
+301200	Amelogenesis imperfecta, type 1E
+301201	Amelogenesis imperfecta, type IE, X-linked 2
 301220	Pigment disorder, reticulate
 301310	Anemia, sideroblastic, with ataxia
 301500	Fabry disease;Fabry disease, cardiac variant
@@ -2012,8 +2029,7 @@ OMIM_ID	DISEASE
 302060	Barth syndrome
 302200	Cataract 40, X-linked
 302350	Nance-Horan syndrome
-302380	Catel-Manzke syndrome
-302500	Spinocerebellar ataxia, X-linked 1;Spinocerebellar ataxia, X-linked 1
+302500	Spinocerebellar ataxia, X-linked 1
 302800	Charcot-Marie-Tooth neuropathy, X-linked dominant, 1
 302801	Charcot-Marie-Tooth neuropathy, X-linked recessive, 2
 302802	Charcot-Marie-Tooth neuropathy, X-linked recessive, 3
@@ -2034,7 +2050,7 @@ OMIM_ID	DISEASE
 304110	Craniofrontonasal dysplasia
 304120	Otopalatodigital syndrome, type II
 304150	Occipital horn syndrome
-304340	Pettigrew syndrome
+304340	Mental retardation, X-linked syndromic 5
 304400	Deafness, X-linked 2
 304500	Deafness, X-linked 1
 304700	Mohr-Tranebjaerg syndrome
@@ -2043,14 +2059,13 @@ OMIM_ID	DISEASE
 304800	Diabetes insipidus, nephrogenic
 305000	Dyskeratosis congenita, X-linked
 305100	Ectodermal dysplasia 1, hypohidrotic, X-linked
-305390	Exudative vitreoretinopathy, X-linked
+305390	Exudative vitreoretinopathy 2, X-linked
 305400	Aarskog-Scott syndrome;Mental retardation, X-linked syndromic 16
 305435	Fetal hemoglobin quantitative trait locus 3
 305450	Opitz-Kaveggia syndrome
 305600	Focal dermal hypoplasia
 305620	Frontometaphyseal dysplasia
 306000	Glycogen storage disease, type IXa1;Glycogen storage disease, type IXa2
-306100	Gonadal dysgenesis, XY female type
 306400	Chronic granulomatous disease, X-linked
 306700	Hemophilia A
 306900	Hemophilia B
@@ -2067,12 +2082,11 @@ OMIM_ID	DISEASE
 308205	IFAP syndrome with or without BRESHECK syndrome
 308230	Immunodeficiency, X-linked, with hyper-IgM
 308240	Lymphoproliferative syndrome, X-linked, 1
-308300	Incontinentia pigmenti, type II
+308300	Incontinentia pigmenti
 308350	Epileptic encephalopathy, early infantile, 1
 308700	Hypogonadotropic hypogonadism 1 with or without anosmia 
 308800	Keratosis follicularis spinulosa decalvans;Keratosis follicularis spinulosa decalvans, X-linked
 308905	Leber optic atrophy
-308930	Leigh syndrome, X-linked
 308990	Proteinuria, low molecular weight, with hypercalciuric nephrocalcinosis
 309000	Lowe syndrome
 309120	Spermatogenic failure, X-linked, 2
@@ -2095,8 +2109,8 @@ OMIM_ID	DISEASE
 309610	Prieto syndrome
 309620	Mental retardation-skeletal dysplasia
 309630	Metacarpal 4-5 fusion
-309800	Microphthalmia, syndrome 1;Microphthalmia, syndromic 1
-309801	Microphthalmia, syndromic 7
+309800	Microphthalmia, syndromic 1
+309801	Linear skin defects with multiple congenital anomalies 1
 309900	Mucopolysaccharidosis II
 310200	Duchenne muscular dystrophy
 310300	Emery-Dreifuss muscular dystrophy 1, X-linked
@@ -2112,11 +2126,11 @@ OMIM_ID	DISEASE
 311050	Optic atrophy 2, X-linked
 311070	Charcot-Marie-Tooth disease, X-linked recessive, 5
 311150	Jensen syndrome
-311200	Oral-facial-digital syndrome 1
+311200	Orofaciodigital syndrome I
 311250	Ornithine transcarbamylase deficiency
 311300	Otopalatodigital syndrome, type I
 311360	Premature ovarian failure 1
-311510	Waisman parkinsonism-mental retardation syndrome
+311510	Waisman syndrome
 311900	TARP syndrome
 312000	Panhypopituitarism, X-linked
 312060	Properdin deficiency, X-linked
@@ -2143,7 +2157,7 @@ OMIM_ID	DISEASE
 314300	Goeminne TKCR syndrome
 314390	VACTERL association, X-linked
 314400	Cardiac valvular dysplasia, X-linked
-314580	Wieacker-Wolf syndrome
+314580	Wieacker-Wolff syndrome
 314700	Blood group, XG system
 400003	Sertoli-cell-only syndrome
 400004	Retinitis pigmentosa, Y-linked
@@ -2168,7 +2182,7 @@ OMIM_ID	DISEASE
 600098	Ovarian carcinoma
 600101	Deafness, autosomal dominant 2A
 600105	Retinitis pigmentosa-12, autosomal recessive
-600110	Macular dystrophy, autosomal dominant, chromosome 6-linked;Stargardt disease 3
+600110	Stargardt disease 3
 600116	Parkinson disease, juvenile, type 2
 600118	Warburg micro syndrome 1
 600121	Rhizomelic chondrodysplasia punctata, type 3
@@ -2178,6 +2192,7 @@ OMIM_ID	DISEASE
 600142	CARASIL syndrome
 600143	Ceroid lipofuscinosis, neuronal, 8
 600145	Caudal regression syndrome
+600151	Bardet-Biedl syndrome 3
 600155	Hirschsprung disease
 600156	Hirschsprung disease
 600160	Orolaryngeal cancer, multiple,
@@ -2194,7 +2209,7 @@ OMIM_ID	DISEASE
 600209	Exostoses, multiple, type 3
 600223	Spinocerebellar ataxia 4
 600224	Spinocerebellar ataxia 5
-600231	Palmoplantar keratoderma, Bothnia type;Palmoplantar keratoderma, Bothnian type
+600231	Palmoplantar keratoderma, Bothnian type
 600251	Facial clefting, oblique, 1
 600257	Bor-Duane hydrocephalus contiguous gene syndrome
 600263	H. pylori infection;H. pylori infection
@@ -2210,6 +2225,7 @@ OMIM_ID	DISEASE
 600334	Tibial muscular dystrophy, tardive
 600361	Hereditary motor and sensory neuropathy V
 600363	Spastic paraplegia 6, autosomal dominant
+600373	CODAS syndrome
 600376	Telangiectasia, hereditary hemorrhagic, type 2
 600383	Mesomelia-synostoses syndrome
 600430	Brachydactyly-mental retardation syndrome
@@ -2233,7 +2249,7 @@ OMIM_ID	DISEASE
 600649	CPT deficiency, hepatic, type II
 600652	Deafness, autosomal dominant 4A
 600668	Chondrocalcinosis with early-onset osteoarthritis
-600669	Epilepsy, idiopathic generalized;Epilepsy, idiopathic generalized
+600669	Epilepsy, idiopathic generalized
 600700	Lipoma
 600721	D-2-hydroxyglutaric aciduria
 600737	Inclusion body myopathy, autosomal recessive
@@ -2247,27 +2263,25 @@ OMIM_ID	DISEASE
 600795	Dementia, familial, nonspecific
 600802	SCID, autosomal recessive, T-negative/B-positive type
 600803	Gallbladder disease 1
-600807	Asthma, diminished response to antileukotriene treatment in;Asthma, nocturnal;Asthma, protection against;Asthma;Asthma;Asthma;Asthma;Asthma;Asthma;Asthma;Asthma;Asthma;Asthma
+600807	Asthma, diminished response to antileukotriene treatment in;Asthma, nocturnal;Asthma, protection against;Asthma;Asthma;Asthma;Asthma;Asthma;Asthma;Asthma;Asthma
 600808	Enuresis, nocturnal, 2
 600845	Bleeding disorder due to P2RX1 defect
 600850	Schizophrenia
 600852	Retinitis pigmentosa 17
-600858	Cardiomyopathy, familial hypertrophic 6
+600858	Cardiomyopathy, hypertrophic 6
 600880	Budd-Chiari syndrome;Budd-Chiari syndrome
 600881	Cataract 10, multiple types
 600882	Charcot-Marie-Tooth disease, type 2B
 600883	Diabetes mellitus, insulin-dependent, 8
 600884	Cardiomyopathy, dilated 1B
 600886	Hyperferritinemia-cataract syndrome
-600887	Endometrial carcinoma
+600887	Endometrial carcinoma, somatic
 600901	Fanconi anemia, complementation group E
 600919	Cardiac arrhythmia, ankyrin-B-related;Long QT syndrome 4
 600920	Van den Ende-Gupta syndrome
-600935	Prinzmetal angina
 600946	Increased responsiveness to growth hormone
 600955	Obesity with impaired prohormone processing
 600962	Palmoplantar keratoderma, nonepidermolytic
-600964	Refsum disease, adult, with increased pipecolicacidemia
 600965	Deafness, autosomal dominant 6/14/38
 600969	Epiphyseal dysplasia, multiple, 3
 600971	Deafness, autosomal recessive 6
@@ -2281,7 +2295,7 @@ OMIM_ID	DISEASE
 601001	Epidermolysis bullosa simplex, recessive 1;Epidermolysis bullosa simplex, recessive 1
 601003	Brody myopathy
 601005	Timothy syndrome
-601042	Choreoathetosis/spasticity, episodic;Dystonia 9
+601042	Dystonia 9
 601067	Usher syndrome, type 1D;Usher syndrome, type 1D/F digenic;Usher syndrome, type 1D/F digenic
 601068	Epilepsy, myoclonic, adult familial, 1
 601071	Auditory neuropathy, autosomal recessive, 1;Deafness, autosomal recessive 9
@@ -2317,7 +2331,7 @@ OMIM_ID	DISEASE
 601318	Diabetes mellitus, insulin-dependent, 13
 601321	Neurofibromatosis-Noonan syndrome
 601331	Renal dysplasia, cystic
-601346	Martinez-Frias syndrome
+601338	CAPOS syndrome
 601349	Microphthalmia, syndromic 8
 601358	Nicolaides-Baraitser syndrome
 601362	DiGeorge syndrome/velocardiofacial syndrome complex-2
@@ -2327,7 +2341,7 @@ OMIM_ID	DISEASE
 601373	HIV infection
 601382	Charcot-Marie-Tooth disease, type 4B1
 601386	Deafness, autosomal recessive 12;Deafness, autosomal recessive 12, modifier of
-601388	Diabetes mellitus, insulin-dependent
+601388	Diabetes mellitus, insulin-dependent, 12
 601390	Van Maldergem syndrome 1
 601399	Platelet disorder, familial, with associated myeloid malignancy
 601406	B-cell non-Hodgkin lymphoma, high-grade
@@ -2340,14 +2354,13 @@ OMIM_ID	DISEASE
 601455	Charcot-Marie-Tooth disease, type 4D
 601457	Severe combined immunodeficiency, B cell-negative;Severe combined immunodeficiency, B cell-negative
 601458	Inflammatory bowel disease 2
-601462	Myasthenic syndrome, slow-channel congenital;Myasthenic syndrome, slow-channel congenital;Myasthenic syndrome, slow-channel congenital;Myasthenic syndrome, slow-channel congenital
+601462	Myasthenic syndrome, congenital, 1A, slow-channel
 601471	Facial paresis, hereditary congenital, 1
 601472	Charcot-Marie-Tooth disease, type 2D
 601486	Spermatogenic failure
 601487	Obesity, resistance to
-601489	Acid-labile subunit, deficiency of
 601492	Mucopolysaccharidosis type IX
-601493	Cardiomyopathy, dilated 1C;Left ventricular noncompaction 3, with or without dilated cardiomyopathy
+601493	Cardiomyopathy, dilated, 1C, with or without LVNC;Cardiomyopathy, hypertrophic, 24;Left ventricular noncompaction 3
 601494	Cardiomyopathy, dilated, 1D;Left ventricular noncompaction 6
 601495	Agammaglobulinemia 1
 601499	Rieger syndrome, type 2
@@ -2360,16 +2373,17 @@ OMIM_ID	DISEASE
 601547	Cataract 3, multiple types
 601550	Blood group, Swann
 601551	Blood group, Froese
+601552	Traboulsi syndrome
 601553	Hypotrichosis, congenital, with juvenile macular dystrophy
 601559	Stuve-Wiedemann syndrome/Schwartz-Jampel type 2 syndrome
 601583	Wilms tumor
 601596	Charcot-Marie-Tooth disease, type 4C
 601606	Trichoepithelioma, multiple familial, 1
-601626	Leukemia, acute myelogenous;Leukemia, acute myelogenous;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid, reduced survival in;Leukemia, acute myeloid, somatic;Myeloid leukemia, acute, M4/M4Eo subtype, somatic;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid
+601626	Leukemia, acute myeloid;Leukemia, acute myelogenous;Leukemia, acute myelogenous;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid, reduced survival in;Leukemia, acute myeloid, somatic;Leukemia, acute myeloid, somatic;Myeloid leukemia, acute, M4/M4Eo subtype, somatic;Leukemia, acute myeloid;Leukemia, acute myeloid;Leukemia, acute myeloid
 601631	Iridogoniodysgenesis, type 1;Iris hypoplasia and glaucoma
 601634	Neural tube defects, folate-sensitive;Neural tube defects, folate-sensitive;Neural tube defects;Spina bifida, folate-sensitive
 601650	Paragangliomas 2
-601665	Obesity, autosomal dominant;Obesity, mild, early-onset;Obesity, severe;Obesity, severe;Obesity, association with;Obesity, early-onset;Obesity, late-onset;Obesity, severe, and type II diabetes;Obesity;Obesity;Obesity;Obesity;Obesity;Obesity;Obesity, variation in;Obesity
+601665	Obesity, autosomal dominant;Obesity, mild, early-onset;Obesity, severe;Obesity, severe;Obesity;Obesity, association with;Obesity, early-onset;Obesity, late-onset;Obesity, severe, and type II diabetes;Obesity;Obesity;Obesity;Obesity;Obesity;Obesity, variation in
 601666	Diabetes mellitus, insulin-dependent, 15
 601675	Trichothiodystrophy;Trichothiodystrophy;Trichothiodystrophy, complementation group A
 601676	Acute insulin response
@@ -2403,7 +2417,6 @@ OMIM_ID	DISEASE
 601885	Cataract 14, multiple types
 601887	Malignant hyperthermia
 601888	Malignant hyperthermia
-601889	Lymphoma, diffuse large cell
 601894	Glomerulopathy with fibronectin deposits 2
 601920	Deafness, congenital heart defects, and posterior embryotoxon
 601941	Diabetes mellitus, insulin-dependent, 6
@@ -2437,13 +2450,13 @@ OMIM_ID	DISEASE
 602111	Metaphyseal anadysplasia 1;Spondyloepimetaphyseal dysplasia, Missouri type
 602124	Dystonia-7, torsion
 602134	Tremor, hereditary essential, 2
-602180	Metastasis efficiency, modification of
 602216	Melanoma, malignant, somatic
 602311	Leanness, inherited
 602347	Cholestasis, progressive familial intrahepatic 3
 602361	Gracile bone dysplasia
 602390	Hemochromatosis, type 2A
 602398	Desmosterolosis
+602400	Ichthyosis, congenital, autosomal recessive 11
 602401	Ectodermal dysplasia 8, hair/tooth/nail type
 602404	Parkinson disease 3
 602409	Leukemia, acute T-cell lymphoblastic
@@ -2451,11 +2464,11 @@ OMIM_ID	DISEASE
 602429	Glaucoma 1D, primary open angle
 602433	Amyotrophic lateral sclerosis 4, juvenile
 602447	Coronary artery disease
-602450	Severe combined immunodeficiency with sensitivity to ionizing radiation;Severe combined immunodeficiency, Athabascan type
-602452	Colorectal cancer with chromosomal instability
+602450	Severe combined immunodeficiency, Athabascan type
+602452	Colorectal cancer with chromosomal instability, somatic
 602459	Deafness, autosomal dominant 15
+602471	Short stature, auditory canal atresia, mandibular hypoplasia, skeletal abnormalities
 602473	Ethylmalonic encephalopathy
-602475	Ossification of posterior longitudinal ligament of spine;Ossification of the posterior longitudinal spinal ligaments
 602477	Febrile seizures, familial, 2
 602481	Migraine, familial basilar;Migraine, familial hemiplegic, 2
 602482	Axenfeld-Rieger syndrome, type 3;Rieger or Axenfeld anomalies
@@ -2477,7 +2490,7 @@ OMIM_ID	DISEASE
 602686	Lymphoma, somatic
 602690	Merkel cell carcinoma, somatic
 602722	Renal tubular acidosis, distal, autosomal recessive
-602723	Psoriasis
+602723	Psoriasis 2
 602771	Muscular dystrophy, rigid spine, 1
 602772	Retinitis pigmentosa 25
 602782	Histiocytosis-lymphadenopathy plus syndrome;Histiocytosis-lymphadenopathy plus syndrome
@@ -2490,7 +2503,7 @@ OMIM_ID	DISEASE
 603025	Leukemia, acute T-cell lymphoblastic
 603029	Herpes simplex encephalitis
 603030	Endotoxin hyporesponsiveness
-603034	Endplate acetylcholinesterase deficiency
+603034	Myasthenic syndrome, congenital, 5
 603040	Nonsmall cell lung cancer
 603041	Mitochondrial DNA depletion syndrome 1 
 603075	Macular degeneration, age-related;Age-related maculopathy;Macular degeneration, age-related, 1;Macular degeneration, age-related, reduced risk of;Macular degeneration, age-related, reduced risk of
@@ -2514,8 +2527,9 @@ OMIM_ID	DISEASE
 603373	Hyperthyroidism, familial gestational
 603383	Glaucoma 1, open angle, F
 603386	Thyroid carcinoma, nonmedullary, with cell oxyphilia
-603387	Megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome;Megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome;Megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome, somatic
+603387	Megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 1
 603388	Graves disease
+603415	Paroxysmal extreme pain disorder, 167400,
 603467	Fanconi anemia, complementation group F
 603471	Citrullinemia, adult-onset type II
 603511	Muscular dystrophy, limb-girdle, type 1E
@@ -2537,8 +2551,9 @@ OMIM_ID	DISEASE
 603649	Cone-rod dystrophy 7
 603663	Mental health wellness-1
 603664	Mental health wellness-2
+603671	Acromelic frontonasal dysostosis
 603678	Deafness, autosomal recessive 14
-603688	Prostate cancer, progression and metastasis of
+603688	Prostate cancer/brain cancer
 603689	Myopathy, proximal, with early respiratory muscle involvement
 603720	Deafness, autosomal recessive 16
 603736	SBBYSS syndrome
@@ -2579,7 +2594,7 @@ OMIM_ID	DISEASE
 604168	Congenital cataracts, facial dysmorphism, and neuropathy
 604169	Left ventricular noncompaction 1, with or without congenital heart defects
 604173	Poikiloderma with neutropenia
-604185	Moebius syndrome-3
+604185	Facial paresis, hereditary congenital, 2
 604187	Spastic paraplegia 10, autosomal dominant
 604201	Hepatic fibrosis
 604213	Chudley-McCullough syndrome
@@ -2592,7 +2607,7 @@ OMIM_ID	DISEASE
 604254	Dyslexia
 604258	Colorectal cancer, somatic
 604260	Leukemia, acute promyelocytic, STAT5B/RARA type
-604271	Short stature;Short stature
+604271	Growth hormone insensitivity, partial
 604273	Mitochondrial complex V  deficiency, nuclear type 1
 604278	Renal tubular acidosis, proximal, with ocular abnormalities
 604286	Muscular dystrophy, limb-girdle, type 2E
@@ -2617,7 +2632,7 @@ OMIM_ID	DISEASE
 604370	Breast-ovarian cancer, familial, 1
 604373	Breast and colorectal cancer
 604377	Cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 1
-604379	Hypotrichosis, localized, autosomal recessive 2;Woolly hair, autosomal recessive 2 with or without hypotrichosis
+604379	Hypotrichosis 7;Woolly hair, autosomal recessive 2 with or without hypotrichosis
 604387	Nephronophthisis 3
 604391	Ataxia-telangiectasia-like disorder
 604393	Cone-rod dystrophy;Leber congenital amaurosis 4;Retinitis pigmentosa, juvenile
@@ -2628,7 +2643,7 @@ OMIM_ID	DISEASE
 604432	Spinocerebellar ataxia 11
 604443	Myelodysplastic syndrome;Myelogenous leukemia, acute
 604454	Welander distal myopathy;Welander distal myopathy
-604484	Hereditary motor and sensory neuropathy, proximal type
+604484	Hereditary motor and sensory neuropathy, Okinawa type
 604498	Thrombocytopenia, congenital amegakaryocytic
 604499	Hyperlipidemia, combined, 2
 604519	Inflammatory bowel disease 3
@@ -2660,14 +2675,13 @@ OMIM_ID	DISEASE
 604906	Schizophrenia
 604928	Wolfram syndrome 2
 604931	Cortisone reductase deficiency 1
-605013	Microhydranencephaly
+605013	Microhydranencephaly;Microhydranencephaly
 605019	Hypobetalipoproteinemia, familial, 2
 605021	Myoclonic epilepsy, infantile, familial
 605027	Lymphoma, non-Hodgkin;Lymphoma, non-Hodgkin, somatic;Lymphoma, non-Hodgkin, somatic;Non-Hodgkin lymphoma, somatic
 605039	Bohring-Opitz syndrome
 605041	Brooke-Spiegler syndrome;Spiegler-Brooke syndrome
 605074	Renal cell carcinoma, papillary, 1, familial and somatic;Renal cell carcinoma, papillary
-605075	Renal cell carcinoma, papillary, 3
 605115	Hypertension, early-onset, autosomal dominant, with exacerbation in pregnancy
 605130	Wiedemann-Steiner syndrome
 605192	Deafness, autosomal dominant 23
@@ -2676,6 +2690,7 @@ OMIM_ID	DISEASE
 605218	Systemic lupus erythematosus
 605225	Inflammatory bowel disease 7
 605229	Spastic paraplegia 14, autosomal recessive
+605231	Bardet-Biedl syndrome 6
 605244	Carney complex, type II
 605249	Sebastian syndrome
 605253	Neuropathy, congenital hypomyelinating, 1;Neuropathy, congenital hypomyelinating
@@ -2686,7 +2701,7 @@ OMIM_ID	DISEASE
 605282	Temtamy preaxial brachydactyly syndrome
 605285	Neuropathy, hereditary motor and sensory, Russe type;Neuropathy, motor and sensory, Russe type
 605289	Split-hand/foot malformation 4
-605293	Optic atrophy-4
+605293	Optic atrophy 4
 605309	Macrocephaly/autism syndrome
 605352	Malignant fibrous histiocytoma
 605355	Nemaline myopathy 5, Amish type
@@ -2700,7 +2715,7 @@ OMIM_ID	DISEASE
 605380	Osteomalacia, tumor-induced
 605387	Cataract 31, multiple types
 605388	Cerebral palsy, ataxic, autosomal recessive
-605389	Hypotrichosis simplex
+605389	Hypotrichosis 1
 605392	Myeloproliferative disorder
 605407	Segawa syndrome, recessive
 605419	Schizophrenia 10
@@ -2715,20 +2730,20 @@ OMIM_ID	DISEASE
 605543	Parkinson disease 4
 605544	Fibromatosis, gingival, 2
 605549	Cone-rod dystrophy 8
-605552	Abdominal obesity-metabolic syndrome;Metabolic syndrome, protection against
+605552	Abdominal obesity-metabolic syndrome 1;Metabolic syndrome, protection against
 605572	Abdominal obesity-metabolic syndrome
 605582	Cardiomyopathy, dilated, 1K
 605583	Deafness, autosomal dominant 25
 605588	Charcot-Marie-Tooth disease, type 2B1
 605589	Charcot-Marie-Tooth disease, type 2B2
-605594	Deafness, autosomal dominant 36, with dentinogenesis
+605594	Deafness, autosomal dominant 39, with dentinogenesis
 605598	Diabetes mellitus, insulin-dependent, 18
 605606	Psoriasis;Psoriasis, protection against
 605635	Hyperaldosteronism, familial, type II
-605637	Inclusion body myopathy-3
+605637	Proximal myopathy and ophthalmoplegia
 605642	Thyroid carcinoma, papillary, with papillary renal neoplasia
 605670	Retinal degeneration, late-onset, autosomal dominant
-605676	Dilated cardiomyopathy with woolly hair and keratoderma
+605676	Cardiomyopathy, dilated, with woolly hair and keratoderma
 605711	Multiple mitochondrial dysfunctions syndrome 1
 605714	Cerebral amyloid angiopathy, Dutch, Italian, Iowa, Flemish, Arctic variants
 605724	Fanconi anemia, complementation group D1
@@ -2738,13 +2753,13 @@ OMIM_ID	DISEASE
 605738	Microphthalmia with coloboma 2
 605746	Anisomastia
 605749	Cataract 26, multiple types
-605750	Exudative vitreoretinopathy-3
+605750	Exudative vitreoretinopathy 3
 605751	Seizures, benign familial infantile, 2
-605779	Nail dysplasia, isolated congenital
+605779	Nail disorder, nonsyndromic congenital, 7
 605803	Dermatitis, atopic
 605804	Dermatitis, atopic
 605805	Dermatitis, atopic
-605809	Myasthenia, familial infantile, 1
+605809	Myasthenia, familial infantile, 1;Myasthenic syndrome, congenital, 4A, slow-channel
 605814	Citrullinemia, type II, neonatal-onset
 605818	Deafness, autosomal recessive 27
 605820	Nonaka myopathy
@@ -2756,13 +2771,13 @@ OMIM_ID	DISEASE
 605872	SARS infection, protection against
 605899	Glycine encephalopathy;Glycine encephalopathy;Glycine encephalopathy
 605909	Parkinson disease 6, early onset
-605910	Reduced triglycerides
 605911	HMG-CoA synthase-2 deficiency
 605913	Bleeding disorder, east Texas type
+605921	Myopathy, tubular aggregate, 1 160565
 605934	Holoprosencephaly-6
 605967	Acropectoral syndrome
 605990	Nephrolithiasis, uric acid
-606002	Ataxia-ocular apraxia-2
+606002	Spinocerebellar ataxia, autosomal recessive 1
 606003	Transaldolase deficiency
 606012	Deafness, autosomal dominant 18
 606035	Fasting insulin level quantitative trait locus 1
@@ -2772,7 +2787,7 @@ OMIM_ID	DISEASE
 606056	Congenital disorder of glycosylation, type IIb
 606068	Retinitis pigmentosa 28
 606069	Hemochromatosis, type 4
-606070	Myopathy, distal 2
+606070	Amyotrophic lateral sclerosis 21
 606071	Hereditary motor and sensory neuropathy, type IIc
 606072	Rippling muscle disease
 606077	Megakaryoblastic leukemia, acute
@@ -2780,6 +2795,7 @@ OMIM_ID	DISEASE
 606082	Goiter, multinodular, 3
 606129	Diamond-Blackfan anemia 2
 606159	Neurodegeneration with brain iron accumulation 3
+606164	Diamond Blackfan anemia 15 with mandibulofacial dysostosis
 606170	Genitopatellar syndrome
 606176	Diabetes mellitus, permanent neonatal;Diabetes mellitus, permanent neonatal;Diabetes mellitus, permanent neonatal;Diabetes mellitus, permanent neonatal, with neurologic features;Diabetes, permanent neonatal
 606179	Aneurysmal bone cysts
@@ -2791,8 +2807,6 @@ OMIM_ID	DISEASE
 606240	Thyroid carcinoma, nonmedullary, 1
 606242	Kondoh syndrome
 606243	Alveolar soft-part sarcoma
-606245	Endometrial stromal tumors
-606246	Endometrial stromal tumors
 606255	Stature QTL 1
 606256	Stature QTL 2
 606257	Stature QTL 3
@@ -2808,7 +2822,7 @@ OMIM_ID	DISEASE
 606392	MODY, type IV
 606394	Maturity-onset diabetes of the young 6
 606407	Hypotonia-cystinuria syndrome
-606408	Ehlers-Danlos syndrome, autosomal recessive, due to tenascin X deficiency
+606408	Ehlers-Danlos syndrome due to tenascin X deficiency
 606438	Huntington disease-like 2
 606445	Persistent polyclonal B-cell lymphocytosis
 606451	Deafness, autosomal dominant 30
@@ -2849,8 +2863,9 @@ OMIM_ID	DISEASE
 606708	Split-hand/foot malformation 5
 606711	Specific language impairment QTL, 1
 606712	Specific language impairment QTL, 2
-606713	Van der woude syndrome 2
+606713	Van der Woude syndrome 2
 606719	Pancreatic cancer/melanoma syndrome
+606721	Partial lipodystrophy, congenital cataracts, and neurodegeneration syndrome
 606744	Seckel syndrome 2
 606762	Hyperinsulinism-hyperammonemia syndrome
 606763	Ciliary dyskinesia, primary, 2
@@ -2889,6 +2904,7 @@ OMIM_ID	DISEASE
 606989	Lung cancer, protection against, in smokers
 606995	Senior-Loken syndrome 3
 606996	Senior-Loken syndrome 4
+607004	Brachydactyly, type A1, B
 607014	Mucopolysaccharidosis Ih
 607015	Mucopolysaccharidosis Ih/s
 607016	Mucopolysaccharidosis Is
@@ -2931,7 +2947,7 @@ OMIM_ID	DISEASE
 607250	Spinocerebellar ataxia, autosomal recessive with axonal neuropathy
 607258	Hypercalciuria, absorptive
 607259	Spastic paraplegia 7, autosomal recessive
-607271	Immunodeficiency due to CASP8 deficiency
+607271	Autoimmune lymphoproliferative syndrome, type IIB
 607276	Resting heart rate
 607277	Asthma
 607279	Systemic lupus erythematosus with hemolytic anemia
@@ -2971,15 +2987,15 @@ OMIM_ID	DISEASE
 607483	Thiamine metabolism dysfunction syndrome 2 
 607485	Aphasia, primary progressive;Frontotemporal lobar degeneration with ubiquitin-positive inclusions
 607486	Blood group, Knops system
-607487	Cardiomyopathy, dilated, 1N
+607487	Cardiomyopathy, hypertrophic, 25
 607488	Dystonia-15, myoclonic
 607498	Migraine with or without aura
 607499	Bulimia nervosa, age of onset of weight loss in;Bulimia nervosa
 607501	Migraine without aura
 607507	Psoriatic arthritis;Psoriatic arthritis
 607508	Migraine with or without aura
-607514	Obesity;Obesity
-607516	Migraine with or without aura;Migraine, familial hemiplegic
+607514	Obesity
+607516	Migraine with or without aura;Migraine, familial hemiplegic, 4
 607523	Toenail dystrophy, isolated
 607536	Mucoepidermoid salivary gland carcinoma
 607537	Mucoepidermoid salivary gland carcinoma
@@ -2989,7 +3005,7 @@ OMIM_ID	DISEASE
 607584	Spastic paraplegia 24, autosomal recessive
 607585	Lymphoma, B-cell non-Hodgkin, somatic;Lymphoma, mantle cell;T-cell prolymphocytic leukemia, somatic
 607594	Immunodeficiency, common variable, 1
-607595	Brain small vessel disease with Axenfeld-Rieger anomaly;Brain small vessel disease with hemorrhage
+607595	Brain small vessel disease with or without ocular anomalies
 607596	Pontocerebellar hypoplasia type 1A
 607598	Lethal congenital contractural syndrome 2
 607602	Ichthyosis, cyclic, with epidermolytic hyperkeratosis;Ichthyosis, cyclic, with epidermolytic hyperkeratosis
@@ -3021,6 +3037,7 @@ OMIM_ID	DISEASE
 607706	Charcot-Marie-Tooth disease, axonal, with vocal cord paresis
 607721	Noonan-like syndrome with loose anagen hair
 607728	Porokeratosis 4, disseminated superficial actinic
+607731	Charcot-Marie-Tooth disease, axonal, type 2H
 607734	Charcot-Marie-Tooth disease, type 1F
 607736	Charcot-Marie-Tooth disease, type 2J
 607745	Seizures, benign familial infantile, 3
@@ -3045,7 +3062,6 @@ OMIM_ID	DISEASE
 607847	Neutropenia, nonimmune chronic idiopathic, of adults
 607850	Osteoarthritis
 607853	Panic disorder 2
-607854	Maculopathy, bull's-eye
 607855	Muscular dystrophy, congenital merosin-deficient;Muscular dystrophy, congenital, due to partial LAMA2 deficiency
 607857	Psoraisis
 607864	Caudal duplication anomaly
@@ -3053,7 +3069,7 @@ OMIM_ID	DISEASE
 607872	Chromosome 1p36 deletion syndrome
 607876	Epilepsy, myoclonic, adult familial, 2
 607893	Ovarian cancer
-607903	Hypotrichosis, localized, autosomal recessive
+607903	Hypotrichosis 6
 607906	Congenital disorder of glycosylation, type Ii
 607907	Dermatofibrosarcoma protuberans
 607921	Retinitis pigmentosa 30
@@ -3061,7 +3077,7 @@ OMIM_ID	DISEASE
 607936	Exfoliative ichthyosis, autosomal recessive, ichthyosis bullosa of Siemens-like
 607941	Atrial septal defect 2
 607944	Spondyloenchondrodysplasia with immune dysregulation
-607948	Mycobacterium tuberculosis infection, protection against;Mycobacterium tuberculosis, protection against;Mycobacterium tuberculosis, protection against;Mycobacterium tuberculosis;Mycobacterium tuberculosis;Mycobacterium tuberculosis;Mycobacterium tuberculosis;Mycobacterium tuberculosis;Tuberculosis, protection against;Tuberculosis, protection against;Tuberculosis;Tuberculosis
+607948	Mycobacterium tuberculosis, protection against;Mycobacterium tuberculosis, protection against;Mycobacterium tuberculosis;Mycobacterium tuberculosis;Mycobacterium tuberculosis;Mycobacterium tuberculosis;Mycobacterium tuberculosis;Tuberculosis infection, protection against;Tuberculosis, protection against;Tuberculosis, protection against;Tuberculosis;Tuberculosis
 607949	Tuberculosis
 607965	Systemic lupus erythematosus with nephritis
 607966	Systemic lupus erythematosus with nephritis
@@ -3079,7 +3095,7 @@ OMIM_ID	DISEASE
 608049	Autism
 608051	Macular dystrophy, retinal, 2
 608088	Neuropathy, hereditary sensory, type IB
-608089	Endometrial cancer;Endometrial cancer, familial;Endometrial carcinoma, somatic;Endometrial carcinoma, somatic
+608089	Endometrial cancer, familial;Endometrial carcinoma, somatic;Endometrial carcinoma, somatic;Endometrial cancer
 608091	Joubert syndrome 2
 608093	Congenital disorder of glycosylation, type Ij
 608096	Epilepsy, familial temporal lobe, 2
@@ -3091,9 +3107,9 @@ OMIM_ID	DISEASE
 608106	Immunodeficiency with hyper IgM, type 5
 608115	Ovarian hyperstimulation syndrome
 608118	Zinc deficiency, transient neonatal
-608133	Retinitis pigmentosa 7;Retinitis pigmentosa 7, digenic;Retinitis pigmentosa, digenic
+608133	Leber congenital amaurosis 18;Retinitis pigmentosa 7 and digenic;Retinitis pigmentosa 7, digenic
 608156	Nablus mask-like facial syndrome
-608161	Foveomacular dystrophy, adult-onset, with choroidal neovascularization;Macular dystrophy, vitelliform;Vitelliform macular dystrophy, adult-onset
+608161	Macular dystrophy, vitelliform, 3
 608173	Autoimmune thyroid disease
 608174	Autoimmune thyroid disease
 608175	Autoimmune thyroid disease;Autoimmune thyroid disease
@@ -3121,13 +3137,12 @@ OMIM_ID	DISEASE
 608323	Charcot-Marie-Tooth disease, dominant intermediate C
 608328	Weill-Marchesani syndrome 2, dominant
 608340	Charcot-Marie-Tooth disease, recessive intermediate, A
-608345	Nystagmus 3, congenital
+608345	Nystagmus 3, congenital, autosomal dominant
 608354	Capillary malformation-arteriovenous malformation
 608355	Parkes Weber syndrome
 608358	Myopathy, myosin storage
 608361	Spondyloepiphyseal dysplasia, Kimberley type
 608363	Chromosome 22q11.2 microduplication syndrome
-608366	Deafness, nonsyndromic
 608367	Myopia 17
 608371	Orofacial cleft 4
 608372	Deafness, autosomal dominant 49
@@ -3168,6 +3183,7 @@ OMIM_ID	DISEASE
 608565	Deafness, autosomal recessive 35
 608567	Sick sinus syndrome 1
 608569	Cardiomyopathy, dilated, 1O
+608572	Burn-McKeown syndrome
 608579	Hypersensitivity syndrome, carbamazepine-induced;Stevens-Johnson syndrome;Toxic epidermal necrolysis
 608583	Atrial fibrillation, familial, 1
 608584	Asthma
@@ -3176,7 +3192,7 @@ OMIM_ID	DISEASE
 608594	Lipodystrophy, congenital generalized, type 1
 608611	Ribose 5-phosphate isomerase deficiency
 608612	Mandibuloacral dysplasia with type B lipodystrophy
-608615	Oligodontia-colorectal cancer syndrome
+608615	Oligodontia-colorectal cancer syndrome;Oligodontia-colorectal cancer syndrome
 608622	Hypertension, diastolic, resistance to
 608627	Amyotrophic lateral sclerosis 8
 608629	Joubert syndrome-3
@@ -3195,7 +3211,6 @@ OMIM_ID	DISEASE
 608652	Deafness, autosomal dominant 47
 608653	Deafness, autosomal recessive 32
 608654	Neuropathy, hereditary sensory and autonomic, type V
-608664	Seckel syndrome 3
 608673	Charcot-Marie-Tooth disease, axonal, type 2L
 608681	Spondylocostal dysostosis 2, autosomal recessive
 608687	Spinocerebellar ataxia 20
@@ -3208,10 +3223,10 @@ OMIM_ID	DISEASE
 608716	Microcephaly 5, primary, autosomal recessive
 608728	Spondyloepimetaphyseal dysplasia
 608747	Growth retardation with deafness and mental retardation due to IGF1 deficiency
-608751	Cardiomyopathy, familial hypertrophic, 8
-608758	Cardiomyopathy, familial hypertrophic, 10
+608751	Cardiomyopathy, hypertrophic, 8
+608758	Cardiomyopathy, hypertrophic, 10
 608762	Epilepsy, idiopathic generalized
-608765	Scoliosis, idiopathic 3
+608765	Scoliosis, isolated
 608768	Spinocerebellar ataxia 8;Spinocerebellar ataxia 8
 608774	Dopamine receptor D2, reduced brain density of
 608776	Congenital disorder of glycosylation, type Il
@@ -3244,14 +3259,14 @@ OMIM_ID	DISEASE
 608898	Hemophagocytic lymphohistiocytosis, familial, 3
 608901	Coronary heart disease
 608902	Codeine sensitivity;Debrisoquine sensitivity
-608908	Myopia 6;Myopia-6
-608930	Myasthenic syndrome, fast-channel congenital;Myasthenic syndrome, fast-channel congenital;Myasthenic syndrome, fast-channel congenital
-608931	Myasthenic syndrome, congenital, associated with acetylcholine receptor deficiency;Myasthenic syndrome, congenital, associated with acetylcholine receptor deficiency;Myasthenic syndrome, congenital, associated with acetylcholine receptor deficiency;Myasthenic syndrome, congenital, associated with acetylcholine receptor deficiency;Myasthenic syndrome, congenital, associated with facial dysmorphism and acetylcholine receptor deficiency
+608908	Myopia 6
+608930	Myasthenic syndrome, congenital, 1B, fast-channel
+608931	Myasthenic syndrome, congenital, 4C, associated with acetylcholine receptor deficiency
 608932	Keratoconus 2
 608935	Lung cancer
 608940	Spondylometaphyseal dysplasia with cone-rod dystrophy
 608957	CD8 deficiency, familial
-608967	Loeys-Dietz syndrome, type 2A
+608970	Macular dystrophy, butterfly-shaped pigmentary, 2
 608971	Severe combined immunodeficiency, T cell-negative, B-cell/natural killer-cell positive;Severe combined immunodeficiency, T-cell negative, B-cell/natural killer cell-positive type
 608978	Meacham syndrome
 608980	Bifid nose with or without anorectal and renal anomalies
@@ -3277,7 +3292,8 @@ OMIM_ID	DISEASE
 609056	Amish infantile epilepsy syndrome
 609057	Nephropathy with pretibial epidermolysis bullosa and deafness
 609060	Combined oxidative phosphorylation deficiency 1
-609069	Diabetes mellitus, permanent neonatal, with cerebellar agenesis
+609069	Pancreatic and cerebellar agenesis
+609070	Hemoglobin, high altitude adaptation
 609113	Telomere length, mean leukocyte
 609115	Limb-girdle muscular dystrophy, type 1G
 609116	Respiratory rhythmicity in sleep
@@ -3285,7 +3301,7 @@ OMIM_ID	DISEASE
 609129	Auditory neuropathy, autosomal dominant, 1
 609135	Aplastic anemia;Aplastic anemia
 609136	PCWH syndrome
-609140	Corneal dystrophy polymorphous posterior, 2
+609140	Corneal dystrophy, posterior polymorphous 2
 609141	Corneal dystrophy, posterior polymorphous, 3
 609148	Malaria, mild
 609152	Hyperthyroidism, nonautoimmune
@@ -3295,11 +3311,11 @@ OMIM_ID	DISEASE
 609165	Ichthyosis with confetti
 609179	Migraine with aura
 609180	Congenital disorder of glycosylation, type If
-609192	Loeys-Dietz syndrome, type 1A
+609192	Loeys-Dietz syndrome, type 1
 609195	Spastic paraplegia 26, autosomal recessive;Spastic paraplegia 26, autosomal recessive
 609197	Glucocorticoid deficiency 3
 609200	Myopathy, myofibrillar, 3
-609218	Foveal hypoplasia and anterior segment dysgenesis
+609218	Foveal hypoplasia 2, with or without optic nerve misrouting and/or anterior segment dysgenesis
 609220	Bruck syndrome 2
 609227	Griscelli syndrome, type 3
 609241	Schindler disease, type I;Schindler disease, type III
@@ -3312,7 +3328,7 @@ OMIM_ID	DISEASE
 609258	Myopia 9
 609259	Myopia 10
 609260	Charcot-Marie-Tooth disease, type 2A2
-609261	Stuttering, familial persistent 2
+609261	Stuttering, familial persistent, 2
 609265	Li-Fraumeni syndrome
 609266	Li-Fraumeni syndrome 3
 609270	Spinocerebellar ataxia, autosomal recessive 7
@@ -3322,6 +3338,7 @@ OMIM_ID	DISEASE
 609284	CAP myopathy 1;Nemaline myopathy 1, autosomal dominant or recessive
 609285	CAP myopathy 2;Nemaline myopathy 4, autosomal dominant
 609286	Progressive external ophthalmoplegia, autosomal dominant, 3
+609289	Syncope, familial vasovagal
 609304	Epileptic encephalopathy, early infantile, 3
 609306	Spinocerebellar ataxia 26
 609307	Spinocerebellar ataxia 27
@@ -3332,7 +3349,7 @@ OMIM_ID	DISEASE
 609313	MEDNIK syndrome
 609319	Hematocrit/hemoglobin quantitative trait locus 1
 609320	Hematocrit/hemoglobin quantitative trait locus 2
-609322	Rhabdoid predisposition syndrome 1;Rhabdoid tumors, somatic
+609322	Rhabdoid tumors, somatic;Rhabdoid predisposition syndrome 1
 609334	Chromosome 18 pericentric inversion
 609338	Carotid intimal medial thickness 1
 609340	Spastic paraplegia 28, autosomal recessive
@@ -3349,6 +3366,7 @@ OMIM_ID	DISEASE
 609423	AIDS, delayed/rapid progression to;AIDS, rapid progression to;AIDS, resistance to;AIDS, slow progression to;AIDS, slow progression to;HIV infection, resistance to;HIV type 1;HIV-1 viremia;HIV-1, resistance to;HIV-1;HIV/AIDS;HIV1 infection, resistance to;HIV1, resistance to;Rapid progression to AIDS from HIV1 infection
 609425	Chromosome 3q29 microdeletion syndrome
 609428	Tukel syndrome
+609432	Syndactyly, mesoaxial synostotic, with phalangeal reduction
 609439	Deafness, autosomal recessive 48
 609441	Chrondrodysplasia, acromesomelic, with genital anomalies
 609446	Generalized epilepsy and paroxysmal dyskinesia
@@ -3387,6 +3405,7 @@ OMIM_ID	DISEASE
 609634	Migraine, familial hemiplegic, 3
 609637	Holoprosencephaly-5
 609638	Epidermolysis bullosa, lethal acantholytic
+609640	Frias syndrome
 609646	Deafness, autosomal recessive 42
 609647	Deafness, autosomal recessive 46
 609649	Trichilemmal cyst 1
@@ -3407,7 +3426,7 @@ OMIM_ID	DISEASE
 609757	Chromosome 7q11.23 duplication syndrome
 609782	Aortic aneurysm, familial abdominal 2
 609790	Alzheimer disease-11
-609796	Peeling skin syndrome, acral type
+609796	Peeling skin syndrome 2
 609800	Epilepsy, generalized, with febrile seizures plus, type 4
 609812	Maturity-onset diabetes of the young, type VIII
 609813	Spondylocostal dysostosis 3, autosomal recessive
@@ -3456,7 +3475,7 @@ OMIM_ID	DISEASE
 610031	Polymicrogyria, symmetric or asymmetric
 610042	Cortical dysplasia-focal epilepsy syndrome;Pitt-Hopkins like syndrome 1
 610048	Corneal dystrophy, congenital stromal
-610064	Opioid dependence;Opioid dependence
+610064	Opioid dependence
 610065	Systemic lupus erythematosus
 610066	Systemic lupus erythematosus
 610069	Polyposis syndrome, hereditary mixed, 2
@@ -3465,9 +3484,10 @@ OMIM_ID	DISEASE
 610092	Microphthalmia with coloboma 3
 610093	Microphthalmia, isolated 2
 610099	Myopathy, distal 3
+610100	Giant axonal neuropathy 2, autosomal dominant
 610102	C7 deficiency
 610114	Stature QTL 8
-610125	Microphthalmia, syndromic 5;Retinal dystrophy, early-onset, and pituitary dysfunction
+610125	Microphthalmia, syndromic 5;Retinal dystrophy, early-onset, with or without pituitary dysfunction
 610127	Ceroid lipofuscinosis, neuronal, 10
 610131	Progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant 4
 610140	Heart-hand syndrome, Slovenian type
@@ -3479,8 +3499,8 @@ OMIM_ID	DISEASE
 610155	Diabetes mellitus, insulin-dependent, 19
 610156	Mental retardation, truncal obesity, retinal dystrophy, and micropenis
 610158	Corneal dystrophy, Fuchs endothelial, 2
-610163	Immunodeficiency due to defect in CD3-zeta
-610168	Loeys-Dietz syndrome, type 1B
+610163	Immunodeficiency 25
+610168	Loeys-Dietz syndrome, type 2
 610170	Kyphoscoliosis 1
 610181	Aicardi-Goutieres syndrome 2
 610185	Cerebellar ataxia, mental retardation, and dysequilibrium syndrome 2
@@ -3490,7 +3510,8 @@ OMIM_ID	DISEASE
 610193	Arrhythmogenic right ventricular dysplasia 10
 610198	3-methylglutaconic aciduria, type V
 610199	Diabetes mellitus, neonatal, with congenital hypothyroidism
-610202	Cataract, pulverulent or cerulean, with or without microcornea
+610202	Cataract 21, multiple types
+610204	Pontocerebellar hypoplasia type 5
 610205	Alagille syndrome 2
 610212	Deafness, autosomal recessive 66
 610213	Aneurysm, intracranial berry, 4
@@ -3517,7 +3538,7 @@ OMIM_ID	DISEASE
 610294	Intelligence QTL3
 610295	Intelligence QTL3
 610297	Parkinson disease 13
-610313	Cold-induced sweating syndrome 1
+610313	Cold-induced sweating syndrome 2
 610320	Myopia 14
 610321	Prostate cancer, hereditary, 7
 610329	Aicardi-Goutieres syndrome 3
@@ -3531,9 +3552,7 @@ OMIM_ID	DISEASE
 610374	Diabetes mellitus, transient neonatal 2
 610377	Mevalonic aciduria
 610379	West nile virus
-610380	Loeys-Dietz syndrome, type 2B
 610381	Cone-rod dystrophy 11
-610402	Aneurysm, intracranial berry, 5
 610419	Deafness, autosomal recessive 68
 610420	Preauricular tag, isolated, autosomal dominant, 1
 610422	Alopecia-mental retardation syndrome 2
@@ -3564,7 +3583,7 @@ OMIM_ID	DISEASE
 610535	Glaucoma 1, open angle, M
 610536	Mandibulofacial dysostosis, Guion-Almeida type
 610539	Gaucher disease, atypical
-610542	Myasthenia, congenital, with tubular aggregates 1
+610542	Myasthenia, congenital, 12, with tubular aggregates
 610543	Chromosome 16p13.3 deletion syndrome
 610549	Diabetes mellitus, insulin-resistant, with acanthosis nigricans
 610551	Herpes simplex encephalitis
@@ -3604,8 +3623,7 @@ OMIM_ID	DISEASE
 610759	Cornelia de Lange syndrome 3
 610760	Cholesterol level QTL 2
 610761	High density lipoprotein cholesterol level QTL 5
-610762	High density lipoprotien cholesterol level QTL6
-610765	Ichthyosis with hypotrichosis
+610762	High density lipoprotein cholesterol level QTL6
 610768	Congenital disorder of glycosylation, type Im
 610773	Mitochondrial phosphate carrier deficiency
 610798	Immunodeficiency due to defect in MAPBP-interacting protein
@@ -3674,7 +3692,7 @@ OMIM_ID	DISEASE
 611105	Leukoencephalopathy with brain stem and spinal cord involvement and lactate elevation
 611107	Mental retardation, autosomal recessive, 4
 611109	Cinnamon odor, pleasantness of
-611126	ACAD9 deficiency
+611126	Mitochondrial complex I deficiency due to ACAD9 deficiency
 611131	Retinitis pigmentosa 37
 611134	Meckel syndrome 4
 611136	Epilepsy, childhood absence;Epilepsy, juvenile myoclonic
@@ -3728,7 +3746,7 @@ OMIM_ID	DISEASE
 611497	Osteopetrosis, autosomal recessive 6
 611498	Nephronophthisis 7
 611515	Febrile seizures, familial, 7
-611521	Tyrosine kinase 2 deficiency
+611521	Immunodeficiency 35
 611523	Pontocerebellar hypoplasia, type 6
 611528	Arrhythmogenic right ventricular dysplasia 12
 611535	Major affective disorder 5
@@ -3751,7 +3769,7 @@ OMIM_ID	DISEASE
 611598	Autoimmune disease;Celiac disease
 611603	Lissencephaly 3
 611615	Cardiomyopathy, dilated, 1X
-611630	Epilepsy, familial mesial temporal lobe
+611630	Epilepsy, familial temporal lobe, 3
 611631	Epilepsy, familial temporal lobe, 4
 611634	Febrile seizures, familial, 9
 611637	Primary lateral sclerosis, adult, 1
@@ -3764,23 +3782,24 @@ OMIM_ID	DISEASE
 611719	Combined oxidative phosphorylation deficiency 5
 611721	Combined SAP deficiency
 611722	Krabbe disease, atypical
-611724	Skin/hair/eye pigmentation 8, freckling
+611724	Skin/hair/eye pigmentation, variation in, 8
 611726	Epilepsy, progressive myoclonic 3, with or without intracellular inclusions
 611731	Adenoma, periampullary, somatic
 611742	Skin/hair/eye pigmentation 9, brown/nonbrown eyes;Skin/hair/eye pigmentation 9, dark/light hair
 611755	Leber congenital amaurosis 10
 611762	Familial cold autoinflammatory syndrome 2
 611771	Lipoprotein glomerulopathy
-611773	Angiopathy, hereditary, with nephropathy, aneurysms, and muscle
+611773	Angiopathy, hereditary, with nephropathy, aneurysms, and muscle cramps
 611775	Kawasaki disease
 611777	Brugada syndrome 2
 611783	Erythrocytosis, familial, 4
 611788	Aortic aneurysm, familial thoracic 6
 611804	Elliptocytosis-1
-611809	Bestrophinopathy
+611809	Bestrophinopathy, autosomal recessive
 611812	SERKAL syndrome
+611816	Temple-Baraitser syndrome
 611818	Long QT syndrome 9
-611819	Long QT syndrome-10
+611819	Atrial fibrillation, familial, 17;Long QT syndrome-10
 611820	Long QT syndrome-11
 611862	White blood cell count QTL
 611863	Microtia with nasolacrimal duct imperforation and eye coloboma
@@ -3841,7 +3860,7 @@ OMIM_ID	DISEASE
 612089	Hypophosphatemic rickets and hyperparathyroidism
 612095	Retinitis pigmentosa 41
 612096	Otosclerosis 8
-612098	Cardiomyopathy, familial hypertrophic, 11
+612098	Cardiomyopathy, hypertrophic, 11
 612099	Trichoepithelioma, multiple familial, 2
 612100	Autism
 612108	Fasting plasma glucose level QTL 1
@@ -3850,11 +3869,11 @@ OMIM_ID	DISEASE
 612113	Bone mineral density QTL 10
 612114	Bone mineral density QTL 11
 612119	Trehalase deficiency
-612124	Cardiomyopathy, familial hypertrophic, 12
+612124	Cardiomyopathy, hypertrophic, 12
 612126	GLUT1 deficiency syndrome 2
 612132	Ectodermal dysplasia, anhidrotic, with T-cell immunodeficiency
 612138	Epidermolysis bullosa simplex with pyloric atresia
-612158	Cardiomyopathy, dilated, 1AA
+612158	Cardiomyopathy, dilated, 1AA, with or without LVNC;Cardiomyopathy, hypertrophic, 23, with or without LVNC
 612160	Histiocytoma, angiomatoid fibrous, somatic
 612161	Aneurysm, intracranial berry, 7
 612162	Aneurysm, intracranial berry, 8
@@ -3875,8 +3894,9 @@ OMIM_ID	DISEASE
 612231	Colorectal cancer
 612232	Colorectal cancer
 612233	Leukodystrophy, hypomyelinating, 4
-612237	Chondrosarcoma, extraskeletal myxoid;Chondrosarcoma, extraskeletal myxoid;Chondrosarcoma, extraskeletal myxoid
+612237	Chondrosarcoma, extraskeletal myxoid;Chondrosarcoma, extraskeletal myxoid
 612238	Scoliosis, idiopathic
+612239	Scoliosis, idiopathic
 612240	Atrial fibrillation, familial, 7
 612241	Inflammatory bowel disease 12
 612242	Chromosome 10q23 deletion syndrome
@@ -3884,7 +3904,7 @@ OMIM_ID	DISEASE
 612245	Inflammatory bowel disease 14
 612247	Crouzon syndrome with acanthosis nigricans
 612251	Systemic lupus erythematosus
-612253	Systemic lupus erythematosus, susceptitbility to, 11
+612253	Systemic lupus erythematosus
 612254	Systemic lupus erythematosus
 612255	Inflammatory bowel disease 15
 612259	Inflammatory bowel disease 16
@@ -3894,7 +3914,7 @@ OMIM_ID	DISEASE
 612263	Melanoma, cutaneous malignant, 7
 612267	Skin/hair/eye pigmentation 10, blond/brown hair
 612269	Epilepsy, childhood absence
-612271	Skin/hair/eye pigmentation, variation in, 11 ;Skin/hair/eye pigmentation 11, blue/nonblue eyes
+612271	Skin/hair/eye pigmentation 11, blue/nonblue eyes;Skin/hair/eye pigmentation, variation in, 11 
 612274	Ciliary dyskinesia, primary, 8
 612278	Inflammatory bowel disease 19
 612279	Epilepsy, generalized, with febrile seizures plus, type 6
@@ -3915,11 +3935,12 @@ OMIM_ID	DISEASE
 612310	Premature ovarian failure 6
 612311	Attention deficit-hyperactivity disorder
 612312	Attention deficit-hyperactivity disorder
+612313	Glass syndrome
 612318	Pseudofolliculitis barbae
 612319	Spastic paraplegia 35, autosomal recessive
 612335	Spastic paraplegia 38, autosomal dominant
 612336	Thrombophilia due to protein S deficiency, autosomal dominant
-612337	Mental retardation, autosomal dominant 22;Chromosome 1q43-q44 deletion syndrome
+612337	Mental retardation, autosomal dominant 22
 612343	Musical aptitude QTL 1
 612345	Chromosome 2q31.2 deletion syndrome
 612347	Jervell and Lange-Nielsen syndrome 2
@@ -4053,7 +4074,7 @@ OMIM_ID	DISEASE
 612671	Uric acid concentration, serum, QTL4;Uric acid concentration, serum, QTL4;Gout
 612674	Polyneuropathy, hearing loss, ataxia, retinitis pigmentosa, and cataract
 612690	Spherocytosis, hereditary, type 5
-612691	Polymicrogyria, bilateral occipital
+612691	Polymicrogyria, bilateral temporooccipital;Polymicrogyria, bilateral occipital
 612692	Agammaglobulinemia 6
 612702	Hypogonadotropic hypogonadism 6 with or without anosmia
 612703	Microcephaly 7, primary, autosomal recessive
@@ -4085,7 +4106,7 @@ OMIM_ID	DISEASE
 612813	Spondyloepimetaphyseal dysplasia, aggrecan type
 612838	Brugada syndrome 5;Cardiac conduction defect, nonspecific
 612840	Leukocyte adhesion deficiency, type III
-612841	Hypotrichosis, hereditary, Marie Unna type, 2
+612841	Hypotrichosis 5
 612847	Brachyolmia 4 with mild epiphyseal and metaphyseal changes
 612851	Narcolepsy 5
 612852	Interleukin 1 receptor antagonist deficiency
@@ -4099,7 +4120,7 @@ OMIM_ID	DISEASE
 612882	Menarche, age at, QTL2
 612883	Menarche, age at, QTL3
 612884	Menopause, natural, age at, QTL2
-612885	Menopause, natural, age at, QTL3
+612885	Premature ovarian failure 10
 612886	Menopause, natural, age at, QTL4
 612892	Stature QTL 18
 612893	Stature QTL 19
@@ -4117,7 +4138,6 @@ OMIM_ID	DISEASE
 612929	Mycobacterium tuberculosis
 612932	Glycogen storage disease XIII
 612933	Glycogen storage disease XI
-612934	Glycogen storage disease XIV
 612936	Spastic paraplegia 50, autosomal recessive
 612937	Congenital disorder of glycosylation, type Io
 612938	Growth retardation, developmental delay, coarse facies, and early death
@@ -4127,7 +4147,7 @@ OMIM_ID	DISEASE
 612950	Psoriasis
 612951	Leukoencephalopathy, cystic, without megalencephaly
 612952	Aicardi-Goutieres syndrome 5
-612953	Parkinson disease 14
+612953	Parkinson disease 14, autosomal recessive
 612954	Myopathy, myofibrillar, 6
 612955	Long QT syndrome 12
 612956	Ventricular fibrillation, paroxysmal familial, 2
@@ -4139,7 +4159,7 @@ OMIM_ID	DISEASE
 612968	Cataract 34, multiple types
 612975	Short sleeper
 612976	Age-related hearing impairment 2
-612989	Optic atrophy-7
+612989	Optic atrophy 7
 612997	Spermatogenic failure 7
 612998	Emery-Dreifuss muscular dystrophy 4, autosomal dominant
 612999	Emery-Dreifuss muscular dystrophy 5, autosomal dominant
@@ -4174,7 +4194,7 @@ OMIM_ID	DISEASE
 613062	Basal cell carcinoma
 613063	Basal cell carcinoma
 613064	Dermatitis, atopic
-613065	Leukemia, acute lymphoblastic;Leukemia, acute lymphoblastic, somatic;Leukemia, acute lymphocytic;T-cell acute lymphoblastic leukemia;Leukemia, acute lymphocytic
+613065	Leukemia, acute lymphoblastic;Leukemia, acute lymphoblastic, somatic;Leukemia, acute lymphocytic;T-cell acute lymphoblastic leukemia, somatic;Leukemia, acute lymphocytic
 613067	Leukemia, acute lymphoblastic
 613068	Neurodegeneration due to cerebral folate transport deficiency
 613070	Liver failure, transient infantile
@@ -4203,18 +4223,16 @@ OMIM_ID	DISEASE
 613099	Melanoma, cutaneous malignant, 5
 613100	Glaucoma 1, open angle, 1O
 613101	Hemophagocytic lymphohistiocytosis, familial, 5
-613102	Hypotrichosis and recurrent skin vesicles
 613105	Choriodal dystrophy, central areolar 2
 613106	Vertigo, benign recurrent, 2
 613107	Neutropenia, severe congenital 2, autosomal dominant
 613108	Candidiasis, familial, 4, autosomal recessive
 613112	Macrothrombocytopenia, autosomal dominant, TUBB1-related
-613113	Melanoma, desmoplastic neurotrophic
 613115	Neuropathy, hereditary sensory and autonomic, type IIB
 613116	Thrombophilia due to HRG deficiency;Thrombophilia due to elevated HRG
 613118	Thrombophilia due to antithrombin III deficiency
 613119	Brugada syndrome 6
-613120	Brugada syndrome 7
+613120	Hypotrichosis and recurrent skin vesicles;Atrial fibrillation, familial, 16;Brugada syndrome 7
 613122	Cardiomyopathy, dilated, 1CC
 613123	Brugada syndrome 8
 613135	Parkinsonism-dystonia, infantile
@@ -4231,7 +4249,7 @@ OMIM_ID	DISEASE
 613158	Muscular dystrophy-dystroglycanopathy , type C, 2
 613159	Nephronophthisis-like nephropathy 1
 613161	Beta-ureidopropionase deficiency
-613162	Spastic paraplegia 45;Spastic paraplegia 45, autosomal recessive
+613162	Spastic paraplegia 45
 613163	GABA-transaminase deficiency
 613164	Parkinson disease 16
 613172	Cardiomyopathy, dilated, 1DD
@@ -4247,7 +4265,7 @@ OMIM_ID	DISEASE
 613205	Muscular dystrophy, congenital
 613206	Spastic paraplegia 44, autosomal recessive
 613207	Asthma-related traits
-613211	Amelogenesis imperfecta, hypomaturation type, IIA3
+613211	Amelogenesis imperfecta, type IIA3
 613215	Chromosome 17p13.3 duplication syndrome
 613216	Night blindness, congenital stationary , 1C, autosomal recessive
 613217	Diarrhea 5, with tufting enteropathy, congenital
@@ -4262,12 +4280,12 @@ OMIM_ID	DISEASE
 613237	Glomerulosclerosis, focal segmental, 5
 613238	Spondyloarthropathy
 613239	Thyrotoxic periodic paralysis
-613243	Cardiomyopathy, familial hypertrophic, 13
+613243	Cardiomyopathy, hypertrophic, 13
 613244	Colorectal cancer, hereditary nonpolyposis, type 8
-613251	Cardiomyopathy, familial hypertrophic, 14
+613251	Cardiomyopathy, hypertrophic, 14
 613252	Cardiomyopathy, dilated, 1EE
 613254	Tuberous sclerosis-2;TSC2 angiomyolipomas, renal, modifier of
-613255	Cardiomyopathy, familial hypertrophic, 15
+613255	Cardiomyopathy, hypertrophic, 15
 613265	Waardenburg syndrome, type 4B
 613266	Waardenburg syndrome, type 4C
 613267	Corneal dystrophy, Fuchs endothelial, 3
@@ -4291,6 +4309,7 @@ OMIM_ID	DISEASE
 613313	Hemochromatosis, type 2B
 613318	Miyoshi muscular dystrophy 2
 613319	Miyoshi muscular dystrophy 3
+613320	Spondylometaphyseal dysplasia, Megarbane-Dagher-Melike type
 613325	Rhabdoid tumor predisposition syndrome 2
 613327	Lipodystrophy, congenital generalized, type 4
 613328	Roifman-Chitayat syndrome
@@ -4310,7 +4329,7 @@ OMIM_ID	DISEASE
 613375	Maturity-onset diabetes of the young, type 11
 613376	Neuronopathy, distal hereditary motor, type IIC
 613382	Brachydactyly, type E2
-613385	Autoimmune disease, syndromic multisystem
+613385	Autoimmune disease, multisystem, with facial dysmorphism
 613387	Fatty liver disease, nonalcoholic
 613388	Fanconi renotubular syndrome 2
 613390	Fanconi anemia, complementation group O
@@ -4319,7 +4338,7 @@ OMIM_ID	DISEASE
 613393	Birbeck granule deficiency
 613398	Warsaw breakage syndrome
 613399	Breast-ovarian cancer, familial
-613402	Epileptic encephalopathy, early infantile, 10
+613402	Microcephaly, seizures, and developmental delay
 613404	Arthrogryposis, renal dysfunction, and cholestasis 2
 613406	Chromosome 15q24 deletion syndrome
 613407	Leprosy
@@ -4367,6 +4386,8 @@ OMIM_ID	DISEASE
 613508	Sodium serum level QTL 1
 613509	Chromosome 4q21 deletion syndrome
 613517	Microphthalmia, isolated 6
+613518	Dermatitis, atopic, 8
+613519	Dermatitis, atopic, 9
 613523	Chromosome 8p11 myeloproliferative syndrome
 613530	Muscular dystrophy, limb-girdle, type 1H
 613533	Chromosome 17q21.31 duplication syndrome
@@ -4389,7 +4410,7 @@ OMIM_ID	DISEASE
 613573	Ectodermal dysplasia-syndactyly syndrome 1
 613575	Retinitis pigmentosa 55
 613576	Ectodermal dysplasia-syndactyly syndrome 2
-613581	Maculopathy, IMPG2-related;Retinitis pigmentosa 56
+613581	Retinitis pigmentosa 56
 613582	Retinitis pigmentosa 57
 613587	Occult macular dystrophy
 613589	Low density lipoprotein cholesterol level QTL6
@@ -4424,7 +4445,7 @@ OMIM_ID	DISEASE
 613661	Congenital disorder of glycosylation, type Ip
 613662	Mitochondrial DNA depletion syndrome 4B 
 613668	Microcephaly, postnatal progressive, with seizures and brain atrophy
-613670	Mental retardation with language impairment and autistic features
+613670	Mental retardation with language impairment and with or without autistic features
 613671	Mental retardation, anterior maxillary protrusion, and strabismus
 613672	Ataxia, spastic, 4
 613673	Dyserythropoietic anemia, congenital, type IV
@@ -4440,7 +4461,7 @@ OMIM_ID	DISEASE
 613686	Spondylocostal dysostosis 4, autosomal recessive
 613688	Long QT syndrome 2;Long QT syndrome 2, acquired;Long QT syndrome, acquired, reduced
 613689	Mammary-digital-nail syndrome
-613690	Cardiomyopathy, familial hypertrophic, 7
+613690	Cardiomyopathy, hypertrophic, 7
 613693	Long QT syndrome 6
 613694	Cardiomyopathy, dilated, 1U
 613695	Long QT syndrome 5
@@ -4500,7 +4521,7 @@ OMIM_ID	DISEASE
 613793	Blood group Cromer
 613794	Retinitis pigmentosa 20
 613795	Loeys-Dietz syndrome, type 3
-613796	Mycobacterial and viral infections
+613796	Immunodeficiency 31B, mycobacterial and viral infections, autosomal recessive
 613800	Meier-Gorlin syndrome 2
 613801	Retinitis pigmentosa-40
 613803	Meier-Gorlin syndrome 3
@@ -4529,7 +4550,7 @@ OMIM_ID	DISEASE
 613835	Leber congenital amaurosis 8
 613836	Adiponectin, serum level of, QTL5
 613837	Leber congenital amaurosis 11
-613838	Cardiomyopathy, familial hypertrophic, 16
+613838	Cardiomyopathy, hypertrophic, 16
 613839	Megaloblastic anemia due to dihydrofolate reductase deficiency
 613843	Leber congenital amaurosis 15
 613845	Hyperuricemia, pulmonary hypertension, renal failure, and alkalosis
@@ -4549,10 +4570,10 @@ OMIM_ID	DISEASE
 613865	Deafness, autosomal recessive 61
 613869	Myopathy, myofibrillar, fatal infantile hypertrophy, alpha-B crystallin-related
 613870	Hirschsprung disease, cardiac defects, and autonomic dysfunction
-613873	Cardiomyopathy, familial hypertrophic 17
-613874	Cardiomyopathy, familial hypertrophic, 18
-613875	Cardiomyopathy, familial hypertrophic, 19
-613876	Cardiomyopathy, familial hypertrophic, 20
+613873	Cardiomyopathy, hypertrophic, 17
+613874	Cardiomyopathy, hypertrophic, 18
+613875	Cardiomyopathy, hypertrophic, 19
+613876	Cardiomyopathy, hypertrophic, 20
 613877	Lipodystrophy, familial partial, type 4
 613881	Cardiomyopathy, dilated, 1HH
 613882	Hypomagnesemia 6, renal
@@ -4588,7 +4609,7 @@ OMIM_ID	DISEASE
 613977	Cyanosis, transient neonatal
 613978	Hemoglobin H disease, nondeletional;Hemoglobin H disease, nondeletional
 613980	Atrial fibrillation, familial, 9
-613981	Hypotrichosis simplex of the scalp 2
+613981	Hypotrichosis 3
 613982	Osteogenesis imperfecta, type VI
 613983	Retinitis pigmentosa 60
 613985	Thalassemia, Hispanic gamma-delta-beta;Thalassemias, beta-
@@ -4608,7 +4629,7 @@ OMIM_ID	DISEASE
 614023	Phosphoserine phosphatase deficiency
 614024	Protein Z deficiency
 614025	Hepatic lipase deficiency
-614028	Hyperalphalipoproteinemia 2
+614028	Apolipoprotein C-III deficiency
 614033	Glyoxalase II deficiency
 614034	Heme oxygenase-1 deficiency
 614035	Deafness, autosomal recessive 29
@@ -4647,6 +4668,7 @@ OMIM_ID	DISEASE
 614091	Short-rib thoracic dysplasia 7 with or without polydactyly
 614096	Combined oxidative phosphorylation deficiency 8
 614097	Acatalasemia
+614098	Keppen-Lubinsky syndrome
 614099	Cranioectodermal dysplasia 3
 614101	Plasma fibronectin deficiency
 614102	Kappa light chain deficiency
@@ -4660,9 +4682,8 @@ OMIM_ID	DISEASE
 614120	Hydrolethalus syndrome 2
 614122	Chitotriosidase deficiency
 614128	Lactate dehydrogenase-B deficiency
-614129	Deafness, autosomal recessive 81;Perrault syndrome 3
+614129	Perrault syndrome 3
 614131	Glomerulosclerosis, focal segmental, 6
-614132	Craniofacial dysmorphism, skeletal anomalies, and mental retardation syndrome
 614134	Stickler syndrome, type IV
 614135	Epiphyseal dysplasia, multiple, 6
 614149	Nail disorder, nonsyndromic congenital, 9
@@ -4672,7 +4693,7 @@ OMIM_ID	DISEASE
 614157	Nail disorder, nonsyndromic congenital, 10, 
 614158	Thromboxane synthase deficiency
 614160	Muscle hypertrophy
-614162	Candidiasis, familial, 7
+614162	Immunodeficiency 31C, autosomal dominant
 614163	Delayed sleep phase syndrome
 614164	Hemolytic anemia due to glutathione peroxidase deficiency
 614165	Paragangliomas 5
@@ -4680,11 +4701,11 @@ OMIM_ID	DISEASE
 614167	Myopia 21, autosomal dominant
 614170	Brittle cornea syndrome 2
 614171	Hermansky-pudlak syndrome 9
-614172	Dendritic cell, monocyte, B lymphocyte, and natural killer lymphocyte deficiency
+614172	Immunodeficiency 21
 614173	Joubert syndrome 13
 614175	Meckel syndrome 10
 614180	Retinitis pigmentosa 61
-614181	REtinitis pigmentosa 62
+614181	Retinitis pigmentosa 62
 614185	Geleophysic dysplasia 2
 614186	Leber congenital amaurosis 16
 614187	Hypertelorism, preauricular sinus, punctal pits, and deafness
@@ -4694,14 +4715,14 @@ OMIM_ID	DISEASE
 614193	Transferrin serum level QTL2
 614195	Craniofacial anomalies and anterior segment dysgenesis syndrome
 614196	Nephrotic syndrome, type 6
-614198	Myasthenic syndrome, acetazolamide-responsive
+614198	Myasthenic syndrome, congenital, 16
 614199	Nephrotic syndrome, type 5, with or without ocular abnormalities
 614200	Glycoprotein Ia deficiency
 614201	Bleeding disorder, platelet-type, 11
 614202	Mental retardation, autosomal recessive 15
 614203	Parkinson disease 17
-614204	Psoriasis, generalized pustular
-614205	Three M syndrome 3
+614204	Psoriasis 14, pustular
+614205	3-M syndrome 3
 614207	Hyperphosphatasia with mental retardation syndrome 3
 614208	Mental retardation, autosomal recessive 16
 614209	Meckel syndrome 9
@@ -4729,7 +4750,6 @@ OMIM_ID	DISEASE
 614250	Narcolepsy 7
 614251	Parkinson disease 18
 614252	Aneurysm, intracranial berry, 11
-614253	Amelogenesis imperfecta and gingival fibromatosis syndrome
 614254	Mental retardation, autosomal dominant 8
 614255	Mental retardation, autosomal dominant 9
 614256	Mental retardation, autosomal dominant 10
@@ -4766,7 +4786,7 @@ OMIM_ID	DISEASE
 614325	Pitt-Hopkins-like syndrome 2
 614326	Feingold syndrome 2
 614327	Tumor predisposition syndrome
-614328	Inflammatory skin and bowel disease, neonatal
+614328	Inflammatory skin and bowel disease, neonatal, 1
 614329	Mental retardation, autosomal recessive 31
 614331	Colorectal cancer, hereditary nonpolyposis, type 6
 614332	Schizophrenia
@@ -4925,14 +4945,14 @@ OMIM_ID	DISEASE
 614672	Cardiomyopathy, dilated, 2B
 614673	Microcephaly 8, primary, autosomal recessive
 614674	Periodic fever, menstrual cycle dependent
-614675	Bone marrow failure, familial
-614676	Cardiomyopathy, familial hypertrophic, 21
+614675	Bone marrow failure syndrome 1
+614676	Cardiomyopathy, hypertrophic, 21
 614678	Pontocerebellar hypoplasia, type 1B
 614679	Ciliary dyskinesia, primary, 17
 614680	Influenza, severe
 614689	Interleukin-6 receptor, soluble, serum level of, QTL
 614691	Cataract 38, autosomal recessive
-614692	Membranous nephropathy
+614692	Membranous glomerulonephritis, antenatal;Neutral endopeptidase deficiency;Membranous nephropathy
 614696	Amyotrophic lateral sclerosis 17
 614699	Immunodeficiency, common variable, 7
 614700	Immunodeficiency, common variable, 8, with autoimmunity
@@ -4958,7 +4978,7 @@ OMIM_ID	DISEASE
 614747	Uric acid concentration, serum, QTL6
 614748	Interstitial lung disease, nephrotic syndrome, and epidermolysis bullosa, congenital
 614749	Hyperphosphatasia with mental retardation syndrome 2
-614750	Myasthenic syndrome, congenital, with tubular aggregates 2
+614750	Myasthenic syndrome, congenital, 13, with tubular aggregates
 614751	Neuronopathy, distal hereditary motor, type VB
 614752	Interleukin 6, serum level of, QTL
 614753	Sotos syndrome 2
@@ -4979,10 +4999,10 @@ OMIM_ID	DISEASE
 614820	Alternating hemiplegia of childhood 2
 614822	Spermatogenic failure 10
 614823	Aortic valve disease 2
-614826	Nystagmus 7, congenital
+614826	Nystagmus 7, congenital, autosomal dominant
 614830	Muscular dystrophy-dystroglycanopathy (congenital with brain and eye anomalies, type A, 8
 614831	Spinocerebellar ataxia, autosomal recessive 13
-614832	Amelogenesis imperfecta, hypomaturation type, IIA4
+614832	Amelogenesis imperfecta, type IIA4
 614833	Polymicrogyria with seizures
 614836	Human herpesvirus 8
 614837	Hypogonadotropic hypogonadism 8 with or without anosmia
@@ -5027,8 +5047,12 @@ OMIM_ID	DISEASE
 614885	Peroxisome biogenesis disorder 11B
 614886	Peroxisome biogenesis disorder 12A 
 614887	Peroxisome biogenesis disorder 13A 
-614893	CD11C+/CD1C+ dendritic cell deficiency, dominant
-614894	Monocyte and dendritic cell deficiency, recessive
+614889	Immunodeficiency 28, mycobacteriosis
+614890	Immunodeficiency 29, mycobacteriosis
+614891	Immunodeficiency 30
+614892	Immunodeficiency 31A, mycobacteriosis, autosomal dominant
+614893	Immunodeficiency 32A, mycobacteriosis, autosomal dominant
+614894	Immunodeficiency 32B, monocyte and dendritic cell deficiency, autosomal recessive
 614895	Charcot-Marie-Tooth disease, type 4F
 614896	Sinoatrial node dysfunction and deafness
 614897	Hypogonadotropic hypogonadism 16 with or without anosmia
@@ -5052,7 +5076,7 @@ OMIM_ID	DISEASE
 614935	Ciliary dyskinesia, primary, 19
 614936	Keratoderma, palmoplantar, punctate type IB
 614937	Myoclonus, familial cortical
-614940	Ectodermal dysplasia 11A, hypohidrotic/hair/tooth type
+614940	Ectodermal dysplasia 11A, hypohidrotic/hair/tooth type, autosomal dominant
 614941	Ectodermal dysplasia 11B, hypohidrotic/hair/tooth type, autosomal recessive
 614944	Deafness, autosomal recessive 84B
 614945	Deafness, autosomal recessive 18B
@@ -5065,7 +5089,7 @@ OMIM_ID	DISEASE
 614963	Obesity, morbid, due to leptin receptor deficiency
 614970	Joubert syndrome 20
 614972	Cholestasis, intrahepatic, of pregnancy, 3
-614974	Focal facial dermal dysplasia 4
+614974	Focal facial dermal dysplasia 4;Focal facial dermal dysplasia 4
 614976	Carpenter syndrome 2
 614980	Congenital heart defects, nonsyndromic, 2
 614990	Usher syndrome, type IK
@@ -5094,7 +5118,6 @@ OMIM_ID	DISEASE
 615042	Congenital disorder of glycosylation, type Iu
 615043	Spastic paraplegia 43, autosomal recessive
 615048	Spinal muscular atrophy, Jokela type
-615057	Blepharophimosis-ptosis-intellectual disability syndrome
 615058	Night blindness, congenital stationary , 1F, autosomal recessive
 615059	Hypotrichosis 11
 615065	Arthrogryposis, distal, type 5D
@@ -5121,6 +5144,7 @@ OMIM_ID	DISEASE
 615112	Urofacial syndrome 2
 615113	Microphthalmia, isolated 8
 615119	Cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 2
+615120	Myasthenic syndrome, congenital, 8, with pre- and postsynaptic defects
 615122	Lymphoproliferative syndrome 2
 615127	Epilepsy, familial adult myoclonic, 4
 615134	Melanoma, cutaneous malignant, 9
@@ -5128,6 +5152,7 @@ OMIM_ID	DISEASE
 615139	FILS syndrome
 615145	Microphthalmia, isolated, with coloboma 9
 615147	Retinol dystrophy, iris coloboma, and comedogenic acne syndrome
+615155	Steel syndrome
 615156	Progressive external ophthalmoplegia with mitochondrial DNA deletions, autosomal dominant, 6
 615157	Mitochondrial complex III deficiency, nuclear type 2
 615158	Mitochondrial complex III deficiency, nuclear type 3
@@ -5165,7 +5190,7 @@ OMIM_ID	DISEASE
 615237	Congenital short bowel syndrome
 615238	Lipodystrophy, familial partial, type 5
 615244	Nephrotic syndrome, type 8
-615248	Cardiomyopathy, dilated, 1KK;Cardiomyopaty, familial restrictive 4;Cardiomypathy, familial hypertrophic, 22
+615248	Cardiomyopathy, dilated, 1KK;Cardiomyopathy, familial restrictive, 4;Cardiomyopathy, hypertrophic, 22
 615249	Muscular dystrophy-dystroglycanopathy , type A, 12
 615264	Blood group, Vel system
 615266	Hypogonadotropic hypogonadism 17 with or without anosmia
@@ -5199,7 +5224,7 @@ OMIM_ID	DISEASE
 615325	Muscular dystrophy, limb-girdle, type 2R
 615327	Dowling-Degos disease 2
 615328	Shaheen syndrome
-615330	Multiple mitochondrial dysfunctions syndrome 3;Multiple mitochondrial dysfunctions syndrome 3
+615330	Multiple mitochondrial dysfunctions syndrome 3
 615338	Epileptic encephalopathy, early infantile, 16
 615342	Pulmonary hypertension, primary, 2
 615343	Pulmonary hypertension, primary, 3
@@ -5243,7 +5268,7 @@ OMIM_ID	DISEASE
 615414	Microcephaly 11, primary, autosomal recessive
 615415	Renal-hepatic-pancreatic dysplasia 2
 615418	Mitochondrial DNA depletion syndrome 12 
-615419	Neuroaxonal neurodegeneration, infantile, with facial dysmophism
+615419	Hypotonia, infantile, with psychomotor retardation and characteristic facies
 615420	Myopia 22, autosomal dominant
 615422	Inclusion body myopathy with early-onset Paget disease with or without frontotemporal dementia 2
 615424	Inclusion body myopathy wtih early-onset Paget disease without frontotemporal dementia 3
@@ -5255,7 +5280,7 @@ OMIM_ID	DISEASE
 615433	Chromosome 3q13.31 deletion syndrome
 615434	Retinitis pigmentosa with or without situs inversus
 615436	Aortic aneurysm, familial thoracic 8
-615438	Liver failure, infantile, syndromic
+615438	Infantile liver failure syndrome 1
 615439	Macular degeneration, age-related, 13
 615440	Combined oxidative phosphorylation deficiency 17
 615441	Ventricular tachycardia, catecholaminergic polymorphic, 5, with or without muscle weakness
@@ -5290,7 +5315,7 @@ OMIM_ID	DISEASE
 615510	Alacrima, achalasia, and mental retardation syndrome
 615511	Myopathy due to myoadenylate deaminase deficiency
 615512	Hemolytic anemia due to triosephosphate isomerase deficiency
-615513	Activated PI3K-delta immunodeficiency syndrome
+615513	Immunodeficiency 14
 615515	Amyotrophic lateral sclerosis 19
 615516	Mental retardation, autosomal recessive 38
 615517	Hemochromatosis, type 5
@@ -5311,7 +5336,7 @@ OMIM_ID	DISEASE
 615544	Periventricular nodular heterotopia 6
 615545	Leukemia, acute lymphoblastic
 615546	Van Maldergem syndrome 2
-615547	Prader-Willi-like syndrome
+615547	Schaaf-Yang syndrome
 615548	Neuropathy, hereditary sensory and autonomic, type VII
 615550	Diamond-Blackfan anemia 12
 615551	Episodic pain syndrome, familial, 2
@@ -5319,9 +5344,9 @@ OMIM_ID	DISEASE
 615553	Arthrogryposis, mental retardation, and seizures
 615554	Multiple fibroadenomas of the breast
 615555	Hyperprolactinemia
-615557	Melioidosis, susceptibilty to
+615557	Melioidosis
 615558	Hypobetalipoproteinemia
-615559	Immunodeficiency, common variable, 9
+615559	Autoimmune lymphoproliferative syndrome, type III
 615560	Otofaciocervical syndrome 2
 615561	Complement factor B deficiency
 615565	Retinitis pigmentosa 67
@@ -5334,7 +5359,7 @@ OMIM_ID	DISEASE
 615583	Verheij syndrome
 615589	Otosclerosis 10
 615590	Alzheimer disease 18
-615591	Macular degeneration, age-related, 15, suscepbitility to
+615591	Macular degeneration, age-related, 15
 615592	Immunodeficiency 15
 615593	Immunodeficiency 16
 615595	Combined oxidative phosphorylation deficiency 19
@@ -5373,9 +5398,311 @@ OMIM_ID	DISEASE
 615683	Spastic paraplegia 64
 615685	Spastic paraplegia 61, autosomal recessive
 615686	Spastic paraplegia 63
+615688	Polyarteritis nodosa, childhood-onset
+615696	Dowling-Degos disease 4
+615697	Epilepsy, familial temporal lobe, 6
 615703	Morbid obesity and spermatogenic failure
 615704	Poikiloderma, hereditary fibrosing, with tendon contractures, myopathy, and pulmonary fibrosis
 615705	Spinocerebellar ataxia, autosomal recessive 15
 615706	Auriculocondylar syndrome 3
 615707	Immunodeficiency 20
+615709	Sacral agenesis with vertebral anomalies
+615710	Mitchell-Riley syndrome
 615711	Alzheimer disease 19, late onset
+615715	Bone marrow failure syndrome 2
+615716	Hyperphosphatasia with mental retardation syndrome 4
+615721	Renal hypodysplasia/aplasia 2
+615722	Bosch-Boonstra-Schaaf optic atrophy syndrome
+615723	Premature ovarian failure 8
+615724	Premature ovarian failure 9
+615725	Retinitis pigmentosa 68
+615726	Pachyonychia congenita 3
+615728	Pachyonychia congenita 4
+615731	Nemaline myopathy 9
+615735	Palmoplantar keratoderma, nonepidermolytic, focal or diffuse
+615744	Epileptic encephalopathy, early infantile, 19
+615745	Atrial standstill 2
+615749	Eculizumab, poor response to
+615750	Moyamoya 6 with achalasia
+615751	Hyperammonemia due to carbonic anhydrase VA deficiency
+615752	Polymicrogyria, bilateral perisylvian
+615758	Immunodeficiency 22
+615760	Microcephaly, progressive, seizures, and cerebral and cerebellar atrophy
+615761	Mental retardation, autosomal dominant 23
+615763	Cortical dysplasia, complex, with other brain malformations 5
+615767	Immunodeficiency, common variable, 11
+615768	Spinocerebellar ataxia, autosomal recessive 16
+615770	Atrial fibrillation 15
+615771	Cortical dysplasia, complex, with other brain malformations 6
+615774	Oocyte maturation defect
+615777	Desbuquois dysplasia 2
+615779	Congenital heart defects, multiple types, 4
+615780	Retinitis pigmentosa 69
+615785	White sponge nevus 2
+615789	Short stature with microcephaly and distinctive facies
+615802	Mental retardation, autosomal recessive 42
+615803	Pontocerebellar hypoplasia, type 10
+615807	Seckel syndrome 8
+615809	Pontocerebellar hypoplasia, type 9
+615812	Abdominal obesity-metabolic syndrome 3
+615816	Immunodeficiency 23
+615817	Mental retardation, autosomal recessive 43
+615821	Dilated cardiomyopathy with woolly hair, keratoderma, and tooth agenesis
+615824	Mitochondrial complex III deficiency, nuclear type 7
+615828	Mental retardation, autosomal dominant 24
+615829	Xia-Gibbs syndrome
+615830	Cushing syndrome, ACTH-independent adrenal, somatic;Pigmented nodular adrenocortical disease, primary, 4
+615833	Epileptic encephalopathy, early infantile, 21
+615834	Mental retardation, autosomal dominant 26
+615837	Deafness, autosomal recessive 101
+615838	Mitochondrial complex III deficiency, nuclear type 8
+615841	Spermatogenic failure 13
+615842	Spermatogenic failure 14
+615846	Aicardi-Goutieres syndrome 7
+615848	Melanoma, cutaneous malignant
+615849	Culler-Jones syndrome
+615851	Pontocerebellar hypoplasia, type 2E
+615859	Epileptic encephalopathy, early infantile, 23
+615860	Cone-rod dystrophy 19
+615861	Nephrotic syndrome, type 10
+615862	Nephronophthisis 18
+615863	Diarrhea 7
+615866	Mental retardation, autosomal dominant, 27
+615871	Epileptic encephalopathy, early infantile, 24
+615872	Ciliary diskinesia, primary, 29
+615873	Helsmoortel-van der Aa syndrome
+615877	Microphthalmia, syndromic 14
+615878	Cholestasis, progressive familial intrahepatic 4
+615879	Tatton-Brown-Rahman syndrome
+615881	Plasma triglyceride level QTL, low
+615883	Myopathy, tubular aggregate, 2
+615885	Hypotrichosis 12
+615887	Amelogenesis imperfecta, type IIA5
+615888	Bleeding disorder, platelet-type, 18
+615889	Leukoencephalopathy, progressive, with ovarian failure
+615892	Orofacial cleft 14
+615895	Polyglucosan body myopathy 1 with or without immunodeficiency
+615896	Hypotrichosis 13
+615897	Immunodeficiency 24
+615905	Epileptic encephalopathy, early infantile, 25
+615907	Lymphedema, hereditary, ID
+615909	Diamond-Blackfan anemia 13
+615911	Frontotemporal dementia and/or amyotrophic lateral sclerosis 2
+615916	Cardiomyopathy, dilated, 1NN
+615917	Combined oxidative phosphorylation deficiency 20
+615918	Combined oxidative phosphorylation deficiency 21
+615919	Ataxia-telangiectasia-like disorder
+615922	Retinitis pigmentosa 70
+615923	Epiphyseal chondrodysplasia, Miura type
+615924	Encephalopathy, progressive, with or without lipodystrophy
+615925	Growth hormone deficiency, isolated partial
+615926	Webb-Dattani syndrome
+615934	STING-associated vasculopathy, infantile-onset
+615935	Pancreatic agenesis 2
+615937	Megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 2
+615938	Megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 3
+615942	Mental retardation, autosomal recessive 44
+615945	Spinocerebellar ataxia 37
+615946	Myopia 24, autosomal dominant
+615947	Hyperlipoproteinemia, type 1D
+615948	Orofaciodigital syndrome XIV
+615952	Autoimmune disease, multisystem, infantile-onset
+615953	Kallikrein, decreased urinary activity of
+615954	ACTH-independent macronodular adrenal hyperplasia 2
+615957	Spinocerebellar ataxia 38
+615959	Centronuclear myopathy 5
+615960	Poretti-Boltshauser syndrome
+615961	Acid-labile subunit, deficiency of
+615962	Glucocorticoid resistance
+615963	Vesicoureteral reflux 8
+615966	Immunodeficiency 16, with or without neurologic abnormalities
+615969	Alpha-fetoprotein deficiency
+615970	Hereditary persistence of alpha-fetoprotein
+615972	Nanophthalmos 4
+615973	Cone-rod dystrophy 20
+615974	Deafness, autosomal recessive 102
+615978	Immunodeficiency 27B, mycobacteriosis, AD
+615979	Mental retardation, autosomal recessive 45
+615980	Lipodystrophy, familial partial, type 6
+615981	Bardet-Biedl syndrome 2
+615982	Bardet-Biedl syndrome 4
+615983	Bardet-Biedl syndrome 5
+615984	Bardet-Biedl syndrome 7
+615985	Bardet-Biedl syndrome 8
+615986	Bardet-Biedl syndrome 9
+615987	Bardet-Biedl syndrome 10
+615988	Bardet-Biedl syndrome 11
+615989	Bardet-Biedl syndrome 12
+615990	Bardet-Biedl syndrome 13
+615991	Bardet-Biedl syndrome 14
+615992	Bardet-Biedl syndrome 15
+615993	Bardet-Biedl syndrome 16
+615994	Bardet-Biedl syndrome 17
+615995	Bardet-Biedl syndrome 18
+615996	Bardet-Biedl syndrome 19
+615999	Dysalbuminemic hyperthyroxinemia
+616000	Analbuminemia
+616001	Breasts and/or nipples, aplasia or hypoplasia of, 2
+616002	Glomerulosclerosis, focal segmental, 7
+616004	Dysfibrinogenemia, congenital;Dysfibrinogenemia, congenital;Dysfibrinogenemia, congenital;Hypodysfibrinogenemia;Hypodysfibrinogenemia, congenital
+616005	Immunodeficiency 36
+616006	Hennekam lymphangiectasia-lymphedema syndrome 2
+616007	Cataracts, growth hormone deficiency, sensory neuropathy, sensorineural hearing loss, and skeletal dysplasia
+616022	Neutropenia, severe congenital, 6, autosomal recessive
+616025	Hyperphosphatasia with mental retardation syndrome 5
+616026	Fanconi renotubular syndrome 4, with maturity-onset diabetes of the young
+616028	Adams-Oliver syndrome 5
+616029	Ectodermal dysplasia/short stature syndrome
+616030	Hypogonadotropic hypogonadism with or without anosmia
+616033	Microcephaly, short stature, and impaired glucose metabolism
+616034	2,4-dienoyl-CoA reductase deficiency
+616037	Ciliary dyskinesia, primary, 30
+616038	Neu-Laxova syndrome 2
+616039	Charcot-Marie-Tooth disease, recessive intermediate D
+616040	Myasthenic syndrome, congenital, 7, presynaptic
+616042	Deafness, autosomal recessive 103
+616044	Deafness, autosomal dominant 65
+616045	Combined oxidative phosphorylation deficiency 22
+616050	Autoinflammation with infantile enterocolitis
+616051	Microcephaly 13, primary, autosomal recessive
+616052	Muscular dystrophy-dystroglycanopathy , type C, 7
+616053	Spinocerebellar ataxia 40
+616055	Episodic ataxia, type 8
+616056	Epileptic encephalopathy, early infantile, 26
+616059	Mirror movements 3
+616060	Blood group, Dombrock
+616063	Porokeratosis 8, disseminated superficial actinic type
+616067	46,XY sex reversal 9
+616069	Inflammatory skin and bowel disease, neonatal, 2
+616078	Mental retardation, autosomal dominant 29
+616079	Retinal dystrophy with inner retinal dysfunction and ganglion cell abnormalities
+616080	Microcephaly 12, primary, autosomal recessive
+616081	Pontocerebellar hypoplasia, type 1C
+616083	Mental retardation, autosomal dominant 30
+616084	Sideroblastic anemia with B-cell immunodeficiency, periodic fevers, and developmental delay
+616087	Diabetes mellitus, noninsulin-dependent, 5
+616089	Blood group, Gerbich
+616093	Blood group, ABO system
+616094	Muscular dystrophy-dystroglycanopathy , type C, 12
+616095	Monocarboxylate transporter 1 deficiency
+616098	Immunodeficiency 37
+616099	Palmoplantar keratoderma and woolly hair
+616100	Autoimmune lymphoproliferative syndrome, type V
+616106	Psoriasis 15, pustular
+616108	Retinal dystrophy, juvenile cataracts, and short stature syndrome
+616111	Mitochondrial complex III deficiency, nuclear type 9
+616113	Polyendocrine-polyneuropathy syndrome
+616115	Familial cold autoinflammatory syndrome 4
+616116	Mental retardation, autosomal recessive 46
+616117	Cardiac conduction disease with or without dilated cardiomyopathy
+616118	Macular degeneration, early-onset
+616126	Immunodeficiency 38
+616127	Spinocerebellar ataxia, autosomal recessive 17
+616138	Perrault syndrome 5
+616139	Epileptic encephalopathy, early infantile, 27
+616140	Leukodystrophy, hypomyelinating, 9
+616145	Catel-Manzke syndrome
+616151	Macular dystrophy, vitelliform, 4
+616152	Macular dystrophy, vitelliform, 5
+616154	Peroxisomal fatty acyl-CoA reductase 1 disorder
+616155	Charcot-Marie-Tooth disease, axonal, type 2S
+616158	Mental retardation, autosomal dominant 31
+616165	Nemaline myopathy 10
+616166	Aortic aneurysm, familial thoracic 9
+616170	Macular dystrophy with central cone involvement
+616171	Microcephaly and chorioretinopathy, autosomal recessive, 2
+616172	Generalized epilepsy with febrile seizures plus, type 9
+616176	Bleeding disorder, platelet-type, 19
+616182	Chronic mountain sickness
+616185	Ovarian dysgenesis 4
+616187	Epilepsy, progressive myoclonic 7
+616188	Retinal dystrophy and obesity
+616192	Ataxia, combined cerebellar and peripheral, with hearing loss and diabetes mellitus
+616193	Mental retardation, autosomal recessive 47
+616198	Combined oxidative phosphorylation deficiency 23
+616199	Polyglucosan body myopathy 2
+616200	Ruijs-Aalfs syndrome
+616201	Chronic atrial and intestinal dysrhythmia
+616202	Cerebellofaciodental syndrome
+616204	Spinocerebellar ataxia, autosomal recessive 18
+616208	Amyotrophic lateral sclerosis 22 with or without frontotemoral dementia
+616209	Myopathy, isolated mitochondrial, autosomal dominant
+616211	Epileptic encephalopathy, early infantile, 28
+616212	Lissencephaly 6, with microcephaly
+616214	Hyperproinsulinemia
+616216	Thrombocytopenia 5
+616217	Nephronophthisis 19
+616219	Fibrosis of extraocular muscles, congenital, 5
+616220	Focal segmental glomerulosclerosis 9
+616221	Amelogenesis imperfecta, type IH
+616222	Temple syndrome
+616227	Myasthenic syndrome, congenital, 15, without tubular aggregates
+616228	Myasthenic syndrome, congenital, 14, with tubular aggregates
+616229	Osteogenesis imperfecta, type XVI
+616230	Epilepsy, progressive myoclonic, 8
+616231	Myopathy, vacuolar, with CASQ1 aggregates
+616233	Charcot-Marie-Tooth disease, axonal, type 2T
+616239	Combined oxidative phosphorylation deficiency 24
+616247	Long QT syndrome 14
+616248	Lethal congenital contracture syndrome 6
+616249	Long QT syndrome 15
+616258	Meckel syndrome 12
+616260	Tenorio syndrome
+616263	Infantile-onset multisystem neurologic, endocrine, and pancreatic disease
+616265	Peeling skin syndrome 3
+616266	Congenital contractures of the limbs and face, hypotonia, and developmental delay
+616267	Ataxia-oculomotor apraxia 4
+616268	Mental retardation, autosomal dominant 32
+616269	Mental retardation, autosomal recessive 48
+616270	Amelogenesis imperfecta, type IF
+616271	3-methylglutaconic aciduria, type VII, with cataracts, neurologic involvement and neutropenia
+616276	Coenzyme Q10 deficiency, primary, 7
+616277	Mitochondrial short-chain enoyl-CoA hydratase 1 deficiency
+616278	Bile acid synthesis defect, congenital, 5
+616279	Cataract 43
+616280	Charcot-Marie-Tooth disease, axonal, type 2U
+616281	Mental retardation, autosomal recessive 49
+616282	Spastic paraplegia 73, autosomal dominant
+616286	Lethal congenital contracture syndrome 7
+616287	Lethal congenital contracture syndrome 8
+616289	Optic atrophy 8
+616291	Lichtenstein-Knorr syndrome
+616294	Cole-Carpenter syndrome 2
+616295	Peeling skin with leukonychia, acral punctate keratoses, cheilitis, and knuckle pads
+616298	Singleton-Merten syndrome 2
+616299	Lipoyltransferase 1 deficiency
+616300	Short-rib thoracic dysplasia 13 with or without polydactyly
+616304	Myasthenic syndrome, congenital, 17
+616307	Senior-Loken syndrome 8
+616311	Mental retardation, autosomal dominant 33
+616313	Myasthenic syndrome, congenital, 2A, slow-channel
+616314	Myasthenic syndrome, congenital, 2C, associated with acetylcholine receptor deficiency
+616321	Myasthenic syndrome, congenital, 3A, slow-channel
+616322	Myasthenic syndrome, congenital, 3B, fast-channel
+616323	Myasthenic syndrome, congenital, 3C, associated with acetylcholine receptor deficiency
+616324	Myasthenic syndrome, congenital, 4B, fast-channel
+616325	Myasthenic syndrome, congenital, 9, associated with acetylcholine receptor deficiency
+616326	Myasthenic syndrome, congenital, 11, associated with acetylcholine receptor deficiency
+616329	Maturity-onset diabetes of the young, type 13
+616330	Myasthenic syndrome, congenital, 18
+616331	Robinow syndrome, autosomal dominant 2
+616335	Microcephaly and chorioretinopathy, autosomal recessive, 3
+616339	Epileptic encephalopathy, early infantile, 29
+616340	Deafness, autosomal dominant 67
+616341	Epileptic encephalopathy, early infantile, 30
+616342	Lissencephaly 7 with cerebellar hypoplasia
+616345	Immunodeficiency 39
+616346	Epileptic encephalopathy, early infantile, 31
+616351	Mental retardation, autosomal dominant 34
+616353	Dyskeratosis congenita, autosomal recessive, 6
+616354	Spinocerebellar ataxia, autosomal recessive 20
+616355	Mental retardation, autosomal dominant 35
+616357	Deafness, autosomal dominant 40
+616361	Parkinson disease 21
+616362	Mental retardation, autosomal dominant 36
+616364	Mental retardation, autosomal dominant 37
+616366	Epileptic encephalopathy, early infantile, 32
+616367	Mandibulofacial dysostosis with alopecia
+616368	CHOPS syndrome
+616369	Ciliary dyskinesia, primary, 31
+616370	Multiple mitochondrial dysfunctions syndrome 4
