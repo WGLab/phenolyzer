@@ -21,7 +21,7 @@ for my $line (<MORBID_MAP>){
 print OMIM_ID_DISEASE join("\t",qw/OMIM_ID DISEASE/)."\n";
 for my $omim_id(keys %omim_hash) {
 	my @diseases = map {  $_=GetRidOfSusceptibility($_); $_; }  @{$omim_hash{$omim_id}};
-	print "@diseases"."\n";
+	#print "@diseases"."\n";
 	my $disease = join(";",@diseases);
 	   $disease = GetRidOfAnnotations($disease);
 	 	print TEMP2 $omim_id."\t".$disease."\n";
