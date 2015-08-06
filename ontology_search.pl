@@ -21,7 +21,7 @@ GetOptions('help|h'=>\$help, 'man|m' => \$man, 'phenotype|p' => \$is_phenotype,
    #Enter the input term                                    
    my $input_term = $ARGV[0];
    my $query_term = $input_term;
-      $query_term =~ s/\bs\b//g;
+      $query_term =~ s/'s\b//g;
       $query_term =~ s/\W+/ /g;  
    my $ont = $parser->next_ontology();
    my $is_a = Bio::Ontology::RelationshipType->get_instance("IS_A");
@@ -35,19 +35,25 @@ GetOptions('help|h'=>\$help, 'man|m' => \$man, 'phenotype|p' => \$is_phenotype,
    	   next if $found_terms{$id};
    	   my $name = $term-> name();
    	   my @synonyms = $term -> get_synonyms();
-       my @search_list = ($name, @synonyms);	   
-   	   for my $each_name (@search_list)
-   	   {
-   	   	  my $each_name_change = $each_name;
-   	   	     $each_name_change =~ s/\bs\b//g;
-   	   	     $each_name_change =~ s/\W+/ /g; 
-   	   	  if( $each_name_change =~ /\b$query_term\b/i )
-   	   	  {
-   	   	  	next if($if_exact_match and $each_name !~ /^input_term$/i);
-   	   	  	$found_terms{$id} = $term;
-   	   	    last;
-   	   	  }
-   	   }
+       my @search_list = ($name, @synonyms);	
+       my $id_num = $id;
+       $id_num=~s/HP://;
+       if("hpo $id_num" eq $input_term or "hp $id_num" eq $input_term) { 
+           $found_terms{$id} = $term;
+       }
+       else{   
+   	      for my $each_name (@search_list){
+	   	   	  my $each_name_change = $each_name;
+	   	   	     $each_name_change =~ s/'s\b//g;
+	   	   	     $each_name_change =~ s/\W+/ /g; 
+	   	   	  if( $each_name_change =~ /\b$query_term\b/i )
+	   	   	  {
+	   	   	  	next if($if_exact_match and $each_name !~ /^$input_term$/i);
+	   	   	  	$found_terms{$id} = $term;
+	   	   	    last;
+	   	   	  }
+   	      }
+       }
        if ($found_terms{$id})                 #If the term is matched in this turn, then find its descendants
    	   {
    	   	 $format=~  /\bid\b/ and print $id."\n";

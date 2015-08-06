@@ -1,0 +1,363 @@
+Tuple number in the gene_disease database for the term hp_0001279: 252
+KCNQ1	Normalized score: 0.00918303571428571	Raw Score: 2.314125
+OMIM:220400 (OMIM)	jervell and lange nielsen syndrome	0.33
+OMIM:220400 (CLINVAR)	jervell and lange nielsen syndrome	0.04125
+ORPHANET:90647 (ORPHANET)	jervell and lange nielsen syndrome	0.33
+OMIM:220400 (GENE_REVIEWS)	jervell and lange nielsen syndrome	0.165
+OMIM:612347 (GENE_REVIEWS)	jervell and lange nielsen syndrome 2	0.165
+OMIM:192500 (OMIM)	long qt syndrome 1	0.33
+OMIM:192500 (CLINVAR)	long qt syndrome 1	0.04125
+OMIM:192500 (GENE_REVIEWS)	long qt syndrome 1	0.033
+OMIM:612955 (GENE_REVIEWS)	long qt syndrome 12	0.033
+OMIM:613485 (GENE_REVIEWS)	long qt syndrome 13	0.033
+OMIM:613688 (GENE_REVIEWS)	long qt syndrome 2	0.033
+OMIM:603830 (GENE_REVIEWS)	long qt syndrome 3	0.033
+OMIM:613695 (GENE_REVIEWS)	long qt syndrome 5	0.033
+OMIM:613693 (GENE_REVIEWS)	long qt syndrome 6	0.033
+ORPHANET:101016 (ORPHANET)	romano ward syndrome	0.33
+OMIM:609621 (OMIM)	short qt syndrome 2	0.33
+OMIM:609621 (CLINVAR)	short qt syndrome 2	0.020625
+
+KCNE1	Normalized score: 0.0068796768707483	Raw Score: 1.73367857142857
+ORPHANET:90647 (ORPHANET)	jervell and lange nielsen syndrome	0.235714285714286
+OMIM:220400 (GENE_REVIEWS)	jervell and lange nielsen syndrome	0.165
+OMIM:612347 (OMIM)	jervell and lange nielsen syndrome 2	0.33
+OMIM:612347 (CLINVAR)	jervell and lange nielsen syndrome 2	0.020625
+OMIM:612347 (GENE_REVIEWS)	jervell and lange nielsen syndrome 2	0.165
+OMIM:192500 (GENE_REVIEWS)	long qt syndrome 1	0.033
+OMIM:612955 (GENE_REVIEWS)	long qt syndrome 12	0.033
+OMIM:613485 (GENE_REVIEWS)	long qt syndrome 13	0.033
+OMIM:613688 (GENE_REVIEWS)	long qt syndrome 2	0.033
+OMIM:603830 (GENE_REVIEWS)	long qt syndrome 3	0.033
+OMIM:613695 (OMIM)	long qt syndrome 5	0.33
+OMIM:613695 (CLINVAR)	long qt syndrome 5	0.020625
+OMIM:613695 (GENE_REVIEWS)	long qt syndrome 5	0.033
+OMIM:613693 (GENE_REVIEWS)	long qt syndrome 6	0.033
+ORPHANET:101016 (ORPHANET)	romano ward syndrome	0.235714285714286
+
+SCN5A	Normalized score: 0.00555362274220033	Raw Score: 1.39951293103448
+OMIM:611777 (GENE_REVIEWS)	brugada syndrome 2	0.04125
+OMIM:611875 (GENE_REVIEWS)	brugada syndrome 3	0.04125
+OMIM:611876 (GENE_REVIEWS)	brugada syndrome 4	0.04125
+OMIM:601154 (OMIM)	cardiomyopathy dilated 1e	0.33
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+OMIM:192500 (GENE_REVIEWS)	long qt syndrome 1	0.033
+OMIM:612955 (GENE_REVIEWS)	long qt syndrome 12	0.033
+OMIM:613485 (GENE_REVIEWS)	long qt syndrome 13	0.033
+OMIM:613688 (GENE_REVIEWS)	long qt syndrome 2	0.033
+OMIM:603830 (OMIM)	long qt syndrome 3	0.33
+OMIM:603830 (CLINVAR)	long qt syndrome 3	0.020625
+OMIM:603830 (GENE_REVIEWS)	long qt syndrome 3	0.033
+OMIM:613695 (GENE_REVIEWS)	long qt syndrome 5	0.033
+OMIM:613693 (GENE_REVIEWS)	long qt syndrome 6	0.033
+ORPHANET:101016 (ORPHANET)	romano ward syndrome	0.33
+
+KCNH2	Normalized score: 0.00500892857142857	Raw Score: 1.26225
+OMIM:192500 (GENE_REVIEWS)	long qt syndrome 1	0.033
+OMIM:612955 (GENE_REVIEWS)	long qt syndrome 12	0.033
+OMIM:613485 (GENE_REVIEWS)	long qt syndrome 13	0.033
+OMIM:613688 (OMIM)	long qt syndrome 2	0.33
+OMIM:613688 (CLINVAR)	long qt syndrome 2	0.020625
+OMIM:613688 (GENE_REVIEWS)	long qt syndrome 2	0.033
+OMIM:603830 (GENE_REVIEWS)	long qt syndrome 3	0.033
+OMIM:613695 (GENE_REVIEWS)	long qt syndrome 5	0.033
+OMIM:613693 (GENE_REVIEWS)	long qt syndrome 6	0.033
+ORPHANET:101016 (ORPHANET)	romano ward syndrome	0.33
+OMIM:609620 (OMIM)	short qt syndrome 1	0.33
+OMIM:609620 (CLINVAR)	short qt syndrome 1	0.020625
+
+KCNJ5	Normalized score: 0.00329017857142857	Raw Score: 0.829125
+OMIM:192500 (GENE_REVIEWS)	long qt syndrome 1	0.033
+OMIM:612955 (GENE_REVIEWS)	long qt syndrome 12	0.033
+OMIM:613485 (OMIM)	long qt syndrome 13	0.2475
+OMIM:613485 (CLINVAR)	long qt syndrome 13	0.020625
+OMIM:613485 (GENE_REVIEWS)	long qt syndrome 13	0.033
+OMIM:613688 (GENE_REVIEWS)	long qt syndrome 2	0.033
+OMIM:603830 (GENE_REVIEWS)	long qt syndrome 3	0.033
+OMIM:613695 (GENE_REVIEWS)	long qt syndrome 5	0.033
+OMIM:613693 (GENE_REVIEWS)	long qt syndrome 6	0.033
+ORPHANET:101016 (ORPHANET)	romano ward syndrome	0.33
+
+SNTA1	Normalized score: 0.00324340986394558	Raw Score: 0.817339285714286
+OMIM:192500 (GENE_REVIEWS)	long qt syndrome 1	0.033
+OMIM:612955 (OMIM)	long qt syndrome 12	0.33
+OMIM:612955 (CLINVAR)	long qt syndrome 12	0.020625
+OMIM:612955 (GENE_REVIEWS)	long qt syndrome 12	0.033
+OMIM:613485 (GENE_REVIEWS)	long qt syndrome 13	0.033
+OMIM:613688 (GENE_REVIEWS)	long qt syndrome 2	0.033
+OMIM:603830 (GENE_REVIEWS)	long qt syndrome 3	0.033
+OMIM:613695 (GENE_REVIEWS)	long qt syndrome 5	0.033
+OMIM:613693 (GENE_REVIEWS)	long qt syndrome 6	0.033
+ORPHANET:101016 (ORPHANET)	romano ward syndrome	0.235714285714286
+
+KCNE2	Normalized score: 0.00324340986394558	Raw Score: 0.817339285714286
+OMIM:192500 (GENE_REVIEWS)	long qt syndrome 1	0.033
+OMIM:612955 (GENE_REVIEWS)	long qt syndrome 12	0.033
+OMIM:613485 (GENE_REVIEWS)	long qt syndrome 13	0.033
+OMIM:613688 (GENE_REVIEWS)	long qt syndrome 2	0.033
+OMIM:603830 (GENE_REVIEWS)	long qt syndrome 3	0.033
+OMIM:613695 (GENE_REVIEWS)	long qt syndrome 5	0.033
+OMIM:613693 (OMIM)	long qt syndrome 6	0.33
+OMIM:613693 (CLINVAR)	long qt syndrome 6	0.020625
+OMIM:613693 (GENE_REVIEWS)	long qt syndrome 6	0.033
+ORPHANET:101016 (ORPHANET)	romano ward syndrome	0.235714285714286
+
+KCNJ2	Normalized score: 0.0027827380952381	Raw Score: 0.70125
+OMIM:170390 (OMIM)	andersen syndrome	0.33
+OMIM:170390 (GENE_REVIEWS)	andersen syndrome	0.33
+OMIM:170390 (CLINVAR)	andersen tawil syndrome	0.04125
+
+ANK2	Normalized score: 0.00251381802721088	Raw Score: 0.633482142857143
+OMIM:600919 (OMIM)	cardiac arrhythmia ankyrin b related	0.33
+OMIM:600919 (CLINVAR)	cardiac arrhythmia ankyrin b related	0.020625
+ORPHANET:101016 (ORPHANET)	romano ward syndrome	0.282857142857143
+
+CALM1	Normalized score: 0.00226438492063492	Raw Score: 0.570625
+OMIM:611938 (GENE_REVIEWS)	ventricular tachycardia catecholaminergic polymorphic 2	0.11
+OMIM:614916 (OMIM)	ventricular tachycardia catecholaminergic polymorphic 4	0.33
+OMIM:614916 (CLINVAR)	ventricular tachycardia catecholaminergic polymorphic 4	0.020625
+OMIM:614916 (GENE_REVIEWS)	ventricular tachycardia catecholaminergic polymorphic 4	0.11
+
+AKAP9	Normalized score: 0.0020391156462585	Raw Score: 0.513857142857143
+OMIM:192500 (GENE_REVIEWS)	long qt syndrome 1	0.033
+OMIM:612955 (GENE_REVIEWS)	long qt syndrome 12	0.033
+OMIM:613485 (GENE_REVIEWS)	long qt syndrome 13	0.033
+OMIM:613688 (GENE_REVIEWS)	long qt syndrome 2	0.033
+OMIM:603830 (GENE_REVIEWS)	long qt syndrome 3	0.033
+OMIM:613695 (GENE_REVIEWS)	long qt syndrome 5	0.033
+OMIM:613693 (GENE_REVIEWS)	long qt syndrome 6	0.033
+ORPHANET:101016 (ORPHANET)	romano ward syndrome	0.282857142857143
+
+CASQ2	Normalized score: 0.00193700396825397	Raw Score: 0.488125
+OMIM:611938 (OMIM)	ventricular tachycardia catecholaminergic polymorphic 2	0.2475
+OMIM:611938 (CLINVAR)	ventricular tachycardia catecholaminergic polymorphic 2	0.020625
+OMIM:611938 (GENE_REVIEWS)	ventricular tachycardia catecholaminergic polymorphic 2	0.11
+OMIM:614916 (GENE_REVIEWS)	ventricular tachycardia catecholaminergic polymorphic 4	0.11
+
+CACNB2	Normalized score: 0.00188244047619048	Raw Score: 0.474375
+OMIM:611777 (GENE_REVIEWS)	brugada syndrome 2	0.04125
+OMIM:611875 (GENE_REVIEWS)	brugada syndrome 3	0.04125
+OMIM:611876 (OMIM)	brugada syndrome 4	0.33
+OMIM:611876 (CLINVAR)	brugada syndrome 4	0.020625
+OMIM:611876 (GENE_REVIEWS)	brugada syndrome 4	0.04125
+
+CACNA1C	Normalized score: 0.00188244047619048	Raw Score: 0.474375
+OMIM:611777 (GENE_REVIEWS)	brugada syndrome 2	0.04125
+OMIM:611875 (OMIM)	brugada syndrome 3	0.33
+OMIM:611875 (CLINVAR)	brugada syndrome 3	0.020625
+OMIM:611875 (GENE_REVIEWS)	brugada syndrome 3	0.04125
+OMIM:611876 (GENE_REVIEWS)	brugada syndrome 4	0.04125
+
+SCN4B	Normalized score: 0.00185204081632653	Raw Score: 0.466714285714286
+OMIM:192500 (GENE_REVIEWS)	long qt syndrome 1	0.033
+OMIM:612955 (GENE_REVIEWS)	long qt syndrome 12	0.033
+OMIM:613485 (GENE_REVIEWS)	long qt syndrome 13	0.033
+OMIM:613688 (GENE_REVIEWS)	long qt syndrome 2	0.033
+OMIM:603830 (GENE_REVIEWS)	long qt syndrome 3	0.033
+OMIM:613695 (GENE_REVIEWS)	long qt syndrome 5	0.033
+OMIM:613693 (GENE_REVIEWS)	long qt syndrome 6	0.033
+ORPHANET:101016 (ORPHANET)	romano ward syndrome	0.235714285714286
+
+CAV3	Normalized score: 0.00185204081632653	Raw Score: 0.466714285714286
+OMIM:192500 (GENE_REVIEWS)	long qt syndrome 1	0.033
+OMIM:612955 (GENE_REVIEWS)	long qt syndrome 12	0.033
+OMIM:613485 (GENE_REVIEWS)	long qt syndrome 13	0.033
+OMIM:613688 (GENE_REVIEWS)	long qt syndrome 2	0.033
+OMIM:603830 (GENE_REVIEWS)	long qt syndrome 3	0.033
+OMIM:613695 (GENE_REVIEWS)	long qt syndrome 5	0.033
+OMIM:613693 (GENE_REVIEWS)	long qt syndrome 6	0.033
+ORPHANET:101016 (ORPHANET)	romano ward syndrome	0.235714285714286
+
+GPD1L	Normalized score: 0.00155505952380952	Raw Score: 0.391875
+OMIM:611777 (OMIM)	brugada syndrome 2	0.2475
+OMIM:611777 (CLINVAR)	brugada syndrome 2	0.020625
+OMIM:611777 (GENE_REVIEWS)	brugada syndrome 2	0.04125
+OMIM:611875 (GENE_REVIEWS)	brugada syndrome 3	0.04125
+OMIM:611876 (GENE_REVIEWS)	brugada syndrome 4	0.04125
+
+PSEN1	Normalized score: 0.00152683702791461	Raw Score: 0.384762931034483
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (OMIM)	cardiomyopathy dilated 1u	0.33
+OMIM:613694 (CLINVAR)	cardiomyopathy dilated 1u	0.020625
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+PSEN2	Normalized score: 0.00144499178981938	Raw Score: 0.364137931034483
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (OMIM)	cardiomyopathy dilated 1v	0.33
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+ALG10	Normalized score: 0.00120429421768707	Raw Score: 0.303482142857143
+OMIM:613688 (CLINVAR)	long qt syndrome 2	0.020625
+ORPHANET:101016 (ORPHANET)	romano ward syndrome	0.282857142857143
+
+TRPM4	Normalized score: 0.000982142857142857	Raw Score: 0.2475
+OMIM:604559 (OMIM)	progressive familial heart block type ib	0.2475
+
+NOS1AP	Normalized score: 0.000935374149659864	Raw Score: 0.235714285714286
+ORPHANET:101016 (ORPHANET)	romano ward syndrome	0.235714285714286
+
+RYR2	Normalized score: 0.000873015873015872	Raw Score: 0.22
+OMIM:611938 (GENE_REVIEWS)	ventricular tachycardia catecholaminergic polymorphic 2	0.11
+OMIM:614916 (GENE_REVIEWS)	ventricular tachycardia catecholaminergic polymorphic 4	0.11
+
+TRDN	Normalized score: 0.000873015873015872	Raw Score: 0.22
+OMIM:611938 (GENE_REVIEWS)	ventricular tachycardia catecholaminergic polymorphic 2	0.11
+OMIM:614916 (GENE_REVIEWS)	ventricular tachycardia catecholaminergic polymorphic 4	0.11
+
+CPVT3	Normalized score: 0.000491071428571429	Raw Score: 0.12375
+OMIM:614021 (OMIM)	ventricular tachycardia catecholaminergic polymorphic 3	0.12375
+
+SCN1B	Normalized score: 0.000491071428571429	Raw Score: 0.12375
+OMIM:611777 (GENE_REVIEWS)	brugada syndrome 2	0.04125
+OMIM:611875 (GENE_REVIEWS)	brugada syndrome 3	0.04125
+OMIM:611876 (GENE_REVIEWS)	brugada syndrome 4	0.04125
+
+HCN4	Normalized score: 0.000491071428571429	Raw Score: 0.12375
+OMIM:611777 (GENE_REVIEWS)	brugada syndrome 2	0.04125
+OMIM:611875 (GENE_REVIEWS)	brugada syndrome 3	0.04125
+OMIM:611876 (GENE_REVIEWS)	brugada syndrome 4	0.04125
+
+KCNE3	Normalized score: 0.000491071428571429	Raw Score: 0.12375
+OMIM:611777 (GENE_REVIEWS)	brugada syndrome 2	0.04125
+OMIM:611875 (GENE_REVIEWS)	brugada syndrome 3	0.04125
+OMIM:611876 (GENE_REVIEWS)	brugada syndrome 4	0.04125
+
+SCN3B	Normalized score: 0.000491071428571429	Raw Score: 0.12375
+OMIM:611777 (GENE_REVIEWS)	brugada syndrome 2	0.04125
+OMIM:611875 (GENE_REVIEWS)	brugada syndrome 3	0.04125
+OMIM:611876 (GENE_REVIEWS)	brugada syndrome 4	0.04125
+
+RBM20	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+TMPO	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+TTN	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+VCL	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+ANKRD1	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+DSG2	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+MYH6	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+CSRP3	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+MYH7	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+TPM1	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+BAG3	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+LMNA	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+TCAP	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+TNNT2	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+MYBPC3	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+ACTN2	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+LDB3	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+PLN	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+ACTC1	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+DES	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+TAZ	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+FKTN	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+SGCD	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+EYA4	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+NEXN	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+
+ABCC9	Normalized score: 0.000135467980295567	Raw Score: 0.0341379310344828
+OMIM:601154 (GENE_REVIEWS)	cardiomyopathy dilated 1e	0.0113793103448276
+OMIM:613694 (GENE_REVIEWS)	cardiomyopathy dilated 1u	0.0113793103448276
+OMIM:613697 (GENE_REVIEWS)	cardiomyopathy dilated 1v	0.0113793103448276
+

@@ -79,7 +79,7 @@ output_gene_prioritization();
 
 #-----------------------------------------Subroutines---------------------------------------------
 sub output_gene_prioritization{                        #The main sub to output prioritized genelist
-my @disease_input=split (qr/[^ _,\w\.\-'\(\)\[\]\{\}]+/,lc $query_diseases);
+my @disease_input=split (qr/[^ _,\w\.\-'\(\)\[\]\{\}:]+/,lc $query_diseases);
 @disease_input <=1000 or die "Too many terms!!! No more than 1000 terms are accepted!!!";  
 
 #------------------------------------Process each individual term first -------------------------------------
@@ -561,7 +561,7 @@ sub phenotype_extension{
     my ($i,$j) = (0,0);		
 		while($i<@hpo_ids and $j<@hpo_annotation)
         { 
-    	chomp($hpo_annotation[$j]);
+    	$hpo_annotation[$j] =~s/[\r\n]+//g;
     	my @words=split("\t",$hpo_annotation[$j]);    #[0]HPO_ID	[1]SOURCE	[2]HPO_DISEASE_NAME	[3]FREQUENCY
     	  if($hpo_ids[$i] eq "HP:".$words[0]) 
     	  {
