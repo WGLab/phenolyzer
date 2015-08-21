@@ -52,6 +52,8 @@ for my $line (<OMIM_DISEASE>)
         	$line =~ s/\(.*?\)//g;
         	$line =~ s/^\W+(.*?)\W+/$1/;
         	$line =~s/;//g;
+        	$line =~s/\d{5,}//g;
+        	next if($line=~/^\W+$/);
         	$omim_description{$omim_id}.=$line.";";
         	#print $line."\n";
         }
