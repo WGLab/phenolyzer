@@ -10,7 +10,12 @@ Phenolyzer is also available as a web-sever at [here](http://phenolyzer.usc.edu)
 ## Mannual
 The more detailed manual is available at [here](http://phenolyzer.usc.edu/download/Phenolyzer_manual.pdf) 
 
+## Dependency
+
+[Bioperl](http://www.bioperl.org/wiki/Main_Page)
+
 ## Installation
+
 Please clone the repository into your computer:
 ```
 git clone https://github.com/WangGenomicsLab/phenolyzer
