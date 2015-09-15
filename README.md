@@ -25,6 +25,9 @@ Then enter phenolyzer directory:
 cd phenolyzer
 ```
 
+Put your own addon databases into lib/compiled_database.
+For details of how to use your own Addon databases, please refer to [FAQ](http://phenolyzer.usc.edu/FAQ.php#collapse-14)
+
 ## Pre-requisites
 - Download the databases for CNV annotation (No need to do this for other functions)
 ```
@@ -57,6 +60,11 @@ perl disease_annotation.pl alzheimer -bedfile cnv.bed -p -ph -logistic -out out/
 - Use the Mentha gene-gene interaction database as Addon
 ```
 perl disease_annotation.pl alzheimer -p -ph -logistic -out out/alzheimer_addon/out -addon_gg DB_MENTHA_GENE_GENE_INTERACTION -addon_gg_weight 0.05
+```
+
+- To generate exactly the same result as Phenolyzer web server default settings
+```
+perl disease_annotation.pl alzheimer -p -ph -logistic -out out/alzheimer_addon_all/out -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE,DB_GENECARDS_GENE_DISEASE_SCORE
 ```
 
 ## License Agreement
