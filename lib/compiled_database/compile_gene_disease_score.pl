@@ -235,6 +235,9 @@ sub eliminateNonWords{
 	$_[0] =~ s/\W+/ /g;
 	$_[0] =~ s/^\W+//;
 	$_[0] =~ s/\W+$//;
+	#get rid of with (without)
+	$_[0] =~ s/\bwith\b.*$//g;
+	$_[0] =~ s/\bwithout\b.*$//g;
 	return $_[0];
 }
 

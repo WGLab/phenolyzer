@@ -142,7 +142,7 @@ GBE1	Glycogen Storage Disease Type IV	umls:C0017923	0.71339678	DISGENET
 ASS1	Citrullinemia	umls:C0175683	0.713266672	DISGENET
 DYSF	Limb girdle muscular dystrophy type 2B	umls:C1850889	0.713136564	DISGENET
 FOXL2	Blepharophimosis Ptosis and Epicanthus Inversus	umls:C0220663	0.712406689	DISGENET
-FKTN	Micropolygyria with Muscular Dystrophy	umls:C0410174	0.712240889	DISGENET
+FKTN	Micropolygyria 	umls:C0410174	0.712240889	DISGENET
 FLCN	Birt Hogg Dube Syndrome	umls:C0346010	0.71194233	DISGENET
 ABCA4	Stargardt disease 1	umls:C1855465	0.711643772	DISGENET
 AGA	Aspartylglucosaminuria	umls:C0268225	0.711643772	DISGENET
@@ -176,7 +176,7 @@ FERMT1	Poikiloderma of Kindler	umls:C0406557	0.708359631	DISGENET
 GPR143	Ocular Albinism type 1	umls:C0342684	0.708359631	DISGENET
 NLRP3	Familial cold urticaria	umls:C0343068	0.708359631	DISGENET
 RYR2	Polymorphic catecholergic ventricular tachycardia	umls:C1631597	0.708359631	DISGENET
-CTSA	Neuraminidase deficiency with beta galactosidase deficiency	umls:C0268233	0.708061073	DISGENET
+CTSA	Neuraminidase deficiency 	umls:C0268233	0.708061073	DISGENET
 LAMA2	Muscular dystrophy congenital merosin negative	umls:C1263858	0.708061073	DISGENET
 LBR	Pelger Huet Anomaly	umls:C0030779	0.707892623	DISGENET
 SCN4A	Paralysis Hyperkalemic Periodic	umls:C0238357	0.707892623	DISGENET
@@ -202,7 +202,7 @@ CACNA1F	NIGHT BLINDNESS CONGENITAL STATIONARY TYPE 2A	umls:C1848172	0.705971165	
 DYM	Smith McCort Dysplasia	umls:C1846431	0.705971165	DISGENET
 SMARCAL1	Schimke immunoosseous dysplasia	umls:C0877024	0.705971165	DISGENET
 TIMP3	Fundus Dystrophy Pseudoinflammatory Of Sorsby	umls:C1850938	0.705971165	DISGENET
-ABHD5	Triglyceride storage disease with impaired long chain fatty acid oxidation	umls:C0268238	0.705672607	DISGENET
+ABHD5	Triglyceride storage disease 	umls:C0268238	0.705672607	DISGENET
 CYP27B1	Vitamin D Hydroxylation Deficient Rickets Type 1A	umls:C0268689	0.705672607	DISGENET
 DNAI1	Kartagener Syndrome	umls:C0022521	0.705672607	DISGENET
 NR2E3	Enhanced S Cone Syndrome	umls:C1849394	0.705672607	DISGENET
@@ -220,7 +220,7 @@ PFKM	Glycogen Storage Disease Type VII	umls:C0017926	0.704942733	DISGENET
 EFNB1	Craniofrontonasal dysplasia	umls:C0220767	0.704776932	DISGENET
 FGFR3	Muenke Syndrome	umls:C1864436	0.704776932	DISGENET
 SGCE	Myoclonic dystonia	umls:C1834570	0.704776932	DISGENET
-TTPA	Ataxia with vitamin E deficiency	umls:C1848533	0.704776932	DISGENET
+TTPA	Ataxia 	umls:C1848533	0.704776932	DISGENET
 ENPP1	Ossification of the posterior longitudinal ligament of the spine	umls:C1865343	0.704644174	DISGENET
 GAN	Giant Axonal Neuropathy	umls:C1850386	0.704478374	DISGENET
 KRT2	Ichthyosis Bullosa of Siemens	umls:C0432306	0.704478374	DISGENET
@@ -244,7 +244,7 @@ EIF2AK3	Wolcott Rallison syndrome	umls:C0432217	0.703881257	DISGENET
 FGFR3	Thanatophoric dysplasia type 2	umls:C1300257	0.703881257	DISGENET
 FLNA	Oto palato digital syndrome type 2	umls:C1844696	0.703881257	DISGENET
 HOXA13	Hand foot uterus syndrome	umls:C1841679	0.703881257	DISGENET
-ITGB4	Epidermolysis bullosa with pyloric atresia	umls:C1856934	0.703881257	DISGENET
+ITGB4	Epidermolysis bullosa 	umls:C1856934	0.703881257	DISGENET
 MPO	Myeloperoxidase Deficiency	umls:C0398595	0.703881257	DISGENET
 PLOD1	Ehlers Danlos syndrome type 6	umls:C0268342	0.703881257	DISGENET
 ARG1	Hyperargininemia	umls:C0268548	0.703582699	DISGENET
@@ -265,7 +265,7 @@ SLC39A4	Acrodermatitis enteropathica	umls:C0221036	0.703284141	DISGENET
 SLC6A19	Hartnup Disease	umls:C0018609	0.703284141	DISGENET
 TBX22	Cleft palate X linked	umls:C1844830	0.703284141	DISGENET
 ACADVL	VLCAD deficiency	umls:C0342784	0.702985583	DISGENET
-CA2	Osteopetrosis with renal tubular acidosis	umls:C0345407	0.702985583	DISGENET
+CA2	Osteopetrosis 	umls:C0345407	0.702985583	DISGENET
 COL11A2	Nance Sweeney chondrodysplasia	umls:C0432210	0.702985583	DISGENET
 EFEMP1	Doyne honeycomb retinal dystrophy	umls:C1832174	0.702985583	DISGENET
 ETHE1	Ethylmalonic encephalopathy	umls:C1865349	0.702985583	DISGENET
@@ -319,7 +319,7 @@ HNF4A	Maturity Onset Diabetes of the Young Type 1	umls:C1852093	0.70179135	DISGE
 IHH	Brachydactyly type A1	umls:C1862151	0.70179135	DISGENET
 MITF	Tietz syndrome	umls:C0391816	0.70179135	DISGENET
 MSX2	Craniosynostosis Type 2	umls:C1858160	0.70179135	DISGENET
-TDP1	Spinocerebellar ataxia autosomal recessive with axonal neuropathy	umls:C1846574	0.70179135	DISGENET
+TDP1	Spinocerebellar ataxia autosomal recessive 	umls:C1846574	0.70179135	DISGENET
 TFAP2B	Char syndrome	umls:C1868570	0.70179135	DISGENET
 TPP1	Ceroid Lipofuscinosis Neuronal 2	umls:C1876161	0.70179135	DISGENET
 TYR	Oculocutaneous albinism type 1B	umls:C1847024	0.70179135	DISGENET
@@ -395,7 +395,7 @@ GM2A	Tay Sachs Disease AB Variant	umls:C0268275	0.700597117	DISGENET
 GNPTAB	Mucolipidosis II Alpha Beta	umls:C2673377	0.700597117	DISGENET
 GPR98	Usher syndrome type 2C	umls:C2931213	0.700597117	DISGENET
 HYAL1	Hyaluronidase Deficiency	umls:C1291490	0.700597117	DISGENET
-IGHMBP2	Spinal muscular atrophy with respiratory distress 1	umls:C1858517	0.700597117	DISGENET
+IGHMBP2	Spinal muscular atrophy 	umls:C1858517	0.700597117	DISGENET
 LRP2	Donnai Barrow syndrome	umls:C1857277	0.700597117	DISGENET
 MYO6	Deafness Autosomal Dominant 22	umls:C1853441	0.700597117	DISGENET
 MYO7A	Deafness Autosomal Recessive 2	umls:C1838701	0.700597117	DISGENET
@@ -444,7 +444,7 @@ PSAP	Metachromatic Leukodystrophy due to Saposin B Deficiency	umls:C0268262	0.70
 PTS	6 pyruvoyl tetrahydropterin synthase deficiency	umls:C0878676	0.700298558	DISGENET
 SCN4A	Hypokalemic Periodic Paralysis Type 2	umls:C2750061	0.700298558	DISGENET
 SCN5A	Hereditary bundle branch system defect	umls:C1879286	0.700298558	DISGENET
-SERPINI1	Familial encephalopathy with neuroserpin inclusion bodies	umls:C1858680	0.700298558	DISGENET
+SERPINI1	Familial encephalopathy 	umls:C1858680	0.700298558	DISGENET
 SLC25A19	Amish lethal microcephaly	umls:C1846648	0.700298558	DISGENET
 SLC45A2	Oculocutaneous Albinism Type IV	umls:C1847836	0.700298558	DISGENET
 TULP1	Retinitis Pigmentosa 14	umls:C1838603	0.700298558	DISGENET
@@ -561,7 +561,7 @@ TNNT2	Cardiomyopathy Dilated 1D	umls:C1832243	0.7	DISGENET
 TP63	Ectrodactyly Ectodermal Dysplasia and Cleft Lip Palate Syndrome 3	umls:C1858562	0.7	DISGENET
 TSPAN12	Exudative Vitreoretinopathy 5	umls:C2750079	0.7	DISGENET
 TTN	Cardiomyopathy Dilated 1g	umls:C1858763	0.7	DISGENET
-TUBB3	Fibrosis Of Extraocular Muscles Congenital 3A with or without Extraocular Involvement	umls:C2748801	0.7	DISGENET
+TUBB3	Fibrosis Of Extraocular Muscles Congenital 3A 	umls:C2748801	0.7	DISGENET
 USH1G	Usher Syndrome Type IG	umls:C1847089	0.7	DISGENET
 VANGL2	Neural Tube Defects	umls:C0027794	0.7	DISGENET
 VDR	Vitamin D Dependent Rickets Type 2A	umls:C0342646	0.7	DISGENET
@@ -622,11 +622,11 @@ SCN5A	Sudden Infant Death	umls:C0038644	0.620426771	DISGENET
 MTTP	Abetalipoproteinemia	umls:C0000744	0.620133512	DISGENET
 TSC2	Lymphangioleiomyomatosis	umls:C0751674	0.62009517	DISGENET
 PROKR2	Kallmann Syndrome	umls:C0162809	0.620092521	DISGENET
-CACNA1A	Episodic ataxia with nystagmus	umls:C1720416	0.619273529	DISGENET
+CACNA1A	Episodic ataxia 	umls:C1720416	0.619273529	DISGENET
 UGT1A1	Crigler Najjar syndrome type 1	umls:C0010324	0.618862596	DISGENET
 RDH5	Fundus Albipunctatus	umls:C0311338	0.618112339	DISGENET
 OPTN	Glaucoma Primary Open Angle	umls:C0339573	0.617780738	DISGENET
-NOD2	Synovitis granulomatous with uveitis and cranial neuropathies	umls:C1861303	0.61748218	DISGENET
+NOD2	Synovitis granulomatous 	umls:C1861303	0.61748218	DISGENET
 F7	Factor VII Deficiency	umls:C0015503	0.617443838	DISGENET
 ND1	Optic Atrophy Hereditary Leber	umls:C0917796	0.617050864	DISGENET
 FGFR3	Hypochondroplasia	umls:C0410529	0.616719263	DISGENET
@@ -700,11 +700,11 @@ RLBP1	Retinitis Pigmentosa	umls:C0035334	0.607162749	DISGENET
 BBS5	Bardet Biedl Syndrome	umls:C0752166	0.607127057	DISGENET
 C7	Complement Component 7 Deficiency	umls:C1864694	0.606899883	DISGENET
 HAX1	Severe congenital neutropenia	umls:C1853118	0.60686684	DISGENET
-MLC1	Megalencephalic leukoencephalopathy with subcortical cysts	umls:C1858854	0.60686684	DISGENET
+MLC1	Megalencephalic leukoencephalopathy 	umls:C1858854	0.60686684	DISGENET
 TCF4	Pitt Hopkins syndrome	umls:C1970431	0.60686684	DISGENET
 CYP4V2	Bietti crystalline dystrophy	umls:C1859486	0.606568282	DISGENET
 KCNH2	Long Qt Syndrome 2	umls:C3150943	0.606568282	DISGENET
-LMNA	Mandibuloacral dysplasia with type A lipodystrophy	umls:C0432291	0.606568282	DISGENET
+LMNA	Mandibuloacral dysplasia 	umls:C0432291	0.606568282	DISGENET
 POMT1	Hydrocephalus Agyria And Retinal Dysplasia	umls:C0265221	0.606568282	DISGENET
 CTNNB1	Medulloblastoma	umls:C0025149	0.606399832	DISGENET
 PRKAG2	Wolff Parkinson White Syndrome	umls:C0043202	0.606399832	DISGENET
@@ -713,7 +713,7 @@ PCCB	Propionic Acidemia	umls:C0268579	0.606269724	DISGENET
 SLC2A2	Fanconi Bickel Syndrome	umls:C3495427	0.606269724	DISGENET
 AMH	Persistent Mullerian duct syndrome	umls:C1849930	0.605971165	DISGENET
 ATP1A3	Dystonia 12	umls:C1868681	0.605971165	DISGENET
-IKBKG	Ectodermal dysplasia hypohidrotic with immune deficiency	umls:C1846006	0.605971165	DISGENET
+IKBKG	Ectodermal dysplasia hypohidrotic 	umls:C1846006	0.605971165	DISGENET
 TMPRSS6	Iron Refractory Iron Deficiency Anemia	umls:C0085576	0.605971165	DISGENET
 TRAPPC2	Spondyloepiphyseal Dysplasia Tarda X Linked	umls:C0220776	0.605971165	DISGENET
 CYP19A1	Aromatase deficiency	umls:C1970109	0.605838407	DISGENET
@@ -757,7 +757,7 @@ DCX	LISSENCEPHALY X LINKED 1	umls:C1848199	0.604179816	DISGENET
 GPR56	Polymicrogyria Bilateral Frontoparietal	umls:C1847352	0.604179816	DISGENET
 MPZ	Charcot Marie Tooth disease Type 4E	umls:C0393818	0.604179816	DISGENET
 PMS2	Turcot syndrome	umls:C0265325	0.604179816	DISGENET
-RUNX1	Platelet Disorder Familial with Associated Myeloid Malignancy	umls:C1832388	0.604179816	DISGENET
+RUNX1	Platelet Disorder Familial 	umls:C1832388	0.604179816	DISGENET
 SLC2A1	De Vivo disease	umls:C1847501	0.604179816	DISGENET
 SPINK1	Hereditary pancreatitis	umls:C0238339	0.604179816	DISGENET
 COL1A1	Hyperostosis Cortical Congenital	umls:C0020497	0.604011366	DISGENET
@@ -765,7 +765,7 @@ ADSL	Adenylosuccinate lyase deficiency	umls:C0268126	0.603881257	DISGENET
 CFH	Complement Factor H Deficiency	umls:C0398777	0.603881257	DISGENET
 EDAR	Ectodermal Dysplasia 3 Anhidrotic	umls:C1720965	0.603881257	DISGENET
 HPRT1	Gout HPRT Related	umls:C0268117	0.603881257	DISGENET
-PNPLA2	Neutral Lipid Storage Disease with Myopathy	umls:C1853136	0.603881257	DISGENET
+PNPLA2	Neutral Lipid Storage Disease 	umls:C1853136	0.603881257	DISGENET
 SLC25A15	HHH syndrome	umls:C0268540	0.603881257	DISGENET
 SLC26A2	Atelosteogenesis type 2	umls:C1850554	0.603881257	DISGENET
 TP63	Rapp Hodgkin syndrome	umls:C1785148	0.603881257	DISGENET
@@ -778,13 +778,13 @@ ACAT1	Beta ketothiolase deficiency	umls:C1536500	0.603582699	DISGENET
 CHST3	Spondyloepiphyseal dysplasia Omani type	umls:C1837657	0.603582699	DISGENET
 COL1A2	Osteogenesis imperfecta type 4	umls:C0268363	0.603582699	DISGENET
 CUL7	THREE M SYNDROME 1	umls:C2678312	0.603582699	DISGENET
-EIF2B5	Childhood Ataxia with Central Nervous System Hypomyelinization	umls:C1858991	0.603582699	DISGENET
+EIF2B5	Childhood Ataxia 	umls:C1858991	0.603582699	DISGENET
 GH1	Isolated Growth Hormone Deficiency Type II	umls:C0271567	0.603582699	DISGENET
 MAP2K2	Cardiofaciocutaneous syndrome	umls:C1275081	0.603582699	DISGENET
 MYH9	Sebastian syndrome	umls:C1854520	0.603582699	DISGENET
 PDHA1	Pyruvate Dehydrogenase Complex Deficiency Disease	umls:C0034345	0.603582699	DISGENET
 QDPR	dhpr deficiency	umls:C0268465	0.603582699	DISGENET
-	Neuritis with brachial predilection	umls:C1834304	0.603582699	DISGENET
+	Neuritis 	umls:C1834304	0.603582699	DISGENET
 SLC26A2	Achondrogenesis type 1B	umls:C0265274	0.603582699	DISGENET
 TGFBI	Corneal dystrophy of Bowman layer type 1	umls:C0339278	0.603582699	DISGENET
 UBIAD1	Corneal Dystrophy Crystalline of Schnyder	umls:C0271287	0.603582699	DISGENET
@@ -798,9 +798,9 @@ FTL	Neuroferritinopathy	umls:C1853578	0.603284141	DISGENET
 KRT17	Pachyonychia congenita Jackson Lawler type	umls:C1721007	0.603284141	DISGENET
 MYH9	Fechtner syndrome	umls:C0403445	0.603284141	DISGENET
 PEX1	Peroxisome biogenesis disorders	umls:C1832200	0.603284141	DISGENET
-TREM2	Polycystic lipomembranous osteodysplasia with sclerosing leukoencephalopathy	umls:C1857316	0.603284141	DISGENET
+TREM2	Polycystic lipomembranous osteodysplasia 	umls:C1857316	0.603284141	DISGENET
 VSX1	Corneal Dystrophy Posterior Polymorphous 1	umls:C0339284	0.603284141	DISGENET
-APTX	Early onset ataxia with oculomotor apraxia and hypoalbuminemia	umls:C1859598	0.602985583	DISGENET
+APTX	Early onset ataxia 	umls:C1859598	0.602985583	DISGENET
 AVPR2	Nephrogenic Syndrome of Inappropriate Antidiuresis	umls:C1845202	0.602985583	DISGENET
 CLCNKB	Bartter syndrome type 3	umls:C1846343	0.602985583	DISGENET
 COL2A1	Kniest dysplasia	umls:C0265279	0.602985583	DISGENET
@@ -814,7 +814,7 @@ PHF6	Borjeson Forssman Lehmann syndrome	umls:C0265339	0.602985583	DISGENET
 PSTPIP1	Pyogenic arthritis pyoderma gangrenosum and acne	umls:C1858361	0.602985583	DISGENET
 RAB27A	Griscelli syndrome type 2	umls:C1868679	0.602985583	DISGENET
 SCN9A	Paroxysmal Extreme Pain Disorder	umls:C1833661	0.602985583	DISGENET
-SLC29A3	Histiocytosis with joint contractures and sensorineural deafness	umls:C1864445	0.602985583	DISGENET
+SLC29A3	Histiocytosis 	umls:C1864445	0.602985583	DISGENET
 BBS9	Bardet Biedl Syndrome	umls:C0752166	0.602817133	DISGENET
 COX15	Leigh Disease	umls:C0023264	0.602817133	DISGENET
 ALAD	Porphyria Acute Hepatic	umls:C0268328	0.602687024	DISGENET
@@ -855,12 +855,12 @@ CANT1	Desbuquois syndrome	umls:C0432242	0.602089908	DISGENET
 CHRNG	Multiple pterygium syndrome	umls:C0265261	0.602089908	DISGENET
 IGF1R	Insulin Like Growth Factor I Resistance To	umls:C1849157	0.602089908	DISGENET
 KRT13	Leukokeratosis Hereditary Mucosal	umls:C1721005	0.602089908	DISGENET
-KRT5	Epidermolysis bullosa simplex with mottled pigmentation	umls:C0432316	0.602089908	DISGENET
+KRT5	Epidermolysis bullosa simplex 	umls:C0432316	0.602089908	DISGENET
 LMNA	LIPODYSTROPHY FAMILIAL PARTIAL TYPE 2	umls:C1720860	0.602089908	DISGENET
 NBEAL2	Gray Platelet Syndrome	umls:C0272302	0.602089908	DISGENET
 NF1	Neurofibromatosis Noonan syndrome	umls:C2931482	0.602089908	DISGENET
 NOG	Multiple synostoses syndrome 1	umls:C0342282	0.602089908	DISGENET
-NSDHL	Congenital Hemidysplasia with Ichthyosiform Erythroderma and Limb Defects	umls:C0265267	0.602089908	DISGENET
+NSDHL	Congenital Hemidysplasia 	umls:C0265267	0.602089908	DISGENET
 PNKD	Paroxysmal nonkinesigenic dyskinesia	umls:C1869117	0.602089908	DISGENET
 SCN1A	Generalized Epilepsy With Febrile Seizures Plus Type 2	umls:C1858673	0.602089908	DISGENET
 SETX	Spinocerebellar ataxia autosomal recessive 1	umls:C1853761	0.602089908	DISGENET
@@ -878,8 +878,8 @@ CLN8	Ceroid lipofuscinosis neuronal 8	umls:C1864923	0.60179135	DISGENET
 DCTN1	Perry Syndrome	umls:C1868594	0.60179135	DISGENET
 DOCK8	Hyper IgE Recurrent Infection Syndrome Autosomal Recessive	umls:C1968689	0.60179135	DISGENET
 DSPP	Dentin dysplasia type II	umls:C0399380	0.60179135	DISGENET
-EIF2B1	Childhood Ataxia with Central Nervous System Hypomyelinization	umls:C1858991	0.60179135	DISGENET
-EIF2B2	Childhood Ataxia with Central Nervous System Hypomyelinization	umls:C1858991	0.60179135	DISGENET
+EIF2B1	Childhood Ataxia 	umls:C1858991	0.60179135	DISGENET
+EIF2B2	Childhood Ataxia 	umls:C1858991	0.60179135	DISGENET
 FUCA1	Fucosidosis	umls:C0016788	0.60179135	DISGENET
 GDAP1	Charcot Marie Tooth disease Type 2K	umls:C1842983	0.60179135	DISGENET
 GJB4	Erythrokeratodermia Variabilis	umls:C0265961	0.60179135	DISGENET
@@ -902,20 +902,20 @@ SPG11	Spastic paraplegia 11 autosomal recessive	umls:C1858479	0.60179135	DISGENE
 TGFBI	Groenouw type I corneal dystrophy	umls:C1641846	0.60179135	DISGENET
 TRPV4	Spondylometaphyseal dysplasia Kozlowski type	umls:C0265280	0.60179135	DISGENET
 TYMP	Mitochondrial neurogastrointestinal encephalopathy syndrome	umls:C0872218	0.60179135	DISGENET
-ACTA1	Congenital myopathy with fiber type disproportion	umls:C0546264	0.601492791	DISGENET
+ACTA1	Congenital myopathy 	umls:C0546264	0.601492791	DISGENET
 AK2	Reticular dysgenesis	umls:C0272167	0.601492791	DISGENET
 AMN	Imerslund Grasbeck syndrome	umls:C1306856	0.601492791	DISGENET
 ANO5	Osteogenesis imperfecta Levin type	umls:C1833736	0.601492791	DISGENET
 BMPR1B	Brachydactyly type A2	umls:C1832702	0.601492791	DISGENET
 CASR	Hypoparathyroidism familial isolated	umls:C1832648	0.601492791	DISGENET
 CDH3	Juvenile macular degeneration and hypotrichosis	umls:C1832162	0.601492791	DISGENET
-CTSC	Keratosis palmoplantaris with periodontopathia and onychogryposis	umls:C1855627	0.601492791	DISGENET
+CTSC	Keratosis palmoplantaris 	umls:C1855627	0.601492791	DISGENET
 DKC1	Hoyeraal Hreidarsson syndrome	umls:C1846142	0.601492791	DISGENET
 ETFA	Multiple Acyl Coenzyme A Dehydrogenase Deficiency	umls:C0268596	0.601492791	DISGENET
 FAM20C	Raine syndrome	umls:C1850106	0.601492791	DISGENET
 FGF23	Tumoral Calcinosis Hyperphosphatemic Familial	umls:C1876187	0.601492791	DISGENET
 FLNB	Atelosteogenesis type 1	umls:C0265283	0.601492791	DISGENET
-FLVCR1	Posterior column ataxia with retinitis pigmentosa	umls:C1836916	0.601492791	DISGENET
+FLVCR1	Posterior column ataxia 	umls:C1836916	0.601492791	DISGENET
 GCH1	Hyperphenylalaninemia BH4 Deficient B	umls:C0268467	0.601492791	DISGENET
 GDF5	Chondrodysplasia Grebe type	umls:C0265260	0.601492791	DISGENET
 GDF5	Brachydactyly type A2	umls:C1832702	0.601492791	DISGENET
@@ -930,10 +930,10 @@ PKLR	Pyruvate Kinase Deficiency of Red Cells	umls:C1849472	0.601492791	DISGENET
 RECQL4	Craniosynostosis radial aplasia syndrome	umls:C0265308	0.601492791	DISGENET
 SCARB2	EPILEPSY PROGRESSIVE MYOCLONIC 4 WITH OR WITHOUT RENAL FAILURE	umls:C0751779	0.601492791	DISGENET
 SHH	Single upper central incisor	umls:C1840235	0.601492791	DISGENET
-SMAD4	Juvenile Polyposis with Hereditary Hemorrhagic Telangiectasia	umls:C1832942	0.601492791	DISGENET
-STRA6	Anophthalmia with pulmonary hypoplasia	umls:C1832661	0.601492791	DISGENET
+SMAD4	Juvenile Polyposis 	umls:C1832942	0.601492791	DISGENET
+STRA6	Anophthalmia 	umls:C1832661	0.601492791	DISGENET
 TNNI3	Cardiomyopathy Familial Restrictive 1	umls:C1861861	0.601492791	DISGENET
-TTN	Hereditary Myopathy with Early Respiratory Failure	umls:C1863599	0.601492791	DISGENET
+TTN	Hereditary Myopathy 	umls:C1863599	0.601492791	DISGENET
 ANK2	Cardiac Arrhythmia Ankyrin B Related	umls:C1970119	0.601194233	DISGENET
 ANKH	Chondrocalcinosis 2	umls:C0856830	0.601194233	DISGENET
 APCDD1	Hypotrichosis simplex	umls:C1854310	0.601194233	DISGENET
@@ -948,7 +948,7 @@ COL7A1	Epidermolysis bullosa pretibial	umls:C0432321	0.601194233	DISGENET
 COQ2	Coenzyme Q10 Deficiency	umls:C1843920	0.601194233	DISGENET
 DHCR24	Desmosterolosis	umls:C1865596	0.601194233	DISGENET
 DPM1	Congenital disorder of glycosylation type 1E	umls:C1837396	0.601194233	DISGENET
-EIF2B4	Childhood Ataxia with Central Nervous System Hypomyelinization	umls:C1858991	0.601194233	DISGENET
+EIF2B4	Childhood Ataxia 	umls:C1858991	0.601194233	DISGENET
 ETFB	Multiple Acyl Coenzyme A Dehydrogenase Deficiency	umls:C0268596	0.601194233	DISGENET
 FBN1	Shprintzen Golberg craniosynostosis	umls:C1321551	0.601194233	DISGENET
 FGFR2	Jackson Weiss syndrome	umls:C0795998	0.601194233	DISGENET
@@ -971,7 +971,7 @@ NPHP3	Renal Hepatic Pancreatic Dysplasia	umls:C2673883	0.601194233	DISGENET
 PCDH15	Deafness Autosomal Recessive 23	umls:C1836027	0.601194233	DISGENET
 PIKFYVE	Corneal Dystrophy Fleck	umls:C1562113	0.601194233	DISGENET
 PRKCG	Spinocerebellar ataxia 14	umls:C1854369	0.601194233	DISGENET
-PUS1	Myopathy with lactic acidosis and sideroblastic anemia	umls:C1838103	0.601194233	DISGENET
+PUS1	Myopathy 	umls:C1838103	0.601194233	DISGENET
 PYCR1	Cutis Laxa Autosomal Recessive Type IIB	umls:C2751987	0.601194233	DISGENET
 RAB3GAP2	Martsolf syndrome	umls:C0796037	0.601194233	DISGENET
 RFXANK	Bare lymphocyte syndrome 2	umls:C2931418	0.601194233	DISGENET
@@ -992,7 +992,7 @@ CA4	Retinitis Pigmentosa 17	umls:C1833245	0.600895675	DISGENET
 CASK	Mental Retardation And Microcephaly With Pontine And Cerebellar Hypoplasia	umls:C2677903	0.600895675	DISGENET
 CAV3	Long Qt Syndrome 9	umls:C2678485	0.600895675	DISGENET
 CD40	IMMUNODEFICIENCY WITH HYPER IgM TYPE 3	umls:C1720957	0.600895675	DISGENET
-CHAT	Congenital myasthenic syndrome with episodic apnea	umls:C0393929	0.600895675	DISGENET
+CHAT	Congenital myasthenic syndrome 	umls:C0393929	0.600895675	DISGENET
 CLCN5	Hypophosphatemic Rickets X Linked Recessive	umls:C1845168	0.600895675	DISGENET
 CNGB3	Achromatopsia 3	umls:C1849792	0.600895675	DISGENET
 CNNM4	JALILI SYNDROME	umls:C3495589	0.600895675	DISGENET
@@ -1007,7 +1007,7 @@ FGB	Afibrinogenemia congenital	umls:C0019250	0.600895675	DISGENET
 FGFR2	antley bixler syndrome	umls:C2936791	0.600895675	DISGENET
 FGFR2	Lacrimoauriculodentodigital syndrome	umls:C0265269	0.600895675	DISGENET
 FLNB	Boomerang dysplasia	umls:C0432201	0.600895675	DISGENET
-FN1	Glomerulopathy with fibronectin deposits	umls:C1866075	0.600895675	DISGENET
+FN1	Glomerulopathy 	umls:C1866075	0.600895675	DISGENET
 FREM1	Bifid Nose With Or Without Anorectal And Renal Anomalies	umls:C2750433	0.600895675	DISGENET
 FSHR	Gonadal dysgenesis XX type deafness	umls:C0685838	0.600895675	DISGENET
 GDF1	Tetralogy of Fallot	umls:C0039685	0.600895675	DISGENET
@@ -1018,7 +1018,7 @@ IMPDH1	Retinitis Pigmentosa 10	umls:C1867299	0.600895675	DISGENET
 KCNJ13	Snowflake vitreoretinal degeneration	umls:C1860405	0.600895675	DISGENET
 KIF21A	FIBROSIS OF EXTRAOCULAR MUSCLES CONGENITAL 1	umls:C1851102	0.600895675	DISGENET
 KIF5A	Spastic paraplegia 10 autosomal dominant	umls:C1858712	0.600895675	DISGENET
-KRT10	Ichthyosis Cyclic with Epidermolytic Hyperkeratosis	umls:C1843463	0.600895675	DISGENET
+KRT10	Ichthyosis Cyclic 	umls:C1843463	0.600895675	DISGENET
 KRT6B	Pachyonychia congenita Jackson Lawler type	umls:C1721007	0.600895675	DISGENET
 KRT81	Monilethrix	umls:C0546966	0.600895675	DISGENET
 KRT83	Monilethrix	umls:C0546966	0.600895675	DISGENET
@@ -1050,7 +1050,7 @@ SLC2A1	Dystonia 18	umls:C1842534	0.600895675	DISGENET
 SLC52A3	Brown Vialetto Van Laere syndrome	umls:C0796274	0.600895675	DISGENET
 SMAD4	Growth mental deficiency syndrome of Myhre	umls:C0796081	0.600895675	DISGENET
 SMC1A	CdLS X Linked	umls:C1802395	0.600895675	DISGENET
-ST14	Ichthyosis with hypotrichosis autosomal recessive	umls:C1835851	0.600895675	DISGENET
+ST14	Ichthyosis 	umls:C1835851	0.600895675	DISGENET
 TBX4	Ischiopatellar dysplasia	umls:C1840061	0.600895675	DISGENET
 TGFBI	Corneal dystrophy Thiel Behnke type	umls:C1562894	0.600895675	DISGENET
 TGFBR1	LOEYS DIETZ SYNDROME TYPE 1A	umls:C1836635	0.600895675	DISGENET
@@ -1073,13 +1073,13 @@ BSCL2	Neuronopathy Distal Hereditary Motor Type V	umls:C1833308	0.600597117	DISG
 CDH3	Ectodermal dysplasia ectrodactyly and macular dystrophy	umls:C1857041	0.600597117	DISGENET
 CHRNA4	Epilepsy Nocturnal Frontal Lobe Type 1	umls:C1838049	0.600597117	DISGENET
 CHRNG	MULTIPLE PTERYGIUM SYNDROME LETHAL TYPE	umls:C1854678	0.600597117	DISGENET
-COL11A2	Pierre Robin syndrome with fetal chondrodysplasia	umls:C1848488	0.600597117	DISGENET
-COL4A1	Brain Small Vessel Disease with Hemorrhage	umls:C1843512	0.600597117	DISGENET
+COL11A2	Pierre Robin syndrome 	umls:C1848488	0.600597117	DISGENET
+COL4A1	Brain Small Vessel Disease 	umls:C1843512	0.600597117	DISGENET
 COL4A1	Angiopathy Hereditary With Nephropathy Aneurysms And Muscle Cramps	umls:C2673195	0.600597117	DISGENET
 COLQ	Endplate Acetylcholinesterase Deficiency	umls:C1864233	0.600597117	DISGENET
 CTNS	Cystinosis Late Onset Juvenile or Adolescent Nephropathic Type	umls:C0268626	0.600597117	DISGENET
 CYLD	Trichoepithelioma multiple familial	umls:C1275122	0.600597117	DISGENET
-DARS2	Leukoencephalopathy with Brainstem and Spinal Cord Involvement and Lactate Elevation	umls:C1970180	0.600597117	DISGENET
+DARS2	Leukoencephalopathy 	umls:C1970180	0.600597117	DISGENET
 DIS3L2	Nephroblastomatosis fetal ascites macrosomia and Wilms tumor	umls:C0796113	0.600597117	DISGENET
 DSP	Skin Fragility Woolly Hair Syndrome	umls:C1843292	0.600597117	DISGENET
 ERCC4	XFE Progeroid Syndrome	umls:C1970416	0.600597117	DISGENET
@@ -1112,7 +1112,7 @@ KRT17	Steatocystoma Multiplex	umls:C0259771	0.600597117	DISGENET
 KRT86	Monilethrix	umls:C0546966	0.600597117	DISGENET
 MCCC1	3 methylcrotonyl CoA carboxylase 1 deficiency	umls:C0268600	0.600597117	DISGENET
 MMAB	Methylmalonic aciduria cblB type	umls:C1855102	0.600597117	DISGENET
-MMACHC	Methylmalonic acidemia with homocystinuria	umls:C1848561	0.600597117	DISGENET
+MMACHC	Methylmalonic acidemia 	umls:C1848561	0.600597117	DISGENET
 MOCS2	Molybdenum cofactor deficiency	umls:C0268119	0.600597117	DISGENET
 MOGS	Congenital Disorder Of Glycosylation Type IIB	umls:C1853736	0.600597117	DISGENET
 MPDU1	Congenital disorder of glycosylation type 1F	umls:C1836669	0.600597117	DISGENET
@@ -1124,18 +1124,18 @@ NF1	Neurofibromatosis Familial Spinal	umls:C1834235	0.600597117	DISGENET
 NIPA1	Spastic paraplegia 6 autosomal dominant	umls:C1838192	0.600597117	DISGENET
 OCLN	BAND LIKE CALCIFICATION WITH SIMPLIFIED GYRATION AND POLYMICROGYRIA	umls:C3489725	0.600597117	DISGENET
 PAX3	Craniofacial deafness hand syndrome	umls:C1852510	0.600597117	DISGENET
-PCDH19	Epilepsy Female Restricted with Mental Retardation	umls:C1848137	0.600597117	DISGENET
+PCDH19	Epilepsy Female Restricted 	umls:C1848137	0.600597117	DISGENET
 PGK1	Phosphoglycerate Kinase 1 Deficiency	umls:C1970848	0.600597117	DISGENET
 PLA2G6	Dystonia Parkinsonism Adult Onset	umls:C2751842	0.600597117	DISGENET
 PMP22	Charcot Marie Tooth Disease Demyelinating Type 1e	umls:C3495591	0.600597117	DISGENET
 PNKP	EPILEPTIC ENCEPHALOPATHY EARLY INFANTILE 10	umls:C3150667	0.600597117	DISGENET
-POLG	Progressive External Ophthalmoplegia with Mitochondrial DNA Deletions Autosomal Recessive	umls:C1850303	0.600597117	DISGENET
+POLG	Progressive External Ophthalmoplegia 	umls:C1850303	0.600597117	DISGENET
 RAB23	Acrocephalopolysyndactyly Type II	umls:C1275078	0.600597117	DISGENET
 RFT1	Congenital Disorder Of Glycosylation Type In	umls:C2677590	0.600597117	DISGENET
 RFX5	Bare lymphocyte syndrome 2	umls:C2931418	0.600597117	DISGENET
 RGS9	Prolonged Electroretinal Response Suppression	umls:C1842073	0.600597117	DISGENET
 RIMS1	Cone Rod Dystrophy 7	umls:C1863634	0.600597117	DISGENET
-ROBO3	Gaze Palsy Familial Horizontal with Progressive Scoliosis	umls:C1846496	0.600597117	DISGENET
+ROBO3	Gaze Palsy Familial Horizontal 	umls:C1846496	0.600597117	DISGENET
 SAMD9	Tumoral Calcinosis Normophosphatemic Familial	umls:C1864861	0.600597117	DISGENET
 SART3	Porokeratosis disseminated superficial actinic 1	umls:C1867981	0.600597117	DISGENET
 SCN5A	Sick Sinus Syndrome 1 Autosomal Recessive	umls:C1837845	0.600597117	DISGENET
@@ -1173,7 +1173,7 @@ CERKL	Retinitis Pigmentosa 26	umls:C1842127	0.600298558	DISGENET
 CFI	Complement Factor I Deficiency	umls:C3463916	0.600298558	DISGENET
 CFP	Properdin deficiency X linked	umls:C1839454	0.600298558	DISGENET
 CHRNB2	Epilepsy Nocturnal Frontal Lobe Type 3	umls:C1854335	0.600298558	DISGENET
-CLCN5	Nephrolithiasis X Linked Recessive with Renal Failure	umls:C0403720	0.600298558	DISGENET
+CLCN5	Nephrolithiasis X Linked Recessive 	umls:C0403720	0.600298558	DISGENET
 CNGA3	Achromatopsia 2	umls:C1857618	0.600298558	DISGENET
 CNGB3	Stargardt disease 1	umls:C1855465	0.600298558	DISGENET
 COL1A1	Ehlers Danlos syndrome type 1	umls:C0268335	0.600298558	DISGENET
@@ -1187,7 +1187,7 @@ DOK7	Congenital myasthenic syndrome ib	umls:C1850792	0.600298558	DISGENET
 DOLK	Congenital Disorder Of Glycosylation Type Im	umls:C1835849	0.600298558	DISGENET
 ECM1	Lipoid Proteinosis of Urbach and Wiethe	umls:C0023795	0.600298558	DISGENET
 EGR2	Charcot Marie Tooth disease Type 1D	umls:C1843247	0.600298558	DISGENET
-EIF2B3	Childhood Ataxia with Central Nervous System Hypomyelinization	umls:C1858991	0.600298558	DISGENET
+EIF2B3	Childhood Ataxia 	umls:C1858991	0.600298558	DISGENET
 EPG5	Absent corpus callosum cataract immunodeficiency	umls:C1855772	0.600298558	DISGENET
 FBN1	Stiff Skin Syndrome	umls:C1861456	0.600298558	DISGENET
 FGFR1	Trigonocephaly Nonsyndromic	umls:C0432122	0.600298558	DISGENET
@@ -1238,7 +1238,7 @@ MYOT	Muscular dystrophy limb girdle type 1A	umls:C1834659	0.600298558	DISGENET
 NDUFS2	Mitochondrial complex I deficiency	umls:C1838979	0.600298558	DISGENET
 NEFL	Charcot Marie Tooth disease Type 2E	umls:C1843225	0.600298558	DISGENET
 NEUROG3	Diarrhea 4 Malabsorptive Congenital	umls:C1835888	0.600298558	DISGENET
-NHEJ1	Severe Combined Immunodeficiency with Microcephaly Growth Retardation and Sensitivity to Ionizing Radiation	umls:C1969799	0.600298558	DISGENET
+NHEJ1	Severe Combined Immunodeficiency 	umls:C1969799	0.600298558	DISGENET
 NOG	Tarsal carpal coalition syndrome	umls:C1861305	0.600298558	DISGENET
 NUP62	Striatonigral degeneration infantile	umls:C0795996	0.600298558	DISGENET
 OPN1LW	Blue cone monochromatism	umls:C0339537	0.600298558	DISGENET
@@ -1248,7 +1248,7 @@ PEX5	Neonatal adrenoleukodystrophy	umls:C0282525	0.600298558	DISGENET
 PGAM2	Dimauro disease	umls:C0268149	0.600298558	DISGENET
 PHF8	Siderius X linked mental retardation syndrome	umls:C1846055	0.600298558	DISGENET
 PHGDH	Phosphoglycerate Dehydrogenase Deficiency	umls:C1866174	0.600298558	DISGENET
-PIGV	Hyperphosphatasia with Mental Retardation	umls:C1855923	0.600298558	DISGENET
+PIGV	Hyperphosphatasia 	umls:C1855923	0.600298558	DISGENET
 PITPNM3	Cone Rod Dystrophy 5	umls:C1832976	0.600298558	DISGENET
 PKP2	Arrhythmogenic Right Ventricular Dysplasia Familial 9	umls:C1836906	0.600298558	DISGENET
 PLA2G6	NBIA2B	umls:C1857747	0.600298558	DISGENET
@@ -1274,7 +1274,7 @@ SLC10A2	Bile Acid Malabsorption Primary	umls:C2750087	0.600298558	DISGENET
 SLC1A3	Episodic Ataxia Type 6	umls:C2675211	0.600298558	DISGENET
 SLC25A12	Hypomyelination Global Cerebral	umls:C2751855	0.600298558	DISGENET
 SLC33A1	Spastic Paraplegia 42 Autosomal Dominant	umls:C2675528	0.600298558	DISGENET
-SLC36A2	Glycinuria with or without Oxalate Urolithiasis	umls:C0543541	0.600298558	DISGENET
+SLC36A2	Glycinuria 	umls:C0543541	0.600298558	DISGENET
 SLC36A2	Iminoglycinuria	umls:C0268654	0.600298558	DISGENET
 SMARCA2	Nicolaides Baraitser syndrome	umls:C1303073	0.600298558	DISGENET
 SMCHD1	Facioscapulohumeral Muscular Dystrophy 1B	umls:C1834671	0.600298558	DISGENET
@@ -1341,7 +1341,7 @@ ARX	Proud Syndrome	umls:C0796124	0.6	DISGENET
 ATIC	AICAR Transformylase Inosine Monophosphate Cyclohydrolase Deficiency	umls:C1837530	0.6	DISGENET
 ATP1A2	Alternating hemiplegia of childhood	umls:C0338488	0.6	DISGENET
 ATP2B3	Spinocerebellar Ataxia X Linked 1	umls:C0796205	0.6	DISGENET
-ATP6V1B1	Renal Tubular Acidosis Distal with Progressive Nerve Deafness	umls:C0403554	0.6	DISGENET
+ATP6V1B1	Renal Tubular Acidosis Distal 	umls:C0403554	0.6	DISGENET
 ATP7A	Spinal Muscular Atrophy Distal X Linked 3	umls:C1845359	0.6	DISGENET
 ATPAF2	MITOCHONDRIAL COMPLEX V ATP SYNTHASE DEFICIENCY NUCLEAR TYPE 1	umls:C3276276	0.6	DISGENET
 B2M	Hypoproteinemia Hypercatabolic	umls:C1855796	0.6	DISGENET
@@ -1372,7 +1372,7 @@ CBX2	46 XY Sex Reversal 5	umls:C2751317	0.6	DISGENET
 CC2D2A	Joubert Syndrome 9	umls:C2676788	0.6	DISGENET
 CC2D2A	Meckel Syndrome Type 6	umls:C2676790	0.6	DISGENET
 CCBE1	Hennekam lymphangiectasia lymphedema syndrome	umls:C0340834	0.6	DISGENET
-CCT5	Neuropathy Hereditary Sensory with Spastic Paraplegia Autosomal Recessive	umls:C1850395	0.6	DISGENET
+CCT5	Neuropathy Hereditary Sensory 	umls:C1850395	0.6	DISGENET
 CD79B	AGAMMAGLOBULINEMIA 6 AUTOSOMAL RECESSIVE	umls:C3150207	0.6	DISGENET
 CDH15	Mental Retardation Autosomal Dominant 3	umls:C2675488	0.6	DISGENET
 CDK4	MELANOMA CUTANEOUS MALIGNANT	umls:C1836892	0.6	DISGENET
@@ -1389,14 +1389,14 @@ CHRNA2	Epilepsy Nocturnal Frontal Lobe Type 4	umls:C1835905	0.6	DISGENET
 CHRND	Myasthenic Syndrome Congenital Fast Channel	umls:C1837122	0.6	DISGENET
 CHRND	MULTIPLE PTERYGIUM SYNDROME LETHAL TYPE	umls:C1854678	0.6	DISGENET
 CHRNE	Myasthenic Syndrome Congenital Fast Channel	umls:C1837122	0.6	DISGENET
-CLCN5	Low Molecular Weight Proteinuria with Hypercalciuria and Nephrocalcinosis	umls:C1839874	0.6	DISGENET
+CLCN5	Low Molecular Weight Proteinuria 	umls:C1839874	0.6	DISGENET
 CLCNKA	Bartter Syndrome Type 4b	umls:C2751312	0.6	DISGENET
 CLDN16	Hypomagnesemia primary	umls:C0268448	0.6	DISGENET
-CLDN19	Hypomagnesemia 5 Renal with Ocular Involvement	umls:C1855466	0.6	DISGENET
+CLDN19	Hypomagnesemia 5 Renal 	umls:C1855466	0.6	DISGENET
 COG4	CONGENITAL DISORDER OF GLYCOSYLATION TYPE IIj	umls:C3150736	0.6	DISGENET
 COL11A2	Deafness Autosomal Recessive 53	umls:C1864746	0.6	DISGENET
-COL2A1	Osteoarthritis with Mild Chondrodysplasia	umls:C1858079	0.6	DISGENET
-COL2A1	Epiphyseal Dysplasia Multiple with Myopia and Conductive Deafness	umls:C1851536	0.6	DISGENET
+COL2A1	Osteoarthritis 	umls:C1858079	0.6	DISGENET
+COL2A1	Epiphyseal Dysplasia Multiple 	umls:C1851536	0.6	DISGENET
 COL3A1	Ehlers Danlos syndrome type 3	umls:C0268337	0.6	DISGENET
 COL7A1	Toenail Dystrophy Isolated	umls:C1843761	0.6	DISGENET
 COL8A2	Corneal Dystrophy Posterior Polymorphous 2	umls:C1852795	0.6	DISGENET
@@ -1405,7 +1405,7 @@ COX4I2	Exocrine Pancreatic Insufficiency Dyserythropoietic Anemia and Calvarial 
 COX6B1	Cytochrome c Oxidase Deficiency	umls:C0268237	0.6	DISGENET
 CPN1	Carboxypeptidase N Deficiency	umls:C0398782	0.6	DISGENET
 CPT2	Carnitine Palmitoyltransferase II Deficiency Late Onset	umls:C1833508	0.6	DISGENET
-CRYBA4	Microphthalmia Isolated with Cataract 4	umls:C1864878	0.6	DISGENET
+CRYBA4	Microphthalmia Isolated 	umls:C1864878	0.6	DISGENET
 CRYBA4	Cataract Lamellar 2	umls:C1864879	0.6	DISGENET
 CRYBB3	Cataract Congenital Nuclear Autosomal Recessive 2	umls:C1857853	0.6	DISGENET
 CSF2RA	Surfactant Metabolism Dysfunction Pulmonary 4	umls:C2677877	0.6	DISGENET
@@ -1427,7 +1427,7 @@ DPYS	Dihydropyrimidinase Deficiency	umls:C0342803	0.6	DISGENET
 DSC2	Arrhythmogenic Right Ventricular Dysplasia Familial 11	umls:C1864850	0.6	DISGENET
 DSG2	Arrhythmogenic Right Ventricular Dysplasia Familial 10	umls:C1857777	0.6	DISGENET
 DSP	Arrhythmogenic Right Ventricular Dysplasia Familial 8	umls:C1843896	0.6	DISGENET
-DSPP	Deafness Autosomal Dominant 39 with Dentinogenesis Imperfecta 1	umls:C1854146	0.6	DISGENET
+DSPP	Deafness Autosomal Dominant 39 	umls:C1854146	0.6	DISGENET
 DTNA	Noncompaction of Left Ventricular Myocardium Familial Isolated Autosomal Dominant 1	umls:C1858725	0.6	DISGENET
 EDA	Tooth Agenesis Selective X Linked 1	umls:C1970757	0.6	DISGENET
 EGF	Hypomagnesemia 4 Renal	umls:C2673648	0.6	DISGENET
@@ -1449,7 +1449,7 @@ FBLN5	Macular Degeneration Age Related 3	umls:C1837187	0.6	DISGENET
 FBN1	ECTOPIA LENTIS ISOLATED AUTOSOMAL DOMINANT	umls:C3149104	0.6	DISGENET
 FGA	Amyloidosis familial visceral	umls:C0268389	0.6	DISGENET
 FGF14	Spinocerebellar ataxia 27	umls:C1836383	0.6	DISGENET
-FGF3	Deafness Congenital with Inner Ear Agenesis Microtia and Microdontia	umls:C1853144	0.6	DISGENET
+FGF3	Deafness Congenital 	umls:C1853144	0.6	DISGENET
 FGF9	Multiple Synostoses Syndrome 3	umls:C2751826	0.6	DISGENET
 FGFR2	Scaphocephaly Maxillary Retrusion And Mental Retardation	umls:C1865070	0.6	DISGENET
 FHL1	Myopathy Reducing Body X Linked Early Onset Severe	umls:C2678027	0.6	DISGENET
@@ -1466,7 +1466,7 @@ FRMD7	Nystagmus 1 congenital X linked	umls:C1839580	0.6	DISGENET
 FTO	Growth Retardation Developmental Delay Coarse Facies And Early Death	umls:C2752001	0.6	DISGENET
 FXYD2	Hypomagnesemia 2 renal	umls:C1835171	0.6	DISGENET
 GAD1	Cerebral Palsy Spastic Quadriplegic 1	umls:C2751938	0.6	DISGENET
-GATA1	Dyserythropoietic Anemia with Thrombocytopenia	umls:C1845837	0.6	DISGENET
+GATA1	Dyserythropoietic Anemia 	umls:C1845837	0.6	DISGENET
 GCK	Hyperinsulinemic hypoglycemia familial 3	umls:C1865290	0.6	DISGENET
 GCLC	Gamma Glutamylcysteine Synthetase Deficiency Hemolytic Anemia due to	umls:C1856603	0.6	DISGENET
 GDAP1	Charcot Marie Tooth disease Type 4A axonal form	umls:C1843183	0.6	DISGENET
@@ -1478,7 +1478,7 @@ GDF5	Multiple synostoses syndrome 2	umls:C1832708	0.6	DISGENET
 GDF6	Microphthalmia Isolated 4	umls:C2751307	0.6	DISGENET
 GFI1	Neutropenia Nonimmune Chronic Idiopathic Adult	umls:C1842930	0.6	DISGENET
 GFM1	Combined Oxidative Phosphorylation Deficiency 1	umls:C1836797	0.6	DISGENET
-GGCX	Pseudoxanthoma Elasticum Like Disorder with Multiple Coagulation Factor Deficiency	umls:C1835813	0.6	DISGENET
+GGCX	Pseudoxanthoma Elasticum Like Disorder 	umls:C1835813	0.6	DISGENET
 GHR	Short Stature Idiopathic Autosomal	umls:C1858656	0.6	DISGENET
 GHSR	Short Stature Idiopathic Autosomal	umls:C1858656	0.6	DISGENET
 GIGYF2	Parkinson Disease 11	umls:C1843211	0.6	DISGENET
@@ -1523,7 +1523,7 @@ HYLS1	Hydrolethalus Syndrome 1	umls:C1856016	0.6	DISGENET
 ICK	Endocrine Cerebroosteodysplasia	umls:C2675227	0.6	DISGENET
 IDH2	D 2 HYDROXYGLUTARIC ACIDURIA 2	umls:C3150909	0.6	DISGENET
 IFT122	Cranioectodermal Dysplasia	umls:C0432235	0.6	DISGENET
-IKBKG	Immunodeficiency without anhidrotic ectodermal dysplasia	umls:C1845117	0.6	DISGENET
+IKBKG	Immunodeficiency 	umls:C1845117	0.6	DISGENET
 IKBKG	Invasive Pneumococcal Disease Recurrent Isolated 2	umls:C1845073	0.6	DISGENET
 IKBKG	Atypical Mycobacteriosis Familial X Linked 1	umls:C1970879	0.6	DISGENET
 IL10RA	Inflammatory Bowel Disease 28 Autosomal Recessive	umls:C2751053	0.6	DISGENET
@@ -1531,7 +1531,7 @@ ILDR1	Deafness Autosomal Recessive 42	umls:C1864818	0.6	DISGENET
 IMPG2	RETINITIS PIGMENTOSA 56	umls:C3150819	0.6	DISGENET
 INS	MATURITY ONSET DIABETES OF THE YOUNG TYPE 10	umls:C3150617	0.6	DISGENET
 INS	Diabetes Mellitus Insulin Dependent 2	umls:C1852092	0.6	DISGENET
-INSR	Diabetes Mellitus Insulin Resistant with Acanthosis Nigricans	umls:C0342278	0.6	DISGENET
+INSR	Diabetes Mellitus Insulin Resistant 	umls:C0342278	0.6	DISGENET
 INSR	Hyperinsulinemic Hypoglycemia Familial 5	umls:C1864952	0.6	DISGENET
 IRF6	OROFACIAL CLEFT 6	umls:C1837213	0.6	DISGENET
 ITK	Lymphoproliferative Syndrome Ebv Associated Autosomal 1	umls:C2751686	0.6	DISGENET
@@ -1561,7 +1561,7 @@ KL	Tumoral Calcinosis Hyperphosphatemic Familial	umls:C1876187	0.6	DISGENET
 KRAS	Noonan syndrome 3	umls:C1860991	0.6	DISGENET
 KRT18	Cirrhosis Familial	umls:C1861556	0.6	DISGENET
 KRT1	Palmoplantar Keratoderma Nonepidermolytic	umls:C1833030	0.6	DISGENET
-KRT1	Ichthyosis Cyclic with Epidermolytic Hyperkeratosis	umls:C1843463	0.6	DISGENET
+KRT1	Ichthyosis Cyclic 	umls:C1843463	0.6	DISGENET
 KRT74	WOOLLY HAIR AUTOSOMAL DOMINANT	umls:C1860238	0.6	DISGENET
 KRT85	Ectodermal Dysplasia Pure Hair Nail Type	umls:C1865951	0.6	DISGENET
 KRT8	Cirrhosis Familial	umls:C1861556	0.6	DISGENET
@@ -1639,7 +1639,7 @@ NPC2	Niemann Pick disease type C2	umls:C1843366	0.6	DISGENET
 NPHP4	Nephronophthisis 4	umls:C1847013	0.6	DISGENET
 NPHP4	Senior Loken syndrome 4	umls:C1846979	0.6	DISGENET
 NR2E3	Retinitis Pigmentosa 37	umls:C1970163	0.6	DISGENET
-NR3C2	Hypertension Early Onset Autosomal Dominant with Severe Exacerbation in Pregnancy	umls:C1854631	0.6	DISGENET
+NR3C2	Hypertension Early Onset Autosomal Dominant 	umls:C1854631	0.6	DISGENET
 NR5A1	Premature Ovarian Failure 7	umls:C2751825	0.6	DISGENET
 NRAS	Noonan Syndrome 6	umls:C2750732	0.6	DISGENET
 NT5C3A	Uridine 5 Prime Monophosphate Hydrolase Deficiency Hemolytic Anemia due to	umls:C1849507	0.6	DISGENET
@@ -1649,7 +1649,7 @@ OPN1LW	COLORBLINDNESS PARTIAL PROTAN SERIES	umls:C1419325	0.6	DISGENET
 OPN1MW	COLORBLINDNESS PARTIAL DEUTAN SERIES	umls:C1415024	0.6	DISGENET
 OPN1SW	TRITANOPIA	umls:C1412770	0.6	DISGENET
 OPTN	AMYOTROPHIC LATERAL SCLEROSIS 12	umls:C3150692	0.6	DISGENET
-ORAI1	Immune dysfunction with T cell inactivation due to calcium entry defect 1	umls:C2748568	0.6	DISGENET
+ORAI1	Immune dysfunction 	umls:C2748568	0.6	DISGENET
 OSMR	Amyloidosis IX	umls:C0268398	0.6	DISGENET
 OTX2	Microphthalmia Syndromic 5	umls:C1864690	0.6	DISGENET
 P2RY12	Bleeding Disorder Due To P2RY12 Defect	umls:C1853278	0.6	DISGENET
@@ -1657,12 +1657,12 @@ PAK3	Mental Retardation X Linked 30	umls:C0796237	0.6	DISGENET
 PAX4	Maturity Onset Diabetes Of The Young Type 9	umls:C2677132	0.6	DISGENET
 PAX6	O Donnell Pappas syndrome	umls:C2931644	0.6	DISGENET
 PAX6	Optic Nerve Hypoplasia Bilateral	umls:C1833797	0.6	DISGENET
-PCBD1	Hyperphenylalaninemia with primapterinuria	umls:C1849700	0.6	DISGENET
+PCBD1	Hyperphenylalaninemia 	umls:C1849700	0.6	DISGENET
 PCSK1	Proprotein Convertase 1 3 Deficiency	umls:C1833053	0.6	DISGENET
 PCSK9	Hypercholesterolemia Autosomal Dominant 3	umls:C1863551	0.6	DISGENET
 PDE6C	Cone Dystrophy 4	umls:C2751308	0.6	DISGENET
 PDHA1	Leigh Syndrome X Linked	umls:C1839885	0.6	DISGENET
-C10ORF2	Progressive External Ophthalmoplegia with Mitochondrial DNA Deletions Autosomal Dominant 3	umls:C1836439	0.6	DISGENET
+C10ORF2	Progressive External Ophthalmoplegia 	umls:C1836439	0.6	DISGENET
 C10ORF2	Sensory ataxic neuropathy dysarthria and ophthalmoparesis	umls:C1843851	0.6	DISGENET
 PGM1	Glycogen Storage Disease XIV	umls:C2752015	0.6	DISGENET
 PHKA2	phosphorylase kinase alpha 2 liver	umls:C1418533	0.6	DISGENET
@@ -1675,11 +1675,11 @@ PKLR	Adenosine Triphosphate Elevated Of Erythrocytes	umls:C1863224	0.6	DISGENET
 PLEKHG5	Spinal Muscular Atrophy Distal Autosomal Recessive 4	umls:C1970211	0.6	DISGENET
 PLN	Cardiomyopathy Dilated 1p	umls:C1835928	0.6	DISGENET
 PLOD2	Bruck syndrome 2	umls:C1836602	0.6	DISGENET
-PLOD3	Bone Fragility with Contractures Arterial Rupture and Deafness	umls:C2676285	0.6	DISGENET
+PLOD3	Bone Fragility 	umls:C2676285	0.6	DISGENET
 POF1B	Premature Ovarian Failure 2b	umls:C1845105	0.6	DISGENET
-POLG2	Progressive External Ophthalmoplegia with Mitochondrial DNA Deletions Autosomal Dominant 4	umls:C1864668	0.6	DISGENET
+POLG2	Progressive External Ophthalmoplegia 	umls:C1864668	0.6	DISGENET
 POLG	MITOCHONDRIAL DNA DEPLETION SYNDROME 4A ALPERS TYPE	umls:C3149842	0.6	DISGENET
-POLG	Progressive External Ophthalmoplegia with Mitochondrial DNA Deletions Autosomal Dominant 1	umls:C1834846	0.6	DISGENET
+POLG	Progressive External Ophthalmoplegia 	umls:C1834846	0.6	DISGENET
 POLG	MITOCHONDRIAL DNA DEPLETION SYNDROME 4B MNGIE TYPE	umls:C3150914	0.6	DISGENET
 POLR1C	Mandibulofacial dysostosis Treacher Collins type autosomal recessive	umls:C1855433	0.6	DISGENET
 POLR1D	TREACHER COLLINS SYNDROME 2	umls:C3150983	0.6	DISGENET
@@ -1717,7 +1717,7 @@ RAD51C	BREAST OVARIAN CANCER FAMILIAL	umls:C3150659	0.6	DISGENET
 RAD51C	FANCONI ANEMIA COMPLEMENTATION GROUP O	umls:C3150653	0.6	DISGENET
 RAF1	LEOPARD syndrome 2	umls:C1969056	0.6	DISGENET
 RAG1	Combined Cellular And Humoral Immune Defects With Granulomas	umls:C2673536	0.6	DISGENET
-RAG1	Alpha Beta T Cell Lymphopenia with Gamma Delta T Cell Expansion Severe Cytomegalovirus Infection and Autoimmunity	umls:C1835931	0.6	DISGENET
+RAG1	Alpha Beta T Cell Lymphopenia 	umls:C1835931	0.6	DISGENET
 RAG2	Combined Cellular And Humoral Immune Defects With Granulomas	umls:C2673536	0.6	DISGENET
 RANBP2	ENCEPHALOPATHY ACUTE INFECTION INDUCED 3 SUCEPTIBILITY TO	umls:C2675556	0.6	DISGENET
 RAPSN	Myasthenic syndrome congenital type Id	umls:C1837091	0.6	DISGENET
@@ -1765,13 +1765,13 @@ SH3TC2	MONONEUROPATHY OF THE MEDIAN NERVE MILD	umls:C3150596	0.6	DISGENET
 SHOC2	NOONAN SYNDROME LIKE DISORDER WITH LOOSE ANAGEN HAIR	umls:C1843181	0.6	DISGENET
 SHROOM4	Stocco dos Santos syndrome	umls:C1845530	0.6	DISGENET
 SIX5	BRANCHIOOTORENAL SYNDROME 2	umls:C1970479	0.6	DISGENET
-SIX6	Microphthalmia Isolated with Cataract 2	umls:C1859311	0.6	DISGENET
+SIX6	Microphthalmia Isolated 	umls:C1859311	0.6	DISGENET
 SLC11A2	Anemia Hypochromic Microcytic With Iron Overload	umls:C2673913	0.6	DISGENET
 SLC16A1	Erythrocyte Lactate Transporter Defect	umls:C1855577	0.6	DISGENET
 SLC25A22	Epileptic Encephalopathy Early Infantile 3	umls:C0270855	0.6	DISGENET
 SLC25A38	Anemia Sideroblastic Pyridoxine Refractory Autosomal Recessive	umls:C2673914	0.6	DISGENET
 SLC25A3	Mitochondrial Phosphate Carrier Deficiency	umls:C1835845	0.6	DISGENET
-SLC25A4	Progressive External Ophthalmoplegia with Mitochondrial DNA Deletions Autosomal Dominant 2	umls:C1836460	0.6	DISGENET
+SLC25A4	Progressive External Ophthalmoplegia 	umls:C1836460	0.6	DISGENET
 SLC34A1	Nephrolithiasis Osteoporosis Hypophosphatemic 1	umls:C2676786	0.6	DISGENET
 SLC37A4	Glycogen Storage Disease IC	umls:C0342749	0.6	DISGENET
 SLC4A11	Corneal Dystrophy Fuchs Endothelial 4	umls:C2750450	0.6	DISGENET
@@ -1844,7 +1844,7 @@ TUFM	Combined Oxidative Phosphorylation Deficiency 4	umls:C1857682	0.6	DISGENET
 TULP1	LEBER CONGENITAL AMAUROSIS 15	umls:C3151206	0.6	DISGENET
 UCHL1	PARKINSON DISEASE 5 AUTOSOMAL DOMINANT	umls:C3150899	0.6	DISGENET
 UGT1A1	Hyperbilirubinemia Transient Familial Neonatal	umls:C0270210	0.6	DISGENET
-UMOD	Glomerulocystic Kidney Disease with Hyperuricemia and Isosthenuria	umls:C1835934	0.6	DISGENET
+UMOD	Glomerulocystic Kidney Disease 	umls:C1835934	0.6	DISGENET
 UMPS	Oroticaciduria 1	umls:C0268130	0.6	DISGENET
 UNG	IMMUNODEFICIENCY WITH HYPER IgM TYPE 5	umls:C1720958	0.6	DISGENET
 UPF3B	Mental Retardation X Linked Syndromic 14	umls:C1970822	0.6	DISGENET
@@ -1855,7 +1855,7 @@ VCL	Cardiomyopathy Familial Hypertrophic 15	umls:C2750459	0.6	DISGENET
 VCL	Cardiomyopathy Dilated 1w	umls:C1969639	0.6	DISGENET
 VKORC1	Vitamin K Dependent Clotting Factors Combined Deficiency Of Type 2	umls:C1843832	0.6	DISGENET
 VSX1	Keratoconus 1	umls:C1835677	0.6	DISGENET
-VSX2	Microphthalmia Isolated with Coloboma 3	umls:C1864721	0.6	DISGENET
+VSX2	Microphthalmia Isolated 	umls:C1864721	0.6	DISGENET
 VSX2	Microphthalmia Isolated 2	umls:C1864720	0.6	DISGENET
 WDR35	CRANIOECTODERMAL DYSPLASIA 2	umls:C3150874	0.6	DISGENET
 WDR36	Glaucoma 1 Open Angle G	umls:C1835933	0.6	DISGENET
@@ -1868,7 +1868,7 @@ ZBTB16	Skeletal Defects Genital Hypoplasia And Mental Retardation	umls:C2676231	
 ZDHHC9	MENTAL RETARDATION X LINKED SYNDROMIC RAYMOND TYPE	umls:C3275406	0.6	DISGENET
 ZEB1	Corneal Dystrophy Fuchs Endothelial 6	umls:C2750448	0.6	DISGENET
 ZFYVE27	Spastic Paraplegia 33 Autosomal Dominant	umls:C1853251	0.6	DISGENET
-ZMPSTE24	Mandibuloacral dysplasia with type B lipodystrophy	umls:C1837756	0.6	DISGENET
+ZMPSTE24	Mandibuloacral dysplasia 	umls:C1837756	0.6	DISGENET
 ZNF513	RETINITIS PIGMENTOSA 58	umls:C3150879	0.6	DISGENET
 ZNF81	Mental Retardation X Linked 45	umls:C1845333	0.6	DISGENET
 ACE	Hypertension	umls:C0020538	0.6	DISGENET
@@ -1887,10 +1887,10 @@ REN	Hypertension	umls:C0020538	0.554460098	DISGENET
 ACE	Myocardial Infarction	umls:C0027051	0.552592872	DISGENET
 SOD1	Amyotrophic Lateral Sclerosis	umls:C0002736	0.551049472	DISGENET
 NOS3	Hypertension	umls:C0020538	0.545115869	DISGENET
-SLC6A3	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.543684677	DISGENET
+SLC6A3	Attention Deficit Disorder 	umls:C1263846	0.543684677	DISGENET
 BRCA1	Malignant neoplasm breast	umls:C0006142	0.54	DISGENET
 BRCA2	Malignant neoplasm breast	umls:C0006142	0.54	DISGENET
-DRD4	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.532209354	DISGENET
+DRD4	Attention Deficit Disorder 	umls:C1263846	0.532209354	DISGENET
 HNF1A	Diabetes Mellitus Type 2	umls:C0011860	0.527447506	DISGENET
 CAPN10	Diabetes Mellitus Type 2	umls:C0011860	0.527187289	DISGENET
 ADD1	Hypertension	umls:C0020538	0.522670574	DISGENET
@@ -2277,7 +2277,7 @@ CDH1	Urinary Bladder Neoplasms	umls:C0005695	0.407555723	DISGENET
 IGF2	Alzheimer Disease	umls:C0002395	0.407496999	DISGENET
 NPY1R	Obesity	umls:C0028754	0.407496999	DISGENET
 ADRB3	Obesity	umls:C0028754	0.40746736	DISGENET
-LMNA	Benign scapuloperoneal muscular dystrophy with cardiomyopathy	umls:C0410190	0.407463957	DISGENET
+LMNA	Benign scapuloperoneal muscular dystrophy 	umls:C0410190	0.407463957	DISGENET
 PRKAR1A	CARNEY COMPLEX TYPE 1	umls:C2607929	0.407463957	DISGENET
 TNF	Alzheimer Disease	umls:C0002395	0.407430861	DISGENET
 EDNRA	Sleep Apnea Obstructive	umls:C0520679	0.407198441	DISGENET
@@ -2345,7 +2345,7 @@ GSTP1	Asthma	umls:C0004096	0.404535203	DISGENET
 APOB	Fatty Liver	umls:C0015695	0.404478374	DISGENET
 DDC	Parkinson Disease	umls:C0030567	0.404478374	DISGENET
 MPL	Congenital amegakaryocytic thrombocytopenia	umls:C1327915	0.404478374	DISGENET
-TYROBP	Polycystic lipomembranous osteodysplasia with sclerosing leukoencephalopathy	umls:C1857316	0.404478374	DISGENET
+TYROBP	Polycystic lipomembranous osteodysplasia 	umls:C1857316	0.404478374	DISGENET
 CPE	Obesity	umls:C0028754	0.404345616	DISGENET
 CCND1	Carcinoma Transitional Cell	umls:C0007138	0.404309924	DISGENET
 NOS2	Stroke	umls:C0038454	0.404309924	DISGENET
@@ -2377,7 +2377,7 @@ IL1B	Seizures	umls:C0036572	0.403414249	DISGENET
 NELL1	Craniosynostoses	umls:C0010278	0.403414249	DISGENET
 TGFB1	Lung Diseases	umls:C0024115	0.403414249	DISGENET
 UCP2	Hypertension	umls:C0020538	0.403414249	DISGENET
-SALL4	Duane Anomaly with Radial Ray Abnormalities and Deafness	umls:C1623209	0.403284141	DISGENET
+SALL4	Duane Anomaly 	umls:C1623209	0.403284141	DISGENET
 FRAS1	Fraser Syndrome	umls:C0265233	0.403284141	DISGENET
 INSR	Hyperglycemia	umls:C0020456	0.403284141	DISGENET
 TP53	Ischemia	umls:C0022116	0.403284141	DISGENET
@@ -2457,7 +2457,7 @@ HPD	Tyrosinemia type III	umls:C0268623	0.401492791	DISGENET
 KRT14	EPIDERMOLYSIS BULLOSA SIMPLEX DOWLING MEARA TYPE	umls:C0079295	0.401492791	DISGENET
 NPC1	NIEMANN PICK DISEASE TYPE C1	umls:C3179455	0.401492791	DISGENET
 SMAD9	Pulmonary arterial hypertension	umls:C2973725	0.401492791	DISGENET
-SMOC1	Anophthalmos with limb anomalies	umls:C0599973	0.401492791	DISGENET
+SMOC1	Anophthalmos 	umls:C0599973	0.401492791	DISGENET
 AMER1	Osteopathia striata cranial sclerosis	umls:C0432268	0.401492791	DISGENET
 CP	Iron Metabolism Disorders	umls:C0012715	0.401492791	DISGENET
 CRKL	DiGeorge Syndrome	umls:C0012236	0.401492791	DISGENET
@@ -2472,7 +2472,7 @@ MEN1	Hyperparathyroidism 1	umls:C1840402	0.401194233	DISGENET
 TSC2	Tuberous Sclerosis 2	umls:C1860707	0.401194233	DISGENET
 AVP	Hypertension	umls:C0020538	0.401194233	DISGENET
 COL11A1	Marshall syndrome	umls:C0265235	0.401194233	DISGENET
-DYSF	Myopathy Distal with Anterior Tibial Onset	umls:C1847532	0.401194233	DISGENET
+DYSF	Myopathy Distal 	umls:C1847532	0.401194233	DISGENET
 HMOX1	Colitis	umls:C0009319	0.401194233	DISGENET
 MMP9	Pulmonary Fibrosis	umls:C0034069	0.401194233	DISGENET
 PTH	Uremia	umls:C0041948	0.401194233	DISGENET
@@ -2530,7 +2530,7 @@ GPHN	Molybdenum cofactor deficiency	umls:C0268119	0.400597117	DISGENET
 GRIN2B	Epilepsy	umls:C0014544	0.400597117	DISGENET
 HIF1A	Hypertension Pulmonary	umls:C0020542	0.400597117	DISGENET
 KLK2	Obesity	umls:C0028754	0.400597117	DISGENET
-HPS1	Albinism with hemorrhagic diathesis and pigmented reticuloendothelial cells	umls:C2931875	0.400597117	DISGENET
+HPS1	Albinism 	umls:C2931875	0.400597117	DISGENET
 HSPG2	Dyssegmental dysplasia	umls:C1857100	0.400597117	DISGENET
 IL10	Arthritis Experimental	umls:C0993582	0.400597117	DISGENET
 MMP14	Aortic Aneurysm Abdominal	umls:C0162871	0.400597117	DISGENET
@@ -2563,7 +2563,7 @@ CCL17	Pneumonia	umls:C0032285	0.400298558	DISGENET
 CCNE1	Ovarian Neoplasms	umls:C0919267	0.400298558	DISGENET
 CHUK	COCOON SYNDROME	umls:C3150891	0.400298558	DISGENET
 CNR2	Pancreatitis	umls:C0030305	0.400298558	DISGENET
-CRYBA1	Cataract Congenital Zonular with Sutural Opacities	umls:C1833229	0.400298558	DISGENET
+CRYBA1	Cataract Congenital Zonular 	umls:C1833229	0.400298558	DISGENET
 CXCR3	Stroke	umls:C0038454	0.400298558	DISGENET
 DLG4	Williams Syndrome	umls:C0175702	0.400298558	DISGENET
 DRC1	Kartagener Syndrome	umls:C0022521	0.400298558	DISGENET
@@ -2728,7 +2728,7 @@ CCL7	Glomerulonephritis	umls:C0017658	0.4	DISGENET
 CCL7	Nephritis Interstitial	umls:C0027707	0.4	DISGENET
 CCND1	Mammary Neoplasms Experimental	umls:C0024668	0.4	DISGENET
 CCND2	Colonic Neoplasms	umls:C0009375	0.4	DISGENET
-CD151	Nephropathy with Pretibial Epidermolysis Bullosa and Deafness	umls:C1836823	0.4	DISGENET
+CD151	Nephropathy 	umls:C1836823	0.4	DISGENET
 CD36	Insulin Resistance	umls:C0021655	0.4	DISGENET
 CD38	Myocardial Ischemia	umls:C0151744	0.4	DISGENET
 CDK4	Mammary Neoplasms Experimental	umls:C0024668	0.4	DISGENET
@@ -2759,7 +2759,7 @@ CYBB	Diabetes Mellitus Experimental	umls:C0011853	0.4	DISGENET
 CYBB	Kidney Failure Chronic	umls:C0022661	0.4	DISGENET
 CYBB	Reperfusion Injury	umls:C0035126	0.4	DISGENET
 CYP1A1	Diabetes Mellitus Experimental	umls:C0011853	0.4	DISGENET
-DCLRE1C	Severe combined immunodeficiency with sensitivity to ionizing radiation	umls:C1865370	0.4	DISGENET
+DCLRE1C	Severe combined immunodeficiency 	umls:C1865370	0.4	DISGENET
 DDIT3	Nephrosis	umls:C0027720	0.4	DISGENET
 DFNB31	Deafness Autosomal Recessive 31	umls:C1846839	0.4	DISGENET
 DHH	46 Xy Gonadal Dysgenesis Partial With Minifascicular Neuropathy	umls:C2751325	0.4	DISGENET
@@ -2798,7 +2798,7 @@ GHR	Liver Cirrhosis Experimental	umls:C0023893	0.4	DISGENET
 GJA1	Hypertension	umls:C0020538	0.4	DISGENET
 GJB6	Deafness Autosomal Recessive 1A	umls:C2673759	0.4	DISGENET
 GLIS2	Nephronophthisis 7	umls:C1969092	0.4	DISGENET
-GLIS3	Diabetes Mellitus Neonatal with Congenital Hypothyroidism	umls:C1857775	0.4	DISGENET
+GLIS3	Diabetes Mellitus Neonatal 	umls:C1857775	0.4	DISGENET
 GPX1	Diabetes Mellitus Experimental	umls:C0011853	0.4	DISGENET
 GRHPR	Primary hyperoxaluria type 2	umls:C0268165	0.4	DISGENET
 GSTP1	Liver Neoplasms Experimental	umls:C0023904	0.4	DISGENET
@@ -2813,7 +2813,7 @@ HMOX1	Liver Cirrhosis Experimental	umls:C0023893	0.4	DISGENET
 HMOX1	Status Epilepticus	umls:C0038220	0.4	DISGENET
 HMX1	Oculoauricular Syndrome	umls:C2677500	0.4	DISGENET
 HOXB8	Trichotillomania	umls:C0040953	0.4	DISGENET
-HR	Atrichia with Papular Lesions	umls:C1859592	0.4	DISGENET
+HR	Atrichia 	umls:C1859592	0.4	DISGENET
 HRAS	Mammary Neoplasms Experimental	umls:C0024668	0.4	DISGENET
 HRH3	Amnesia	umls:C0002622	0.4	DISGENET
 HRH3	Hypertension	umls:C0020538	0.4	DISGENET
@@ -2893,7 +2893,7 @@ NPPB	Cardiomegaly	umls:C0018800	0.4	DISGENET
 NPR1	Cardiomegaly	umls:C0018800	0.4	DISGENET
 NPY1R	Depressive Disorder	umls:C0011581	0.4	DISGENET
 NTF4	Nerve Degeneration	umls:C0027746	0.4	DISGENET
-OPHN1	Mental retardation X linked with cerebellar hypoplasia and distinctive facial appearance	umls:C1845366	0.4	DISGENET
+OPHN1	Mental retardation X linked 	umls:C1845366	0.4	DISGENET
 OSTM1	Osteopetrosis Autosomal Recessive 5	umls:C1968603	0.4	DISGENET
 OTOA	Deafness Autosomal Recessive 22	umls:C1846896	0.4	DISGENET
 OXT	Pain	umls:C0030193	0.4	DISGENET
@@ -3478,7 +3478,7 @@ MYO9B	Celiac Disease	umls:C0007570	0.335479494	DISGENET
 SDHC	Paraganglioma	umls:C0030421	0.335449101	DISGENET
 MTHFR	Colonic Neoplasms	umls:C0009375	0.33541812	DISGENET
 IRGM	Crohn Disease	umls:C0010346	0.335387727	DISGENET
-DRD2	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.335362046	DISGENET
+DRD2	Attention Deficit Disorder 	umls:C1263846	0.335362046	DISGENET
 IL12B	Asthma	umls:C0004096	0.335323704	DISGENET
 FGFR2	Craniosynostoses	umls:C0010278	0.335316343	DISGENET
 KIAA0319	Dyslexia	umls:C0476254	0.335290661	DISGENET
@@ -3562,7 +3562,7 @@ IL23R	Spondylitis Ankylosing	umls:C0038013	0.330980737	DISGENET
 MTHFR	Vascular Diseases	umls:C0042373	0.330950344	DISGENET
 FCGR2A	Arthritis Rheumatoid	umls:C0003873	0.330942396	DISGENET
 CYP2E1	Alcoholism	umls:C0001973	0.33084798	DISGENET
-COMT	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.330817586	DISGENET
+COMT	Attention Deficit Disorder 	umls:C1263846	0.330817586	DISGENET
 SLC40A1	Hemochromatosis	umls:C0018995	0.330799628	DISGENET
 SERPINE1	Thrombosis	umls:C0040053	0.330773946	DISGENET
 ERCC1	Carcinoma Non Small Cell Lung	umls:C0007131	0.330751501	DISGENET
@@ -3605,7 +3605,7 @@ ERBB2	Prostatic Neoplasms	umls:C0033578	0.329197111	DISGENET
 PPARG	Diabetes Mellitus	umls:C0011849	0.329182027	DISGENET
 RASSF1	Lung Neoplasms	umls:C0024121	0.329067002	DISGENET
 ERBB2	Lung Neoplasms	umls:C0024121	0.328898552	DISGENET
-DRD5	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.328760721	DISGENET
+DRD5	Attention Deficit Disorder 	umls:C1263846	0.328760721	DISGENET
 LAMA2	Muscular Dystrophies	umls:C0026850	0.328638336	DISGENET
 SH2B1	Obesity	umls:C0028754	0.328627963	DISGENET
 HRAS	Carcinoma	umls:C0007097	0.32858491	DISGENET
@@ -4034,7 +4034,7 @@ HGF	Carcinoma Hepatocellular	umls:C2239176	0.317706704	DISGENET
 TPO	Congenital Hypothyroidism	umls:C0010308	0.317706704	DISGENET
 IL12B	Crohn Disease	umls:C0010346	0.317681023	DISGENET
 SHANK3	Autistic Disorder	umls:C0004352	0.317681023	DISGENET
-TPH2	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.317681023	DISGENET
+TPH2	Attention Deficit Disorder 	umls:C1263846	0.317681023	DISGENET
 BCL2	Colorectal Neoplasms	umls:C0009404	0.317630021	DISGENET
 CASP8	Breast Neoplasms	umls:C1458155	0.317630021	DISGENET
 CASQ2	Tachycardia Ventricular	umls:C0042514	0.317630021	DISGENET
@@ -4679,7 +4679,7 @@ NPPB	Cardiovascular Diseases	umls:C0007222	0.310242748	DISGENET
 TNNI3	Cardiomyopathy Restrictive	umls:C0007196	0.310242748	DISGENET
 IL7	Multiple Sclerosis	umls:C0026769	0.310184024	DISGENET
 PARK2	Leprosy	umls:C0023343	0.310184024	DISGENET
-MVK	Hyperimmunoglobulin D with periodic fever	umls:C0398691	0.310150981	DISGENET
+MVK	Hyperimmunoglobulin D 	umls:C0398691	0.310150981	DISGENET
 ABCB11	Cholestasis progressive familial intrahepatic 1	umls:C0268312	0.310150981	DISGENET
 GH1	Acromegaly	umls:C0001206	0.310150981	DISGENET
 NLRP3	Cryopyrin Associated Periodic Syndromes	umls:C2316212	0.310150981	DISGENET
@@ -5322,7 +5322,7 @@ CDKN2B	Lymphoma	umls:C0024299	0.306734082	DISGENET
 CFHR1	Atypical hemolytic uremic syndrome	umls:C2931788	0.306734082	DISGENET
 HTR2A	Psychotic Disorders	umls:C0033975	0.306734082	DISGENET
 ITPA	Anemia Hemolytic	umls:C0002878	0.306734082	DISGENET
-LPHN3	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.306734082	DISGENET
+LPHN3	Attention Deficit Disorder 	umls:C1263846	0.306734082	DISGENET
 NOS2	Autistic Disorder	umls:C0004352	0.306734082	DISGENET
 CCL2	Diabetic Nephropathies	umls:C0011881	0.30669839	DISGENET
 FLT1	Neoplasm Metastasis	umls:C0027627	0.30669839	DISGENET
@@ -5568,7 +5568,7 @@ SOD2	Carcinoma Squamous Cell	umls:C0007137	0.305634265	DISGENET
 SYK	Melanoma	umls:C0025202	0.305634265	DISGENET
 TLR4	Melanoma	umls:C0025202	0.305634265	DISGENET
 TNF	Pancreatic Neoplasms	umls:C0030297	0.305634265	DISGENET
-ADHD1	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.305539849	DISGENET
+ADHD1	Attention Deficit Disorder 	umls:C1263846	0.305539849	DISGENET
 AFF3	Arthritis Rheumatoid	umls:C0003873	0.305539849	DISGENET
 ATM	Melanoma	umls:C0025202	0.305539849	DISGENET
 CCL2	Metabolic Syndrome X	umls:C0524620	0.305539849	DISGENET
@@ -5662,7 +5662,7 @@ STAT3	Colonic Neoplasms	umls:C0009375	0.305335707	DISGENET
 TNNI3	Myocardial Infarction	umls:C0027051	0.305335707	DISGENET
 VIM	Prostatic Neoplasms	umls:C0033578	0.305335707	DISGENET
 AGT	Glomerulonephritis	umls:C0017658	0.305241291	DISGENET
-CHRNA4	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.305241291	DISGENET
+CHRNA4	Attention Deficit Disorder 	umls:C1263846	0.305241291	DISGENET
 CTGF	Liver Cirrhosis	umls:C0023890	0.305241291	DISGENET
 EMX2	Schizencephaly	umls:C0266484	0.305241291	DISGENET
 HMGA1	Diabetes Mellitus Type 2	umls:C0011860	0.305241291	DISGENET
@@ -6071,7 +6071,7 @@ INS	Diabetic Ketoacidosis	umls:C0011880	0.304179816	DISGENET
 LEPR	Overweight	umls:C0497406	0.304179816	DISGENET
 MALT1	Lymphoma Large B Cell Diffuse	umls:C0079744	0.304179816	DISGENET
 MPV17	Glomerulosclerosis Focal Segmental	umls:C0017668	0.304179816	DISGENET
-PANK2	Neurodegeneration with brain iron accumulation NBIA	umls:C2931845	0.304179816	DISGENET
+PANK2	Neurodegeneration 	umls:C2931845	0.304179816	DISGENET
 PTH	Hypercalciuria	umls:C0020438	0.304179816	DISGENET
 SCN5A	Paroxysmal ventricular fibrillation	umls:C0340493	0.304179816	DISGENET
 SHBG	Metabolic Syndrome X	umls:C0524620	0.304179816	DISGENET
@@ -6251,7 +6251,7 @@ GNA12	Colitis Ulcerative	umls:C0009324	0.3037485	DISGENET
 GPC5	Nephrotic Syndrome	umls:C0027726	0.3037485	DISGENET
 GPX1	Autistic Disorder	umls:C0004352	0.3037485	DISGENET
 GPX1	Cardiomyopathy Dilated	umls:C0007193	0.3037485	DISGENET
-GRM5	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.3037485	DISGENET
+GRM5	Attention Deficit Disorder 	umls:C1263846	0.3037485	DISGENET
 GSTP1	Leukemia Myelogenous Chronic BCR ABL Positive	umls:C0023473	0.3037485	DISGENET
 HLA-DQA1	Glomerulonephritis Membranous	umls:C0017665	0.3037485	DISGENET
 HMOX1	Obesity	umls:C0028754	0.3037485	DISGENET
@@ -6695,7 +6695,7 @@ DCR	Down Syndrome	umls:C0013080	0.303284141	DISGENET
 DLX3	Tricho dento osseous syndrome	umls:C0265333	0.303284141	DISGENET
 DMP1	Hypophosphatemic Rickets Autosomal Recessive 1	umls:C0342643	0.303284141	DISGENET
 EML4	Adenocarcinoma of lung	umls:C0152013	0.303284141	DISGENET
-FTL	Hyperferritinemia hereditary with congenital cataracts	umls:C1833213	0.303284141	DISGENET
+FTL	Hyperferritinemia hereditary 	umls:C1833213	0.303284141	DISGENET
 GALNS	Mucopolysaccharidosis IV	umls:C0026707	0.303284141	DISGENET
 GNA11	Melanoma	umls:C0025202	0.303284141	DISGENET
 HGF	Pulmonary Fibrosis	umls:C0034069	0.303284141	DISGENET
@@ -6857,7 +6857,7 @@ NOS3	Diabetes Mellitus Type 1	umls:C0011854	0.302985583	DISGENET
 PTEN	Endometrial Hyperplasia	umls:C0014173	0.302985583	DISGENET
 RAD51C	Fanconi Anemia	umls:C0015625	0.302985583	DISGENET
 RBM8A	Absent radii and thrombocytopenia	umls:C0175703	0.302985583	DISGENET
-RYR1	Minicore Myopathy with External Ophthalmoplegia	umls:C0270962	0.302985583	DISGENET
+RYR1	Minicore Myopathy 	umls:C0270962	0.302985583	DISGENET
 SLC17A5	Sialic Acid Storage Disease	umls:C0342853	0.302985583	DISGENET
 SLC2A1	Seizures	umls:C0036572	0.302985583	DISGENET
 SMS	Snyder Robinson syndrome	umls:C0796160	0.302985583	DISGENET
@@ -7635,7 +7635,7 @@ CSF2	Sarcoma	umls:C1261473	0.302089908	DISGENET
 CTGF	Heart Failure	umls:C0018801	0.302089908	DISGENET
 CYP11A1	Adrenal Insufficiency	umls:C0001623	0.302089908	DISGENET
 DDX58	Hepatitis C	umls:C0019196	0.302089908	DISGENET
-DSP	Cardiomyopathy dilated with Woolly hair and keratoderma	umls:C1854063	0.302089908	DISGENET
+DSP	Cardiomyopathy dilated 	umls:C1854063	0.302089908	DISGENET
 EDN3	Waardenburg syndrome type 4	umls:C1848519	0.302089908	DISGENET
 EPO	Myocardial Infarction	umls:C0027051	0.302089908	DISGENET
 FGF8	Kallmann Syndrome	umls:C0162809	0.302089908	DISGENET
@@ -7759,7 +7759,7 @@ IGAN1	Glomerulonephritis IGA	umls:C0017661	0.30179135	DISGENET
 IL2	Brain Neoplasms	umls:C0006118	0.30179135	DISGENET
 INS	Bipolar Disorder	umls:C0005586	0.30179135	DISGENET
 IRAK4	IRAK4 Deficiency	umls:C1843256	0.30179135	DISGENET
-ITGA6	Epidermolysis bullosa with pyloric atresia	umls:C1856934	0.30179135	DISGENET
+ITGA6	Epidermolysis bullosa 	umls:C1856934	0.30179135	DISGENET
 KCNK18	Migraine Disorders	umls:C0149931	0.30179135	DISGENET
 KRT14	Carcinoma Squamous Cell	umls:C0007137	0.30179135	DISGENET
 MAP2K2	Noonan Syndrome	umls:C0028326	0.30179135	DISGENET
@@ -8090,7 +8090,7 @@ IL6	Seizures	umls:C0036572	0.301194233	DISGENET
 IL8	Glomerulonephritis	umls:C0017658	0.301194233	DISGENET
 IRAK1	Arthritis Rheumatoid	umls:C0003873	0.301194233	DISGENET
 IRF5	Colitis Ulcerative	umls:C0009324	0.301194233	DISGENET
-ISCU	Myopathy with Lactic Acidosis Hereditary	umls:C1850718	0.301194233	DISGENET
+ISCU	Myopathy 	umls:C1850718	0.301194233	DISGENET
 ISG15	Influenza Human	umls:C0021400	0.301194233	DISGENET
 KITLG	Carcinoma	umls:C0007097	0.301194233	DISGENET
 KL	Arteriosclerosis	umls:C0003850	0.301194233	DISGENET
@@ -8210,7 +8210,7 @@ ATP2A2	Acrokeratosis verruciformis of Hopf	umls:C0265971	0.300895675	DISGENET
 C9	C9 Deficiency	umls:C3151189	0.300895675	DISGENET
 COL2A1	Czech dysplasia metatarsal type	umls:C1836683	0.300895675	DISGENET
 GNAI3	Auriculo condylar syndrome	umls:C1865295	0.300895675	DISGENET
-HTRA1	Cerebral Autosomal Recessive Arteriopathy with Subcortical Infarcts and Leukoencephalopathy	umls:C1838577	0.300895675	DISGENET
+HTRA1	Cerebral Autosomal Recessive Arteriopathy 	umls:C1838577	0.300895675	DISGENET
 INPPL1	Opsismodysplasia	umls:C0432219	0.300895675	DISGENET
 KRT6A	PACHYONYCHIA CONGENITA TYPE 1	umls:C1706595	0.300895675	DISGENET
 MBTPS2	Keratosis Follicularis Spinulosa Decalvans X Linked	umls:C0343057	0.300895675	DISGENET
@@ -8260,7 +8260,7 @@ CDKN1B	Multiple Endocrine Neoplasia Type IV	umls:C1970712	0.300895675	DISGENET
 CDKN2B	Glaucoma	umls:C0017601	0.300895675	DISGENET
 CEACAM1	Adenocarcinoma	umls:C0001418	0.300895675	DISGENET
 CECR	Schmid Fraccaro syndrome	umls:C0265493	0.300895675	DISGENET
-CEL	Maturity Onset Diabetes of the Young Type 8 with Exocrine Dysfunction	umls:C1853297	0.300895675	DISGENET
+CEL	Maturity Onset Diabetes of the Young Type 8 	umls:C1853297	0.300895675	DISGENET
 CELA3B	Exocrine Pancreatic Insufficiency	umls:C0267963	0.300895675	DISGENET
 CFB	Atypical hemolytic uremic syndrome	umls:C2931788	0.300895675	DISGENET
 CHD2	Epilepsy	umls:C0014544	0.300895675	DISGENET
@@ -8550,8 +8550,8 @@ SOX2	Small Cell Lung Carcinoma	umls:C0149925	0.300895675	DISGENET
 SPARC	Kidney Diseases	umls:C0022658	0.300895675	DISGENET
 SPP1	Brain Neoplasms	umls:C0006118	0.300895675	DISGENET
 SST	Pancreatic Neoplasms	umls:C0030297	0.300895675	DISGENET
-STIM1	Immune dysfunction with T cell inactivation due to calcium entry defect 2	umls:C2748557	0.300895675	DISGENET
-STS	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.300895675	DISGENET
+STIM1	Immune dysfunction 	umls:C2748557	0.300895675	DISGENET
+STS	Attention Deficit Disorder 	umls:C1263846	0.300895675	DISGENET
 TALDO1	Transaldolase Deficiency	umls:C1291329	0.300895675	DISGENET
 TFRC	Leukemia Lymphocytic Chronic B Cell	umls:C0023434	0.300895675	DISGENET
 TGFB1	Muscular Dystrophy Duchenne	umls:C0013264	0.300895675	DISGENET
@@ -8606,8 +8606,8 @@ NEK1	Short rib polydactyly syndrome Majewski type	umls:C0024507	0.300597117	DISG
 PIK3R2	Megalanecephaly Polymicrogyria Polydactyly Hydrocephalus Syndrome	umls:C1863924	0.300597117	DISGENET
 PRKAR1A	ACRODYSOSTOSIS WITH HORMONE RESISTANCE	umls:C3276228	0.300597117	DISGENET
 PSMB8	AUTOINFLAMMATION LIPODYSTROPHY AND DERMATOSIS SYNDROME	umls:C3278560	0.300597117	DISGENET
-RHBDF2	Keratosis palmoplantaris with esophageal cancer	umls:C1835664	0.300597117	DISGENET
-RYR1	Congenital myopathy with fiber type disproportion	umls:C0546264	0.300597117	DISGENET
+RHBDF2	Keratosis palmoplantaris 	umls:C1835664	0.300597117	DISGENET
+RYR1	Congenital myopathy 	umls:C0546264	0.300597117	DISGENET
 SDHB	Paragangliomas 4	umls:C1861848	0.300597117	DISGENET
 SUOX	SULFOCYSTEINURIA	umls:C2931746	0.300597117	DISGENET
 WNT5A	Robinow Syndrome Autosomal Dominant	umls:C0265205	0.300597117	DISGENET
@@ -8720,7 +8720,7 @@ CHMP5	Leukemia Myeloid Acute	umls:C0023467	0.300597117	DISGENET
 CLDN4	Breast Neoplasms	umls:C1458155	0.300597117	DISGENET
 CLDN7	Ovarian epithelial cancer	umls:C0677886	0.300597117	DISGENET
 CNR2	Breast Neoplasms	umls:C1458155	0.300597117	DISGENET
-COL4A6	Leiomyomatosis esophageal and vulval with nephropathy	umls:C1839884	0.300597117	DISGENET
+COL4A6	Leiomyomatosis esophageal and vulval 	umls:C1839884	0.300597117	DISGENET
 COMT	Carcinoma Hepatocellular	umls:C2239176	0.300597117	DISGENET
 CORO1A	Tuberculosis	umls:C0041296	0.300597117	DISGENET
 CP	Retinal Degeneration	umls:C0035304	0.300597117	DISGENET
@@ -8781,7 +8781,7 @@ EYA1	Otofaciocervical Syndrome	umls:C1833691	0.300597117	DISGENET
 EZH2	Primary Myelofibrosis	umls:C0001815	0.300597117	DISGENET
 F5	Liver Cirrhosis	umls:C0023890	0.300597117	DISGENET
 F7	Thromboembolism	umls:C0040038	0.300597117	DISGENET
-FANCB	VACTERL association with hydrocephaly X linked	umls:C2931228	0.300597117	DISGENET
+FANCB	VACTERL association 	umls:C2931228	0.300597117	DISGENET
 FBLN5	Cutis laxa recessive	umls:C2931134	0.300597117	DISGENET
 FBN1	MASS syndrome	umls:C1858556	0.300597117	DISGENET
 FBP1	Carcinoma Hepatocellular	umls:C2239176	0.300597117	DISGENET
@@ -8824,7 +8824,7 @@ GFAP	Parkinson Disease	umls:C0030567	0.300597117	DISGENET
 GFI1	Leukemia Myeloid Acute	umls:C0023467	0.300597117	DISGENET
 GGT1	Alcoholism	umls:C0001973	0.300597117	DISGENET
 GINGF2	Fibromatosis Gingival Type 1	umls:C0399440	0.300597117	DISGENET
-GIT1	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.300597117	DISGENET
+GIT1	Attention Deficit Disorder 	umls:C1263846	0.300597117	DISGENET
 GJB1	Liver Neoplasms	umls:C0023903	0.300597117	DISGENET
 GKN1	Stomach Neoplasms	umls:C0038356	0.300597117	DISGENET
 GLI3	Acrocallosal Syndrome	umls:C0796147	0.300597117	DISGENET
@@ -8839,7 +8839,7 @@ GPC6	Omodysplasia type 1	umls:C1850318	0.300597117	DISGENET
 GPSM2	Chudley Mccullough syndrome	umls:C1858695	0.300597117	DISGENET
 GPX1	Hyperglycemia	umls:C0020456	0.300597117	DISGENET
 GREB1	Endometriosis	umls:C0014175	0.300597117	DISGENET
-GRM7	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.300597117	DISGENET
+GRM7	Attention Deficit Disorder 	umls:C1263846	0.300597117	DISGENET
 GSTO1	Leukemia	umls:C0023418	0.300597117	DISGENET
 GSTP1	Carcinoma Renal Cell	umls:C0007134	0.300597117	DISGENET
 HACE1	Neuroblastoma	umls:C0027819	0.300597117	DISGENET
@@ -8988,7 +8988,7 @@ MYLK	Neoplasm Metastasis	umls:C0027627	0.300597117	DISGENET
 NCOA3	Carcinoma Non Small Cell Lung	umls:C0007131	0.300597117	DISGENET
 NDUFV2	Cardiomyopathies	umls:C0878544	0.300597117	DISGENET
 NEB	Nemaline Myopathy 2	umls:C1850569	0.300597117	DISGENET
-NF1	Caf au lait macules with pulmonary stenosis	umls:C0553586	0.300597117	DISGENET
+NF1	Caf au lait macules 	umls:C0553586	0.300597117	DISGENET
 NFE2L2	Carcinoma Hepatocellular	umls:C2239176	0.300597117	DISGENET
 NFKB1	Brain Ischemia	umls:C0007786	0.300597117	DISGENET
 NFKB1	Liver Diseases	umls:C0023895	0.300597117	DISGENET
@@ -9105,7 +9105,7 @@ RIN2	Macrocephaly Alopecia Cutis Laxa and Scoliosis	umls:C2751321	0.300597117	DI
 RLBP1	Fundus Albipunctatus	umls:C0311338	0.300597117	DISGENET
 RLS4	Restless Legs Syndrome	umls:C0035258	0.300597117	DISGENET
 RLS6	Restless Legs Syndrome	umls:C0035258	0.300597117	DISGENET
-RMRP	Metaphyseal Dysplasia without Hypotrichosis	umls:C1834821	0.300597117	DISGENET
+RMRP	Metaphyseal Dysplasia 	umls:C1834821	0.300597117	DISGENET
 RPS6KB1	Lymphoma Large B Cell Diffuse	umls:C0079744	0.300597117	DISGENET
 S100A8	Dermatitis Atopic	umls:C0011615	0.300597117	DISGENET
 SCD	Carcinoma Hepatocellular	umls:C2239176	0.300597117	DISGENET
@@ -9223,7 +9223,7 @@ TRH	Seizures	umls:C0036572	0.300597117	DISGENET
 TRNL1	Acidosis Lactic	umls:C0001125	0.300597117	DISGENET
 TRPV4	Hyperalgesia	umls:C0020429	0.300597117	DISGENET
 TSLP	Eosinophilic Esophagitis	umls:C0341106	0.300597117	DISGENET
-TSPYL1	Sudden Infant Death with Dysgenesis of the Testes Syndrome	umls:C1837371	0.300597117	DISGENET
+TSPYL1	Sudden Infant Death 	umls:C1837371	0.300597117	DISGENET
 TTC21B	Jeune syndrome	umls:C0265275	0.300597117	DISGENET
 TTN	Familial dilated cardiomyopathy	umls:C0340427	0.300597117	DISGENET
 TWSG1	Holoprosencephaly	umls:C0079541	0.300597117	DISGENET
@@ -9240,13 +9240,13 @@ VIP	Autistic Disorder	umls:C0004352	0.300597117	DISGENET
 VKORC1	Blood Coagulation Disorders	umls:C0005779	0.300597117	DISGENET
 VLDLR	Obesity	umls:C0028754	0.300597117	DISGENET
 VRK1	Pontocerebellar Hypoplasia Type 1	umls:C1843504	0.300597117	DISGENET
-WDR45	Neurodegeneration with brain iron accumulation NBIA	umls:C2931845	0.300597117	DISGENET
+WDR45	Neurodegeneration 	umls:C2931845	0.300597117	DISGENET
 WHSC1L1	Leukemia Myeloid Acute	umls:C0023467	0.300597117	DISGENET
 WNT10A	Schopf Schulz Passarge Syndrome	umls:C1857069	0.300597117	DISGENET
 XDH	Ischemia	umls:C0022116	0.300597117	DISGENET
 XIAP	Amyotrophic lateral sclerosis 1	umls:C1862939	0.300597117	DISGENET
 XIAP	Lymphoproliferative Disorders	umls:C0024314	0.300597117	DISGENET
-YARS2	Myopathy with lactic acidosis and sideroblastic anemia	umls:C1838103	0.300597117	DISGENET
+YARS2	Myopathy 	umls:C1838103	0.300597117	DISGENET
 ZFP36	Dermatitis	umls:C0011603	0.300597117	DISGENET
 ZFP57	Diabetes Mellitus	umls:C0011849	0.300597117	DISGENET
 ZKSCAN4	Schizophrenia	umls:C0036341	0.300597117	DISGENET
@@ -9270,7 +9270,7 @@ CHSY1	Temtamy preaxial brachydactyly syndrome	umls:C1854466	0.300298558	DISGENET
 CIB2	Deafness Autosomal Recessive 48	umls:C1836199	0.300298558	DISGENET
 COA5	Cytochrome c Oxidase Deficiency	umls:C0268237	0.300298558	DISGENET
 COL5A2	Ehlers Danlos syndrome type 2	umls:C0268336	0.300298558	DISGENET
-CTC1	Cerebroretinal Microangiopathy with Calcifications and Cysts	umls:C2677299	0.300298558	DISGENET
+CTC1	Cerebroretinal Microangiopathy 	umls:C2677299	0.300298558	DISGENET
 CYP11A1	ADRENAL INSUFFICIENCY CONGENITAL WITH 46 XY SEX REVERSAL PARTIAL OR COMPLETE	umls:C3151055	0.300298558	DISGENET
 CYP11B2	CORTICOSTERONE METHYLOXIDASE TYPE II DEFICIENCY	umls:C3463917	0.300298558	DISGENET
 DHFR	Megaloblastic Anemia due to Dihydrofolate Reductase Deficiency	umls:C3151205	0.300298558	DISGENET
@@ -9286,7 +9286,7 @@ HINT1	Isaacs Syndrome	umls:C0242287	0.300298558	DISGENET
 IMPAD1	CHONDRODYSPLASIA WITH JOINT DISLOCATIONS GPAPP TYPE	umls:C3279757	0.300298558	DISGENET
 KAL1	Kallmann Syndrome 1	umls:C1563719	0.300298558	DISGENET
 KCNJ8	Sudden Infant Death	umls:C0038644	0.300298558	DISGENET
-KIF22	Spondyloepimetaphyseal dysplasia with multiple dislocations	umls:C1863732	0.300298558	DISGENET
+KIF22	Spondyloepimetaphyseal dysplasia 	umls:C1863732	0.300298558	DISGENET
 KRT14	Weber Cockayne syndrome	umls:C0080333	0.300298558	DISGENET
 KRT5	Generalized epidermolysis bullosa simplex	umls:C0079299	0.300298558	DISGENET
 LMNA	Malouf syndrome	umls:C0796031	0.300298558	DISGENET
@@ -9304,7 +9304,7 @@ NEK9	NEPHRONOPHTHISIS 9	umls:C3151188	0.300298558	DISGENET
 PDGFRL	Colorectal Cancer	umls:C1527249	0.300298558	DISGENET
 PIGL	Zunich neuroectodermal syndrome	umls:C1848392	0.300298558	DISGENET
 PIK3CA	Congenital Lipomatous Overgrowth Vascular Malformations and Epidermal Nevi	umls:C2752042	0.300298558	DISGENET
-POLR3A	Leukodystrophy Hypomyelinating with Hypodontia and Hypogonadotropic Hypogonadism	umls:C2676243	0.300298558	DISGENET
+POLR3A	Leukodystrophy Hypomyelinating 	umls:C2676243	0.300298558	DISGENET
 PRKRA	Dystonia 16	umls:C2677567	0.300298558	DISGENET
 RAB33B	Smith McCort Dysplasia	umls:C1846431	0.300298558	DISGENET
 RET	Renal Adysplasia	umls:C1619700	0.300298558	DISGENET
@@ -9358,9 +9358,9 @@ ADAMTSL2	Acromicric dysplasia	umls:C0265287	0.300298558	DISGENET
 ADCY5	Cardiomyopathies	umls:C0878544	0.300298558	DISGENET
 ADCY8	Mood Disorders	umls:C0525045	0.300298558	DISGENET
 ADH1B	Obesity	umls:C0028754	0.300298558	DISGENET
-ADHD2	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.300298558	DISGENET
-ADHD4	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.300298558	DISGENET
-ADHD5	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.300298558	DISGENET
+ADHD2	Attention Deficit Disorder 	umls:C1263846	0.300298558	DISGENET
+ADHD4	Attention Deficit Disorder 	umls:C1263846	0.300298558	DISGENET
+ADHD5	Attention Deficit Disorder 	umls:C1263846	0.300298558	DISGENET
 ADORA2A	Seizures	umls:C0036572	0.300298558	DISGENET
 ADORA3	Ischemia	umls:C0022116	0.300298558	DISGENET
 ADRA2A	Panic Disorder	umls:C0030319	0.300298558	DISGENET
@@ -9506,7 +9506,7 @@ CACNA2D2	Epilepsy Absence	umls:C0014553	0.300298558	DISGENET
 CACNB4	Ataxia	umls:C0004134	0.300298558	DISGENET
 CACNB4	Myoclonic Epilepsy Juvenile	umls:C0270853	0.300298558	DISGENET
 CALCA	Hyperalgesia	umls:C0020429	0.300298558	DISGENET
-CALCA	Migraine without Aura	umls:C0338480	0.300298558	DISGENET
+CALCA	Migraine 	umls:C0338480	0.300298558	DISGENET
 CALCA	Pulmonary Fibrosis	umls:C0034069	0.300298558	DISGENET
 CALCR	Hypercalcemia	umls:C0020437	0.300298558	DISGENET
 CALR	Prostatic Neoplasms	umls:C0033578	0.300298558	DISGENET
@@ -9605,7 +9605,7 @@ CLEC5A	Dengue Hemorrhagic Fever	umls:C0019100	0.300298558	DISGENET
 CLTC	Lymphoma Large B Cell Diffuse	umls:C0079744	0.300298558	DISGENET
 CMA1	Pulmonary Fibrosis	umls:C0034069	0.300298558	DISGENET
 CNOT3	Precursor T Cell Lymphoblastic Leukemia Lymphoma	umls:C1961099	0.300298558	DISGENET
-CNR1	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.300298558	DISGENET
+CNR1	Attention Deficit Disorder 	umls:C1263846	0.300298558	DISGENET
 CNR1	Endometriosis	umls:C0014175	0.300298558	DISGENET
 CNR1	Pancreatitis	umls:C0030305	0.300298558	DISGENET
 CNR1	Rhabdomyosarcoma	umls:C0035412	0.300298558	DISGENET
@@ -9812,7 +9812,7 @@ FCER2	HIV Infections	umls:C0019693	0.300298558	DISGENET
 FCGR3B	Wegener Granulomatosis	umls:C0043092	0.300298558	DISGENET
 FDFT1	Carcinoma Hepatocellular	umls:C2239176	0.300298558	DISGENET
 FERMT3	Leukocyte Adhesion Deficiency Type III	umls:C2748536	0.300298558	DISGENET
-FGD1	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.300298558	DISGENET
+FGD1	Attention Deficit Disorder 	umls:C1263846	0.300298558	DISGENET
 FGF1	Leukemia	umls:C0023418	0.300298558	DISGENET
 FGF1	Myocardial Ischemia	umls:C0151744	0.300298558	DISGENET
 FGF1	Pulmonary Fibrosis	umls:C0034069	0.300298558	DISGENET
@@ -10094,7 +10094,7 @@ KRT14	Esophageal Squamous Cell Carcinoma	umls:C0279626	0.300298558	DISGENET
 KRT18	Liver Neoplasms	umls:C0023903	0.300298558	DISGENET
 KRT19	Asthma	umls:C0004096	0.300298558	DISGENET
 KRT19	Esophageal Squamous Cell Carcinoma	umls:C0279626	0.300298558	DISGENET
-KRT5	Epidermolysis Bullosa Simplex with Migratory Circinate Erythema	umls:C1836284	0.300298558	DISGENET
+KRT5	Epidermolysis Bullosa Simplex 	umls:C1836284	0.300298558	DISGENET
 KRT7	Adenoma Oxyphilic	umls:C1510502	0.300298558	DISGENET
 KRT8	Liver Failure Acute	umls:C0162557	0.300298558	DISGENET
 KYNU	Hydroxykynureninuria	umls:C0268474	0.300298558	DISGENET
@@ -10193,7 +10193,7 @@ MMP2	Aortic Rupture	umls:C0003496	0.300298558	DISGENET
 MMP2	Bone Diseases	umls:C0005940	0.300298558	DISGENET
 MMP2	Lupus Nephritis	umls:C0024143	0.300298558	DISGENET
 MMP3	Coronary Restenosis	umls:C0948480	0.300298558	DISGENET
-MMP9	Mandibuloacral dysplasia with type A lipodystrophy	umls:C0432291	0.300298558	DISGENET
+MMP9	Mandibuloacral dysplasia 	umls:C0432291	0.300298558	DISGENET
 MPD3	Distal Myopathies	umls:C0751336	0.300298558	DISGENET
 MPO	Arthritis Rheumatoid	umls:C0003873	0.300298558	DISGENET
 MPO	Liver Cirrhosis Alcoholic	umls:C0023891	0.300298558	DISGENET
@@ -10403,7 +10403,7 @@ POMC	Hypernatremia	umls:C0020488	0.300298558	DISGENET
 POMC	Myocardial Ischemia	umls:C0151744	0.300298558	DISGENET
 POMC	Opsoclonus Myoclonus Syndrome	umls:C0393626	0.300298558	DISGENET
 POMC	Pain	umls:C0030193	0.300298558	DISGENET
-POMP	Keratosis Linearis with Ichthyosis Congenita and Sclerosing Keratoderma	umls:C1866029	0.300298558	DISGENET
+POMP	Keratosis Linearis 	umls:C1866029	0.300298558	DISGENET
 PON1	Hemorrhoids	umls:C0019112	0.300298558	DISGENET
 PON1	Neuroectodermal Tumors Primitive	umls:C0206663	0.300298558	DISGENET
 POR	Amenorrhea	umls:C0002453	0.300298558	DISGENET
@@ -10450,7 +10450,7 @@ PTCH2	Medulloblastoma	umls:C0025149	0.300298558	DISGENET
 PTEN	Asthma	umls:C0004096	0.300298558	DISGENET
 PTEN	Hemangioma	umls:C0018916	0.300298558	DISGENET
 PTEN	Polydactyly	umls:C0152427	0.300298558	DISGENET
-PTF1A	Diabetes Mellitus Permanent Neonatal with Cerebellar Agenesis	umls:C1836780	0.300298558	DISGENET
+PTF1A	Diabetes Mellitus Permanent Neonatal 	umls:C1836780	0.300298558	DISGENET
 PTGER4	Spondylitis Ankylosing	umls:C0038013	0.300298558	DISGENET
 PTGIS	Peripheral Nervous System Diseases	umls:C0031117	0.300298558	DISGENET
 PTGS1	Flushing	umls:C0016382	0.300298558	DISGENET
@@ -10468,7 +10468,7 @@ PTMA	Rhabdomyosarcoma	umls:C0035412	0.300298558	DISGENET
 PTPN11	Enchondromatosis	umls:C0014084	0.300298558	DISGENET
 PTPN11	Metachondromatosis	umls:C0410530	0.300298558	DISGENET
 PTPN13	Peripheral Nervous System Diseases	umls:C0031117	0.300298558	DISGENET
-PTPRD	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.300298558	DISGENET
+PTPRD	Attention Deficit Disorder 	umls:C1263846	0.300298558	DISGENET
 PVALB	Adenoma Oxyphilic	umls:C1510502	0.300298558	DISGENET
 PXK	Arthritis Rheumatoid	umls:C0003873	0.300298558	DISGENET
 PYCARD	Carcinoma Small Cell	umls:C0262584	0.300298558	DISGENET
@@ -10589,7 +10589,7 @@ SLC52A3	Esophageal Squamous Cell Carcinoma	umls:C0279626	0.300298558	DISGENET
 SLC5A5	Melanoma	umls:C0025202	0.300298558	DISGENET
 SLC5A5	Ovarian Neoplasms	umls:C0919267	0.300298558	DISGENET
 SLC6A1	Amyotrophic Lateral Sclerosis	umls:C0002736	0.300298558	DISGENET
-SLC6A19	Glycinuria with or without Oxalate Urolithiasis	umls:C0543541	0.300298558	DISGENET
+SLC6A19	Glycinuria 	umls:C0543541	0.300298558	DISGENET
 SLC6A19	Iminoglycinuria	umls:C0268654	0.300298558	DISGENET
 SLC6A20	Iminoglycinuria	umls:C0268654	0.300298558	DISGENET
 SLC6A3	Major Affective Disorder 1	umls:C1852197	0.300298558	DISGENET
@@ -10630,7 +10630,7 @@ SOD2	Precancerous Conditions	umls:C0032927	0.300298558	DISGENET
 SOD2	Vascular Diseases	umls:C0042373	0.300298558	DISGENET
 SOX2	Microphthalmia Syndromic 3	umls:C1859773	0.300298558	DISGENET
 SOX8	Peripheral Nervous System Diseases	umls:C0031117	0.300298558	DISGENET
-PMP22	Hepatic venoocclusive disease with immunodeficiency	umls:C1856128	0.300298558	DISGENET
+PMP22	Hepatic venoocclusive disease 	umls:C1856128	0.300298558	DISGENET
 SPARC	Leukemia Myeloid Acute	umls:C0023467	0.300298558	DISGENET
 SPARC	Multiple Myeloma	umls:C0026764	0.300298558	DISGENET
 SPARC	Osteogenesis Imperfecta	umls:C0029434	0.300298558	DISGENET
@@ -10666,7 +10666,7 @@ TAC1	Hyperalgesia	umls:C0020429	0.300298558	DISGENET
 TAC1	Neuralgia	umls:C0027796	0.300298558	DISGENET
 TAC1	Pruritus	umls:C0033774	0.300298558	DISGENET
 TACO1	Cytochrome c Oxidase Deficiency	umls:C0268237	0.300298558	DISGENET
-TACR1	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.300298558	DISGENET
+TACR1	Attention Deficit Disorder 	umls:C1263846	0.300298558	DISGENET
 TACR1	Bipolar Disorder	umls:C0005586	0.300298558	DISGENET
 TACR1	Vomiting	umls:C0042963	0.300298558	DISGENET
 TAGLN	Endometriosis	umls:C0014175	0.300298558	DISGENET
@@ -10749,7 +10749,7 @@ TRAF6	Coronary Artery Disease	umls:C1956346	0.300298558	DISGENET
 TREX1	Brain Diseases	umls:C0006111	0.300298558	DISGENET
 TRH	Leukemia Myeloid Acute	umls:C0023467	0.300298558	DISGENET
 TRIM2	Osteoarthritis	umls:C0029408	0.300298558	DISGENET
-TRNL1	Noninsulin dependent diabetes mellitus with deafness	umls:C0342289	0.300298558	DISGENET
+TRNL1	Noninsulin dependent diabetes mellitus 	umls:C0342289	0.300298558	DISGENET
 TRNS1	MELAS Syndrome	umls:C0162671	0.300298558	DISGENET
 TRPC3	Hypertension	umls:C0020538	0.300298558	DISGENET
 TRPC5	Hypertension	umls:C0020538	0.300298558	DISGENET
@@ -10833,18 +10833,18 @@ AARS2	COMBINED OXIDATIVE PHOSPHORYLATION DEFICIENCY 8	umls:C3279793	0.3	DISGENET
 ABCB6	MICROPHTHALMIA ISOLATED WITH COLOBOMA 7	umls:C3281027	0.3	DISGENET
 ABCC6	ARTERIAL CALCIFICATION GENERALIZED OF INFANCY 2	umls:C3276161	0.3	DISGENET
 ABCC9	ATRIAL FIBRILLATION FAMILIAL 12	umls:C3279695	0.3	DISGENET
-ACP5	Combined Immunodeficiency with Autoimmunity and Spondylometaphyseal Dysplasia	umls:C1842763	0.3	DISGENET
+ACP5	Combined Immunodeficiency 	umls:C1842763	0.3	DISGENET
 ACTA2	MOYAMOYA DISEASE 5	umls:C3279690	0.3	DISGENET
-ACTB	Iris Coloboma with Ptosis Hypertelorism and Mental Retardation	umls:C1855722	0.3	DISGENET
+ACTB	Iris Coloboma 	umls:C1855722	0.3	DISGENET
 ACTC1	CARDIOMYOPATHY DILATED 1R	umls:C3150681	0.3	DISGENET
 ACTG1	BARAITSER WINTER SYNDROME 2	umls:C3281235	0.3	DISGENET
 ADAMTS18	Knobloch Syndrome Type II	umls:C1838009	0.3	DISGENET
-ADCY5	Dyskinesia Familial with Facial Myokymia	umls:C1847627	0.3	DISGENET
+ADCY5	Dyskinesia Familial 	umls:C1847627	0.3	DISGENET
 ADIPOQ	ADIPONECTIN SERUM LEVEL OF QUANTITATIVE TRAIT LOCUS 1	umls:C2675517	0.3	DISGENET
 ADK	HYPERMETHIONINEMIA DUE TO ADENOSINE KINASE DEFICIENCY	umls:C3280381	0.3	DISGENET
 AFG3L2	SPASTIC ATAXIA 5 AUTOSOMAL RECESSIVE	umls:C3280977	0.3	DISGENET
 AGTR2	MENTAL RETARDATION X LINKED 88	umls:C3275444	0.3	DISGENET
-AHCY	Hypermethioninemia with Deficiency of S Adenosylhomocysteine Hydrolase	umls:C3151058	0.3	DISGENET
+AHCY	Hypermethioninemia 	umls:C3151058	0.3	DISGENET
 AKR1C2	Male Pseudohermaphroditism due to Deficiency of Testicular 17 20 Desmolase	umls:C1839840	0.3	DISGENET
 AKT2	HYPOINSULINEMIC HYPOGLYCEMIA WITH HEMIHYPERTROPHY	umls:C3278384	0.3	DISGENET
 FBF1	ALBUMIN	umls:C1412332	0.3	DISGENET
@@ -10957,12 +10957,12 @@ GATA4	VENTRICULAR SEPTAL DEFECT 1	umls:C3280777	0.3	DISGENET
 GATA4	ATRIOVENTRICULAR SEPTAL DEFECT 4	umls:C3280781	0.3	DISGENET
 GATA6	ATRIOVENTRICULAR SEPTAL DEFECT 5	umls:C3280939	0.3	DISGENET
 GATA6	ATRIAL SEPTAL DEFECT 9	umls:C3280943	0.3	DISGENET
-GATA6	Pancreatic Hypoplasia Congenital with Diabetes Mellitus and Congenital Heart Disease	umls:C1838780	0.3	DISGENET
+GATA6	Pancreatic Hypoplasia Congenital 	umls:C1838780	0.3	DISGENET
 GATA6	Conotruncal cardiac defects	umls:C1857586	0.3	DISGENET
 GBE1	Polyglucosan Body Disease Adult Form	umls:C1849722	0.3	DISGENET
 GDF1	TRANSPOSITION OF THE GREAT ARTERIES DEXTRO LOOPED 3	umls:C3151221	0.3	DISGENET
 GDI1	GDP DISSOCIATION INHIBITOR 1	umls:C1415038	0.3	DISGENET
-GFPT1	Myasthenia Limb Girdle with Tubular Aggregates	umls:C1864649	0.3	DISGENET
+GFPT1	Myasthenia Limb Girdle 	umls:C1864649	0.3	DISGENET
 GIPC3	Deafness Autosomal Recessive 15	umls:C1866094	0.3	DISGENET
 GJA5	ATRIAL FIBRILLATION FAMILIAL 11	umls:C3279693	0.3	DISGENET
 GNAS	Acth Independent Macronodular Adrenal Hyperplasia	umls:C1857451	0.3	DISGENET
@@ -11447,8 +11447,8 @@ ADH7	Esophageal Neoplasms	umls:C0014859	0.3	DISGENET
 ADH7	Laryngeal Neoplasms	umls:C0023055	0.3	DISGENET
 ADH7	Mouth Neoplasms	umls:C0026640	0.3	DISGENET
 ADH7	Pharyngeal Neoplasms	umls:C0031347	0.3	DISGENET
-ADHD3	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.3	DISGENET
-ADHD6	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.3	DISGENET
+ADHD3	Attention Deficit Disorder 	umls:C1263846	0.3	DISGENET
+ADHD6	Attention Deficit Disorder 	umls:C1263846	0.3	DISGENET
 ADIPOQ	ADIPONECTIN SERUM LEVEL OF QUANTITATIVE TRAIT LOCUS 2	umls:C1847530	0.3	DISGENET
 ADIPOQ	ADIPONECTIN SERUM LEVEL OF QUANTITATIVE TRAIT LOCUS 3	umls:C1847529	0.3	DISGENET
 ADIPOQ	Coronary Restenosis	umls:C0948480	0.3	DISGENET
@@ -11906,7 +11906,7 @@ APMR2	Alopecia Mental Retardation Syndrome 2	umls:C1835852	0.3	DISGENET
 APOA1	Acute Lung Injury	umls:C0242488	0.3	DISGENET
 APOA1	Adenocarcinoma of lung	umls:C0152013	0.3	DISGENET
 APOA1	Anoxia	umls:C0003130	0.3	DISGENET
-APOA1	Ataxia with vitamin E deficiency	umls:C1848533	0.3	DISGENET
+APOA1	Ataxia 	umls:C1848533	0.3	DISGENET
 APOA1	Behcet Syndrome	umls:C0004943	0.3	DISGENET
 APOA1	Death	umls:C0011065	0.3	DISGENET
 APOA1	Drug Eruptions	umls:C0011609	0.3	DISGENET
@@ -11915,7 +11915,7 @@ APOA1	Edema	umls:C0013604	0.3	DISGENET
 APOA1	Glomerulonephritis Membranous	umls:C0017665	0.3	DISGENET
 APOA2	HYPERCHOLESTEROLEMIA FAMILIAL	umls:C0745103	0.3	DISGENET
 APOA4	Liver Neoplasms Experimental	umls:C0023904	0.3	DISGENET
-APOB	Ataxia with vitamin E deficiency	umls:C1848533	0.3	DISGENET
+APOB	Ataxia 	umls:C1848533	0.3	DISGENET
 APOB	Behcet Syndrome	umls:C0004943	0.3	DISGENET
 APOB	Hypertriglyceridemia	umls:C0020557	0.3	DISGENET
 APOC2	Drug Eruptions	umls:C0011609	0.3	DISGENET
@@ -11939,7 +11939,7 @@ APOL2	Marijuana Abuse	umls:C0024809	0.3	DISGENET
 APOL2	Phencyclidine Abuse	umls:C0031391	0.3	DISGENET
 APOL6	Influenza Human	umls:C0021400	0.3	DISGENET
 APP	Brain Diseases	umls:C0006111	0.3	DISGENET
-APP	Cerebral hemorrhage with amyloidosis hereditary Dutch type	umls:C2931672	0.3	DISGENET
+APP	Cerebral hemorrhage 	umls:C2931672	0.3	DISGENET
 APP	Cognition Disorders	umls:C0009241	0.3	DISGENET
 APP	Disease Models Animal	umls:C0012644	0.3	DISGENET
 APP	Learning Disorders	umls:C0023186	0.3	DISGENET
@@ -12080,7 +12080,7 @@ ASRT8	ASTHMA RELATED TRAITS	umls:C2750782	0.3	DISGENET
 ASTN1	Brain Injuries	umls:C0270611	0.3	DISGENET
 ASTN2	Amphetamine Related Disorders	umls:C0236733	0.3	DISGENET
 ASTN2	Autistic Disorder	umls:C0004352	0.3	DISGENET
-ASTN2	Migraine without Aura	umls:C0338480	0.3	DISGENET
+ASTN2	Migraine 	umls:C0338480	0.3	DISGENET
 ASUN	Chloracne	umls:C0263454	0.3	DISGENET
 ASZ1	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
 ATAD3A	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
@@ -12150,7 +12150,7 @@ ATP6	Glucose Intolerance	umls:C0271650	0.3	DISGENET
 ATP6	Hypertrophy	umls:C0020564	0.3	DISGENET
 ATP6AP2	Craniofacial Abnormalities	umls:C0376634	0.3	DISGENET
 ATP6AP2	Fibrosis	umls:C0016059	0.3	DISGENET
-ATP6AP2	Mental Retardation X Linked with Epilepsy	umls:C1845543	0.3	DISGENET
+ATP6AP2	Mental Retardation X Linked 	umls:C1845543	0.3	DISGENET
 ATP6V0D2	Ovarian Cysts	umls:C0029927	0.3	DISGENET
 ATP6V1B2	Osteoarthritis	umls:C0029408	0.3	DISGENET
 ATP7A	Aortic Rupture	umls:C0003496	0.3	DISGENET
@@ -12191,7 +12191,7 @@ AURKA	Mammary Neoplasms Experimental	umls:C0024668	0.3	DISGENET
 AURKA	Peripheral Nervous System Diseases	umls:C0031117	0.3	DISGENET
 AURKA	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
 AURKB	Stomach Neoplasms	umls:C0038356	0.3	DISGENET
-AURKC	Male Infertility with Large Headed Multiflagellar Polyploid Spermatozoa	umls:C0403812	0.3	DISGENET
+AURKC	Male Infertility 	umls:C0403812	0.3	DISGENET
 AUTS11	Autistic Disorder	umls:C0004352	0.3	DISGENET
 AUTS12	Autistic Disorder	umls:C0004352	0.3	DISGENET
 AUTS13	Autistic Disorder	umls:C0004352	0.3	DISGENET
@@ -12389,7 +12389,7 @@ BIRC5	Leukemia Megakaryoblastic Acute	umls:C0023462	0.3	DISGENET
 BIRC6	Neoplasms	umls:C0027651	0.3	DISGENET
 BLK	MATURITY ONSET DIABETES OF THE YOUNG TYPE 11	umls:C3150618	0.3	DISGENET
 BLNK	AGAMMAGLOBULINEMIA 4 AUTOSOMAL RECESSIVE	umls:C3150752	0.3	DISGENET
-BLOC1S3	Albinism with hemorrhagic diathesis and pigmented reticuloendothelial cells	umls:C2931875	0.3	DISGENET
+BLOC1S3	Albinism 	umls:C2931875	0.3	DISGENET
 BLOC1S3	Polycystic Ovary Syndrome	umls:C0032460	0.3	DISGENET
 BLVRB	Esophageal Squamous Cell Carcinoma	umls:C0279626	0.3	DISGENET
 BLVRB	Stomach Neoplasms	umls:C0038356	0.3	DISGENET
@@ -12419,7 +12419,7 @@ BMPR1A	Eye Abnormalities	umls:C0015393	0.3	DISGENET
 BMPR1A	Female Urogenital Diseases	umls:C1720887	0.3	DISGENET
 BMPR1A	Polyposis Syndrome Hereditary Mixed 2	umls:C1864730	0.3	DISGENET
 BMPR1B	Bone Diseases Developmental	umls:C0005941	0.3	DISGENET
-BMPR1B	Chondrodysplasia acromesomelic with genital anomalies	umls:C1836182	0.3	DISGENET
+BMPR1B	Chondrodysplasia acromesomelic 	umls:C1836182	0.3	DISGENET
 BMPR1B	Craniofacial Abnormalities	umls:C0376634	0.3	DISGENET
 BMPR1B	Eye Abnormalities	umls:C0015393	0.3	DISGENET
 BMPR1B	Peripheral Nervous System Diseases	umls:C0031117	0.3	DISGENET
@@ -12446,7 +12446,7 @@ BRCA2	BREAST OVARIAN CANCER FAMILIAL	umls:C2675520	0.3	DISGENET
 BRCA2	Glioma	umls:C0017638	0.3	DISGENET
 BRCA2	Peripheral Nervous System Diseases	umls:C0031117	0.3	DISGENET
 BRCATA	Breast Cancer 11	umls:C1332441	0.3	DISGENET
-BRCD1	Cancer Familial with In Vitro Radioresistance	umls:C1861915	0.3	DISGENET
+BRCD1	Cancer Familial 	umls:C1861915	0.3	DISGENET
 BRD1	Carcinoma Adenoid Cystic	umls:C0010606	0.3	DISGENET
 BRD8	Endometriosis	umls:C0014175	0.3	DISGENET
 BRIP1	Ovarian Neoplasms	umls:C0919267	0.3	DISGENET
@@ -12723,7 +12723,7 @@ CAT	Seizures	umls:C0036572	0.3	DISGENET
 CAT	Status Epilepticus	umls:C0038220	0.3	DISGENET
 CTRCT34	Cataract Autosomal Recessive Congenital 3	umls:C2751822	0.3	DISGENET
 CTRCT35	Cataract Congenital Nuclear Autosomal Recessive 1	umls:C1836272	0.3	DISGENET
-MCOPCT1	Microphthalmia Isolated with Cataract 1	umls:C1834919	0.3	DISGENET
+MCOPCT1	Microphthalmia Isolated 	umls:C1834919	0.3	DISGENET
 CATSPER1	Spermatogenic Failure 7	umls:C2751811	0.3	DISGENET
 CAV1	Atrial Fibrillation	umls:C0004238	0.3	DISGENET
 CAV1	Diabetes Mellitus Experimental	umls:C0011853	0.3	DISGENET
@@ -13210,7 +13210,7 @@ CHRNA7	Substance Withdrawal Syndrome	umls:C0038587	0.3	DISGENET
 CHRNA7	Sudden Infant Death	umls:C0038644	0.3	DISGENET
 CHRNB1	Myasthenic syndrome congenital type Id	umls:C1837091	0.3	DISGENET
 CHRNB1	Myasthenic syndrome congenital postsynaptic slow channel	umls:C2931107	0.3	DISGENET
-CHRNB2	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.3	DISGENET
+CHRNB2	Attention Deficit Disorder 	umls:C1263846	0.3	DISGENET
 CHRNB2	Hypothermia	umls:C0020672	0.3	DISGENET
 CHRNB2	Nerve Degeneration	umls:C0027746	0.3	DISGENET
 CHRNB2	Sleep Disorders	umls:C0851578	0.3	DISGENET
@@ -13558,7 +13558,7 @@ CREBBP	Carcinoma Transitional Cell	umls:C0007138	0.3	DISGENET
 CREBBP	Small Cell Lung Carcinoma	umls:C0149925	0.3	DISGENET
 CREBBP	Urinary Bladder Neoplasms	umls:C0005695	0.3	DISGENET
 CREG1	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
-CRELD1	Atrioventricular Septal Defect Partial with Heterotaxy Syndrome	umls:C1853509	0.3	DISGENET
+CRELD1	Atrioventricular Septal Defect Partial 	umls:C1853509	0.3	DISGENET
 CREM	Chloracne	umls:C0263454	0.3	DISGENET
 CREM	Dermatitis Allergic Contact	umls:C0162820	0.3	DISGENET
 CREM	Hypertrophy	umls:C0020564	0.3	DISGENET
@@ -13787,7 +13787,7 @@ CTTNBP2	Myocardial Ischemia	umls:C0151744	0.3	DISGENET
 CUBN	Amphetamine Related Disorders	umls:C0236733	0.3	DISGENET
 CUL2	Inflammatory Bowel Diseases	umls:C0021390	0.3	DISGENET
 CUL7	Carcinoma Renal Cell	umls:C0007134	0.3	DISGENET
-CVMRF	Cubitus Valgus with Mental Retardation and Unusual Facies	umls:C1845450	0.3	DISGENET
+CVMRF	Cubitus Valgus 	umls:C1845450	0.3	DISGENET
 CX3CL1	Hypersensitivity	umls:C0020517	0.3	DISGENET
 CX3CL1	Myocardial Ischemia	umls:C0151744	0.3	DISGENET
 CX3CL1	Pneumonia	umls:C0032285	0.3	DISGENET
@@ -14002,7 +14002,7 @@ DCC	Melanoma	umls:C0025202	0.3	DISGENET
 DCC	MIRROR MOVEMENTS 1	umls:C1834870	0.3	DISGENET
 DCK	Peripheral Nervous System Diseases	umls:C0031117	0.3	DISGENET
 DCLK1	Colorectal Neoplasms	umls:C0009404	0.3	DISGENET
-DCLRE1C	Reticuloendotheliosis familial with eosinophilia	umls:C2931884	0.3	DISGENET
+DCLRE1C	Reticuloendotheliosis familial 	umls:C2931884	0.3	DISGENET
 DCN	Endometrial Neoplasms	umls:C0014170	0.3	DISGENET
 DCN	Muscular Dystrophy Facioscapulohumeral	umls:C0238288	0.3	DISGENET
 DCN	Myocardial Ischemia	umls:C0151744	0.3	DISGENET
@@ -14058,7 +14058,7 @@ DEL8Q13	Mesomelia synostoses syndrome	umls:C1838162	0.3	DISGENET
 RP2	Chromosome Xp11 3 Deletion Syndrome	umls:C1845136	0.3	DISGENET
 DELXQ28	Contiguous Abcd1 Dxs1375e Deletion Syndrome	umls:C1845408	0.3	DISGENET
 DENND1B	Liver Cirrhosis Biliary	umls:C0023892	0.3	DISGENET
-DEPDC5	Epilepsy Partial with Variable Foci	umls:C1858477	0.3	DISGENET
+DEPDC5	Epilepsy Partial 	umls:C1858477	0.3	DISGENET
 DER22T11-22	Emanuel syndrome	umls:C1836929	0.3	DISGENET
 DER22T8-22	SUPERNUMERARY DER 22 t 8	umls:C3150966	0.3	DISGENET
 DES	Atrial Fibrillation	umls:C0004238	0.3	DISGENET
@@ -14278,7 +14278,7 @@ DSP	Keratosis Palmoplantaris Striata II	umls:C1852127	0.3	DISGENET
 DSPP	Mouth Neoplasms	umls:C0026640	0.3	DISGENET
 DTL	Carcinoma Adenoid Cystic	umls:C0010606	0.3	DISGENET
 DTL	Salivary Gland Neoplasms	umls:C0036095	0.3	DISGENET
-DTNBP1	Albinism with hemorrhagic diathesis and pigmented reticuloendothelial cells	umls:C2931875	0.3	DISGENET
+DTNBP1	Albinism 	umls:C2931875	0.3	DISGENET
 DTX1	Carcinoma Pancreatic Ductal	umls:C0887833	0.3	DISGENET
 DTX1	Oligodendroglioma	umls:C0028945	0.3	DISGENET
 DTX2	Brain Neoplasms	umls:C0006118	0.3	DISGENET
@@ -14564,8 +14564,8 @@ ETL4	Epilepsy Familial Temporal Lobe 4	umls:C1968847	0.3	DISGENET
 EPOR	Neoplasm Invasiveness	umls:C0027626	0.3	DISGENET
 EPOR	Nerve Degeneration	umls:C0027746	0.3	DISGENET
 EPPK1	Chloracne	umls:C0263454	0.3	DISGENET
-EPPS	Epilepsy Partial with Pericentral Spikes	umls:C1846609	0.3	DISGENET
-EPRPDC	Epilepsy rolandic with paroxysmal exercise induced dystonia and writer cramp	umls:C1842531	0.3	DISGENET
+EPPS	Epilepsy Partial 	umls:C1846609	0.3	DISGENET
+EPRPDC	Epilepsy rolandic 	umls:C1842531	0.3	DISGENET
 EPS8	Neoplasm Invasiveness	umls:C0027626	0.3	DISGENET
 EPS8L3	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
 ERBB2	Disease Progression	umls:C0242656	0.3	DISGENET
@@ -14649,7 +14649,7 @@ ETS1	Reperfusion Injury	umls:C0035126	0.3	DISGENET
 ETS2	Craniofacial Abnormalities	umls:C0376634	0.3	DISGENET
 ETS2	Dermatitis Allergic Contact	umls:C0162820	0.3	DISGENET
 ETS2	Nerve Degeneration	umls:C0027746	0.3	DISGENET
-ETV6	Myeloproliferative Disorder Chronic with Eosinophilia	umls:C1851585	0.3	DISGENET
+ETV6	Myeloproliferative Disorder Chronic 	umls:C1851585	0.3	DISGENET
 ETV6	Substance Related Disorders	umls:C0236969	0.3	DISGENET
 EVR3	Exudative Vitreoretinopathy 3	umls:C1854002	0.3	DISGENET
 EXO1	Peripheral Nervous System Diseases	umls:C0031117	0.3	DISGENET
@@ -14833,7 +14833,7 @@ FECD2	Corneal dystrophy Fuchs endothelial 2	umls:C1857800	0.3	DISGENET
 FECD3	Corneal Dystrophy Fuchs Endothelial 3	umls:C2750451	0.3	DISGENET
 FECD5	Corneal Dystrophy Fuchs Endothelial 5	umls:C2750449	0.3	DISGENET
 FECD7	Corneal Dystrophy Fuchs Endothelial 7	umls:C2750447	0.3	DISGENET
-FEOM3	Fibrosis Of Extraocular Muscles Congenital 3A with or without Extraocular Involvement	umls:C2748801	0.3	DISGENET
+FEOM3	Fibrosis Of Extraocular Muscles Congenital 3A 	umls:C2748801	0.3	DISGENET
 FERMT2	Urinary Bladder Neoplasms	umls:C0005695	0.3	DISGENET
 FERMT3	Blood Platelet Disorders	umls:C0005818	0.3	DISGENET
 FERMT3	Hemorrhage	umls:C0019080	0.3	DISGENET
@@ -15040,7 +15040,7 @@ FOXP3	Polycystic Ovary Syndrome	umls:C0032460	0.3	DISGENET
 FOXR2	Nerve Sheath Neoplasms	umls:C0206727	0.3	DISGENET
 FOXRED1	Leigh Disease	umls:C0023264	0.3	DISGENET
 FOXRED1	Mitochondrial Encephalomyopathies	umls:C0162666	0.3	DISGENET
-FPEVF	Epilepsy Partial with Variable Foci	umls:C1858477	0.3	DISGENET
+FPEVF	Epilepsy Partial 	umls:C1858477	0.3	DISGENET
 FRA12A	Mental Retardation Fra12a Type	umls:C1969893	0.3	DISGENET
 FRDA2	Friedreich Ataxia	umls:C0016719	0.3	DISGENET
 FREM1	Eye Abnormalities	umls:C0015393	0.3	DISGENET
@@ -15559,7 +15559,7 @@ GRIN2B	Hypotension	umls:C0020649	0.3	DISGENET
 GRIN2D	Nerve Degeneration	umls:C0027746	0.3	DISGENET
 GRIN3A	Erectile Dysfunction	umls:C0242350	0.3	DISGENET
 GRK5	Liver Diseases	umls:C0023895	0.3	DISGENET
-GRM1	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.3	DISGENET
+GRM1	Attention Deficit Disorder 	umls:C1263846	0.3	DISGENET
 GRM1	Epilepsy	umls:C0014544	0.3	DISGENET
 GRM1	Status Epilepticus	umls:C0038220	0.3	DISGENET
 GRM2	Amphetamine Related Disorders	umls:C0236733	0.3	DISGENET
@@ -15577,7 +15577,7 @@ GRM5	Status Epilepticus	umls:C0038220	0.3	DISGENET
 GRM5	Substance Related Disorders	umls:C0236969	0.3	DISGENET
 GRM7	Substance Related Disorders	umls:C0236969	0.3	DISGENET
 GRM8	Anxiety Disorders	umls:C0003469	0.3	DISGENET
-GRM8	Attention Deficit Disorder with Hyperactivity	umls:C1263846	0.3	DISGENET
+GRM8	Attention Deficit Disorder 	umls:C1263846	0.3	DISGENET
 GRM8	Gliosis	umls:C0017639	0.3	DISGENET
 GRM8	Small Cell Lung Carcinoma	umls:C0149925	0.3	DISGENET
 GRN	Nerve Degeneration	umls:C0027746	0.3	DISGENET
@@ -15969,7 +15969,7 @@ HOXA11	Endometrial Neoplasms	umls:C0014170	0.3	DISGENET
 HOXA11	Female Urogenital Diseases	umls:C1720887	0.3	DISGENET
 HOXA11	Kidney Diseases	umls:C0022658	0.3	DISGENET
 HOXA11	Limb Deformities Congenital	umls:C0206762	0.3	DISGENET
-HOXA11	Radioulnar Synostosis with Amegakaryocytic Thrombocytopenia	umls:C1854273	0.3	DISGENET
+HOXA11	Radioulnar Synostosis 	umls:C1854273	0.3	DISGENET
 HOXA13	Female Urogenital Diseases	umls:C1720887	0.3	DISGENET
 HOXA2	Stomach Neoplasms	umls:C0038356	0.3	DISGENET
 HOXA3	Craniofacial Abnormalities	umls:C0376634	0.3	DISGENET
@@ -16037,10 +16037,10 @@ HPGD	Thyroid Neoplasms	umls:C0040136	0.3	DISGENET
 HPLH1	Familial hemophagocytic lymphohistiocytosis	umls:C0272199	0.3	DISGENET
 HPN	Lipidoses	umls:C0023794	0.3	DISGENET
 HPRHP	Hypophosphatemic Rickets And Hyperparathyroidism	umls:C2677524	0.3	DISGENET
-HPS3	Albinism with hemorrhagic diathesis and pigmented reticuloendothelial cells	umls:C2931875	0.3	DISGENET
-HPS4	Albinism with hemorrhagic diathesis and pigmented reticuloendothelial cells	umls:C2931875	0.3	DISGENET
-HPS5	Albinism with hemorrhagic diathesis and pigmented reticuloendothelial cells	umls:C2931875	0.3	DISGENET
-HPS6	Albinism with hemorrhagic diathesis and pigmented reticuloendothelial cells	umls:C2931875	0.3	DISGENET
+HPS3	Albinism 	umls:C2931875	0.3	DISGENET
+HPS4	Albinism 	umls:C2931875	0.3	DISGENET
+HPS5	Albinism 	umls:C2931875	0.3	DISGENET
+HPS6	Albinism 	umls:C2931875	0.3	DISGENET
 HPSE	Liver Cirrhosis Experimental	umls:C0023893	0.3	DISGENET
 HPSE	Nephrosis	umls:C0027720	0.3	DISGENET
 HPT	Hypoparathyroidism X Linked	umls:C0342344	0.3	DISGENET
@@ -16152,10 +16152,10 @@ HSPE1	Cardiomyopathies	umls:C0878544	0.3	DISGENET
 HSPG2	Craniofacial Abnormalities	umls:C0376634	0.3	DISGENET
 HSPH1	HIV Infections	umls:C0019693	0.3	DISGENET
 HTC1	Congenital hypertrichosis lanuginosa	umls:C0235864	0.3	DISGENET
-HTGH	Hypertrichosis Terminalis Generalized with or without Gingival Hyperplasia	umls:C1851120	0.3	DISGENET
+HTGH	Hypertrichosis Terminalis Generalized 	umls:C1851120	0.3	DISGENET
 HTGS	Hyperlipoproteinemia Type IV	umls:C0020480	0.3	DISGENET
 HTN1	Autistic Disorder	umls:C0004352	0.3	DISGENET
-HTNB	Brachydactyly with hypertension	umls:C1862170	0.3	DISGENET
+HTNB	Brachydactyly 	umls:C1862170	0.3	DISGENET
 HTOR	5 hydroxytryptamine serotonin oxygenase regulator	umls:C1415802	0.3	DISGENET
 HTR1A	Apnea	umls:C0003578	0.3	DISGENET
 HTR1A	Bradycardia	umls:C0428977	0.3	DISGENET
@@ -16453,7 +16453,7 @@ B3GNT1	IMMUNE RESPONSE TO SYNTHETIC POLYPEPTIDE IRGAT	umls:C1840267	0.3	DISGENET
 IGBP1	Breast Neoplasms	umls:C1458155	0.3	DISGENET
 IGBP1	Carcinoma Hepatocellular	umls:C2239176	0.3	DISGENET
 IGBP1	Cell Transformation Neoplastic	umls:C0007621	0.3	DISGENET
-IGBP1	Corpus Callosum Agenesis of with Mental Retardation Ocular Coloboma and Micrognathia	umls:C1845446	0.3	DISGENET
+IGBP1	Corpus Callosum Agenesis of 	umls:C1845446	0.3	DISGENET
 IGBP1	Lung Neoplasms	umls:C0024121	0.3	DISGENET
 IGF1	Bone Diseases Metabolic	umls:C0005944	0.3	DISGENET
 IGF1	Cardiomegaly	umls:C0018800	0.3	DISGENET
@@ -16528,7 +16528,7 @@ IHPS2	Pyloric Stenosis Infantile Hypertrophic 2	umls:C1853228	0.3	DISGENET
 IHPS3	Pyloric Stenosis Infantile Hypertrophic 3	umls:C2677588	0.3	DISGENET
 IHPS4	Pyloric Stenosis Infantile Hypertrophic 4	umls:C2678037	0.3	DISGENET
 IHPS5	Pyloric Stenosis Infantile Hypertrophic 5	umls:C2675862	0.3	DISGENET
-IKBKG	Ectodermal Dysplasia Anhidrotic with Immunodeficiency Osteopetrosis and Lymphedema	umls:C1845919	0.3	DISGENET
+IKBKG	Ectodermal Dysplasia Anhidrotic 	umls:C1845919	0.3	DISGENET
 IKBKG	Lung Neoplasms	umls:C0024121	0.3	DISGENET
 IKBKG	Non alcoholic Fatty Liver Disease	umls:C0400966	0.3	DISGENET
 IKZF1	Colitis Ulcerative	umls:C0009324	0.3	DISGENET
@@ -17000,7 +17000,7 @@ JAK2	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
 JAKMIP1	Autistic Disorder	umls:C0004352	0.3	DISGENET
 JAKMIP2	Melanoma	umls:C0025202	0.3	DISGENET
 JARID2	Child Development Disorders Pervasive	umls:C0008074	0.3	DISGENET
-JAWAD	Microcephaly with Mental Retardation and Digital Anomalies	umls:C2673414	0.3	DISGENET
+JAWAD	Microcephaly 	umls:C2673414	0.3	DISGENET
 JAZF1	Endometrial Neoplasms	umls:C0014170	0.3	DISGENET
 JBS	Jacobsen Distal 11q Deletion Syndrome	umls:C0795841	0.3	DISGENET
 JDP2	Carcinoma Hepatocellular	umls:C2239176	0.3	DISGENET
@@ -17243,7 +17243,7 @@ L3MBTL2	Medulloblastoma	umls:C0025149	0.3	DISGENET
 L3MBTL3	Medulloblastoma	umls:C0025149	0.3	DISGENET
 LACTB	Obesity	umls:C0028754	0.3	DISGENET
 LAIR2	Peripheral Nervous System Diseases	umls:C0031117	0.3	DISGENET
-LALL	Lymphoblastic Leukemia Acute with Lymphomatous Features	umls:C1855472	0.3	DISGENET
+LALL	Lymphoblastic Leukemia Acute 	umls:C1855472	0.3	DISGENET
 LAMA1	Colorectal Neoplasms	umls:C0009404	0.3	DISGENET
 LAMA1	Non alcoholic Fatty Liver Disease	umls:C0400966	0.3	DISGENET
 LAMA1	Schizophrenia	umls:C0036341	0.3	DISGENET
@@ -17451,7 +17451,7 @@ LPRS6	Leprosy	umls:C0023343	0.3	DISGENET
 LRAT	Eye Diseases Hereditary	umls:C0015398	0.3	DISGENET
 LRAT	Optic Atrophy Hereditary Leber	umls:C0917796	0.3	DISGENET
 LRAT	Vitamin A Deficiency	umls:C0042842	0.3	DISGENET
-LRP1	Migraine without Aura	umls:C0338480	0.3	DISGENET
+LRP1	Migraine 	umls:C0338480	0.3	DISGENET
 LRP1	Schizophrenia	umls:C0036341	0.3	DISGENET
 LRP1B	Melanoma	umls:C0025202	0.3	DISGENET
 LRP2	Bone Diseases Metabolic	umls:C0005944	0.3	DISGENET
@@ -17529,7 +17529,7 @@ M6PR	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
 M6PR	Stomach Neoplasms	umls:C0038356	0.3	DISGENET
 MGR1	Migraine Disorders	umls:C0149931	0.3	DISGENET
 MAB21L2	Arthritis Rheumatoid	umls:C0003873	0.3	DISGENET
-MACOM	Macrophthalmia Colobomatous with Microcornea	umls:C1865286	0.3	DISGENET
+MACOM	Macrophthalmia Colobomatous 	umls:C1865286	0.3	DISGENET
 MACROD2	Substance Related Disorders	umls:C0236969	0.3	DISGENET
 MACST	Macrostomia	umls:C0024433	0.3	DISGENET
 MAD1L1	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
@@ -17733,7 +17733,7 @@ MED4	Endometriosis	umls:C0014175	0.3	DISGENET
 MEF2A	Coronary Artery Disease Autosomal Dominant 1	umls:C1842247	0.3	DISGENET
 MEF2C	Child Development Disorders Pervasive	umls:C0008074	0.3	DISGENET
 MEF2C	MENTAL RETARDATION STEREOTYPIC MOVEMENTS EPILEPSY AND OR CEREBRAL MALFORMATIONS	umls:C3150700	0.3	DISGENET
-MEF2D	Migraine without Aura	umls:C0338480	0.3	DISGENET
+MEF2D	Migraine 	umls:C0338480	0.3	DISGENET
 MEGF10	Respiratory Distress Syndrome Newborn	umls:C0035220	0.3	DISGENET
 MEHMO	MEHMO syndrome	umls:C1846278	0.3	DISGENET
 MEIS1	Breast Neoplasms	umls:C1458155	0.3	DISGENET
@@ -17784,11 +17784,11 @@ MGP	Vascular Calcification	umls:C0342649	0.3	DISGENET
 MGR12	Migraine Disorders	umls:C0149931	0.3	DISGENET
 MGR2	MIGRAINE FAMILIAL TYPICAL	umls:C1848066	0.3	DISGENET
 MGR3	Migraine Disorders	umls:C0149931	0.3	DISGENET
-MGR4	Migraine without Aura	umls:C0338480	0.3	DISGENET
+MGR4	Migraine 	umls:C0338480	0.3	DISGENET
 MGR5	Migraine Disorders	umls:C0149931	0.3	DISGENET
-MGR7	Migraine with Aura	umls:C0154723	0.3	DISGENET
+MGR7	Migraine 	umls:C0154723	0.3	DISGENET
 MGR8	Migraine Disorders	umls:C0149931	0.3	DISGENET
-MGR9	Migraine with Aura	umls:C0154723	0.3	DISGENET
+MGR9	Migraine 	umls:C0154723	0.3	DISGENET
 MGS	Mungan Syndrome	umls:C1969653	0.3	DISGENET
 MGST1	Neurodegenerative Diseases	umls:C0524851	0.3	DISGENET
 MHAC	Microhydranencephaly	umls:C1857977	0.3	DISGENET
@@ -18091,7 +18091,7 @@ MME	Diabetic Neuropathies	umls:C0011882	0.3	DISGENET
 MME	Liver Cirrhosis Experimental	umls:C0023893	0.3	DISGENET
 MME	Lung Injury	umls:C0273115	0.3	DISGENET
 MME	Renal Insufficiency	umls:C1565489	0.3	DISGENET
-MMEDF	Macrocephaly with Multiple Epiphyseal Dysplasia and Distinctive Facies	umls:C1846722	0.3	DISGENET
+MMEDF	Macrocephaly 	umls:C1846722	0.3	DISGENET
 MMEL1	Liver Cirrhosis Biliary	umls:C0023892	0.3	DISGENET
 MMP1	Liver Cirrhosis Experimental	umls:C0023893	0.3	DISGENET
 MMP1	Non alcoholic Fatty Liver Disease	umls:C0400966	0.3	DISGENET
@@ -18169,8 +18169,8 @@ MNT	Classical Lissencephalies and Subcortical Band Heterotopias	umls:C1955870	0.
 MNT	Cleft Palate	umls:C0008925	0.3	DISGENET
 MNT	Craniofacial Abnormalities	umls:C0376634	0.3	DISGENET
 MON1A	Iron Metabolism Disorders	umls:C0012715	0.3	DISGENET
-MCOPCB1	Microphthalmia Isolated with Coloboma 1	umls:C1845877	0.3	DISGENET
-MCOPCB2	Microphthalmia Isolated with Coloboma 2	umls:C1854018	0.3	DISGENET
+MCOPCB1	Microphthalmia Isolated 	umls:C1845877	0.3	DISGENET
+MCOPCB2	Microphthalmia Isolated 	umls:C1854018	0.3	DISGENET
 MORF4L1	Carcinoma Adenoid Cystic	umls:C0010606	0.3	DISGENET
 MORN1	Polycystic Ovary Syndrome	umls:C0032460	0.3	DISGENET
 MPC1	Substance Related Disorders	umls:C0236969	0.3	DISGENET
@@ -18225,7 +18225,7 @@ MRPS22	Breast Neoplasms	umls:C1458155	0.3	DISGENET
 MRPS28	Breast Neoplasms	umls:C1458155	0.3	DISGENET
 MRPS7	Breast Neoplasms	umls:C1458155	0.3	DISGENET
 MRSD	Mental Retardation Skeletal Dysplasia and Abducens Palsy	umls:C1839729	0.3	DISGENET
-MRSS	Mental Retardation X Linked with Short Stature	umls:C1845845	0.3	DISGENET
+MRSS	Mental Retardation X Linked 	umls:C1845845	0.3	DISGENET
 MRST	Mental Retardation Severe With Spasticity And Pigmentary Tapetoretinal Degeneration	umls:C1864549	0.3	DISGENET
 MRT10	Mental Retardation Autosomal Recessive 10	umls:C1970194	0.3	DISGENET
 MRT11	Mental Retardation Autosomal Recessive 11	umls:C1970193	0.3	DISGENET
@@ -18275,7 +18275,7 @@ MSN	Osteoarthritis	umls:C0029408	0.3	DISGENET
 MSR1	Kidney Failure Chronic	umls:C0022661	0.3	DISGENET
 MSRA	Substance Related Disorders	umls:C0236969	0.3	DISGENET
 MSRB3	Hearing Loss	umls:C1384666	0.3	DISGENET
-MSSD	Syndactyly Mesoaxial Synostotic with Phalangeal Reduction	umls:C1836206	0.3	DISGENET
+MSSD	Syndactyly Mesoaxial Synostotic 	umls:C1836206	0.3	DISGENET
 MSSE	Keratoacanthoma familial	umls:C0546476	0.3	DISGENET
 MST1R	Drug Induced Liver Injury	umls:C0860207	0.3	DISGENET
 MST1R	Osteosarcoma	umls:C0029463	0.3	DISGENET
@@ -18366,7 +18366,7 @@ MX1	Myocardial Ischemia	umls:C0151744	0.3	DISGENET
 MX1	Stomach Neoplasms	umls:C0038356	0.3	DISGENET
 MXD1	Dermatitis Allergic Contact	umls:C0162820	0.3	DISGENET
 MXI1	Kidney Diseases	umls:C0022658	0.3	DISGENET
-MYAS1	Myasthenia Gravis with Thymus Hyperplasia	umls:C1846838	0.3	DISGENET
+MYAS1	Myasthenia Gravis 	umls:C1846838	0.3	DISGENET
 MYBL1	Carcinoma Adenoid Cystic	umls:C0010606	0.3	DISGENET
 MYBL1	Polycystic Ovary Syndrome	umls:C0032460	0.3	DISGENET
 MYBPC3	Death Sudden Cardiac	umls:C0085298	0.3	DISGENET
@@ -18528,7 +18528,7 @@ NDUFV2	Mitochondrial Encephalomyopathies	umls:C0162666	0.3	DISGENET
 NDUFV2	PARKINSON DISEASE LATE ONSET	umls:C3160718	0.3	DISGENET
 NEDD4	Myocardial Ischemia	umls:C0151744	0.3	DISGENET
 NEDD4L	Endometriosis	umls:C0014175	0.3	DISGENET
-NEDE	Nephropathy Progressive with Deafness	umls:C1836119	0.3	DISGENET
+NEDE	Nephropathy Progressive 	umls:C1836119	0.3	DISGENET
 NEFH	Peripheral Nervous System Diseases	umls:C0031117	0.3	DISGENET
 NEFM	Endometriosis	umls:C0014175	0.3	DISGENET
 NEIL1	Dyslipidemias	umls:C0242339	0.3	DISGENET
@@ -18953,7 +18953,7 @@ OGG1	Lymphoma	umls:C0024299	0.3	DISGENET
 OGG1	Motor Skills Disorders	umls:C0026613	0.3	DISGENET
 OGG1	Prenatal Exposure Delayed Effects	umls:C0033054	0.3	DISGENET
 OGG1	Skin Diseases	umls:C0037274	0.3	DISGENET
-OGS2	Hypertelorism with esophageal abnormality and hypospadias	umls:C1801950	0.3	DISGENET
+OGS2	Hypertelorism 	umls:C1801950	0.3	DISGENET
 OHDS	Orthostatic Hypotensive Disorder Streeten Type	umls:C1840438	0.3	DISGENET
 OLFM1	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
 OLR1	Cardiomyopathies	umls:C0878544	0.3	DISGENET
@@ -19134,7 +19134,7 @@ PAX6	Stomach Neoplasms	umls:C0038356	0.3	DISGENET
 PAX8	Thyroid cancer follicular	umls:C2931367	0.3	DISGENET
 PBC2	Biliary Cirrhosis Primary 2	umls:C2751696	0.3	DISGENET
 PBC3	Biliary Cirrhosis Primary 3	umls:C2751695	0.3	DISGENET
-PBCA	Pancreatic beta cell agenesis with neonatal diabetes mellitus	umls:C1838655	0.3	DISGENET
+PBCA	Pancreatic beta cell agenesis 	umls:C1838655	0.3	DISGENET
 PBCRA1	Chorioretinal atrophy progressive bifocal	umls:C1833321	0.3	DISGENET
 PBLD	Precancerous Conditions	umls:C0032927	0.3	DISGENET
 PBX1	Substance Related Disorders	umls:C0236969	0.3	DISGENET
@@ -19222,7 +19222,7 @@ PDGFRA	Chondrosarcoma Mesenchymal	umls:C0206637	0.3	DISGENET
 PDGFRA	Fetal Death	umls:C0015927	0.3	DISGENET
 PDGFRA	Lung Diseases	umls:C0024115	0.3	DISGENET
 PDGFRA	Respiratory System Abnormalities	umls:C0035238	0.3	DISGENET
-PDGFRB	Myeloproliferative Disorder Chronic with Eosinophilia	umls:C1851585	0.3	DISGENET
+PDGFRB	Myeloproliferative Disorder Chronic 	umls:C1851585	0.3	DISGENET
 PDGFRL	Colorectal Neoplasms	umls:C0009404	0.3	DISGENET
 PDHA1	Disease Progression	umls:C0242656	0.3	DISGENET
 PDHA1	Myocardial Ischemia	umls:C0151744	0.3	DISGENET
@@ -19242,7 +19242,7 @@ PDLIM5	Myocardial Ischemia	umls:C0151744	0.3	DISGENET
 PDP1	Pyruvate dehydrogenase phosphatase deficiency	umls:C1837429	0.3	DISGENET
 PDPK1	Heart Failure	umls:C0018801	0.3	DISGENET
 PDPK1	Lymphoma Large B Cell Diffuse	umls:C0079744	0.3	DISGENET
-PDR	Pigmentary Disorder Reticulate with Systemic Manifestations	umls:C1845050	0.3	DISGENET
+PDR	Pigmentary Disorder Reticulate 	umls:C1845050	0.3	DISGENET
 PDRG1	Liver Neoplasms	umls:C0023903	0.3	DISGENET
 PDX1	Pancreatic Agenesis Congenital	umls:C1850096	0.3	DISGENET
 PDXK	Status Epilepticus	umls:C0038220	0.3	DISGENET
@@ -19332,7 +19332,7 @@ PGR	Mesothelioma	umls:C0025500	0.3	DISGENET
 PGR	Recurrence	umls:C2825055	0.3	DISGENET
 PGRMC1	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
 PHA2A	Pseudohypoaldosteronism	umls:C0033805	0.3	DISGENET
-PHACTR1	Migraine without Aura	umls:C0338480	0.3	DISGENET
+PHACTR1	Migraine 	umls:C0338480	0.3	DISGENET
 PHB	Disease Progression	umls:C0242656	0.3	DISGENET
 PHB	Esophageal Neoplasms	umls:C0014859	0.3	DISGENET
 PHB	Mammary Neoplasms Animal	umls:C0024667	0.3	DISGENET
@@ -19380,7 +19380,7 @@ PITX2	Heart Defects Congenital	umls:C0018798	0.3	DISGENET
 PITX2	Tooth Abnormalities	umls:C0040427	0.3	DISGENET
 PITX3	Neurologic Manifestations	umls:C0027854	0.3	DISGENET
 PIWIL1	Substance Related Disorders	umls:C0236969	0.3	DISGENET
-PKDTS	Polycystic kidneys severe infantile with tuberous sclerosis	umls:C1838327	0.3	DISGENET
+PKDTS	Polycystic kidneys severe infantile 	umls:C1838327	0.3	DISGENET
 PKM	Mammary Neoplasms Animal	umls:C0024667	0.3	DISGENET
 PKM	Mammary Neoplasms Experimental	umls:C0024668	0.3	DISGENET
 PKM	Neoplasm Invasiveness	umls:C0027626	0.3	DISGENET
@@ -19848,7 +19848,7 @@ PRLR	Mammary Neoplasms Experimental	umls:C0024668	0.3	DISGENET
 PRNP	Necrosis	umls:C0027540	0.3	DISGENET
 PRNP	Neoplasms Experimental	umls:C0027659	0.3	DISGENET
 PRNP	Scrapie	umls:C0036457	0.3	DISGENET
-PRNP	Spongiform Encephalopathy with Neuropsychiatric Features	umls:C1847650	0.3	DISGENET
+PRNP	Spongiform Encephalopathy 	umls:C1847650	0.3	DISGENET
 PROC	Arteritis	umls:C0003860	0.3	DISGENET
 PROK2	Hyperalgesia	umls:C0020429	0.3	DISGENET
 PROKR1	Hyperalgesia	umls:C0020429	0.3	DISGENET
@@ -19877,7 +19877,7 @@ PSCA	Linitis Plastica	umls:C0023743	0.3	DISGENET
 PSD2	Precancerous Conditions	umls:C0032927	0.3	DISGENET
 PSD3	Amphetamine Related Disorders	umls:C0236733	0.3	DISGENET
 PSD3	Glioma	umls:C0017638	0.3	DISGENET
-PSEN1	Alzheimer Disease Familial 3 with Spastic Paraparesis and Apraxia	umls:C1843015	0.3	DISGENET
+PSEN1	Alzheimer Disease Familial 3 	umls:C1843015	0.3	DISGENET
 PSEN1	Asphyxia Neonatorum	umls:C0004045	0.3	DISGENET
 PSEN1	Disease Models Animal	umls:C0012644	0.3	DISGENET
 PSEN1	Hidradenitis suppurativa familial	umls:C1840560	0.3	DISGENET
@@ -20082,7 +20082,7 @@ PUS1	Disease Progression	umls:C0242656	0.3	DISGENET
 PUS1	Stomach Neoplasms	umls:C0038356	0.3	DISGENET
 PVALB	Psychotic Disorders	umls:C0033975	0.3	DISGENET
 PVALB	Seizures	umls:C0036572	0.3	DISGENET
-PVNH3	Heterotopia Periventricular associated with Chromosome 5p Anomalies	umls:C1842562	0.3	DISGENET
+PVNH3	Heterotopia Periventricular associated 	umls:C1842562	0.3	DISGENET
 PVNH5	Heterotopia Periventricular Associated With Chromosome 5q Deletion	umls:C2752071	0.3	DISGENET
 PVOP1	Pelvic Organ Prolapse	umls:C0877015	0.3	DISGENET
 PVOP2	Pelvic Organ Prolapse	umls:C0877015	0.3	DISGENET
@@ -20146,9 +20146,9 @@ RAET1L	Alopecia Areata	umls:C0002171	0.3	DISGENET
 RAF1	Hyperalgesia	umls:C0020429	0.3	DISGENET
 RAF1	Kidney Neoplasms	umls:C0022665	0.3	DISGENET
 RAF1	Liver Neoplasms	umls:C0023903	0.3	DISGENET
-RAG1	Reticuloendotheliosis familial with eosinophilia	umls:C2931884	0.3	DISGENET
+RAG1	Reticuloendotheliosis familial 	umls:C2931884	0.3	DISGENET
 RAG1	Severe Combined Immunodeficiency Autosomal Recessive T Cell Negative B Cell Negative NK Cell Positive	umls:C1832322	0.3	DISGENET
-RAG2	Reticuloendotheliosis familial with eosinophilia	umls:C2931884	0.3	DISGENET
+RAG2	Reticuloendotheliosis familial 	umls:C2931884	0.3	DISGENET
 RAI1	Anxiety Disorders	umls:C0003469	0.3	DISGENET
 RAI1	Child Development Disorders Pervasive	umls:C0008074	0.3	DISGENET
 RAI1	Craniofacial Abnormalities	umls:C0376634	0.3	DISGENET
@@ -20293,7 +20293,7 @@ RETN	Heroin Dependence	umls:C0019337	0.3	DISGENET
 RETSAT	Simpson Golabi Behmel syndrome	umls:C0796154	0.3	DISGENET
 REXO1	Polycystic Ovary Syndrome	umls:C0032460	0.3	DISGENET
 RFC1	Colonic Neoplasms	umls:C0009375	0.3	DISGENET
-RFH1	Renal Failure Progressive with Hypertension	umls:C0403443	0.3	DISGENET
+RFH1	Renal Failure Progressive 	umls:C0403443	0.3	DISGENET
 RFK	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
 RFMN	Roifman syndrome	umls:C1846059	0.3	DISGENET
 RFNG	Weight Gain	umls:C0043094	0.3	DISGENET
@@ -20547,7 +20547,7 @@ SAX1	Ataxia Spastic 1 Autosomal Dominant	umls:C1970107	0.3	DISGENET
 KIF1C	Ataxia Spastic 2 Autosomal Recessive	umls:C1969796	0.3	DISGENET
 SBNO1	Schizophrenia	umls:C0036341	0.3	DISGENET
 SC5D	Liver Diseases	umls:C0023895	0.3	DISGENET
-SCA18	Sensorimotor neuropathy with ataxia autosomal dominant	umls:C1843884	0.3	DISGENET
+SCA18	Sensorimotor neuropathy 	umls:C1843884	0.3	DISGENET
 SCA19	Spinocerebellar ataxia 19	umls:C1846367	0.3	DISGENET
 SCA20	Spinocerebellar ataxia 20	umls:C1837541	0.3	DISGENET
 SCA21	Spinocerebellar ataxia 21	umls:C1843891	0.3	DISGENET
@@ -20789,7 +20789,7 @@ SHBG	Erectile Dysfunction	umls:C0242350	0.3	DISGENET
 SHBG	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
 SHC1	Amyotrophic lateral sclerosis 1	umls:C1862939	0.3	DISGENET
 SHC1	Cardiomegaly	umls:C0018800	0.3	DISGENET
-SHFL1	Split hand foot malformation with long bone deficiency	umls:C1861553	0.3	DISGENET
+SHFL1	Split hand foot malformation 	umls:C1861553	0.3	DISGENET
 SHFLD2	Split Hand Foot Malformation With Long Bone Deficiency 2	umls:C1853156	0.3	DISGENET
 SHFLD3	Split Hand Foot Malformation With Long Bone Deficiency 3	umls:C2675492	0.3	DISGENET
 SHFM1	Carcinoma Squamous Cell	umls:C0007137	0.3	DISGENET
@@ -20797,7 +20797,7 @@ SHFM1	Peripheral Nervous System Diseases	umls:C0031117	0.3	DISGENET
 SHFM2	Split Hand Foot Malformation 2	umls:C1839258	0.3	DISGENET
 SHFM5	Split hand foot deformity 1	umls:C2931019	0.3	DISGENET
 SHFM5	Split Hand Foot Malformation 5	umls:C1847622	0.3	DISGENET
-SHH	Microphthalmia Isolated with Coloboma 5	umls:C1968843	0.3	DISGENET
+SHH	Microphthalmia Isolated 	umls:C1968843	0.3	DISGENET
 SHH	Parkinson Disease Secondary	umls:C0030569	0.3	DISGENET
 SHMT1	Drug Toxicity	umls:C0013221	0.3	DISGENET
 SHMT1	Nervous System Diseases	umls:C0027765	0.3	DISGENET
@@ -20922,7 +20922,7 @@ SLC25A13	Fractures Bone	umls:C0016658	0.3	DISGENET
 SLC25A37	Anemia	umls:C0002871	0.3	DISGENET
 SLC25A4	Cardiomyopathy Familial Hypertrophic 1	umls:C3495498	0.3	DISGENET
 SLC25A4	Diabetic Cardiomyopathies	umls:C0853897	0.3	DISGENET
-SLC25A4	Progressive External Ophthalmoplegia with Mitochondrial DNA Deletions Autosomal Dominant 1	umls:C1834846	0.3	DISGENET
+SLC25A4	Progressive External Ophthalmoplegia 	umls:C1834846	0.3	DISGENET
 SLC26A1	Hyperoxaluria	umls:C0020500	0.3	DISGENET
 SLC26A1	Nephrocalcinosis	umls:C0027709	0.3	DISGENET
 SLC26A1	Urolithiasis	umls:C0451641	0.3	DISGENET
@@ -20964,7 +20964,7 @@ SLC34A1	Fanconi Syndrome	umls:C0015624	0.3	DISGENET
 SLC34A1	Hypercalcemia	umls:C0020437	0.3	DISGENET
 SLC34A2	Carcinoma Non Small Cell Lung	umls:C0007131	0.3	DISGENET
 SLC34A2	Drug Toxicity	umls:C0013221	0.3	DISGENET
-SLC34A3	Hypophosphatemic Rickets with Hypercalciuria Hereditary	umls:C1853271	0.3	DISGENET
+SLC34A3	Hypophosphatemic Rickets 	umls:C1853271	0.3	DISGENET
 SLC35A1	Congenital Disorder Of Glycosylation Type IIF	umls:C1970344	0.3	DISGENET
 SLC35D1	Craniofacial Abnormalities	umls:C0376634	0.3	DISGENET
 SLC35G2	Melanoma	umls:C0025202	0.3	DISGENET
@@ -21003,7 +21003,7 @@ SLC6A11	Melanoma	umls:C0025202	0.3	DISGENET
 SLC6A14	BODY MASS INDEX QUANTITATIVE TRAIT LOCUS 11	umls:C2678155	0.3	DISGENET
 SLC6A14	Cystic Fibrosis Modifier 1	umls:C1859047	0.3	DISGENET
 SLC6A2	Seizures	umls:C0036572	0.3	DISGENET
-SLC6A20	Glycinuria with or without Oxalate Urolithiasis	umls:C0543541	0.3	DISGENET
+SLC6A20	Glycinuria 	umls:C0543541	0.3	DISGENET
 SLC6A20	Mesothelioma	umls:C0025500	0.3	DISGENET
 SLC6A3	Amphetamine Related Disorders	umls:C0236733	0.3	DISGENET
 SLC6A3	Hyperkinesis	umls:C0424295	0.3	DISGENET
@@ -21503,7 +21503,7 @@ SYCP1	Pancreatic Neoplasms	umls:C0030297	0.3	DISGENET
 SYK	Mesothelioma	umls:C0025500	0.3	DISGENET
 SYMPK	Disease Progression	umls:C0242656	0.3	DISGENET
 SYMPK	Stomach Neoplasms	umls:C0038356	0.3	DISGENET
-SYN1	Epilepsy X Linked with Variable Learning Disabilities and Behavior Disorders	umls:C1845343	0.3	DISGENET
+SYN1	Epilepsy X Linked 	umls:C1845343	0.3	DISGENET
 SYN2	Hyperalgesia	umls:C0020429	0.3	DISGENET
 SYN2	Seizures	umls:C0036572	0.3	DISGENET
 SYNE1	Breast Neoplasms	umls:C1458155	0.3	DISGENET
@@ -21532,7 +21532,7 @@ TAC1	Edema	umls:C0013604	0.3	DISGENET
 TAC1	Extravasation of Diagnostic and Therapeutic Materials	umls:C0015379	0.3	DISGENET
 TAC1	Hyperemia	umls:C0020452	0.3	DISGENET
 TAC1	Hypersensitivity	umls:C0020517	0.3	DISGENET
-TAC1	Migraine without Aura	umls:C0338480	0.3	DISGENET
+TAC1	Migraine 	umls:C0338480	0.3	DISGENET
 TAC1	Narcolepsy	umls:C0027404	0.3	DISGENET
 TAC1	Sialorrhea	umls:C0037036	0.3	DISGENET
 TAC3	Hypogonadism	umls:C0020619	0.3	DISGENET
@@ -21613,7 +21613,7 @@ TCN2	Drug Toxicity	umls:C0013221	0.3	DISGENET
 TCN2	Leukoencephalopathies	umls:C0270612	0.3	DISGENET
 TCN2	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
 TCN2	TRANSCOBALAMIN II	umls:C1420653	0.3	DISGENET
-TCO	Nonmedullary thyroid carcinoma with or without cell oxyphilia	umls:C1863925	0.3	DISGENET
+TCO	Nonmedullary thyroid carcinoma 	umls:C1863925	0.3	DISGENET
 TCOF1	Craniofacial Abnormalities	umls:C0376634	0.3	DISGENET
 TCP1	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
 TCPT	Thrombocytopenia Paris Trousseau type	umls:C1861178	0.3	DISGENET
@@ -22001,7 +22001,7 @@ TOB1	Chloracne	umls:C0263454	0.3	DISGENET
 TOB1	Endometriosis	umls:C0014175	0.3	DISGENET
 TOB1	Neoplasms Experimental	umls:C0027659	0.3	DISGENET
 TOB2	Vitiligo	umls:C0042900	0.3	DISGENET
-TOC	Keratosis palmoplantaris with esophageal cancer	umls:C1835664	0.3	DISGENET
+TOC	Keratosis palmoplantaris 	umls:C1835664	0.3	DISGENET
 TOM1L1	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
 TONSL	Polycystic Ovary Syndrome	umls:C0032460	0.3	DISGENET
 TOP1	Drug Toxicity	umls:C0013221	0.3	DISGENET
@@ -22130,7 +22130,7 @@ TRPC6	Mental Disorders	umls:C0004936	0.3	DISGENET
 TRPM3	Amphetamine Related Disorders	umls:C0236733	0.3	DISGENET
 TRPM7	Colonic Polyps	umls:C0009376	0.3	DISGENET
 TRPM7	Colorectal Neoplasms	umls:C0009404	0.3	DISGENET
-TRPM8	Migraine without Aura	umls:C0338480	0.3	DISGENET
+TRPM8	Migraine 	umls:C0338480	0.3	DISGENET
 TRPS1	Mammary Neoplasms Animal	umls:C0024667	0.3	DISGENET
 TRPS1	Mammary Neoplasms Experimental	umls:C0024668	0.3	DISGENET
 TRPS1	Peripheral Nervous System Diseases	umls:C0031117	0.3	DISGENET
@@ -22208,7 +22208,7 @@ TTLL9	Liver Neoplasms	umls:C0023903	0.3	DISGENET
 TTLL9	Polycystic Ovary Syndrome	umls:C0032460	0.3	DISGENET
 TTLL9	Precancerous Conditions	umls:C0032927	0.3	DISGENET
 TTN	Muscle Weakness	umls:C0151786	0.3	DISGENET
-TTN	Myopathy Early Onset with Fatal Cardiomyopathy	umls:C2673677	0.3	DISGENET
+TTN	Myopathy Early Onset 	umls:C2673677	0.3	DISGENET
 TTPA	Atherosclerosis	umls:C0004153	0.3	DISGENET
 TTPA	Disease Models Animal	umls:C0012644	0.3	DISGENET
 TTPA	Hearing Disorders	umls:C0260662	0.3	DISGENET
@@ -22238,7 +22238,7 @@ TUSC3	Prostatic Neoplasms	umls:C0033578	0.3	DISGENET
 TWF1	Lymphoma	umls:C0024299	0.3	DISGENET
 TWIST1	Lymphoma Large Cell Anaplastic	umls:C0206180	0.3	DISGENET
 TWIST1	Neoplasm Invasiveness	umls:C0027626	0.3	DISGENET
-TWIST1	Saethre Chotzen Syndrome with Eyelid Anomalies	umls:C1863370	0.3	DISGENET
+TWIST1	Saethre Chotzen Syndrome 	umls:C1863370	0.3	DISGENET
 TWSG1	Jaw Abnormalities	umls:C0022360	0.3	DISGENET
 TXN	Bronchopulmonary Dysplasia	umls:C0006287	0.3	DISGENET
 TXN	Neoplasm Invasiveness	umls:C0027626	0.3	DISGENET
@@ -22354,7 +22354,7 @@ URM1	Disease Progression	umls:C0242656	0.3	DISGENET
 URM1	Stomach Neoplasms	umls:C0038356	0.3	DISGENET
 UROC1	Ataxia	umls:C0004134	0.3	DISGENET
 UROD	Head and Neck Neoplasms	umls:C0018671	0.3	DISGENET
-USB1	Poikiloderma with Neutropenia	umls:C1858723	0.3	DISGENET
+USB1	Poikiloderma 	umls:C1858723	0.3	DISGENET
 USH1E	Usher syndrome type 1E	umls:C2931209	0.3	DISGENET
 USH1H	Usher Syndrome Type IH	umls:C2675458	0.3	DISGENET
 USO1	Arsenic Poisoning	umls:C0311375	0.3	DISGENET
@@ -22449,7 +22449,7 @@ VIP	Rhinitis	umls:C0035455	0.3	DISGENET
 VIP	Tachycardia	umls:C0039231	0.3	DISGENET
 VIP	Urinary Bladder Diseases	umls:C0005686	0.3	DISGENET
 VKORC1	Aortic Rupture	umls:C0003496	0.3	DISGENET
-ATP6V0E1	Myopathy X Linked with Excessive Autophagy	umls:C1839615	0.3	DISGENET
+ATP6V0E1	Myopathy X Linked 	umls:C1839615	0.3	DISGENET
 VMD1	Macular dystrophy atypical vitelliform	umls:C1835178	0.3	DISGENET
 VNN1	Dermatitis Atopic	umls:C0011615	0.3	DISGENET
 VNN1	Dyslipidemias	umls:C0242339	0.3	DISGENET
@@ -22521,7 +22521,7 @@ WS2B	Waardenburg syndrome type 2B	umls:C1838447	0.3	DISGENET
 WS2C	Waardenburg Syndrome Type 2C	umls:C1847722	0.3	DISGENET
 WSCD1	Liver Neoplasms	umls:C0023903	0.3	DISGENET
 WSCD1	Precancerous Conditions	umls:C0032927	0.3	DISGENET
-WSN	Parkinsonism early onset with mental retardation	umls:C0796195	0.3	DISGENET
+WSN	Parkinsonism early onset 	umls:C0796195	0.3	DISGENET
 WT1	Colonic Neoplasms	umls:C0009375	0.3	DISGENET
 WT1	Lung Neoplasms	umls:C0024121	0.3	DISGENET
 WT1	Meacham Winn Culler syndrome	umls:C2931752	0.3	DISGENET
@@ -22666,7 +22666,7 @@ ZNF593	Stomach Neoplasms	umls:C0038356	0.3	DISGENET
 ZNF596	Peripheral Nervous System Diseases	umls:C0031117	0.3	DISGENET
 ZNF606	Substance Related Disorders	umls:C0236969	0.3	DISGENET
 ZNF683	Chloracne	umls:C0263454	0.3	DISGENET
-ZNF750	Seborrhea Like Dermatitis with Psoriasiform Elements	umls:C1853258	0.3	DISGENET
+ZNF750	Seborrhea Like Dermatitis 	umls:C1853258	0.3	DISGENET
 ZNF804A	Carcinoma Renal Cell	umls:C0007134	0.3	DISGENET
 ZNF804A	Substance Related Disorders	umls:C0236969	0.3	DISGENET
 ZNF831	Melanoma	umls:C0025202	0.3	DISGENET
