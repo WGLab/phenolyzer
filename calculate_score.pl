@@ -1,8 +1,10 @@
 use strict;
 use warnings;
 use Getopt::Long;
+use File::Basename;
 use Pod::Usage;
 our($maf,$everything);
+my $dirname = dirname(__FILE__);
 GetOptions('maf=s'=>\$maf, 
            'everything'=>\$everything);
 defined $maf or $maf =0.02;
@@ -122,7 +124,7 @@ for (sort { $output{$b}{"Score"} <=>  $output{$a}{"Score"}  }keys %output)
 	   }
 }
 sub processDisease{
-	open(DISEASE,"lib/compiled_database/DB_GENE_DISEASE_SCORE") or die;
+	open(DISEASE,"$dirname/lib/compiled_database/DB_COMPILED_GENE_DISEASE_SCORE") or die;
 	my %output = ();
 	for my $line (<DISEASE>){
 		next if($line=~/^GENE\t/);

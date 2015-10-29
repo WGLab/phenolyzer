@@ -1377,7 +1377,7 @@ Notice:
           Addon Gene Disease file should be in the format "GENE	DISEASE	DISEASE_ID SCORE	SOURCE"    
           
 Example:  
-          perl disease_annotation.pl sleep -p
+          perl disease_annotation.pl sleep -p -ph -logistic -out out/sleep 
           perl disease_annotation.pl disease -f -p -ph
           
 Version:  1.0.5      $Last Changed Date: 02-21-2015 by Hui Yang        
