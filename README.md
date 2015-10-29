@@ -76,6 +76,11 @@ perl disease_annotation.pl alzheimer -p -ph -logistic -out out/alzheimer_addon/o
 perl disease_annotation.pl alzheimer -p -ph -logistic -out out/alzheimer_addon_all/out -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE,DB_GENECARDS_GENE_DISEASE_SCORE -addon_weight 0.25
 ```
 
+- Integrate with wANNOVAR output to prioritize variant
+```
+perl calculate_score.pl <phenolyzer_gene_list> <wannovar_genome_summary.txt>
+```
+
 ## License Agreement
 By using the software, you acknowledge that you agree to the terms below:
 
