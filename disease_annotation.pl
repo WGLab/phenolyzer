@@ -441,6 +441,7 @@ sub disease_extension{                           #Input some disease terms and r
 			my $query_term = $input_term;
 			   $query_term =~ s/\bs\b//g;
 			   $query_term =~ s/\W+/ /g;       
+
 			if($disease_key=~/\b$query_term\b/i or ($id_num and $query_term eq $id_num and $id_source eq "OMIM"))               #If the term matches
 			{  
 				#If exact match

@@ -105,8 +105,8 @@ sub TextStandardize {
 	$word=~s/\berthematosus\b/erythematosus/gi;
 	$word=~s/\bshow all\b//ig;
 	#get rid of with (without)
-	$word =~ s/\bwith\b.*$//g;
-	$word =~ s/\bwithout\b.*$//g;
+	$word =~ s/\bwith\b.*$//gi;
+	$word =~ s/\bwithout\b.*$//gi;
 	return $word;
 } 
 sub GetRidOfSusceptibility{
