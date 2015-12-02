@@ -2,7 +2,7 @@ use strict;
 use Carp;
 open(GENE_ID,"../Homo_sapiens.gene_info") or die "can't open Homo_sapiens.gene_info!!";
 open(BIOSYSTEM,"../biosystems_gene") or die "can't open biosystems_gene!!";
-open(BIOSYSTEM_INFO, "../biosystem_bsid_to_info.txt") or die "Can't open biosystem_info file!!";
+open(BIOSYSTEM_INFO, "../bsid2info.sed") or die "Can't open biosystem_info file!!";
 open(OUTPUT,">DB_COMPILED_BIOSYSTEM_SCORE");
 my %gene_hash=();
 my %biosystem_id_type;
@@ -18,7 +18,7 @@ for (<BIOSYSTEM_INFO>)
 my $i=0;
 for my $line(<GENE_ID>){
 	if($i==0){$i++;next;}
-	chomp($line);
+	$line =~ s/[\r\n]+//g;
 	my @words=split("\t",$line);
 	$gene_hash{$words[1]}=$words[2];
 }
@@ -26,6 +26,7 @@ print OUTPUT join("\t",qw/BIOSYSTEM_ID GENE SCORE NAME/)."\n";
 my @biosystem = <BIOSYSTEM>;
 my $MAX = 0;
 for my $line (@biosystem){
+	$line =~s/[\r\n]+//g;
 	my @words=split("\t",$line);
 	$MAX = $words[2] if ($MAX < $words[2]);
 	}
