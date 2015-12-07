@@ -825,7 +825,7 @@ sub score_all_genes{                              #GENE	DISEASE	DISEASE_ID	SCORE
 	return (\%item,$count);
 }
 
-#################################### This annovar_annotate function is no longer used   ##############################
+#################################### This function is to convert CNV into genes   ##############################
 sub annovar_annotate{
 #----------------------Code borrowed from bed2gene.pl-------------------------
 
