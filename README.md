@@ -81,6 +81,8 @@ perl disease_annotation.pl alzheimer -p -ph -logistic -out out/alzheimer_addon_a
 perl calculate_score.pl <phenolyzer_gene_list> <wannovar_genome_summary.txt>
 ```
 
+Please note that due to IP restrictions, commercial users should obtain OMIM and GeneCards license if they want to use disease-gene association datasets compiled by these sources. We will provide instructions on how to reformat datasets for use in Phenolyzer, from raw files provided by these vendors.
+
 ## License Agreement
 By using the software, you acknowledge that you agree to the terms below:
 
