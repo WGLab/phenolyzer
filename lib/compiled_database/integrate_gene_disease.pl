@@ -2,8 +2,8 @@ use strict;
 use warnings;
 use Scalar::Util qw(looks_like_number);
 open(CLINVAR,"../clinVar_genemap_20150515.txt") or die;
-open(OMIM1,"../omim_genemap_20151119.txt") or die;
-open(OMIM2,"../omim_genemap2_20151119.txt") or die;
+open(OMIM1,"../omim_genemap_20160124.txt") or die;
+#open(OMIM2,"../omim_genemap2_20160124.txt") or die;
 open(ORPHANET,"../orphanet_genemap.txt") or die;
 open(GWAS, "../gwas_catalog_dev") or die;                         
 open(CLINVAR_OUT,">DB_CLINVAR_GENE_DISEASE") or die;
@@ -98,9 +98,10 @@ print OMIM_OUT_FINAL join("\t",qw/GENE DISEASE MIM_NUMBER SOURCE_CODE LINGKAGE_I
 for my $line(<OMIM1>)      #process omim_genemap.txt
 {
 	chomp($line);
-	my @words=split('\|',$line);
-	if ($words[13]=~/^\s*$/) {next;}
-	my $disease= "$words[13] $words[14] $words[15]";
+	next if ($line =~ /^#/);
+	my @words=split(/\t/,$line);
+	if (not $words[11] or $words[11]=~/^\s*$/) {next;}
+	my $disease= $words[11];
 	my @disease_info=split(";",$disease);
 	for (@disease_info){
 		if(/(.*?)(?:,\s(\d{3,}))?\s\( (\d) \)/x) {
@@ -109,15 +110,17 @@ for my $line(<OMIM1>)      #process omim_genemap.txt
 			$disease_name=~s/[\[\]\{\}\?]//g;
 			$disease_name=GetRidOfAnnotations($disease_name);
 			if(defined $mim) {print OMIM_OUT join ("\t",($words[5],$disease_name,$mim,$words[6],$linkage))."\n";} 
-		    else {print OMIM_OUT join ("\t",($words[5],$disease_name,$words[9],$words[6],$linkage))."\n";} 		
+		    else {print OMIM_OUT join ("\t",($words[5],$disease_name,$words[8],$words[6],$linkage))."\n";} 		
 		}
 	}
 }
 
+=cut
 for my $line(<OMIM2>)      #process omim_genemap.txt
 {
 	
 	chomp($line);
+	next if ($line =~ /^#/);
 	if ($line=~/^\s*$/) {next;}
 	my @words=split('\|',$line);
 	if(@words< 12) {next;}
@@ -135,6 +138,7 @@ for my $line(<OMIM2>)      #process omim_genemap.txt
 		}
 	}
 }
+=cut
 system("sort DB_OMIM_GENE_DISEASE_TEMP|uniq >> DB_OMIM_GENE_DISEASE");
 
 print ORPHANET_OUT_FINAL join("\t",qw/GENE DISEASE ORPHANET_NUMBER SOURCE_COUNT LINKAGE_INFO/)."\n";

@@ -12,7 +12,6 @@ AAA3	Aneurysm, familial abdominal 3	611891	P	2
 AAA4	Aortic aneurysm, familial abdominal, 4	614375	P	2
 AAAS, AAA	Achalasia-addisonianism-alacrimia syndrome	231550	C	3
 AAGAB, p34, PPKP1A, PPKP1, KPPP1	Keratoderma, palmoplantar, punctate type IA	148600	P	3
-AANAT, SNAT, DSPS	Delayed sleep phase syndrome, susceptibility to	614163	P	3
 AARS2, KIAA1270, MTALARS, COXPD8, LKENP	Combined oxidative phosphorylation deficiency 8	614096	P	3
 AARS2, KIAA1270, MTALARS, COXPD8, LKENP	 Leukoencephalopathy, progressive, with ovarian failure	615889	P	3
 AARS, CMT2N, EIEE29	Charcot-Marie-Tooth disease, axonal, type 2N	613287	C	3
@@ -41,9 +40,10 @@ ABCB1, PGY1, MDR1, IBD13, CLCs	 Inflammatory bowel disease 13	612244	C	3
 ABCB4, PGY3, MDR3, ICP3	 Cholestasis, intrahepatic, of pregnancy, 3	614972	C	3
 ABCB4, PGY3, MDR3, ICP3	Cholestasis, progressive familial intrahepatic 3	602347	C	3
 ABCB4, PGY3, MDR3, ICP3	 Gallbladder disease 1	600803	C	3
-ABCB6, MTABC3, MCOPCB7, LAN, DUH3	 Blood group, Langereis system	111600	P	3
-ABCB6, MTABC3, MCOPCB7, LAN, DUH3	 Dyschromatosis universalis hereditaria 3	615402	P	3
-ABCB6, MTABC3, MCOPCB7, LAN, DUH3	Microphthalmia, isolated, with coloboma 7	614497	P	3
+ABCB6, MTABC3, MCOPCB7, LAN, DUH3, PSHK2	 Blood group, Langereis system	111600	P	3
+ABCB6, MTABC3, MCOPCB7, LAN, DUH3, PSHK2	 Dyschromatosis universalis hereditaria 3	615402	P	3
+ABCB6, MTABC3, MCOPCB7, LAN, DUH3, PSHK2	Microphthalmia, isolated, with coloboma 7	614497	P	3
+ABCB6, MTABC3, MCOPCB7, LAN, DUH3, PSHK2	 Pseudohyperkalemia, familial, 2, due to red cell leak	609153	P	3
 ABCB7, ABC7, ASAT	Anemia, sideroblastic, with ataxia	301310	P	3
 ABCC11, MRP8, EWWD, WW	 Axillary odor, variation in	117800	C	3
 ABCC11, MRP8, EWWD, WW	 Colostrum secretion, variation in	117800	C	3
@@ -54,7 +54,6 @@ ABCC6, ARA, ABC34, MLP1, PXE, GACI2	Pseudoxanthoma elasticum	264800	C	3
 ABCC6, ARA, ABC34, MLP1, PXE, GACI2	 Pseudoxanthoma elasticum, forme fruste	177850	C	3
 ABCC8, SUR, PHHI, SUR1, HHF1, TNDM2	 Diabetes mellitus, noninsulin-dependent	125853	C	3
 ABCC8, SUR, PHHI, SUR1, HHF1, TNDM2	 Diabetes mellitus, permanent neonatal	606176	C	3
-ABCC8, SUR, PHHI, SUR1, HHF1, TNDM2	 Diabetes mellitus, transient neonatal 2,  610374	600509	C	3
 ABCC8, SUR, PHHI, SUR1, HHF1, TNDM2	 Diabetes mellitus, transient neonatal 2	610374	C	3
 ABCC8, SUR, PHHI, SUR1, HHF1, TNDM2	Hyperinsulinemic hypoglycemia, familial, 1	256450	C	3
 ABCC8, SUR, PHHI, SUR1, HHF1, TNDM2	 Hypoglycemia of infancy, leucine-sensitive	240800	C	3
@@ -169,7 +168,6 @@ ADCY10, SAC, HCA2	Hypercalciuria, absorptive, susceptibility to	143870	P	3
 ADCY5, FDFM	Dyskinesia, familial, with facial myokymia	606703	C	3
 ADD1	Hypertension, essential, salt-sensitive	145500	C	3
 ADFN, ALDS	Albinism-deafness syndrome	300700	P	2
-ADGRV1, GPR98, MASS1, VLGR1, KIAA0686, FEB4, USH2C	Febrile seizures, familial, 4	604352	C	3
 ADGRV1, GPR98, MASS1, VLGR1, KIAA0686, FEB4, USH2C	 Usher syndrome, type 2C	605472	C	3
 ADGRV1, GPR98, MASS1, VLGR1, KIAA0686, FEB4, USH2C	 Usher syndrome, type 2C, GPR98/PDZD7 digenic	605472	C	3
 ADH1B, ADH2	 Aerodigestive tract cancer, squamous cell, alcohol-related, protection against	103720	C	3
@@ -198,7 +196,7 @@ ADRB2	 Beta-2-adrenoreceptor agonist, reduced response to	109690	C	3
 ADRB2	 Obesity, susceptibility to	601665	C	3
 ADRB3	Obesity, susceptibility to	601665	P	3
 ADSL	Adenylosuccinase deficiency	103050	C	3
-AF10	Leukemia, acute myeloie	601626	C	3
+AF10	Leukemia, acute myeloid	601626	C	3
 AFA1, MPB	Alopecia, androgenetic, 1	109200	P	2
 AFF2, FMR2, FRAXE, MRX2	Mental retardation, X-linked, FRAXE type	309548	P	3
 AFF4, AF5Q31, CHOPS	CHOPS syndrome	616368	P	3
@@ -216,7 +214,7 @@ AGL, GDE	Glycogen storage disease IIIa	232400	C	3
 AGL, GDE	 Glycogen storage disease IIIb	232400	C	3
 AGMX2, XLA2, IMD6	Agammaglobulinemia, X-linked 2	300310	P	2
 AGPAT2, LPAAB, BSCL, BSCL1	Lipodystrophy, congenital generalized, type 1	608594	C	3
-AGPS, ADHAPS, RCDP3	Chondrodysplasia punctata, rhizomelic, type 3	600121	P	3
+AGPS, ADHAPS, RCDP3	Rhizomelic chondrodysplasia punctata, type 3	600121	P	3
 AGRN, CMS8	Myasthenic syndrome, congenital, 8, with pre- and postsynaptic defects	615120	P	3
 AGRP, ART, AGRT	 Leanness, inherited	602311	P	3
 AGRP, ART, AGRT	Obesity, late-onset	601665	P	3
@@ -232,8 +230,9 @@ AHDC1, MRD25	Xia-Gibbs syndrome	615829	P	3
 AHI1	Joubert syndrome-3	608629	C	3
 AIC	Aicardi syndrome	304050	C	2
 AICDA, AID, HIGM2	Immunodeficiency with hyper-IgM, type 2	605258	C	3
-AIFM1, PDCD8, AIF, COXPD6, COWCK, CMTX4	Combined oxidative phosphorylation deficiency 6	300816	C	3
-AIFM1, PDCD8, AIF, COXPD6, COWCK, CMTX4	 Cowchock syndrome	310490	C	3
+AIFM1, PDCD8, AIF, COXPD6, COWCK, CMTX4, DFNX5	Combined oxidative phosphorylation deficiency 6	300816	C	3
+AIFM1, PDCD8, AIF, COXPD6, COWCK, CMTX4, DFNX5	 Cowchock syndrome	310490	C	3
+AIFM1, PDCD8, AIF, COXPD6, COWCK, CMTX4, DFNX5	 Deafness, X-linked 5	300614	C	3
 AIMP1, SCYE1, EMAP2, EMAPII, HLD3	Leukodystrophy, hypomyelinating, 3	260600	P	3
 AIPL1, LCA4	 Cone-rod dystrophy	604393	C	3
 AIPL1, LCA4	Leber congenital amaurosis 4	604393	C	3
@@ -848,7 +847,7 @@ CACNA1C, CACNL1A1, CCHL1A1, TS	Timothy syndrome	601005	C	3
 CACNA1D, CACNL1A2, CCHL1A2, SANDD, PASNA	 Primary aldosteronism, seizures, and neurologic abnormalities	615474	C	3
 CACNA1D, CACNL1A2, CCHL1A2, SANDD, PASNA	Sinoatrial node dysfunction and deafness	614896	C	3
 CACNA1F, CSNB2, CORDX3, CSNB2A, AIED, OA2	 Aland Island eye disease	300600	C	3
-CACNA1F, CSNB2, CORDX3, CSNB2A, AIED, OA2	 Cone-rod dystropy, X-linked, 3	300476	C	3
+CACNA1F, CSNB2, CORDX3, CSNB2A, AIED, OA2	 Cone-rod dystrophy, X-linked, 3	300476	C	3
 CACNA1F, CSNB2, CORDX3, CSNB2A, AIED, OA2	Night blindness, congenital stationary , 2A, X-linked	300071	C	3
 CACNA1H, EIG6, ECA6	 Epilepsy, childhood absence, susceptibility to, 6	611942	P	3
 CACNA1H, EIG6, ECA6	Epilepsy, idiopathic generalized, susceptibility to, 6	611942	P	3
@@ -880,6 +879,7 @@ CARD11, CARMA1, BIMP3, PPBL, BENTA, IMD11	 Immunodeficiency 11	615206	P	3
 CARD14, CARMA2, BIMP2, PSORS2, PSS1, PRP	 Pityriasis rubra pilaris	173200	C	3
 CARD14, CARMA2, BIMP2, PSORS2, PSS1, PRP	Psoriasis 2	602723	C	3
 CARD9, CANDF2	Candidiasis, familial, 2, autosomal recessive	212050	P	3
+CARS2, COXPD27	Combined oxidative phosphorylation deficiency 27	616672	P	3
 CARTPT, CART	Obesity, susceptibility to	601665	P	3
 CASC5, AF15Q14, KIAA1570, D40, MCPH4	Microcephaly 4, primary, autosomal recessive	604321	C	3
 CASK, MICPCH, FGS4, CMG, MRXSNA	 FG syndrome 4	300422	C	3
@@ -917,7 +917,6 @@ CBG, SERPINA6	Corticosteroid-binding globulin deficiency	611489	C	3
 CBL, CBL2, NSLL	Noonan syndrome-like disorder with or without juvenile myelomonocytic leukemia	613563	C	3
 CBS	Homocystinuria, B6-responsive and nonresponsive types	236200	C	3
 CBS	 Thrombosis, hyperhomocysteinemic	236200	C	3
-CBX2, M33, SRXY5	46XY sex reversal 5	613080	P	3
 CC2D1A, MRT3	Mental retardation, autosomal recessive 3	608443	P	3
 CC2D2A, KIAA1345, MKS6	 COACH syndrome	216360	C	3
 CC2D2A, KIAA1345, MKS6	Joubert syndrome 9	612285	C	3
@@ -930,6 +929,7 @@ CCDC111, MYP22	Myopia 22, autosomal dominant	615420	P	3
 CCDC114, CILD20	Ciliary dyskinesia, primary, 20	615067	P	3
 CCDC11, HTX6	Heterotaxy, visceral, 6, autosomal recessive	614779	P	3
 CCDC151, CILD30	Ciliary dyskinesia, primary, 30	616037	P	3
+CCDC22, RTSC2	Ritscher-Schinzel syndrome 2	300963	P	3
 CCDC28B, MGC1203	Bardet-Biedl syndrome 1, modifier of	209900	P	3
 CCDC39	Ciliary dyskinesia, primary, 14	613807	P	3
 CCDC40, KIAA1640	Ciliary dyskinesia, primary, 15	613808	P	3
@@ -953,7 +953,6 @@ CCM1, CAM, KRIT1	Cerebral cavernous malformations-1	116860	C	3
 CCM1, CAM, KRIT1	 Hyperkeratotic cutaneous capillary-venous malformations associated with cerebral capillary malformations	116860	C	3
 CCND1, PRAD1, BCL1	Colorectal cancer, susceptibility to	114500	C	3
 CCND1, PRAD1, BCL1	 Multiple myeloma, susceptibility to	254500	C	3
-CCND1, PRAD1, BCL1	 von Hippel-Lindau syndrome,  modifier of	193300	C	3
 CCND1, PRAD1, BCL1	 von Hippel-Lindau syndrome, modifier of	193300	C	3
 CCND2, MPPH3	Megalencephaly-polymicrogyria-polydactyly-hydrocephalus syndrome 3	615938	C	3
 CCNO, UNG2, CILD29	Ciliary dyskinesia, primary, 29	615872	C	3
@@ -995,6 +994,7 @@ CD96, TACTILE	C syndrome	211750	C	3
 CDAGS	CDAGS syndrome	603116	P	2
 CDAN1, CDA1, CDAN1A	Dyserythropoietic anemia, congenital, type Ia	224120	C	3
 CDAN3, CDA3	Dyserythropoietic anemia, congenital, type III	105600	P	2
+CDC42, TKS	Takenouchi-Kosaki syndrome	616737	P	3
 CDC6, CDC18L	Meier-Gorlin syndrome 5	613805	P	3
 CDH15, CDH14, CDH3, MRD3	Mental retardation, autosomal dominant 3	612580	P	3
 CDH1, UVO, LCAM, ECAD	 Breast cancer, lobular	114480	C	3
@@ -1091,6 +1091,7 @@ CHAT, CMS6	Myasthenic syndrome, congenital, 6, presynaptic	254210	C	3
 CHCHD10, FTDALS2, SMAJ, IMMD	Frontotemporal dementia and/or amyotrophic lateral sclerosis 2	615911	P	3
 CHCHD10, FTDALS2, SMAJ, IMMD	 Myopathy, isolated mitochondrial, autosomal dominant	616209	P	3
 CHCHD10, FTDALS2, SMAJ, IMMD	 Spinal muscular atrophy, Jokela type	615048	P	3
+CHCHD2, PARK22	Parkinson disease 22, autosomal dominant	616710	P	3
 CHD2, EEOC	Epileptic encephalopathy, childhood-onset	615369	P	3
 CHD7, HH5	CHARGE syndrome	214800	C	3
 CHD7, HH5	 Hypogonadotropic hypogonadism 5 with or without anosmia	612370	C	3
@@ -1190,7 +1191,6 @@ CLDN19, HOMG5	Hypomagnesemia 5, renal, with ocular involvement	248190	C	3
 CLDN1, SEMP1, ILVASC	Ichthyosis, leukocyte vacuoles, alopecia, and sclerosing cholangitis	607626	C	3
 CLEC4M, CD209L, LSIGN, DCSIGNR	SARS infection, protection against	605872	P	2
 CLEC7A, CLECSF12, DECTIN1, CANDF4	 Aspergillosis, susceptibility to	614079	C	3
-CLEC7A, CLECSF12, DECTIN1, CANDF4	Candidiasis, familial, 4, autosomal recessive,  613108	606264	C	3
 CLEC7A, CLECSF12, DECTIN1, CANDF4	Candidiasis, familial, 4, autosomal recessive	613108	C	3
 CLLS1	Leukemia, chronic lymphocytic, susceptibility to, 1	609630	C	2
 CLLS2, D13S25, DBM	Leukemia, chronic lymphocytic, susceptibility to, 2	109543	P	2
@@ -1265,6 +1265,7 @@ COL11A2, STL3, DFNA13, DFNB53, FBCG2	 Otospondylomegaepiphyseal dysplasia	215150
 COL11A2, STL3, DFNA13, DFNB53, FBCG2	Stickler syndrome, type III	184840	C	3
 COL11A2, STL3, DFNA13, DFNB53, FBCG2	 Weissenbacher-Zweymuller syndrome	277610	C	3
 COL12A1, UCMD2, BTHLM2	 Bethlem myopathy 2	616471	P	3
+COL13A1, CMS19	Myasthenic syndrome, congenital, 19	616720	C	3
 COL17A1, BPAG2, ERED	 Epidermolysis bullosa, junctional, localisata variant	226650	C	3
 COL17A1, BPAG2, ERED	Epidermolysis bullosa, junctional, non-Herlitz type	226650	C	3
 COL17A1, BPAG2, ERED	 Epithelial recurrent erosion dystrophy	122400	C	3
@@ -1301,7 +1302,6 @@ COL2A1	 Spondyloperipheral dysplasia	271700	C	3
 COL2A1	 Stickler sydrome, type I, nonsyndromic ocular	609508	C	3
 COL2A1	Stickler syndrome, type I	108300	C	3
 COL2A1	 Vitreoretinopathy with phalangeal epiphyseal dysplasia	120140	C	3
-COL3A1	 Ehlers-Danlos syndrome, type III	130020	C	3
 COL3A1	Ehlers-Danlos syndrome, type IV	130050	C	3
 COL4A1, POREN1, HANAC, ICH, BSVD, RATOR	 Angiopathy, hereditary, with nephropathy, aneurysms, and muscle cramps	611773	C	3
 COL4A1, POREN1, HANAC, ICH, BSVD, RATOR	 Brain small vessel disease with or without ocular anomalies	607595	C	3
@@ -1450,7 +1450,7 @@ CSPP1, CSPP, JBTS21	Joubert syndrome 21	615636	P	3
 CSRP3, CRP3, CLP, CMD1M, CMH12	 Cardiomyopathy, hypertrophic, 12	612124	C	3
 CST3, ARMD11	Cerebral amyloid angiopathy	105150	C	3
 CST3, ARMD11	 Macular degeneration, age-related, 11	611953	C	3
-CSTA, STFA, STF1, AREI	Exfoliative ichthyosis, autosomal recessive, ichthyosis bullosa of Siemens-like	607936	P	3
+CSTA, STFA, STF1, AREI, PSS4	Peeling skin syndrome 4	607936	P	3
 CSTB, STFB, EPM1, PME, EPM1A, ULD	Epilepsy, progressive myoclonic 1A 	254800	P	3
 CTC1, CRMCC, C17orf68, AAF132	Cerebroretinal microangiopathy with calcifications and cysts	612199	P	3
 CTCF, MRD21	Mental retardation, autosomal dominant 21	615502	P	3
@@ -1499,8 +1499,6 @@ CUBN, IFCR, MGA1	Megaloblastic anemia-1, Finnish type	261100	C	3
 CUL3, PHA2E	Pseudohypoaldosteronism, type IIE	614496	P	3
 CUL4B, MRXSC, MRXHF2, SFM2, MRXS15	Mental retardation, X-linked, syndromic 15 	300354	C	3
 CUL7, 3M1	3-M syndrome 1	273750	P	3
-CUP2q35, C2DUPq35, SDTY1, SD1	 Craniosynostosis, Philadelphia type	185900	P	4
-CUP2q35, C2DUPq35, SDTY1, SD1	Syndactyly, type 1	185900	P	4
 CVMRF	Cubitus valgus with mental retardation and unusual facies	300471	P	2
 CX3CR1, GPR13, V28	 Coronary artery disease, resistance to	607339	P	3
 CX3CR1, GPR13, V28	 Macular degeneration, age-related, 12	613784	P	3
@@ -1551,7 +1549,7 @@ CYP2C9	Tolbutamide poor metabolizer	601130	C	3
 CYP2C9	 Warfarin sensitivity	122700	C	3
 CYP2C, CYP2C19	 Clopidogrel, impaired responsiveness to	609535	C	3
 CYP2C, CYP2C19	Mephenytoin poor metabolizer	609535	C	3
-CYP2C, CYP2C19	 Opremazole poor metabolizer	609535	C	3
+CYP2C, CYP2C19	 Omeprazole poor metabolizer	609535	C	3
 CYP2C, CYP2C19	 Proguanil poor metabolizer	609535	C	3
 CYP2D6, CPD6, P450DB1	 Codeine sensitivity	608902	C	3
 CYP2D6, CPD6, P450DB1	Debrisoquine sensitivity	608902	C	3
@@ -1575,7 +1573,6 @@ DARS2, ASPRS. LBSL	Leukoencephalopathy with brain stem and spinal cord involveme
 DARS, HBSL	Hypomyelination with brainstem and spinal cord involvement and leg spasticity	615281	P	3
 DAX1, AHC, AHX, NR0B1, SRXY2	 46XY sex reversal 2, dosage-sensitive	300018	C	3
 DAX1, AHC, AHX, NR0B1, SRXY2	Adrenal hypoplasia, congenital, with hypogonadotropic hypogonadism	300200	C	3
-DAZL, DAZH, SPGYLA	Spermatogenic failure, susceptibility to 	601486	P	3
 DAZL, DAZH, SPGYLA	Spermatogenic failure, susceptibility to	601486	P	3
 DBA2	Diamond-Blackfan anemia 2	606129	P	2
 DBH	Dopamine-beta-hydroxylase activity levels, plasma	609312	C	3
@@ -1656,7 +1653,7 @@ DEL3pterp25, C3DELpterp25	3p- syndrome	613792	P	4
 DEL3q13.31, C13DELq13.31	Chromosome 3q13.31 deletion syndrome	615433	P	4
 DEL3q29, MICRODEL3q29	Chromosome 3q29 microdeletion syndrome	609425	P	4
 DEL4q21, C4DELq21	Chromosome 4q21 deletion syndrome	613509	P	4
-DEL5q12, C5DELq12	Chromosome 5q12 deletion sydrome	615668	P	4
+DEL5q12, C5DELq12	Chromosome 5q12 deletion syndrome	615668	P	4
 DEL6pter, C6DELpter	Chromosome 6pter-p24 deletion syndrome	612582	P	4
 DEL6q11q14, C6DELq11q14	Chromosome 6q11-q14 deletion syndrome	613544	P	4
 DEL6q24q25, C6DELq25q25	Chromosome 6q25-q25 deletion syndrome	612863	P	4
@@ -1688,6 +1685,7 @@ DFNA31	Deafness, autosomal dominant 31	608645	P	2
 DFNA33	Deafness, autosomal dominant 33	614211	P	2
 DFNA43	Deafness, autosomal dominant 43	608394	P	2
 DFNA47, DFNB83	Deafness, autosomal dominant 47	608652	P	2
+DFNA48	Deafness, autosomal dominant 48	607841	P	2
 DFNA49	Deafness, autosomal dominant 49	608372	P	2
 DFNA51, C9DUPq21.11, DUP9q21.11	Deafness, autosomal dominant 51	613558	C	4
 DFNA52, DFNA42	Deafness, autosomal dominant 52	607683	P	2
@@ -1722,7 +1720,6 @@ DFNB85	Deafness, autosomal recessive 85	613392	P	2
 DFNB96	Deafness, autosomal recessive 96	614414	P	2
 DFNM1	Deafness, nonsyndromic, modifier 1	605429	P	2
 DFNX3, DFN4	Deafness, X-linked 3	300030	C	2
-DFNX5, AUNX1	Deafness, X-linked 5	300614	P	2
 DFNY1	Deafness, Y-linked 1	400043	P	1
 DGCR2, DGS2	DiGeorge syndrome/velocardiofacial syndrome complex-2	601362	C	2
 DGKE, NPHS7, AHUS7	 Hemolytic uremic syndrome, atypical, susceptibility to, 7	615008	P	3
@@ -1844,7 +1841,8 @@ DSPP, DPP, DGI1, DFNA39, DTDP2	 Deafness, autosomal dominant 39, with dentinogen
 DSPP, DPP, DGI1, DFNA39, DTDP2	 Dentin dysplasia, type II	125420	C	3
 DSPP, DPP, DGI1, DFNA39, DTDP2	Dentinogenesis imperfecta, Shields type II	125490	C	3
 DSPP, DPP, DGI1, DFNA39, DTDP2	 Dentinogenesis imperfecta, Shields type III	125500	C	3
-DST, BPAG1, DMH, D6S1101, HSAN6, EBSB2	 Epidermolysis bullosa simplex, sutosomal recessive 2	615425	C	3
+DSPS	Delayed sleep phase syndrome, susceptibility to	614163	P	2
+DST, BPAG1, DMH, D6S1101, HSAN6, EBSB2	 Epidermolysis bullosa simplex, autosomal recessive 2	615425	C	3
 DSTYK, KIAA0472, RIP5, DUSTYPK, CAKUT1	Congenital anomalies of kidney and urinary tract, susceptibility to	610805	P	3
 DTNA, D18S892E, DRP3, LVNC1	Left ventricular noncompaction 1, with or without congenital heart defects	604169	P	3
 DTNBP1, HPS7	 Hermansky-Pudlak syndrome 7	614076	P	3
@@ -1866,6 +1864,8 @@ DUP1q21, C1DUPq21	Chromosome 1q21.1 duplication syndrome	612475	P	4
 DUP22q11.2	Chromosome 22q11.2 microduplication syndrome	608363	P	4
 DUP22q13, C22DUPq13	Chromosome 22q13 duplication syndrome	615538	P	4
 DUP2q31.1, C2DUPq31.1	Chromosome 2q31.1 duplication syndrome	613681	P	4
+DUP2q35, C2DUPq35, SDTY1, SD1	 Craniosynostosis, Philadelphia type	185900	P	4
+DUP2q35, C2DUPq35, SDTY1, SD1	Syndactyly, type 1	185900	P	4
 DUP3q29, MICRODUP3q29	Chromosome 3q29 microduplication syndrome	611936	P	4
 DUP5p13, C5DUPp13	Chromosome 5p13 duplication syndrome	613174	P	4
 DUP7q11.23, C7DUPq11.23	Chromosome 7q11.23 duplication syndrome	609757	P	4
@@ -1922,8 +1922,8 @@ ECT, BECTS	Centrotemporal epilepsy	117100	P	2
 ECTD5	Ectodermal dysplasia 5, hair/nail type	614927	P	2
 ECTD6	Ectodermal dysplasia 6, hair/nail type	614928	P	2
 ECTD8	Ectodermal dysplasia 8, hair/tooth/nail type	602401	P	2
-ED1, EDA, ECTD1, EDA, HED1, STHAGX1	Ectodermal dysplasia 1, hypohidrotic, X-linked	305100	C	3
-ED1, EDA, ECTD1, EDA, HED1, STHAGX1	 Tooth agenesis, selective, X-linked 1	313500	C	3
+EDA, ED1, ECTD1, EDA, HED1, STHAGX1	Ectodermal dysplasia 1, hypohidrotic, X-linked	305100	C	3
+EDA, ED1, ECTD1, EDA, HED1, STHAGX1	 Tooth agenesis, selective, X-linked 1	313500	C	3
 EDARADD, ED3, EDA3, ECTD11B, ECTD11A	 Ectodermal dysplasia 11A, hypohidrotic/hair/tooth type, autosomal dominant	614940	C	3
 EDARADD, ED3, EDA3, ECTD11B, ECTD11A	Ectodermal dysplasia 11B, hypohidrotic/hair/tooth type, autosomal recessive	614941	C	3
 EDAR, DL, ED3, EDA3, HRM1, ECTD10A, ECTD10B	Ectodermal dysplasia 10A, hypohidrotic/hair/nail type, autosomal dominant	129490	C	3
@@ -1983,7 +1983,7 @@ EIG7, EJM2	Epilepsy, idiopathic generalized, susceptibility to, 7	604827	P	2
 EIG7, EJM2	 Epilepsy, juvenile myoclonic	604827	P	2
 EJM3	Epilepsy, juvenile myoclonic 3	608816	P	2
 EJM4	Myoclonic epilepsy, juvenile, 4	611364	P	2
-EJM9	Epilepsy, juvenile myoclonic, susceptiblity to, 9	614280	P	2
+EJM9	Epilepsy, juvenile myoclonic, susceptibility to, 9	614280	P	2
 EKD2	Episodic kinesigenic dyskinesia 2	611031	P	2
 ELAC2, HPC2, COXPD17	 Combined oxidative phosphorylation deficiency 17	615440	C	3
 ELAC2, HPC2, COXPD17	Prostate cancer, hereditary, 2, susceptibility to	614731	C	3
@@ -2104,7 +2104,8 @@ EXOSC8, OIP2, RRP43, PCH1C	Pontocerebellar hypoplasia, type 1C	616081	P	3
 EXPH5, SLAC2B, KIAA0624	Epidermolysis bullosa, nonspecific, autosomal recessive	615028	P	3
 EXT1	 Chondrosarcoma	215300	C	3
 EXT1	Exostoses, multiple, type 1	133700	C	3
-EXT2	Exostoses, multiple, type 2	133701	C	3
+EXT2, SSMS	Exostoses, multiple, type 2	133701	C	3
+EXT2, SSMS	 Seizures, scoliosis, and macrocephaly syndrome	616682	C	3
 EXT3	Exostoses, multiple, type 3	600209	P	2
 EYA1, BOR, BOS1, OFC1	 Anterior segment anomalies with or without cataract	113650	C	3
 EYA1, BOR, BOS1, OFC1	 Branchiootic syndrome 1	602588	C	3
@@ -2176,9 +2177,10 @@ FAS, TNFRSF6, APT1, CD95, ALPS1A	 Squamous cell carcinoma, burn scar-related, so
 FAT4, VMLDS2, HKLLS2	 Hennekam lymphangiectasia-lymphedema syndrome 2	616006	P	3
 FAT4, VMLDS2, HKLLS2	Van Maldergem syndrome 2	615546	P	3
 FBLN1	Synpolydactyly, 3/3'4, associated with metacarpal and metatarsal synostoses	608180	C	4
-FBLN5, ARMD3, ADCL2, ARCL1A	 Cutis laxa, autosomal dominant 2	614434	C	3
-FBLN5, ARMD3, ADCL2, ARCL1A	Cutis laxa, autosomal recessive, type IA	219100	C	3
-FBLN5, ARMD3, ADCL2, ARCL1A	 Macular degeneration, age-related, 3	608895	C	3
+FBLN5, ARMD3, ADCL2, ARCL1A, HNARMD	 Cutis laxa, autosomal dominant 2	614434	C	3
+FBLN5, ARMD3, ADCL2, ARCL1A, HNARMD	Cutis laxa, autosomal recessive, type IA	219100	C	3
+FBLN5, ARMD3, ADCL2, ARCL1A, HNARMD	 Macular degeneration, age-related, 3	608895	C	3
+FBLN5, ARMD3, ADCL2, ARCL1A, HNARMD	 Neuropathy, hereditary, with or without age-related macular degeneration	608895	C	3
 FBN1, MFS1, WMS2, SSKS, GPHYSD2, ACMICD, ECTOL1	 Acromicric dysplasia	102370	C	3
 FBN1, MFS1, WMS2, SSKS, GPHYSD2, ACMICD, ECTOL1	 Aortic aneurysm, ascending, and dissection	134797	C	3
 FBN1, MFS1, WMS2, SSKS, GPHYSD2, ACMICD, ECTOL1	 Ectopia lentis, familial	129600	C	3
@@ -2411,7 +2413,7 @@ FTSJ1, JM23, SPB1, MRX44, MRX9	Mental retardation, X-linked 9	309549	C	3
 FUCA1	Fucosidosis	230000	C	3
 FUS, TLS, ALS6, ETM4	Amyotrophic lateral sclerosis 6, with or without frontotemporal dementia	608030	C	3
 FUS, TLS, ALS6, ETM4	 Tremor, hereditary essential, 4	614782	C	3
-FUT1, H, HH	Bombay phenotype	211100	C	3
+FUT1, H, HH	Bombay phenotype	616754	C	3
 FUT2, SE, B12QTL1	 Bombay phenotype	182100	C	3
 FUT2, SE, B12QTL1	Norwalk virus infection, resistance to	182100	C	3
 FUT2, SE, B12QTL1	 Vitamin B12 plasma level QTL1	612542	C	3
@@ -2456,6 +2458,7 @@ GAMT, CCDS2	Cerebral creatine deficiency syndrome 2	612736	P	3
 GAN, GAN1	Giant axonal neuropathy-1	256850	C	3
 GARS, SMAD1, CMT2D, HMN5	Charcot-Marie-Tooth disease, type 2D	601472	C	3
 GARS, SMAD1, CMT2D, HMN5	 Neuropathy, distal hereditary motor, type VA	600794	C	3
+GAS8, GAS11, CILD33	Ciliary dyskinesia, primary, 33	616726	P	3
 GATA1, GF1, ERYF1, NFE1, XLTDA, XLTT, XLANP	 Anemia, X-linked, with/without neutropenia and/or platelet abnormalities	300835	C	3
 GATA1, GF1, ERYF1, NFE1, XLTDA, XLTT, XLANP	 Leukemia, megakaryoblastic, with or without Down syndrome, somatic	190685	C	3
 GATA1, GF1, ERYF1, NFE1, XLTDA, XLTT, XLANP	 Thrombocytopenia with beta-thalassemia, X-linked	314050	C	3
@@ -2479,6 +2482,7 @@ GATAD2B, KIAA1150, p68, MRD18	Mental retardation, autosomal dominant 18	615074	P
 GATM, AGAT, CCDS3	Cerebral creatine deficiency syndrome 3	612718	C	3
 GBA2, KIAA1605, SPG46	Spastic paraplegia 46, autosomal recessive	614409	P	3
 GBA	 Gaucher disease, perinatal lethal	608013	C	3
+GBA	Gaucher disease, type I	230800	C	3
 GBA	 Gaucher disease, type II	230900	C	3
 GBA	 Gaucher disease, type III	231000	C	3
 GBA	 Gaucher disease, type IIIC	231005	C	3
@@ -2502,7 +2506,7 @@ GCKR, GKRP, FGQTL5	Fasting plasma glucose level QTL 5	613463	C	3
 GCLC, GLCLC	Hemolytic anemia due to gamma-glutamylcysteine synthetase deficiency	230450	C	3
 GCLC, GLCLC	 Myocardial infarction, susceptibility to	608446	C	3
 GCLM, GLCLR	Myocardial infarction, susceptibility to	608446	C	3
-GCMB	Hypoparathyroidism, familial isolated	146200	P	3
+GCM2, GCMB	Hypoparathyroidism, familial isolated	146200	P	3
 GCNT2, Ii, CTRCT13	 Adult i phenotype without cataract	110800	C	3
 GCNT2, Ii, CTRCT13	Blood group, Ii	110800	C	3
 GCNT2, Ii, CTRCT13	 Cataract 13 with adult i phenotype	116700	C	3
@@ -2663,7 +2667,6 @@ GNAO1, EIEE17	Epileptic encephalopathy, early infantile, 17	615473	P	3
 GNAQ, SWS, CMC1	 Capillary malformations, congenital, 1, somatic, mosaic	163000	P	3
 GNAQ, SWS, CMC1	Sturge-Weber syndrome, somatic, mosaic	185300	P	3
 GNASAS1, GNASAS, SANG, NESPAS	Pseudohypoparathyroidism, type IB	603233	P	3
-GNAS, GNAS1, GPSA, POH, PHP1B, PHP1A, AHO, PHP1C	   Acromegaly, somatic	102200	C	3
 GNAS, GNAS1, GPSA, POH, PHP1B, PHP1A, AHO, PHP1C	 Acromegaly, somatic	102200	C	3
 GNAS, GNAS1, GPSA, POH, PHP1B, PHP1A, AHO, PHP1C	 ACTH-independent macronodular adrenal hyperplasia	219080	C	3
 GNAS, GNAS1, GPSA, POH, PHP1B, PHP1A, AHO, PHP1C	 McCune-Albright syndrome, somatic, mosaic 174800	139320	C	3
@@ -2677,11 +2680,10 @@ GNAT1, CSNBAD3, CSNB1G	 Night blindness, congenital stationary, type 1G	616389	C
 GNAT2, ACHM4	Achromatopsia-4	613856	C	3
 GNB3	Hypertension, essential, susceptibility to	145500	C	3
 GNB4, CMTD1F	Charcot-Marie-Tooth disease, dominant intermediate F	615185	P	3
-GNE, GLCNE, IBM2, DMRV, NM	 Inclusion body myopathy, autosomal recessive	600737	C	3
 GNE, GLCNE, IBM2, DMRV, NM	 Nonaka myopathy	605820	C	3
 GNE, GLCNE, IBM2, DMRV, NM	Sialuria	269921	C	3
 GNMT	Glycine N-methyltransferase deficiency	606664	P	3
-GNPAT, DHAPAT, RCDP2	Chondrodysplasia punctata, rhizomelic, type 2	222765	P	3
+GNPAT, DHAPAT, RCDP2	Rhizomelic chondrodysplasia punctata, type 2	222765	P	3
 GNPTAB, GNPTA	 Mucolipidosis II alpha/beta	252500	C	3
 GNPTAB, GNPTA	Mucolipidosis III alpha/beta	252600	C	3
 GNPTAG	Mucolipidosis III gamma	252605	C	3
@@ -2719,6 +2721,7 @@ GPR56, TM7XN1, BFPP, BPPR	Polymicrogyria, bilateral frontoparietal	606854	C	3
 GPR56, TM7XN1, BFPP, BPPR	 Polymicrogyria, bilateral perisylvian	615752	C	3
 GPSM2, LGN, PINS, DFNB82, CMCS	Chudley-McCullough syndrome	604213	P	3
 GPX1, GPXD	Hemolytic anemia due to glutathione peroxidase deficiency	614164	C	1
+GPX4, SMDS	Spondylometaphyseal dysplasia, Sedaghatian type	250220	C	3
 GRD1	Graves disease, susceptibility to, 1	275000	P	2
 GRD2	Graves disease, susceptibility to, 2	603388	C	2
 GRDX, GD3	Graves disease, susceptibility to, X-linked	300351	P	2
@@ -2758,6 +2761,7 @@ GUCA1B, GCAP2, GUCA2, RP48	Retinitis pigmentosa 48	613827	P	3
 GUCY1A3, GUC1A3, GUCSA3, MYMY6	Moyamoya 6 with achalasia	615750	P	3
 GUCY2C, GUC2C, DIAR6, MECIL	Diarrhea 6	614616	P	3
 GUCY2C, GUC2C, DIAR6, MECIL	 Meconium ileus	614665	P	3
+GUCY2D, GUC2D, LCA1, CORD6, RCD2	 Cone-rod dystrophy 6	601777	C	3
 GUCY2D, GUC2D, LCA1, CORD6, RCD2	Leber congenital amaurosis 1	204000	C	3
 GULOP, GULO	Scurvy	240400	P	3
 GUSB, MPS7	Mucopolysaccharidosis VII	253220	C	3
@@ -2936,13 +2940,14 @@ HNF4A, TCF14, MODY1, FRTS4	 Diabetes mellitus, noninsulin-dependent	125853	C	3
 HNF4A, TCF14, MODY1, FRTS4	 Fanconi renotubular syndrome 4, with maturity-onset diabetes of the young	616026	C	3
 HNF4A, TCF14, MODY1, FRTS4	MODY, type I	125850	C	3
 HNFJ3	Hyperuricemic nephropathy, familial juvenile, 3	614227	P	2
-HNMT	Asthma, susceptibility to	600807	P	3
+HNMT, MRT51	Asthma, susceptibility to	600807	P	3
+HNMT, MRT51	 Mental retardation, autosomal recessive 51	616739	P	3
 HNP1	Hypertensive nephropathy	608026	P	2
 HNRNPA1, IBMPFD3, ALS20	 Amyotrophic lateral sclerosis 20	615426	P	3
 HNRNPDL, HNRPDL, JKTBP, LGMD1G	Limb-girdle muscular dystrophy, type 1G	609115	P	3
 HNRNPK, HNRPK, AUKS	Au-Kline syndrome	616580	C	3
 HOGA1, DHDPSL, HP3	Hyperoxaluria, primary, type III	613616	P	3
-HOXA11, HOX1I	Radioulnar synostosis with amegakaryocytic thrombocytopenia	605432	C	3
+HOXA11, HOX1I, RUSAT1	Radioulnar synostosis with amegakaryocytic thrombocytopenia 1	605432	C	3
 HOXA13, HOX1J	 Guttmacher syndrome	176305	C	3
 HOXA13, HOX1J	Hand-foot-uterus syndrome	140000	C	3
 HOXA1, HOX1F, BSAS	 Athabaskan brainstem dysgenesis syndrome	601536	C	3
@@ -3130,7 +3135,8 @@ IFIH1, MDA5, AGS7, SGMRT1	 Singleton-Merten syndrome 1	182250	C	3
 IFITM3	Influenza, severe, susceptibility to	614680	P	3
 IFITM5, OI5	Osteogenesis imperfecta, type V	610967	P	3
 IFNA1, IFNA@	Interferon, alpha, deficiency	147660	C	1
-IFNAR2	Hepatitis B virus, susceptibility to	610424	C	3
+IFNAR2, IMD45	Hepatitis B virus, susceptibility to	610424	C	3
+IFNAR2, IMD45	 Immunodeficiency 45	616669	C	3
 IFNG, IFG, IFI	 AIDS, rapid progression to	609423	C	3
 IFNG, IFG, IFI	 Aplastic anemia	609135	C	3
 IFNG, IFG, IFI	Hepatitis C virus, response to therapy of	609532	C	3
@@ -3251,7 +3257,6 @@ INTLQ2	Intelligence QTL3	610295	P	2
 INTLQ3	Intelligence QTL3	610294	P	2
 INVS, INV, NPHP2, NPH2	Nephronophthisis 2, infantile	602088	C	3
 IPF1, MODY4, PAGEN1	 Diabetes mellitus, type II, susceptibility to	125853	P	3
-IPF1, MODY4, PAGEN1	 MODY, type IV,  606392	600733	P	3
 IPF1, MODY4, PAGEN1	 MODY, type IV	606392	P	3
 IPF1, MODY4, PAGEN1	Pancreatic agenesis 1	260370	P	3
 IQCB1, NPHP5, KIAA0036	Senior-Loken syndrome 5	609254	P	3
@@ -3312,7 +3317,8 @@ ITK, EMT, LPFS1	Lymphoproliferative syndrome 1	613011	C	3
 ITM2B, BRI, ABRI, FBD, RDGCA	Dementia, familial British	176500	P	3
 ITM2B, BRI, ABRI, FBD, RDGCA	 Dementia, familial Danish	117300	P	3
 ITM2B, BRI, ABRI, FBD, RDGCA	 Retinal dystrophy with inner retinal dysfunction and ganglion cell abnormalities	616079	P	3
-ITPA	Inosine triphosphatase deficiency	613850	C	3
+ITPA, EIEE35	 Epileptic encephalopathy, early infantile, 35	616647	C	3
+ITPA, EIEE35	Inosine triphosphatase deficiency	613850	C	3
 ITPKC	Kawasaki disease, susceptibility to	611775	C	3
 ITPR1, SCA15, SCA16, SCA29	Spinocerebellar ataxia 15	606658	C	3
 ITPR1, SCA15, SCA16, SCA29	 Spinocerebellar ataxia 29, congenital nonprogressive	117360	C	3
@@ -3343,6 +3349,7 @@ KALRN, HAPIP, DUO, CHDS5	Coronary heart disease, susceptibility to, 5	608901	C	3
 KANK1, KANK, ANKRD15, KIAA0172, CPSQ2	Cerebral palsy, spastic quadriplegic, 2	612900	C	3
 KANK2, ANKRD25, KIAA1518, PPKWH	Palmoplantar keratoderma and woolly hair	616099	P	3
 KANSL1, KIAA1267, MSL1V1, KDVS	Koolen-De Vries syndrome	610443	P	3
+KAOGS	Kagami-Ogata syndrome	608149	P	4
 KARS, CMTRIB, DFNB89	 Deafness, autosomal recessive 89	613916	C	3
 KAT6A, MYST3, MOZ, ZNF220, MRD32	Mental retardation, autosomal dominant 32	616268	C	3
 KAT6B, MYST4, MORF, GTPTS	 Genitopatellar syndrome	606170	P	3
@@ -3393,6 +3400,7 @@ KCNK3, TASK, PPH4	Pulmonary hypertension, primary, 4	615344	P	3
 KCNK9, TASK3	Birk-Barel mental retardation dysmorphism syndrome	612292	C	3
 KCNMA1, SLO	Generalized epilepsy and paroxysmal dyskinesia	609446	C	3
 KCNMB1	Hypertension, diastolic, resistance to	608622	C	3
+KCNN4, KCA4, SK4, DHS2	Dehydrated hereditary stomatocytosis 2	616689	P	3
 KCNQ1, KCNA9, LQT1, KVLQT1, ATFB3, SQT2	 Atrial fibrillation, familial, 3	607554	C	3
 KCNQ1, KCNA9, LQT1, KVLQT1, ATFB3, SQT2	 Jervell and Lange-Nielsen syndrome	220400	C	3
 KCNQ1, KCNA9, LQT1, KVLQT1, ATFB3, SQT2	Long QT syndrome 1	192500	C	3
@@ -3410,6 +3418,7 @@ KCNV2, KV11.1, RCD3B	Retinal cone dystrophy 3B	610356	P	3
 KCTD17	Dystonia 26, myoclonic	616398	P	3
 KCTD1, SENS	Scalp-ear-nipple syndrome	181270	P	3
 KCTD7, EPM3, CLN14	Epilepsy, progressive myoclonic 3, with or without intracellular inclusions	611726	P	3
+KDM1A, LSD1, AOF2, BHC110, KIAA0601, CPRF	Cleft palate, psychomotor retardation, and distinctive facial features	616728	P	3
 KDM5C, JARID1C, SMCX, DXS1272E, XE169, MRXSCJ	Mental retardation, X-linked, syndromic, Claes-Jensen type	300534	C	3
 KDM6A, UTX, KABUK2	Kabuki syndrome 2	300867	P	3
 KDR	Hemangioma, capillary infantile, somatic	602089	C	3
@@ -3418,11 +3427,11 @@ KEL	Blood group, Kell	110900	C	3
 KERA, CNA2	Cornea plana congenita, recessive	217300	C	3
 KHDC3L, C6orf221, ECAT1, HYDM2	Hydatidiform mole, recurrent, 2	614293	P	3
 KHK	Fructosuria	229800	P	3
-KIAA0196, SPG8, RTSC	 Ritscher-Schinzel syndrome	220210	C	3
-KIAA0196, SPG8, RTSC	Spastic paraplegia 8, autosomal dominant	603563	C	3
+KIAA0196, SPG8, RTSC1	 Ritscher-Schinzel syndrome 1	220210	C	3
+KIAA0196, SPG8, RTSC1	Spastic paraplegia 8, autosomal dominant	603563	C	3
 KIAA0319, DYX2, DYLX2, DLX2	Dyslexia, susceptibility to, 2	600202	C	3
 KIAA0442, MRD26	Mental retardation, autosomal dominant 26	615834	P	3
-KIAA0586, TALPID3, JBTS23, SRTD14	Joubert syndrome	616490	P	3
+KIAA0586, TALPID3, JBTS23, SRTD14	Joubert syndrome 23	616490	P	3
 KIAA0586, TALPID3, JBTS23, SRTD14	 Short-rib thoracic dysplasia 14 with polydactyly	616546	P	3
 KIAA1279	Goldberg-Shprintzen megacolon syndrome	609460	P	3
 KIAA2022, MRX98	Mental retardation, X-linked 98	300912	P	3
@@ -3439,16 +3448,18 @@ KIF22, KNSL4, KID, OBP, SEMDJL2	Spondyloepimetaphyseal dysplasia with joint laxi
 KIF2A, CDCBM3	Cortical dysplasia, complex, with other brain malformations 3	615411	P	3
 KIF5A, NKHC, SPG10	Spastic paraplegia 10, autosomal dominant	604187	C	3
 KIF5C, NKHC2, CDCBM2	Cortical dysplasia, complex, with other brain malformations 2	615282	P	3
-KIF7, HLS2, ACLS, JBTS12	 Acrocallosal syndrome	200990	P	3
-KIF7, HLS2, ACLS, JBTS12	 Joubert syndrome 12	200990	P	3
+KIF7, HLS2, ACLS, JBTS12, AGBK	 Acrocallosal syndrome	200990	P	3
+KIF7, HLS2, ACLS, JBTS12, AGBK	 Al-Gazali-Bakalinova syndrome	607131	P	3
+KIF7, HLS2, ACLS, JBTS12, AGBK	 Joubert syndrome 12	200990	P	3
 KIND1, URP1, C20orf42	Kindler syndrome	173650	C	3
 KIND3, URP2, MIG2B, FERMT3	Leukocyte adhesion deficiency, type III	612840	C	3
 KIR3DL1, NKAT3, NKB1, AMB11, KIR3DS1	AIDS, delayed/rapid progression to	609423	P	3
 KIRREL3, NEPH2, KIAA1867, KIRRE, MRD4	Mental retardation, autosomal dominant 4	612581	P	3
 KISS1R, GPR54, HH8, CPPB1	Hypogonadotropic hypogonadism 8 with or without anosmia	614837	C	3
 KISS1R, GPR54, HH8, CPPB1	 Precocious puberty, central, 1	176400	C	3
-KITLG, MGF, SF, SCF, SHEP7, FPHH	 Hyperpigmentation with or without hypopigmentation	145250	C	3
-KITLG, MGF, SF, SCF, SHEP7, FPHH	Skin/hair/eye pigmentation 7, blond/brown hair	611664	C	3
+KITLG, MGF, SF, SCF, SHEP7, FPHH, DCUA	 Deafness, congenital, unilateral or asymmetric	616697	C	3
+KITLG, MGF, SF, SCF, SHEP7, FPHH, DCUA	 Hyperpigmentation with or without hypopigmentation	145250	C	3
+KITLG, MGF, SF, SCF, SHEP7, FPHH, DCUA	Skin/hair/eye pigmentation 7, blond/brown hair	611664	C	3
 KIT, PBT	 Gastrointestinal stromal tumor, familial	606764	C	3
 KIT, PBT	 Germ cell tumors	273300	C	3
 KIT, PBT	 Leukemia, acute myeloid	601626	C	3
@@ -3488,6 +3499,7 @@ KRAS, KRAS2, RASK2, NS, CFC2, RALD	 Leukemia, acute myeloid	601626	C	3
 KRAS, KRAS2, RASK2, NS, CFC2, RALD	Lung cancer, somatic	211980	C	3
 KRAS, KRAS2, RASK2, NS, CFC2, RALD	 Noonan syndrome 3	609942	C	3
 KRAS, KRAS2, RASK2, NS, CFC2, RALD	 Pancreatic carcinoma, somatic	260350	C	3
+KRAS, KRAS2, RASK2, NS, CFC2, RALD	 RAS-associated autoimmune leukoproliferative disorder	614470	C	3
 KRAS, KRAS2, RASK2, NS, CFC2, RALD	 Schimmelpenning-Feuerstein-Mims syndrome, somatic mosaic	163200	C	3
 KRT10, EHK, BCIE, BIE	Epidermolytic hyperkeratosis	113800	C	3
 KRT10, EHK, BCIE, BIE	 Ichthyosis, cyclic, with epidermolytic hyperkeratosis	607602	C	3
@@ -3512,6 +3524,7 @@ KRT1, EPPK, NEPPK, EHK	 Ichthyosis histrix, Curth-Macklin type	146590	C	3
 KRT1, EPPK, NEPPK, EHK	 Keratosis palmoplantaris striata III	607654	C	3
 KRT1, EPPK, NEPPK, EHK	 Palmoplantar keratoderma, epidermolytic	144200	C	3
 KRT1, EPPK, NEPPK, EHK	 Palmoplantar keratoderma, nonepidermolytic	600962	C	3
+KRT25, K25, KRT24IRS1, ARWH3	Woolly hair, autosomal recessive 3	616760	P	3
 KRT2, KRT2A, KRT2E	Ichthyosis bullosa of Siemens	146800	P	3
 KRT3	Meesmann corneal dystrophy	122100	C	3
 KRT4, CYK4, WSN1	White sponge nevus 1	193900	C	3
@@ -3693,7 +3706,7 @@ LPL, LIPD, HDLCQ11	 High density lipoprotein cholesterol level QTL 11	609708	C	3
 LPL, LIPD, HDLCQ11	Lipoprotein lipase deficiency	238600	C	3
 LPP	 Leukemia, acute myeloid	601626	P	3
 LPP	Lipoma	600700	P	3
-LPRS6	Leprosy, susceptiblity to, 6	613407	P	2
+LPRS6	Leprosy, susceptibility to, 6	613407	P	2
 LPRS	Leprosy, paucibacillary type, susceptibility to	609888	C	2
 LPSA, D19S381E	Liposarcoma	164953	P	1
 LRAT, LCA14	 Leber congenital amaurosis 14	613341	C	3
@@ -3714,7 +3727,8 @@ LRP5, BMND1, LRP7, LR3, OPPG, VBCH2, OPTA1, EVR4	 Osteoporosis	166710	C	3
 LRP5, BMND1, LRP7, LR3, OPPG, VBCH2, OPTA1, EVR4	Osteoporosis-pseudoglioma syndrome	259770	C	3
 LRP5, BMND1, LRP7, LR3, OPPG, VBCH2, OPTA1, EVR4	 Osteosclerosis	144750	C	3
 LRP5, BMND1, LRP7, LR3, OPPG, VBCH2, OPTA1, EVR4	 van Buchem disease, type 2	607636	C	3
-LRP6, ADCAD2	Coronary artery disease, autosomal dominant, 2	610947	C	3
+LRP6, ADCAD2, STHAG7	Coronary artery disease, autosomal dominant, 2	610947	C	3
+LRP6, ADCAD2, STHAG7	 Tooth agenesis, selective, 7	616724	C	3
 LRP8, APOER2, MCI1	Myocardial infarction, susceptibility to	608446	C	3
 LRPAP1, A2MRAP, MYP23	Myopia 23, autosomal recessive	615431	C	3
 LRPPRC, LRP130, LSFC	Leigh syndrome, French-Canadian type	220111	C	3
@@ -3768,6 +3782,7 @@ MAFD6, BPAD	Major affective disorder 6	611536	P	2
 MAFD8	Major affective disorder-8, susceptibility to	612357	P	2
 MAFD9	Major affective disorder-9, susceptibility to	612372	P	2
 MAGEL2, NDNL1, SHFYNG	Schaaf-Yang syndrome	615547	P	3
+MAG, GMA, SPG75	Spastic paraplegia 75, autosomal recessive	616680	C	3
 MAGT1, IAP, XMEN	Immunodeficiency, X-linked, with magnesium defect, Epstein-Barr virus infection and neoplasia	300853	P	3
 MAK, RP62	Retinitis pigmentosa 62	614181	P	3
 MALT1, MLT, IMD12	Immunodeficiency 12	615468	P	3
@@ -3782,6 +3797,7 @@ MAP2K2, PRKMK2, MEK2, MKK2, CFC4	Cardiofaciocutaneous syndrome 4	615280	P	3
 MAP3K1, MEKK1, MEKK, SRXY6	46XY sex reversal 6	613762	P	3
 MAP3K8, COT, EST, TPL2	Lung cancer, somatic	211980	C	3
 MAPK8IP1, IB1	Diabetes mellitus, noninsulin-dependent	125853	P	3
+MAPRE2, EB2, RP1, CSCSC2	Symmetric circumferential skin creases, congenital, 2	616734	C	3
 MAPT, MTBT1, DDPAC, MSTD	Dementia, frontotemporal, with or without parkinsonism	600274	C	3
 MAPT, MTBT1, DDPAC, MSTD	 Parkinson disease, susceptibility to	168600	C	3
 MAPT, MTBT1, DDPAC, MSTD	 Pick disease	172700	C	3
@@ -3849,7 +3865,7 @@ MDM2, ACTFS	Accelerated tumor formation, susceptibility to	614401	C	3
 MDNS	Mammary-digital-nail syndrome	613689	P	2
 MDRV	Muscular dystrophy with rimmed vacuoles	601846	P	2
 MDS1	Myelodysplasia syndrome-1	600049	P	3
-MECOM, EVI1	3q21q26 syndrome	165215	C	1
+MECOM, EVI1, RUSAT2	Radioulnar synostosis with amegakaryocytic thrombocytopenia 2	616738	C	3
 MECP2, RTT, PPMX, MRX16, MRX79, AUTSX3, MRXSL, MRXS13, MRX79, MRX16	 Autism susceptibility, X-linked 3	300496	C	3
 MECP2, RTT, PPMX, MRX16, MRX79, AUTSX3, MRXSL, MRXS13, MRX79, MRX16	 Encephalopathy, neonatal severe	300673	C	3
 MECP2, RTT, PPMX, MRX16, MRX79, AUTSX3, MRXSL, MRXS13, MRX79, MRX16	 Mental retardation, X-linked, syndromic 13	300055	C	3
@@ -3888,6 +3904,7 @@ MENOQ4	Menopause, natural, age at, QTL4	612886	P	2
 MEOX1, MOX1, KFS2	Klippel-Feil syndrome 2	214300	C	3
 MERTK, RP38	Retinitis pigmentosa 38	613862	C	3
 MESP2, SCDO2	Spondylocostal dysostosis 2, autosomal recessive	608681	P	3
+MET	 Deafness, autosomal recessive 97	616705	C	3
 MET	 Hepatocellular carcinoma, childhood type, somatic	114550	C	3
 MET	Renal cell carcinoma, papillary, 1, familial and somatic	605074	C	3
 METTL23, C17orf95, MRT44	Mental retardation, autosomal recessive 44	615942	P	3
@@ -3955,7 +3972,7 @@ MLH1, COCA2, HNPCC2	 Muir-Torre syndrome	158320	C	3
 MLH3, HNPCC7	 Colorectal cancer, hereditary nonpolyposis, type 7	614385	C	3
 MLH3, HNPCC7	Colorectal cancer, somatic	114500	C	3
 MLH3, HNPCC7	 Endometrial cancer, susceptibility to	608089	C	3
-MLLT11, AF1Q	Leukemia, acute myelomonocytic, somatic, somatic 607785	604684	P	3
+MLLT11, AF1Q	Leukemia, acute myelomonocytic, somatic	607785	P	3
 MLPH	Griscelli syndrome, type 3	609227	P	3
 MLSM7, DEL7q, C7DELq	Myelodysplasia and leukemia syndrome with monosomy 7	252270	P	4
 MLYCD, MCD	Malonyl-CoA decarboxylase deficiency	248360	P	3
@@ -3966,13 +3983,13 @@ MMD2	Miyoshi muscular dystrophy 2	613318	P	2
 MMDK, MDK	Mesomelic dysplasia, Kantaputra type	156232	P	2
 MME, CD10, CALLA, NEP	 Membranous glomerulonephritis, antenatal	614692	C	1
 MME, CD10, CALLA, NEP	Neutral endopeptidase deficiency	614692	C	1
-MMEDF	Macrocephaly with multiple epiphyseal dysplasia and distinctive facies	607131	P	2
 MMP13, CLG3, MANDP1	 Metaphyseal anadysplasia 1	602111	C	3
 MMP13, CLG3, MANDP1	Spondyloepimetaphyseal dysplasia, Missouri type	602111	C	3
 MMP19, MMP18, CODA	Cavitary optic disc anomalies	611543	P	3
 MMP1, CLG	COPD, rate of decline of lung function in	606963	C	3
 MMP1, CLG	 Epidermolysis bullosa dystrophica, autosomal recessive, modifier of	226600	C	3
 MMP20, AI2A2	Amelogenesis imperfecta, type IIA2	612529	P	3
+MMP21, HTX7	Heterotaxy, visceral, 7, autosomal	616749	P	3
 MMP2, CLG4A, MONA	Multicentric osteolysis, nodulosis, and arthropathy	259600	C	3
 MMP3, STMY1, CHDS6	Coronary heart disease, susceptibility to, 6	614466	C	3
 MMP9, CLG4B, MANDP2	Metaphyseal anadysplasia 2	613073	C	3
@@ -3990,6 +4007,7 @@ MNX1, HLXB9, HOXHB9, SCRA1	Currarino syndrome	176450	C	3
 MOCS1, MOCODA	Molybdenum cofactor deficiency A	252150	C	3
 MOCS2, MPTS, MOCODB	Molybdenum cofactor deficiency B	252160	P	3
 MOGS, GCS1, CDG2B	Congenital disorder of glycosylation, type IIb	606056	P	3
+MORC2, ZCW3, ZCWCC1, KIAA0852, CMT2Z	Charcot-Marie-Tooth disease, axonal, type 2Z	616688	C	3
 MPD3	Myopathy, distal 3	610099	P	2
 MPDU1, SL15, CDGIF	Congenital disorder of glycosylation, type If	609180	C	3
 MPDZ, MUPP1, HYC2	Hydrocephalus, nonsyndromic, autosomal recessive 2	615219	C	3
@@ -4018,6 +4036,7 @@ MPZ, CMT1B, CMTDID, CHM, DSS	 Roussy-Levy syndrome	180800	C	3
 MR1, TAHCCP2, KIPP1184, BRP17, PNKD, FPD1, PDC, DYT8	Paroxysmal nonkinesigenic dyskinesia	118800	C	3
 MRAP2, C6orf117, BMIQ18	Obesity, susceptibility to, BMIQ18	615457	P	3
 MRAP, FALP, C21orf61, GCCD2, FGD2	Glucocorticoid deficiency 2	607398	C	3
+MRD2	Mental retardation, autosomal dominant 2	614113	P	4
 MRE11A, MRE11, ATLD	Ataxia-telangiectasia-like disorder	604391	P	3
 MRPL3, MRL3, COXPD9	Combined oxidative phosphorylation deficiency 9	614582	P	3
 MRPS16, COXPD2	Combined oxidative phosphorylation deficiency 2	610498	C	3
@@ -4061,7 +4080,6 @@ MRX88	Mental retardation, X-linked 88	300852	P	2
 MRX89	Mental retardation, X-linked 89	300848	P	2
 MRX92	Mental retardation, X-linked 92	300851	P	2
 MRX95	Mental retardation, X-linked 95	300716	P	2
-MRXS11, SMRXS	Mental retardation, X-linked syndromic, Shashi type	300238	P	2
 MRXS17	Mental retardation, X-linked, syndromic 17	300858	P	2
 MRXS7	Mental retardation, X-linked syndromic 7	300218	P	2
 MRXS9	Mental retardation, X-linked, syndromic 9	300709	P	2
@@ -4108,7 +4126,7 @@ MTHFR	 Vascular disease, susceptibility to	607093	P	3
 MTM1, MTMX	Myotubular myopathy, X-linked	310400	C	3
 MTMR14, C3orf29, HJUMPY	Centronuclear myopathy, autosomal, modifier of	160150	P	3
 MTMR2, CMT4B1	Charcot-Marie-Tooth disease, type 4B1	601382	C	3
-MTNR1B	Diabetes mellitus, type 2, susceptiblity to	125853	P	3
+MTNR1B	Diabetes mellitus, type 2, susceptibility to	125853	P	3
 MTO1, COXPD10	Combined oxidative phosphorylation deficiency 10	614702	P	3
 MTOR, FRAP1, SKS	Smith-Kingsmore syndrome	616638	P	3
 MTP	Abetalipoproteinemia	200100	P	3
@@ -4182,7 +4200,6 @@ MYMY3	Moyamoya disease 3	608796	P	2
 MYMY4, CXDELq38	Moyamoya disease 4	300845	P	4
 MYO15A, DFNB3	Deafness, autosomal recessive 3	600316	C	3
 MYO18B, KFS4	Klippel-Feil syndrome 4, autosomal recessive, with myopathy and facial dysmorphism	616549	P	3
-MYO1A, DFNA48	Deafness, autosomal dominant 48	607841	C	3
 MYO1E, MYO1C, FSGS6	Glomerulosclerosis, focal segmental, 6	614131	P	3
 MYO3A, DFNB30	Deafness, autosomal recessive 30	607101	C	3
 MYO5A, MYH12, GS1	Griscelli syndrome, type 1	214450	C	3
@@ -4221,8 +4238,8 @@ MYPN, CMD1DD, CMH22, RCM4	Cardiomyopathy, dilated, 1KK	615248	P	3
 MYPN, CMD1DD, CMH22, RCM4	 Cardiomyopathy, familial restrictive, 4	615248	P	3
 MYPN, CMD1DD, CMH22, RCM4	 Cardiomyopathy, hypertrophic, 22	615248	P	3
 MYT1L, KIAA1106, MRD39	Mental retardation, autosomal dominant 39	616521	P	3
-NAA10, ARD1A, ARD1, TE2, NATD, MCOPS1	 Microphthalmia, syndromic 1	309800	P	3
-NAA10, ARD1A, ARD1, TE2, NATD, MCOPS1	N-terminal acetyltransferase deficiency	300855	P	3
+NAA10, ARD1A, ARD1, TE2, NATD, OGDNS, MCOPS1	 Microphthalmia, syndromic 1	309800	P	3
+NAA10, ARD1A, ARD1, TE2, NATD, OGDNS, MCOPS1	Ogden syndrome	300855	P	3
 NAFLD1	Fatty liver disease, nonalcoholic, susceptibility to, 1	613282	P	2
 NAFLD2	Fatty liver disease, nonalcoholic, susceptibility to, 2	613387	P	2
 NAGA	 Kanzaki disease	609242	C	3
@@ -4244,9 +4261,9 @@ NBEAL2, KIAA0540, GPS, BDPLT4	Gray platelet syndrome	139090	P	3
 NBLST4	Neuroblastoma, susceptibility to, 4	613015	P	2
 NBLST5	Neuroblastoma, susceptibility to, 5	613016	P	2
 NBLST6	Neuroblastoma, susceptibility to, 6	613017	P	2
-NBS1, NBS	 Aplastic anemia	609135	C	3
-NBS1, NBS	 Leukemia, acute lymphoblastic	613065	C	3
-NBS1, NBS	Nijmegen breakage syndrome	251260	C	3
+NBN, NBS1	 Aplastic anemia	609135	C	3
+NBN, NBS1	 Leukemia, acute lymphoblastic	613065	C	3
+NBN, NBS1	Nijmegen breakage syndrome	251260	C	3
 NCF1	Chronic granulomatous disease due to deficiency of NCF-1	233700	P	3
 NCF2	Chronic granulomatous disease due to deficiency of NCF-2	233710	C	3
 NCF4, P40PHOX	Granulomatous disease, chronic, autosomal recessive, cytochrome b-positive, type III	613960	P	3
@@ -4433,7 +4450,6 @@ NR5A1, FTZF1, FTZ1, SF1, AD4BP, POF7, SRXY3, SPGF8	 Spermatogenic failure 8	6139
 NRAMP1, NRAMP, SLC11A1	 Buruli ulcer, susceptibility to	610446	C	3
 NRAMP1, NRAMP, SLC11A1	Mycobacterium tuberculosis, susceptibility to infection by	607948	C	3
 NRAMP2	Anemia, hypochromic microcytic	206100	P	3
-NRAS, ALPS4, NS6, CMNS, NCMS	Autoimmune lymphoproliferative syndrome type IV	614470	C	3
 NRAS, ALPS4, NS6, CMNS, NCMS	 Colorectal cancer, somatic	114500	C	3
 NRAS, ALPS4, NS6, CMNS, NCMS	 Epidermal nevus, somatic	162900	C	3
 NRAS, ALPS4, NS6, CMNS, NCMS	 Melanocytic nevus syndrome, congenital, somatic	137550	C	3
@@ -4467,6 +4483,7 @@ NTRK1, TRKA, MTC	Insensitivity to pain, congenital, with anhidrosis	256800	C	3
 NTRK1, TRKA, MTC	 Medullary thyroid carcinoma, familial	155240	C	3
 NUBPL, IND1	Mitochondrial complex I deficiency	252010	P	3
 NUMA1	Leukemia, acute promyelocytic, somatic	612376	C	3
+NUP107, NUP84, NPHS11	Nephrotic syndrome, type 11	616730	P	3
 NUP214, D9S46E, CAN, CAIN	Leukemia, acute myeloid, somatic	601626	C	3
 NUP214, D9S46E, CAN, CAIN	 Leukemia, T-cell acute lymphoblastic, somatic	613065	C	3
 NUP62, SNDI, IBSN	Striatonigral degeneration, infantile	271930	C	3
@@ -4518,6 +4535,7 @@ OPA3, MGA3	 Optic atrophy 3 with cataract	165300	C	3
 OPA4	Optic atrophy 4	605293	P	2
 OPA5	Optic atrophy 5	610708	P	2
 OPA6	Optic atrophy 6	258500	P	2
+OPA8	Optic atroph 8	616648	P	2
 OPCML	Ovarian cancer, somatic	167000	C	3
 OPHLC, C1DUPp31.3, DUP1p31.3	Omphalocele due to duplication of 1p31.3	164750	P	4
 OPHN1, MRX60	Mental retardation, X-linked, with cerebellar hypoplasia and distinctive facial appearance	300486	P	3
@@ -4717,13 +4735,14 @@ PEX26, PBD7A, PBD7B	 Peroxisome biogenesis disorder 7B	614873	C	3
 PEX2, PAF1, PMP35, PBD5A, PBD5B, PXMP3	Peroxisome biogenesis disorder 5A 	614866	C	3
 PEX2, PAF1, PMP35, PBD5A, PBD5B, PXMP3	 Peroxisome biogenesis disorder 5B	614867	C	3
 PEX3, PBD10A	Peroxisome biogenesis disorder 10A 	614882	C	3
-PEX5, PXR1, PTS1R, PBD2A, PBD2B	Peroxisome biogenesis disorder 2A 	214110	C	3
-PEX5, PXR1, PTS1R, PBD2A, PBD2B	 Peroxisome biogenesis disorder 2B	202370	C	3
+PEX5, PXR1, PTS1R, PBD2A, PBD2B, RCDP5	Peroxisome biogenesis disorder 2A 	214110	C	3
+PEX5, PXR1, PTS1R, PBD2A, PBD2B, RCDP5	 Peroxisome biogenesis disorder 2B	202370	C	3
+PEX5, PXR1, PTS1R, PBD2A, PBD2B, RCDP5	 Rhizomelic chondrodysplasia punctata, type 5	616716	C	3
 PEX6, PXAAA1, PAF2, PBD4A, PDB4B, HMLR2	 Heimler syndrome 2	616617	C	3
 PEX6, PXAAA1, PAF2, PBD4A, PDB4B, HMLR2	Peroxisome biogenesis disorder 4A 	614862	C	3
 PEX6, PXAAA1, PAF2, PBD4A, PDB4B, HMLR2	 Peroxisome biogenesis disorder 4B	614863	C	3
-PEX7, RCDP1, PBD9B	Chondrodysplasia punctata, rhizomelic, type 1	215100	P	3
 PEX7, RCDP1, PBD9B	 Peroxisome biogenesis disorder 9B	614879	P	3
+PEX7, RCDP1, PBD9B	Rhizomelic chondrodysplasia punctata, type 1	215100	P	3
 PFBI	Malaria, intensity of infection	248310	C	2
 PFC, PFD	Properdin deficiency, X-linked	312060	C	3
 PFFE1	Plasmodium falciparum fever episodes QTL1	611384	P	2
@@ -4746,7 +4765,7 @@ PHF11, NYREN34	IgE levels QTL	147050	P	3
 PHF6, BFLS	Borjeson-Forssman-Lehmann syndrome	301900	C	3
 PHF8, ZNF422, KIAA1111, MRXSSD	Mental retardation syndrome, X-linked, Siderius type	300263	C	3
 PHF9, FANCL	Fanconi anemia, complementation group L	614083	P	3
-PHGDH, NLS1, PHGDHD	 Neu-Laxova syndrome1	256520	P	3
+PHGDH, NLS1, PHGDHD	 Neu-Laxova syndrome 1	256520	P	3
 PHGDH, NLS1, PHGDHD	Phosphoglycerate dehydrogenase deficiency	601815	P	3
 PHKA1	Muscle glycogenosis	300559	C	3
 PHKA2, PHK, XLG, PHK, PYKL, GSD9A	Glycogen storage disease, type IXa1	306000	C	3
@@ -4819,7 +4838,7 @@ PLA2G6, IPLA2, INAD1, NBIA2B, NBIA2A, PARK14	 Parkinson disease 14, autosomal re
 PLA2G7, PAFAH, PAFAD	 Asthma, susceptibility to	600807	C	3
 PLA2G7, PAFAH, PAFAD	 Atopy, susceptibility to	147050	C	3
 PLA2G7, PAFAH, PAFAD	Platelet-activating factor acetylhydrolase deficiency	614278	C	3
-PLAG1, SGPA, PSA	Adenomas, salivary gland pleomorphic	181030	C	3
+PLAG1, SGPA, PSA	Adenomas, salivary gland pleomorphic, somatic	181030	C	3
 PLAGL1, ZAC, LOT1	Diabetes mellitus, transient neonatal	601410	C	1
 PLAT, TPA	 Hyperfibrinolysis, familial, due to increased release of PLAT	612348	C	1
 PLAT, TPA	Thrombophilia, familial, due to decreased release of PLAT	612348	C	1
@@ -4839,6 +4858,7 @@ PLEC1, PLEC, PLTN, EBS1, LGMD2Q, EBSOG, EBSPA, EBSMD, EBSND	 Epidermolysis bullo
 PLEC1, PLEC, PLTN, EBS1, LGMD2Q, EBSOG, EBSPA, EBSMD, EBSND	 Epidermolysis bullosa simplex with pyloric atresia	612138	C	3
 PLEC1, PLEC, PLTN, EBS1, LGMD2Q, EBSOG, EBSPA, EBSMD, EBSND	 Muscular dystrophy, limb-girdle, type 2Q	613723	C	3
 PLEKHA1, TAPP1	Age-related maculopathy, susceptibility to	603075	C	2
+PLEKHG2, CLG, LDAMD	Leukodystrophy and acquired microcephaly with or without dystonia	616763	P	3
 PLEKHG5, KIAA0720, DSMA4, CMTRIC	 Charcot-Marie-Tooth disease, recessive intermediate C	615376	C	3
 PLEKHG5, KIAA0720, DSMA4, CMTRIC	Spinal muscular atrophy, distal, autosomal recessive, 4	611067	C	3
 PLEKHM1, AP162, KIAA0356, OPTB6	Osteopetrosis, autosomal recessive 6	611497	P	3
@@ -4890,7 +4910,7 @@ POC1A, PIX2, SOFT	Short stature, onychodysplasia, facial dysmorphism, and hypotr
 POC1B, PIX1, CORD20	Cone-rod dystrophy 20	615973	P	3
 POFUT1, OFUCT1, KIAA0180, DDD2	Dowling-Degos disease 2	615327	P	3
 POGLUT1, CLP46, KTELC1, RUMI, C3orf9, DDD4	Dowling-Degos disease 4	615696	P	3
-POGZ, KIAA0461, MRD37	Mental retardation, autosomal dominant 37	616364	P	3
+POGZ, KIAA0461, MRD37, WHSUS	White-Sutton syndrome	616364	P	3
 POLD1, CRCS10, MDPL	Colorectal cancer, susceptibility to, 10	612591	C	3
 POLD1, CRCS10, MDPL	 Mandibular hypoplasia, deafness, progeroid features, and lipodystrophy syndrome	615381	C	3
 POLE1, CRCS12, FILS	Colorectal cancer, susceptibility to, 12	615083	P	3
@@ -4934,7 +4954,7 @@ POR	 Disordered steroidogenesis due to cytochrome P450 oxidoreductase	613571	C	3
 POROK2, PPPD1	Porokeratosis 2, palmar, plantar, and disseminated	175850	P	2
 POROK4, DSAP2	Porokeratosis 4, disseminated superficial actinic	607728	P	2
 POROK5, DSAP3	Porokeratosis 5, disseminated superficial actinic	612293	P	2
-POROK6, DSAP4	Porokeratosis 6	612353	P	2
+POROK6, DSAP4	Porokeratosis 6, multiple types	612353	P	2
 POT1, CMM10, GLM9	 Glioma susceptibility 9	616568	P	3
 POT1, CMM10, GLM9	Melanoma, cutaneous malignant, susceptibility to, 10	615848	P	3
 POU1F1, PIT1, CPHD1	Pituitary hormone deficiency, combined, 1	613038	C	3
@@ -5193,7 +5213,6 @@ RAF1, CRAF, NS5, CMD1NN	 LEOPARD syndrome 2	611554	C	3
 RAF1, CRAF, NS5, CMD1NN	Noonan syndrome 5	611553	C	3
 RAG1	 Alpha/beta T-cell lymphopenia with gamma/delta T-cell expansion, severe cytomegalovirus infection, and autoimmunity	609889	C	3
 RAG1	 Combined cellular and humoral immune defects with granulomas	233650	C	3
-RAG1	 Omenn syndrome,  603554	179615	C	3
 RAG1	 Omenn syndrome	603554	C	3
 RAG1	Severe combined immunodeficiency, B cell-negative	601457	C	3
 RAG2	 Combined cellular and humoral immune defects with granulomas	233650	C	3
@@ -5263,7 +5282,6 @@ RET, MEN2A, HSCR1	 Renal agenesis	191830	C	3
 RETN, RSTN, FIZZ3	Diabetes mellitus, noninsulin-dependent, susceptibility to	125853	C	3
 RETN, RSTN, FIZZ3	 Hypertension, insulin resistance-related, susceptibility to	125853	C	3
 RFH1, AORF	Nephropathy-hypertension	161900	P	2
-RFMN	Roifman syndrome	300258	P	2
 RFT1, CDG1N	Congenital disorder of glycosylation, type In	612015	C	3
 RFX5	Bare lymphocyte syndrome, type II, complementation group C	209920	C	3
 RFX5	 Bare lymphocyte syndrome, type II, complementation group E	209920	C	3
@@ -5274,8 +5292,9 @@ RGR, RP44	Retinitis pigmentosa 44	613769	C	3
 RGS5	Blood pressure regulation QTL	145500	P	2
 RGS9BP, R9AP, RGS9, PERRS	Bradyopsia	608415	P	3
 RGS9, PERRS	Bradyopsia	608415	C	3
-RHAG, RH50A	Anemia, hemolytic, Rh-null, regulator type	268150	C	3
-RHAG, RH50A	 Rh-mod syndrome	180297	C	3
+RHAG, RH50A, OHS	Anemia, hemolytic, Rh-null, regulator type	268150	C	3
+RHAG, RH50A, OHS	 Overhydrated hereditary stomatocytosis	185000	C	3
+RHAG, RH50A, OHS	 Rh-mod syndrome	180297	C	3
 RHBDF2, IRHOM2, TOC	Tylosis with esophageal cancer	148500	P	3
 RHCE	Blood group, Rhesus	111690	C	3
 RHCE	 Rh-null disease, amorph type	111700	C	3
@@ -5288,7 +5307,7 @@ RIEG2, RGS2	Rieger syndrome, type 2	601499	C	2
 RIL	Osteoporosis, susceptibility to	166710	P	3
 RIMS1, RIM1, RIM, KIAA0340, CORD7	Cone-rod dystrophy 7	603649	C	3
 RIN2, MACS	Macrocephaly, alopecia, cutis laxa, and scoliosis	613075	P	3
-RIPK4, NKRD3, DIK, PPS2	Popliteal pterygium syndrome 2, lethal type	263650	P	3
+RIPK4, NKRD3, DIK, PPS2	Popliteal pterygium syndrome, Bartsocas-Papas type	263650	P	3
 RIT1, RIT, ROC1, NS8	Noonan syndrome 8	615355	P	3
 RJBS	Rajab syndrome	613658	P	2
 RLBP1	 Bothnia retinal dystrophy	607475	P	3
@@ -5324,7 +5343,8 @@ RNF212, ZHP3	Recombination rate QTL 1	612042	P	3
 RNF213, ALO17, KIAA1618, MYMY2	Moyamoya disease 2, susceptibility to	607151	P	3
 RNF216, TRIAD3, ZIN, CAHH	Cerebellar ataxia and hypogonadotropic hypogonadism	212840	P	3
 RNF6	Esophageal carcinoma, somatic	133239	C	3
-RNU4ATAC, U4ATAC, MOPD1, TALS	Microcephalic osteodysplastic primordial dwarfism, type I	210710	P	3
+RNU4ATAC, U4ATAC, MOPD1, TALS, RFMN	Microcephalic osteodysplastic primordial dwarfism, type I	210710	P	3
+RNU4ATAC, U4ATAC, MOPD1, TALS, RFMN	 Roifman syndrome	616651	P	3
 ROBO2, SAX3, KIAA1568	Vesicoureteral reflux 2	610878	P	3
 ROBO3, RBIG1, RIG1, HGPPS	Gaze palsy, horizontal, with progressive scoliosis	607313	C	3
 ROGDI, KTZS	Kohlschutter-Tonz syndrome	226750	P	3
@@ -5385,10 +5405,12 @@ RSPH9, CILD12	Ciliary dyskinesia, primary, 12	612650	P	3
 RSPO1, FLJ40906	 Palmoplantar hyperkeratosis and true hermaphroditism	610644	P	3
 RSPO1, FLJ40906	Palmoplantar hyperkeratosis with squamous cell carcinoma of skin and sex reversal	610644	P	3
 RSPO4, CRISTIN4	Anonychia congenita	206800	P	3
+RSPRY1, KIAA1972, SEMDFA	Spondylopeimetaphyseal dsyplasia, Faden-Alkuraya type	616723	P	3
 RTEL1, C20orf41, NHL, KIAA1088, DKCB5, DKCA4, PFBMFT3	 Dyskeratosis congenita, autosomal dominant 4	615190	C	3
 RTEL1, C20orf41, NHL, KIAA1088, DKCB5, DKCA4, PFBMFT3	Dyskeratosis congenita, autosomal recessive 5	615190	C	3
 RTEL1, C20orf41, NHL, KIAA1088, DKCB5, DKCA4, PFBMFT3	 Pulmonary fibrosis and/or bone marrow failure, telomere-related, 3	616373	C	3
 RTN2, NSPL1, SPG12	Spastic paraplegia 12, autosomal dominant	604805	P	3
+RTN4IP1, NIMP, OPA10	Optic atrophy 10 with or without ataxia, mental retardation, and seizures	616732	P	3
 RTN4R, NOGOR	Schizophrenia, susceptibility to	181500	P	3
 RTTN, PMGYS	Polymicrogyria with seizures	614833	P	3
 RUNX1, CBFA2, AML1	Leukemia, acute myeloid	601626	C	3
@@ -5496,6 +5518,7 @@ SCO1, SCOD1	Mitochondrial complex IV deficiency	220110	P	3
 SCO2, CEMCOX1, MYP6	Cardioencephalomyopathy, fatal infantile, due to cytochrome c oxidase deficiency 1	604377	C	3
 SCO2, CEMCOX1, MYP6	 Myopia 6	608908	C	3
 SCP2	Leukoencephalopathy with dystonia and motor neuropathy	613724	C	3
+SCYL1, NTKL, SCAR21	Spinocerebellar ataxia, autosomal recessive 21	616719	P	3
 SCZD10	Schizophrenia 10	605419	P	2
 SCZD11	Schizophrenia	181500	P	2
 SCZD12	Schizophrenia 12	181500	P	2
@@ -5541,7 +5564,6 @@ SECISBP2, SBP2	Thyroid hormone metabolism, abnormal	609698	C	3
 SELE, ELAM1	Blood pressure regulation QTL	145500	C	2
 SELP, GRMP	Atopy, susceptibility to	147050	C	3
 SEMA3A, SEMAD, COLL1, HH16	Hypogonadotropic hypogonadism 16 with or without anosmia	614897	P	3
-SEMA3E, SEMAH, KIAA0331	CHARGE syndrome	214800	P	3
 SEMA4A, SEMB, RP35, CORD10	 Cone-rod dystrophy 10	610283	P	3
 SEMA4A, SEMB, RP35, CORD10	Retinitis pigmentosa 35	610282	P	3
 SEMA7A, SEMAL, SEMAK1, CDW108, JMH	Blood group, John-Milton-Hagen system	614745	C	3
@@ -5635,7 +5657,8 @@ SKIV2L, SKI2, SKI2W, THES2	Trichohepatoenteric syndrome 2	614602	P	3
 SLC10A2, NTCP2, PBAM	Bile acid malabsorption, primary	613291	C	3
 SLC12A1, NKCC2	Bartter syndrome, type 1	601678	C	3
 SLC12A3, NCCT, TSC	Gitelman syndrome	263800	C	3
-SLC12A5, KCC2, KIAA1176, EIEE34	Epileptic encephalopathy, early infantile, 34	616645	C	3
+SLC12A5, KCC2, KIAA1176, EIEE34, EIG14	 Epilepsy, idiopathic generalized, susceptibility to, 14	616685	C	3
+SLC12A5, KCC2, KIAA1176, EIEE34, EIG14	Epileptic encephalopathy, early infantile, 34	616645	C	3
 SLC12A6, KCC3A, KCC3B, KCC3, ACCPN	Agenesis of the corpus callosum with peripheral neuropathy	218000	C	3
 SLC13A5, NACT, EIEE25	Epileptic encephalopathy, early infantile, 25	615905	C	3
 SLC14A1, JK, UTE, UT1	Blood group, Kidd	111000	C	3
@@ -5655,6 +5678,7 @@ SLC19A3, THMD2, BBGD	Thiamine metabolism dysfunction syndrome 2 	607483	C	3
 SLC1A1, EAAC1, SCZD18, DCBXA	 Dicarboxylic aminoaciduria	222730	P	3
 SLC1A1, EAAC1, SCZD18, DCBXA	Schizophrenia susceptibility 18	615232	P	3
 SLC1A3, EAAT1, EA6	Episodic ataxia, type 6	612656	C	3
+SLC1A4, SATT, ASCT1, SPATCCM	Spastic tetraplegia, thin corpus callosum, and progressive microcephaly	616657	P	3
 SLC20A2, MLVAR, GLVR2, IBGC1	Basal ganglia calcification, idiopathic, 1	213600	C	3
 SLC22A12, OAT4L, URAT1	Hypouricemia, renal	220150	P	3
 SLC22A1L, BWSCR1A, IMPT1	Breast cancer, somatic	114480	P	3
@@ -5695,10 +5719,11 @@ SLC26A8, TAT1, SPGF3	Spermatogenic failure 3	606766	P	3
 SLC27A4, FATP4, IPS	Ichthyosis prematurity syndrome	608649	P	3
 SLC29A3, ENT3, PHID, HCLAP	Histiocytosis-lymphadenopathy plus syndrome	602782	P	3
 SLC2A10, GLUT10, ATS	Arterial tortuosity syndrome	208050	C	3
-SLC2A1, GLUT1, DYT18, PED, GLUT1DS, EIG12, DYT9	 Dystonia 9	601042	C	3
-SLC2A1, GLUT1, DYT18, PED, GLUT1DS, EIG12, DYT9	 Epilepsy, idiopathic generalized, suscpetibility to, 12	614847	C	3
-SLC2A1, GLUT1, DYT18, PED, GLUT1DS, EIG12, DYT9	GLUT1 deficiency syndrome 1	606777	C	3
-SLC2A1, GLUT1, DYT18, PED, GLUT1DS, EIG12, DYT9	 GLUT1 deficiency syndrome 2	612126	C	3
+SLC2A1, GLUT1, DYT18, PED, GLUT1DS, EIG12, DYT9, SDCHCN	 Dystonia 9	601042	C	3
+SLC2A1, GLUT1, DYT18, PED, GLUT1DS, EIG12, DYT9, SDCHCN	 Epilepsy, idiopathic generalized, susceptibility to, 12	614847	C	3
+SLC2A1, GLUT1, DYT18, PED, GLUT1DS, EIG12, DYT9, SDCHCN	GLUT1 deficiency syndrome 1, infantile onset, severe	606777	C	3
+SLC2A1, GLUT1, DYT18, PED, GLUT1DS, EIG12, DYT9, SDCHCN	 GLUT1 deficiency syndrome 2, childhood onset	612126	C	3
+SLC2A1, GLUT1, DYT18, PED, GLUT1DS, EIG12, DYT9, SDCHCN	 Stomatin-deficient cryohydrocytosis with neurologic defects	608885	C	3
 SLC2A2, GLUT2	Diabetes mellitus, noninsulin-dependent	125853	C	3
 SLC2A2, GLUT2	 Fanconi-Bickel syndrome	227810	C	3
 SLC2A9, GLUT9, UAQTL2	 Hypouricemia, renal, 2	612076	P	3
@@ -5725,6 +5750,7 @@ SLC38A8, FVH2	Foveal hypoplasia 2, with or without optic nerve misrouting and/or
 SLC39A13	Spondylocheirodysplasia, Ehlers-Danlos syndrome-like	612350	P	3
 SLC39A4, ZIP4	Acrodermatitis enteropathica	201100	C	3
 SLC39A5, MYP24	Myopia 24, autosomal dominant	615946	P	3
+SLC39A8, BIGM103, CDG2N	Congenital disorder of glycosylation, type IIn	616721	P	3
 SLC3A1, ATR1, D2H, NBAT	Cystinuria	220100	C	3
 SLC40A1, SLC11A3, FPN1, IREG1, HFE4	Hemochromatosis, type 4	606069	C	3
 SLC45A2, MATP, AIM1, SHEP5, OCA4	Albinism, oculocutaneous, type IV	606574	P	3
@@ -5735,16 +5761,17 @@ SLC46A1, HCP1, PCFT	Folate malabsorption, hereditary	229050	P	3
 SLC4A11, BTR1, NABC1, CHED2, CDPD, FECD4	 Corneal dystrophy, Fuchs endothelial, 4	613268	C	3
 SLC4A11, BTR1, NABC1, CHED2, CDPD, FECD4	Corneal endothelial dystrophy 2, autosomal recessive	217700	C	3
 SLC4A11, BTR1, NABC1, CHED2, CDPD, FECD4	 Corneal endothelial dystrophy and perceptive deafness	217400	C	3
-SLC4A1, AE1, EPB3, SPH4, SAO	 Blood group, Diego	110500	C	3
-SLC4A1, AE1, EPB3, SPH4, SAO	 Blood group, Froese	601551	C	3
-SLC4A1, AE1, EPB3, SPH4, SAO	 Blood group, Swann	601550	C	3
-SLC4A1, AE1, EPB3, SPH4, SAO	 Blood group, Waldner	112010	C	3
-SLC4A1, AE1, EPB3, SPH4, SAO	 Blood group, Wright	112050	C	3
-SLC4A1, AE1, EPB3, SPH4, SAO	 Malaria, resistance to	611162	C	3
-SLC4A1, AE1, EPB3, SPH4, SAO	Ovalocytosis, SA type	166900	C	3
-SLC4A1, AE1, EPB3, SPH4, SAO	 Renal tubular acidosis, distal, AD	179800	C	3
-SLC4A1, AE1, EPB3, SPH4, SAO	 Renal tubular acidosis, distal, AR	611590	C	3
-SLC4A1, AE1, EPB3, SPH4, SAO	 Spherocytosis, type 4	612653	C	3
+SLC4A1, AE1, EPB3, SPH4, SAO, CHC	 Blood group, Diego	110500	C	3
+SLC4A1, AE1, EPB3, SPH4, SAO, CHC	 Blood group, Froese	601551	C	3
+SLC4A1, AE1, EPB3, SPH4, SAO, CHC	 Blood group, Swann	601550	C	3
+SLC4A1, AE1, EPB3, SPH4, SAO, CHC	 Blood group, Waldner	112010	C	3
+SLC4A1, AE1, EPB3, SPH4, SAO, CHC	 Blood group, Wright	112050	C	3
+SLC4A1, AE1, EPB3, SPH4, SAO, CHC	 Cryohydrocytosis	185020	C	3
+SLC4A1, AE1, EPB3, SPH4, SAO, CHC	 Malaria, resistance to	611162	C	3
+SLC4A1, AE1, EPB3, SPH4, SAO, CHC	Ovalocytosis, SA type	166900	C	3
+SLC4A1, AE1, EPB3, SPH4, SAO, CHC	 Renal tubular acidosis, distal, AD	179800	C	3
+SLC4A1, AE1, EPB3, SPH4, SAO, CHC	 Renal tubular acidosis, distal, AR	611590	C	3
+SLC4A1, AE1, EPB3, SPH4, SAO, CHC	 Spherocytosis, type 4	612653	C	3
 SLC4A4, NBC1, KNBC	Renal tubular acidosis, proximal, with ocular abnormalities	604278	P	3
 SLC52A1, GPR172B, GPCR42, PAR2, FLJ10060, RBFVD	Riboflavin deficiency	615026	P	3
 SLC52A2, GPR172A, GPCR41, PAR1, FLJ11856, BVVLS2	Brown-Vialetto-Van Laere syndrome 2	614707	P	3
@@ -5886,8 +5913,9 @@ SPDA3	Spondyloarthropathy, susceptibility to, 3	613238	P	2
 SPDT	Spondyloepiphyseal dysplasia tarda, autosomal dominant	184100	P	2
 SPECC1L, KIAA0376, OBLFC1, GBBB2	 Opitz GBBB syndrome, type II	145410	P	3
 SPEG, APEG1, CNM5	Centronuclear myopathy 5	615959	P	3
-SPG11, KIAA1840, FLJ21439, ALS5	 Amyotrophic lateral sclerosis 5, juvenile	602099	C	3
-SPG11, KIAA1840, FLJ21439, ALS5	Spastic paraplegia 11, autosomal recessive	604360	C	3
+SPG11, KIAA1840, FLJ21439, ALS5, CMT2X	 Amyotrophic lateral sclerosis 5, juvenile	602099	C	3
+SPG11, KIAA1840, FLJ21439, ALS5, CMT2X	 Charcot-Marie-Tooth disease, axonal, type 2X	616668	C	3
+SPG11, KIAA1840, FLJ21439, ALS5, CMT2X	Spastic paraplegia 11, autosomal recessive	604360	C	3
 SPG14	Spastic paraplegia 14, autosomal recessive	605229	P	2
 SPG16	Spastic paraplegia 16, X-linked, complicated	300266	P	2
 SPG19	Spastic paraplegia 19, autosomal dominant	607152	P	2
@@ -5960,9 +5988,9 @@ STAR	Lipoid adrenal hyperplasia	201710	P	3
 STAT1, CANDF7, IMD31A, IMD31B, IMD31C	Immunodeficiency 31A, mycobacteriosis, autosomal dominant	614892	P	3
 STAT1, CANDF7, IMD31A, IMD31B, IMD31C	 Immunodeficiency 31B, mycobacterial and viral infections, autosomal recessive	613796	P	3
 STAT1, CANDF7, IMD31A, IMD31B, IMD31C	 Immunodeficiency 31C, autosomal dominant	614162	P	3
+STAT2, IMD44	Immunodeficiency 44	616636	P	3
 STAT3, APRF, HIES, ADMIO	 Autoimmune disease, multisystem, infantile-onset	615952	P	3
 STAT3, APRF, HIES, ADMIO	Hyper-IgE recurrent infection syndrome	147060	P	3
-STAT4, SLEB11	Systemic lupus erythematosus, susceptibility to, 11,  612253	600558	P	3
 STAT4, SLEB11	Systemic lupus erythematosus, susceptibility to, 11	612253	P	3
 STAT5B	 Growth hormone insensitivity with immunodeficiency	245590	P	3
 STAT5B	Leukemia, acute promyelocytic, somatic	102578	P	3
@@ -6029,8 +6057,9 @@ SUMF1, FGE	Multiple sulfatase deficiency	272200	P	3
 SUMO1, UBL1, SMT3, OFC10	Orofacial cleft 10	613705	C	3
 SUMO4, IDDM5	Diabetes mellitus, insulin-dependent, 5	600320	C	3
 SUOX	Sulfite oxidase deficiency	272300	P	3
-SURF1	Leigh syndrome, due to COX deficiency	256000	C	3
-SXGQTL1	Sex hormone-binding blobulin circulating level QTL 1	613498	P	2
+SURF1, CMT4K	 Charcot-Marie-Tooth disease, type 4K	616684	C	3
+SURF1, CMT4K	Leigh syndrome, due to COX IV deficiency	256000	C	3
+SXGQTL1	Sex hormone-binding globulin circulating level QTL 1	613498	P	2
 SXI2	X inactivation, familial skewed, 2	300179	P	2
 SYCP3, SCP3, COR1, SPGF4	 Pregnancy loss, susceptibility to	604759	P	3
 SYCP3, SCP3, COR1, SPGF4	Spermatogenic failure 4	270960	P	3
@@ -6053,7 +6082,8 @@ TACO1, CCDC44	Mitochondrial complex IV deficiency	220110	P	3
 TACR3, NK3R, HH11	Hypogonadotropic hypogonadism 11 with or without anosmia	614840	P	3
 TACSTD2, TROP2, M1S1	Corneal dystrophy, gelatinous drop-like	204870	C	3
 TAF15, TAF2N, RBP56	Chondrosarcoma, extraskeletal myxoid	612237	C	1
-TAF1, TAF2A, CCG1, BA2R, DYT3	Dystonia-Parkinsonism, X-linked	314250	C	3
+TAF1, TAF2A, CCG1, BA2R, DYT3, MRXS33	Dystonia-Parkinsonism, X-linked	314250	C	3
+TAF1, TAF2A, CCG1, BA2R, DYT3, MRXS33	 Mental retardation, X-linked, syndromic 33	300966	C	3
 TAF2, TAF2B, TAFII150, CIF150, MRT40	Mental retardation, autosomal recessive 40	615599	P	3
 TAL1, TCL5, SCL	Leukemia, T-cell acute lymphocytic, somatic	613065	C	3
 TAL2	Leukemia, T-cell acute lymphocytic, somatic	613065	P	3
@@ -6085,7 +6115,7 @@ TBK1, NAK, FTDALS4	Frontotemporal dementia and/or amyotrophic lateral sclerosis 
 TBP, SCA17, HDL4	 Parkinson disease, susceptibility to	168600	C	3
 TBP, SCA17, HDL4	Spinocerebellar ataxia 17	607136	C	3
 TBX15	Cousin syndrome	260660	P	3
-TBX18, CAKUT2	Congenital anomalies of kidney and urinary tract 2	143100	P	3
+TBX18, CAKUT2	Congenital anomalies of kidney and urinary tract 2	143400	P	3
 TBX19	Adrenocorticotropic hormone deficiency	201400	P	3
 TBX1, DGS, CTHM, CAFS, TGA, DORV, VCFS, DGCR	Conotruncal anomaly face syndrome	217095	C	3
 TBX1, DGS, CTHM, CAFS, TGA, DORV, VCFS, DGCR	 DiGeorge syndrome	188400	C	3
@@ -6117,6 +6147,7 @@ TCL4	Leukemia/lymphoma, T-cell	186860	P	2
 TCN2, TC2	Transcobalamin II deficiency	275350	C	3
 TCOF1, MFD1, TCS1	Treacher Collins syndrome 1	154500	C	3
 TCO	Thyroid carcinoma, nonmedullary, with cell oxyphilia	603386	P	2
+TCTN2, TECT2, MKS8, JBTS24	 Joubert syndrome 24	616654	P	3
 TCTN3, TECT3, C10orf61, OFD4, JBTS18	 Joubert syndrome 18	614815	P	3
 TCTN3, TECT3, C10orf61, OFD4, JBTS18	Orofaciodigital syndrome IV	258860	P	3
 TDGF1	Forebrain defects	187395	C	3
@@ -6132,6 +6163,7 @@ TEC	Transient erythroblastopenia of childhood	227050	P	2
 TEK, TIE2, VMCM	Venous malformations, multiple cutaneous and mucosal	600195	C	3
 TELM	Telomere length, mean leukocyte	609113	P	2
 TEMPS	Temple syndrome	616222	P	4
+TENM4, ODZ4, TNM4, DOC4, KIAA1302, ETM5	Tremor, hereditary essential, 5	616736	P	3
 TERC, TRC3, TR, DKCA1, PFBMFT2	 Aplastic anemia	614743	P	3
 TERC, TRC3, TR, DKCA1, PFBMFT2	Dyskeratosis congenita, autosomal dominant 1	127550	P	3
 TERC, TRC3, TR, DKCA1, PFBMFT2	 Pulmonary fibrosis, idiopathic, susceptibility to	614743	P	3
@@ -6167,7 +6199,7 @@ TGFBI, CSD2, CDGG1, CSD, BIGH3, CDG2, EBMD	 Corneal dystrophy, lattice type IIIA
 TGFBI, CSD2, CDGG1, CSD, BIGH3, CDG2, EBMD	 Corneal dystrophy, Reis-Bucklers type	608470	C	3
 TGFBI, CSD2, CDGG1, CSD, BIGH3, CDG2, EBMD	 Corneal dystrophy, Thiel-Behnke type	602082	C	3
 TGFBR1, ALK5, AAT5, LDS1, MSSE	Loeys-Dietz syndrome 1	609192	C	3
-TGFBR1, ALK5, AAT5, LDS1, MSSE	 Multiple self-healing squamous epithelioma, susceptiblity to	132800	C	3
+TGFBR1, ALK5, AAT5, LDS1, MSSE	 Multiple self-healing squamous epithelioma, susceptibility to	132800	C	3
 TGFBR2, HNPCC6, AAT3, MFS2, LDS2	Colorectal cancer, hereditary nonpolyposis, type 6	614331	C	3
 TGFBR2, HNPCC6, AAT3, MFS2, LDS2	 Esophageal cancer, somatic	133239	C	3
 TGFBR2, HNPCC6, AAT3, MFS2, LDS2	 Loeys-Dietz syndrome 2	610168	C	3
@@ -6253,6 +6285,7 @@ TMLHE, BBOX2, TMLH, TMLHED, AUTSX6	Epsilon-trimethyllysine hydroxylase deficienc
 TMPRSS3, ECHOS1, DFNB8, DFNB10	Deafness, autosomal recessive 8/10	601072	C	3
 TMPRSS6, IRIDA	Iron-refractory iron deficiency anemia	206200	C	3
 TNC, HXB, DFNA56	Deafness, autosomal dominant 56	615629	C	3
+TNFAIP3, A20, OTUD7C, AISBL	Autoinflammatory syndrome, familial, Behcet-like	616744	P	3
 TNFRSF10B, DR5, TRAILR2	Squamous cell carcinoma, head and neck	275355	C	3
 TNFRSF11A, RANK, ODFR, FEO, OPTB7, PDB2	Osteolysis, familial expansile	174810	C	3
 TNFRSF11A, RANK, ODFR, FEO, OPTB7, PDB2	 Osteopetrosis, autosomal recessive 7	612301	C	3
@@ -6439,7 +6472,8 @@ TUBB3, TUBB4, CFEOM3A, CDCBM1	 Cortical dysplasia, complex, with other brain mal
 TUBB3, TUBB4, CFEOM3A, CDCBM1	Fibrosis of extraocular muscles, congenital, 3A	600638	P	3
 TUBB4A, DYT4, HLD6	Dystonia 4, torsion, autosomal dominant	128101	P	3
 TUBB4A, DYT4, HLD6	 Leukodystrophy, hypomyelinating, 6	612438	P	3
-TUBB, TUBB5, M40, CDCBM6	Cortical dysplasia, complex, with other brain malformations 6	615771	C	3
+TUBB, TUBB5, M40, CDCBM6, CSCSC1	Cortical dysplasia, complex, with other brain malformations 6	615771	C	3
+TUBB, TUBB5, M40, CDCBM6, CSCSC1	 Symmetric circumferential skin creases, congenital, 1	156610	C	3
 TUBG1, CDCBM4	Cortical dysplasia, complex, with other brain malformations 4	615412	P	3
 TUBGCP4, GCP4, MCCRP3	Microcephaly and chorioretinopathy, autosomal recessive, 3	616335	P	3
 TUBGCP6, GCP6, KIAA1669, MCCRP1	Microcephaly and chorioretinopathy, autosomal recessive, 1	251270	P	3
@@ -6520,7 +6554,7 @@ USP9Y, DFFRY, SPGFY2	Spermatogenic failure, Y-linked, 2	415000	P	3
 UVM1	Melanoma, uveal, susceptibility to, 1	606660	P	2
 UVM2	Melanoma, uveal, susceptibility to, 2	606661	C	2
 UVSSA, KIAA1530, UVSS3	UV-sensitive syndrome 3	614640	C	3
-VAMAS6	Vitiligo-associated multiple autoimmune disease susceptiblity 6	193200	P	2
+VAMAS6	Vitiligo-associated multiple autoimmune disease susceptibility 6	193200	P	2
 VAMP1, SYB1, SPAX1	Spastic ataxia 1, autosomal dominant	108600	C	3
 VANGL1, STBM2	Caudal regression syndrome	600145	P	3
 VANGL1, STBM2	 Neural tube defects, susceptibility to	182940	P	3
@@ -6531,8 +6565,9 @@ VARS2, KIAA1885, COXPD20	Combined oxidative phosphorylation deficiency 20	615917
 VCAN, CSPG2, WGN, WGN1, ERVR	Wagner syndrome 1	143200	C	3
 VCL, CMD1W, CMH15	Cardiomyopathy, dilated, 1W	611407	C	3
 VCL, CMD1W, CMH15	 Cardiomyopathy, hypertrophic, 15	613255	C	3
-VCP, IBMPFD1, ALS14	 Amyotrophic lateral sclerosis 14, with or without frontotemporal dementia	613954	C	3
-VCP, IBMPFD1, ALS14	Inclusion body myopathy with early-onset Paget disease and frontotemporal dementia 1	167320	C	3
+VCP, IBMPFD1, ALS14, CMT2Y	 Amyotrophic lateral sclerosis 14, with or without frontotemporal dementia	613954	C	3
+VCP, IBMPFD1, ALS14, CMT2Y	 Charcot-Marie-Tooth disease, type 2Y	616687	C	3
+VCP, IBMPFD1, ALS14, CMT2Y	Inclusion body myopathy with early-onset Paget disease and frontotemporal dementia 1	167320	C	3
 VDR	 Osteoporosis, involutional	166710	P	1
 VDR	Rickets, vitamin D-resistant, type IIA	277440	P	3
 VEGFC, VRP, LMPH1D	Lymphedema, hereditary, ID	615907	P	3
@@ -6543,13 +6578,13 @@ VHL	 Pheochromocytoma	171300	C	3
 VHL	 Renal cell carcinoma, somatic	144700	C	3
 VHL	von Hippel-Lindau syndrome	193300	C	3
 VIL1	Cholestasis, progressive canalicular	193040	C	1
-VIM, CTRCT30	Cataract 30, pulverulent	116300	C	3
 VIPAS39, VIPAR, SPE39, C14orf133	Arthrogryposis, renal dysfunction, and cholestasis 2	613404	P	3
 VKORC1, VKOR, VKCFD2, FLJ00289	Vitamin K-dependent clotting factors, combined deficiency of, 2	607473	C	3
 VKORC1, VKOR, VKCFD2, FLJ00289	 Warfarin resistance	122700	C	3
 VLDLR, CAMRQ1	Cerebellar hypoplasia and mental retardation with or without quadrupedal locomotion 1	224050	C	3
 VMA21, XMEA	Myopathy, X-linked, with excessive autophagy	310440	P	3
 VNN1, HDLCQ8	High density lipoprotein cholesterol level QTL 8	603570	C	3
+VPS11, HLD12	Leukodystrophy, hypomyelinating, 12	616683	P	3
 VPS13A, CHAC	Choreoacanthocytosis	200150	C	3
 VPS13B, KIAA0532, COH1	Cohen syndrome	216550	C	3
 VPS33B	Arthrogryposis, renal dysfunction, and cholestasis 1	208085	P	3
@@ -6572,6 +6607,7 @@ VVS	Syncope, familial vasovagal	609289	P	2
 VWF, F8VWF	 von Willebrand disease, type 1	193400	C	3
 VWF, F8VWF	von Willebrand disease, types 2A, 2B, 2M, and 2N	613554	C	3
 VWF, F8VWF	 von Willibrand disease, type 3	277480	C	3
+WAC, KIAA1844, DESSH	Desanto-Shinawi syndrome	616708	P	3
 WAGRO, DEL11p14p12	WAGRO syndrome	612469	P	4
 WAS, IMD2, THC1, SCNX	 Neutropenia, severe congenital, X-linked	300299	C	3
 WAS, IMD2, THC1, SCNX	 Thrombocytopenia, X-linked	313900	C	3
@@ -6662,6 +6698,7 @@ YAP1, COB1	 Coloboma, ocular	120433	P	3
 YAP1, COB1	Coloboma, ocular, with or without hearing impairment, cleft lip/palate, and/or mental retardation	120433	P	3
 YARS2, TYRRS, MLASA2	Myopathy, lactic acidosis, and sideroblastic anemia 2	613561	P	3
 YARS, CMTDIC, TYRRS, YTS, YRS	Charcot-Marie-Tooth disease, dominant intermediate C	608323	C	3
+YUHAL	Yuan-Harel-Lupski syndrome	616652	C	4
 ZAP70, SRK, STD, STCD	Selective T-cell defect	269840	C	3
 ZBTB16, ZNF145, PLZF	Leukemia, acute promyelocytic, PL2F/RARA type	176797	C	3
 ZBTB16, ZNF145, PLZF	 Skeletal defects, genital hypoplasia, and mental retardation	612447	C	3

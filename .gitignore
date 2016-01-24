@@ -1,6 +1,6 @@
 lib/*
 lib/humandb/*
 !lib/compiled_database
-lib/compiled_database/GENECARDS_GENE_DISEASE_SCORE
+lib/compiled_database/DB_GENECARDS_GENE_DISEASE_SCORE
 out/*
 !out/README
