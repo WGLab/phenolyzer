@@ -2,7 +2,7 @@ use strict;
 use warnings;
 use Scalar::Util qw(looks_like_number);
 open(CLINVAR,"../clinVar_genemap_20150515.txt") or die;
-open(OMIM1,"../omim_genemap_20160124.txt") or die;
+open(OMIM1,"../omim_genemap_20160301.txt") or die;
 #open(OMIM2,"../omim_genemap2_20160124.txt") or die;
 open(ORPHANET,"../orphanet_genemap.txt") or die;
 open(GWAS, "../gwas_catalog_dev") or die;                         
