@@ -6,6 +6,7 @@ use Getopt::Long;
 use Cwd;
 use File::Basename;
 use Bio::OntologyIO;
+use Graph::Directed;
 use warnings;
 my $out_directory = cwd();
 my $dirname = dirname(__FILE__);
