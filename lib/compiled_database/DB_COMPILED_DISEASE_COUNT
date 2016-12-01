@@ -69,7 +69,6 @@ DISEASE	DISEASE_COUNT
 3 beta hydroxysteroid dehydrogenase deficiency late onset congenital adrenal hyperplasia	unknown	1
 3 beta Hydroxysteroid dehydrogenase deficiency	OMIM:201810	1
 3 beta Hydroxysteroid dehydrogenase deficiency	umls:C0342471	1
-3 beta hydroxysteroid dehydrogenase type II deficiency	OMIM:201810	1
 3C syndrome	ORPHANET:7	1
 3 hydroxy 3 methylglutaric aciduria	ORPHANET:20	1
 3 HYDROXY 3 METHYLGLUTARYL CoA LYASE DEFICIENCY	umls:C1415614	1
@@ -176,7 +175,6 @@ DISEASE	DISEASE_COUNT
 5q syndrome glanzmanns thrombasthenia	unknown	1
 5q syndrome	OMIM:153550	1
 5q syndrome sickle cell disease  6	unknown	1
-6 mercaptopurine sensitivity	OMIM:610460	1
 6 pyruvoyl tetrahydropterin synthase deficiency hyperphenylalaninemia bh4 deficient a  14	unknown	1
 6 pyruvoyl tetrahydropterin synthase deficiency	OMIM:261640	1
 6 pyruvoyl tetrahydropterin synthase deficiency	ORPHANET:13	1
@@ -654,7 +652,10 @@ Adrenal cortical carcinoma	OMIM:202300	1
 Adrenal Gland Diseases	umls:C0001621	1
 Adrenal hyperplasia 2	umls:C2931782	1
 Adrenal hyperplasia congenital due to 11 beta hydroxylase deficiency	OMIM:202010	1
+Adrenal hyperplasia congenital due to 3 beta hydroxysteroid dehydrogenase 2 deficiency	OMIM:201810	1
 Adrenal hyperplasia congenital type 5	umls:C0268285	1
+Adrenal hypoplasia congenital 	OMIM:300200	1
+Adrenal hypoplasia congenital	OMIM:300200	1
 adrenal hypoplasia congenital 	unknown	1
 ADRENAL INSUFFICIENCY CONGENITAL 	umls:C3151055	1
 Adrenocortical carcinoma hereditary	OMIM:202300	1
@@ -752,12 +753,12 @@ AGAMMAGLOBULINEMIA 4 AUTOSOMAL RECESSIVE	umls:C3150752	1
 Agammaglobulinemia 4	OMIM:613502	1
 agammaglobulinemia 4	unknown	1
 Agammaglobulinemia 5 autosomal dominant	OMIM:613506	1
-Agammaglobulinemia 5	OMIM:613506	1
 agammaglobulinemia 6 agammaglobulinemia  7	unknown	1
 Agammaglobulinemia 6 autosomal recessive	OMIM:612692	1
 AGAMMAGLOBULINEMIA 6 AUTOSOMAL RECESSIVE	umls:C3150207	1
 Agammaglobulinemia 6	OMIM:612692	1
 Agammaglobulinemia 7 autosomal recessive	OMIM:615214	1
+Agammaglobulinemia 8 autosomal dominant	OMIM:616941	1
 agammaglobulinemia agammaglobulinemia 5	unknown	1
 Agammaglobulinemia and isolated hormone deficiency	OMIM:307200	1
 Agammaglobulinemia non Bruton type	OMIM:601495	1
@@ -1281,7 +1282,7 @@ alveolar echinococcosis	PUBMED:11798795 11798795	1
 alveolar rhabdomyosarcoma nephroblastoma	unknown	1
 alveoli adenoma	unknown	1
 Alveolitis Extrinsic Allergic	umls:C0002390	1
-Alzheimer disease 10	OMIM:104300	1
+Alzheimer disease 10	OMIM:609636	1
 Alzheimer Disease 10	umls:C1864828	1
 alzheimer disease 10	unknown	1
 Alzheimer disease 11	OMIM:609790	1
@@ -1297,22 +1298,21 @@ Alzheimer Disease 15	umls:C1970143	1
 Alzheimer disease 16	OMIM:300756	1
 Alzheimer Disease 16	umls:C2677888	1
 Alzheimer disease 17	OMIM:615080	1
-Alzheimer disease 19 late onset	OMIM:615711	1
 Alzheimer disease 19	OMIM:615711	1
 Alzheimer disease 1 familial	OMIM:104300	1
 Alzheimer disease 2	OMIM:104310	1
-Alzheimer disease 5	OMIM:104300	1
+Alzheimer disease 5	OMIM:602096	1
 Alzheimer Disease 5	umls:C1865868	1
-Alzheimer disease 6	OMIM:104300	1
+Alzheimer disease 6	OMIM:605526	1
 Alzheimer Disease 6	umls:C1854187	1
 alzheimer disease 6	unknown	1
 Alzheimer disease 7	OMIM:606187	1
 Alzheimer Disease 7	umls:C1853555	1
-Alzheimer disease 8	OMIM:104300	1
+Alzheimer disease 8	OMIM:607116	1
 Alzheimer Disease 8	umls:C1846735	1
 alzheimer disease 8	unknown	1
-Alzheimer disease 9 late onset	OMIM:104300	1
 alzheimer disease 9 late onset	unknown	1
+Alzheimer disease 9	OMIM:608907	1
 Alzheimer Disease 9	umls:C1837149	1
 alzheimer disease abeta load in brain	PUBMED:11389157 11389157	1
 alzheimer disease aggressive behavior	PUBMED:15182943 15182943	1
@@ -1344,7 +1344,6 @@ alzheimer disease parkinson disease multiple system atrophy	PUBMED:15838855 1583
 alzheimer disease parkinson disease progressive supranuclear palsy dementia frontotemporal multiple system atropy	PUBMED:16102903 16102903	1
 alzheimer disease parkinson disease	PUBMED:12098640 12098640	1
 alzheimer disease parkinson disease	PUBMED:17537576 17537576	1
-Alzheimer disease pathogenesis association 	OMIM:104300	1
 alzheimer disease pathogenesis association 	unknown	1
 alzheimer disease psychoses	PUBMED:15000807 15000807	1
 alzheimer disease psychosis	PUBMED:11566166 11566166	1
@@ -1766,7 +1765,7 @@ Anemia hemolytic due to UMPH1 deficiency	OMIM:266120	1
 anemia hemolytic due to umph1 deficiency	unknown	1
 Anemia hemolytic Rh null regulator type	OMIM:268150	1
 anemia hemolytic rh null regulator type rh isoimmunization	unknown	1
-Anemia hypochromic microcytic	OMIM:206100	1
+Anemia hypochromic microcytic 	OMIM:206100	1
 Anemia Hypochromic Microcytic 	umls:C2673913	1
 anemia iron deficiency	PUBMED:12934333 12934333	1
 anemia malaria related malaria cerebral	PUBMED:16277654 16277654	1
@@ -1777,9 +1776,12 @@ Anemia nonspherocytic hemolytic due to G6PD deficiency	OMIM:300908	1
 anemia	PUBMED:19521764 19521764	1
 anemia	PUBMED:20637204 20637204	1
 Anemia Refractory	umls:C0002893	1
+Anemia sideroblastic 1	OMIM:300751	1
+Anemia sideroblastic 2 pyridoxine refractory	OMIM:205950	1
+Anemia sideroblastic 3 pyridoxine refractory	OMIM:616860	1
+Anemia sideroblastic 4	OMIM:182170	1
 Anemia sideroblastic and spinocerebellar ataxia	OMIM:301310	1
 Anemia sideroblastic spinocerebellar ataxia	umls:C1845028	1
-Anemia sideroblastic X linked	OMIM:300751	1
 anemia thrombocytopenic purpura idiopathic	PUBMED:12555221 12555221	1
 Anemia X linked 	OMIM:300835	1
 anemia x linked 	unknown	1
@@ -2006,6 +2008,7 @@ Antipsychotic drug induced weight gain	PUBMED:22566560	1
 Antipsychotic induced QTc interval prolongation	PUBMED:20921969	1
 anti ro 52 kd autoantibodies	PUBMED:11263778 11263778	1
 antisense paternal transcript and loss of imprinting	PUBMED:10393948 10393948	1
+Antisocial behavior	OMIM:300615	1
 antisocial personality disorder botulism	unknown	1
 antisocial personality disorder	PUBMED:17429405 17429405	1
 antisocial personality disorder scarlet fever	unknown	1
@@ -2322,6 +2325,7 @@ Arthrogryposis multiplex congenita distal X linked	umls:C1844934	1
 Arthrogryposis multiplex congenita neurogenic type	umls:C1859721	1
 arthrogryposis multiplex congenita neurogenic type	unknown	1
 Arthrogryposis 	ORPHANET:1154	1
+Arthrogryposis Perthes disease and upward gaze palsy	OMIM:614262	1
 Arthrogryposis renal dysfunction and cholestasis 1	OMIM:208085	1
 arthrogryposis renal dysfunction and cholestasis 1 vps33b related arthrogryposis renal dysfunction and cholestasis syndrome	unknown	1
 arthrogryposis renal dysfunction and cholestasis 2	unknown	1
@@ -2624,6 +2628,7 @@ Ataxia oculomotor apraxia 4	OMIM:616267	1
 ATAXIA OCULOMOTOR APRAXIA 4	OMIM:616267	1
 Ataxia oculomotor apraxia type 1	ORPHANET:1168	1
 Ataxia 	ORPHANET:96	1
+Ataxia pancytopenia syndrome	OMIM:159550	1
 Ataxia posterior column 	OMIM:609033	1
 ataxia sca	PUBMED:12007862 12007862	1
 Ataxia sensory 1 autosomal dominant	OMIM:608984	1
@@ -3085,6 +3090,7 @@ Autism epilepsy syndrome due to branched chain ketoacid dehydrogenase kinase def
 autism hypopharynx cancer  6	unknown	1
 autism obsessive compulsive disorder	PUBMED:17106428 17106428	1
 Autism	OMIM:300830	1
+Autism	OMIM:300872	1
 Autism	OMIM:606053	1
 Autism	OMIM:607373	1
 Autism	OMIM:608049	1
@@ -3147,6 +3153,9 @@ autoimmune disease 4	unknown	1
 Autoimmune disease 6	OMIM:613551	1
 autoimmune disease 6 prader willi like syndrome  10	unknown	1
 autoimmune disease 6	unknown	1
+Autoimmune disease multisystem infantile onset 1	OMIM:615952	1
+Autoimmune disease multisystem infantile onset 2	OMIM:617006	1
+Autoimmune disease multisystem infantile onset	OMIM:615952	1
 Autoimmune disease multisystem 	OMIM:613385	1
 Autoimmune disease	OMIM:607836	1
 Autoimmune disease	OMIM:608391	1
@@ -3623,6 +3632,7 @@ bartter syndrome type 4b digenic	unknown	1
 Bartter Syndrome Type 4b	umls:C2751312	1
 bartter syndrome type 4b	unknown	1
 Bartter syndrome type 4	OMIM:602522	1
+Bartter syndrome type 5 antenatal transient	OMIM:300971	1
 Basal cell carcinoma 7	OMIM:614740	1
 basal cell carcinoma basal cell carcinoma 1	unknown	1
 basal cell carcinoma basal cell carcinoma 2	unknown	1
@@ -3643,7 +3653,6 @@ basal cell carcinoma pallister hall syndrome  9	unknown	1
 Basal cell carcinoma	PUBMED:19151717	1
 Basal cell carcinoma	PUBMED:24403052 19151717	1
 Basal cell carcinoma	PUBMED:24403052 21946351	1
-Basal cell carcinoma somatic	OMIM:601500	1
 BASAL CELL CARCINOMA	umls:C2751544	1
 basal ganglia calcification idiopathic 2	unknown	1
 BASAL GANGLIA CALCIFICATION IDIOPATHIC 3	umls:C3281142	1
@@ -3722,6 +3731,7 @@ behcet syndrome	PUBMED:20622878 20622878 20622878 20622878 20622878 20622878 206
 behcet syndrome	PUBMED:20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878 20622878	1
 behcet syndrome	PUBMED:20622878 20622878 20622878 20622878 20622878 20622879	1
 behcet syndrome	PUBMED:20622878 20622878 20622878 20622879	1
+Behr syndrome	OMIM:210000	1
 behr syndrome	unknown	1
 bells palsy periodontal disease	unknown	1
 Benign adult familial myoclonic epilepsy	ORPHANET:86814	1
@@ -4093,6 +4103,7 @@ Bleeding disorder platelet type 15	OMIM:615193	1
 Bleeding disorder platelet type 17	OMIM:187900	1
 Bleeding disorder platelet type 18	OMIM:615888	1
 Bleeding disorder platelet type 19	OMIM:616176	1
+Bleeding disorder platelet type 20	OMIM:616913	1
 Bleeding disorder platelet type 8	OMIM:609821	1
 bleeding tendency	PUBMED:10583218 10583218	1
 blepharochalasis entropion  6	unknown	1
@@ -4641,6 +4652,7 @@ Bone marrow failure familial	OMIM:614675	1
 Bone marrow failure syndrome 1	OMIM:614675	1
 bone marrow failure syndrome 1	unknown	1
 bone marrow failure syndrome 2	unknown	1
+Bone marrow failure syndrome 3	OMIM:617052	1
 Bone Marrow failure syndromes	umls:C2931245	1
 bone marrow necrosis cellular leiomyoma  15	unknown	1
 bone marrow necrosis cleidocranial dysplasia  16	unknown	1
@@ -4791,6 +4803,7 @@ Brachydactyly Type A1 B	umls:C1846949	1
 Brachydactyly type A1 C	OMIM:615072	1
 BRACHYDACTYLY TYPE A1 C	OMIM:615072	1
 brachydactyly type a1 c	unknown	1
+Brachydactyly type A1 D	OMIM:616849	1
 Brachydactyly Type B1	umls:C1862112	1
 brachydactyly type b1	unknown	1
 Brachydactyly type B2	ORPHANET:140908	1
@@ -4887,7 +4900,6 @@ branchiooculofacial syndrome	unknown	1
 branchiootic syndrome 1 anterior segment anomalies 	unknown	1
 Branchiootic syndrome 2	OMIM:120502	1
 Branchiootic Syndrome 2	umls:C1852718	1
-Branchiootic syndrome 3	OMIM:608389	1
 Branchiootic Syndrome 3	umls:C1842124	1
 branchiootic syndrome branchiootic syndrome 2	unknown	1
 Branchiootic syndrome	OMIM:602588	1
@@ -5196,7 +5208,6 @@ Brugada syndrome 9	OMIM:616399	1
 brugada syndrome brugada syndrome 2	unknown	1
 brugada syndrome brugada syndrome 7	unknown	1
 brugada syndrome	PUBMED:15338453 15338453 10690282	1
-Brunner syndrome	OMIM:300615	1
 Brunner Syndrome	umls:C0796275	1
 brunner syndrome	unknown	1
 Bruton type agammaglobulinemia	umls:C0221026	1
@@ -5329,6 +5340,7 @@ Camptodactyly tall stature and hearing loss syndrome	OMIM:610474	1
 camptodactyly tall stature and hearing loss syndrome	unknown	1
 Camptodactyly tall stature scoliosis hearing loss	ORPHANET:85164	1
 Camptomelic dysplasia	OMIM:114290	1
+Camptosynpolydactyly complex	OMIM:607539	1
 camurati engelmann disease optic disk drusen  6	unknown	1
 Camurati Engelmann disease	ORPHANET:1328	1
 Camurati Engelmann Syndrome	umls:C0011989	1
@@ -5603,6 +5615,7 @@ cardiomyopathy familial hypertrophic 1 hypertrophic cardiomyopathy midventricula
 cardiomyopathy familial hypertrophic 20 nexn related dilated cardiomyopathy  9	unknown	1
 CARDIOMYOPATHY FAMILIAL HYPERTROPHIC 20	umls:C3151267	1
 cardiomyopathy familial hypertrophic 21	unknown	1
+Cardiomyopathy familial hypertrophic 26	OMIM:102565	1
 Cardiomyopathy Familial Hypertrophic 2	umls:C1861864	1
 cardiomyopathy familial hypertrophic 2	unknown	1
 Cardiomyopathy Familial Hypertrophic 3	umls:C1861863	1
@@ -5622,6 +5635,7 @@ Cardiomyopathy Familial Restrictive 2	umls:C1865071	1
 Cardiomyopathy familial restrictive 3	OMIM:612422	1
 Cardiomyopathy Familial Restrictive 3	umls:C2676271	1
 cardiomyopathy familial restrictive 3	unknown	1
+Cardiomyopathy familial restrictive 5	OMIM:617047	1
 cardiomyopathy hypertension left ventricular hypertrophy	PUBMED:17579564 17579564	1
 Cardiomyopathy hypertrophic 12	OMIM:612124	1
 Cardiomyopathy hypertrophic 13	OMIM:613243	1
@@ -5846,6 +5860,8 @@ cataract 17 multiple types cataract congenital nuclear autosomal recessive 3	unk
 Cataract 17 multiple types	OMIM:611544	1
 Cataract 18 autosomal recessive	OMIM:610019	1
 cataract 19 cataract cortical pulverulent late onset	unknown	1
+Cataract 19 multiple types	OMIM:615277	1
+Cataract 19	OMIM:615277	1
 Cataract 1 multiple types	OMIM:116200	1
 Cataract 1	OMIM:116200	1
 cataract 20 multiple types autosomal dominant childhood onset cortical cataract	unknown	1
@@ -5895,6 +5911,8 @@ Cataract 41	OMIM:116400	1
 cataract 41	unknown	1
 CATARACT 43	OMIM:616279	1
 Cataract 44	OMIM:616509	1
+Cataract 46 juvenile onset	OMIM:212500	1
+Cataract 47 juvenile 	OMIM:612018	1
 Cataract 4 multiple types	OMIM:115700	1
 Cataract 4	OMIM:115700	1
 cataract 5 multiple types cataract zonular  16	unknown	1
@@ -5948,6 +5966,7 @@ Cataract floriform	OMIM:115900	1
 Cataract glaucoma	ORPHANET:162	1
 cataract glaucoma pitx3 related anterior segment mesenchymal dysgenesis  12	unknown	1
 cataract glaucoma retinal detachment visual acuity vogt koyanagi harada syndrome	PUBMED:17605936 17605936	1
+Cataract juvenile 	OMIM:612018	1
 Cataract Juvenile 	umls:C2677587	1
 cataract juvenile 	unknown	1
 Cataract Lamellar 2	umls:C1864879	1
@@ -6161,6 +6180,7 @@ Cerebellar ataxia mental retardation and dysequilibrium syndrome 3	OMIM:613227	1
 Cerebellar Ataxia Mental Retardation And Dysequilibrium Syndrome 3	umls:C2750509	1
 Cerebellar ataxia mental retardation and dysequilibrium syndrome 4	OMIM:615268	1
 cerebellar ataxia	PUBMED:9311738 9311738	1
+Cerebellar atrophy visual impairment and psychomotor retardation	OMIM:616875	1
 cerebellar degeneration jacobsen syndrome	unknown	1
 cerebellar degeneration paraneoplastic neurologic disorders	unknown	1
 CEREBELLAR DEGENERATION RELATED AUTOANTIGEN 3	umls:C1865782	1
@@ -6240,6 +6260,7 @@ Cerebral palsy spastic quadriplegic 1	OMIM:603513	1
 Cerebral Palsy Spastic Quadriplegic 1	umls:C2751938	1
 Cerebral Palsy Spastic Quadriplegic 2	umls:C2752061	1
 Cerebral palsy spastic quadriplegic 3	OMIM:612936	1
+Cerebral palsy spastic quadriplegic 3	OMIM:617008	1
 Cerebral palsy spastic quadriplegic 4	OMIM:613744	1
 Cerebral palsy spastic quadriplegic 5	OMIM:614066	1
 Cerebral palsy spastic quadriplegic 6	OMIM:614067	1
@@ -6359,6 +6380,7 @@ changed midbrain volumes	PUBMED:19476502 19476502	1
 charcot marie tooth disease axonal type 20 charcot marie tooth neuropathy type 2o  8	unknown	1
 Charcot Marie Tooth Disease Axonal Type 2a1	umls:C1861678	1
 Charcot Marie Tooth Disease Axonal Type 2A2	umls:C1836485	1
+Charcot Marie Tooth disease axonal type 2CC	OMIM:616924	1
 charcot marie tooth disease axonal type 2l	unknown	1
 charcot marie tooth disease axonal type 2m	unknown	1
 Charcot Marie Tooth Disease Axonal Type 2n	umls:C2750090	1
@@ -6368,7 +6390,7 @@ Charcot Marie Tooth disease axonal type 2r	OMIM:615490	1
 Charcot Marie Tooth disease axonal type 2s	OMIM:616155	1
 Charcot Marie Tooth disease axonal type 2S	OMIM:616155	1
 Charcot Marie Tooth disease axonal type 2t	OMIM:616233	1
-Charcot Marie Tooth disease axonal type 2T	OMIM:616233	1
+Charcot Marie Tooth disease axonal type 2T	OMIM:617017	1
 Charcot Marie Tooth disease axonal type 2U	OMIM:616280	1
 CHARCOT MARIE TOOTH DISEASE AXONAL TYPE 2U	OMIM:616280	1
 Charcot Marie Tooth disease axonal type 2V	OMIM:616491	1
@@ -6643,6 +6665,7 @@ Cholestasis progressive familial intrahepatic 3	umls:C1865643	1
 cholestasis progressive familial intrahepatic 3	unknown	1
 Cholestasis progressive familial intrahepatic 4	OMIM:615878	1
 cholestasis progressive familial intrahepatic 4	unknown	1
+Cholestasis progressive familial intrahepatic 5	OMIM:617049	1
 cholestasis	PUBMED:12825874 12825874	1
 cholestasis	PUBMED:12910711 12910711	1
 cholestasis	PUBMED:15888793 15888793	1
@@ -6904,6 +6927,7 @@ chromoblastomycosis septic arthritis  39	unknown	1
 Chromosomal Instability	umls:C1257806	1
 Chromosome 10q26 deletion syndrome	OMIM:609625	1
 chromosome 10q deletion chromosome 10q26 deletion syndrome	unknown	1
+Chromosome 11p13 deletion syndrome distal	OMIM:616902	1
 chromosome 11p15 5 related russell silver syndrome acid labile subunit deficiency  35	unknown	1
 chromosome 11p15 p14 deletion syndrome 11p15 p14 deletion syndrome	unknown	1
 Chromosome 11p15 p14 deletion syndrome	OMIM:606528	1
@@ -7167,7 +7191,6 @@ Ciliary dyskinesia primary 24	OMIM:615481	1
 Ciliary dyskinesia primary 25	OMIM:615482	1
 ciliary dyskinesia primary 2 primary ciliary dyskinesia 2 dnaaf3 related primary ciliary dyskinesia	unknown	1
 ciliary dyskinesia primary 2	unknown	1
-Ciliary dyskinesia primary 31	OMIM:616369	1
 Ciliary dyskinesia primary 32	OMIM:616481	1
 Ciliary dyskinesia primary 33	OMIM:616726	1
 Ciliary dyskinesia primary 3	OMIM:608644	1
@@ -7256,6 +7279,7 @@ clear cell sarcoma melanoma of soft parts  7	unknown	1
 cleft lip and palate	PUBMED:17537400 17537400	1
 cleft lip and palate	PUBMED:2570526 2570526	1
 cleft lip lung cancer	unknown	1
+Cleft lip palate ectodermal dysplasia syndrome	OMIM:225060	1
 cleft lip 	PUBMED:11332647 11332647 16868654	1
 cleft lip 	PUBMED:11384957 11384957 12733956	1
 cleft lip 	PUBMED:15103710 15103710	1
@@ -7371,6 +7395,11 @@ coffin lowry syndrome	PUBMED:8955270 8955270	1
 coffin lowry syndrome retinoschisis  9	unknown	1
 Coffin Lowry Syndrome	umls:C0265252	1
 coffin lowry syndrome x linked nonsyndromic deafness	unknown	1
+Coffin Siris syndrome 1	OMIM:135900	1
+Coffin Siris syndrome 2	OMIM:614607	1
+Coffin Siris syndrome 3	OMIM:614608	1
+Coffin Siris syndrome 4	OMIM:614609	1
+Coffin Siris syndrome 5	OMIM:616938	1
 coffin siris syndrome osteoporotic fracture	unknown	1
 COG1 CDG	ORPHANET:263508	1
 COG4 CDG	ORPHANET:263501	1
@@ -7434,6 +7463,7 @@ colchicine resistance intraocular retinoblastoma  10	unknown	1
 colchicine resistance microphthalmia isolated 6	unknown	1
 cold induced sweating syndrome 1 clcf1 related cold induced sweating syndrome including crisponi syndrome	unknown	1
 COLD INDUCED SWEATING SYNDROME 2	umls:C1853198	1
+Cold induced sweating syndrome 3	OMIM:617055	1
 Cole Carpenter syndrome 1	OMIM:112240	1
 Cole Carpenter syndrome 2	OMIM:616294	1
 COLE CARPENTER SYNDROME 2	OMIM:616294	1
@@ -7468,7 +7498,7 @@ colon adenocarcinoma colon cancer  7	unknown	1
 colon adenocarcinoma coronary restenosis	unknown	1
 colon adenocarcinoma measles	unknown	1
 colon adenomas carcinomas	PUBMED:9260769 9260769	1
-Colon cancer advanced somatic	OMIM:190090	1
+Colon cancer advanced somatic	OMIM:114500	1
 colon cancer colon cancer somatic	unknown	1
 colon cancer congenital aural atresia	unknown	1
 colon cancer forebrain defects  10	unknown	1
@@ -7723,6 +7753,7 @@ Combined oxidative phosphorylation deficiency 26	OMIM:616539	1
 Combined oxidative phosphorylation deficiency 27	OMIM:616672	1
 Combined oxidative phosphorylation deficiency 28	OMIM:616794	1
 Combined Oxidative Phosphorylation Deficiency 2	umls:C1864843	1
+Combined oxidative phosphorylation deficiency 30	OMIM:616974	1
 combined oxidative phosphorylation deficiency 3 hyperalphalipoproteinemia 2  14	unknown	1
 Combined Oxidative Phosphorylation Deficiency 3	umls:C1864840	1
 combined oxidative phosphorylation deficiency 3	unknown	1
@@ -8034,7 +8065,6 @@ Congenital Disorder of Glycosylation Type Io	umls:C2752007	1
 congenital disorder of glycosylation type io	unknown	1
 CONGENITAL DISORDER OF GLYCOSYLATION TYPE Ip	umls:C3150913	1
 CONGENITAL DISORDER OF GLYCOSYLATION TYPE Ir	umls:C3281084	1
-Congenital disorder of glycosylation type Is	OMIM:300884	1
 Congenital disorder of glycosylation type It	OMIM:614921	1
 congenital disorder of glycosylation type it	unknown	1
 congenital disorder of glycosylation type iv alacrimia choreoathetosis liver dysfunction syndrome	unknown	1
@@ -8334,12 +8364,11 @@ corneal dystrophy thiel behnke type	unknown	1
 corneal ectasia irregular astigmatism  12	unknown	1
 corneal edema plexiform neurofibroma	unknown	1
 corneal edema posterior polymorphous corneal dystrophy  8	unknown	1
-Corneal endothelial dystrophy 1 autosomal dominant	OMIM:121700	1
 CORNEAL ENDOTHELIAL DYSTROPHY 1 AUTOSOMAL DOMINANT	umls:C1852555	1
-Corneal endothelial dystrophy 2 autosomal recessive	OMIM:217700	1
 corneal endothelial dystrophy 2 autosomal recessive	unknown	1
 Corneal endothelial dystrophy and perceptive deafness	OMIM:217400	1
 corneal endothelial dystrophy and perceptive deafness	unknown	1
+Corneal endothelial dystrophy autosomal recessive	OMIM:217700	1
 Corneal endothelial dystrophy type 2	OMIM:217700	1
 Corneal endothelial dystrophy type 2	umls:C1857569	1
 Corneal epithelial dystrophy	OMIM:121820	1
@@ -8352,10 +8381,11 @@ Corneal opacification and other ocular anomalies	OMIM:269400	1
 Corneal structure	PUBMED:23291589 23291589	1
 corneal ulcer elliptocytosis 1	unknown	1
 Corneal Ulcer	umls:C0010043	1
+Cornea plana 1 autosomal dominant	OMIM:121400	1
 Cornea Plana 1	umls:C1852557	1
+Cornea plana 2 autosomal recessive	OMIM:217300	1
 Cornea plana 2	OMIM:217300	1
 Cornea Plana 2	umls:C1857574	1
-Cornea plana congenita recessive	OMIM:217300	1
 cornea plana congenita recessive	unknown	1
 cornelia de lange syndrome 2 smc1a related cornelia de lange syndrome  6	unknown	1
 cornelia de lange syndrome 2	unknown	1
@@ -8595,6 +8625,7 @@ cowden syndrome 3	unknown	1
 cowden syndrome 4	unknown	1
 cowden syndrome 5	unknown	1
 cowden syndrome 6 proteus syndrome somatic  28	unknown	1
+Cowden syndrome 7	OMIM:616858	1
 cowpox carcinoid syndrome  17	unknown	1
 Coxa plana	OMIM:150600	1
 Coxo podo patellar syndrome	ORPHANET:1509	1
@@ -8890,6 +8921,7 @@ currarino triad exstrophy epispadias complex  10	unknown	1
 Currarino triad	OMIM:176450	1
 Currarino triad	ORPHANET:1552	1
 currarino triad	unknown	1
+Curry Jones syndrome somatic mosaic	OMIM:601707	1
 cushings syndrome adrenal adenoma	unknown	1
 cushings syndrome ventricular tachycardia idiopathic  9	unknown	1
 Cushing symphalangism	OMIM:185800	1
@@ -9160,6 +9192,7 @@ Deafness autosomal dominant 4A	OMIM:600652	1
 deafness autosomal dominant 4b deafness autosomal dominant 40	unknown	1
 deafness autosomal dominant 4b glomerulosclerosis focal segmental 6	unknown	1
 Deafness autosomal dominant 4b	OMIM:614614	1
+Deafness autosomal dominant 4B	OMIM:614614	1
 deafness autosomal dominant 4b retinal artery occlusion	unknown	1
 DEAFNESS AUTOSOMAL DOMINANT 4B	umls:C3281297	1
 Deafness autosomal dominant 4	OMIM:600652	1
@@ -9185,6 +9218,7 @@ deafness autosomal dominant 6 14 38	unknown	1
 DEAFNESS AUTOSOMAL DOMINANT 64	umls:C3279948	1
 Deafness autosomal dominant 67	OMIM:616340	1
 DEAFNESS AUTOSOMAL DOMINANT 67	OMIM:616340	1
+Deafness autosomal dominant 69 unilateral or asymmetric	OMIM:616697	1
 Deafness Autosomal Dominant 6	umls:C1833021	1
 Deafness autosomal dominant 7	OMIM:601412	1
 Deafness Autosomal Dominant 7	umls:C1832379	1
@@ -9198,6 +9232,7 @@ deafness autosomal dominant 	unknown	1
 Deafness autosomal recessive 101	OMIM:615837	1
 Deafness autosomal recessive 102	OMIM:615974	1
 Deafness autosomal recessive 103	OMIM:616042	1
+Deafness autosomal recessive 105	OMIM:616958	1
 Deafness autosomal recessive 12 modifier of	OMIM:601386	1
 deafness autosomal recessive 12	unknown	1
 Deafness autosomal recessive 13	OMIM:603098	1
@@ -9364,8 +9399,8 @@ Deafness Cataract Retinitis Pigmentosa And Sperm Abnormalities	umls:C2678011	1
 Deafness Childhood Onset Neurosensory Autosomal Recessive 8	umls:C1832827	1
 Deafness cochlear 	OMIM:221200	1
 deafness congenital heart defects and posterior embryotoxon familial deafness  16	unknown	1
+Deafness congenital 	OMIM:124480	1
 Deafness Congenital 	umls:C1853144	1
-Deafness congenital unilateral or asymmetric	OMIM:616697	1
 Deafness digenic GJB2 GJB3	OMIM:220290	1
 Deafness digenic GJB2 GJB6	OMIM:220290	1
 deafness dystonia and cerebral hypomyelination adrenomyeloneuropathy adult  6	unknown	1
@@ -9392,6 +9427,7 @@ deafness	PUBMED:14676473 14676473	1
 deafness	PUBMED:7839145 7839145	1
 Deafness Sensorineural And Male Infertility	umls:C1970187	1
 deafness x linked 1 progressive jensen syndrome  10	unknown	1
+Deafness X linked 1 progressive	OMIM:300356	1
 Deafness X Linked 1	umls:C1844677	1
 deafness x linked 2	unknown	1
 deafness x linked 3 deafness x linked 4	unknown	1
@@ -9741,6 +9777,7 @@ developmental delay deafness hildebrand type dfnx2 nonsyndromic hearing loss and
 Developmental delay deafness Hildebrand type	ORPHANET:163988	1
 Developmental delay due to methylmalonate semialdehyde dehydrogenase deficiency	ORPHANET:289307	1
 Developmental delay microcephaly facial dysmorphism syndrome Hutterite type	ORPHANET:363444	1
+Developmental delay 	OMIM:616901	1
 Developmental delay 	ORPHANET:329195	1
 Developmental dysplasia of the hip 1	OMIM:142700	1
 Developmental dysplasia of the hip 2	OMIM:615612	1
@@ -10369,6 +10406,7 @@ Diarrhea 4 Malabsorptive Congenital	umls:C1835888	1
 Diarrhea 5 	umls:C2750737	1
 diarrhea 5 	unknown	1
 Diarrhea 7	OMIM:615863	1
+Diarrhea 8 secretory sodium congenital	OMIM:616868	1
 diarrhea breast cancer	unknown	1
 diarrhea	PUBMED:17342646 17342646	1
 diarrhea	PUBMED:19032367 19032367	1
@@ -10686,6 +10724,7 @@ dsg2 related dilated cardiomyopathy cardiomyopathy dilated 1bb  16	unknown	1
 dsp related ectodermal dysplasia skin fragility syndrome	unknown	1
 Duane Anomaly 	umls:C1623209	1
 DUANE RETRACTION SYNDROME 2	umls:C0751083	1
+Duane retraction syndrome 3	OMIM:617041	1
 duane retraction syndrome alk negative anaplastic large cell lymphoma	unknown	1
 duane retraction syndrome duane syndrome type 1	unknown	1
 duane retraction syndrome duane syndrome type 2	unknown	1
@@ -10792,6 +10831,7 @@ Dyskeratosis hereditary benign intraepithelial	OMIM:127600	1
 Dyskeratosis Hereditary Benign Intraepithelial	umls:C0265966	1
 dyskinesia drug induced	PUBMED:17688403 17688403	1
 Dyskinesia Familial 	umls:C1847627	1
+Dyskinesia limb and orofacial infantile onset	OMIM:616921	1
 dyskinesias levodopa induced	PUBMED:16435402 16435402	1
 dyskinetic cerebral palsy	unknown	1
 Dyslexia 1	OMIM:127700	1
@@ -11102,11 +11142,11 @@ ehlers danlos syndrome musculocontractural type 1	unknown	1
 Ehlers Danlos syndrome musculocontractural type 2	OMIM:615539	1
 ehlers danlos syndrome musculocontractural type ehlers danlos syndrome musculocontractural type 2  7	unknown	1
 Ehlers Danlos syndrome musculocontractural type	OMIM:601776	1
+Ehlers Danlos syndrome 	OMIM:130070	1
 Ehlers danlos syndrome 	OMIM:614557	1
 Ehlers Danlos syndrome 	OMIM:614557	1
 Ehlers Danlos syndrome 	ORPHANET:82004	1
 Ehlers Danlos syndrome progeroid form	umls:C1869122	1
-Ehlers Danlos syndrome progeroid type 1	OMIM:130070	1
 ehlers danlos syndrome progeroid type 1 spondyloepimetaphyseal dysplasia  7	unknown	1
 ehlers danlos syndrome progeroid type 1	unknown	1
 Ehlers Danlos syndrome progeroid type	OMIM:130070	1
@@ -11240,6 +11280,7 @@ Encephalocardiomyopathy Mitochondrial Neonatal Due To Atp Synthase Deficiency	um
 encephalocele encephaloceles  16	unknown	1
 encephaloceles frontonasal dysplasia 1  6	unknown	1
 Encephaloclastic Proliferative Vasculopathy	umls:C1856972	1
+Encephalocraniocutaneous lipomatosis	OMIM:613001	1
 encephalocraniocutaneous lipomatosis	unknown	1
 encephalomyelitis neuropathy paraneoplastic sensory	unknown	1
 encephalomyelitis vernal keratoconjunctivitis  11	unknown	1
@@ -11360,7 +11401,6 @@ Endothelial function traits	PUBMED:17903301	1
 endothelial function traits	PUBMED:17903301 17903301	1
 endothelial function von willebrand factor	PUBMED:16337503 16337503	1
 endothelium dependent arterial dilation	PUBMED:16401309 16401309	1
-Endotoxin hyporesponsiveness	OMIM:603030	1
 endotoxin hyporesponsiveness	PUBMED:10835634 10835634	1
 endplate acetylcholinesterase deficiency colq related congenital myasthenic syndrome	unknown	1
 Endplate acetylcholinesterase deficiency	OMIM:603034	1
@@ -11588,6 +11628,7 @@ Epilepsy progressive myoclonic 2B	OMIM:254780	1
 Epilepsy progressive myoclonic 3	OMIM:611726	1
 Epilepsy Progressive Myoclonic 3	umls:C2673257	1
 EPILEPSY PROGRESSIVE MYOCLONIC 4 	umls:C0751779	1
+Epilepsy progressive myoclonic 5	OMIM:613832	1
 EPILEPSY PROGRESSIVE MYOCLONIC 5	umls:C3151194	1
 EPILEPSY PROGRESSIVE MYOCLONIC 6	umls:C3279627	1
 Epilepsy progressive myoclonic 8	OMIM:616230	1
@@ -11659,6 +11700,10 @@ Epileptic encephalopathy early infantile 32	OMIM:616366	1
 Epileptic encephalopathy early infantile 33	OMIM:616409	1
 Epileptic encephalopathy early infantile 34	OMIM:616645	1
 Epileptic encephalopathy early infantile 35	OMIM:616647	1
+Epileptic encephalopathy early infantile 36	OMIM:300884	1
+Epileptic encephalopathy early infantile 37	OMIM:616981	1
+Epileptic encephalopathy early infantile 38	OMIM:617020	1
+Epileptic encephalopathy early infantile 39	OMIM:612949	1
 Epileptic encephalopathy early infantile 3	OMIM:609304	1
 Epileptic Encephalopathy Early Infantile 3	umls:C0270855	1
 epileptic encephalopathy early infantile 3	unknown	1
@@ -11684,6 +11729,7 @@ Epiphyseal chondrodysplasia miura type	OMIM:615923	1
 Epiphyseal chondrodysplasia Miura type	OMIM:615923	1
 Epiphyseal dysplasia multiple 1	umls:C1838280	1
 Epiphyseal dysplasia multiple 2	umls:C1838429	1
+Epiphyseal dysplasia multiple 3 	OMIM:600969	1
 Epiphyseal dysplasia multiple 3	umls:C1832998	1
 Epiphyseal dysplasia multiple 4	umls:C1847593	1
 Epiphyseal dysplasia multiple 5	umls:C1846843	1
@@ -11722,6 +11768,7 @@ Epithelial recurrent erosion dystrophy	OMIM:122400	1
 epithelioid hemangioendothelioma barth syndrome	unknown	1
 epithelioid sarcoma periapical granuloma  7	unknown	1
 epm2a related lafora disease	unknown	1
+Epsilon trimethyllysine hydroxylase deficiency	OMIM:300872	1
 epsilon trimethyllysine hydroxylase deficiency	unknown	1
 epstein barr virus hepatitis	unknown	1
 epstein barr virus infection	PUBMED:10395868 10395868 11517440	1
@@ -11916,6 +11963,7 @@ eumycotic mycetoma glycogen storage disease xii  6	unknown	1
 evans syndrome bronchopneumonia  37	unknown	1
 evans syndrome	unknown	1
 evc2 related ellis van creveld syndrome	unknown	1
+Even plus syndrome	OMIM:616854	1
 event related prefrontal activity	PUBMED:11140951 11140951	1
 evolving hypopitutarism	PUBMED:14561704 14561704	1
 ewing sarcoma	PUBMED:10702401 10702401	1
@@ -12700,7 +12748,6 @@ fmr1 related disorders	unknown	1
 Focal cortical dysplasia of Taylor	OMIM:607341	1
 focal cortical dysplasia of taylor tsc1 related lymphangioleiomyomatosis  21	unknown	1
 Focal cortical dysplasia of Taylor	umls:C1846385	1
-Focal cortical dysplasia Taylor balloon cell type	OMIM:607341	1
 focal cortical dysplasia taylor balloon cell type	unknown	1
 focal dermal hypoplasia angioma serpiginosum	unknown	1
 focal dermal hypoplasia methanol poisoning  6	unknown	1
@@ -13225,6 +13272,7 @@ gilles de la tourette syndrome fibromyalgia	unknown	1
 Gilles de la Tourette syndrome	OMIM:137580	1
 gillespie syndrome coloboma of optic nerve  25	unknown	1
 Gillespie syndrome	OMIM:206700	1
+Gillessen Kaesbach Nishimura syndrome	OMIM:263210	1
 gingival fibromatosis 2	unknown	1
 gingival fibromatosis 4	unknown	1
 gingival fibromatosis 	unknown	1
@@ -15136,6 +15184,7 @@ hydromyelia	unknown	1
 hydronephrosis vesicoureteral reflux  11	unknown	1
 hydrops fetalis hennekam syndrome  6	unknown	1
 Hydrops Fetalis	umls:C0020305	1
+Hydrops lactic acidosis and sideroblastic anemia	OMIM:617021	1
 Hydroxyacyl coa dehydrogenase type 2 deficiency	umls:C1845517	1
 Hydroxyacyl glutathione hydrolase deficiency	OMIM:614033	1
 hydroxykynureninuria encephalopathy due to hydroxykynureninuria	unknown	1
@@ -15150,6 +15199,7 @@ Hyperaldosteronism familial type III	OMIM:613677	1
 HYPERALDOSTERONISM FAMILIAL TYPE III	umls:C3150933	1
 Hyperaldosteronism familial type II	OMIM:605635	1
 Hyperaldosteronism Familial Type II	umls:C1854107	1
+Hyperaldosteronism familial type IV	OMIM:617027	1
 HYPERALPHALIPOPROTEINEMIA 1	umls:C3149462	1
 Hyperalphalipoproteinemia 2	OMIM:614028	1
 hyperalphalipoproteinemia cetp related hyperalphalipoproteinemia  21	unknown	1
@@ -15174,7 +15224,8 @@ hyperbilirubinemia rotor type digenic	unknown	1
 Hyperbilirubinemia Transient Familial Neonatal	umls:C0270210	1
 Hyperbiliverdinemia	ORPHANET:276405	1
 Hypercalcemia Idiopathic of Infancy	umls:C0268080	1
-Hypercalcemia infantile	OMIM:143880	1
+Hypercalcemia infantile 1	OMIM:143880	1
+Hypercalcemia infantile 2	OMIM:616963	1
 hypercalcemia primary hyperparathyroidism  37	unknown	1
 Hypercalciuria Absorptive 1	umls:C1846573	1
 Hypercalciuria Absorptive 2	umls:C0342639	1
@@ -15246,6 +15297,7 @@ hyperglycemia insulin	PUBMED:16567542 16567542	1
 hyperglycemia	PUBMED:12196481 12196481	1
 hyperglycerolemia glycerol kinase deficiency adult form  13	unknown	1
 Hyperglycerolemia	umls:C0268418	1
+Hyperglycinemia lactic acidosis and seizures	OMIM:614462	1
 hyperglycinuria iminoglycinuria digenic  7	unknown	1
 hyperglycinuria	unknown	1
 Hyperhidrosis palmaris et plantaris	OMIM:144110	1
@@ -15330,6 +15382,7 @@ Hyperlipoproteinemia Type V	umls:C0020481	1
 hyperlysinemia cystinuria	unknown	1
 Hyperlysinemia	ORPHANET:2203	1
 Hyperlysinemias	umls:C0268553	1
+Hypermanganesemia 	OMIM:617013	1
 hypermanganesemia 	unknown	1
 hypermethioninemia ciliary dyskinesia primary 20	unknown	1
 HYPERMETHIONINEMIA DUE TO ADENOSINE KINASE DEFICIENCY	umls:C3280381	1
@@ -15627,6 +15680,7 @@ hyperuricemia uric acid	PUBMED:16385546 16385546	1
 Hyperuricemic Nephropathy Familial Juvenile 2	umls:C2751310	1
 Hyperuricemic nephropathy familial juvenile 3	OMIM:614227	1
 hyperuricemic nephropathy familial juvenile 3	unknown	1
+Hyperuricemic nephropathy familial juvenile 4	OMIM:617056	1
 hypoactive sexual desire disorder testotoxicosis  30	unknown	1
 hypoactive sexual desire disorder	unknown	1
 hypoadrenalism autism x linked 5	unknown	1
@@ -15733,6 +15787,7 @@ HYPOMELANOSIS OF ITO	umls:C1415618	1
 Hypomyelinating leukodystrophy 8 	OMIM:614381	1
 Hypomyelination and Congenital Cataract	OMIM:610532	1
 Hypomyelination congenital cataract	ORPHANET:85163	1
+Hypomyelination global cerebral	OMIM:612949	1
 Hypomyelination Global Cerebral	umls:C2751855	1
 hypomyelination neuropathy arthrogryposis thyroid adenoma	unknown	1
 hypomyelination neuropathy arthrogryposis	unknown	1
@@ -15859,6 +15914,7 @@ Hypotonia failure to thrive microcephaly	ORPHANET:79507	1
 Hypotonia infantile 	OMIM:615419	1
 Hypotonia infantile 	OMIM:616801	1
 Hypotonia infantile 	OMIM:616816	1
+Hypotonia infantile 	OMIM:616900	1
 hypotonia multiple congenital anomalies hypotonia seizures syndrome 1	unknown	1
 Hypotonia 	ORPHANET:137908	1
 Hypotonia speech impairment severe cognitive delay syndrome	ORPHANET:371364	1
@@ -16104,6 +16160,8 @@ Immunodeficiency 43	OMIM:241600	1
 Immunodeficiency 44	OMIM:616636	1
 Immunodeficiency 45	OMIM:616669	1
 Immunodeficiency 46	OMIM:616740	1
+Immunodeficiency 47	OMIM:300972	1
+Immunodeficiency 48	OMIM:269840	1
 immunodeficiency 7 tcr alpha beta deficient hypersensitivity reaction type ii disease	unknown	1
 Immunodeficiency 7 TCR alpha beta deficient	OMIM:615387	1
 immunodeficiency 7 tcr alpha beta deficient	unknown	1
@@ -16115,6 +16173,8 @@ immunodeficiency centromere instability and facial anomalies syndrome immunodefi
 Immunodeficiency centromeric instability facial anomalies syndrome 1	OMIM:242860	1
 IMMUNODEFICIENCY CENTROMERIC INSTABILITY FACIAL ANOMALIES SYNDROME 2	umls:C3279748	1
 immunodeficiency centromeric instability facial anomalies syndrome 2	unknown	1
+Immunodeficiency centromeric instability facial anomalies syndrome 3	OMIM:616910	1
+Immunodeficiency centromeric instability facial anomalies syndrome 4	OMIM:616911	1
 immunodeficiency common variable 10 legionellosis  9	unknown	1
 Immunodeficiency common variable 10	OMIM:615577	1
 immunodeficiency common variable 11 chmp2b related frontotemporal dementia	unknown	1
@@ -16122,6 +16182,7 @@ immunodeficiency common variable 11 dacryoadenitis  11	unknown	1
 immunodeficiency common variable 11 inflammatory bowel disease 25 autosomal recessive	unknown	1
 immunodeficiency common variable 11	unknown	1
 Immunodeficiency common variable 12	OMIM:616576	1
+Immunodeficiency common variable 13	OMIM:616873	1
 immunodeficiency common variable 2 tnfrsf13b related common variable immune deficiency  7	unknown	1
 IMMUNODEFICIENCY COMMON VARIABLE 2	umls:C3150354	1
 immunodeficiency common variable 3	unknown	1
@@ -16349,6 +16410,8 @@ Inflammatory bowel disease 17 protection against	OMIM:612261	1
 Inflammatory Bowel Disease 17	umls:C2677091	1
 Inflammatory bowel disease 18	OMIM:612262	1
 Inflammatory Bowel Disease 18	umls:C2677090	1
+Inflammatory bowel disease 19	OMIM:612278	1
+Inflammatory bowel disease 19	OMIM:612279	1
 Inflammatory Bowel Disease 19	umls:C2677079	1
 Inflammatory bowel disease 20	OMIM:612288	1
 Inflammatory Bowel Disease 20	umls:C2676781	1
@@ -16534,6 +16597,8 @@ insulin resistance	PUBMED:8530617 8530617	1
 insulin resistance	PUBMED:9109842 9109842	1
 insulin resistance	PUBMED:9267990 9267990	1
 insulin resistance renovascular hypertension	unknown	1
+Insulin resistance severe digenic	OMIM:125853	1
+Insulin resistance severe digenic	OMIM:604367	1
 insulin resistance severe digenic	unknown	1
 insulin resistance syndrome	PUBMED:7905375 7905375	1
 Insulin resistance syndrome type A	ORPHANET:2297	1
@@ -17626,6 +17691,7 @@ Lethal congenital contractural syndrome 2	OMIM:607598	1
 lethal congenital contractural syndrome 2	unknown	1
 lethal congenital contractural syndrome 3 arthrogryposis multiplex congenita distal type 1  6	unknown	1
 Lethal Congenital Contractural Syndrome 3	umls:C1969655	1
+Lethal congenital contracture syndrome 10	OMIM:617022	1
 Lethal congenital contracture syndrome 1	umls:C1854664	1
 lethal congenital contracture syndrome 1	unknown	1
 Lethal congenital contracture syndrome 2	OMIM:607598	1
@@ -17651,13 +17717,10 @@ lethal restrictive dermopathy zmpste24 related	unknown	1
 Leucine induced hypoglycemia	OMIM:240800	1
 leukemia acute lymphoblastic 2	unknown	1
 leukemia acute lymphoblastic 3 mental retardation autosomal dominant 26	unknown	1
-Leukemia acute lymphoblastic	OMIM:147141	1
 Leukemia acute lymphoblastic	OMIM:247640	1
-Leukemia acute lymphoblastic	OMIM:603023	1
 Leukemia acute lymphoblastic	OMIM:613065	1
 Leukemia acute lymphoblastic	OMIM:613067	1
 leukemia acute lymphoblastic	PUBMED:12075003 12075003	1
-Leukemia acute lymphoblastic somatic	OMIM:613065	1
 leukemia acute lymphoblastic somatic	unknown	1
 leukemia acute lymphocytic 1	unknown	1
 Leukemia acute lymphocytic	OMIM:613065	1
@@ -17669,7 +17732,6 @@ leukemia acute myeloid reduced survival in schinzel giedion syndrome  12	unknown
 Leukemia acute myeloid reduced survival in somatic	OMIM:601626	1
 leukemia acute myeloid reduced survival in	unknown	1
 leukemia acute myeloid somatic chromosome 12p deletion  14	unknown	1
-Leukemia acute myelomonocytic somatic	OMIM:607785	1
 Leukemia acute nonlymphocytic	OMIM:125264	1
 Leukemia acute pre B cell	OMIM:176310	1
 leukemia acute promyelocytic npm rara type	unknown	1
@@ -17776,6 +17838,7 @@ Leukodystrophy Globoid Cell	umls:C0023521	1
 Leukodystrophy hypomyelinating 10	OMIM:616420	1
 Leukodystrophy hypomyelinating 11	OMIM:616494	1
 Leukodystrophy hypomyelinating 12	OMIM:616683	1
+Leukodystrophy hypomyelinating 13	OMIM:616881	1
 Leukodystrophy Hypomyelinating 2	umls:C1837355	1
 leukodystrophy hypomyelinating 2	unknown	1
 Leukodystrophy Hypomyelinating 4	umls:C2677109	1
@@ -17963,6 +18026,7 @@ lipid storage disease familial partial lipodystrophy type 4  6	unknown	1
 lipid storage disease leptin deficiency	unknown	1
 lipid storage disease neutral lipid storage disease 	unknown	1
 lipid storage disease primary sclerosing cholangitis  8	unknown	1
+Lipid storage myopathy due to flavin adenine dinucleotide synthetase deficiency	OMIM:255100	1
 lipids triglycerides	PUBMED:16417409 16417409	1
 Lipid traits	PUBMED:22028671	1
 Lipid traits	PUBMED:24023260 24023260	1
@@ -17975,8 +18039,6 @@ LIPODYSTROPHY CONGENITAL GENERALIZED TYPE 2	umls:C1720863	1
 Lipodystrophy congenital generalized type 3	OMIM:612526	1
 Lipodystrophy Congenital Generalized Type 3	umls:C2675861	1
 Lipodystrophy Congenital Generalized Type 4	umls:C2750069	1
-Lipodystrophy familial partial 2	OMIM:151660	1
-Lipodystrophy familial partial type 2	OMIM:151660	1
 lipodystrophy familial partial type 2	unknown	1
 Lipodystrophy familial partial type 5	OMIM:615238	1
 lipodystrophy familial partial type 5	unknown	1
@@ -18539,6 +18601,7 @@ Lymphedema hereditary IC	OMIM:613480	1
 LYMPHEDEMA HEREDITARY IC	umls:C3150732	1
 Lymphedema hereditary id	OMIM:615907	1
 Lymphedema hereditary ID	OMIM:615907	1
+Lymphedema hereditary III	OMIM:616843	1
 Lymphedema Hereditary II	umls:C0238261	1
 Lymphedema microcephaly and chorioretinopathy syndrome	umls:C1835265	1
 Lymphedema primary 	OMIM:614038	1
@@ -18635,6 +18698,7 @@ Macrocephaly Alopecia Cutis Laxa and Scoliosis	umls:C2751321	1
 macrocephaly alopecia cutis laxa and scoliosis	unknown	1
 Macrocephaly autism syndrome	ORPHANET:210548	1
 Macrocephaly Autism Syndrome	umls:C1854416	1
+Macrocephaly dysmorphic facies and psychomotor retardation	OMIM:617011	1
 MACROCEPHALY MACROSOMIA FACIAL DYSMORPHISM SYNDROME	umls:C3280095	1
 Macrocephaly megalencephaly syndrome autosomal recessive	OMIM:248000	1
 Macrocephaly 	umls:C1846722	1
@@ -18722,9 +18786,9 @@ Macular dystrophy concentric annular	umls:C1828210	1
 macular dystrophy concentric annular	unknown	1
 Macular dystrophy corneal type 1	umls:C1636149	1
 Macular dystrophy dominant cystoid	OMIM:153880	1
-Macular dystrophy North Carolina type	OMIM:136550	1
 macular dystrophy occult macular dystrophy	unknown	1
 Macular dystrophy patterned 1	OMIM:169150	1
+Macular dystrophy patterned 2	OMIM:608970	1
 Macular dystrophy retinal 1 North Carolina type	umls:C0730294	1
 Macular dystrophy retinal 2	OMIM:608051	1
 Macular Dystrophy Retinal 2	umls:C0339512	1
@@ -18963,6 +19027,7 @@ Maple syrup urine disease type Ib	OMIM:248600	1
 marasmus laron syndrome  8	unknown	1
 Marden Walker like syndrome	OMIM:600920	1
 Marden Walker like syndrome	umls:C1833136	1
+Marfan lipodystrophy syndrome	OMIM:616914	1
 marfan phenotype	PUBMED:8882780 8882780	1
 marfan syndrome ehlers danlos syndrome  29	unknown	1
 marfan syndrome	PUBMED:15241795 15241795 11700157	1
@@ -19314,7 +19379,6 @@ Melorheostosis 	ORPHANET:1879	1
 melorheostosis osteopoikilosis	unknown	1
 Melorheostosis	umls:C0025239	1
 melorheostosis 	unknown	1
-Membranous glomerulonephritis antenatal	OMIM:614692	1
 memory decline	PUBMED:11064931 11064931	1
 memory disturbance	PUBMED:14981524 14981524	1
 memory disturbance	PUBMED:17353070 17353070	1
@@ -19431,12 +19495,17 @@ mental retardation autosomal dominant 10 mental retardation autosomal dominant 1
 MENTAL RETARDATION AUTOSOMAL DOMINANT 10	umls:C3280284	1
 Mental retardation autosomal dominant 11	OMIM:614257	1
 MENTAL RETARDATION AUTOSOMAL DOMINANT 11	umls:C3280285	1
+Mental retardation autosomal dominant 12	OMIM:614562	1
 mental retardation autosomal dominant 12	unknown	1
 MENTAL RETARDATION AUTOSOMAL DOMINANT 13	umls:C3281202	1
 mental retardation autosomal dominant 13	unknown	1
+Mental retardation autosomal dominant 14	OMIM:614607	1
 mental retardation autosomal dominant 14	unknown	1
+Mental retardation autosomal dominant 15	OMIM:614608	1
 mental retardation autosomal dominant 15	unknown	1
+Mental retardation autosomal dominant 16	OMIM:614609	1
 mental retardation autosomal dominant 16	unknown	1
+Mental retardation autosomal dominant 17	OMIM:615009	1
 mental retardation autosomal dominant 18	unknown	1
 mental retardation autosomal dominant 19	unknown	1
 Mental Retardation Autosomal Dominant 1	umls:C1969562	1
@@ -19457,6 +19526,9 @@ Mental retardation autosomal dominant 38	OMIM:616393	1
 Mental retardation autosomal dominant 39	OMIM:616521	1
 Mental Retardation Autosomal Dominant 3	umls:C2675488	1
 Mental retardation autosomal dominant 40	OMIM:616579	1
+Mental retardation autosomal dominant 41	OMIM:616944	1
+Mental retardation autosomal dominant 42	OMIM:616973	1
+Mental retardation autosomal dominant 43	OMIM:616977	1
 Mental Retardation Autosomal Dominant 4	umls:C2675487	1
 Mental Retardation Autosomal Dominant 5	umls:C2675473	1
 MENTAL RETARDATION AUTOSOMAL DOMINANT 6	umls:C3151411	1
@@ -19520,6 +19592,8 @@ MENTAL RETARDATION AUTOSOMAL RECESSIVE 49	OMIM:616281	1
 Mental retardation autosomal recessive 4	OMIM:611107	1
 Mental Retardation Autosomal Recessive 4	umls:C1970179	1
 Mental retardation autosomal recessive 51	OMIM:616739	1
+Mental retardation autosomal recessive 53	OMIM:616917	1
+Mental retardation autosomal recessive 54	OMIM:617028	1
 mental retardation autosomal recessive 5 dubowitz syndrome	unknown	1
 Mental Retardation Autosomal Recessive 6	umls:C1970198	1
 Mental Retardation Autosomal Recessive 7	umls:C1970197	1
@@ -19559,9 +19633,9 @@ Mental retardation X linked 12 35	OMIM:300957	1
 Mental retardation X linked 14	OMIM:300062	1
 Mental retardation X linked 14	umls:C0796220	1
 mental retardation x linked 17 31 microduplication intellectual disability	unknown	1
+Mental retardation X linked 1 78	OMIM:309530	1
 Mental Retardation X Linked 17	umls:C0796223	1
 Mental Retardation X Linked 19	umls:C0796225	1
-Mental retardation X linked 1	OMIM:309530	1
 Mental retardation X linked 20	OMIM:300047	1
 Mental Retardation X Linked 20	umls:C0796226	1
 Mental retardation X linked 21 34	OMIM:300143	1
@@ -19631,6 +19705,7 @@ MENTAL RETARDATION X LINKED 96	umls:C3275408	1
 mental retardation x linked 96	unknown	1
 Mental retardation X linked 97	OMIM:300803	1
 mental retardation x linked 98 kiaa2022 related x linked mental retardation	unknown	1
+Mental retardation X linked 99 syndromic female restricted	OMIM:300968	1
 Mental retardation X linked 9	OMIM:309549	1
 Mental Retardation X Linked 9	umls:C0796215	1
 Mental Retardation X Linked Associated 	umls:C2752082	1
@@ -19709,6 +19784,7 @@ Mesomelic dysplasia Kantaputra type	OMIM:156232	1
 mesomelic dysplasia kantaputra type	unknown	1
 Mesothelioma Malignant	umls:C0345967	1
 mesp2 related spondylocostal dysostosis autosomal recessive spondylocostal dysostosis 2	unknown	1
+Metabolic encephalomyopathic crises recurrent 	OMIM:616878	1
 Metabolic myopathy due to lactate transporter defect	ORPHANET:171690	1
 metabolic syndrome obesity	PUBMED:16855182 16855182	1
 Metabolic syndrome protection against	OMIM:605552	1
@@ -19785,6 +19861,7 @@ metaphyseal chondromatosis 	unknown	1
 metaphyseal dysplasia cannabis dependence	unknown	1
 metaphyseal dysplasia inherited bone marrow failure syndromes	unknown	1
 Metaphyseal dysplasia maxillary hypoplasia brachydacty	ORPHANET:2504	1
+Metaphyseal dysplasia Spahr type	OMIM:250400	1
 metaphyseal dysplasia spondylo megaepiphyseal metaphyseal dysplasia	unknown	1
 Metaphyseal Dysplasia 	umls:C1834821	1
 metastases	PUBMED:7694948 7694948	1
@@ -19924,6 +20001,7 @@ Microcephaly seizures developmental delay	ORPHANET:228418	1
 Microcephaly short stature and impaired glucose metabolism 1	OMIM:616033	1
 Microcephaly short stature and impaired glucose metabolism 2	OMIM:616817	1
 Microcephaly short stature and impaired glucose metabolism	OMIM:616033	1
+Microcephaly short stature and polymicrogyria 	OMIM:614833	1
 Microcephaly 	umls:C2673414	1
 microcephaly 	unknown	1
 Microcoria congenital	OMIM:156600	1
@@ -19956,7 +20034,6 @@ microphthalmia isolated 7	unknown	1
 Microphthalmia isolated 	OMIM:601186	1
 Microphthalmia isolated 	OMIM:610092	1
 Microphthalmia isolated 	OMIM:611638	1
-Microphthalmia isolated 	OMIM:615145	1
 Microphthalmia isolated 	OMIM:616428	1
 Microphthalmia Isolated 	umls:C1834919	1
 Microphthalmia Isolated 	umls:C1845877	1
@@ -20120,6 +20197,7 @@ Minimal pigment oculocutaneous albinism type 1	ORPHANET:352734	1
 minimal pigment oculocutaneous albinism type 1	unknown	1
 minimum lifetime body mass index	PUBMED:11690602 11690602	1
 Miosis	umls:C0026205	1
+MIRAGE syndrome	OMIM:617053	1
 mirror image polydactyly laurin sandrow syndrome	unknown	1
 mirror image polydactyly short stature optic nerve atrophy and pelger huet anomaly	unknown	1
 mirror movements 1 esophageal cancer somatic	unknown	1
@@ -20156,6 +20234,7 @@ Mitochondrial complex III deficiency nuclear type 6	OMIM:615453	1
 MITOCHONDRIAL COMPLEX III DEFICIENCY NUCLEAR TYPE 6	OMIM:615453	1
 mitochondrial complex iii deficiency nuclear type 7 mitochondrial complex iii deficiency nuclear type 6	unknown	1
 MITOCHONDRIAL COMPLEX III DEFICIENCY NUCLEAR TYPE 7	OMIM:615824	1
+Mitochondrial complex III deficiency nuclear type 8	OMIM:615838	1
 MITOCHONDRIAL COMPLEX III DEFICIENCY NUCLEAR TYPE 8	OMIM:615838	1
 Mitochondrial complex III deficiency	OMIM:124000	1
 MITOCHONDRIAL COMPLEX V ATP SYNTHASE DEFICIENCY NUCLEAR TYPE 3	umls:C3279708	1
@@ -20174,6 +20253,7 @@ Mitochondrial DNA deletion syndrome 	ORPHANET:352470	1
 mitochondrial dna deletion syndromes leigh syndrome due to mitochondrial complex i deficiency  6	unknown	1
 mitochondrial dna deletion syndromes leigh syndrome due to mitochondrial complex i deficiency	unknown	1
 mitochondrial dna depletion syndrome 12	unknown	1
+Mitochondrial DNA depletion syndrome 14	OMIM:616896	1
 mitochondrial dna depletion syndrome 1	unknown	1
 Mitochondrial DNA depletion syndrome 3 hepatocerebral	OMIM:251880	1
 mitochondrial dna depletion syndrome 3	unknown	1
@@ -20212,7 +20292,6 @@ mitochondrial encephalomyopathy	unknown	1
 Mitochondrial hypertrophic cardiomyopathy 	ORPHANET:314637	1
 mitochondrial membrane protein associated neurodegeneration spastic paraplegia 43 autosomal recessive	unknown	1
 mitochondrial myopathy and sideroblastic anemia 1 myopathy lactic acidosis and sideroblastic anemia 1  7	unknown	1
-Mitochondrial myopathy and sideroblastic anemia 1	OMIM:600462	1
 Mitochondrial myopathy 	OMIM:251950	1
 Mitochondrial myopathy 	ORPHANET:254864	1
 mitochondrial myopathy	PUBMED:12873860 12873860	1
@@ -20424,7 +20503,6 @@ mucolipidosis mucolipidosis iv	unknown	1
 Mucolipidosis type 2	ORPHANET:576	1
 Mucolipidosis type 4	ORPHANET:578	1
 Mucolipidosis Type IV	umls:C0238286	1
-Mucopolysaccharidisis type IIIA	OMIM:252900	1
 mucopolysaccharidoses morquio syndrome b	unknown	1
 mucopolysaccharidosis ih mongolian spot  8	unknown	1
 mucopolysaccharidosis iii melanoma	unknown	1
@@ -20456,6 +20534,7 @@ mucopolysaccharidosis type 6 rapidly progressing	unknown	1
 Mucopolysaccharidosis type 6 slowly progressing	ORPHANET:276223	1
 mucopolysaccharidosis type 6 slowly progressing	unknown	1
 Mucopolysaccharidosis type 7	ORPHANET:584	1
+Mucopolysaccharidosis type IIIA	OMIM:252900	1
 Mucopolysaccharidosis Type IIIA	umls:C0086647	1
 Mucopolysaccharidosis type IIIB	OMIM:252920	1
 Mucopolysaccharidosis Type IIIB	umls:C0086648	1
@@ -20556,7 +20635,10 @@ multiple intestinal atresia cystic fibrosis  7	unknown	1
 Multiple intestinal atresia	ORPHANET:2300	1
 multiple intestinal atresia	unknown	1
 MULTIPLE JOINT DISLOCATIONS SHORT STATURE CRANIOFACIAL DYSMORPHISM AND CONGENITAL HEART DEFECTS	umls:C3278404	1
+Multiple joint dislocations short stature craniofacial dysmorphism 	OMIM:245600	1
 Multiple keratoacanthoma Ferguson Smith type	ORPHANET:65748	1
+Multiple mitochondrial dysfunctions syndrome 2 	OMIM:614299	1
+Multiple mitochondrial dysfunctions syndrome 2	OMIM:614299	1
 multiple mitochondrial dysfunctions syndrome 2	unknown	1
 Multiple mitochondrial dysfunctions syndrome 3	OMIM:615330	1
 Multiple mitochondrial dysfunctions syndrome 4	OMIM:616370	1
@@ -20967,6 +21049,7 @@ Myeloproliferative disorder 	OMIM:131440	1
 Myeloproliferative disorder	OMIM:605392	1
 myeloproliferative disorders	PUBMED:19287384 19287384	1
 myeloproliferative disorders thrombocytosis	PUBMED:15269348 15269348	1
+Myeloproliferative lymphoproliferative neoplasms familial	OMIM:616871	1
 Myeloproliferative neoplasms	PUBMED:19287384	1
 myeloproliferative neoplasms	PUBMED:19287384 19287384	1
 Myeloproliferative Syndrome Transient	umls:C1834582	1
@@ -21190,7 +21273,6 @@ myopathy early onset areflexia respiratory distress and dysphagia	unknown	1
 Myopathy Early Onset 	umls:C2673677	1
 Myopathy Hyaline Body Autosomal Recessive	umls:C1850709	1
 myopathy hyaline body	unknown	1
-Myopathy lactic acidosis and sideroblastic anemia 1	OMIM:600462	1
 myopathy lactic acidosis and sideroblastic anemia 2 mitochondrial myopathy and sideroblastic anemia 1	unknown	1
 MYOPATHY LACTIC ACIDOSIS AND SIDEROBLASTIC ANEMIA 2	umls:C3150802	1
 Myopathy Mitochondrial Progressive 	umls:C2751320	1
@@ -21216,6 +21298,7 @@ Myopathy reducing body X linked childhood onset	OMIM:300718	1
 Myopathy Reducing Body X Linked Childhood Onset	umls:C2678015	1
 Myopathy reducing body X linked early onset severe	OMIM:300717	1
 Myopathy Reducing Body X Linked Early Onset Severe	umls:C2678027	1
+Myopathy scapulohumeroperoneal	OMIM:616852	1
 Myopathy spheroid body	OMIM:182920	1
 Myopathy tubular aggregate 1 160565	OMIM:605921	1
 Myopathy 	umls:C1850718	1
@@ -21389,7 +21472,6 @@ nanophthalmos 2	unknown	1
 Nanophthalmos 3	OMIM:611897	1
 Nanophthalmos 3	umls:C2678467	1
 nanophthalmos 3	unknown	1
-Nanophthalmos 4	OMIM:615972	1
 narcissistic personality disorder myospherulosis  15	unknown	1
 narcolepsy 1 narcolepsy	unknown	1
 narcolepsy 1 retinitis pigmentosa 43	unknown	1
@@ -21669,6 +21751,7 @@ nephrotic syndrome	PUBMED:15687724 15687724	1
 nephrotic syndrome	PUBMED:15728267 15728267 15687724	1
 nephrotic syndrome type 10 idiopathic steroid sensitive nephrotic syndrome 	unknown	1
 Nephrotic syndrome type 11	OMIM:616730	1
+Nephrotic syndrome type 12	OMIM:616892	1
 Nephrotic syndrome type 1	OMIM:256300	1
 nephrotic syndrome type 1	unknown	1
 Nephrotic syndrome type 2	OMIM:600995	1
@@ -21761,6 +21844,7 @@ Neurodegeneration 	ORPHANET:289560	1
 NEURODEGENERATION 	umls:C3280371	1
 neurodegenerative diseases	PUBMED:18854867 18854867	1
 Neurodegenerative syndrome due to cerebral folate transport deficiency	ORPHANET:217382	1
+Neurodevelopmental disorder 	OMIM:616975	1
 Neuroectodermal melanolysosomal disease	ORPHANET:33445	1
 neuroectodermal melanolysosomal disease	unknown	1
 Neuroectodermal Tumors Primitive Peripheral	umls:C0684337	1
@@ -21909,6 +21993,7 @@ Neutropenia severe congenital 2 autosomal dominant	OMIM:613107	1
 Neutropenia severe congenital 3 autosomal recessive	OMIM:610738	1
 Neutropenia severe congenital 5 autosomal recessive	OMIM:615285	1
 Neutropenia severe congenital 6 autosomal recessive	OMIM:616022	1
+Neutropenia severe congenital 7 autosomal recessive	OMIM:617014	1
 Neutropenia Severe Congenital Autosomal Dominant 2	umls:C2751288	1
 Neutropenia Severe Congenital Autosomal Recessive 4	umls:C2675526	1
 Neutropenia Severe Congenital X Linked	umls:C1845987	1
@@ -21928,6 +22013,7 @@ nevoid basal cell carcinoma syndrome basal cell carcinoma	unknown	1
 nevo syndrome ehlers danlos syndrome type via  8	unknown	1
 Nevo syndrome	umls:C2936777	1
 nevo syndrome	unknown	1
+Nevus comedonicus somatic	OMIM:617025	1
 Nevus sebaceous or woolly hair nevus somatic	OMIM:162900	1
 newborn respiratory distress syndrome pulmonary fibrosis familial  9	unknown	1
 Newfoundland Rod Cone Dystrophy	umls:C1843815	1
@@ -21983,6 +22069,7 @@ NIGHT BLINDNESS CONGENITAL STATIONARY TYPE 1A	umls:C3495587	1
 NIGHT BLINDNESS CONGENITAL STATIONARY TYPE 1B	umls:C1850362	1
 NIGHT BLINDNESS CONGENITAL STATIONARY TYPE 1E	umls:C3281215	1
 Night blindness congenital stationary type 1G	OMIM:616389	1
+Night blindness congenital stationary type 1H	OMIM:617024	1
 NIGHT BLINDNESS CONGENITAL STATIONARY TYPE 2A	umls:C1848172	1
 NIGHT BLINDNESS CONGENITAL STATIONARY TYPE 2B	umls:C1864877	1
 night blindness stargardt disease  26	unknown	1
@@ -22797,6 +22884,7 @@ Osteochondritis dissecans	OMIM:165800	1
 Osteochondritis dissecans short stature and early onset osteoarthritis	OMIM:165800	1
 osteochondritis dissecans spontaneous pneumothorax  42	unknown	1
 Osteochondritis Dissecans	umls:C0029421	1
+Osteochondrodysplasia complex lethal Symoens Barnes Gistelinck type	OMIM:616897	1
 osteochondrodysplasia leber hereditary optic neuropathy	unknown	1
 Osteochondrodysplasia	Not available	1
 osteochondrodysplasias	PUBMED:7859284 7859284	1
@@ -22806,6 +22894,7 @@ Osteochondroma	umls:C0029423	1
 Osteocraniostenosis	ORPHANET:2763	1
 Osteodysplastic primordial dwarfism type 1	OMIM:210710	1
 Osteodysplasty Melnick Needles type	ORPHANET:2484	1
+Osteofibrous dysplasia	OMIM:607278	1
 Osteogenesis imperfecta Levin type	OMIM:166260	1
 Osteogenesis imperfecta Levin type	umls:C1833736	1
 osteogenesis imperfecta	PUBMED:6313757 6313757	1
@@ -23378,8 +23467,8 @@ parkinson disease 1 lrrk2 related parkinson disease  6	unknown	1
 parkinson disease 1 parkinson disease 11	unknown	1
 parkinson disease 1 parkinson disease 4	unknown	1
 parkinson disease 20 early onset parkinson disease 19 juvenile onset	unknown	1
-Parkinson disease 21	OMIM:616361	1
 Parkinson disease 22 autosomal dominant	OMIM:616710	1
+Parkinson disease 23 autosomal recessive early onset	OMIM:616840	1
 Parkinson disease 2	OMIM:600116	1
 Parkinson Disease 3 Autosomal Dominant Lewy Body	umls:C1865581	1
 Parkinson disease 3	OMIM:602404	1
@@ -23395,6 +23484,7 @@ Parkinson disease 8 autosomal dominant	OMIM:607060	1
 PARKINSON DISEASE 8 AUTOSOMAL DOMINANT	umls:C1846862	1
 Parkinson disease 9	OMIM:606693	1
 Parkinson disease 9	umls:C1847640	1
+Parkinson disease age of onset modifier	OMIM:168600	1
 parkinson disease cognition	PUBMED:15772739 15772739	1
 parkinson disease depression	PUBMED:11326308 11326308	1
 parkinson disease essential tremor	PUBMED:19720553 19720553	1
@@ -23555,6 +23645,8 @@ pasli disease	unknown	1
 pasteurellosis shipyard eye	unknown	1
 Patella aplasia or hypoplasia	OMIM:168860	1
 patellofemoral pain syndrome hemarthrosis	unknown	1
+Patent ductus arteriosus 2	OMIM:617035	1
+Patent ductus arteriosus 3	OMIM:617039	1
 patent ductus arteriosus acute myocardial infarction  11	unknown	1
 patent ductus arteriosus albinism	unknown	1
 patent ductus arteriosus aortic disease	unknown	1
@@ -23615,6 +23707,7 @@ Peeling skin syndrome type B	ORPHANET:263553	1
 Peeling Skin Syndrome	umls:C1849193	1
 pef	PUBMED:10903223 10903223	1
 Peginterferon alfa 2a response	Not available	1
+PEHO syndrome	OMIM:260565	1
 peho syndrome	unknown	1
 Pelger Huet anomaly	OMIM:169400	1
 Pelger Huet Anomaly	umls:C0030779	1
@@ -23995,17 +24088,18 @@ phytosterols	PUBMED:20529992 20529992	1
 phytosterols	PUBMED:20529992 20529992 20529992	1
 piebald trait kit related	unknown	1
 piebald trait snai2 related	unknown	1
+Pierpont syndrome	OMIM:602342	1
 Pierre Robin syndrome	OMIM:261800	1
 Pierre Robin syndrome 	umls:C1848488	1
 pierson syndrome nephrotic syndrome type 5 	unknown	1
 Pierson syndrome	ORPHANET:2670	1
 Pierson syndrome	umls:C1836876	1
 pierson syndrome	unknown	1
+Pigmentary disorder reticulate 	OMIM:301220	1
 Pigmentary Disorder Reticulate 	umls:C1845050	1
 Pigmentary pallidal degeneration	OMIM:234200	1
 pigmentation	PUBMED:11833005 11833005	1
 pigmentation	PUBMED:15714523 15714523	1
-Pigment disorder reticulate	OMIM:301220	1
 pigment disorder reticulate x linked reticulate pigmentary disorder 	unknown	1
 Pigment dispersion syndrome	OMIM:600510	1
 pigment dispersion syndrome	unknown	1
@@ -24255,6 +24349,7 @@ polyarteritis nodosa idiopathic pulmonary fibrosis	unknown	1
 Polyarteritis nodosa	OMIM:615688	1
 polyarthritis	PUBMED:14551601 14551601	1
 polyarticular onset juvenile idiopathic arthritis systemic lupus erythematosus susceptitbility to 11  10	unknown	1
+Polycyctic kidney disease 3	OMIM:600666	1
 polycystic kidney disease 1	PUBMED:12842373 12842373	1
 POLYCYSTIC KIDNEY DISEASE 1	umls:C3149841	1
 polycystic kidney disease adult type i autosomal dominant polycystic kidney disease type 1 	unknown	1
@@ -24272,6 +24367,8 @@ polycystic kidney disease type 2 polycystic kidney disease autosomal dominant  1
 Polycystic kidney disease type 2	umls:C2751306	1
 polycystic kidney disease type 2	unknown	1
 Polycystic kidneys severe infantile 	umls:C1838327	1
+Polycystic liver disease 1	OMIM:174050	1
+Polycystic liver disease 2	OMIM:617004	1
 polycystic liver disease glycogen storage disease ii	unknown	1
 polycystic liver disease kidney disease	unknown	1
 polycystic liver disease liver disease	unknown	1
@@ -24346,6 +24443,7 @@ Polymicrogyria bilateral perisylvian	OMIM:300388	1
 Polymicrogyria bilateral perisylvian	OMIM:615752	1
 Polymicrogyria bilateral temporooccipital	OMIM:612691	1
 Polymicrogyria due to TUBB2B mutation	ORPHANET:300573	1
+Polymicrogyria 	OMIM:614833	1
 Polymicrogyria 	ORPHANET:250972	1
 Polymicrogyria perisylvian 	OMIM:616531	1
 Polymicrogyria symmetric or asymmetric	OMIM:610031	1
@@ -24397,12 +24495,14 @@ Pontocerebellar Hypoplasia Type 2A	umls:C1848526	1
 pontocerebellar hypoplasia type 2b pontocerebellar hypoplasia type 2	unknown	1
 Pontocerebellar Hypoplasia Type 2B	umls:C2676466	1
 pontocerebellar hypoplasia type 2b	unknown	1
+Pontocerebellar hypoplasia type 2C	OMIM:612390	1
 pontocerebellar hypoplasia type 2c tsen34 related pontocerebellar hypoplasia  6	unknown	1
 Pontocerebellar Hypoplasia Type 2C	umls:C2676465	1
 PONTOCEREBELLAR HYPOPLASIA TYPE 2D	umls:C3151140	1
 Pontocerebellar hypoplasia type 2e	OMIM:615851	1
 Pontocerebellar hypoplasia type 2E	OMIM:615851	1
 pontocerebellar hypoplasia type 2e	unknown	1
+Pontocerebellar hypoplasia type 2F	OMIM:617026	1
 pontocerebellar hypoplasia type 2 pontocerebellar hypoplasia type 2e  11	unknown	1
 pontocerebellar hypoplasia type 2 tsen54 related pontocerebellar hypoplasia  6	unknown	1
 Pontocerebellar Hypoplasia Type 3	umls:C1842687	1
@@ -24624,6 +24724,7 @@ premature coronary artery disease	PUBMED:11168027 11168027	1
 premature coronary artery disease	PUBMED:9555857 9555857	1
 premature coronary heart disease	PUBMED:11862316 11862316	1
 premature menopause precocious puberty male  13	unknown	1
+Premature ovarian failure 11	OMIM:616946	1
 Premature ovarian failure 2a	OMIM:300511	1
 Premature Ovarian Failure 2a	umls:C1845293	1
 Premature ovarian failure 2b	OMIM:300604	1
@@ -24639,7 +24740,6 @@ Premature Ovarian Failure 6	umls:C2676742	1
 premature ovarian failure 7 spermatogenic failure 8	unknown	1
 Premature Ovarian Failure 7	umls:C2751825	1
 premature ovarian failure 7	unknown	1
-Premature ovarian failure 8	OMIM:615723	1
 premature ovarian failure 8	unknown	1
 premature ovarian failure menopause early	PUBMED:11256870 11256870	1
 Premature ovarian failure	OMIM:300511	1
@@ -25525,6 +25625,7 @@ PYCR1 related DeBarsy syndrome	ORPHANET:293633	1
 pyelonephritis carboxypeptidase n deficiency	unknown	1
 pyelonephritis vesicoureteral reflux	PUBMED:17296422 17296422	1
 Pyknodysostosis	OMIM:265800	1
+Pyle disease	OMIM:265900	1
 Pyloric stenosis infantile hypertrophic 1	OMIM:179010	1
 Pyloric Stenosis Infantile Hypertrophic 1	umls:C1867403	1
 Pyloric stenosis infantile hypertrophic 2	OMIM:610260	1
@@ -25584,6 +25685,7 @@ Pyruvate dehydrogenase E3 binding protein deficiency	OMIM:245349	1
 Pyruvate dehydrogenase E3 binding protein deficiency	ORPHANET:255182	1
 Pyruvate Dehydrogenase E3 Binding Protein Deficiency	umls:C1855553	1
 Pyruvate dehydrogenase E3 deficiency	ORPHANET:2394	1
+Pyruvate dehydrogenase lipoic acid synthetase deficiency	OMIM:614462	1
 PYRUVATE DEHYDROGENASE LIPOIC ACID SYNTHETASE DEFICIENCY	umls:C3280887	1
 pyruvate dehydrogenase lipoic acid synthetase deficiency	unknown	1
 Pyruvate dehydrogenase phosphatase deficiency	ORPHANET:79246	1
@@ -25815,7 +25917,6 @@ relapsing polychondritis mycobacterium malmoense	unknown	1
 relapsing polychondritis pre b cell acute lymphoblastic leukemia  12	unknown	1
 religion and psychology	PUBMED:21368711 21368711	1
 renal adenoma	unknown	1
-Renal agenesis	OMIM:191830	1
 renal agenesis renal hypodysplasia aplasia 1	unknown	1
 renal allograft function	PUBMED:11923700 11923700	1
 renal amyloidosis	PUBMED:8097946 8097946	1
@@ -26164,11 +26265,13 @@ Retinitis pigmentosa 71	OMIM:616394	1
 Retinitis pigmentosa 72	OMIM:616469	1
 Retinitis pigmentosa 73	OMIM:616544	1
 Retinitis pigmentosa 74	OMIM:616562	1
+Retinitis pigmentosa 75	OMIM:617023	1
 Retinitis pigmentosa 7 digenic	OMIM:608133	1
 Retinitis Pigmentosa 7	umls:C1842475	1
 retinitis pigmentosa 7	unknown	1
 retinitis pigmentosa 9 rp9 related retinitis pigmentosa  6	unknown	1
 Retinitis Pigmentosa 9	umls:C1867300	1
+Retinitis pigmentosa and erythrocytic microcytosis	OMIM:616959	1
 retinitis pigmentosa autosomal recessive bothnia type	unknown	1
 retinitis pigmentosa autosomal recessive cnga1 related retinitis pigmentosa	unknown	1
 retinitis pigmentosa autosomal recessive	unknown	1
@@ -26474,6 +26577,7 @@ robinow sorauf syndrome	unknown	1
 Robinow syndrome autosomal dominant 1	OMIM:180700	1
 Robinow syndrome autosomal dominant 2	OMIM:616331	1
 ROBINOW SYNDROME AUTOSOMAL DOMINANT 2	OMIM:616331	1
+Robinow syndrome autosomal dominant 3	OMIM:616894	1
 Robinow Syndrome Autosomal Dominant	umls:C0265205	1
 robinow syndrome autosomal recessive ror2 related disorders  9	unknown	1
 Robinow syndrome autosomal recessive	umls:C1849334	1
@@ -26898,6 +27002,7 @@ Schnyder crystalline corneal dystrophy	OMIM:121800	1
 Schopf Schulz Passarge Syndrome	umls:C1857069	1
 schopf schulz passarge syndrome	unknown	1
 Sch pf Schulz Passarge syndrome	ORPHANET:50944	1
+Schuss Hoeijmakers sydnrome	OMIM:615009	1
 Schwannomatosis 1	OMIM:162091	1
 schwannomatosis 2 neurilemmomatosis	unknown	1
 Schwannomatosis	umls:C1335929	1
@@ -27059,6 +27164,7 @@ Select biomarker traits	PUBMED:17903293 17903293	1
 select biomarker traits	PUBMED:17903293 17903293 17903293	1
 selective iga deficiency disease	unknown	1
 Selective pituitary resistance to thyroid hormone	ORPHANET:165994	1
+Selective T cell defect	OMIM:269840	1
 selenium	PUBMED:17536041 17536041	1
 selenium	PUBMED:19278567 19278567	1
 self healing papular mucinosis	unknown	1
@@ -27341,6 +27447,7 @@ Short rib thoracic dysplasia 8 	OMIM:615503	1
 Short rib thoracic dysplasia 9 	OMIM:266920	1
 short rib thoracic dysplasia 9 	unknown	1
 Short stature delayed bone age due to thyroid hormone metabolism deficiency	ORPHANET:171706	1
+Short stature developmental delay and congenital heart defects	OMIM:617044	1
 Short stature due to GHSR deficiency	ORPHANET:314811	1
 Short stature due to growth hormone qualitative anomaly	ORPHANET:629	1
 Short stature due to partial GHR deficiency	ORPHANET:314802	1
@@ -27719,6 +27826,7 @@ SPASTIC ATAXIA 5 AUTOSOMAL RECESSIVE	umls:C3280977	1
 Spastic ataxia Charlevoix Saguenay type	umls:C1849140	1
 spastic diplegia paine syndrome	unknown	1
 spastic hemiplegia premature ovarian failure 9	unknown	1
+Spasticity childhood onset 	OMIM:616859	1
 spasticity hypomyelination 	unknown	1
 Spasticity intellectual deficit X linked epilepsy	ORPHANET:3175	1
 spasticity mental retardation severe 	unknown	1
@@ -27854,6 +27962,7 @@ spastic paraplegia 5a spastic paraplegia 5a autosomal recessive	unknown	1
 spastic paraplegia 5b	unknown	1
 Spastic paraplegia 61 autosomal recessive	OMIM:615685	1
 spastic paraplegia 61 autosomal recessive	unknown	1
+Spastic paraplegia 62	OMIM:615681	1
 Spastic paraplegia 63 autosomal recessive	OMIM:615686	1
 Spastic paraplegia 6 autosomal dominant	OMIM:600363	1
 Spastic paraplegia 6 autosomal dominant	umls:C1838192	1
@@ -27866,6 +27975,8 @@ Spastic paraplegia 72 autosomal recessive	OMIM:615625	1
 SPASTIC PARAPLEGIA 73 AUTOSOMAL DOMINANT	OMIM:616282	1
 Spastic paraplegia 74 autosomal recessive	OMIM:616451	1
 Spastic paraplegia 75 autosomal recessive	OMIM:616680	1
+Spastic paraplegia 76 autosomal recessive	OMIM:616907	1
+Spastic paraplegia 77 autosomal recessive	OMIM:617046	1
 spastic paraplegia 7 autosomal recessive spastic paraplegia 7  12	unknown	1
 Spastic Paraplegia 7 Autosomal Recessive	umls:C1846564	1
 Spastic paraplegia 7	OMIM:607259	1
@@ -27922,6 +28033,7 @@ spermatogenic failure 10	unknown	1
 Spermatogenic failure 13	OMIM:615841	1
 spermatogenic failure 13 spermatogenic failure 14	unknown	1
 Spermatogenic failure 14	OMIM:615842	1
+Spermatogenic failure 15	OMIM:616950	1
 Spermatogenic failure 2	OMIM:108420	1
 spermatogenic failure 3 spermatogenic failure	unknown	1
 Spermatogenic failure 5	OMIM:243060	1
@@ -27992,6 +28104,8 @@ Spinal muscular atrophy lower extremity predominant 2 autosomal dominant	OMIM:61
 spinal muscular atrophy lower extremity predominant ad	unknown	1
 Spinal muscular atrophy 	OMIM:159950	1
 Spinal muscular atrophy 	OMIM:604320	1
+Spinal muscular atrophy 	OMIM:616866	1
+Spinal muscular atrophy 	OMIM:616867	1
 spinal muscular atrophy phenotype	PUBMED:7898712 7898712	1
 spinal muscular atrophy proximal adult autosomal dominant spinal muscular atrophy late onset finkel type  6	unknown	1
 Spinal Muscular Atrophy Proximal Adult Autosomal Dominant	umls:C1866777	1
@@ -28064,6 +28178,7 @@ spinocerebellar ataxia autosomal recessive 1 ataxia oculomotor apraxia 3	unknown
 Spinocerebellar ataxia autosomal recessive 1	umls:C1853761	1
 Spinocerebellar ataxia autosomal recessive 20	OMIM:616354	1
 Spinocerebellar ataxia autosomal recessive 21	OMIM:616719	1
+Spinocerebellar ataxia autosomal recessive 23	OMIM:616949	1
 Spinocerebellar ataxia autosomal recessive 2	OMIM:213200	1
 Spinocerebellar Ataxia Autosomal Recessive 2	umls:C1859298	1
 Spinocerebellar ataxia autosomal recessive 3	OMIM:271250	1
@@ -28152,6 +28267,7 @@ splenic artery aneurysm	unknown	1
 Splenic hypoplasia	OMIM:271400	1
 Splenic Hypoplasia	umls:C0685889	1
 splenic sequestration	unknown	1
+Split foot malformation 	OMIM:616890	1
 split hand congenital heart disease	unknown	1
 split hand foot malformation 1 mucinous adenofibroma  9	unknown	1
 Split hand foot malformation 1	OMIM:183600	1
@@ -28215,6 +28331,7 @@ Spondyloepimetaphyseal dysplasia aggrecan type	ORPHANET:171866	1
 Spondyloepimetaphyseal Dysplasia Aggrecan Type	umls:C2748544	1
 spondyloepimetaphyseal dysplasia aggrecan type	unknown	1
 Spondyloepimetaphyseal dysplasia congenita Strudwick type	ORPHANET:93346	1
+Spondyloepimetaphyseal dysplasia Genevieve type	OMIM:610442	1
 spondyloepimetaphyseal dysplasia hypogonadotropic hypogonadism 16 	unknown	1
 Spondyloepimetaphyseal dysplasia Matrilin 3 related	OMIM:608728	1
 Spondyloepimetaphyseal Dysplasia Matrilin 3 Related	umls:C1837481	1
@@ -28238,6 +28355,7 @@ Spondyloepimetaphyseal dysplasia Strudwick type	OMIM:184250	1
 spondyloepimetaphyseal dysplasia strudwick type	unknown	1
 Spondyloepimetaphyseal dysplasia 	umls:C1863732	1
 spondyloepimetaphyseal dysplasia 	unknown	1
+Spondyloepimetaphyseal dysplasia X linked	OMIM:300106	1
 spondyloepiphyseal dysplasia congenita larsen syndrome  8	unknown	1
 Spondyloepiphyseal dysplasia congenita	OMIM:183900	1
 Spondyloepiphyseal dysplasia congenita	ORPHANET:94068	1
@@ -28477,9 +28595,11 @@ Strabismus	OMIM:185100	1
 Strabismus	umls:C0038379	1
 streptococcus pneumoniae	PUBMED:12752683 12752683	1
 stress	PUBMED:14764763 14764763	1
+Striatal degeneration autosomal dominant	OMIM:616922	1
 Striatal Degeneration Autosomal Dominant	umls:C1836694	1
 striatal degeneration autosomal dominant	unknown	1
 Striatal necrosis bilateral and progressive polyneuropathy	OMIM:613710	1
+Striatonigral degeneration childhood onset	OMIM:617054	1
 Striatonigral Degeneration Infantile Mitochondrial	umls:C1839022	1
 Striatonigral degeneration infantile	umls:C0795996	1
 striatonigral degeneration infantile	unknown	1
@@ -28542,6 +28662,7 @@ stroke	PUBMED:22306652 22306652	1
 Stroke	PUBMED:22990015 22990015	1
 stroke	PUBMED:8711797 8711797 9409270 10835448 11921083 16519597	1
 stroke	PUBMED:9690809 9690809 9514419	1
+Stromme syndrome	OMIM:243605	1
 strongyloidiasis ostertagiasis	unknown	1
 Strudwick syndrome	umls:C0700635	1
 struma ovarii ovarian small cell carcinoma  53	unknown	1
@@ -28703,9 +28824,7 @@ Surfactant metabolism dysfunction pulmonary 4	OMIM:300770	1
 Surfactant Metabolism Dysfunction Pulmonary 4	umls:C2677877	1
 surfactant metabolism dysfunction pulmonary 4	unknown	1
 survival	PUBMED:17903295 17903295 17903295	1
-Sveinsson choreoretinal atrophy	OMIM:108985	1
 sveinsson choreoretinal atrophy	unknown	1
-Sveinsson chorioretinal atrophy	OMIM:108985	1
 Sveinsson Chorioretinal Atrophy	umls:C1862382	1
 sweat chloride elevation 	unknown	1
 sweat gland carcinoma atrioventricular septal defect  30	unknown	1
@@ -28767,7 +28886,6 @@ Synesthesia	umls:C0233778	1
 synesthesia	unknown	1
 synovial sarcoma constrictive pericarditis	unknown	1
 Synovitis granulomatous 	umls:C1861303	1
-Synpolydactyly 1	OMIM:186000	1
 Synpolydactyly 1	umls:C1861367	1
 Synpolydactyly 2	OMIM:608180	1
 Synpolydactyly 2	umls:C1842422	1
@@ -28777,7 +28895,6 @@ Synpolydactyly 3	umls:C1853255	1
 synpolydactyly 3	unknown	1
 Synpolydactyly type 1	ORPHANET:295195	1
 Synpolydactyly type 2	ORPHANET:295197	1
-Synpolydactyly type II	OMIM:186000	1
 synpolydactyly type ii	unknown	1
 synpolydactyly 	unknown	1
 synthetic hemodialysis graft failure	PUBMED:12580317 12580317	1
@@ -29067,6 +29184,7 @@ testicular granulosa cell tumor	unknown	1
 testicular infarct	unknown	1
 testicular lymphoma hepatitic c virus  14	unknown	1
 testicular lymphoma lenz microphthalmia syndrome  25	unknown	1
+Testicular microlithiasis	OMIM:610441	1
 testicular microlithiasis pulmonary alveolar microlithiasis	unknown	1
 Testicular Microlithiasis	umls:C1864873	1
 testicular neoplasms	PUBMED:19483681 19483681 19483682 20543847	1
@@ -29146,6 +29264,8 @@ thiolase deficiency lipid metabolism disorder  7	unknown	1
 Thiopurine methyltransferase deficiency	OMIM:610460	1
 Thiopurine S methyltranferase deficiency	umls:C0342801	1
 Thiopurine S methyltransferase deficiency	ORPHANET:3315	1
+Thiopurines poor metabolism of 1	OMIM:610460	1
+Thiopurines poor metabolism of 2	OMIM:616903	1
 Thiourea tasting	OMIM:171200	1
 THIOUREA TASTING	umls:C1868397	1
 third degree atrioventricular block	unknown	1
@@ -29189,6 +29309,7 @@ thrombocytopenia 2 ankrd26 related thrombocytopenia 2	unknown	1
 thrombocytopenia 2 diaphyseal medullary stenosis 	unknown	1
 thrombocytopenia 2 thrombocytopenia 4  8	unknown	1
 Thrombocytopenia 4	umls:C2677608	1
+Thrombocytopenia 6	OMIM:616937	1
 Thrombocytopenia absent radius	ORPHANET:3320	1
 thrombocytopenia absent radius syndrome 1q21 1 deletion	unknown	1
 Thrombocytopenia chromosome breakage	umls:C1861185	1
@@ -29668,6 +29789,7 @@ Trichothiodystrophy 1 photosensitive	OMIM:601675	1
 Trichothiodystrophy 2 photosensitive	OMIM:616390	1
 Trichothiodystrophy 3 photosensitive	OMIM:616395	1
 Trichothiodystrophy 4 nonphotosensitive	OMIM:234050	1
+Trichothiodystrophy 6 nonphotosensitive	OMIM:616943	1
 Trichothiodystrophy nonphotosensitive 1	OMIM:234050	1
 TRICHOTHIODYSTROPHY NONPHOTOSENSITIVE 1	umls:C1961117	1
 trichotillomania gilles de la tourette syndrome	unknown	1
@@ -30861,6 +30983,7 @@ Wrinkly skin syndrome	umls:C0406587	1
 wt1 related disorders	unknown	1
 xanthinuria type 1	unknown	1
 xanthinuria type 2	unknown	1
+Xanthinuria type II	OMIM:603592	1
 Xanthinuria type II	ORPHANET:93602	1
 Xanthinuria Type II	umls:C1863688	1
 Xanthinuria type I	OMIM:278300	1
@@ -31067,6 +31190,7 @@ Yemenite deaf blind hypopigmentation syndrome	umls:C1866425	1
 yemenite deaf blind hypopigmentation syndrome waardenburg syndrome type iva  22	unknown	1
 YKL 40 levels	PUBMED:18403759	1
 ykl 40 levels	PUBMED:18403759 18403759	1
+You Hoover Fong syndrome	OMIM:616954	1
 Young adult onset distal hereditary motor neuropathy	ORPHANET:314485	1
 Young McKeever Squier syndrome	umls:C1856974	1
 Young Simpson syndrome	OMIM:603736	1
@@ -31234,7 +31358,6 @@ adiposity	PUBMED:19557161 19557161	2
 Adolescent idiopathic scoliosis	PUBMED:24023777	2
 Adrenal adenoma somatic	OMIM:613733	2
 Adrenal hyperplasia congenital due to 21 hydroxylase deficiency	OMIM:201910	2
-Adrenal hypoplasia congenital 	OMIM:300200	2
 Adrenal insufficiency congenital 	OMIM:613743	2
 Adrenal Insufficiency	umls:C0001623	2
 Adrenocortical Carcinoma Hereditary	umls:C1859972	2
@@ -31336,6 +31459,7 @@ Alveolar soft part sarcoma	OMIM:606243	2
 Alveolar soft part sarcoma	ORPHANET:163699	2
 Alzheimer disease 18	OMIM:615590	2
 alzheimer disease dementia	PUBMED:15832029 15832029	2
+Alzheimer disease late onset	OMIM:104300	2
 alzheimer disease parkinson disease	PUBMED:15337261 15337261	2
 alzheimer disease	PUBMED:14570706 14570706	2
 alzheimer disease	PUBMED:15201366 15201366	2
@@ -31395,6 +31519,7 @@ Anemia hypochromic microcytic	umls:C0271901	2
 Anemia Hypoplastic Congenital	umls:C0949116	2
 anemia sickle cell	PUBMED:19254255 19254255	2
 Anemia sideroblastic 	OMIM:301310	2
+Anemia sideroblastic pyridoxine refractory autosomal recessive	OMIM:205950	2
 Anemia Sideroblastic Pyridoxine Refractory Autosomal Recessive	umls:C2673914	2
 Aneuploidy	umls:C0002938	2
 Angina Pectoris	umls:C0002962	2
@@ -31599,7 +31724,6 @@ Autism spectrum disorder attention deficit hyperactivity disorder bipolar disord
 autism spectrum disorder mood disorder	unknown	2
 autistic disorder	PUBMED:20663923 20663923	2
 autoimmune disease 1	unknown	2
-Autoimmune disease multisystem infantile onset	OMIM:615952	2
 AUTOIMMUNE DISEASE	umls:C1842979	2
 autoimmune enteropathy	unknown	2
 autoimmune polyendocrine syndrome type 2	unknown	2
@@ -31884,6 +32008,7 @@ brain	PUBMED:22504418 22504418	2
 brain small vessel disease 	unknown	2
 Branched chain ketoacid dehydrogenase kinase deficiency	OMIM:614923	2
 branchiootic syndrome 1	unknown	2
+Branchiootic syndrome 3	OMIM:608389	2
 Branchio otic syndrome	ORPHANET:52429	2
 branchiootic syndrome	unknown	2
 branchiootorenal spectrum disorders	unknown	2
@@ -32015,12 +32140,10 @@ cartilage hair hypoplasia anauxetic dysplasia spectrum disorders	unknown	2
 Cartilage hair hypoplasia	OMIM:250250	2
 casp10 related autoimmune lymphoproliferative syndrome	unknown	2
 Cataract 15 multiple types	OMIM:615274	2
-Cataract 19	OMIM:615277	2
 Cataract 23	OMIM:610425	2
 cataract and cardiomyopathy	unknown	2
 Cataract Coppock Like	umls:C2720200	2
 Cataract intellectual deficit hypogonadism	ORPHANET:1387	2
-Cataract juvenile 	OMIM:612018	2
 Cataract posterior polar 1	umls:C1861825	2
 Cataracts in type 2 diabetes	PUBMED:23137000	2
 Cataract total congenital	umls:C0266539	2
@@ -32236,7 +32359,6 @@ clear cell ependymoma	unknown	2
 clear cell hidradenoma	unknown	2
 clear cell meningioma	unknown	2
 cleft lip cleft palate	unknown	2
-Cleft lip palate ectodermal dysplasia syndrome	OMIM:225060	2
 cleft lip	PUBMED:20634891 20634891	2
 Cleft Palate Isolated And Mental Retardation	umls:C1970095	2
 Cleft palate isolated	OMIM:119540	2
@@ -32612,7 +32734,6 @@ deafness digenic gjb2 gjb6	unknown	2
 Deafness infertility syndrome	ORPHANET:94064	2
 Deafness sensorineural and male infertility	OMIM:611102	2
 Deafness X linked 1	OMIM:304500	2
-Deafness X linked 1 progressive	OMIM:300356	2
 deafness x linked 1	unknown	2
 Death Sudden	umls:C0011071	2
 Death	umls:C0011065	2
@@ -32904,7 +33025,6 @@ Epilepsy progressive myoclonic 1A	OMIM:254800	2
 Epilepsy progressive myoclonic 1B	OMIM:612437	2
 epilepsy progressive myoclonic 2a	unknown	2
 Epilepsy progressive myoclonic 4 	OMIM:254900	2
-Epilepsy progressive myoclonic 5	OMIM:613832	2
 Epilepsy progressive myoclonic 6	OMIM:614018	2
 Epilepsy progressive myoclonic 7	OMIM:616187	2
 epilepsy	PUBMED:15385837 15385837	2
@@ -32934,7 +33054,6 @@ episodic kinesigenic dyskinesia 1	unknown	2
 Episodic pain syndrome familial 2	OMIM:615551	2
 Episodic pain syndrome familial 3	OMIM:615552	2
 Epithelial myoepithelial carcinoma	OMIM:612237	2
-Epsilon trimethyllysine hydroxylase deficiency	OMIM:300872	2
 er negative	PUBMED:19124506 19124506	2
 er positive	PUBMED:19124506 19124506	2
 erythema infectiosum	unknown	2
@@ -33605,7 +33724,6 @@ Hypomagnesemia 6 renal	OMIM:613882	2
 Hypomagnesemia primary	umls:C0268448	2
 Hypomyelinating leukodystrophy 7	OMIM:607694	2
 hypomyelination and congenital cataract	unknown	2
-Hypomyelination global cerebral	OMIM:612949	2
 Hypomyelination hypogonadotropic hypogonadism hypodontia	ORPHANET:88637	2
 Hypomyelination 	OMIM:615281	2
 hypoparathyroidism autosomal recessive	unknown	2
@@ -33710,7 +33828,6 @@ infiltrative basal cell carcinoma	unknown	2
 Inflammatory bowel disease 10	OMIM:611081	2
 Inflammatory bowel disease 13	OMIM:612244	2
 Inflammatory bowel disease 14	OMIM:612245	2
-Inflammatory bowel disease 19	OMIM:612278	2
 inflammatory bowel disease 1	unknown	2
 Inflammatory Bowel Disease 25 Autosomal Recessive	umls:C2675508	2
 Inflammatory bowel disease	PUBMED:23128233 18758464	2
@@ -33735,7 +33852,6 @@ insulin resistance obesity	unknown	2
 insulin resistance	PUBMED:17903298 17903298 17903298 17903298	2
 insulin resistance	PUBMED:20081858 20081858	2
 Insulin resistance response	PUBMED:21901158 21901158	2
-Insulin resistance severe digenic	OMIM:604367	2
 insulin sensitivity and body composition	PUBMED:15015141 15015141	2
 Intellectual deficit sparse hair brachydactyly	ORPHANET:3051	2
 intelligence qtl3	unknown	2
@@ -33810,6 +33926,7 @@ Jackson Weiss syndrome	umls:C0795998	2
 Jakob Creutzfeldt disease	OMIM:123400	2
 Jarcho Levin syndrome	OMIM:277300	2
 jawad syndrome	unknown	2
+Jensen syndrome	OMIM:311150	2
 Jervell and Lange Nielsen syndrome	ORPHANET:90647	2
 Jervell Lange Nielsen Syndrome	umls:C0022387	2
 Jeune syndrome	umls:C0265275	2
@@ -33962,6 +34079,7 @@ Lethal restrictive dermopathy	ORPHANET:1662	2
 Lethal tight skin contracture syndrome	OMIM:275210	2
 Lethargy	umls:C0023380	2
 Leukemia acute lymphoblastic	OMIM:615545	2
+Leukemia acute lymphoblastic somatic	OMIM:613065	2
 leukemia acute myeloid somatic	unknown	2
 Leukemia acute myeloid therapy related	OMIM:604061	2
 Leukemia juvenile myelomonocytic somatic	OMIM:607785	2
@@ -34014,6 +34132,7 @@ Lipid metabolism phenotypes	PUBMED:19936222 19936222 19936222 19936222	2
 Lipid metabolism phenotypes	PUBMED:22286219 19936222 19936222 19936222	2
 Lipid metabolism phenotypes	PUBMED:22286219 19936222 19936222 19936222 19936222	2
 Lipodystrophy congenital generalized type 4	OMIM:613327	2
+Lipodystrophy familial partial type 2	OMIM:151660	2
 LIPODYSTROPHY FAMILIAL PARTIAL TYPE 2	umls:C1720860	2
 Lipodystrophy familial partial type 3	OMIM:604367	2
 LIPODYSTROPHY FAMILIAL PARTIAL TYPE 3	umls:C1720861	2
@@ -34256,12 +34375,7 @@ mental disorders	PUBMED:20713499 20713499	2
 mental processes	PUBMED:22126837 22126837	2
 Mental retardation anterior maxillary protrusion and strabismus	OMIM:613671	2
 Mental retardation autosomal dominant 10	OMIM:614256	2
-Mental retardation autosomal dominant 12	OMIM:614562	2
 Mental retardation autosomal dominant 13	OMIM:614563	2
-Mental retardation autosomal dominant 14	OMIM:614607	2
-Mental retardation autosomal dominant 15	OMIM:614608	2
-Mental retardation autosomal dominant 16	OMIM:614609	2
-Mental retardation autosomal dominant 17	OMIM:615009	2
 Mental retardation autosomal dominant 18	OMIM:615074	2
 Mental retardation autosomal dominant 19	OMIM:615075	2
 Mental retardation autosomal dominant 1	OMIM:156200	2
@@ -34374,6 +34488,7 @@ Microphthalmia isolated 7	OMIM:613704	2
 Microphthalmia isolated 8	OMIM:615113	2
 Microphthalmia isolated 	OMIM:613703	2
 Microphthalmia isolated 	OMIM:614497	2
+Microphthalmia isolated 	OMIM:615145	2
 MICROPHTHALMIA ISOLATED 	umls:C3150968	2
 Microphthalmia Lenz type	ORPHANET:568	2
 Microphthalmia 	OMIM:613703	2
@@ -34492,10 +34607,10 @@ Multiple endocrine neoplasia 1	OMIM:131100	2
 Multiple endocrine neoplasia IIA	OMIM:171400	2
 Multiple endocrine neoplasia IIB	OMIM:162300	2
 Multiple fibroadenomas of the breast	OMIM:615554	2
+Multiple joint dislocations short stature craniofacial dysmorphism and congenital heart defects	OMIM:245600	2
 Multiple mitochondrial dysfunctions syndrome 1	OMIM:605711	2
 MULTIPLE MITOCHONDRIAL DYSFUNCTIONS SYNDROME 1	umls:C3276432	2
 multiple mitochondrial dysfunctions syndrome 1	unknown	2
-Multiple mitochondrial dysfunctions syndrome 2	OMIM:614299	2
 multiple mitochondrial dysfunctions syndrome 3	unknown	2
 multiple myeloma	PUBMED:17131345 17131345	2
 Multiple osteochondromas	ORPHANET:321	2
@@ -34577,6 +34692,7 @@ Myopathy distal 4	OMIM:614065	2
 Myopathy distal 	OMIM:606768	2
 Myopathy due to CPT II deficiency	OMIM:255110	2
 Myopathy isolated mitochondrial autosomal dominant	OMIM:616209	2
+Myopathy lactic acidosis and sideroblastic anemia 1	OMIM:600462	2
 Myopathy lactic acidosis and sideroblastic anemia 2	OMIM:613561	2
 Myopathy mitochondrial progressive 	OMIM:613076	2
 myopathy myofibrillar 4	unknown	2
@@ -34610,6 +34726,7 @@ Nail disorder nonsyndromic congenital 10	OMIM:614157	2
 Nance Horan syndrome	OMIM:302350	2
 Nance Sweeney chondrodysplasia	umls:C0432210	2
 Nanophthalmos 2	OMIM:609549	2
+Nanophthalmos 4	OMIM:615972	2
 narcolepsy	PUBMED:17002906 17002906	2
 Narcolepsy	PUBMED:20711174	2
 Narcolepsy 	PUBMED:23496005	2
@@ -35122,7 +35239,6 @@ polycystic kidney disease autosomal dominant	unknown	2
 polycystic kidney disease type 1 tuberous sclerosis type 2	unknown	2
 Polycystic lipomembranous osteodysplasia 	OMIM:221770	2
 Polycystic lipomembranous osteodysplasia 	umls:C1857316	2
-Polycystic liver disease	OMIM:174050	2
 Polycystic liver disease	umls:C0158683	2
 polycystic ovarian syndrome insulin resistance	PUBMED:11522686 11522686	2
 polycystic ovary syndrome adrenal androgen	PUBMED:15705377 15705377	2
@@ -35142,7 +35258,6 @@ Polyglucosan body myopathy 2	OMIM:616199	2
 Polyhydramnios megalencephaly and symptomatic epilepsy	OMIM:611087	2
 Polymicrogyria bilateral frontoparietal	OMIM:606854	2
 Polymicrogyria 	OMIM:613180	2
-Polymicrogyria 	OMIM:614833	2
 polymicrogyria	unknown	2
 Polymorphic catecholergic ventricular tachycardia	umls:C1631597	2
 Polyneuropathy hearing loss ataxia retinitis pigmentosa and cataract	OMIM:612674	2
@@ -35153,7 +35268,6 @@ Pontocerebellar hypoplasia type 10	OMIM:615803	2
 pontocerebellar hypoplasia type 1b	unknown	2
 Pontocerebellar Hypoplasia Type 1	umls:C1843504	2
 Pontocerebellar hypoplasia type 2B	OMIM:612389	2
-Pontocerebellar hypoplasia type 2C	OMIM:612390	2
 Pontocerebellar hypoplasia type 2D	OMIM:613811	2
 pontocerebellar hypoplasia type 2d	unknown	2
 pontocerebellar hypoplasia type 2	unknown	2
@@ -35199,6 +35313,7 @@ Premature ovarian failure 3	OMIM:608996	2
 Premature ovarian failure 5	OMIM:611548	2
 Premature ovarian failure 6	OMIM:612310	2
 Premature ovarian failure 7	OMIM:612964	2
+Premature ovarian failure 8	OMIM:615723	2
 Premature ovarian failure 9	OMIM:615724	2
 prickle1 related progressive myoclonus epilepsy 	unknown	2
 Primary aldosteronism seizures and neurologic abnormalities	OMIM:615474	2
@@ -35315,7 +35430,6 @@ Pyruvate dehydrogenase E1 alpha deficiency	OMIM:312170	2
 Pyruvate dehydrogenase E1 beta deficiency	OMIM:614111	2
 Pyruvate dehydrogenase E2 deficiency	OMIM:245348	2
 pyruvate dehydrogenase e2 deficiency	unknown	2
-Pyruvate dehydrogenase lipoic acid synthetase deficiency	OMIM:614462	2
 Pyruvate dehydrogenase phosphatase deficiency	OMIM:608782	2
 Pyruvate kinase deficiency	OMIM:266200	2
 QT interval	PUBMED:19305408 19305409	2
@@ -35551,7 +35665,6 @@ Seborrhea like dermatitis 	OMIM:610227	2
 Seckel syndrome 8	OMIM:615807	2
 Segawa syndrome recessive	OMIM:605407	2
 Seizures Febrile	umls:C0009952	2
-Selective T cell defect	OMIM:269840	2
 Self employment	PUBMED:23593239	2
 self harm behavior	PUBMED:12877392 12877392	2
 seminal vesicle tumor	unknown	2
@@ -35840,6 +35953,7 @@ Surfactant metabolism dysfunction pulmonary 1	OMIM:265120	2
 Surfactant metabolism dysfunction pulmonary 2	OMIM:610913	2
 Surfactant metabolism dysfunction pulmonary 3	OMIM:610921	2
 Surfactant metabolism dysfunction pulmonary 5	OMIM:614370	2
+Sveinsson chorioretinal atrophy	OMIM:108985	2
 swine influenza	unknown	2
 Synaptic congenital myasthenic syndromes	ORPHANET:98915	2
 Syndactyly type 4	ORPHANET:93405	2
@@ -35848,6 +35962,7 @@ Syndromic diarrhea	ORPHANET:84064	2
 synovial chondromatosis	unknown	2
 Synovial sarcoma	OMIM:300813	2
 Synovitis	umls:C0039103	2
+Synpolydactyly 1	OMIM:186000	2
 Systemic lupus erythematosus 16	OMIM:614420	2
 systemic lupus erythematosus or protection against	unknown	2
 Systemic lupus erythematosus	PUBMED:19838193	2
@@ -35884,7 +35999,6 @@ testicular germ cell tumor	PUBMED:19483681 19483681	2
 Testicular germ cell tumor	PUBMED:23666239 23666240 19483681	2
 testicular germ cell tumor	unknown	2
 testicular leukemia	unknown	2
-Testicular microlithiasis	OMIM:610441	2
 testicular neoplasms	PUBMED:20543847 20543847	2
 Testicular non seminomatous germ cell tumor	ORPHANET:363494	2
 Testosterone levels	PUBMED:22675492	2
@@ -36340,7 +36454,6 @@ Alport syndrome intellectual deficit midface hypoplasia elliptocytosis	ORPHANET:
 Alstrom syndrome	OMIM:203800	3
 Alveolar rhabdomyosarcoma	ORPHANET:99756	3
 alzheimer disease dementia vascular	PUBMED:17077200 17077200	3
-Alzheimer disease late onset	OMIM:104300	3
 Alzheimer disease	PUBMED:19118814	3
 alzheimer disease	PUBMED:19118814 19118814 19118814	3
 alzheimer disease	PUBMED:19749422 19749422	3
@@ -36364,7 +36477,6 @@ anauxetic dysplasia	unknown	3
 Anemia Diamond Blackfan	umls:C1260899	3
 Anemia Hemolytic Congenital Nonspherocytic	umls:C0002882	3
 anemia of prematurity	unknown	3
-Anemia sideroblastic pyridoxine refractory autosomal recessive	OMIM:205950	3
 angina	PUBMED:15346842 15346842	3
 Angina Stable	umls:C0699826	3
 Angina Unstable	umls:C0002965	3
@@ -36462,7 +36574,6 @@ Bartter Syndrome Type 4A	umls:C1865270	3
 Basal cell carcinoma multiple	OMIM:605462	3
 Basal cell carcinoma	PUBMED:21700618	3
 Basal cell carcinoma	PUBMED:24403052 18849993	3
-Basal cell carcinoma somatic	OMIM:605462	3
 basal cell carcinoma somatic	unknown	3
 basal encephalocele	unknown	3
 Basal ganglia calcification idiopathic 1	OMIM:213600	3
@@ -36556,6 +36667,7 @@ Boomerang dysplasia	OMIM:112310	3
 BOR syndrome	ORPHANET:107	3
 Bowen Disease	umls:C0006079	3
 brachial plexus neuropathy	unknown	3
+Brachiootic syndrome 3	OMIM:608389	3
 Brachydactyly type A2	ORPHANET:93396	3
 brachydactyly type a2	unknown	3
 brain aneurysm	PUBMED:17287949 17287949	3
@@ -37265,13 +37377,11 @@ Isolated Klippel Feil syndrome	ORPHANET:2345	3
 Isolated scaphocephaly	ORPHANET:35093	3
 Isolated succinate CoQ reductase deficiency	ORPHANET:3208	3
 jackson weiss syndrome	unknown	3
-Jensen syndrome	OMIM:311150	3
 Joint Instability	umls:C0022410	3
 Joubert syndrome 	ORPHANET:1454	3
 Junctional epidermolysis bullosa gravis of Herlitz	OMIM:226700	3
 Junctional epidermolysis bullosa Herlitz type	ORPHANET:79404	3
 juvenile hereditary hemochromatosis	unknown	3
-Juvenile myelomonocytic leukemia	OMIM:607785	3
 Juvenile polyposis syndrome infantile form	OMIM:174900	3
 Juvenile polyposis syndrome	umls:C0345893	3
 Kabuki syndrome 1	OMIM:147920	3
@@ -37469,7 +37579,6 @@ multiple acyl coa dehydrogenation deficiency severe neonatal type	unknown	3
 Multiple Acyl Coenzyme A Dehydrogenase Deficiency	umls:C0268596	3
 Multiple epiphyseal dysplasia due to collagen 9 anomaly	ORPHANET:166002	3
 multiple familial trichoepithelioma	unknown	3
-Multiple joint dislocations short stature craniofacial dysmorphism and congenital heart defects	OMIM:245600	3
 multiple myeloma b cell lymphomas	unknown	3
 Multiple myeloma	OMIM:254500	3
 Multiple myeloma	PUBMED:22120009	3
@@ -38257,6 +38366,7 @@ Bare lymphocyte syndrome 2	umls:C2931418	4
 bare lymphocyte syndrome	unknown	4
 Bartter Syndrome	umls:C0004775	4
 Basal cell carcinoma	PUBMED:24403052	4
+Basal cell carcinoma somatic	OMIM:605462	4
 Basal cell nevus syndrome	OMIM:109400	4
 Basal ganglia calcification idiopathic 4	OMIM:615007	4
 batten disease	unknown	4
@@ -38321,7 +38431,6 @@ Bone mineral density	PUBMED:24945404 24945404 24945404 24945404 24945404 2494540
 boutonneuse fever	unknown	4
 bowen conradi syndrome	unknown	4
 brachial plexus lesion	unknown	4
-Brachiootic syndrome 3	OMIM:608389	4
 brachyolmia	unknown	4
 brain glioma	unknown	4
 Brain lesion load	PUBMED:19010793	4
@@ -38418,6 +38527,7 @@ COFS syndrome	ORPHANET:1466	4
 coke oven toxicity	PUBMED:16985033 16985033	4
 Cold induced sweating syndrome 1	OMIM:272430	4
 Cold induced sweating syndrome 2	OMIM:610313	4
+Colorectal cancer	OMIM:114500	4
 Colorectal Cancer	umls:C1527249	4
 colorectal neoplasms	PUBMED:19011631 19011631	4
 Combined cellular and humoral immune defects 	OMIM:233650	4
@@ -38764,6 +38874,7 @@ Jervell and Lange Nielsen syndrome 2	OMIM:612347	4
 Jervell and Lange Nielsen syndrome	OMIM:220400	4
 joubert syndrome 14	unknown	4
 Juvenile amyotrophic lateral sclerosis	ORPHANET:300605	4
+Juvenile myelomonocytic leukemia	OMIM:607785	4
 Kabuki syndrome 2	OMIM:300867	4
 kaposiform hemangioendothelioma	unknown	4
 kartagener syndrome	unknown	4
@@ -39516,7 +39627,6 @@ Coffin Siris syndrome	ORPHANET:1465	5
 Cognitive decline	PUBMED:24468470	5
 colitis ulcerative	PUBMED:19915572 19915572 21297633	5
 colitis ulcerative	PUBMED:20228799 20228799 21297633	5
-Colorectal cancer	OMIM:114500	5
 Colorectal cancer	PUBMED:24737748	5
 Combined pituitary hormone deficiencies genetic forms	ORPHANET:95494	5
 combined pituitary hormone deficiency	unknown	5
@@ -39631,7 +39741,9 @@ Epilepsy nocturnal frontal lobe 1	OMIM:600513	5
 Epilepsy nocturnal frontal lobe 3	OMIM:605375	5
 Epilepsy nocturnal frontal lobe type 2	OMIM:603204	5
 epilepsy syndrome	unknown	5
+Epiphyseal dysplasia multiple 3	OMIM:600969	5
 Epiphyseal dysplasia multiple 6	OMIM:614135	5
+Epiphyseal dysplasia multiple 	OMIM:120270	5
 episodic ataxia	unknown	5
 epithelioid malignant peripheral nerve sheath tumor	unknown	5
 epithelioid sarcoma	unknown	5
@@ -39706,6 +39818,7 @@ gnathodiaphyseal dysplasia	unknown	5
 gonadal dysgenesis	unknown	5
 gout	PUBMED:21768215 21768215	5
 Graft vs Host Disease	umls:C0018133	5
+Granulomatous disease chronic autosomal recessive cytochrome b positive type III	OMIM:613960	5
 Growth Hormone Secreting Pituitary Adenoma	umls:C0346302	5
 guillain barre syndrome	unknown	5
 gyrate atrophy	unknown	5
@@ -40487,9 +40600,7 @@ Epilepsy nocturnal frontal lobe type 4	OMIM:610353	6
 Epileptic encephalopathy early infantile 8	OMIM:300607	6
 Epiphyseal dysplasia multiple 1	OMIM:132400	6
 Epiphyseal dysplasia multiple 2	OMIM:600204	6
-Epiphyseal dysplasia multiple 3	OMIM:600969	6
 Epiphyseal dysplasia multiple 5	OMIM:607078	6
-Epiphyseal dysplasia multiple 	OMIM:120270	6
 Erectile dysfunction	PUBMED:22704111	6
 erysipelas	unknown	6
 erythrocytosis	unknown	6
@@ -40531,7 +40642,6 @@ goblet cell carcinoid	unknown	6
 goldenhar syndrome	unknown	6
 gonadoblastoma	unknown	6
 granulocytopenia	unknown	6
-Granulomatous disease chronic autosomal recessive cytochrome b positive type III	OMIM:613960	6
 graves disease	PUBMED:21900946 21900946	6
 guttate psoriasis	unknown	6
 hartnup disease	unknown	6
@@ -43309,6 +43419,7 @@ acute pancreatitis	unknown	14
 alexithymia	unknown	14
 Alobar holoprosencephaly	ORPHANET:93925	14
 alveolar echinococcosis	unknown	14
+Alzheimer disease	OMIM:104300	14
 Alzheimer disease	PUBMED:22005931	14
 amyloidosis secondary	unknown	14
 amyloidosis	unknown	14
@@ -43786,7 +43897,6 @@ Weight	PUBMED:19079260	16
 weight	PUBMED:19079260 19079260	16
 zollinger ellison syndrome	unknown	16
 adiponectin	PUBMED:22479202 22479202	17
-Alzheimer disease	OMIM:104300	17
 Amnesia	umls:C0002622	17
 Amyotrophic Lateral Sclerosis	umls:C0002736	17
 antidepressive agents	PUBMED:22041458 22041458	17
@@ -43907,6 +44017,7 @@ sarcoidosis	unknown	17
 sarcomatoid renal cell carcinoma	unknown	17
 scrub typhus	unknown	17
 Seckel syndrome 6	OMIM:614728	17
+Seckel syndrome 7	OMIM:614851	17
 spondylitis	unknown	17
 Stomach Ulcer	umls:C0038358	17
 sweat gland carcinoma	unknown	17
@@ -44008,7 +44119,6 @@ Seckel syndrome 1	OMIM:210600	18
 Seckel syndrome 2	OMIM:606744	18
 Seckel syndrome 4	OMIM:613676	18
 Seckel syndrome 5	OMIM:613823	18
-Seckel syndrome 7	OMIM:614851	18
 Social communication problems	PUBMED:24564958	18
 Spermatogenic failure Y linked 2	OMIM:415000	18
 spinal stenosis	unknown	18
@@ -44468,7 +44578,6 @@ esophageal squamous cell carcinoma	unknown	34
 hepatitis c	unknown	34
 maximal midexpiratory flow rate	PUBMED:17903307 17903307	34
 Metabolic traits	PUBMED:21886157	34
-Mitochondrial complex I deficiency	OMIM:252010	34
 alzheimer disease	PUBMED:21116278 21116278	35
 celiac disease	PUBMED:20190752 20190752	35
 cholesterol hdl	PUBMED:17903299 17903299 17903299	35
@@ -44481,11 +44590,13 @@ Endometrial Neoplasms	umls:C0014170	35
 Heart Diseases	umls:C0018799	35
 hemoglobin a glycosylated	PUBMED:17903298 17903298	35
 Keloid	umls:C0022548	35
+Mitochondrial complex I deficiency	OMIM:252010	35
 myelodysplastic syndromes	unknown	35
 Neuroblastoma	umls:C0027819	35
 osteosarcoma	unknown	35
 Ovarian Cysts	umls:C0029927	35
 platelet count	PUBMED:22139419 22139419	35
+Schizophrenia	OMIM:181500	35
 Subcutaneous adipose tissue	PUBMED:22589738	35
 behcets disease	unknown	36
 Bipolar Disorder	umls:C0005586	36
@@ -44523,7 +44634,6 @@ Kidney Failure Chronic	umls:C0022661	36
 Leukemia Lymphocytic Chronic B Cell	umls:C0023434	36
 Multiple Sclerosis	umls:C0026769	36
 Proteinuria	umls:C0033687	36
-Schizophrenia	OMIM:181500	36
 Cleft Palate	umls:C0008925	37
 hiv 1	PUBMED:20041166 20041166	37
 Major depressive disorder	PUBMED:23377640	37
