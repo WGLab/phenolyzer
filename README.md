@@ -5,10 +5,10 @@ Phenolyzer is a software that implements phenotype-based prioritization of candi
 Prior biological knowledge and phenotype information may help pinpoint disease contributory genes in whole genome/exome sequencing studies on human diseases. We developed a computational tool called Phenolyzer, which follows a biologist's natural thought processes through four steps: term interpretation, seed gene generation, seed gene growth and data integration. Compared to competing approaches, Phenolyzer has superior performance on finding known disease genes, and on prioritizing recently published novel disease genes.
 
 ## Releases
-Phenolyzer is also available as a web-sever at [here](http://phenolyzer.usc.edu).
+Phenolyzer is also available as a web-sever at [here](http://phenolyzer.wglab.org).
 
 ## Mannual
-The more detailed manual is available at [here](http://phenolyzer.usc.edu/download/Phenolyzer_manual.pdf) 
+The more detailed manual is available at [here](http://phenolyzer.wglab.org/download/Phenolyzer_manual.pdf) 
 
 ## Dependency
 
@@ -22,7 +22,7 @@ Graph::Directed
 
 Please clone the repository into your computer:
 ```
-git clone https://github.com/WangGenomicsLab/phenolyzer
+git clone https://github.com/WGLab/phenolyzer
 ```
 Then enter phenolyzer directory:
 ```
@@ -32,7 +32,7 @@ cd phenolyzer
 ## Use your own Addon databases
 
 Put your own addon databases into lib/compiled_database.
-For details of how to use your own Addon databases, please refer to [FAQ](http://phenolyzer.usc.edu/FAQ.php#collapse-14)
+For details of how to use your own Addon databases, please refer to [FAQ](http://phenolyzer.wglab.org/FAQ.php#collapse-14)
 
 Use 
 ```
@@ -94,6 +94,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Contact
 - Hui Yang (yanghui@usc.edu)
-- Kai Wang (kaiwang@usc.edu)
+- Kai Wang (kaichop@gmail.com)
 
 
