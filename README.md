@@ -81,6 +81,9 @@ perl disease_annotation.pl alzheimer -p -ph -logistic -out out/alzheimer_addon_a
 - Integrate with wANNOVAR output to prioritize variant
 ```
 perl calculate_score.pl <phenolyzer_gene_list> <wannovar_genome_summary.txt>
+
+- Input multiple diseases (alzheimer and brain)
+perl disease_annotation.pl "alzheimer;brain" -p -ph -logistic -out out/sd
 ```
 
 ## License Agreement
