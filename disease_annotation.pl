@@ -893,7 +893,7 @@ $rvis_gene_score_file = "DB_RVIS_SCORE";
 my %gene_transform;
 if (defined $if_file) {                                     #The disease input will come from file
 	 print STDERR  "NOTICE: The file name option was used!! \n";
-	 open(INPUT_DISEASE,"$out_directory/$query_diseases") or die "can't open $query_diseases";
+	 open(INPUT_DISEASE,"$query_diseases") or die "can't open $query_diseases";
 	 my @input=<INPUT_DISEASE>;
 	 $query_diseases=join("\t",@input);
 	 if(defined $genelist){
