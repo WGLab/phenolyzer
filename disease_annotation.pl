@@ -1547,11 +1547,13 @@ sub Unique {
 
 sub TextStandardize {
 	my $word=$_[0];
+
 	$word=~s/^\W*(.*?)\W*$/$1/;
 	$word=~s/'s\b//g;
 	$word=~s/\W+/ /g;
 	$word=~s/\berthematosus\b/erythematosus/gi;
 	$word=~s/\bshow all\b//ig;
+
 	return $word;
 }
 
