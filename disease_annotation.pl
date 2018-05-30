@@ -103,6 +103,7 @@ our  (
 
 # %gene_hash ( $gene => "Not Annotated" or "Chr:Pos1 - Pos2")
 # %omim_disease (lc $first_disease => join(";",$each_disease)  )
+
 # Declare options
 GetOptions(
 	'verbose|v'             =>\$verbose,
@@ -171,7 +172,8 @@ $addon_gene_gene_weight      = 1.0  unless (defined $addon_gene_gene_weight);
 ##
 ######################################################################
 
-#----------------------Main program-----------------------------------------------
+######################################################################
+## Main program
 
 setup_variables();
 
@@ -179,316 +181,340 @@ annovar_annotate() if (defined $bedfile);
 
 output_gene_prioritization();
 
+##
+######################################################################
 
-#-----------------------------------------Subroutines---------------------------------------------
-sub output_gene_prioritization{                        #The main sub to output prioritized genelist
-my @disease_input=split (qr/[^ _,\w\.\-'\(\)\[\]\{\}:]+/,lc $query_diseases);
-@disease_input <=1000 or die "Too many terms!!! No more than 1000 terms are accepted!!!";
+######################################################################
+## Subroutines
 
-#------------------------------------Process each individual term first -------------------------------------
-for my $individual_term(@disease_input)
-  {
-   if($individual_term=~/^\W*$/){next;}
-   $individual_term=TextStandardize($individual_term);
+# The main sub to output prioritized genelist
+sub output_gene_prioritization {
+	my @disease_input = split (qr/[^ _,\w\.\-'\(\)\[\]\{\}:]+/,lc $query_diseases);
+	@disease_input <=1000 or die "Too many terms!!! No more than 1000 terms are accepted!!!";
 
-#-----------------------------For a normal term, disease name extension is needed-----------------------------
-     if ($individual_term!~/^all([\s_\-]diseases?)?$/i)
-     {
-       # Expand the disease term and save them into files
-       # @diseases are lower case disease array, %disease_hash keeps the original disease name
-       my $diseases_reference = disease_extension($individual_term);
-       my %disease_hash = %$diseases_reference;
-       my @diseases;
-       for my $disease_key (keys %disease_hash)
-       {
-       	    my  @records =split("\n", $disease_hash{$disease_key});
-       	    for my $record (@records)
-       	    {
-       	    next if(not $record);
-       	    my ($disease_line, $source) = split("\t", $record);
-       	    my @disease_terms = split(";", $disease_line);
-       	    for  (@disease_terms){
-       	    	  my $each = $_;
-       	    	     $each=TextStandardize($each);
-             	  my $change2= $each =~ s/\btype //ig;
-       	    	  if($change2){
-       	    	  push @diseases,$each;
-       	    	  $disease_hash{$disease_key} = $each.';'.$disease_hash{$disease_key};
-       	    	            }
-       	    	  }
-       	    push @diseases,@disease_terms;
+	# Process each individual term first
+	for my $individual_term(@disease_input) {
+		if($individual_term=~/^\W*$/){ next; }
+		$individual_term=TextStandardize($individual_term);
 
-       	    }
-       }
-       my %seen;
-       my ($hash, %disease_score_hash, @hpo_ids);
-       if ($is_phenotype)
-       {
-          ($hash, @hpo_ids)= phenotype_extension($individual_term);
-          %disease_score_hash = %$hash;
-          for (@diseases)
-          {
-          my $disease_key = lc $_;
-       	  delete $disease_score_hash{$disease_key}    if($disease_score_hash{$disease_key});
-       	  $disease_key = TextStandardize($disease_key);
-       	  delete $disease_score_hash{$disease_key}    if($disease_score_hash{$disease_key});
-          }
-          for (keys %disease_score_hash)
-          {
-          my $disease_score = join ("\t", ($disease_score_hash{$_}[1], $disease_score_hash{$_}[0]) );
-          push (@diseases, lc $disease_score);
-          }
+		# For a normal term, disease name extension is needed
+		if ($individual_term!~/^all([\s_\-]diseases?)?$/i) {
+			# Expand the disease term and save them into files
+			# @diseases are lower case disease array, %disease_hash keeps the original disease name
+			my $diseases_reference = disease_extension($individual_term);
+			my %disease_hash = %$diseases_reference;
+			my @diseases;
+			for my $disease_key (keys %disease_hash) {
+				my  @records =split("\n", $disease_hash{$disease_key});
+				for my $record (@records) {
+	   	    		next if(not $record);
+					my ($disease_line, $source) = split("\t", $record);
+					my @disease_terms = split(";", $disease_line);
+					for  (@disease_terms){
+						my $each = $_;
+						$each=TextStandardize($each);
+						my $change2= $each =~ s/\btype //ig;
+						if($change2){
+							push @diseases,$each;
+							$disease_hash{$disease_key} = $each.';'.$disease_hash{$disease_key};
+						}
+					}
+					push @diseases,@disease_terms;
+				}
+			}
+			my %seen;
+			my ($hash, %disease_score_hash, @hpo_ids);
+			if ($is_phenotype) {
+				($hash, @hpo_ids) = phenotype_extension($individual_term);
+				%disease_score_hash = %$hash;
+				for (@diseases) {
+					my $disease_key = lc $_;
+					delete $disease_score_hash{$disease_key} if($disease_score_hash{$disease_key});
+					$disease_key = TextStandardize($disease_key);
+					delete $disease_score_hash{$disease_key} if($disease_score_hash{$disease_key});
+				}
+				for (keys %disease_score_hash) {
+					my $disease_score = join ("\t", ($disease_score_hash{$_}[1], $disease_score_hash{$_}[0]) );
+					push (@diseases, lc $disease_score);
+				}
+			}
 
-       }
+			#The non-word characters are changed into '_'
+			$individual_term=~s/\W+/_/g;
+			if(@hpo_ids) {
+				open(OUT_PHENOTYPE, ">$out"."_$individual_term"."_hpo") or die;
+				print OUT_PHENOTYPE $_."\n" for @hpo_ids;
+				close(OUT_PHENOTYPE);
+			}
 
-       $individual_term=~s/\W+/_/g;          #The non-word characters are changed into '_'
-       if(@hpo_ids)
-       {
-       open(OUT_PHENOTYPE, ">$out"."_$individual_term"."_hpo") or die;
-       print OUT_PHENOTYPE $_."\n" for @hpo_ids;
-       close(OUT_PHENOTYPE);
-       }
-       open (OUT_DISEASE,">$out"."_$individual_term"."_diseases") or die;
-       for (keys %disease_hash) {
-       my @lines=split("\n", $disease_hash{$_});
-       for my $line (@lines)
-       {
-       next if(not $line);
-       my @words=split("\t", $line);
-       my @diseases=split(";", $words[0]);
-       @diseases=Unique(@diseases);
-       my $disease_line = join(";",@diseases);
-       my $out_line = join("\t",($disease_line,$words[1]));
-       print OUT_DISEASE $out_line."\n";
-       }
-       }
-       if ($is_phenotype)
-       {
-       	  print OUT_DISEASE join ("\t", ($disease_score_hash{$_}[1], $disease_score_hash{$_}[0]) )."\n"
-       	  for (keys %disease_score_hash);
-       }
+			open (OUT_DISEASE,">$out"."_$individual_term"."_diseases") or die;
+			for (keys %disease_hash) {
+				my @lines=split("\n", $disease_hash{$_});
+				for my $line (@lines) {
+					next if(not $line);
+					my @words = split("\t", $line);
+					my @diseases = split(";", $words[0]);
+					@diseases = Unique(@diseases);
+					my $disease_line = join(";",@diseases);
+					my $out_line = join("\t",($disease_line,$words[1]));
+					print OUT_DISEASE $out_line."\n";
+				}
+			}
 
-       generate_wordcloud($individual_term, \%disease_hash, \%disease_score_hash) if($if_wordcloud);
-       if(@diseases==0){print STDERR "NOTICE: The input term -----$individual_term------ has no corresponding names in the disease database, please check your spelling!!!\n";next;}
+			if ($is_phenotype) {
+				print OUT_DISEASE join ("\t", ($disease_score_hash{$_}[1], $disease_score_hash{$_}[0]) )."\n"
+				for (keys %disease_score_hash);
+			}
 
-       my $i=0;
-       #Output the gene_score files
-       # $item = {  $gene => [$score, $information_string] }
-       # $information_string = "ID (SOURCE)	DISEASE_NAME RAW_SCORE
-       @diseases = map {my @words = split("\t");$words[0]=TextStandardize($words[0]); $words[0] = lc $words[0]; join("\t", @words); } @diseases;
-       @diseases = Unique(@diseases);
-       my ($item,$count)=score_genes(\@diseases);
-       my %output=();
-       @{$output{$_}} = @{$item->{$_}} for keys %$item;
-       if($count==0){print STDERR "NOTICE: The input term -----$individual_term------ has no results!!!\n";next;}
-       open( OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
-       print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
+			generate_wordcloud($individual_term, \%disease_hash, \%disease_score_hash) if($if_wordcloud);
+			if(@diseases==0){
+				print STDERR "NOTICE: The input term -----$individual_term------ has no corresponding names in the disease database, please check your spelling!!!\n";
+				next;
+			}
 
-       for my $gene(sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
-	   my $p=$output{$gene}[0]/$count;                    #The probability of the gene when the disease is given
-	   print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
-                                                                          }
-       print STDERR "------------------------------------------------------------------------ \n";
-        }
+			my $i=0;
+			#Output the gene_score files
+			# $item = {  $gene => [$score, $information_string] }
+			# $information_string = "ID (SOURCE)	DISEASE_NAME RAW_SCORE
+			@diseases = map {
+				my @words = split("\t");
+				$words[0] = TextStandardize($words[0]);
+				$words[0] = lc $words[0];
+				join("\t", @words);
+			} @diseases;
 
-#-----------------------------------------For the term 'all disease(s)'(case insensitive)----------------------------------
-else{
-       $individual_term=~s/\W+/_/g;
-       open(OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
-       my ($item,$count)=score_all_genes();
-       my %output=();
-       @{$output{$_}} = @{$item->{$_}} for keys %$item;
-       print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
-       for my $gene(sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
-	       my $p=$output{$gene}[0]/$count;                    #The probability of the gene when the disease is given
-	       print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
-                                                                           }
-print STDERR "------------------------------------------------------------------------ \n";
-     }
-  }
+			@diseases = Unique(@diseases);
+			my ($item,$count) = score_genes(\@diseases);
+			my %output=();
+			@{$output{$_}} = @{$item->{$_}} for keys %$item;
 
-#----------------------------------------Finish processing individual terms-----------------------------------------------------------
-#----------------------------------------Merge the gene_score files------------------------------------------------------------------
-#%output  ( gene =>[score,  content])
-           my ($item,$count)=merge_result();
-           my %output=();
-           my ($max_score, $min_score) = (0, 1);
-           @{$output{$_}} = @{$item->{$_}} for keys %$item;
-           open (MERGE,    ">$out.merge_gene_scores") or die;
-           open (ANNOTATED,">$out.annotated_gene_scores") if (%gene_hash and not $prediction);
-           open (my $seed_fh, ">$out.seed_gene_list");
-           my $annotated_seed_fh;
-          #### header for seed gene list ####
-           printHeader($seed_fh, 0);
-           if (%gene_hash and not $prediction)
-           {
-           	  open ($annotated_seed_fh, ">$out.annotated_gene_list");
-           	  printHeader($annotated_seed_fh,0);
-           };
-           print MERGE     "Tuple number in the gene_disease databse for all the terms: $count \n";
-           print ANNOTATED "Tuple number in the gene_disease databse for all the terms: $count \n"
-           if (%gene_hash and not $prediction);
-   #Find the max and min score
-           for my $gene (keys %output)
-           {
-              $max_score = $output{$gene}[0] if ($max_score < $output{$gene}[0]);
-           	  $min_score = $output{$gene}[0] if ($min_score > $output{$gene}[0]);
-           }
-           my $rank = 0;
-           my $annotated_rank = 0;
-           my (%hi_out, %rvis_out);
-           for my $gene(sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output)
-           {
-           	       $rank++;
-                   my ($score, $content) = ($output{$gene}[0], $output{$gene}[1]);
-                   #$score = ($score - $min_score)/$diff;
-                   my $normalized_score = $score/$max_score;
+			if($count==0){
+				print STDERR "NOTICE: The input term -----$individual_term------ has no results!!!\n";
+				next;
+			}
 
-                   #normalize scores of each detail
-                   chomp($content);
-                   my @content_lines = split("\n", $content);
-                   my @content_lines_output;
-                   my @content_lines_next;
-                   for(@content_lines)
-                   {
-                   	my @words=split("\t");
-                   	my $detail_score = $words[3];
-                   	$detail_score = $detail_score/$max_score;
-                   	my $new_score = $detail_score * $GENE_DISEASE_WEIGHT;
-                   	my $line = join("\t", (@words[0,1,2],$detail_score));
-                   	my $new_line = join("\t", (@words[0,1,2],$new_score));
-                   	push (@content_lines_output,$line);
-                   	push (@content_lines_next,  $new_line);
-                   }
-                   $content = join("\n", @content_lines_output)."\n";
-                   my $new_content = join("\n", @content_lines_next)."\n";
-                   #Normalized the input for prediction
-                   $item->{$gene}[0] = $normalized_score * $GENE_DISEASE_WEIGHT;
-                   $item->{$gene}[1] = $new_content;
-                   $item->{$gene}[2] = $normalized_score;
-                   #print out results
-                   print MERGE $gene."\t"."ID:$gene_id{$gene} -\t$normalized_score\n".$content."\n";
-                   print ANNOTATED $gene."\tID:$gene_id{$gene} ".$gene_hash{$gene}."\t$normalized_score\n".$content."\n"
-                   if ($gene_hash{$gene} and not $prediction);
+			open( OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
+			print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
 
-                  #Normalized score for the genelist
-                  $normalized_score = sprintf('%.4g', $normalized_score);
-                  print $seed_fh $rank."\t".$gene."\t".$gene_id{$gene}."\t".$normalized_score;
-                  if($if_hi){
-                  	  $hi_score{$gene} = 0 if not defined $hi_score{$gene};
-                  	  print $seed_fh "\t$hi_score{$gene}";
-                  }
-                  if($if_rvis){
-                  	  $rvis_score{$gene} = 0 if not defined $rvis_score{$gene};
-                  	  print $seed_fh "\t$rvis_score{$gene}";
-                  }
-                  print $seed_fh "\n";
-                  #Normalized score for the annotation list
-                  if ($gene_hash{$gene} and not $prediction){
-                     print $annotated_seed_fh join("\t",(++$annotated_rank, $gene, $gene_id{$gene}, $normalized_score));
-                     if($if_hi){
-                     	$hi_score{$gene} = 0 if not defined $hi_score{$gene};
-                     	print $annotated_seed_fh "\t$hi_score{$gene}";
-                     }
-                     if($if_rvis){
-                     	$rvis_score{$gene} = 0 if not defined $rvis_score{$gene};
-                  	    print $annotated_seed_fh "\t$rvis_score{$gene}";
-                     }
-                     print $annotated_seed_fh "\n";
-                  }
-           }
-               close (MERGE);
-               close ($seed_fh);
-               close (ANNOTATED) if (%gene_hash and not $prediction);
-               close (ANNOTATED_GENE_LIST) if (%gene_hash and not $prediction);
+			for my $gene (sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
+				#The probability of the gene when the disease is given
+				my $p=$output{$gene}[0]/$count;
+				print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
+			}
+			print STDERR "------------------------------------------------------------------------ \n";
+		}
+		# For the term 'all disease(s)'(case insensitive)
+		else {
+			$individual_term=~s/\W+/_/g;
+			open(OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
+			my ($item,$count)=score_all_genes();
+			my %output=();
+			@{$output{$_}} = @{$item->{$_}} for keys %$item;
 
-#  Integrate scores from relation databases
-  if($prediction)
-    {
-    	($max_score, $min_score) = (0, 1);
-        my $predicted_item = predict_genes($item);
-        my %predicted_output = ();
-        my $annotated_fh;
-        @{$predicted_output{$_}} = @{$predicted_item->{$_}} for keys %$predicted_item;
-        if(%gene_hash)
-        {
-        open (ANNOTATED,">$out.annotated_gene_scores") ;
-        open ($annotated_fh, ">$out.annotated_gene_list");
-        printHeader($annotated_fh,1);
-        }
-	    open (PREDICTED, ">$out.predicted_gene_scores");
-	    open (my $final_fh,">$out.final_gene_list");
-	    printHeader($final_fh, 1);
-	    print  PREDICTED   "Tuple number in the gene_disease databse for all the terms: $count \n";
-	    print  ANNOTATED   "Tuple number in the gene_disease databse for all the terms: $count \n"
-	    if %gene_hash;
+			print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
+			for my $gene(sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
+				#The probability of the gene when the disease is given
+				my $p=$output{$gene}[0]/$count;
+				print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
+			}
+			print STDERR "------------------------------------------------------------------------ \n";
+		}
+	}
 
-	     #Find the max and min score
-           for my $gene (keys %predicted_output)
-           {
+	# Finish processing individual terms
+	# Merge the gene_score files
+	# %output  ( gene =>[score,  content])
+	my ($item,$count)=merge_result();
+	my %output=();
+	my ($max_score, $min_score) = (0, 1);
 
-           	  $max_score = $predicted_output{$gene}[0] if ($max_score < $predicted_output{$gene}[0]);
-           	  $min_score = $predicted_output{$gene}[0] if ($min_score > $predicted_output{$gene}[0]);
+	@{$output{$_}} = @{$item->{$_}} for keys %$item;
 
-           }
-          # my $diff = $max_score - $min_score;
-           my $rank = 0;
-	       my $annotated_rank = 0;
-	    for my $gene (sort{ $predicted_output{$b}[0] <=> $predicted_output{$a}[0] } keys %predicted_output)
-           {
-                   $rank++;
-                   $predicted_output{$gene}[1]=~/^.*?\(  (.+?)  \).*?\t/x;
-                   my $source = $1;
-                   my $status;
-                   if( ($source eq "HPRD") or ($source eq "BIOSYSTEM") or ($source eq "GENE_FAMILY") or ($source eq "HTRI")
-                    or ($source eq "ADDON_GENE_GENE"))
-                   {
-                   $status = "Predicted";
-                   }
-                   else {
-                   $status = "SeedGene";
-                        }
-                   my ($score, $content) = ($predicted_output{$gene}[0], $predicted_output{$gene}[1]);
+	open (MERGE,    ">$out.merge_gene_scores") or die;
+	open (ANNOTATED,">$out.annotated_gene_scores") if (%gene_hash and not $prediction);
+	open (my $seed_fh, ">$out.seed_gene_list");
 
-                   my $normalized_score = $predicted_output{$gene}[0]/$max_score;
-                   print PREDICTED $gene."\t"."ID:$gene_id{$gene} - $status\t".$score."\tNormalized score: $normalized_score\n".$content."\n";
-                   print ANNOTATED $gene."\tID:$gene_id{$gene} $gene_hash{$gene} $status"."\t".$score."\tNormalized score: $normalized_score\n".$content."\n"
-                   if ($gene_hash{$gene});
-                   #Normalize score for the genelist
-                   $normalized_score = sprintf('%.4g', $normalized_score);
-                   print $final_fh $rank."\t".$gene."\t".$gene_id{$gene}."\t".$normalized_score."\t".$status;
-                   if($if_hi){
-                   	 $hi_score{$gene} = 0 if not defined $hi_score{$gene};
-                   	 print $final_fh "\t$hi_score{$gene}";
-                   }
-                   if($if_rvis){
-                   	 $rvis_score{$gene} = 0 if not defined $rvis_score{$gene};
-                   	 print $final_fh "\t$rvis_score{$gene}";
-                   }
-                   print $final_fh "\n";
+	my $annotated_seed_fh;
+	#### header for seed gene list ####
+	printHeader($seed_fh, 0);
+	if (%gene_hash and not $prediction) {
+		open ($annotated_seed_fh, ">$out.annotated_gene_list");
+		printHeader($annotated_seed_fh,0);
+	}
 
-                   if ($gene_hash{$gene}){
-                     print $annotated_fh  join("\t",(++$annotated_rank,$gene,$gene_id{$gene},$normalized_score,$status)) ;
-                     if($if_hi){
-                     	$hi_score{$gene} = 0 if not defined $hi_score{$gene};
-                     	print $annotated_fh "\t$hi_score{$gene}";
-                     }
-                     if($if_rvis){
-                   	 $rvis_score{$gene} = 0 if not defined $rvis_score{$gene};
-                   	 print $annotated_fh "\t$rvis_score{$gene}";
-                     }
-                     print $annotated_fh "\n";
-                   }
-            }
-            close (PREDICTED);
-            close ($final_fh);
-            close (ANNOTATED) if %gene_hash;
-            close (ANNOTATED_GENE_LIST) if (%gene_hash);
-    }
+	print MERGE     "Tuple number in the gene_disease databse for all the terms: $count \n";
+	print ANNOTATED "Tuple number in the gene_disease databse for all the terms: $count \n"
+		if (%gene_hash and not $prediction);
 
+	#Find the max and min score
+	for my $gene (keys %output) {
+		$max_score = $output{$gene}[0] if ($max_score < $output{$gene}[0]);
+		$min_score = $output{$gene}[0] if ($min_score > $output{$gene}[0]);
+	}
+
+	my $rank = 0;
+	my $annotated_rank = 0;
+	my (%hi_out, %rvis_out);
+
+	for my $gene(sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output) {
+		$rank++;
+		my ($score, $content) = ($output{$gene}[0], $output{$gene}[1]);
+		#$score = ($score - $min_score)/$diff;
+		my $normalized_score = $score/$max_score;
+
+		#normalize scores of each detail
+		chomp($content);
+		my @content_lines = split("\n", $content);
+		my @content_lines_output;
+		my @content_lines_next;
+		for(@content_lines) {
+			my @words = split("\t");
+			my $detail_score = $words[3];
+			$detail_score = $detail_score/$max_score;
+			my $new_score = $detail_score * $GENE_DISEASE_WEIGHT;
+			my $line = join("\t", (@words[0,1,2],$detail_score));
+			my $new_line = join("\t", (@words[0,1,2],$new_score));
+			push (@content_lines_output,$line);
+			push (@content_lines_next,  $new_line);
+		}
+		$content = join("\n", @content_lines_output)."\n";
+		my $new_content = join("\n", @content_lines_next)."\n";
+
+		#Normalized the input for prediction
+		$item->{$gene}[0] = $normalized_score * $GENE_DISEASE_WEIGHT;
+		$item->{$gene}[1] = $new_content;
+		$item->{$gene}[2] = $normalized_score;
+
+		#print out results
+		print MERGE $gene."\t"."ID:$gene_id{$gene} -\t$normalized_score\n".$content."\n";
+		print ANNOTATED $gene."\tID:$gene_id{$gene} ".$gene_hash{$gene}."\t$normalized_score\n".$content."\n"
+			if ($gene_hash{$gene} and not $prediction);
+
+		#Normalized score for the genelist
+		$normalized_score = sprintf('%.4g', $normalized_score);
+		print $seed_fh $rank."\t".$gene."\t".$gene_id{$gene}."\t".$normalized_score;
+		if($if_hi) {
+			$hi_score{$gene} = 0 if not defined $hi_score{$gene};
+			print $seed_fh "\t$hi_score{$gene}";
+		}
+		if($if_rvis) {
+			$rvis_score{$gene} = 0 if not defined $rvis_score{$gene};
+			print $seed_fh "\t$rvis_score{$gene}";
+		}
+		print $seed_fh "\n";
+
+		#Normalized score for the annotation list
+		if ($gene_hash{$gene} and not $prediction) {
+			print $annotated_seed_fh join("\t",(++$annotated_rank, $gene, $gene_id{$gene}, $normalized_score));
+			if($if_hi) {
+				$hi_score{$gene} = 0 if not defined $hi_score{$gene};
+				print $annotated_seed_fh "\t$hi_score{$gene}";
+			}
+			if($if_rvis){
+				$rvis_score{$gene} = 0 if not defined $rvis_score{$gene};
+				print $annotated_seed_fh "\t$rvis_score{$gene}";
+			}
+			print $annotated_seed_fh "\n";
+		}
+	}
+
+	close (MERGE);
+	close ($seed_fh);
+	close (ANNOTATED) if (%gene_hash and not $prediction);
+	close (ANNOTATED_GENE_LIST) if (%gene_hash and not $prediction);
+
+	# Integrate scores from relation databases
+	if($prediction) {
+		($max_score, $min_score) = (0, 1);
+		my $predicted_item = predict_genes($item);
+		my %predicted_output = ();
+		my $annotated_fh;
+		@{$predicted_output{$_}} = @{$predicted_item->{$_}} for keys %$predicted_item;
+
+		if(%gene_hash) {
+			open (ANNOTATED,">$out.annotated_gene_scores") ;
+			open ($annotated_fh, ">$out.annotated_gene_list");
+			printHeader($annotated_fh,1);
+		}
+
+		open (PREDICTED, ">$out.predicted_gene_scores");
+		open (my $final_fh,">$out.final_gene_list");
+		printHeader($final_fh, 1);
+		print  PREDICTED   "Tuple number in the gene_disease databse for all the terms: $count \n";
+		print  ANNOTATED   "Tuple number in the gene_disease databse for all the terms: $count \n"
+			if %gene_hash;
+
+		#Find the max and min score
+		for my $gene (keys %predicted_output) {
+			$max_score = $predicted_output{$gene}[0] if ($max_score < $predicted_output{$gene}[0]);
+			$min_score = $predicted_output{$gene}[0] if ($min_score > $predicted_output{$gene}[0]);
+		}
+
+		# my $diff = $max_score - $min_score;
+		my $rank = 0;
+		my $annotated_rank = 0;
+		for my $gene (sort{ $predicted_output{$b}[0] <=> $predicted_output{$a}[0] } keys %predicted_output) {
+			$rank++;
+			$predicted_output{$gene}[1] =~ /^.*?\(  (.+?)  \).*?\t/x;
+			my $source = $1;
+			my $status;
+			if(
+				($source eq "HPRD") or
+				($source eq "BIOSYSTEM") or
+				($source eq "GENE_FAMILY") or
+				($source eq "HTRI") or
+				($source eq "ADDON_GENE_GENE")
+			) {
+				$status = "Predicted";
+			} else {
+				$status = "SeedGene";
+			}
+
+			my ($score, $content) = ($predicted_output{$gene}[0], $predicted_output{$gene}[1]);
+
+			my $normalized_score = $predicted_output{$gene}[0]/$max_score;
+
+			print PREDICTED $gene."\t"."ID:$gene_id{$gene} - $status\t".$score."\tNormalized score: $normalized_score\n".$content."\n";
+			print ANNOTATED $gene."\tID:$gene_id{$gene} $gene_hash{$gene} $status"."\t".$score."\tNormalized score: $normalized_score\n".$content."\n"
+				if ($gene_hash{$gene});
+
+			#Normalize score for the genelist
+			$normalized_score = sprintf('%.4g', $normalized_score);
+			print $final_fh $rank."\t".$gene."\t".$gene_id{$gene}."\t".$normalized_score."\t".$status;
+			if($if_hi) {
+				$hi_score{$gene} = 0 if not defined $hi_score{$gene};
+				print $final_fh "\t$hi_score{$gene}";
+			}
+
+			if($if_rvis) {
+				$rvis_score{$gene} = 0 if not defined $rvis_score{$gene};
+				print $final_fh "\t$rvis_score{$gene}";
+			}
+			print $final_fh "\n";
+
+			if ($gene_hash{$gene}) {
+				print $annotated_fh  join("\t",(++$annotated_rank,$gene,$gene_id{$gene},$normalized_score,$status)) ;
+			if($if_hi) {
+				$hi_score{$gene} = 0 if not defined $hi_score{$gene};
+				print $annotated_fh "\t$hi_score{$gene}";
+			}
+			if($if_rvis) {
+				$rvis_score{$gene} = 0 if not defined $rvis_score{$gene};
+				print $annotated_fh "\t$rvis_score{$gene}";
+			}
+			print $annotated_fh "\n";
+			}
+		}
+
+		close (PREDICTED);
+		close ($final_fh);
+		close (ANNOTATED) if %gene_hash;
+		close (ANNOTATED_GENE_LIST) if (%gene_hash);
+	}
 }
 
-sub disease_extension{                           #Input some disease terms and return all its extended diseases
+# Input some disease terms and return all its extended diseases
+sub disease_extension{
 
      print STDERR "NOTICE: The journey to find all related disease names of your query starts!  \n";
      @_==1 or die "The input should be only one string!";
