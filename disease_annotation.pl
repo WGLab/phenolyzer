@@ -1499,30 +1499,34 @@ sub predict_genes{
 
 sub generate_wordcloud{
 	@_==3 or die "Error: generate_wordcloud only accept 3 variables!!";
+
 	my $term = $_[0];
 	my %disease_hash = %{$_[1]};
 	my %disease_score_hash = %{$_[2]};
+
 	open (WORD_CLOUD,">${out}_${term}_wordcloud") or die "Error: can't write into ${term}_wordcloud.txt!!";
+
 	my %output =();
-	for (keys %disease_hash)
-	{
+
+	for (keys %disease_hash) {
 		chomp($disease_hash{$_});
 		my @words=split("\t",$disease_hash{$_});
 		my @diseases=split(/\W+/,$words[0]);
 		@diseases = map {lc $_;} @diseases;
 		length($_)>2 and $output{$_}++ for (@diseases);
     }
-    for (keys %disease_score_hash)
-	{
+
+    for (keys %disease_score_hash) {
 		my @words=@{$disease_score_hash{$_}};
 		my @diseases=split(/\W+/,$words[1]);
 		@diseases = map {lc $_;} @diseases;
 		length($_)>2 and $output{$_}+= $words[0] for (@diseases);
     }
-    for (sort { $output{$b} <=> $output{$a}  } keys %output)
-    {
+
+    for (sort { $output{$b} <=> $output{$a}  } keys %output) {
     	print WORD_CLOUD $_."\t".$output{$_}."\n";
     }
+
     system("Rscript $work_path/wordcloud.R ${out}_${term}_wordcloud > ${out}_Rwordcloud.log");
 }
 
