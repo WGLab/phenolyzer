@@ -799,81 +799,100 @@ sub phenotype_extension{
 	return (\%disease_hash,@hpo_ids);
 }
 
-sub score_genes{                                 #Input the disease list and return all the genes and item count
+# Input the disease list and return all the genes and item count
+sub score_genes{
 	@_==1 or die "input should only contain one reference to the array!!";
-	my %item=();           #item is a hash, keys are gene names, values are an array reference and a the total score for the gene
+
+	# item is a hash, keys are gene names, values are an array reference and a the total score for the gene
+	my %item=();
 	my @diseases=@{$_[0]};
-	my $count=0.0;          #$count will record how many tuples are retrived from the GENE_DISEASE_SCORE database
-	open(SCORE,"${path}/$gene_disease_score_file")  or die "could not open ${path}/$gene_disease_score_file";
+
+	# $count will record how many tuples are retrived from the GENE_DISEASE_SCORE database
+	my $count=0.0;
+
+	open(SCORE,"${path}/$gene_disease_score_file") or die "could not open ${path}/$gene_disease_score_file";
 	my @disease_gene_score=<SCORE>;
 	shift @disease_gene_score;
 	my @addon_disease_gene_score;
-	if($addon_gene_disease_score_file){
+
+	if($addon_gene_disease_score_file) {
 		my @addon_files = split(',', $addon_gene_disease_score_file);
-		for my $each_file (@addon_files)
-		{
- 		open(ADDON,"${path}/$each_file") or die "could not open ${path}/$each_file";
-	    push(@addon_disease_gene_score, <ADDON>);
-	    @addon_disease_gene_score = map {s/[\n\r]+//g;$_; } @addon_disease_gene_score;
-		close(ADDON);
-		print STDERR "NOTICE: The ${path}/$each_file is used as addons!!!\n";
+
+		for my $each_file (@addon_files) {
+	 		open(ADDON,"${path}/$each_file") or die "could not open ${path}/$each_file";
+		    push(@addon_disease_gene_score, <ADDON>);
+		    @addon_disease_gene_score = map {s/[\n\r]+//g;$_; } @addon_disease_gene_score;
+			close(ADDON);
+			print STDERR "NOTICE: The ${path}/$each_file is used as addons!!!\n";
 		}
 	    push (@disease_gene_score,@addon_disease_gene_score);
-
 	}
-	@disease_gene_score = sort
-	       {
-	       	 my @words1=split("\t",$a);
-		     my @words2=split("\t",$b);
-		     $words1[1] cmp  $words2[1];}
-		    map {my @words=split("\t");
-		    	$words[1]=lc $words[1];
-		        $words[1]=TextStandardize($words[1]);
-		        join("\t",@words);
-		    } @disease_gene_score;
-    @diseases = sort{
-    	   my @words1=split("\t",$a);
-    	   my @words2=split("\t",$b);
-    	   $words1[0] cmp $words2[0];
-               }  @diseases;
+
+	@disease_gene_score = sort {
+		my @words1=split("\t",$a);
+		my @words2=split("\t",$b);
+		$words1[1] cmp  $words2[1];
+	}
+
+	map {
+		my @words=split("\t");
+		$words[1]=lc $words[1];
+		$words[1]=TextStandardize($words[1]);
+		join("\t",@words);
+	} @disease_gene_score;
+
+    @diseases = sort {
+		my @words1=split("\t",$a);
+		my @words2=split("\t",$b);
+		$words1[0] cmp $words2[0];
+    } @diseases;
+
     my ($i,$j)=(0,0);
-    while($i<@diseases and $j<@disease_gene_score)
-    {
-    	chomp($disease_gene_score[$j]);
-    	last if(not $disease_gene_score[$j]);
-    	my @words=split("\t",$disease_gene_score[$j]); #@words:[0]GENE	[1]DISEASE	[2]DISEASE_ID	[3]SCORE	[4]SOURCE
-    	my ($query_disease, $inference_score) = split("\t",$diseases[$i]);
-    	if($query_disease eq $words[1])
-    	    {
-    		$count++;
-    		$inference_score = 1.0 if (not $inference_score);
-    		my @genes = split(",",$words[0]);
-    		my $gene = $genes[0];
-    		if(not $gene){ print STDERR $disease_gene_score[$j]."\n"; $j++; next;}
-    		$GENE_WEIGHT{$words[4]}= $addon_gene_disease_weight if (not defined $GENE_WEIGHT{$words[4]});
-    		my $score = $words[3]*$inference_score*$GENE_WEIGHT{$words[4]};
 
-    		if($score!=0)
-    		{
-    			if($item{$gene}[0]){
-    			$item{$gene}[0]+=$score ;
-    			                      }
-    			else  {
-    		     $item{$gene}[0] =$score ;
-    			}
+	while($i<@diseases and $j<@disease_gene_score) {
+		chomp($disease_gene_score[$j]);
+		last if(not $disease_gene_score[$j]);
 
-    		$item{$gene}[1].=$words[2]." ($words[4])"."\t".$words[1]."\t".$score."\n";
-    		}
-     		$j++;
-    	    }
-    	if($query_disease lt $words[1]) {$i++;}
-    	if($query_disease gt $words[1]) {$j++;}
+		# @words:[0]GENE	[1]DISEASE	[2]DISEASE_ID	[3]SCORE	[4]SOURCE
+		my @words=split("\t",$disease_gene_score[$j]);
 
+		my ($query_disease, $inference_score) = split("\t",$diseases[$i]);
+
+		if($query_disease eq $words[1]) {
+			$count++;
+			$inference_score = 1.0 if (not $inference_score);
+
+			my @genes = split(",",$words[0]);
+			my $gene = $genes[0];
+
+			if(not $gene) {
+				print STDERR $disease_gene_score[$j]."\n";
+				$j++;
+				next;
+			}
+
+			$GENE_WEIGHT{$words[4]} = $addon_gene_disease_weight if (not defined $GENE_WEIGHT{$words[4]});
+			my $score = $words[3]*$inference_score*$GENE_WEIGHT{$words[4]};
+
+			if($score!=0) {
+				if($item{$gene}[0]){
+					$item{$gene}[0] += $score ;
+				}
+				else  {
+					$item{$gene}[0] = $score ;
+				}
+				$item{$gene}[1].=$words[2]." ($words[4])"."\t".$words[1]."\t".$score."\n";
+			}
+			$j++;
+		}
+		if($query_disease lt $words[1]) {$i++;}
+		if($query_disease gt $words[1]) {$j++;}
     }
+
     for (keys %item){
     	delete  $item{$_}  if (not $gene_id{$_});
-
     }
+
     print STDERR "NOTICE: The gene score process has been done!!\n";
 	return (\%item,$count);
 }
