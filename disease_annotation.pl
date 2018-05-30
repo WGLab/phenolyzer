@@ -1533,17 +1533,15 @@ sub generate_wordcloud{
 sub Unique {
 	my @words = @_;
 	my %repeat_check = ();
-	for my $each (@words)
-	{
-		if($repeat_check{$each})
-		{
-		$repeat_check{$each}++;
-		}
-		else
-		{
-		$repeat_check{$each}=1;
+
+	for my $each (@words) {
+		if($repeat_check{$each}) {
+			$repeat_check{$each}++;
+		} else {
+			$repeat_check{$each}=1;
 		}
 	}
+
 	return keys %repeat_check;
 }
 
