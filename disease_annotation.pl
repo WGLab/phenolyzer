@@ -1560,20 +1560,21 @@ sub TextStandardize {
 sub printHeader{
 	@_==2 or die "ERROR: printHeader() must take tw oarguments";
 	my ($fh, $if_predict) = @_;
-	if (not $if_predict){
-    print $fh join("\t", qw(Rank Gene ID Score));
-    }
-     else{
-  	    print $fh join("\t", qw(Rank Gene ID Score Status));
-    }
-    if($if_hi){
-      print $fh "\tHaploinsufficiencyScore";
-    }
-    if($if_rvis){
-      print $fh "\tGeneIntoleranceScore";
-    }
-    print $fh "\n";
+	if (not $if_predict) {
+		print $fh join("\t", qw(Rank Gene ID Score));
+	} else {
+		print $fh join("\t", qw(Rank Gene ID Score Status));
+	}
 
+	if($if_hi) {
+		print $fh "\tHaploinsufficiencyScore";
+	}
+
+	if($if_rvis) {
+		print $fh "\tGeneIntoleranceScore";
+	}
+	
+	print $fh "\n";
 }
 =head1 SYNOPSIS
 
