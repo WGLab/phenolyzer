@@ -689,112 +689,114 @@ sub disease_extension{
 
 sub phenotype_extension{
 	print STDERR "NOTICE: The phenotype search and annotation process starts!! \n";
+
 	@_==1 or die "ERROR: Only one phenotype term is accepted!!! ";
-	my %hpo_score_system = (  "very rare" => 0.01,
-	                          "rare"      => 0.05,
-	                          "occasional"=> 0.075,
-	                          "frequent"  => 0.33,
-	                          "typical"   => 0.5,
-	                          "variable"  => 0.5,
-	                          "common"    => 0.75,
-	                          "hallmark"  => 0.90,
-	                          "obligate"  => 1.00  );
+
+	my %hpo_score_system = (
+		"very rare" => 0.01,
+		"rare"      => 0.05,
+		"occasional"=> 0.075,
+		"frequent"  => 0.33,
+		"typical"   => 0.5,
+		"variable"  => 0.5,
+		"common"    => 0.75,
+		"hallmark"  => 0.90,
+		"obligate"  => 1.00
+	);
+
 	my $input_term = $_[0];
-	   $input_term =~s/[\W_]+/ /g;
+	$input_term =~s/[\W_]+/ /g;
 	my %disease_hash;
 	my @hpo_ids;
-	#  %disease_hash( "disease_name_key" => [score, original_disease_name] )
-	if( -f "$work_path/ontology_search.pl" )
-	{
-    print STDERR "ERROR: The hpo.obo file couldn't be found!!! The phenotype_ontology search wouldn't be conducted properly!! \n"
-    if ( not -f "$path/hpo.obo");
-	print STDERR "ERROR: The $hpo_annotation_file couldn't be found!!! The phenotype_annotation couldn't be conducted properly!! \n"
-    if ( not -f "$path/$hpo_annotation_file" );
-    open (HPO_ANNOTATION, "$path/$hpo_annotation_file") or die "ERROR: Can't open $hpo_annotation_file!!! \n";
-    open (OMIM_DESCRIPTION, "$path/$omim_description_file") or die "ERROR: Can't open $omim_description_file!!! \n";
-    my $line = `perl $work_path/ontology_search.pl -o $path/hpo.obo -format id -p '$input_term' 2>/dev/null`;
-       @hpo_ids = split("\n", $line);
-    my @hpo_annotation = <HPO_ANNOTATION>;
-    shift @hpo_annotation;
-    @hpo_ids = sort @hpo_ids;
-    my ($i,$j) = (0,0);
-		while($i<@hpo_ids and $j<@hpo_annotation)
-        {
-    	$hpo_annotation[$j] =~s/[\r\n]+//g;
-    	my @words=split("\t",$hpo_annotation[$j]);    #[0]HPO_ID	[1]SOURCE	[2]HPO_DISEASE_NAME	[3]FREQUENCY
-    	  if($hpo_ids[$i] eq "HP:".$words[0])
-    	  {
 
-    	      my @diseases = split(";",$words[2]);
-    	      for my $individual_disease(@diseases)
-    	      {
-    	      	next if(not $individual_disease);
-    	      	$individual_disease = TextStandardize($individual_disease);
-    	      	my $individual_disease_key = lc $individual_disease;
-    	      	$disease_hash{$individual_disease_key}[0] = 0;
-    	      	$disease_hash{$individual_disease_key}[1] =lc $individual_disease if not $disease_hash{$individual_disease_key}[1];
-    	        my $score;
-    	      	     if (defined $words[3] and $hpo_score_system{$words[3]})
-    	      	     {
-    	             $score = $hpo_score_system{$words[3]};
-    	      	     }
-    	      	     else
-    	      	     {
-    	      		 if($words[3] and $words[3] =~ /^(\d*\.?\d+)\%$/) { $score = $1 * 0.01 ;}
-    	      	  	 else   {  $score = $hpo_score_system{"frequent"};  }
-    	      	     }
-    	      	 $disease_hash{$individual_disease_key}[0] = $score if($disease_hash{$individual_disease_key}[0] < $score);
-    	      }
-           $j++;
+	# %disease_hash( "disease_name_key" => [score, original_disease_name] )
+	if( -f "$work_path/ontology_search.pl" ) {
+		print STDERR "ERROR: The hpo.obo file couldn't be found!!! The phenotype_ontology search wouldn't be conducted properly!! \n"
+			if ( not -f "$path/hpo.obo");
+		print STDERR "ERROR: The $hpo_annotation_file couldn't be found!!! The phenotype_annotation couldn't be conducted properly!! \n"
+			if ( not -f "$path/$hpo_annotation_file" );
 
-          }
-          if($hpo_ids[$i] lt "HP:".$words[0]) {$i++;next;}
-          if($hpo_ids[$i] gt "HP:".$words[0]) {$j++;next;}
-	    }
-	}
-	else {
+		open (HPO_ANNOTATION, "$path/$hpo_annotation_file") or die "ERROR: Can't open $hpo_annotation_file!!! \n";
+		open (OMIM_DESCRIPTION, "$path/$omim_description_file") or die "ERROR: Can't open $omim_description_file!!! \n";
+
+		my $line = `perl $work_path/ontology_search.pl -o $path/hpo.obo -format id -p '$input_term' 2>/dev/null`;
+		@hpo_ids = split("\n", $line);
+		my @hpo_annotation = <HPO_ANNOTATION>;
+		shift @hpo_annotation;
+		@hpo_ids = sort @hpo_ids;
+		my ($i,$j) = (0,0);
+
+		while($i<@hpo_ids and $j<@hpo_annotation) {
+			$hpo_annotation[$j] =~s/[\r\n]+//g;
+
+			#[0]HPO_ID	[1]SOURCE	[2]HPO_DISEASE_NAME	[3]FREQUENCY
+			my @words=split("\t",$hpo_annotation[$j]);
+
+			if($hpo_ids[$i] eq "HP:".$words[0]) {
+				my @diseases = split(";",$words[2]);
+				for my $individual_disease(@diseases) {
+					next if(not $individual_disease);
+
+					$individual_disease = TextStandardize($individual_disease);
+					my $individual_disease_key = lc $individual_disease;
+
+					$disease_hash{$individual_disease_key}[0] = 0;
+					$disease_hash{$individual_disease_key}[1] =lc $individual_disease if not $disease_hash{$individual_disease_key}[1];
+
+					my $score;
+
+					if (defined $words[3] and $hpo_score_system{$words[3]}) {
+						$score = $hpo_score_system{$words[3]};
+					} else {
+						if($words[3] and $words[3] =~ /^(\d*\.?\d+)\%$/) {
+							$score = $1 * 0.01;
+						} else {
+							$score = $hpo_score_system{"frequent"};
+						}
+					}
+					$disease_hash{$individual_disease_key}[0] = $score if($disease_hash{$individual_disease_key}[0] < $score);
+				}
+				$j++;
+			}
+			if($hpo_ids[$i] lt "HP:".$words[0]) { $i++; next; }
+			if($hpo_ids[$i] gt "HP:".$words[0]) { $j++; next; }
+		}
+	} else {
 	   print STDERR "NOTICE: The $work_path/ontology_search.pl file couldn't be found, so the HPO database won't be used! \n";
 	}
 	my %omim_description;
-	for my $line (<OMIM_DESCRIPTION>)
-	{
+	for my $line (<OMIM_DESCRIPTION>) {
 		next if($line =~ /^OMIM_ID/);
 		chomp($line);
 		my ($id, $disease, $description) = split("\t", $line);
 		$disease = TextStandardize($disease);
-	    if($description =~ /\b$input_term\b/i)
-	    {
+	    if($description =~ /\b$input_term\b/i) {
 	    	$omim_description{$disease} = 1 if(not $omim_description{$disease});
 	    	$omim_description{$disease}++ if($omim_description{$disease});
 	    }
 	}
 	my $total=0;
-	for my $disease (keys %omim_description)
-	{
+
+	for my $disease (keys %omim_description) {
 		$total += $omim_description{$disease};
 	}
-	for my $disease (keys %omim_description)
-	{
-	    my $score = ($omim_description{$disease}+0.0)/$total;
-	    my @diseases = split(";",$disease);
-	      for my $individual_disease(@diseases)
-    	      {
-    	      	next if(not $individual_disease);
-    	        my $individual_disease_key = lc $individual_disease;
-    	        if(not $disease_hash{$individual_disease_key})
-    	        {
-    	        	$disease_hash{$individual_disease_key}[0] = $score;
-    	        	$disease_hash{$individual_disease_key}[1] = $individual_disease;
-    	        }
-    	        else
-    	        {
-    	        	$disease_hash{$individual_disease_key}[0] = $score if($disease_hash{$individual_disease_key}[0] < $score);
-                }
-    	      }
+
+	for my $disease (keys %omim_description) {
+		my $score = ($omim_description{$disease}+0.0)/$total;
+		my @diseases = split(";",$disease);
+		for my $individual_disease(@diseases) {
+			next if(not $individual_disease);
+			my $individual_disease_key = lc $individual_disease;
+
+			if(not $disease_hash{$individual_disease_key}) {
+				$disease_hash{$individual_disease_key}[0] = $score;
+				$disease_hash{$individual_disease_key}[1] = $individual_disease;
+			} else {
+				$disease_hash{$individual_disease_key}[0] = $score if($disease_hash{$individual_disease_key}[0] < $score);
+			}
+		}
 	}
-
 	return (\%disease_hash,@hpo_ids);
-
 }
 
 sub score_genes{                                 #Input the disease list and return all the genes and item count
