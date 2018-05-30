@@ -905,7 +905,7 @@ sub merge_result{
 	my $dirname=dirname($out);
 	my $basename=basename($out);
 	my @filelist = split("\n",`ls $dirname`);
-	
+
 	#item will save the results for output
 	my %item=();
 	my $count=0.0;
@@ -957,58 +957,73 @@ sub merge_result{
 	return (\%item,$count);
 }
 
-sub score_all_genes{                              #GENE	DISEASE	DISEASE_ID	SCORE	SOURCE
+#GENE	DISEASE	DISEASE_ID	SCORE	SOURCE
+sub score_all_genes{
     print STDERR "NOTICE: The process to score all genes in the database starts!!\n";
-	my %item=();           #item is a hash, keys are gene names, values are the total score for the gene an array reference and
-	my $count=0.0;          #$count will record how many tuples are retrived from the GENE_DISEASE_SCORE database
+
+	#item is a hash, keys are gene names, values are the total score for the gene an array reference and
+	my %item=();
+	# $count will record how many tuples are retrived from the GENE_DISEASE_SCORE database
+	my $count=0.0;
+
 	open(SCORE,"${path}/$gene_disease_score_file")  or die "could not open ${path}/$gene_disease_score_file";
 	my @addon_disease_gene_score;
 	my @disease_gene_score=<SCORE>;
-	if($addon_gene_disease_score_file){
+
+	if($addon_gene_disease_score_file) {
 		my @addon_files = split(',', $addon_gene_disease_score_file);
-		for my $each_file (@addon_files)
-		{
- 		open(ADDON,"${path}/$each_file") or die "could not open ${path}/$each_file";
-	    push(@addon_disease_gene_score, <ADDON>);
-	    @addon_disease_gene_score = map {s/[\n\r]+//g;$_; } @addon_disease_gene_score;
-		close(ADDON);
-		print STDERR "NOTICE: The ${path}/$each_file is used as addons!!!\n";
+		for my $each_file (@addon_files) {
+	 		open(ADDON,"${path}/$each_file") or die "could not open ${path}/$each_file";
+
+			push(@addon_disease_gene_score, <ADDON>);
+		    @addon_disease_gene_score = map {
+				s/[\n\r]+//g;
+				$_;
+			} @addon_disease_gene_score;
+
+			close(ADDON);
+
+			print STDERR "NOTICE: The ${path}/$each_file is used as addons!!!\n";
 		}
 	    push (@disease_gene_score,@addon_disease_gene_score);
-
 	}
 	my $i=0;
-	  for (@disease_gene_score){
-	  	chomp;
-        my ($genes, $disease, $disease_id, $score, $source)=split("\t");
-        my @genes = split(",", $genes);
-        my $gene = $genes[0];
-        next if (not $gene);
-    	if($i==0){$i++;next;}
-    		$count++;
-    		$GENE_WEIGHT{$source}= $addon_gene_disease_weight if (not defined $GENE_WEIGHT{$source});
-    		$score *= $GENE_WEIGHT{$source};
 
-    		if($score!=0 )
-    		{
+	for (@disease_gene_score) {
+		chomp;
 
-    			if($item{$gene}[0]){
-    			$item{$gene}[0]+= $score ;
-    			                      }
-    			else  {
-    		    $item{$gene}[0] = $score ;
-    			}
+		my ($genes, $disease, $disease_id, $score, $source)=split("\t");
+		my @genes = split(",", $genes);
+		my $gene = $genes[0];
 
-    		$item{$gene}[1].=$disease_id." ($source)"."\t".$disease."\t".$score."\n";
+		next if (not $gene);
 
-    		}
+		if($i==0){
+			$i++;
+			next;
+		}
 
-                                 }
-    print STDERR "NOTICE: The process to score all genes has been done!!\n";
-     for (keys %item){
-    	delete  $item{$_}  if (not $gene_id{$_});
-	 }
+		$count++;
+		$GENE_WEIGHT{$source}= $addon_gene_disease_weight if (not defined $GENE_WEIGHT{$source});
 
+		$score *= $GENE_WEIGHT{$source};
+
+		if($score!=0) {
+			if($item{$gene}[0]) {
+				$item{$gene}[0] += $score ;
+			} else  {
+				$item{$gene}[0] = $score ;
+			}
+			$item{$gene}[1].=$disease_id." ($source)"."\t".$disease."\t".$score."\n";
+		}
+
+	}
+
+	print STDERR "NOTICE: The process to score all genes has been done!!\n";
+
+	for (keys %item){
+    	delete $item{$_} if (not $gene_id{$_});
+	}
 	return (\%item,$count);
 }
 
