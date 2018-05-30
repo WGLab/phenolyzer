@@ -514,146 +514,177 @@ sub output_gene_prioritization {
 
 # Input some disease terms and return all its extended diseases
 sub disease_extension{
+	print STDERR "NOTICE: The journey to find all related disease names of your query starts!\n";
+	@_==1 or die "The input should be only one string!";
 
-     print STDERR "NOTICE: The journey to find all related disease names of your query starts!  \n";
-     @_==1 or die "The input should be only one string!";
-	 my $input_term=$_[0];
-	    $input_term =~s/[\W_]+/ /g;
-	 -f "${path}/$disease_count_file" or die "Could not open ${path}/$disease_count_file";
-	 -f "${path}/${ctd_disease_file}" or die "Could not open ${path}/${ctd_disease_file}";
-	 open(DISEASE,"${path}/$disease_count_file") or die "can't open ${path}/$disease_count_file";
-	 open(CTD_DISEASE,"${path}/${ctd_disease_file}") or die "can't open ${path}/${ctd_disease_file}";
-	 open(OMIM_DISEASE_ID, "${path}/$omim_disease_id_file") or die "can't open ${path}/$omim_disease_id_file";
-	 my %disease_extend=();
-	 my @disease_occur=<DISEASE>;
-	 my @disease_ctd=<CTD_DISEASE>;
-	 print STDERR "NOTICE: The exact match (case non-sensitive) was used for disease/phenotype name match!! \n"
-	 if($if_exact_match);
-     print STDERR "NOTICE: The item -----$input_term----- was queried in the databases!! \n";
-     for  (<OMIM_DISEASE_ID>){
-       chomp();
- 	   my ($id, $disease_line) = split("\t");
- 	   next if ($id eq "OMIM_ID");
- 	   #When compare, get rid of '-' if it is not after a number
- 	      my $disease_line_key = $disease_line;
- 	      $disease_line_key =~ s/\bs\b//g;
- 	      $disease_line_key =~ s/\W+/ /g;
-   	      my $query_term = $input_term;
-   	      $query_term =~ s/\bs\b//g;
-          $query_term =~ s/\W+/ /g;
-            if ($disease_line_key =~/\b$query_term\b/i or $query_term eq $id)
-            {
+	my $input_term=$_[0];
+	$input_term =~ s/[\W_]+/ /g;
 
-            	#If exact match
-            	next if($if_exact_match and $disease_line_key !~ /(^|;)$query_term($|;)/i);
-            	my @diseases = split(";",$disease_line);
-            	my $disease_key =lc $diseases[0];
-            	$disease_extend{$disease_key} = $disease_line;
-            }
-      }
+	-f "${path}/$disease_count_file" or die "Could not open ${path}/$disease_count_file";
+	-f "${path}/${ctd_disease_file}" or die "Could not open ${path}/${ctd_disease_file}";
 
-	 print STDERR "NOTICE: The word matching in OMIM disease synonyms file has been done!! \n";
+	open(DISEASE,"${path}/$disease_count_file") or die "can't open ${path}/$disease_count_file";
+	open(CTD_DISEASE,"${path}/${ctd_disease_file}") or die "can't open ${path}/${ctd_disease_file}";
+	open(OMIM_DISEASE_ID, "${path}/$omim_disease_id_file") or die "can't open ${path}/$omim_disease_id_file";
 
-		$input_term=lc $input_term;
-		for my $term (@disease_occur){    #Query disease in the compiled list from gene_disease relations
-			chomp($term);
-			my @words=split('\t',$term);
-			my $disease=$words[0];
-			my $id = $words[1];
-			my ($id_source,$id_num) = split (":", $id);
-			next if(not $id_source);
-			my $disease_key = lc $disease;
-			   $disease_key =~ s/\bs\b//g;
-			   $disease_key =~ s/\W+/ /g;
-			my $query_term = $input_term;
-			   $query_term =~ s/\bs\b//g;
-			   $query_term =~ s/\W+/ /g;
+	my %disease_extend=();
+	my @disease_occur=<DISEASE>;
+	my @disease_ctd=<CTD_DISEASE>;
 
-			if($disease_key=~/\b$query_term\b/i or ($id_num and $query_term eq $id_num and $id_source eq "OMIM"))               #If the term matches
-			{
-				#If exact match
-				next if($if_exact_match and $disease_key !~ /(^|;)$query_term($|;)/i);
-				if ($disease_extend{$disease_key})
-				{
-				$disease_extend{$disease_key}.=";".$disease;
-                }
-                else
-                {
-                $disease_extend{$disease_key}=$disease;
-				#Save the disease name into hash, key is the disease name in lower case form withougt "-"
-                }
-       	     }
+	print STDERR "NOTICE: The item -----$input_term----- was queried in the databases!! \n";
+	print STDERR "NOTICE: The exact match (case non-sensitive) was used for disease/phenotype name match!! \n"
+		if($if_exact_match);
+
+	for (<OMIM_DISEASE_ID>) {
+		chomp();
+		my ($id, $disease_line) = split("\t");
+		next if ($id eq "OMIM_ID");
+
+		# When compare, get rid of '-' if it is not after a number
+		my $disease_line_key = $disease_line;
+		$disease_line_key =~ s/\bs\b//g;
+		$disease_line_key =~ s/\W+/ /g;
+
+		my $query_term = $input_term;
+		$query_term =~ s/\bs\b//g;
+		$query_term =~ s/\W+/ /g;
+
+		if ($disease_line_key =~/\b$query_term\b/i or $query_term eq $id) {
+			# If exact match
+			next if($if_exact_match and $disease_line_key !~ /(^|;)$query_term($|;)/i);
+			my @diseases = split(";",$disease_line);
+			my $disease_key =lc $diseases[0];
+			$disease_extend{$disease_key} = $disease_line;
 		}
+	}
 
-		$disease_extend{$_} .= "\tGENE_DISEASE\n" for keys %disease_extend;
-			my @tree_number=();
-	   print STDERR "NOTICE: The word matching search in the compiled disease databases for gene_disease relations has been done! \n";
+	print STDERR "NOTICE: The word matching in OMIM disease synonyms file has been done!! \n";
 
-		for my $term(@disease_ctd){
-			chomp($term);
-			my @words=split('\t',$term);
-			my $disease = $words[0];
+	$input_term = lc $input_term;
+	#Query disease in the compiled list from gene_disease relations
+	for my $term (@disease_occur) {
+		chomp($term);
+
+		my @words=split('\t',$term);
+		my $disease=$words[0];
+		my $id = $words[1];
+		my ($id_source,$id_num) = split (":", $id);
+
+		next if(not $id_source);
+
+		my $disease_key = lc $disease;
+		$disease_key =~ s/\bs\b//g;
+		$disease_key =~ s/\W+/ /g;
+
+		my $query_term = $input_term;
+		$query_term =~ s/\bs\b//g;
+		$query_term =~ s/\W+/ /g;
+
+		# If the term matches
+		if(
+			$disease_key =~ /\b$query_term\b/i or
+			(
+				$id_num and
+				$query_term eq $id_num and
+				$id_source eq "OMIM"
+			)
+		) {
+			# If exact match
+			next if($if_exact_match and $disease_key !~ /(^|;)$query_term($|;)/i);
+			if ($disease_extend{$disease_key}) {
+				$disease_extend{$disease_key}.=";".$disease;
+			} else {
+				#Save the disease name into hash, key is the disease name in lower case form withougt "-"
+				$disease_extend{$disease_key}=$disease;
+			}
+		}
+	}
+
+	$disease_extend{$_} .= "\tGENE_DISEASE\n" for keys %disease_extend;
+	my @tree_number=();
+
+	print STDERR "NOTICE: The word matching search in the compiled disease databases for gene_disease relations has been done!\n";
+
+	for my $term(@disease_ctd) {
+		chomp($term);
+
+		my @words = split('\t',$term);
+		my $disease = $words[0];
+
+		my $disease_key = lc $disease;
+		$disease_key =~ s/\bs\b//g;
+		$disease_key =~ s/\W+/ /g;
+
+		my $synonym_key = $words[1];
+		$synonym_key =~ s/\bs\b//g;
+		$synonym_key =~ s/\W+/ /g;
+
+		my $query_term = $input_term;
+		$query_term =~ s/\bs\b//g;
+		$query_term =~ s/\W+/ /g;
+
+		# First push all the matched disease names or synonyms in
+		if($disease_key=~/\b$query_term\b/i or $synonym_key=~/\b$query_term\b/i) {
+			#If exact match
+			next if($if_exact_match and $disease_key.$words[1] !~ /(^|\|)$input_term($|\|)/i);
+
+			# Retrieve all the synonyms
+			my @synonyms = split('\|',$words[1]);
+
+			#Record the tree_number of each term and trace all their children later
+			push @tree_number,split('\|',$words[2]);
+			$disease_extend{$disease_key} .= join(';', ($disease,@synonyms)) and
+			$disease_extend{$disease_key} .= "\tCTD_DISEASE\n";
+		}
+	}
+
+	print STDERR "NOTICE: The word matching search in the CTD (Medic) databases has been done! \n";
+
+	#Second find all children of the terms found in the first round
+	for my $term(@disease_ctd) {
+		chomp($term);
+
+		my @words=split('\t',$term);
+		my @synonyms=split('\|',$words[1]);
+		my $disease = $words[0];
+		my $disease_key = lc $disease;
+
+		for my $each_tree_num(@tree_number) {
+			if($words[2] =~ qr/(^|\|)   $each_tree_num [^\|]+    /x) {
+				$disease_extend{$disease_key} .=join (';', ($disease, @synonyms) )
+				and $disease_extend{$disease_key} .= "\tCTD_DISEASE\n"
+					if(not defined $disease_extend{$disease_key} or $disease_extend{$disease_key}!~/\bCTD_DISEASE\b/);
+			}
+		}
+	}
+
+	print STDERR "NOTICE: The descendants search in the CTD (Medic) databases has been done! \n";
+
+	if (-f "$work_path/ontology_search.pl") {
+		print "ERROR: The doio.obo file couldn't be found!!! The disease_ontology search wouldn't be conducted properly!! \n"
+			if ( not -f "$path/doid.obo");
+		$input_term =~ s/[^ \w-]s?//g;
+
+		my $system_command = "perl $work_path/ontology_search.pl -o $path/doid.obo '$input_term' -f name,id";
+
+		$system_command .= " -exact" if($if_exact_match);
+		$system_command .= " 2>/dev/null";
+
+		my $line = `$system_command`;
+		my @ontology_diseases = split('DOID:\d*\n',$line);
+		for (@ontology_diseases) {
+			next if(not $_);
+			my ($disease, @synonyms) = split('\n');
 			my $disease_key = lc $disease;
-			   $disease_key =~ s/\bs\b//g;
-			   $disease_key =~ s/\W+/ /g;
-			my $synonym_key = $words[1];
-			   $synonym_key =~ s/\bs\b//g;
-			   $synonym_key =~ s/\W+/ /g;
-			my $query_term = $input_term;
-			   $query_term =~ s/\bs\b//g;
-			   $query_term =~ s/\W+/ /g;
-         	if($disease_key=~/\b$query_term\b/i or $synonym_key=~/\b$query_term\b/i)           #First push all the matched disease names or synonyms in
-			{
-				#If exact match
-				next if($if_exact_match and $disease_key.$words[1] !~ /(^|\|)$input_term($|\|)/i);
-				my @synonyms=split('\|',$words[1]);            #Retrieve all the synonyms
-				push @tree_number,split('\|',$words[2]);       #Record the tree_number of each term and trace all their children later
-             	$disease_extend{$disease_key} .= join(';', ($disease,@synonyms) ) and $disease_extend{$disease_key}.="\tCTD_DISEASE\n";
-              }
-	  }
-      print STDERR "NOTICE: The word matching search in the CTD (Medic) databases has been done! \n";
-	   for my $term(@disease_ctd){                 #Second find all children of the terms found in the first round
-	          chomp($term);
-	          my @words=split('\t',$term);
-	          my @synonyms=split('\|',$words[1]);
-	          my $disease = $words[0];
-			  my $disease_key = lc $disease;
-	   	      for my $each_tree_num(@tree_number)
-	   	      {
-	   	      if($words[2]=~qr/(^|\|)   $each_tree_num [^\|]+    /x)
-	   	      {
-              $disease_extend{$disease_key}.=join(';', ($disease, @synonyms) )
-              and $disease_extend{$disease_key}.="\tCTD_DISEASE\n"
-              if(not defined $disease_extend{$disease_key} or $disease_extend{$disease_key}!~/\bCTD_DISEASE\b/);
-              }
-	   	      }
-                                }
-       print STDERR "NOTICE: The descendants search in the CTD (Medic) databases has been done! \n";
 
-       if (-f "$work_path/ontology_search.pl")
-       {
-       print "ERROR: The doio.obo file couldn't be found!!! The disease_ontology search wouldn't be conducted properly!! \n"
-       if ( not -f "$path/doid.obo");
-       $input_term =~ s/[^ \w-]s?//g;
-       my $system_command = "perl $work_path/ontology_search.pl -o $path/doid.obo '$input_term' -f name,id";
-          $system_command.= " -exact" if($if_exact_match);
-          $system_command.= " 2>/dev/null";
-       my $line = `$system_command`;
-       my @ontology_diseases = split('DOID:\d*\n',$line);
-       for (@ontology_diseases)
-       {
-       	 next if(not $_);
-       	 my ($disease, @synonyms) = split('\n');
-       	 my $disease_key = lc $disease;
-       	 $disease_extend{$disease_key} .= join(';', ($disease, @synonyms));
-       	 $disease_extend{$disease_key} .= "\tDISEASE_ONTOLOGY\n";
-       }
-       print STDERR "NOTICE: The descendants search in disease_ontology (DO) database has been done! \n";
-       }
-       else{
-       	print STDERR "NOTICE: The $work_path/ontology_search.pl file couldn't be found, so the disease_ontology (DO) database won't be used! \n";
-       }
-       return \%disease_extend;
+			$disease_extend{$disease_key} .= join(';', ($disease, @synonyms));
+			$disease_extend{$disease_key} .= "\tDISEASE_ONTOLOGY\n";
+		}
+		print STDERR "NOTICE: The descendants search in disease_ontology (DO) database has been done! \n";
+	} else {
+		print STDERR "NOTICE: The $work_path/ontology_search.pl file couldn't be found, so the disease_ontology (DO) database won't be used! \n";
+	}
+	return \%disease_extend;
 }
 
 sub phenotype_extension{
