@@ -1,4 +1,8 @@
 #!/usr/bin/perl
+
+######################################################################
+## LIBRAIRIES
+
 use strict;
 use Carp;
 use Pod::Usage;
@@ -8,67 +12,164 @@ use File::Basename;
 use Bio::OntologyIO;
 use Graph::Directed;
 use warnings;
+
+##
+######################################################################
+
+######################################################################
+## INITIALISATION
+
+# Initialisation of variables
 my $out_directory = cwd();
-my $dirname = dirname(__FILE__);
+my $dirname       = dirname(__FILE__);
 chdir $dirname;
 
-our $VERSION = 			 'v0.0.2';
+# Declare version
+our $VERSION           = 'v0.0.2';
 our $LAST_CHANGED_DATE = '$LastChangedDate: 2015-05-13 $';
-our ($verbose, $help, $man,$buildver,$bedfile);
-our ($query_diseases,$if_file,$if_exact_match,$prediction,$is_phenotype,$if_wordcloud);
-our ($if_hi, $if_rvis);
-our ($out, $database_directory, $if_logistic_regression);
-our ($HPRD_WEIGHT, $BIOSYSTEM_WEIGHT, $GENE_FAMILY_WEIGHT, %GENE_WEIGHT, $HTRI_WEIGHT, $GENE_DISEASE_WEIGHT, $INTERCEPT);
 
-our  ($ctd_disease_file, $hprd_file, $biosystem_file, $disease_count_file, $gene_disease_score_file,
-     $hpo_annotation_file, $gene_annotation_file, $omim_disease_id_file, $biosystem_to_info_file,
-     $gene_family_file, $htri_file, $omim_description_file, $hi_gene_score_file, $rvis_gene_score_file,
-     $addon_gene_disease_score_file, $addon_gene_gene_score_file,
-     $addon_gene_disease_weight, $addon_gene_gene_weight,
-     $genelist, @genes, %gene_hash, %gene_id, %hi_score, %rvis_score,
-     $path, $work_path );
+# Declare help options
+our (
+	$verbose,
+	$help,
+	$man,
+	$buildver,
+	$bedfile
+);
+
+# Declare query options
+our (
+	$query_diseases,
+	$if_file,
+	$if_exact_match,
+	$prediction,
+	$is_phenotype,
+	$if_wordcloud
+);
+
+# Declare test options
+our (
+	$if_hi,
+	$if_rvis
+);
+
+# Declare
+our (
+	$out,
+	$database_directory,
+	$if_logistic_regression
+);
+
+# Declare weight options
+our (
+	$HPRD_WEIGHT,
+	$BIOSYSTEM_WEIGHT,
+	$GENE_FAMILY_WEIGHT,
+	%GENE_WEIGHT,
+	$HTRI_WEIGHT,
+	$GENE_DISEASE_WEIGHT,
+	$INTERCEPT
+);
+
+# Declare files options
+our  (
+	$ctd_disease_file,
+	$hprd_file,
+	$biosystem_file,
+	$disease_count_file,
+	$gene_disease_score_file,
+	$hpo_annotation_file,
+	$gene_annotation_file,
+	$omim_disease_id_file,
+	$biosystem_to_info_file,
+	$gene_family_file,
+	$htri_file,
+	$omim_description_file,
+	$hi_gene_score_file,
+	$rvis_gene_score_file,
+	$addon_gene_disease_score_file,
+	$addon_gene_gene_score_file,
+	$addon_gene_disease_weight,
+	$addon_gene_gene_weight,
+	$genelist,
+	@genes,
+	%gene_hash,
+	%gene_id,
+	%hi_score,
+	%rvis_score,
+	$path,
+	$work_path
+);
 
 # %gene_hash ( $gene => "Not Annotated" or "Chr:Pos1 - Pos2")
 # %omim_disease (lc $first_disease => join(";",$each_disease)  )
-GetOptions('verbose|v'=>\$verbose, 'help|h'=>\$help, 'man|m'=>\$man,'file|f'=>\$if_file,'directory|d=s'=>\$database_directory,
-              'work_directory|w=s'=>\$work_path,'out=s'=>\$out,'prediction|p'=>\$prediction,
-              'buildver=s'=>\$buildver,'bedfile=s'=>\$bedfile,'gene=s'=>\$genelist,'phenotype|ph'=>\$is_phenotype,
-              'exact'=>\$if_exact_match, 'logistic'=>\$if_logistic_regression,
-              'haploinsufficiency|hi'=>\$if_hi, 'intolerance|it'=>\$if_rvis,
-              'addon=s'=>\$addon_gene_disease_score_file,'addon_gg=s'=>\$addon_gene_gene_score_file,
-              'addon_weight=s'=>\$addon_gene_disease_weight, 'addon_gg_weight=s'=>\$addon_gene_gene_weight,
-              'hprd_weight=s'=>\$HPRD_WEIGHT, 'biosystem_weight=s'=>\$BIOSYSTEM_WEIGHT,
-              'gene_family_weight=s'=>\$GENE_FAMILY_WEIGHT, 'htri_weight=s'=>\$HTRI_WEIGHT,
-              'gwas_weight=s'=>\$GENE_WEIGHT{"GWAS"}, 'gene_reviews_weight=s'=>\$GENE_WEIGHT{"GENE_REVIEWS"},
-              'clinvar_weight=s'=>\$GENE_WEIGHT{"CLINVAR"}, 'omim_weight=s'=>\$GENE_WEIGHT{"OMIM"},
-              'orphanet_weight=s'=>\$GENE_WEIGHT{"ORPHANET"}, 'wordcloud'=>\$if_wordcloud,) or pod2usage ();
+# Declare options
+GetOptions(
+	'verbose|v'             =>\$verbose,
+	'help|h'                =>\$help,
+	'man|m'                 =>\$man,
+	'file|f'                =>\$if_file,
+	'directory|d=s'         =>\$database_directory,
+	'work_directory|w=s'    =>\$work_path,
+	'out=s'                 =>\$out,
+	'prediction|p'          =>\$prediction,
+	'buildver=s'            =>\$buildver,
+	'bedfile=s'             =>\$bedfile,
+	'gene=s'                =>\$genelist,
+	'phenotype|ph'          =>\$is_phenotype,
+	'exact'                 =>\$if_exact_match,
+	'logistic'              =>\$if_logistic_regression,
+	'haploinsufficiency|hi' =>\$if_hi,
+	'intolerance|it'        =>\$if_rvis,
+	'addon=s'               =>\$addon_gene_disease_score_file,
+	'addon_gg=s'            =>\$addon_gene_gene_score_file,
+	'addon_weight=s'        =>\$addon_gene_disease_weight,
+	'addon_gg_weight=s'     =>\$addon_gene_gene_weight,
+	'hprd_weight=s'         =>\$HPRD_WEIGHT,
+	'biosystem_weight=s'    =>\$BIOSYSTEM_WEIGHT,
+	'gene_family_weight=s'  =>\$GENE_FAMILY_WEIGHT,
+	'htri_weight=s'         =>\$HTRI_WEIGHT,
+	'gwas_weight=s'         =>\$GENE_WEIGHT{"GWAS"},
+	'gene_reviews_weight=s' =>\$GENE_WEIGHT{"GENE_REVIEWS"},
+	'clinvar_weight=s'      =>\$GENE_WEIGHT{"CLINVAR"},
+	'omim_weight=s'         =>\$GENE_WEIGHT{"OMIM"},
+	'orphanet_weight=s'     =>\$GENE_WEIGHT{"ORPHANET"},
+	'wordcloud'             =>\$if_wordcloud,
+) or pod2usage ();
 
+# Launch help or man
 $help and pod2usage (-verbose=>1, -exitval=>1, -output=>\*STDOUT);
 $man and pod2usage (-verbose=>2, -exitval=>1, -output=>\*STDOUT);
 @ARGV or pod2usage   ("      ERROR: Please enter disease names!!");
 @ARGV == 1 or pod2usage ("       ERROR: too many input arguments");
+
+# Initialise logistics regression
 if($if_logistic_regression)
 {
-print STDERR "NOTICE: The logistic regression model was used!!!\n";
-$GENE_DISEASE_WEIGHT =  9.5331966;
-$HPRD_WEIGHT = 0.8335866;
-$BIOSYSTEM_WEIGHT   = 0.1755904 ;
-$GENE_FAMILY_WEIGHT = 0.3561601 ;
-$HTRI_WEIGHT        = 4.1003533 ;
+	print STDERR "NOTICE: The logistic regression model was used!!!\n";
+	$GENE_DISEASE_WEIGHT = 9.5331966;
+	$HPRD_WEIGHT         = 0.8335866;
+	$BIOSYSTEM_WEIGHT    = 0.1755904 ;
+	$GENE_FAMILY_WEIGHT  = 0.3561601 ;
+	$HTRI_WEIGHT         = 4.1003533 ;
 }
-$GENE_DISEASE_WEIGHT = 1.0 unless (defined $GENE_DISEASE_WEIGHT);
-$HPRD_WEIGHT = 0.1 unless (defined $HPRD_WEIGHT);
-$BIOSYSTEM_WEIGHT   = 0.05 unless (defined $BIOSYSTEM_WEIGHT);
-$GENE_FAMILY_WEIGHT = 0.05 unless  (defined $GENE_FAMILY_WEIGHT);
-$HTRI_WEIGHT        = 0.05 unless  (defined $HTRI_WEIGHT );
-$GENE_WEIGHT{"GWAS"}=1.0  unless  (defined $GENE_WEIGHT{"GWAS"});
-$GENE_WEIGHT{"GENE_REVIEWS"}  =1.0  unless (defined $GENE_WEIGHT{"GENE_REVIEWS"});
-$GENE_WEIGHT{"CLINVAR"}       =1.0  unless (defined $GENE_WEIGHT{"CLINVAR"} );
-$GENE_WEIGHT{"OMIM"}          =1.0  unless (defined $GENE_WEIGHT{"OMIM"} );
-$GENE_WEIGHT{"ORPHANET"}      =1.0  unless (defined $GENE_WEIGHT{"ORPHANET"} );
-$addon_gene_disease_weight =1.0 unless (defined $addon_gene_disease_weight);
-$addon_gene_gene_weight =1.0 unless (defined $addon_gene_gene_weight);
 
+# Initialise variables
+$GENE_DISEASE_WEIGHT         = 1.0  unless (defined $GENE_DISEASE_WEIGHT);
+$HPRD_WEIGHT                 = 0.1  unless (defined $HPRD_WEIGHT);
+$BIOSYSTEM_WEIGHT            = 0.05 unless (defined $BIOSYSTEM_WEIGHT);
+$GENE_FAMILY_WEIGHT          = 0.05 unless (defined $GENE_FAMILY_WEIGHT);
+$HTRI_WEIGHT                 = 0.05 unless (defined $HTRI_WEIGHT );
+$GENE_WEIGHT{"GWAS"}         = 1.0  unless (defined $GENE_WEIGHT{"GWAS"});
+$GENE_WEIGHT{"GENE_REVIEWS"} = 1.0  unless (defined $GENE_WEIGHT{"GENE_REVIEWS"});
+$GENE_WEIGHT{"CLINVAR"}      = 1.0  unless (defined $GENE_WEIGHT{"CLINVAR"} );
+$GENE_WEIGHT{"OMIM"}         = 1.0  unless (defined $GENE_WEIGHT{"OMIM"} );
+$GENE_WEIGHT{"ORPHANET"}     = 1.0  unless (defined $GENE_WEIGHT{"ORPHANET"} );
+$addon_gene_disease_weight   = 1.0  unless (defined $addon_gene_disease_weight);
+$addon_gene_gene_weight      = 1.0  unless (defined $addon_gene_gene_weight);
+
+##
+######################################################################
 
 #----------------------Main program-----------------------------------------------
 
@@ -981,7 +1082,7 @@ close (GENE_ID);
 
 
 
-	 	             
+
 }
 
 sub predict_genes{
