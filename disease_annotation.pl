@@ -1027,43 +1027,50 @@ sub score_all_genes{
 	return (\%item,$count);
 }
 
-#################################### This function is to convert CNV into genes   ##############################
+# This function is to convert CNV into genes
+## Code borrowed from bed2gene.pl
 sub annovar_annotate{
-	#----------------------Code borrowed from bed2gene.pl-------------------------
-
 	$buildver = 'hg19' if(not $buildver);
+
 	print STDERR "NOTICE: the --buildver argument is set as 'hg19' by default\n"
+
 	unless defined $buildver;
+
 	$buildver eq 'hg18' or $buildver eq 'hg19' or pod2usage ("Error in argument: the --buildver argument must be 'hg18' or 'hg19'");
+
     my $sc;
-       $sc = "perl $path/../../bin/convert.pl -format bed $out_directory/$bedfile > $out.avinput";
+
+	$sc = "perl $path/../../bin/convert.pl -format bed $out_directory/$bedfile > $out.avinput";
     system ($sc) and die "Error: cannot execute system command $sc\n";
-      $sc = "perl $path/../../bin/annotate.pl -geneanno -buildver $buildver -outfile $out $out.avinput $path/../humandb";
+
+	$sc = "perl $path/../../bin/annotate.pl -geneanno -buildver $buildver -outfile $out $out.avinput $path/../humandb";
     system ($sc) and die "Error: cannot execute system command $sc\n";
-    my ($countregion, $countexonic) = qw/0 0/;
+
+	my ($countregion, $countexonic) = qw/0 0/;
     my ($totallen);
-    open (VF, "$out.variant_function") or die "Error: cannot read $out.variant_function file\n";
-    open (REGION_GENE,">$out.genelist_from_region") or die "Error: can't write to genelist_from_region\n";
 
-    while (<VF>)
-    {
-	my @field = split (/\t/, $_);
-	$countregion++;
-	$field[0] =~ m/exonic/ or next;
-	$countexonic++;
-	my @gene = split (/,/, $field[1]);
+	open (VF, "$out.variant_function") or die "Error: cannot read $out.variant_function file\n";
+    open (REGION_GENE, ">$out.genelist_from_region") or die "Error: can't write to genelist_from_region\n";
 
-	for my $gene (@gene) {
-		$gene_hash{$gene} = "$field[2]:$field[3]-$field[4]";
-	 }
-	  $totallen += ($field[4]-$field[3]+1);
+    while (<VF>) {
+		my @field = split (/\t/, $_);
+		$countregion++;
+		$field[0] =~ m/exonic/ or next;
+		$countexonic++;
+		my @gene = split (/,/, $field[1]);
+
+		for my $gene (@gene) {
+			$gene_hash{$gene} = "$field[2]:$field[3]-$field[4]";
+		}
+
+		$totallen += ($field[4]-$field[3]+1);
 	}
-	print REGION_GENE $_."\n" for keys %gene_hash;
-	print STDERR "NOTICE: Among $countregion BED regions ($totallen base pairs), $countexonic disrupt exons, and ", scalar keys %gene_hash, " genes are affected\n";
-	#----------------------Code borrowed from bed2gene.pl-------------------------
-}
-###################################################################################################################
 
+	print REGION_GENE $_."\n" for keys %gene_hash;
+
+	print STDERR "NOTICE: Among $countregion BED regions ($totallen base pairs), $countexonic disrupt exons, and ", scalar keys %gene_hash, " genes are affected\n";
+	### Code borrowed from bed2gene.pl
+}
 
 sub setup_variables{
 	#Input argument setup
