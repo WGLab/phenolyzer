@@ -1216,276 +1216,285 @@ sub setup_variables{
 }
 
 sub predict_genes{
+	print STDERR "----------------------------------------------------------------------\n";
+	print STDERR "NOTICE: The prediction process starts!!!\n";
 
-	    print STDERR "----------------------------------------------------------------------\n";
-	    print STDERR "NOTICE: The prediction process starts!!!\n";
-	    @_ == 1 or die "You can only have one input argument!!!";
-	    my %item = ();
-	    my %output = ();
-	    %item = %{$_[0]};
-	    @{$output{$_}} = @{$item{$_}} for keys %item;
-	    my $gene_count = keys %item;
-	    my $i = 0;
-	    my %biosystem_id_type = ();
-	    #%biosystem_id_type = (
-	    #          $biosystem_id => $type
-	    #              )
-	    my %biosystem = ();
-        # %biosystem = (
-	    #     $system_num => {
-	    #                 $gene => $score
-	    #                     }
-	    #               )
+	@_ == 1 or die "You can only have one input argument!!!";
 
-	    my %interaction = ();
-	    # %interaction = (
-	    #         $gene1 => { $gene2 => [$score, $biosystem_id] }       #The score here is the maximal score of all the possible biosystems
-	    #                  )
-	    my %gene_family = ();
-	    # %gene_family = (
-	    #     $gene_family_tag => {
-	    #                 $gene => true of false
-	    #                     }
-	    #               )
+	my %item = ();
+	my %output = ();
+	%item = %{$_[0]};
+	@{$output{$_}} = @{$item{$_}} for keys %item;
+	my $gene_count = keys %item;
+	my $i = 0;
+	my %biosystem_id_type = ();
+	#%biosystem_id_type = (
+	#          $biosystem_id => $type
+	#              )
+	my %biosystem = ();
+	# %biosystem = (
+	#     $system_num => {
+	#                 $gene => $score
+	#                     }
+	#               )
+	my %interaction = ();
+	# %interaction = (
+	#         $gene1 => { $gene2 => [$score, $biosystem_id] }       #The score here is the maximal score of all the possible biosystems
+	#                  )
+	my %gene_family = ();
+	# %gene_family = (
+	#     $gene_family_tag => {
+	#                 $gene => true of false
+	#                     }
+	#               )
 
-	    open (HPRD, "$path/$hprd_file") or die "Can't open $path/$hprd_file !";
-	    open (BIOSYSTEM, "$path/$biosystem_file") or die "Can't open $path/$biosystem_file !";
-	    open (GENE_FAMILY, "$path/$gene_family_file") or die "Can't open $path/$gene_family_file!";
-	    open (HTRI, "$path/$htri_file") or die "Can't open $path/$htri_file!";
-	    my @ggfiles;
-	    if($addon_gene_gene_score_file) {
-	    	 @ggfiles = split(",", $addon_gene_gene_score_file);
-        }
-		#Predict genes based on Addon Gene-Gene relations
-        for my $each_file (@ggfiles)
-        {
-        open(ADDON_GG,"$path/$each_file") or die "Can't open $path/$each_file!";
-	    for my $line (<ADDON_GG>)
-	    {
-	    	if ($i==0) {$i++; next; }
-	    	chomp ($line);
-	    	my ($gene1, $gene2, $evidence, $score, $pubmed_id) = split ("\t", $line);
-	    	my $individual_score;
-	    	$gene1 = uc $gene1;
-	    	$gene2 = uc $gene2;
-	    	next if($gene1 =~ /^\W*$/ or $gene2 =~ /^\W*$/);
-	    	$pubmed_id =~s/,/ /g;
-	    	if($item{$gene1}[0] and ($gene1 ne $gene2) )
-	    	{
-	        $individual_score = $score  * $addon_gene_gene_weight * $item{$gene1}[2];   #$item{$gene1}[2] saves the normalized score
-	        $output{$gene2}[0] = 0 if (not $output{$gene2}[0]);
-	        if( $individual_score !=0)
-	        {
-	    	$output{$gene2}[0] +=  $individual_score;
-	    	$output{$gene2}[1] .= "PUBMED:$pubmed_id (ADDON_GENE_GENE)\t".$evidence."\t"
-	    	."With $gene1"."\t".$individual_score."\n";
-	        }
-	        }
+	open (HPRD, "$path/$hprd_file") or die "Can't open $path/$hprd_file !";
+	open (BIOSYSTEM, "$path/$biosystem_file") or die "Can't open $path/$biosystem_file !";
+	open (GENE_FAMILY, "$path/$gene_family_file") or die "Can't open $path/$gene_family_file!";
+	open (HTRI, "$path/$htri_file") or die "Can't open $path/$htri_file!";
 
-	        if($item{$gene2}[0] and ($gene1 ne $gene2) )
-	        {
-	        $individual_score = $score * $addon_gene_gene_weight * $item{$gene2}[2];
-	         $output{$gene1}[0] = 0 if (not $output{$gene1}[0]);
-	        if($individual_score !=0 )
-	        {
-	        $output{$gene1}[0] += $individual_score;
-	    	$output{$gene1}[1] .= "PUBMED:$pubmed_id (ADDON_GENE_GENE)\t".$evidence."\t"
-	    	."With $gene2"."\t".$individual_score."\n";
-	        }
-	        }
+	my @ggfiles;
+	if($addon_gene_gene_score_file) {
+		@ggfiles = split(",", $addon_gene_gene_score_file);
+	}
 
-	     }
-	    close(ADDON_GG);
-	    print STDERR "NOTICE: The Addon Database loaded !\n";
-        }
+	# Predict genes based on Addon Gene-Gene relations
+	for my $each_file (@ggfiles) {
+		open(ADDON_GG,"$path/$each_file") or die "Can't open $path/$each_file!";
+		for my $line (<ADDON_GG>) {
+			if ($i==0) {
+				$i++;
+				next;
+			}
+			chomp ($line);
 
+			my ($gene1, $gene2, $evidence, $score, $pubmed_id) = split ("\t", $line);
+			my $individual_score;
 
-		#Predict genes based on Human Protein Interactions
+			$gene1 = uc $gene1;
+			$gene2 = uc $gene2;
 
-	    for my $line (<HPRD>)
-	    {
-	    	if ($i==0) {$i++; next; }
-	    	chomp ($line);
-	    	my ($gene1, $gene2, $evidence, $score, $pubmed_id) = split ("\t", $line);
-	    	$gene1 = uc $gene1;
-	    	$gene2 = uc $gene2;
-	    	my $individual_score;
-	    	next if($gene1 eq '-' or $gene2 eq '-');
-	    	$pubmed_id =~s/,/ /g;
-	    	if($item{$gene1}[0] and ($gene1 ne $gene2) )
-	    	{
-	        $individual_score = $score * $HPRD_WEIGHT * $item{$gene1}[2];   #$item{$gene1}[2] saves the normalized score
-	        $output{$gene2}[0] = 0 if (not $output{$gene2}[0]);
-	        if( $individual_score !=0)
-	        {
-	    	$output{$gene2}[0] +=  $individual_score;
-	    	$output{$gene2}[1] .= "PUBMED:$pubmed_id (HPRD)\t".$evidence."\t"
-	    	."With $gene1"."\t".$individual_score."\n";
-	        }
-	        }
+			next if($gene1 =~ /^\W*$/ or $gene2 =~ /^\W*$/);
 
-	        if($item{$gene2}[0] and ($gene1 ne $gene2) )
-	        {
-	        $individual_score = $score * $HPRD_WEIGHT * $item{$gene2}[2];
-	         $output{$gene1}[0] = 0 if (not $output{$gene1}[0]);
-	        if($individual_score !=0 )
-	        {
-	        $output{$gene1}[0] += $individual_score;
-	    	$output{$gene1}[1] .= "PUBMED:$pubmed_id (HPRD)\t".$evidence."\t"
-	    	."With $gene2"."\t".$individual_score."\n";
-	        }
-	        }
+			$pubmed_id =~s/,/ /g;
+			if($item{$gene1}[0] and ($gene1 ne $gene2)) {
+				$individual_score = $score  * $addon_gene_gene_weight * $item{$gene1}[2];   #$item{$gene1}[2] saves the normalized score
+				$output{$gene2}[0] = 0 if (not $output{$gene2}[0]);
+				if( $individual_score !=0) {
+					$output{$gene2}[0] +=  $individual_score;
+					$output{$gene2}[1] .= "PUBMED:$pubmed_id (ADDON_GENE_GENE)\t".$evidence."\t"
+					."With $gene1"."\t".$individual_score."\n";
+				}
+			}
 
-	     }
-	     print STDERR "NOTICE: The HPRD Database loaded !\n";
- #Predict genes based on transcription interaction
-        $i = 0;
-        my $TF_PENALTY=4;
-        for my $line (<HTRI>)    #TF	TG	EVIDENCE	PUBMED	SCORE
-	    {
-	    	if ($i==0) {$i++; next; }
-	    	chomp ($line);
-	    	my ($gene1, $gene2, $evidence, $pubmed_id, $score) = split ("\t", $line);
-	    	$gene1 = uc $gene1;
-	    	$gene2 = uc $gene2;
-	    	my $individual_score;
-	    	next if($gene1 eq '-' or $gene2 eq '-');
-	    	$pubmed_id =~s/;/ /g;
-	    	if($item{$gene1}[0] and ($gene1 ne $gene2) )
-	    	{
-	        $individual_score = $score * $HTRI_WEIGHT * $item{$gene1}[2];
-	        $output{$gene2}[0] = 0 if (not $output{$gene2}[0]);
-	        if( $individual_score !=0)
-	        {
-	    	$output{$gene2}[0] +=  $individual_score;
-	    	$output{$gene2}[1] .= "PUBMED:$pubmed_id (HTRI)\t".$evidence."\t"
-	    	."Regulated by $gene1"."\t".$individual_score."\n";
-	        }
-	        }
+			if($item{$gene2}[0] and ($gene1 ne $gene2)) {
+				$individual_score = $score * $addon_gene_gene_weight * $item{$gene2}[2];
+				$output{$gene1}[0] = 0 if (not $output{$gene1}[0]);
+				if($individual_score !=0) {
+					$output{$gene1}[0] += $individual_score;
+					$output{$gene1}[1] .= "PUBMED:$pubmed_id (ADDON_GENE_GENE)\t".$evidence."\t"
+					."With $gene2"."\t".$individual_score."\n";
+				}
+			}
 
-	        if($item{$gene2}[0] and ($gene1 ne $gene2) )
-	        {
-	        $output{$gene1}[0] = 0 if (not $output{$gene1}[0]);
-	        $individual_score = $score * $HTRI_WEIGHT * $item{$gene2}[2];
-	        if($individual_score !=0 )
-	        {
-	        $output{$gene1}[0] += $individual_score/$TF_PENALTY;
-	    	$output{$gene1}[1] .= "PUBMED:$pubmed_id (HTRI)\t".$evidence."\t"
-	    	."Regulates $gene2"."\t".$individual_score."\n";
-	        }
-	        }
+		}
+		close(ADDON_GG);
+		print STDERR "NOTICE: The Addon Database loaded !\n";
+	}
 
-	     }
+	#Predict genes based on Human Protein Interactions
+	for my $line (<HPRD>) {
+		if ($i==0) {
+			$i++;
+			next;
+		}
+		chomp ($line);
 
- #Predict genes based on gene family
-	    print STDERR "NOTICE: The HGNC Gene Family Database loaded !\n";
-	    $i = 0;
-	    my %in_gene_family = ();
+		my ($gene1, $gene2, $evidence, $score, $pubmed_id) = split ("\t", $line);
 
-	    for my $line (<GENE_FAMILY>)
-	    {
-	    	if ($i==0) {$i++; next; }
-	    	chomp ($line);
-	    	my ($gene, $tag, $description) = split ("\t", $line);
-	    	$gene = uc $gene;
-	    	$gene_family{$tag}{$gene} = $description;
-	    }
+		$gene1 = uc $gene1;
+		$gene2 = uc $gene2;
 
-	    for my $tag (keys %gene_family)         #Each gene family
-	    {
-	    	for my $gene ( keys %{$gene_family{$tag}}  )   #Each gene
-	        {
-	    	      if ($item{$gene}[0])
-	    	      {
-	    	      	for my $related_gene (keys %{$gene_family{$tag}})  #Each related gene in the gene_family
-	    	      	{
-	    	      		if ($related_gene ne $gene)
-	    	      		{
-	    	      	    my $description = $gene_family{$tag}{$related_gene};
-	    	      		$in_gene_family{$related_gene}{$gene}[0] .= $tag." ";
-	    	      		$in_gene_family{$related_gene}{$gene}[1] .= $description." ";
-	    	      		}
-	    	      	}
-           	      }
-	        }
-	    }
+		my $individual_score;
 
-	    for my $related_gene (keys %in_gene_family)
-	    {
-	    	for my $gene (keys %{$in_gene_family{$related_gene}})
-	    	{
-	        my $individual_score = $GENE_FAMILY_WEIGHT * $item{$gene}[2];
-	        $output{$related_gene}[0] = 0 if (not$output{$related_gene}[0] );
-	        if ($individual_score !=0 )
-	        {
-	    	$output{$related_gene}[0] += $individual_score;
-	    	my $tag_string = $in_gene_family{$related_gene}{$gene}[0];
-	    	   $tag_string = substr ( $tag_string, 0, length($tag_string)-1 );
-	    	my $description_string = $in_gene_family{$related_gene}{$gene}[1];
-	    	   $description_string = substr ($description_string, 0, length($description_string)-1 );
-	        $output{$related_gene}[1] .= "NAME:".$tag_string." (GENE_FAMILY)\t"."In the family ($description_string)\t"."With $gene\t".$individual_score."\n";
-	        }
-	    	}
-	    }
+		next if($gene1 eq '-' or $gene2 eq '-');
 
-		#Predict genes based on Biosystem
-        my %biosystem_id_name = ();
-	    print STDERR "NOTICE: The Biosystem Database loaded !\n";
-	    $i = 0;
-	    for my $line (<BIOSYSTEM>)
-	    {
-	    	if ($i==0) {$i++; next; }
-	    	chomp ($line);
-	    	my ($biosystem_id, $gene, $score, $biosystem_name) = split ("\t", $line);
-	    	$gene = uc $gene;
-	    	$biosystem{$biosystem_id}{$gene} = $score;
-	    	$biosystem_id_name{$biosystem_id} = $biosystem_name if(not defined $biosystem_id_name{$biosystem_id}) ;
-	    }
+		$pubmed_id =~s/,/ /g;
 
-	    for my $biosystem_id (keys %biosystem)         #Each biosystem
-	    {
-	    	for my $gene (keys %{$biosystem{$biosystem_id}})   #Each gene
-	        {
-	    	      if ($item{$gene}[0])
-	    	      {
-	    	      	for my $related_gene (keys %{$biosystem{$biosystem_id}})  #Each related gene in the same biosystem
-	    	      	{
-	    	      		if ($related_gene ne $gene)
-	    	      		{
-	    	      		my $score = $biosystem{$biosystem_id}{$related_gene};
-	    	      		$interaction{$related_gene}{$gene}[0] = 0 if(not $interaction{$related_gene}{$gene}[0]);
-	    	      		$interaction{$related_gene}{$gene}[0] = $score
-	    	      		if ( $score > $interaction{$related_gene}{$gene}[0] );
-	    	      		$interaction{$related_gene}{$gene}[1] .= $biosystem_id." ";
-	    	      		$interaction{$related_gene}{$gene}[2] .= $biosystem_id_name{$biosystem_id}."; ";
-	    	      		}
-	    	      	}
-           	      }
-	        }
-	    }
+		if($item{$gene1}[0] and ($gene1 ne $gene2) ) {
+			$individual_score = $score * $HPRD_WEIGHT * $item{$gene1}[2];   #$item{$gene1}[2] saves the normalized score
+			$output{$gene2}[0] = 0 if (not $output{$gene2}[0]);
+			if($individual_score != 0) {
+				$output{$gene2}[0] +=  $individual_score;
+				$output{$gene2}[1] .= "PUBMED:$pubmed_id (HPRD)\t".$evidence."\t"
+				."With $gene1"."\t".$individual_score."\n";
+			}
+		}
 
-	    for my $related_gene (keys %interaction)
-	    {
-	    	for my $gene (keys %{$interaction{$related_gene}})
-	    	{
-	        my $individual_score = $BIOSYSTEM_WEIGHT * $interaction{$related_gene}{$gene}[0] * $item{$gene}[2];
-	         $output{$related_gene}[0] = 0 if (not $output{$related_gene}[0] );
-	    	if ($individual_score !=0)
-	    	{
-	    	$output{$related_gene}[0] += $individual_score;
-	    	my $id_string = $interaction{$related_gene}{$gene}[1];
-	    	   $id_string = substr ( $id_string, 0, length($id_string)-1 );
-	    	my $type_string = $interaction{$related_gene}{$gene}[2];
-	    	   $type_string = substr ($type_string, 0, length($type_string)-2 );
-	        $output{$related_gene}[1] .= "BIOSYSTEM:".$id_string." (BIOSYSTEM)\t"."In the same ($type_string)\t"."With $gene\t".$individual_score."\n";
-	    	}
-	    	}
-	    }
-        for (keys %output){
-    	delete  $output{$_}  if (not $gene_id{$_});
-         	 }
+		if($item{$gene2}[0] and ($gene1 ne $gene2)) {
+			$individual_score = $score * $HPRD_WEIGHT * $item{$gene2}[2];
+			$output{$gene1}[0] = 0 if (not $output{$gene1}[0]);
+			if($individual_score != 0) {
+				$output{$gene1}[0] += $individual_score;
+				$output{$gene1}[1] .= "PUBMED:$pubmed_id (HPRD)\t".$evidence."\t"
+				."With $gene2"."\t".$individual_score."\n";
+			}
+		}
+	}
+	print STDERR "NOTICE: The HPRD Database loaded !\n";
 
-   return \%output;
+	#Predict genes based on transcription interaction
+	$i = 0;
+	my $TF_PENALTY=4;
+	#TF	TG	EVIDENCE	PUBMED	SCORE
+	for my $line (<HTRI>) {
+		if ($i==0) {
+			$i++;
+			next;
+		}
+		chomp ($line);
+
+		my ($gene1, $gene2, $evidence, $pubmed_id, $score) = split ("\t", $line);
+
+		$gene1 = uc $gene1;
+		$gene2 = uc $gene2;
+
+		my $individual_score;
+
+		next if($gene1 eq '-' or $gene2 eq '-');
+
+		$pubmed_id =~s/;/ /g;
+
+		if($item{$gene1}[0] and ($gene1 ne $gene2) ) {
+			$individual_score = $score * $HTRI_WEIGHT * $item{$gene1}[2];
+			$output{$gene2}[0] = 0 if (not $output{$gene2}[0]);
+			if( $individual_score !=0) {
+				$output{$gene2}[0] +=  $individual_score;
+				$output{$gene2}[1] .= "PUBMED:$pubmed_id (HTRI)\t".$evidence."\t"
+				."Regulated by $gene1"."\t".$individual_score."\n";
+			}
+		}
+
+		if($item{$gene2}[0] and ($gene1 ne $gene2) ) {
+			$output{$gene1}[0] = 0 if (not $output{$gene1}[0]);
+			$individual_score = $score * $HTRI_WEIGHT * $item{$gene2}[2];
+			if($individual_score !=0) {
+				$output{$gene1}[0] += $individual_score/$TF_PENALTY;
+				$output{$gene1}[1] .= "PUBMED:$pubmed_id (HTRI)\t".$evidence."\t"
+				."Regulates $gene2"."\t".$individual_score."\n";
+			}
+		}
+	}
+
+	#Predict genes based on gene family
+	print STDERR "NOTICE: The HGNC Gene Family Database loaded !\n";
+	$i = 0;
+	my %in_gene_family = ();
+
+	for my $line (<GENE_FAMILY>) {
+		if ($i==0) {
+			$i++;
+			next;
+		}
+		chomp ($line);
+		my ($gene, $tag, $description) = split ("\t", $line);
+		$gene = uc $gene;
+		$gene_family{$tag}{$gene} = $description;
+	}
+
+	#Each gene family
+	for my $tag (keys %gene_family) {
+		#Each gene
+		for my $gene ( keys %{$gene_family{$tag}} ) {
+			if ($item{$gene}[0]) {
+				#Each related gene in the gene_family
+				for my $related_gene (keys %{$gene_family{$tag}}) {
+					if ($related_gene ne $gene) {
+						my $description = $gene_family{$tag}{$related_gene};
+						$in_gene_family{$related_gene}{$gene}[0] .= $tag." ";
+						$in_gene_family{$related_gene}{$gene}[1] .= $description." ";
+					}
+				}
+			}
+		}
+	}
+
+	for my $related_gene (keys %in_gene_family) {
+		for my $gene (keys %{$in_gene_family{$related_gene}}) {
+			my $individual_score = $GENE_FAMILY_WEIGHT * $item{$gene}[2];
+			$output{$related_gene}[0] = 0 if (not$output{$related_gene}[0] );
+			if ($individual_score !=0 ) {
+				$output{$related_gene}[0] += $individual_score;
+
+				my $tag_string = $in_gene_family{$related_gene}{$gene}[0];
+				$tag_string = substr ( $tag_string, 0, length($tag_string)-1 );
+
+				my $description_string = $in_gene_family{$related_gene}{$gene}[1];
+				$description_string = substr ($description_string, 0, length($description_string)-1 );
+
+				$output{$related_gene}[1] .= "NAME:".$tag_string." (GENE_FAMILY)\t"."In the family ($description_string)\t"."With $gene\t".$individual_score."\n";
+			}
+		}
+	}
+
+	#Predict genes based on Biosystem
+	my %biosystem_id_name = ();
+	print STDERR "NOTICE: The Biosystem Database loaded !\n";
+	$i = 0;
+
+	for my $line (<BIOSYSTEM>) {
+		if ($i==0) {$i++; next; }
+		chomp ($line);
+		my ($biosystem_id, $gene, $score, $biosystem_name) = split ("\t", $line);
+		$gene = uc $gene;
+		$biosystem{$biosystem_id}{$gene} = $score;
+		$biosystem_id_name{$biosystem_id} = $biosystem_name if(not defined $biosystem_id_name{$biosystem_id}) ;
+	}
+
+	#Each biosystem
+	for my $biosystem_id (keys %biosystem) {
+		#Each gene
+		for my $gene (keys %{$biosystem{$biosystem_id}}) {
+			if ($item{$gene}[0]) {
+				#Each related gene in the same biosystem
+				for my $related_gene (keys %{$biosystem{$biosystem_id}}) {
+					if ($related_gene ne $gene) {
+						my $score = $biosystem{$biosystem_id}{$related_gene};
+						$interaction{$related_gene}{$gene}[0] = 0 if(not $interaction{$related_gene}{$gene}[0]);
+						$interaction{$related_gene}{$gene}[0] = $score
+							if ( $score > $interaction{$related_gene}{$gene}[0] );
+						$interaction{$related_gene}{$gene}[1] .= $biosystem_id." ";
+						$interaction{$related_gene}{$gene}[2] .= $biosystem_id_name{$biosystem_id}."; ";
+					}
+				}
+			}
+		}
+	}
+
+	for my $related_gene (keys %interaction) {
+		for my $gene (keys %{$interaction{$related_gene}}) {
+			my $individual_score = $BIOSYSTEM_WEIGHT * $interaction{$related_gene}{$gene}[0] * $item{$gene}[2];
+			$output{$related_gene}[0] = 0 if (not $output{$related_gene}[0] );
+
+			if ($individual_score !=0) {
+				$output{$related_gene}[0] += $individual_score;
+
+				my $id_string = $interaction{$related_gene}{$gene}[1];
+				$id_string = substr ( $id_string, 0, length($id_string)-1 );
+
+				my $type_string = $interaction{$related_gene}{$gene}[2];
+				$type_string = substr ($type_string, 0, length($type_string)-2 );
+
+				$output{$related_gene}[1] .= "BIOSYSTEM:".$id_string." (BIOSYSTEM)\t"."In the same ($type_string)\t"."With $gene\t".$individual_score."\n";
+			}
+		}
+	}
+
+	for (keys %output){
+		delete $output{$_} if (not $gene_id{$_});
+	}
+
+	return \%output;
 }
 
 sub generate_wordcloud{
