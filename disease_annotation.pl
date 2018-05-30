@@ -897,56 +897,64 @@ sub score_genes{
 	return (\%item,$count);
 }
 
-sub merge_result{                                #Merge gene_scores for each term, return %item reference and $count for the sum of the tuple count
-                                                 # %item (  $gene[0] => score, $gene[1] => "SOURCE_ID	 DISEASE_NAME	DISEASE_TERM"     )
+# Merge gene_scores for each term, return %item reference and $count for the sum of the tuple count
+sub merge_result{
+	# %item (  $gene[0] => score, $gene[1] => "SOURCE_ID	 DISEASE_NAME	DISEASE_TERM"     )
 	print STDERR "NOTICE: Start to merge gene scores! \n";
+
 	my $dirname=dirname($out);
 	my $basename=basename($out);
 	my @filelist = split("\n",`ls $dirname`);
-	my %item=();                                   #item will save the results for output
+	
+	#item will save the results for output
+	my %item=();
 	my $count=0.0;
 	my $individual_count;
-	for my $filename(@filelist){
+
+	for my $filename(@filelist) {
 		if($filename=~/^${basename}_(\w+)_gene_scores$/){
 			my $term=$1;
 			$term=~s/_/ /g;
+
 			open(GENE_SCORE,"${dirname}/${filename}") or die "ERROR: Can't open ${dirname}/${filename}!!!\n";
 			my $gene="";
 			my $i=0;
 
-			for my $line(<GENE_SCORE>){
+			for my $line(<GENE_SCORE>) {
 				chomp($line);
-				if($i==0)
-				{
+
+				if($i==0) {
 					$line=~/: (\d+)/;
 					$individual_count = $1;
 					$count+=$1;
 					$i++;
 					next;
 				}
+
 				#Proress the first line of each term_score
-				if($line=~/^\s*$/)
-				{
+				if($line=~/^\s*$/) {
 					$gene="";
 					next;
 				}
-				my @words=split("\t",$line);         #[0]SOURCE	[1]EVIDENCE	[2]RAW_SCORE
-			    if(not $gene){
-			    	 $gene=$words[0];
-			    	 $words[1]=~/Normalized score: (.*?)$/;
-			    	 my $score=$1;
-			         $item{$gene}[0]+=$score if defined $item{$gene};
-			         $item{$gene}[0] =$score if not defined $item{$gene};
-			    }
-			    else{
-			    	my ($source, $disease, $individual_score)= @words;
-			    	$item{$gene}[1].= $source."\t".$disease."\t".$term."\t".$individual_score/$individual_count."\n";
-                     }
-         	}
-         }
-      }
-      return (\%item,$count);
 
+				#[0]SOURCE	[1]EVIDENCE	[2]RAW_SCORE
+				my @words=split("\t",$line);
+
+				if(not $gene){
+					$gene=$words[0];
+					$words[1]=~/Normalized score: (.*?)$/;
+					my $score=$1;
+
+					$item{$gene}[0]+=$score if defined $item{$gene};
+					$item{$gene}[0] =$score if not defined $item{$gene};
+				} else {
+					my ($source, $disease, $individual_score)= @words;
+					$item{$gene}[1].= $source."\t".$disease."\t".$term."\t".$individual_score/$individual_count."\n";
+				}
+			}
+		}
+	}
+	return (\%item,$count);
 }
 
 sub score_all_genes{                              #GENE	DISEASE	DISEASE_ID	SCORE	SOURCE
