@@ -1074,42 +1074,50 @@ sub annovar_annotate{
 
 sub setup_variables{
 	#Input argument setup
-	$query_diseases=$ARGV[0];
+	$query_diseases = $ARGV[0];
+
 	$path = "./lib/compiled_database";
 	$database_directory and $path=$database_directory;
 	$path =~s/\/$//;
 	$work_path ||= cwd();
 	$out or $out="out";
 	$out = "$out_directory/$out";
+
 	(-d dirname($out)) or system("mkdir ".dirname($out)) and die "ERROR: $out is not legal output!!";
 
-
-	$disease_count_file =       "DB_COMPILED_DISEASE_COUNT";
-	$gene_disease_score_file =  "DB_COMPILED_GENE_DISEASE_SCORE";
-	$ctd_disease_file=  "DB_COMPILED_CTD_DISEASES";
-	$hprd_file  =     "DB_COMPILED_BINARY_PROTEIN_INTERACTION_SCORE";
-	$biosystem_file = "DB_COMPILED_BIOSYSTEM_SCORE";
-	$hpo_annotation_file = "DB_HPO_ANNOTATION";
-	$gene_annotation_file = "DB_HUMAN_GENE_ID";
-	$omim_disease_id_file = "DB_COMPILED_OMIM_ID_DISEASE";
+	$disease_count_file      = "DB_COMPILED_DISEASE_COUNT";
+	$gene_disease_score_file = "DB_COMPILED_GENE_DISEASE_SCORE";
+	$ctd_disease_file        = "DB_COMPILED_CTD_DISEASES";
+	$hprd_file               = "DB_COMPILED_BINARY_PROTEIN_INTERACTION_SCORE";
+	$biosystem_file          = "DB_COMPILED_BIOSYSTEM_SCORE";
+	$hpo_annotation_file     = "DB_HPO_ANNOTATION";
+	$gene_annotation_file    = "DB_HUMAN_GENE_ID";
+	$omim_disease_id_file    = "DB_COMPILED_OMIM_ID_DISEASE";
 	#$biosystem_to_info_file = "biosystem_bsid_to_info.txt";
-	$gene_family_file = "DB_HGNC_GENE_FAMILY";
-	$htri_file = "DB_HTRI_TRANSCRIPTION_INTERACTION";
-	$omim_description_file = "DB_OMIM_DESCRIPTION";
-	$hi_gene_score_file = "DB_HI_SCORE";
-	$rvis_gene_score_file = "DB_RVIS_SCORE";
+	$gene_family_file        = "DB_HGNC_GENE_FAMILY";
+	$htri_file               = "DB_HTRI_TRANSCRIPTION_INTERACTION";
+	$omim_description_file   = "DB_OMIM_DESCRIPTION";
+	$hi_gene_score_file      = "DB_HI_SCORE";
+	$rvis_gene_score_file    = "DB_RVIS_SCORE";
+
 	my %gene_transform;
-	if (defined $if_file) {                                     #The disease input will come from file
-		 print STDERR  "NOTICE: The file name option was used!! \n";
-		 open(INPUT_DISEASE,"$query_diseases") or die "can't open $query_diseases";
-		 my @input=<INPUT_DISEASE>;
-		 $query_diseases=join("\t",@input);
-		 if(defined $genelist){
-		 open(INPUT_GENELIST,"$out_directory/$genelist") or die "can't open $genelist";
-		 @input=<INPUT_GENELIST>;
-		 $genelist=join("\t",@input);
-		 }
+
+	# The disease input will come from file
+	if (defined $if_file) {
+		print STDERR  "NOTICE: The file name option was used!! \n";
+
+		open(INPUT_DISEASE,"$query_diseases") or die "can't open $query_diseases";
+		my @input=<INPUT_DISEASE>;
+
+		$query_diseases = join("\t",@input);
+
+		if(defined $genelist){
+			open(INPUT_GENELIST,"$out_directory/$genelist") or die "can't open $genelist";
+			@input = <INPUT_GENELIST>;
+			$genelist = join("\t",@input);
+		}
 	}
+
 	#build the haploinsufficiency hash
 	if($if_hi){
 		print STDERR "NOTICE: The haploinsufficency score is used!\n";
@@ -1121,6 +1129,7 @@ sub setup_variables{
 	    }
 	    close(HI);
 	}
+
 	#build the gene intolerance shash
 	if($if_rvis){
 		print STDERR "NOTICE: The gene intolerance score is used!\n";
@@ -1135,61 +1144,75 @@ sub setup_variables{
 	# Read information from refGene database
 	open (GENE_ID, "$path/$gene_annotation_file") or die;
 	my $i=0;
-	for my $line (<GENE_ID>)
-	{
-		if($i==0) { $i++;next;  }
-		chomp($line);
-		my ($id, $gene, $synonyms) = split("\t", $line);
-			$gene_transform{$gene} = uc $gene;
-			$gene_transform{uc $gene} = uc $gene;
-			$gene_transform{$id} = uc $gene;
-	}
-	seek GENE_ID, 0,0;
-	$i=0;
-	for my $line (<GENE_ID>)
-	{
-		if($i==0) { $i++;next;  }
-		chomp($line);
-		my ($id, $gene, $synonyms) = split("\t", $line);
-		if($synonyms eq "-") {
+
+	for my $line (<GENE_ID>) {
+		if($i==0) {
+			$i++;
 			next;
 		}
-		else {
+
+		chomp($line);
+
+		my ($id, $gene, $synonyms) = split("\t", $line);
+		$gene_transform{$gene} = uc $gene;
+		$gene_transform{uc $gene} = uc $gene;
+		$gene_transform{$id} = uc $gene;
+	}
+
+	seek GENE_ID, 0,0;
+	$i=0;
+
+	for my $line (<GENE_ID>) {
+		if($i==0) {
+			$i++;
+			next;
+		}
+
+		chomp($line);
+
+		my ($id, $gene, $synonyms) = split("\t", $line);
+
+		if($synonyms eq "-") {
+			next;
+		} else {
 			my @synonyms = split('\|', $synonyms);
-			for my $each (@synonyms)
-			{
-					$gene_transform{uc $each} = uc $gene if(not defined $gene_transform{$each});
-			};
+			for my $each (@synonyms) {
+				$gene_transform{uc $each} = uc $gene if(not defined $gene_transform{$each});
+			}
 		}
 	}
 
-	if(defined $genelist){                                      #THE genelist will be saved into %gene_hash
+	# THE genelist will be saved into %gene_hash
+	if(defined $genelist) {
 		my @genes=split(qr/[^_\w\.\-]+/m,$genelist);
 		for my $individual_term(@genes){
-	    if($individual_term=~/^\W*$/){next;}
-	    $individual_term=~s/^\W*(.*?)\W*$/$1/;                 #Get rid of the whitespaces in the beginnning and end
-	    my $upper_gene = uc $individual_term;
-	    if($gene_transform{$upper_gene}){
-	      $gene_hash{$gene_transform{$upper_gene}} ="-" unless defined $gene_hash{$gene_transform{$upper_gene}};
-	      }
+			if($individual_term =~ /^\W*$/){
+				next;
+			}
+
+			# Get rid of the whitespaces in the beginnning and end
+			$individual_term =~ s/^\W*(.*?)\W*$/$1/;
+			my $upper_gene = uc $individual_term;
+
+			if($gene_transform{$upper_gene}){
+				$gene_hash{$gene_transform{$upper_gene}} ="-" unless defined $gene_hash{$gene_transform{$upper_gene}};
+			}
 	    }
-	    }
+	}
 
 	$i=0;
 	seek GENE_ID,0,0;
-	for my $line (<GENE_ID>)
-	{
-		if($i==0) { $i++;next;  }
+	for my $line (<GENE_ID>) {
+		if($i==0) {
+			$i++;
+			next;
+		}
 		chomp($line);
 		my ($id, $gene, $synonyms) = split("\t", $line);
 	    $gene_id{$gene} = $id;
 	    $gene_id{uc $gene} = $id;
 	}
 	close (GENE_ID);
-
-
-
-
 }
 
 sub predict_genes{
