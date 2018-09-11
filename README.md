@@ -14,8 +14,6 @@ The more detailed manual is available at [here](http://phenolyzer.wglab.org/down
 
 [Bioperl](http://www.bioperl.org/wiki/Main_Page)
 
-Bio::OntologyIO
-
 Graph::Directed
 
 ## Installation
