@@ -1,7 +1,7 @@
 use strict;
-open (GENE_FAMILY, "../entrez_id_gene_family.txt");
-open (ENTREZ, "DB_HUMAN_GENE_ID");
-open (OUTPUT, ">DB_HGNC_GENE_FAMILY");
+open (GENE_FAMILY, "../entrez_id_gene_family.txt") or die $!;
+open (ENTREZ, "DB_HUMAN_GENE_ID") or die $!;
+open (OUTPUT, ">DB_HGNC_GENE_FAMILY") or die $!;
 my %id_gene;
 my $i = 0;
 for my $line ( <ENTREZ>)
@@ -11,7 +11,7 @@ for my $line ( <ENTREZ>)
     $id_gene{$id} = $gene; 
 }
 $i=0;
-print print OUTPUT join("\t", qw/GENE GENE_FAMILY_TAG DESCRIPTION/)."\n";
+print OUTPUT join("\t", qw/GENE GENE_FAMILY_TAG DESCRIPTION/)."\n";
 for my $line (<GENE_FAMILY>)
 {
 	if ($i==0){ $i++;next;}

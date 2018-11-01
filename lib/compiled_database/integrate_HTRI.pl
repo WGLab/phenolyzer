@@ -1,5 +1,5 @@
 use strict;
-open(HTRI, "../HTRIdb_data.txt");
+open(HTRI, "../HTRIdb_data.txt") or die ;
 open(OUTPUT, ">DB_HTRI_TRANSCRIPTION_INTERACTION");
 my $i=0;
 my %output = ();

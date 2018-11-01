@@ -1,11 +1,10 @@
 use strict;
 use warnings;
 use Scalar::Util qw(looks_like_number);
-open(CLINVAR,"../clinVar_genemap_20170904.txt") or die;
-open(OMIM1,"../omim_genemap_20170904.txt") or die;
-#open(OMIM2,"../omim_genemap2_20160124.txt") or die;
+open(CLINVAR,"../clinVar_genemap_20181031.txt") or die;
+open(OMIM1,"../omim_genemap_20181031.txt") or die;
 #open(ORPHANET,"../orphanet_genemap.txt") or die;
-open(GWAS, "../gwas_catalog_dev") or die;                         
+open(GWAS, "../gwas_catalog_dev_20181031") or die;                         
 open(CLINVAR_OUT,">DB_CLINVAR_GENE_DISEASE") or die;
 open(OMIM_OUT,">DB_OMIM_GENE_DISEASE_TEMP") or die;
 open(OMIM_OUT_FINAL,">DB_OMIM_GENE_DISEASE") or die;
