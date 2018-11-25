@@ -1,4 +1,4 @@
-#!/usr/bin/perl
+#!/usr/bin/env perl
 
 ######################################################################
 ## LIBRAIRIES
@@ -30,113 +30,114 @@ our $LAST_CHANGED_DATE = '$LastChangedDate: 2015-05-13 $';
 
 # Declare help options
 our (
-	$verbose,
-	$help,
-	$man,
-	$buildver,
-	$bedfile
-);
+		$verbose,
+		$help,
+		$man,
+		$buildver,
+		$bedfile
+	);
 
 # Declare query options
 our (
-	$query_diseases,
-	$if_file,
-	$if_exact_match,
-	$prediction,
-	$is_phenotype,
-	$if_wordcloud
-);
+		$query_diseases,
+		$if_file,
+		$if_exact_match,
+		$prediction,
+		$is_phenotype,
+		$if_wordcloud
+	);
 
 # Declare test options
 our (
-	$if_hi,
-	$if_rvis
-);
+		$if_hi,
+		$if_rvis
+	);
 
 # Declare
 our (
-	$out,
-	$database_directory,
-	$if_logistic_regression
-);
+		$out,
+		$database_directory,
+		$if_logistic_regression
+	);
 
 # Declare weight options
 our (
-	$HPRD_WEIGHT,
-	$BIOSYSTEM_WEIGHT,
-	$GENE_FAMILY_WEIGHT,
-	%GENE_WEIGHT,
-	$HTRI_WEIGHT,
-	$GENE_DISEASE_WEIGHT,
-	$INTERCEPT
-);
+		$HPRD_WEIGHT,
+		$BIOSYSTEM_WEIGHT,
+		$GENE_FAMILY_WEIGHT,
+		%GENE_WEIGHT,
+		$HTRI_WEIGHT,
+		$GENE_DISEASE_WEIGHT,
+		$INTERCEPT
+	);
 
 # Declare files options
 our  (
-	$ctd_disease_file,
-	$hprd_file,
-	$biosystem_file,
-	$disease_count_file,
-	$gene_disease_score_file,
-	$hpo_annotation_file,
-	$gene_annotation_file,
-	$omim_disease_id_file,
-	$biosystem_to_info_file,
-	$gene_family_file,
-	$htri_file,
-	$omim_description_file,
-	$hi_gene_score_file,
-	$rvis_gene_score_file,
-	$addon_gene_disease_score_file,
-	$addon_gene_gene_score_file,
-	$addon_gene_disease_weight,
-	$addon_gene_gene_weight,
-	$genelist,
-	@genes,
-	%gene_hash,
-	%gene_id,
-	%hi_score,
-	%rvis_score,
-	$path,
-	$work_path
-);
+		$ctd_disease_file,
+		$hprd_file,
+		$biosystem_file,
+		$disease_count_file,
+		$gene_disease_score_file,
+		$hpo_annotation_file,
+		$gene_annotation_file,
+		$omim_disease_id_file,
+		$biosystem_to_info_file,
+		$gene_family_file,
+		$htri_file,
+		$omim_description_file,
+		$hi_gene_score_file,
+		$rvis_gene_score_file,
+		$addon_gene_disease_score_file,
+		$addon_gene_gene_score_file,
+		$addon_gene_disease_weight,
+		$addon_gene_gene_weight,
+		$genelist,
+		@genes,
+		%gene_hash,
+		%gene_id,
+		%hi_score,
+		%rvis_score,
+		$path,
+		$work_path,
+		$phenotype_to_gene_file
+		);
 
 # %gene_hash ( $gene => "Not Annotated" or "Chr:Pos1 - Pos2")
 # %omim_disease (lc $first_disease => join(";",$each_disease)  )
 
 # Declare options
-GetOptions(
-	'verbose|v'             =>\$verbose,
-	'help|h'                =>\$help,
-	'man|m'                 =>\$man,
-	'file|f'                =>\$if_file,
-	'directory|d=s'         =>\$database_directory,
-	'work_directory|w=s'    =>\$work_path,
-	'out=s'                 =>\$out,
-	'prediction|p'          =>\$prediction,
-	'buildver=s'            =>\$buildver,
-	'bedfile=s'             =>\$bedfile,
-	'gene=s'                =>\$genelist,
-	'phenotype|ph'          =>\$is_phenotype,
-	'exact'                 =>\$if_exact_match,
-	'logistic'              =>\$if_logistic_regression,
-	'haploinsufficiency|hi' =>\$if_hi,
-	'intolerance|it'        =>\$if_rvis,
-	'addon=s'               =>\$addon_gene_disease_score_file,
-	'addon_gg=s'            =>\$addon_gene_gene_score_file,
-	'addon_weight=s'        =>\$addon_gene_disease_weight,
-	'addon_gg_weight=s'     =>\$addon_gene_gene_weight,
-	'hprd_weight=s'         =>\$HPRD_WEIGHT,
-	'biosystem_weight=s'    =>\$BIOSYSTEM_WEIGHT,
-	'gene_family_weight=s'  =>\$GENE_FAMILY_WEIGHT,
-	'htri_weight=s'         =>\$HTRI_WEIGHT,
-	'gwas_weight=s'         =>\$GENE_WEIGHT{"GWAS"},
-	'gene_reviews_weight=s' =>\$GENE_WEIGHT{"GENE_REVIEWS"},
-	'clinvar_weight=s'      =>\$GENE_WEIGHT{"CLINVAR"},
-	'omim_weight=s'         =>\$GENE_WEIGHT{"OMIM"},
-	'orphanet_weight=s'     =>\$GENE_WEIGHT{"ORPHANET"},
-	'wordcloud'             =>\$if_wordcloud,
-) or pod2usage ();
+		GetOptions(
+				'verbose|v'             =>\$verbose,
+				'help|h'                =>\$help,
+				'man|m'                 =>\$man,
+				'file|f'                =>\$if_file,
+				'directory|d=s'         =>\$database_directory,
+				'work_directory|w=s'    =>\$work_path,
+				'out=s'                 =>\$out,
+				'prediction|p'          =>\$prediction,
+				'buildver=s'            =>\$buildver,
+				'bedfile=s'             =>\$bedfile,
+				'gene=s'                =>\$genelist,
+				'phenotype|ph'          =>\$is_phenotype,
+				'exact'                 =>\$if_exact_match,
+				'logistic'              =>\$if_logistic_regression,
+				'haploinsufficiency|hi' =>\$if_hi,
+				'intolerance|it'        =>\$if_rvis,
+				'addon=s'               =>\$addon_gene_disease_score_file,
+				'addon_gg=s'            =>\$addon_gene_gene_score_file,
+				'addon_weight=s'        =>\$addon_gene_disease_weight,
+				'addon_gg_weight=s'     =>\$addon_gene_gene_weight,
+				'hprd_weight=s'         =>\$HPRD_WEIGHT,
+				'biosystem_weight=s'    =>\$BIOSYSTEM_WEIGHT,
+				'gene_family_weight=s'  =>\$GENE_FAMILY_WEIGHT,
+				'htri_weight=s'         =>\$HTRI_WEIGHT,
+				'gwas_weight=s'         =>\$GENE_WEIGHT{"GWAS"},
+				'gene_reviews_weight=s' =>\$GENE_WEIGHT{"GENE_REVIEWS"},
+				'clinvar_weight=s'      =>\$GENE_WEIGHT{"CLINVAR"},
+				'omim_weight=s'         =>\$GENE_WEIGHT{"OMIM"},
+				'orphanet_weight=s'     =>\$GENE_WEIGHT{"ORPHANET"},
+				'wordcloud'             =>\$if_wordcloud,
+				) or pod2usage ();
 
 # Launch help or man
 $help and pod2usage (-verbose=>1, -exitval=>1, -output=>\*STDOUT);
@@ -165,6 +166,7 @@ $GENE_WEIGHT{"GENE_REVIEWS"} = 1.0  unless (defined $GENE_WEIGHT{"GENE_REVIEWS"}
 $GENE_WEIGHT{"CLINVAR"}      = 1.0  unless (defined $GENE_WEIGHT{"CLINVAR"} );
 $GENE_WEIGHT{"OMIM"}         = 1.0  unless (defined $GENE_WEIGHT{"OMIM"} );
 $GENE_WEIGHT{"ORPHANET"}     = 1.0  unless (defined $GENE_WEIGHT{"ORPHANET"} );
+$GENE_WEIGHT{"HPO_PHENOTYPE_GENE"}     = 1.0  unless (defined $GENE_WEIGHT{"HPO_PHENOTYPE_GENE"} );
 $addon_gene_disease_weight   = 1.0  unless (defined $addon_gene_disease_weight);
 $addon_gene_gene_weight      = 1.0  unless (defined $addon_gene_gene_weight);
 
@@ -186,27 +188,37 @@ output_gene_prioritization();
 ######################################################################
 ## Subroutines
 
+sub print_array
+{
+	foreach (@_){
+		print "$_\n";
+	}
+}
+
 # The main sub to output prioritized genelist
-sub output_gene_prioritization {
+sub output_gene_prioritization 
+{
 	my @disease_input = split (qr/[^ _,\w\.\-'\(\)\[\]\{\}:]+/,lc $query_diseases);
 	@disease_input <=1000 or die "Too many terms!!! No more than 1000 terms are accepted!!!";
 
-	# Process each individual term first
-	for my $individual_term(@disease_input) {
-		if($individual_term=~/^\W*$/){ next; }
-		$individual_term=TextStandardize($individual_term);
+# Process each individual term first
+	for my $individual_term(@disease_input) 
+	{
+		if ($individual_term =~ /^\W*$/){ next; } # next if there is no word 
+			$individual_term=TextStandardize($individual_term);
 
-		# For a normal term, disease name extension is needed
-		if ($individual_term!~/^all([\s_\-]diseases?)?$/i) {
-			# Expand the disease term and save them into files
-			# @diseases are lower case disease array, %disease_hash keeps the original disease name
+
+# For a normal term, disease name extension is needed
+		if ($individual_term !~/^all([\s_\-]diseases?)?$/i) {
+# Expand the disease term and save them into files
+# @diseases are lower case disease array, %disease_hash keeps the original disease name
 			my $diseases_reference = disease_extension($individual_term);
 			my %disease_hash = %$diseases_reference;
 			my @diseases;
 			for my $disease_key (keys %disease_hash) {
 				my  @records =split("\n", $disease_hash{$disease_key});
 				for my $record (@records) {
-	   	    		next if(not $record);
+					next if(not $record);
 					my ($disease_line, $source) = split("\t", $record);
 					my @disease_terms = split(";", $disease_line);
 					for  (@disease_terms){
@@ -221,7 +233,6 @@ sub output_gene_prioritization {
 					push @diseases,@disease_terms;
 				}
 			}
-			my %seen;
 			my ($hash, %disease_score_hash, @hpo_ids);
 			if ($is_phenotype) {
 				($hash, @hpo_ids) = phenotype_extension($individual_term);
@@ -238,7 +249,7 @@ sub output_gene_prioritization {
 				}
 			}
 
-			#The non-word characters are changed into '_'
+#The non-word characters are changed into '_'
 			$individual_term=~s/\W+/_/g;
 			if(@hpo_ids) {
 				open(OUT_PHENOTYPE, ">$out"."_$individual_term"."_hpo") or die;
@@ -262,7 +273,7 @@ sub output_gene_prioritization {
 
 			if ($is_phenotype) {
 				print OUT_DISEASE join ("\t", ($disease_score_hash{$_}[1], $disease_score_hash{$_}[0]) )."\n"
-				for (keys %disease_score_hash);
+					for (keys %disease_score_hash);
 			}
 
 			generate_wordcloud($individual_term, \%disease_hash, \%disease_score_hash) if($if_wordcloud);
@@ -272,9 +283,9 @@ sub output_gene_prioritization {
 			}
 
 			my $i=0;
-			#Output the gene_score files
-			# $item = {  $gene => [$score, $information_string] }
-			# $information_string = "ID (SOURCE)	DISEASE_NAME RAW_SCORE
+#Output the gene_score files
+# $item = {  $gene => [$score, $information_string] }
+# $information_string = "ID (SOURCE)	DISEASE_NAME RAW_SCORE
 			@diseases = map {
 				my @words = split("\t");
 				$words[0] = TextStandardize($words[0]);
@@ -283,7 +294,7 @@ sub output_gene_prioritization {
 			} @diseases;
 
 			@diseases = Unique(@diseases);
-			my ($item,$count) = score_genes(\@diseases);
+			my ($item,$count) = score_genes (\@diseases, \@hpo_ids);
 			my %output=();
 			@{$output{$_}} = @{$item->{$_}} for keys %$item;
 
@@ -296,13 +307,13 @@ sub output_gene_prioritization {
 			print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
 
 			for my $gene (sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
-				#The probability of the gene when the disease is given
+#The probability of the gene when the disease is given
 				my $p=$output{$gene}[0]/$count;
 				print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
 			}
 			print STDERR "------------------------------------------------------------------------ \n";
 		}
-		# For the term 'all disease(s)'(case insensitive)
+# For the term 'all disease(s)'(case insensitive)
 		else {
 			$individual_term=~s/\W+/_/g;
 			open(OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
@@ -312,7 +323,7 @@ sub output_gene_prioritization {
 
 			print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
 			for my $gene(sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
-				#The probability of the gene when the disease is given
+#The probability of the gene when the disease is given
 				my $p=$output{$gene}[0]/$count;
 				print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
 			}
@@ -320,10 +331,10 @@ sub output_gene_prioritization {
 		}
 	}
 
-	# Finish processing individual terms
-	# Merge the gene_score files
-	# %output  ( gene =>[score,  content])
-	my ($item,$count)=merge_result();
+# Finish processing individual terms
+# Merge the gene_score files
+# %output  ( gene =>[score,  content])
+	my ($item, $count)=merge_result();
 	my %output=();
 	my ($max_score, $min_score) = (0, 1);
 
@@ -334,7 +345,7 @@ sub output_gene_prioritization {
 	open (my $seed_fh, ">$out.seed_gene_list");
 
 	my $annotated_seed_fh;
-	#### header for seed gene list ####
+#### header for seed gene list ####
 	printHeader($seed_fh, 0);
 	if (%gene_hash and not $prediction) {
 		open ($annotated_seed_fh, ">$out.annotated_gene_list");
@@ -345,7 +356,7 @@ sub output_gene_prioritization {
 	print ANNOTATED "Tuple number in the gene_disease databse for all the terms: $count \n"
 		if (%gene_hash and not $prediction);
 
-	#Find the max and min score
+#Find the max and min score
 	for my $gene (keys %output) {
 		$max_score = $output{$gene}[0] if ($max_score < $output{$gene}[0]);
 		$min_score = $output{$gene}[0] if ($min_score > $output{$gene}[0]);
@@ -358,10 +369,10 @@ sub output_gene_prioritization {
 	for my $gene(sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output) {
 		$rank++;
 		my ($score, $content) = ($output{$gene}[0], $output{$gene}[1]);
-		#$score = ($score - $min_score)/$diff;
+#$score = ($score - $min_score)/$diff;
 		my $normalized_score = $score/$max_score;
 
-		#normalize scores of each detail
+#normalize scores of each detail
 		chomp($content);
 		my @content_lines = split("\n", $content);
 		my @content_lines_output;
@@ -379,17 +390,17 @@ sub output_gene_prioritization {
 		$content = join("\n", @content_lines_output)."\n";
 		my $new_content = join("\n", @content_lines_next)."\n";
 
-		#Normalized the input for prediction
+#Normalized the input for prediction
 		$item->{$gene}[0] = $normalized_score * $GENE_DISEASE_WEIGHT;
 		$item->{$gene}[1] = $new_content;
 		$item->{$gene}[2] = $normalized_score;
 
-		#print out results
+#print out results
 		print MERGE $gene."\t"."ID:$gene_id{$gene} -\t$normalized_score\n".$content."\n";
 		print ANNOTATED $gene."\tID:$gene_id{$gene} ".$gene_hash{$gene}."\t$normalized_score\n".$content."\n"
 			if ($gene_hash{$gene} and not $prediction);
 
-		#Normalized score for the genelist
+#Normalized score for the genelist
 		$normalized_score = sprintf('%.4g', $normalized_score);
 		print $seed_fh $rank."\t".$gene."\t".$gene_id{$gene}."\t".$normalized_score;
 		if($if_hi) {
@@ -402,7 +413,7 @@ sub output_gene_prioritization {
 		}
 		print $seed_fh "\n";
 
-		#Normalized score for the annotation list
+#Normalized score for the annotation list
 		if ($gene_hash{$gene} and not $prediction) {
 			print $annotated_seed_fh join("\t",(++$annotated_rank, $gene, $gene_id{$gene}, $normalized_score));
 			if($if_hi) {
@@ -422,7 +433,7 @@ sub output_gene_prioritization {
 	close (ANNOTATED) if (%gene_hash and not $prediction);
 	close (ANNOTATED_GENE_LIST) if (%gene_hash and not $prediction);
 
-	# Integrate scores from relation databases
+# Integrate scores from relation databases
 	if($prediction) {
 		($max_score, $min_score) = (0, 1);
 		my $predicted_item = predict_genes($item);
@@ -443,13 +454,13 @@ sub output_gene_prioritization {
 		print  ANNOTATED   "Tuple number in the gene_disease databse for all the terms: $count \n"
 			if %gene_hash;
 
-		#Find the max and min score
+#Find the max and min score
 		for my $gene (keys %predicted_output) {
 			$max_score = $predicted_output{$gene}[0] if ($max_score < $predicted_output{$gene}[0]);
 			$min_score = $predicted_output{$gene}[0] if ($min_score > $predicted_output{$gene}[0]);
 		}
 
-		# my $diff = $max_score - $min_score;
+# my $diff = $max_score - $min_score;
 		my $rank = 0;
 		my $annotated_rank = 0;
 		for my $gene (sort{ $predicted_output{$b}[0] <=> $predicted_output{$a}[0] } keys %predicted_output) {
@@ -458,12 +469,12 @@ sub output_gene_prioritization {
 			my $source = $1;
 			my $status;
 			if(
-				($source eq "HPRD") or
-				($source eq "BIOSYSTEM") or
-				($source eq "GENE_FAMILY") or
-				($source eq "HTRI") or
-				($source eq "ADDON_GENE_GENE")
-			) {
+					($source eq "HPRD") or
+					($source eq "BIOSYSTEM") or
+					($source eq "GENE_FAMILY") or
+					($source eq "HTRI") or
+					($source eq "ADDON_GENE_GENE")
+			  ) {
 				$status = "Predicted";
 			} else {
 				$status = "SeedGene";
@@ -477,7 +488,7 @@ sub output_gene_prioritization {
 			print ANNOTATED $gene."\tID:$gene_id{$gene} $gene_hash{$gene} $status"."\t".$score."\tNormalized score: $normalized_score\n".$content."\n"
 				if ($gene_hash{$gene});
 
-			#Normalize score for the genelist
+#Normalize score for the genelist
 			$normalized_score = sprintf('%.4g', $normalized_score);
 			print $final_fh $rank."\t".$gene."\t".$gene_id{$gene}."\t".$normalized_score."\t".$status;
 			if($if_hi) {
@@ -493,15 +504,15 @@ sub output_gene_prioritization {
 
 			if ($gene_hash{$gene}) {
 				print $annotated_fh  join("\t",(++$annotated_rank,$gene,$gene_id{$gene},$normalized_score,$status)) ;
-			if($if_hi) {
-				$hi_score{$gene} = 0 if not defined $hi_score{$gene};
-				print $annotated_fh "\t$hi_score{$gene}";
-			}
-			if($if_rvis) {
-				$rvis_score{$gene} = 0 if not defined $rvis_score{$gene};
-				print $annotated_fh "\t$rvis_score{$gene}";
-			}
-			print $annotated_fh "\n";
+				if($if_hi) {
+					$hi_score{$gene} = 0 if not defined $hi_score{$gene};
+					print $annotated_fh "\t$hi_score{$gene}";
+				}
+				if($if_rvis) {
+					$rvis_score{$gene} = 0 if not defined $rvis_score{$gene};
+					print $annotated_fh "\t$rvis_score{$gene}";
+				}
+				print $annotated_fh "\n";
 			}
 		}
 
@@ -540,7 +551,7 @@ sub disease_extension{
 		my ($id, $disease_line) = split("\t");
 		next if ($id eq "OMIM_ID");
 
-		# When compare, get rid of '-' if it is not after a number
+# When compare, get rid of '-' if it is not after a number
 		my $disease_line_key = $disease_line;
 		$disease_line_key =~ s/\bs\b//g;
 		$disease_line_key =~ s/\W+/ /g;
@@ -550,7 +561,7 @@ sub disease_extension{
 		$query_term =~ s/\W+/ /g;
 
 		if ($disease_line_key =~/\b$query_term\b/i or $query_term eq $id) {
-			# If exact match
+# If exact match
 			next if($if_exact_match and $disease_line_key !~ /(^|;)$query_term($|;)/i);
 			my @diseases = split(";",$disease_line);
 			my $disease_key =lc $diseases[0];
@@ -561,7 +572,7 @@ sub disease_extension{
 	print STDERR "NOTICE: The word matching in OMIM disease synonyms file has been done!! \n";
 
 	$input_term = lc $input_term;
-	#Query disease in the compiled list from gene_disease relations
+#Query disease in the compiled list from gene_disease relations
 	for my $term (@disease_occur) {
 		chomp($term);
 
@@ -580,21 +591,21 @@ sub disease_extension{
 		$query_term =~ s/\bs\b//g;
 		$query_term =~ s/\W+/ /g;
 
-		# If the term matches
+# If the term matches
 		if(
-			$disease_key =~ /\b$query_term\b/i or
-			(
-				$id_num and
-				$query_term eq $id_num and
-				$id_source eq "OMIM"
-			)
-		) {
-			# If exact match
+				$disease_key =~ /\b$query_term\b/i or
+				(
+				 $id_num and
+				 $query_term eq $id_num and
+				 $id_source eq "OMIM"
+				)
+		  ) {
+# If exact match
 			next if($if_exact_match and $disease_key !~ /(^|;)$query_term($|;)/i);
 			if ($disease_extend{$disease_key}) {
 				$disease_extend{$disease_key}.=";".$disease;
 			} else {
-				#Save the disease name into hash, key is the disease name in lower case form withougt "-"
+#Save the disease name into hash, key is the disease name in lower case form withougt "-"
 				$disease_extend{$disease_key}=$disease;
 			}
 		}
@@ -623,24 +634,24 @@ sub disease_extension{
 		$query_term =~ s/\bs\b//g;
 		$query_term =~ s/\W+/ /g;
 
-		# First push all the matched disease names or synonyms in
+# First push all the matched disease names or synonyms in
 		if($disease_key=~/\b$query_term\b/i or $synonym_key=~/\b$query_term\b/i) {
-			#If exact match
+#If exact match
 			next if($if_exact_match and $disease_key.$words[1] !~ /(^|\|)$input_term($|\|)/i);
 
-			# Retrieve all the synonyms
+# Retrieve all the synonyms
 			my @synonyms = split('\|',$words[1]);
 
-			#Record the tree_number of each term and trace all their children later
+#Record the tree_number of each term and trace all their children later
 			push @tree_number,split('\|',$words[2]);
 			$disease_extend{$disease_key} .= join(';', ($disease,@synonyms)) and
-			$disease_extend{$disease_key} .= "\tCTD_DISEASE\n";
+				$disease_extend{$disease_key} .= "\tCTD_DISEASE\n";
 		}
 	}
 
 	print STDERR "NOTICE: The word matching search in the CTD (Medic) databases has been done! \n";
 
-	#Second find all children of the terms found in the first round
+#Second find all children of the terms found in the first round
 	for my $term(@disease_ctd) {
 		chomp($term);
 
@@ -652,7 +663,7 @@ sub disease_extension{
 		for my $each_tree_num(@tree_number) {
 			if($words[2] =~ qr/(^|\|)   $each_tree_num [^\|]+    /x) {
 				$disease_extend{$disease_key} .=join (';', ($disease, @synonyms) )
-				and $disease_extend{$disease_key} .= "\tCTD_DISEASE\n"
+					and $disease_extend{$disease_key} .= "\tCTD_DISEASE\n"
 					if(not defined $disease_extend{$disease_key} or $disease_extend{$disease_key}!~/\bCTD_DISEASE\b/);
 			}
 		}
@@ -693,23 +704,23 @@ sub phenotype_extension{
 	@_==1 or die "ERROR: Only one phenotype term is accepted!!! ";
 
 	my %hpo_score_system = (
-		"very rare" => 0.01,
-		"rare"      => 0.05,
-		"occasional"=> 0.075,
-		"frequent"  => 0.33,
-		"typical"   => 0.5,
-		"variable"  => 0.5,
-		"common"    => 0.75,
-		"hallmark"  => 0.90,
-		"obligate"  => 1.00
-	);
+			"very rare" => 0.01,
+			"rare"      => 0.05,
+			"occasional"=> 0.075,
+			"frequent"  => 0.33,
+			"typical"   => 0.5,
+			"variable"  => 0.5,
+			"common"    => 0.75,
+			"hallmark"  => 0.90,
+			"obligate"  => 1.00
+			);
 
 	my $input_term = $_[0];
 	$input_term =~s/[\W_]+/ /g;
 	my %disease_hash;
 	my @hpo_ids;
 
-	# %disease_hash( "disease_name_key" => [score, original_disease_name] )
+# %disease_hash( "disease_name_key" => [score, original_disease_name] )
 	if( -f "$work_path/ontology_search.pl" ) {
 		print STDERR "ERROR: The hpo.obo file couldn't be found!!! The phenotype_ontology search wouldn't be conducted properly!! \n"
 			if ( not -f "$path/hpo.obo");
@@ -729,7 +740,7 @@ sub phenotype_extension{
 		while($i<@hpo_ids and $j<@hpo_annotation) {
 			$hpo_annotation[$j] =~s/[\r\n]+//g;
 
-			#[0]HPO_ID	[1]SOURCE	[2]HPO_DISEASE_NAME	[3]FREQUENCY
+#[0]HPO_ID	[1]SOURCE	[2]HPO_DISEASE_NAME	[3]FREQUENCY
 			my @words=split("\t",$hpo_annotation[$j]);
 
 			if($hpo_ids[$i] eq "HP:".$words[0]) {
@@ -762,7 +773,7 @@ sub phenotype_extension{
 			if($hpo_ids[$i] gt "HP:".$words[0]) { $j++; next; }
 		}
 	} else {
-	   print STDERR "NOTICE: The $work_path/ontology_search.pl file couldn't be found, so the HPO database won't be used! \n";
+		print STDERR "NOTICE: The $work_path/ontology_search.pl file couldn't be found, so the HPO database won't be used! \n";
 	}
 	my %omim_description;
 	for my $line (<OMIM_DESCRIPTION>) {
@@ -770,10 +781,10 @@ sub phenotype_extension{
 		chomp($line);
 		my ($id, $disease, $description) = split("\t", $line);
 		$disease = TextStandardize($disease);
-	    if($description =~ /\b$input_term\b/i) {
-	    	$omim_description{$disease} = 1 if(not $omim_description{$disease});
-	    	$omim_description{$disease}++ if($omim_description{$disease});
-	    }
+		if($description =~ /\b$input_term\b/i) {
+			$omim_description{$disease} = 1 if(not $omim_description{$disease});
+			$omim_description{$disease}++ if($omim_description{$disease});
+		}
 	}
 	my $total=0;
 
@@ -800,32 +811,118 @@ sub phenotype_extension{
 }
 
 # Input the disease list and return all the genes and item count
+
+sub get_phenotype_to_gene_hash
+{
+	open(PHENOTYPE_TO_GENE, "${path}/$phenotype_to_gene_file") or die "can't open file: ${path}/$phenotype_to_gene_file";
+	my @lines = <PHENOTYPE_TO_GENE>;
+	shift @lines;
+	my $line;
+	my %hpo_id_to_gene_hash;
+	my $hpo_id;
+	my $gene_name;
+	foreach $line (@lines)
+	{
+		chomp $line;
+		my @split_line = split('\t', $line);
+		$hpo_id = $split_line[0];
+		$gene_name = $split_line[3];
+		if (exists($hpo_id_to_gene_hash{$hpo_id} ) ){
+			$hpo_id_to_gene_hash{$hpo_id} .= ",$gene_name";
+		}else{
+			$hpo_id_to_gene_hash{$hpo_id} = "$gene_name";
+		}
+	}
+	return \%hpo_id_to_gene_hash;
+}
+
+sub get_hpo_id_to_name_hash
+{
+
+	open(PHENOTYPE_TO_GENE, "${path}/$phenotype_to_gene_file") or die "can't open file: ${path}/$phenotype_to_gene_file";
+	my @lines = <PHENOTYPE_TO_GENE>;
+	shift @lines;
+	my $line;
+	my %hpo_id_to_name_hash;
+	my $hpo_id;
+	my $hpo_name;
+	foreach $line (@lines)
+	{
+		chomp $line;
+		my @split_line = split('\t', $line);
+		$hpo_id = $split_line[0];
+		$hpo_name = $split_line[1];
+		if (not exists($hpo_id_to_name_hash{$hpo_id} ) ){
+			$hpo_id_to_name_hash{$hpo_id} = "$hpo_name";
+		}
+	}
+	return \%hpo_id_to_name_hash;
+}
+
+
 sub score_genes{
-	@_==1 or die "input should only contain one reference to the array!!";
 
-	# item is a hash, keys are gene names, values are an array reference and a the total score for the gene
+	@_ == 2 or die "input should contain references to two arrays!";
+
+# item is a hash, keys are gene names, values are an array reference and a the total score for the gene
+	my ($ref1, $ref2) = @_;
+
+	my @diseases = @{$ref1};
+
+	my @hpo_ids  = @{$ref2};
+
+
+	my $hpo_id_to_gene_hash_ref = get_phenotype_to_gene_hash();
+
+	my %hpo_id_to_gene_hash = %$hpo_id_to_gene_hash_ref;
+
+	my $hpo_id_to_name_hash_ref = get_hpo_id_to_name_hash();
+
+	my %hpo_id_to_name_hash = %$hpo_id_to_name_hash_ref;
+
+	my %phenotype_related_genes_hash; # key = gene name, value = hpo_id 
+
+		foreach (@hpo_ids)
+		{
+			my $hpo_id = $_;
+			if (not exists($hpo_id_to_gene_hash{$hpo_id})){
+				next;
+			}
+			my @gene_array = split(",", $hpo_id_to_gene_hash{$hpo_id});	
+			foreach (@gene_array) {
+				$phenotype_related_genes_hash{$_} = $hpo_id;
+			}
+		}
+
 	my %item=();
-	my @diseases=@{$_[0]};
 
-	# $count will record how many tuples are retrived from the GENE_DISEASE_SCORE database
-	my $count=0.0;
+#my @diseases=@{$_[0]};
+
+# $count will record how many tuples are retrived from the GENE_DISEASE_SCORE database
+
+	my $count = 0.0;
 
 	open(SCORE,"${path}/$gene_disease_score_file") or die "could not open ${path}/$gene_disease_score_file";
-	my @disease_gene_score=<SCORE>;
+
+	my @disease_gene_score = <SCORE>;
+
 	shift @disease_gene_score;
+
 	my @addon_disease_gene_score;
 
-	if($addon_gene_disease_score_file) {
+	if($addon_gene_disease_score_file) 
+	{
 		my @addon_files = split(',', $addon_gene_disease_score_file);
 
-		for my $each_file (@addon_files) {
-	 		open(ADDON,"${path}/$each_file") or die "could not open ${path}/$each_file";
-		    push(@addon_disease_gene_score, <ADDON>);
-		    @addon_disease_gene_score = map {s/[\n\r]+//g;$_; } @addon_disease_gene_score;
+		for my $each_file (@addon_files)
+		{
+			open(ADDON,"${path}/$each_file") or die "could not open ${path}/$each_file";
+			push(@addon_disease_gene_score, <ADDON>);
+			@addon_disease_gene_score = map {s/[\n\r]+//g;$_; } @addon_disease_gene_score;
 			close(ADDON);
 			print STDERR "NOTICE: The ${path}/$each_file is used as addons!!!\n";
 		}
-	    push (@disease_gene_score,@addon_disease_gene_score);
+		push (@disease_gene_score,@addon_disease_gene_score);
 	}
 
 	@disease_gene_score = sort {
@@ -841,44 +938,49 @@ sub score_genes{
 		join("\t",@words);
 	} @disease_gene_score;
 
-    @diseases = sort {
+	@diseases = sort {
 		my @words1=split("\t",$a);
 		my @words2=split("\t",$b);
 		$words1[0] cmp $words2[0];
-    } @diseases;
+	} @diseases;
 
-    my ($i,$j)=(0,0);
+	my ($i,$j)=(0,0);
+
 
 	while($i<@diseases and $j<@disease_gene_score) {
+
 		chomp($disease_gene_score[$j]);
+
 		last if(not $disease_gene_score[$j]);
 
-		# @words:[0]GENE	[1]DISEASE	[2]DISEASE_ID	[3]SCORE	[4]SOURCE
-		my @words=split("\t",$disease_gene_score[$j]);
+# @words:[0]GENE	[1]DISEASE	[2]DISEASE_ID	[3]SCORE	[4]SOURCE
+
+		my @words = split ("\t",$disease_gene_score[$j]);
 
 		my ($query_disease, $inference_score) = split("\t",$diseases[$i]);
 
-		if($query_disease eq $words[1]) {
+		if ($query_disease eq $words[1]) {
 			$count++;
 			$inference_score = 1.0 if (not $inference_score);
 
 			my @genes = split(",",$words[0]);
 			my $gene = $genes[0];
 
-			if(not $gene) {
-				print STDERR $disease_gene_score[$j]."\n";
+			if( not $gene) {
+				print STDERR "ERROR! $disease_gene_score[$j]\n";
 				$j++;
 				next;
 			}
 
 			$GENE_WEIGHT{$words[4]} = $addon_gene_disease_weight if (not defined $GENE_WEIGHT{$words[4]});
+
 			my $score = $words[3]*$inference_score*$GENE_WEIGHT{$words[4]};
 
-			if($score!=0) {
-				if($item{$gene}[0]){
+			if ($score != 0)
+			{
+				if ($item{$gene}[0]) {
 					$item{$gene}[0] += $score ;
-				}
-				else  {
+				} else {
 					$item{$gene}[0] = $score ;
 				}
 				$item{$gene}[1].=$words[2]." ($words[4])"."\t".$words[1]."\t".$score."\n";
@@ -887,26 +989,48 @@ sub score_genes{
 		}
 		if($query_disease lt $words[1]) {$i++;}
 		if($query_disease gt $words[1]) {$j++;}
-    }
+	}
 
-    for (keys %item){
-    	delete  $item{$_}  if (not $gene_id{$_});
-    }
+	for (keys %phenotype_related_genes_hash)
+	{
+		my $gene = $_;
+		my $hpo_id = $phenotype_related_genes_hash{$gene};
+		my $hpo_name = $hpo_id_to_name_hash{$hpo_id};
 
-    print STDERR "NOTICE: The gene score process has been done!!\n";
+		print "gene=$gene\n";
+		if ( exists($item{$gene}) )
+		{
+			$item{$gene}[0] += 1.0; 
+			$item{$gene}[1] .= "$hpo_id (HPO_PHENOTYPE_GENE)\t$hpo_name\t1.0\n";
+		}else{
+			$item{$gene}[0] = 1.0; 
+			$item{$gene}[1] = "$hpo_id (HPO_PHENOTYPE_GENE)\t$hpo_name\t1.0\n";
+		}
+		print "\$item{\$gene}[0]=$item{$gene}[0]\n";
+		print "\$item{\$gene}[1]=$item{$gene}[1]\n";
+	}
+
+	for (keys %item){
+		delete  $item{$_}  if (not $gene_id{$_});
+	}
+
+	my @value_array;
+
+	print STDERR "NOTICE: The gene score process has been done!!\n";
+
 	return (\%item,$count);
 }
 
 # Merge gene_scores for each term, return %item reference and $count for the sum of the tuple count
-sub merge_result{
-	# %item (  $gene[0] => score, $gene[1] => "SOURCE_ID	 DISEASE_NAME	DISEASE_TERM"     )
+sub merge_result {
+# %item (  $gene[0] => score, $gene[1] => "SOURCE_ID	 DISEASE_NAME	DISEASE_TERM"     )
 	print STDERR "NOTICE: Start to merge gene scores! \n";
 
 	my $dirname=dirname($out);
 	my $basename=basename($out);
 	my @filelist = split("\n",`ls $dirname`);
 
-	#item will save the results for output
+#item will save the results for output
 	my %item=();
 	my $count=0.0;
 	my $individual_count;
@@ -931,13 +1055,13 @@ sub merge_result{
 					next;
 				}
 
-				#Proress the first line of each term_score
+#Proress the first line of each term_score
 				if($line=~/^\s*$/) {
 					$gene="";
 					next;
 				}
 
-				#[0]SOURCE	[1]EVIDENCE	[2]RAW_SCORE
+#[0]SOURCE	[1]EVIDENCE	[2]RAW_SCORE
 				my @words=split("\t",$line);
 
 				if(not $gene){
@@ -959,11 +1083,11 @@ sub merge_result{
 
 #GENE	DISEASE	DISEASE_ID	SCORE	SOURCE
 sub score_all_genes{
-    print STDERR "NOTICE: The process to score all genes in the database starts!!\n";
+	print STDERR "NOTICE: The process to score all genes in the database starts!!\n";
 
-	#item is a hash, keys are gene names, values are the total score for the gene an array reference and
+#item is a hash, keys are gene names, values are the total score for the gene an array reference and
 	my %item=();
-	# $count will record how many tuples are retrived from the GENE_DISEASE_SCORE database
+# $count will record how many tuples are retrived from the GENE_DISEASE_SCORE database
 	my $count=0.0;
 
 	open(SCORE,"${path}/$gene_disease_score_file")  or die "could not open ${path}/$gene_disease_score_file";
@@ -973,10 +1097,10 @@ sub score_all_genes{
 	if($addon_gene_disease_score_file) {
 		my @addon_files = split(',', $addon_gene_disease_score_file);
 		for my $each_file (@addon_files) {
-	 		open(ADDON,"${path}/$each_file") or die "could not open ${path}/$each_file";
+			open(ADDON,"${path}/$each_file") or die "could not open ${path}/$each_file";
 
 			push(@addon_disease_gene_score, <ADDON>);
-		    @addon_disease_gene_score = map {
+			@addon_disease_gene_score = map {
 				s/[\n\r]+//g;
 				$_;
 			} @addon_disease_gene_score;
@@ -985,7 +1109,7 @@ sub score_all_genes{
 
 			print STDERR "NOTICE: The ${path}/$each_file is used as addons!!!\n";
 		}
-	    push (@disease_gene_score,@addon_disease_gene_score);
+		push (@disease_gene_score,@addon_disease_gene_score);
 	}
 	my $i=0;
 
@@ -1022,7 +1146,7 @@ sub score_all_genes{
 	print STDERR "NOTICE: The process to score all genes has been done!!\n";
 
 	for (keys %item){
-    	delete $item{$_} if (not $gene_id{$_});
+		delete $item{$_} if (not $gene_id{$_});
 	}
 	return (\%item,$count);
 }
@@ -1034,25 +1158,25 @@ sub annovar_annotate{
 
 	print STDERR "NOTICE: the --buildver argument is set as 'hg19' by default\n"
 
-	unless defined $buildver;
+		unless defined $buildver;
 
 	$buildver eq 'hg18' or $buildver eq 'hg19' or pod2usage ("Error in argument: the --buildver argument must be 'hg18' or 'hg19'");
 
-    my $sc;
+	my $sc;
 
 	$sc = "perl $path/../../bin/convert.pl -format bed $out_directory/$bedfile > $out.avinput";
-    system ($sc) and die "Error: cannot execute system command $sc\n";
+	system ($sc) and die "Error: cannot execute system command $sc\n";
 
 	$sc = "perl $path/../../bin/annotate.pl -geneanno -buildver $buildver -outfile $out $out.avinput $path/../humandb";
-    system ($sc) and die "Error: cannot execute system command $sc\n";
+	system ($sc) and die "Error: cannot execute system command $sc\n";
 
 	my ($countregion, $countexonic) = qw/0 0/;
-    my ($totallen);
+	my ($totallen);
 
 	open (VF, "$out.variant_function") or die "Error: cannot read $out.variant_function file\n";
-    open (REGION_GENE, ">$out.genelist_from_region") or die "Error: can't write to genelist_from_region\n";
+	open (REGION_GENE, ">$out.genelist_from_region") or die "Error: can't write to genelist_from_region\n";
 
-    while (<VF>) {
+	while (<VF>) {
 		my @field = split (/\t/, $_);
 		$countregion++;
 		$field[0] =~ m/exonic/ or next;
@@ -1069,11 +1193,11 @@ sub annovar_annotate{
 	print REGION_GENE $_."\n" for keys %gene_hash;
 
 	print STDERR "NOTICE: Among $countregion BED regions ($totallen base pairs), $countexonic disrupt exons, and ", scalar keys %gene_hash, " genes are affected\n";
-	### Code borrowed from bed2gene.pl
+### Code borrowed from bed2gene.pl
 }
 
 sub setup_variables{
-	#Input argument setup
+#Input argument setup
 	$query_diseases = $ARGV[0];
 
 	$path = "./lib/compiled_database";
@@ -1093,16 +1217,17 @@ sub setup_variables{
 	$hpo_annotation_file     = "DB_HPO_ANNOTATION";
 	$gene_annotation_file    = "DB_HUMAN_GENE_ID";
 	$omim_disease_id_file    = "DB_COMPILED_OMIM_ID_DISEASE";
-	#$biosystem_to_info_file = "biosystem_bsid_to_info.txt";
+#$biosystem_to_info_file = "biosystem_bsid_to_info.txt";
 	$gene_family_file        = "DB_HGNC_GENE_FAMILY";
 	$htri_file               = "DB_HTRI_TRANSCRIPTION_INTERACTION";
 	$omim_description_file   = "DB_OMIM_DESCRIPTION";
 	$hi_gene_score_file      = "DB_HI_SCORE";
 	$rvis_gene_score_file    = "DB_RVIS_SCORE";
+	$phenotype_to_gene_file  = "HPO_phenotype_to_genes.txt";
 
 	my %gene_transform;
 
-	# The disease input will come from file
+# The disease input will come from file
 	if (defined $if_file) {
 		print STDERR  "NOTICE: The file name option was used!! \n";
 
@@ -1118,19 +1243,19 @@ sub setup_variables{
 		}
 	}
 
-	#build the haploinsufficiency hash
+#build the haploinsufficiency hash
 	if($if_hi){
 		print STDERR "NOTICE: The haploinsufficency score is used!\n";
 		open (HI, "$path/$hi_gene_score_file") or die;
-	    for (<HI>){
-	    	s/[\r\n+]//g;
-	    	my ($gene, $score) = split("\t");
-	    	$hi_score{$gene} = $score;
-	    }
-	    close(HI);
+		for (<HI>){
+			s/[\r\n+]//g;
+			my ($gene, $score) = split("\t");
+			$hi_score{$gene} = $score;
+		}
+		close(HI);
 	}
 
-	#build the gene intolerance shash
+#build the gene intolerance shash
 	if($if_rvis){
 		print STDERR "NOTICE: The gene intolerance score is used!\n";
 		open(RVIS, "$path/$rvis_gene_score_file") or die;
@@ -1141,7 +1266,7 @@ sub setup_variables{
 		}
 	}
 
-	# Read information from refGene database
+# Read information from refGene database
 	open (GENE_ID, "$path/$gene_annotation_file") or die;
 	my $i=0;
 
@@ -1182,7 +1307,7 @@ sub setup_variables{
 		}
 	}
 
-	# THE genelist will be saved into %gene_hash
+# THE genelist will be saved into %gene_hash
 	if(defined $genelist) {
 		my @genes=split(qr/[^_\w\.\-]+/m,$genelist);
 		for my $individual_term(@genes){
@@ -1190,14 +1315,14 @@ sub setup_variables{
 				next;
 			}
 
-			# Get rid of the whitespaces in the beginnning and end
+# Get rid of the whitespaces in the beginnning and end
 			$individual_term =~ s/^\W*(.*?)\W*$/$1/;
 			my $upper_gene = uc $individual_term;
 
 			if($gene_transform{$upper_gene}){
 				$gene_hash{$gene_transform{$upper_gene}} ="-" unless defined $gene_hash{$gene_transform{$upper_gene}};
 			}
-	    }
+		}
 	}
 
 	$i=0;
@@ -1209,8 +1334,8 @@ sub setup_variables{
 		}
 		chomp($line);
 		my ($id, $gene, $synonyms) = split("\t", $line);
-	    $gene_id{$gene} = $id;
-	    $gene_id{uc $gene} = $id;
+		$gene_id{$gene} = $id;
+		$gene_id{uc $gene} = $id;
 	}
 	close (GENE_ID);
 }
@@ -1228,25 +1353,25 @@ sub predict_genes{
 	my $gene_count = keys %item;
 	my $i = 0;
 	my %biosystem_id_type = ();
-	#%biosystem_id_type = (
-	#          $biosystem_id => $type
-	#              )
+#%biosystem_id_type = (
+#          $biosystem_id => $type
+#              )
 	my %biosystem = ();
-	# %biosystem = (
-	#     $system_num => {
-	#                 $gene => $score
-	#                     }
-	#               )
+# %biosystem = (
+#     $system_num => {
+#                 $gene => $score
+#                     }
+#               )
 	my %interaction = ();
-	# %interaction = (
-	#         $gene1 => { $gene2 => [$score, $biosystem_id] }       #The score here is the maximal score of all the possible biosystems
-	#                  )
+# %interaction = (
+#         $gene1 => { $gene2 => [$score, $biosystem_id] }       #The score here is the maximal score of all the possible biosystems
+#                  )
 	my %gene_family = ();
-	# %gene_family = (
-	#     $gene_family_tag => {
-	#                 $gene => true of false
-	#                     }
-	#               )
+# %gene_family = (
+#     $gene_family_tag => {
+#                 $gene => true of false
+#                     }
+#               )
 
 	open (HPRD, "$path/$hprd_file") or die "Can't open $path/$hprd_file !";
 	open (BIOSYSTEM, "$path/$biosystem_file") or die "Can't open $path/$biosystem_file !";
@@ -1258,7 +1383,7 @@ sub predict_genes{
 		@ggfiles = split(",", $addon_gene_gene_score_file);
 	}
 
-	# Predict genes based on Addon Gene-Gene relations
+# Predict genes based on Addon Gene-Gene relations
 	for my $each_file (@ggfiles) {
 		open(ADDON_GG,"$path/$each_file") or die "Can't open $path/$each_file!";
 		for my $line (<ADDON_GG>) {
@@ -1279,11 +1404,11 @@ sub predict_genes{
 			$pubmed_id =~s/,/ /g;
 			if($item{$gene1}[0] and ($gene1 ne $gene2)) {
 				$individual_score = $score  * $addon_gene_gene_weight * $item{$gene1}[2];   #$item{$gene1}[2] saves the normalized score
-				$output{$gene2}[0] = 0 if (not $output{$gene2}[0]);
+					$output{$gene2}[0] = 0 if (not $output{$gene2}[0]);
 				if( $individual_score !=0) {
 					$output{$gene2}[0] +=  $individual_score;
 					$output{$gene2}[1] .= "PUBMED:$pubmed_id (ADDON_GENE_GENE)\t".$evidence."\t"
-					."With $gene1"."\t".$individual_score."\n";
+						."With $gene1"."\t".$individual_score."\n";
 				}
 			}
 
@@ -1293,7 +1418,7 @@ sub predict_genes{
 				if($individual_score !=0) {
 					$output{$gene1}[0] += $individual_score;
 					$output{$gene1}[1] .= "PUBMED:$pubmed_id (ADDON_GENE_GENE)\t".$evidence."\t"
-					."With $gene2"."\t".$individual_score."\n";
+						."With $gene2"."\t".$individual_score."\n";
 				}
 			}
 
@@ -1302,7 +1427,7 @@ sub predict_genes{
 		print STDERR "NOTICE: The Addon Database loaded !\n";
 	}
 
-	#Predict genes based on Human Protein Interactions
+#Predict genes based on Human Protein Interactions
 	for my $line (<HPRD>) {
 		if ($i==0) {
 			$i++;
@@ -1323,11 +1448,11 @@ sub predict_genes{
 
 		if($item{$gene1}[0] and ($gene1 ne $gene2) ) {
 			$individual_score = $score * $HPRD_WEIGHT * $item{$gene1}[2];   #$item{$gene1}[2] saves the normalized score
-			$output{$gene2}[0] = 0 if (not $output{$gene2}[0]);
+				$output{$gene2}[0] = 0 if (not $output{$gene2}[0]);
 			if($individual_score != 0) {
 				$output{$gene2}[0] +=  $individual_score;
 				$output{$gene2}[1] .= "PUBMED:$pubmed_id (HPRD)\t".$evidence."\t"
-				."With $gene1"."\t".$individual_score."\n";
+					."With $gene1"."\t".$individual_score."\n";
 			}
 		}
 
@@ -1337,16 +1462,16 @@ sub predict_genes{
 			if($individual_score != 0) {
 				$output{$gene1}[0] += $individual_score;
 				$output{$gene1}[1] .= "PUBMED:$pubmed_id (HPRD)\t".$evidence."\t"
-				."With $gene2"."\t".$individual_score."\n";
+					."With $gene2"."\t".$individual_score."\n";
 			}
 		}
 	}
 	print STDERR "NOTICE: The HPRD Database loaded !\n";
 
-	#Predict genes based on transcription interaction
+#Predict genes based on transcription interaction
 	$i = 0;
 	my $TF_PENALTY=4;
-	#TF	TG	EVIDENCE	PUBMED	SCORE
+#TF	TG	EVIDENCE	PUBMED	SCORE
 	for my $line (<HTRI>) {
 		if ($i==0) {
 			$i++;
@@ -1371,7 +1496,7 @@ sub predict_genes{
 			if( $individual_score !=0) {
 				$output{$gene2}[0] +=  $individual_score;
 				$output{$gene2}[1] .= "PUBMED:$pubmed_id (HTRI)\t".$evidence."\t"
-				."Regulated by $gene1"."\t".$individual_score."\n";
+					."Regulated by $gene1"."\t".$individual_score."\n";
 			}
 		}
 
@@ -1381,12 +1506,12 @@ sub predict_genes{
 			if($individual_score !=0) {
 				$output{$gene1}[0] += $individual_score/$TF_PENALTY;
 				$output{$gene1}[1] .= "PUBMED:$pubmed_id (HTRI)\t".$evidence."\t"
-				."Regulates $gene2"."\t".$individual_score."\n";
+					."Regulates $gene2"."\t".$individual_score."\n";
 			}
 		}
 	}
 
-	#Predict genes based on gene family
+#Predict genes based on gene family
 	print STDERR "NOTICE: The HGNC Gene Family Database loaded !\n";
 	$i = 0;
 	my %in_gene_family = ();
@@ -1402,12 +1527,12 @@ sub predict_genes{
 		$gene_family{$tag}{$gene} = $description;
 	}
 
-	#Each gene family
+#Each gene family
 	for my $tag (keys %gene_family) {
-		#Each gene
+#Each gene
 		for my $gene ( keys %{$gene_family{$tag}} ) {
 			if ($item{$gene}[0]) {
-				#Each related gene in the gene_family
+#Each related gene in the gene_family
 				for my $related_gene (keys %{$gene_family{$tag}}) {
 					if ($related_gene ne $gene) {
 						my $description = $gene_family{$tag}{$related_gene};
@@ -1437,7 +1562,7 @@ sub predict_genes{
 		}
 	}
 
-	#Predict genes based on Biosystem
+#Predict genes based on Biosystem
 	my %biosystem_id_name = ();
 	print STDERR "NOTICE: The Biosystem Database loaded !\n";
 	$i = 0;
@@ -1451,12 +1576,12 @@ sub predict_genes{
 		$biosystem_id_name{$biosystem_id} = $biosystem_name if(not defined $biosystem_id_name{$biosystem_id}) ;
 	}
 
-	#Each biosystem
+#Each biosystem
 	for my $biosystem_id (keys %biosystem) {
-		#Each gene
+#Each gene
 		for my $gene (keys %{$biosystem{$biosystem_id}}) {
 			if ($item{$gene}[0]) {
-				#Each related gene in the same biosystem
+#Each related gene in the same biosystem
 				for my $related_gene (keys %{$biosystem{$biosystem_id}}) {
 					if ($related_gene ne $gene) {
 						my $score = $biosystem{$biosystem_id}{$related_gene};
@@ -1514,20 +1639,20 @@ sub generate_wordcloud{
 		my @diseases=split(/\W+/,$words[0]);
 		@diseases = map {lc $_;} @diseases;
 		length($_)>2 and $output{$_}++ for (@diseases);
-    }
+	}
 
-    for (keys %disease_score_hash) {
+	for (keys %disease_score_hash) {
 		my @words=@{$disease_score_hash{$_}};
 		my @diseases=split(/\W+/,$words[1]);
 		@diseases = map {lc $_;} @diseases;
 		length($_)>2 and $output{$_}+= $words[0] for (@diseases);
-    }
+	}
 
-    for (sort { $output{$b} <=> $output{$a}  } keys %output) {
-    	print WORD_CLOUD $_."\t".$output{$_}."\n";
-    }
+	for (sort { $output{$b} <=> $output{$a}  } keys %output) {
+		print WORD_CLOUD $_."\t".$output{$_}."\n";
+	}
 
-    system("Rscript $work_path/wordcloud.R ${out}_${term}_wordcloud > ${out}_Rwordcloud.log");
+	system("Rscript $work_path/wordcloud.R ${out}_${term}_wordcloud > ${out}_Rwordcloud.log");
 }
 
 sub Unique {
@@ -1573,60 +1698,60 @@ sub printHeader{
 	if($if_rvis) {
 		print $fh "\tGeneIntoleranceScore";
 	}
-	
+
 	print $fh "\n";
 }
 =head1 SYNOPSIS
 
- disease_annotation.pl [arguments] <disease_names or disease_filename>
+disease_annotation.pl [arguments] <disease_names or disease_filename>
 
- Optional arguments:
-        -h, --help                      print help message
-        -m, --man                       print complete documentation
-        -v, --verbose                   use verbose output
-        -out <string>                   output file name prefix (default:out)
-        -d, --directory                 compiled database directory (default is ./lib/compiled_database)
-        -f, --file                      the input will be treated as file names(both diseases and genes)
-        -p, --prediction                Use the Protein interaction and Biosystem database to predict unreported gene
-                                        disease relations (like HPRD human protein interaction, Biosystem database and so on)
-        -ph, --phenotype                the input term is also treated as a phenotype, the HPO annotation and OMIM description would be used
-        -hi, --haploinsufficiency       use haploinsufficiency score as weight to prioritize dominant disease genes
-        -it, --intolerance              use gene intolerance score as weight to prioritize severe disease genes
-        --bedfile                       the bed file as a genomic region used for selection and annotation of the genes
-        --buildver                      the build version (hg18 or hg19) to annotate the bedfile
-        --wordcloud                     generates a wordcloud of the interpretated diseases if used (not working if you input 'all diseases')
-        --logistic                      uses the weight based on the logistic modeling with four different complex diseases
-        --gene                          the genes used to select the results (file name if -f command is used)
-        --exact                         choose if you want only exact match but not just a word match
-        --addon                         the name of a user-defined add-on gene-disease mapping file (has to be in the ./lib/compiled_database)
-        --addon_gg                      the name of user-defined add-on gene-gene mapping file (has to be in the ./lib/compiled_database)
-        --addon_weight                  the weight of add-on gene-disease mapping
-        --addon_gg_weight               the weight of add-on gene-gene mapping
-        --hprd_weight                   the weight for genes found in HPRD
-        --biosystem_weight              the weight for genes found in Ncbi Biosystem
-        --gene_family_weight            the weight for genes found in HGNC Gene Family
-        --htri_weight                   the weight for genes found in HTRI Transcription Interaction Database
-        --gwas_weight                   the weight for gene disease pairs in Gwas Catalog
-        --gene_reviews_weight           the weight for gene disease pairs in Gene Reviews
-        --clinvar_weight                the weight for gene disease pairs in Clinvar
-        --omim_weight                   the weight for gene disease pairs in OMIM
-        --orphanet_weight               the weight for gene disease pairs in Orphanet
+Optional arguments:
+-h, --help                      print help message
+-m, --man                       print complete documentation
+	-v, --verbose                   use verbose output
+	-out <string>                   output file name prefix (default:out)
+	-d, --directory                 compiled database directory (default is ./lib/compiled_database)
+-f, --file                      the input will be treated as file names(both diseases and genes)
+	-p, --prediction                Use the Protein interaction and Biosystem database to predict unreported gene
+disease relations (like HPRD human protein interaction, Biosystem database and so on)
+	-ph, --phenotype                the input term is also treated as a phenotype, the HPO annotation and OMIM description would be used
+	-hi, --haploinsufficiency       use haploinsufficiency score as weight to prioritize dominant disease genes
+	-it, --intolerance              use gene intolerance score as weight to prioritize severe disease genes
+	--bedfile                       the bed file as a genomic region used for selection and annotation of the genes
+	--buildver                      the build version (hg18 or hg19) to annotate the bedfile
+	--wordcloud                     generates a wordcloud of the interpretated diseases if used (not working if you input 'all diseases')
+	--logistic                      uses the weight based on the logistic modeling with four different complex diseases
+--gene                          the genes used to select the results (file name if -f command is used)
+	--exact                         choose if you want only exact match but not just a word match
+	--addon                         the name of a user-defined add-on gene-disease mapping file (has to be in the ./lib/compiled_database)
+--addon_gg                      the name of user-defined add-on gene-gene mapping file (has to be in the ./lib/compiled_database)
+	--addon_weight                  the weight of add-on gene-disease mapping
+	--addon_gg_weight               the weight of add-on gene-gene mapping
+	--hprd_weight                   the weight for genes found in HPRD
+	--biosystem_weight              the weight for genes found in Ncbi Biosystem
+	--gene_family_weight            the weight for genes found in HGNC Gene Family
+	--htri_weight                   the weight for genes found in HTRI Transcription Interaction Database
+	--gwas_weight                   the weight for gene disease pairs in Gwas Catalog
+	--gene_reviews_weight           the weight for gene disease pairs in Gene Reviews
+	--clinvar_weight                the weight for gene disease pairs in Clinvar
+	--omim_weight                   the weight for gene disease pairs in OMIM
+	--orphanet_weight               the weight for gene disease pairs in Orphanet
 
 
-Function:
-          automatically expand the input disease term to a list of professional disease names,
-          get a prioritized genelist based on these disease names or phenotypes, score the genes.
+	Function:
+	automatically expand the input disease term to a list of professional disease names,
+	get a prioritized genelist based on these disease names or phenotypes, score the genes.
 
-Notice:
-          If you input 'all diseases' for disease name, then every item in the gene_disease database
-          will be used and no disease expansion will be conducted.
-          Addon Gene Gene file should be in the format "GENE A	GENE B	EVIDENCE	SCORE	PMID"
-          Addon Gene Disease file should be in the format "GENE	DISEASE	DISEASE_ID SCORE	SOURCE"
+	Notice:
+	If you input 'all diseases' for disease name, then every item in the gene_disease database
+	will be used and no disease expansion will be conducted.
+	Addon Gene Gene file should be in the format "GENE A	GENE B	EVIDENCE	SCORE	PMID"
+	Addon Gene Disease file should be in the format "GENE	DISEASE	DISEASE_ID SCORE	SOURCE"
 
-Example:
-          perl disease_annotation.pl sleep -p -ph -logistic -out out/sleep
-          perl disease_annotation.pl disease -f -p -ph
+	Example:
+	perl disease_annotation.pl sleep -p -ph -logistic -out out/sleep
+	perl disease_annotation.pl disease -f -p -ph
 
-Version:  1.0.5      $Last Changed Date: 02-21-2015 by Hui Yang
+	Version:  1.0.5      $Last Changed Date: 02-21-2015 by Hui Yang
 
-=head1 OPTIONS
+	=head1 OPTIONS
