@@ -820,18 +820,14 @@ sub get_phenotype_to_gene_hash
 	my $line;
 	my %hpo_id_to_gene_hash;
 	my $hpo_id;
-	my $gene_name;
+	my $gene_names;
 	foreach $line (@lines)
 	{
 		chomp $line;
 		my @split_line = split('\t', $line);
 		$hpo_id = $split_line[0];
-		$gene_name = $split_line[3];
-		if (exists($hpo_id_to_gene_hash{$hpo_id} ) ){
-			$hpo_id_to_gene_hash{$hpo_id} .= ",$gene_name";
-		}else{
-			$hpo_id_to_gene_hash{$hpo_id} = "$gene_name";
-		}
+		$gene_names = $split_line[2];
+		$hpo_id_to_gene_hash{$hpo_id} = $gene_names;
 	}
 	return \%hpo_id_to_gene_hash;
 }
@@ -997,7 +993,6 @@ sub score_genes{
 		my $hpo_id = $phenotype_related_genes_hash{$gene};
 		my $hpo_name = $hpo_id_to_name_hash{$hpo_id};
 
-		print "gene=$gene\n";
 		if ( exists($item{$gene}) )
 		{
 			$item{$gene}[0] += 1.0; 
@@ -1006,8 +1001,6 @@ sub score_genes{
 			$item{$gene}[0] = 1.0; 
 			$item{$gene}[1] = "$hpo_id (HPO_PHENOTYPE_GENE)\t$hpo_name\t1.0\n";
 		}
-		print "\$item{\$gene}[0]=$item{$gene}[0]\n";
-		print "\$item{\$gene}[1]=$item{$gene}[1]\n";
 	}
 
 	for (keys %item){
@@ -1223,7 +1216,7 @@ sub setup_variables{
 	$omim_description_file   = "DB_OMIM_DESCRIPTION";
 	$hi_gene_score_file      = "DB_HI_SCORE";
 	$rvis_gene_score_file    = "DB_RVIS_SCORE";
-	$phenotype_to_gene_file  = "HPO_phenotype_to_genes.txt";
+	$phenotype_to_gene_file  = "DB_COMPILED_HPO_PHENOTYPE_GENE";
 
 	my %gene_transform;
 
