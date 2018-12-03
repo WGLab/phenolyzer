@@ -51,19 +51,24 @@ perl bin/annotate.pl -downdb -buildver hg18 -webfrom annovar refGene lib/humandb
 perl disease_annotation.pl --help
 ```
 
-- Prioritize 'sleep' genes: 
+- Prioritize 'Alzheimer' genes: 
 ```
-perl disease_annotation.pl sleep -p -ph -logistic -out out/sleep/out
+perl disease_annotation.pl alzheimer -p -ph -logistic -out out/alzheimer/out
 ```
 
-- Use the terms in 'disease' file:
+- Use the disease terms in 'example_disease.txt' file (without phenotype expansion):
 ```
-perl disease_annotation.pl disease -f -p -ph -logistic -out out/disease/out
+perl disease_annotation.pl example_disease.txt -f -p -logistic -out out/disease/out
+```
+
+- Use the phenotype terms in 'example_phenotype.txt' file:
+```
+perl disease_annotation.pl example_phenotype.txt -f -p -ph -logistic -out out/phenotype/out
 ```
 
 - Use the cnv.bed region:
 ```
-perl disease_annotation.pl alzheimer -bedfile cnv.bed -p -ph -logistic -out out/alzheimer/out
+perl disease_annotation.pl alzheimer -bedfile cnv.bed -p -ph -logistic -out out/alzheimer_cnv/out
 ```
 
 - Use the Mentha gene-gene interaction database as Addon
