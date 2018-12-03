@@ -171,7 +171,7 @@ $addon_gene_gene_weight      = 1.0  unless (defined $addon_gene_gene_weight);
 
 setup_variables();
 
-annovar_annotate() if (defined $bedfile);
+annotate_bedfile() if (defined $bedfile);
 
 output_gene_prioritization();
 
@@ -965,7 +965,7 @@ sub score_genes{
 			my $gene = $genes[0];
 
 			if( not $gene) {
-				print STDERR "ERROR! $disease_gene_score[$j]\n";
+				$verbose and print STDERR "WARNING: gene name not found in disease_gene_score array <$disease_gene_score[$j]>\n";		#some entries miss gene name such as "FEBRILE SEIZURES FAMILIAL 1     umls:C1852577   0.3     DISGENET" in DB_DISGENET_GENE_DISEASE_SCORE
 				$j++;
 				next;
 			}
@@ -1151,7 +1151,7 @@ sub score_all_genes{
 
 # This function is to convert CNV into genes
 ## Code borrowed from bed2gene.pl
-sub annovar_annotate{
+sub annotate_bedfile {
 	$buildver = 'hg19' if(not $buildver);
 
 	print STDERR "NOTICE: the --buildver argument is set as 'hg19' by default\n"
@@ -1690,7 +1690,7 @@ sub TextStandardize {
 }
 
 sub printHeader{
-	@_==2 or die "ERROR: printHeader() must take tw oarguments";
+	@_==2 or die "ERROR: printHeader() must take two oarguments";
 	my ($fh, $if_predict) = @_;
 	if (not $if_predict) {
 		print $fh join("\t", qw(Rank Gene ID Score));
