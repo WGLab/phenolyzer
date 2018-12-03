@@ -4,6 +4,7 @@
 ## LIBRAIRIES
 
 use strict;
+use warnings;
 use Carp;
 use Pod::Usage;
 use Getopt::Long;
@@ -11,7 +12,6 @@ use Cwd;
 use File::Basename;
 use Bio::OntologyIO;
 use Graph::Directed;
-use warnings;
 
 ##
 ######################################################################
@@ -19,14 +19,7 @@ use warnings;
 ######################################################################
 ## INITIALISATION
 
-# Initialisation of variables
-my $out_directory = cwd();
-my $dirname       = dirname(__FILE__);
-chdir $dirname;
-
-# Declare version
-our $VERSION           = 'v0.0.2';
-our $LAST_CHANGED_DATE = '$LastChangedDate: 2015-05-13 $';
+our (@out_gene_scores_file);
 
 # Declare help options
 our (
@@ -275,6 +268,7 @@ sub output_gene_prioritization
 				print OUT_DISEASE join ("\t", ($disease_score_hash{$_}[1], $disease_score_hash{$_}[0]) )."\n"
 					for (keys %disease_score_hash);
 			}
+			close (OUT_DISEASE);
 
 			generate_wordcloud($individual_term, \%disease_hash, \%disease_score_hash) if($if_wordcloud);
 			if(@diseases==0){
@@ -304,6 +298,7 @@ sub output_gene_prioritization
 			}
 
 			open( OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
+			push @out_gene_scores_file, "$out"."_$individual_term"."_gene_scores";
 			print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
 
 			for my $gene (sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
@@ -312,11 +307,13 @@ sub output_gene_prioritization
 				print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
 			}
 			print STDERR "------------------------------------------------------------------------ \n";
+			close (OUT_GENE_SCORE);
 		}
 # For the term 'all disease(s)'(case insensitive)
 		else {
 			$individual_term=~s/\W+/_/g;
 			open(OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
+			push @out_gene_scores_file, "$out"."_$individual_term"."_gene_scores";
 			my ($item,$count)=score_all_genes();
 			my %output=();
 			@{$output{$_}} = @{$item->{$_}} for keys %$item;
@@ -328,6 +325,7 @@ sub output_gene_prioritization
 				print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
 			}
 			print STDERR "------------------------------------------------------------------------ \n";
+			close (OUT_GENE_SCORE);
 		}
 	}
 
@@ -353,8 +351,7 @@ sub output_gene_prioritization
 	}
 
 	print MERGE     "Tuple number in the gene_disease databse for all the terms: $count \n";
-	print ANNOTATED "Tuple number in the gene_disease databse for all the terms: $count \n"
-		if (%gene_hash and not $prediction);
+	print ANNOTATED "Tuple number in the gene_disease databse for all the terms: $count \n" if (%gene_hash and not $prediction);
 
 #Find the max and min score
 	for my $gene (keys %output) {
@@ -672,7 +669,7 @@ sub disease_extension{
 	print STDERR "NOTICE: The descendants search in the CTD (Medic) databases has been done! \n";
 
 	if (-f "$work_path/ontology_search.pl") {
-		print "ERROR: The doio.obo file couldn't be found!!! The disease_ontology search wouldn't be conducted properly!! \n"
+		print STDERR "ERROR: The doio.obo file couldn't be found!!! The disease_ontology search wouldn't be conducted properly!! \n"
 			if ( not -f "$path/doid.obo");
 		$input_term =~ s/[^ \w-]s?//g;
 
@@ -730,8 +727,11 @@ sub phenotype_extension{
 		open (HPO_ANNOTATION, "$path/$hpo_annotation_file") or die "ERROR: Can't open $hpo_annotation_file!!! \n";
 		open (OMIM_DESCRIPTION, "$path/$omim_description_file") or die "ERROR: Can't open $omim_description_file!!! \n";
 
-		my $line = `perl $work_path/ontology_search.pl -o $path/hpo.obo -format id -p '$input_term' 2>/dev/null`;
+		my $line = `perl $work_path/ontology_search.pl -o $path/hpo.obo -format id -p '$input_term' `;
+		print STDERR "NOTICE: executing ontology_search.pl to expand phenotype terms\n";
 		@hpo_ids = split("\n", $line);
+		print STDERR "NTOICE: Found ", scalar (@hpo_ids), " additional phenotype terms\n";
+		
 		my @hpo_annotation = <HPO_ANNOTATION>;
 		shift @hpo_annotation;
 		@hpo_ids = sort @hpo_ids;
@@ -829,6 +829,7 @@ sub get_phenotype_to_gene_hash
 		$gene_names = $split_line[2];
 		$hpo_id_to_gene_hash{$hpo_id} = $gene_names;
 	}
+	close (PHENOTYPE_TO_GENE);
 	return \%hpo_id_to_gene_hash;
 }
 
@@ -852,6 +853,7 @@ sub get_hpo_id_to_name_hash
 			$hpo_id_to_name_hash{$hpo_id} = "$hpo_name";
 		}
 	}
+	close (PHENOTYPE_TO_GENE);
 	return \%hpo_id_to_name_hash;
 }
 
@@ -1019,25 +1021,26 @@ sub merge_result {
 # %item (  $gene[0] => score, $gene[1] => "SOURCE_ID	 DISEASE_NAME	DISEASE_TERM"     )
 	print STDERR "NOTICE: Start to merge gene scores! \n";
 
-	my $dirname=dirname($out);
-	my $basename=basename($out);
-	my @filelist = split("\n",`ls $dirname`);
+	#my $dirname=dirname($out);
+	#my $basename=basename($out);
+	#my @filelist = split("\n",`ls $dirname`);
+	print STDERR "NOTICE: Reading a list of gene_scores files @out_gene_scores_file\n";
 
 #item will save the results for output
 	my %item=();
 	my $count=0.0;
 	my $individual_count;
 
-	for my $filename(@filelist) {
-		if($filename=~/^${basename}_(\w+)_gene_scores$/){
+	for my $filename(@out_gene_scores_file) {
+		if($filename=~/${out}_(\w+)_gene_scores$/){
 			my $term=$1;
 			$term=~s/_/ /g;
 
-			open(GENE_SCORE,"${dirname}/${filename}") or die "ERROR: Can't open ${dirname}/${filename}!!!\n";
+			open(GENE_SCORE, $filename) or die "ERROR: Can't open $filename: $!!!!\n";
 			my $gene="";
 			my $i=0;
 
-			for my $line(<GENE_SCORE>) {
+			while (my $line = <GENE_SCORE>) {
 				chomp($line);
 
 				if($i==0) {
@@ -1061,7 +1064,7 @@ sub merge_result {
 					$gene=$words[0];
 					$words[1]=~/Normalized score: (.*?)$/;
 					my $score=$1;
-
+$score eq 'alzheimer' and die "Die gene=$gene score=<$score> current line died at <$line> ";
 					$item{$gene}[0]+=$score if defined $item{$gene};
 					$item{$gene}[0] =$score if not defined $item{$gene};
 				} else {
@@ -1069,6 +1072,8 @@ sub merge_result {
 					$item{$gene}[1].= $source."\t".$disease."\t".$term."\t".$individual_score/$individual_count."\n";
 				}
 			}
+		} else {
+			die "Unknown error in file name processing: $filename is not recognized as a valid gene_scores file\n";
 		}
 	}
 	return (\%item,$count);
@@ -1157,7 +1162,7 @@ sub annovar_annotate{
 
 	my $sc;
 
-	$sc = "perl $path/../../bin/convert.pl -format bed $out_directory/$bedfile > $out.avinput";
+	$sc = "perl $path/../../bin/convert.pl -format bed $bedfile > $out.avinput";
 	system ($sc) and die "Error: cannot execute system command $sc\n";
 
 	$sc = "perl $path/../../bin/annotate.pl -geneanno -buildver $buildver -outfile $out $out.avinput $path/../humandb";
@@ -1184,6 +1189,8 @@ sub annovar_annotate{
 	}
 
 	print REGION_GENE $_."\n" for keys %gene_hash;
+	close (VF);
+	close (REGION_GENE);
 
 	print STDERR "NOTICE: Among $countregion BED regions ($totallen base pairs), $countexonic disrupt exons, and ", scalar keys %gene_hash, " genes are affected\n";
 ### Code borrowed from bed2gene.pl
@@ -1193,14 +1200,22 @@ sub setup_variables{
 #Input argument setup
 	$query_diseases = $ARGV[0];
 
-	$path = "./lib/compiled_database";
+	# Initialisation of variables
+	#$out_directory = cwd();			#in the older version of Phenolyzer, the output directory is fixed to be current directory, which is not ideal
+	my $dirname       = dirname(__FILE__);		#script file's location
+	#chdir $dirname;
+
+	$path = "$dirname/lib/compiled_database";
 	$database_directory and $path=$database_directory;
 	$path =~s/\/$//;
-	$work_path ||= cwd();
-	$out or $out="out";
-	$out = "$out_directory/$out";
-
-	(-d dirname($out)) or system("mkdir ".dirname($out)) and die "ERROR: $out is not legal output!!";
+	$work_path ||= $dirname;
+	
+	if (defined $out) {
+		$out =~ s/[\\\/]*$//;		#remove trailing "/" or "\" if there are any
+		(-d dirname($out)) or system("mkdir ".dirname($out)) and die "ERROR: $out is not a value output, make sure that the directory exists and is writtable!!";
+	} else {
+		$out = "out";
+	}
 
 	$disease_count_file      = "DB_COMPILED_DISEASE_COUNT";
 	$gene_disease_score_file = "DB_COMPILED_GENE_DISEASE_SCORE";
@@ -1210,7 +1225,6 @@ sub setup_variables{
 	$hpo_annotation_file     = "DB_HPO_ANNOTATION";
 	$gene_annotation_file    = "DB_HUMAN_GENE_ID";
 	$omim_disease_id_file    = "DB_COMPILED_OMIM_ID_DISEASE";
-#$biosystem_to_info_file = "biosystem_bsid_to_info.txt";
 	$gene_family_file        = "DB_HGNC_GENE_FAMILY";
 	$htri_file               = "DB_HTRI_TRANSCRIPTION_INTERACTION";
 	$omim_description_file   = "DB_OMIM_DESCRIPTION";
@@ -1230,7 +1244,7 @@ sub setup_variables{
 		$query_diseases = join("\t",@input);
 
 		if(defined $genelist){
-			open(INPUT_GENELIST,"$out_directory/$genelist") or die "can't open $genelist";
+			open(INPUT_GENELIST,"$genelist") or die "can't open $genelist";
 			@input = <INPUT_GENELIST>;
 			$genelist = join("\t",@input);
 		}
@@ -1741,7 +1755,7 @@ Notice:
           Addon Gene Disease file should be in the format "GENE	DISEASE	DISEASE_ID SCORE	SOURCE"    
           
 Example:  
-          perl disease_annotation.pl sleep -p
-          perl disease_annotation.pl disease -f -p -ph
+          disease_annotation.pl alzheimer -prediction -phenotype -logistic -out test1 -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25
+          disease_annotation.pl 'autism spectrum disorder' -prediction -logistic -out test2 -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25
 
-=head1 OPTIONS
+=cut
