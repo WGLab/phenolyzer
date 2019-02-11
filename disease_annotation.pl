@@ -730,7 +730,7 @@ sub phenotype_extension{
 		my $line = `perl $work_path/ontology_search.pl -o $path/hpo.obo -format id -p '$input_term' `;
 		print STDERR "NOTICE: executing ontology_search.pl to expand phenotype terms\n";
 		@hpo_ids = split("\n", $line);
-		print STDERR "NTOICE: Found ", scalar (@hpo_ids), " additional phenotype terms\n";
+		print STDERR "NOTICE: Found ", scalar (@hpo_ids), " additional phenotype terms\n";
 		
 		my @hpo_annotation = <HPO_ANNOTATION>;
 		shift @hpo_annotation;
