@@ -188,6 +188,140 @@ sub print_array
 	}
 }
 
+sub process_individual_term
+{
+	my $individual_term = $_[0];
+
+	if ($individual_term =~ /^\W*$/){ return; } # next if there is no word 
+		$individual_term=TextStandardize($individual_term);
+# For a normal term, disease name extension is needed
+	if ($individual_term !~/^all([\s_\-]diseases?)?$/i) {
+# Expand the disease term and save them into files
+# @diseases are lower case disease array, %disease_hash keeps the original disease name
+		my $diseases_reference = disease_extension($individual_term);
+		my %disease_hash = %$diseases_reference;
+		my @diseases;
+		for my $disease_key (keys %disease_hash) {
+			my  @records =split("\n", $disease_hash{$disease_key});
+			for my $record (@records) {
+				return if(not $record);
+				my ($disease_line, $source) = split("\t", $record);
+				my @disease_terms = split(";", $disease_line);
+				for  (@disease_terms){
+					my $each = $_;
+					$each=TextStandardize($each);
+					my $change2= $each =~ s/\btype //ig;
+					if($change2){
+						push @diseases,$each;
+						$disease_hash{$disease_key} = $each.';'.$disease_hash{$disease_key};
+					}
+				}
+				push @diseases,@disease_terms;
+			}
+		}
+		my ($hash, %disease_score_hash, @hpo_ids);
+		if ($is_phenotype) {
+			($hash, @hpo_ids) = phenotype_extension($individual_term);
+			%disease_score_hash = %$hash;
+			for (@diseases) {
+				my $disease_key = lc $_;
+				delete $disease_score_hash{$disease_key} if($disease_score_hash{$disease_key});
+				$disease_key = TextStandardize($disease_key);
+				delete $disease_score_hash{$disease_key} if($disease_score_hash{$disease_key});
+			}
+			for (keys %disease_score_hash) {
+				my $disease_score = join ("\t", ($disease_score_hash{$_}[1], $disease_score_hash{$_}[0]) );
+				push (@diseases, lc $disease_score);
+			}
+		}
+
+#The non-word characters are changed into '_'
+		$individual_term=~s/\W+/_/g;
+		if(@hpo_ids) {
+			open(OUT_PHENOTYPE, ">$out"."_$individual_term"."_hpo") or die;
+			print OUT_PHENOTYPE $_."\n" for @hpo_ids;
+			close(OUT_PHENOTYPE);
+		}
+
+		open (OUT_DISEASE,">$out"."_$individual_term"."_diseases") or die;
+		for (keys %disease_hash) {
+			my @lines=split("\n", $disease_hash{$_});
+			for my $line (@lines) {
+				return if(not $line);
+				my @words = split("\t", $line);
+				my @diseases = split(";", $words[0]);
+				@diseases = Unique(@diseases);
+				my $disease_line = join(";",@diseases);
+				my $out_line = join("\t",($disease_line,$words[1]));
+				print OUT_DISEASE $out_line."\n";
+			}
+		}
+
+		if ($is_phenotype) {
+			print OUT_DISEASE join ("\t", ($disease_score_hash{$_}[1], $disease_score_hash{$_}[0]) )."\n"
+				for (keys %disease_score_hash);
+		}
+		close (OUT_DISEASE);
+
+		generate_wordcloud($individual_term, \%disease_hash, \%disease_score_hash) if($if_wordcloud);
+		if(@diseases==0){
+			print STDERR "NOTICE: The input term -----$individual_term------ has no corresponding names in the disease database, please check your spelling!!!\n";
+			return;
+		}
+
+		my $i=0;
+#Output the gene_score files
+# $item = {  $gene => [$score, $information_string] }
+# $information_string = "ID (SOURCE)	DISEASE_NAME RAW_SCORE
+		@diseases = map {
+			my @words = split("\t");
+			$words[0] = TextStandardize($words[0]);
+			$words[0] = lc $words[0];
+			join("\t", @words);
+		} @diseases;
+
+		@diseases = Unique(@diseases);
+		my ($item,$count) = score_genes (\@diseases, \@hpo_ids);
+		my %output=();
+		@{$output{$_}} = @{$item->{$_}} for keys %$item;
+
+		if($count==0){
+			print STDERR "NOTICE: The input term -----$individual_term------ has no results!!!\n";
+			return;
+		}
+
+		open( OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
+		push @out_gene_scores_file, "$out"."_$individual_term"."_gene_scores";
+		print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
+
+		for my $gene (sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
+#The probability of the gene when the disease is given
+			my $p=$output{$gene}[0]/$count;
+			print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
+		}
+		print STDERR "------------------------------------------------------------------------ \n";
+		close (OUT_GENE_SCORE);
+	}
+# For the term 'all disease(s)'(case insensitive)
+	else {
+		$individual_term=~s/\W+/_/g;
+		open(OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
+		push @out_gene_scores_file, "$out"."_$individual_term"."_gene_scores";
+		my ($item,$count)=score_all_genes();
+		my %output=();
+		@{$output{$_}} = @{$item->{$_}} for keys %$item;
+
+		print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
+		for my $gene(sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
+#The probability of the gene when the disease is given
+			my $p=$output{$gene}[0]/$count;
+			print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
+		}
+		print STDERR "------------------------------------------------------------------------ \n";
+		close (OUT_GENE_SCORE);
+	}
+}
+
 # The main sub to output prioritized genelist
 sub output_gene_prioritization 
 {
@@ -197,136 +331,7 @@ sub output_gene_prioritization
 # Process each individual term first
 	for my $individual_term(@disease_input) 
 	{
-		if ($individual_term =~ /^\W*$/){ next; } # next if there is no word 
-			$individual_term=TextStandardize($individual_term);
-
-
-# For a normal term, disease name extension is needed
-		if ($individual_term !~/^all([\s_\-]diseases?)?$/i) {
-# Expand the disease term and save them into files
-# @diseases are lower case disease array, %disease_hash keeps the original disease name
-			my $diseases_reference = disease_extension($individual_term);
-			my %disease_hash = %$diseases_reference;
-			my @diseases;
-			for my $disease_key (keys %disease_hash) {
-				my  @records =split("\n", $disease_hash{$disease_key});
-				for my $record (@records) {
-					next if(not $record);
-					my ($disease_line, $source) = split("\t", $record);
-					my @disease_terms = split(";", $disease_line);
-					for  (@disease_terms){
-						my $each = $_;
-						$each=TextStandardize($each);
-						my $change2= $each =~ s/\btype //ig;
-						if($change2){
-							push @diseases,$each;
-							$disease_hash{$disease_key} = $each.';'.$disease_hash{$disease_key};
-						}
-					}
-					push @diseases,@disease_terms;
-				}
-			}
-			my ($hash, %disease_score_hash, @hpo_ids);
-			if ($is_phenotype) {
-				($hash, @hpo_ids) = phenotype_extension($individual_term);
-				%disease_score_hash = %$hash;
-				for (@diseases) {
-					my $disease_key = lc $_;
-					delete $disease_score_hash{$disease_key} if($disease_score_hash{$disease_key});
-					$disease_key = TextStandardize($disease_key);
-					delete $disease_score_hash{$disease_key} if($disease_score_hash{$disease_key});
-				}
-				for (keys %disease_score_hash) {
-					my $disease_score = join ("\t", ($disease_score_hash{$_}[1], $disease_score_hash{$_}[0]) );
-					push (@diseases, lc $disease_score);
-				}
-			}
-
-#The non-word characters are changed into '_'
-			$individual_term=~s/\W+/_/g;
-			if(@hpo_ids) {
-				open(OUT_PHENOTYPE, ">$out"."_$individual_term"."_hpo") or die;
-				print OUT_PHENOTYPE $_."\n" for @hpo_ids;
-				close(OUT_PHENOTYPE);
-			}
-
-			open (OUT_DISEASE,">$out"."_$individual_term"."_diseases") or die;
-			for (keys %disease_hash) {
-				my @lines=split("\n", $disease_hash{$_});
-				for my $line (@lines) {
-					next if(not $line);
-					my @words = split("\t", $line);
-					my @diseases = split(";", $words[0]);
-					@diseases = Unique(@diseases);
-					my $disease_line = join(";",@diseases);
-					my $out_line = join("\t",($disease_line,$words[1]));
-					print OUT_DISEASE $out_line."\n";
-				}
-			}
-
-			if ($is_phenotype) {
-				print OUT_DISEASE join ("\t", ($disease_score_hash{$_}[1], $disease_score_hash{$_}[0]) )."\n"
-					for (keys %disease_score_hash);
-			}
-			close (OUT_DISEASE);
-
-			generate_wordcloud($individual_term, \%disease_hash, \%disease_score_hash) if($if_wordcloud);
-			if(@diseases==0){
-				print STDERR "NOTICE: The input term -----$individual_term------ has no corresponding names in the disease database, please check your spelling!!!\n";
-				next;
-			}
-
-			my $i=0;
-#Output the gene_score files
-# $item = {  $gene => [$score, $information_string] }
-# $information_string = "ID (SOURCE)	DISEASE_NAME RAW_SCORE
-			@diseases = map {
-				my @words = split("\t");
-				$words[0] = TextStandardize($words[0]);
-				$words[0] = lc $words[0];
-				join("\t", @words);
-			} @diseases;
-
-			@diseases = Unique(@diseases);
-			my ($item,$count) = score_genes (\@diseases, \@hpo_ids);
-			my %output=();
-			@{$output{$_}} = @{$item->{$_}} for keys %$item;
-
-			if($count==0){
-				print STDERR "NOTICE: The input term -----$individual_term------ has no results!!!\n";
-				next;
-			}
-
-			open( OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
-			push @out_gene_scores_file, "$out"."_$individual_term"."_gene_scores";
-			print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
-
-			for my $gene (sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
-#The probability of the gene when the disease is given
-				my $p=$output{$gene}[0]/$count;
-				print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
-			}
-			print STDERR "------------------------------------------------------------------------ \n";
-			close (OUT_GENE_SCORE);
-		}
-# For the term 'all disease(s)'(case insensitive)
-		else {
-			$individual_term=~s/\W+/_/g;
-			open(OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
-			push @out_gene_scores_file, "$out"."_$individual_term"."_gene_scores";
-			my ($item,$count)=score_all_genes();
-			my %output=();
-			@{$output{$_}} = @{$item->{$_}} for keys %$item;
-
-			print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
-			for my $gene(sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
-#The probability of the gene when the disease is given
-				my $p=$output{$gene}[0]/$count;
-				print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
-			}
-			print STDERR "------------------------------------------------------------------------ \n";
-			close (OUT_GENE_SCORE);
-		}
+		process_individual_term($individual_term);
 	}
 
 # Finish processing individual terms
@@ -1679,7 +1684,7 @@ sub Unique {
 
 sub TextStandardize {
 	my $word=$_[0];
-
+	
 	$word=~s/^\W*(.*?)\W*$/$1/;
 	$word=~s/'s\b//g;		#'
 	$word=~s/\W+/ /g;
