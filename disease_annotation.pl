@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 ######################################################################
-## LIBRAIRIES
+## LIBRARIES
 
 use strict;
 use warnings;
@@ -12,6 +12,7 @@ use Cwd;
 use File::Basename;
 use Bio::OntologyIO;
 use Graph::Directed;
+use Parallel::ForkManager;
 
 ##
 ######################################################################
@@ -50,7 +51,8 @@ our (
 our (
 		$out,
 		$database_directory,
-		$if_logistic_regression
+		$if_logistic_regression,
+		$user_nproc
 	);
 
 # Declare weight options
@@ -130,6 +132,7 @@ our  (
 				'omim_weight=s'         =>\$GENE_WEIGHT{"OMIM"},
 				'orphanet_weight=s'     =>\$GENE_WEIGHT{"ORPHANET"},
 				'wordcloud'             =>\$if_wordcloud,
+				'nproc=i'               =>\$user_nproc
 				) or pod2usage ();
 
 # Launch help or man
@@ -162,6 +165,10 @@ $GENE_WEIGHT{"ORPHANET"}     = 1.0  unless (defined $GENE_WEIGHT{"ORPHANET"} );
 $GENE_WEIGHT{"HPO_PHENOTYPE_GENE"}     = 1.0  unless (defined $GENE_WEIGHT{"HPO_PHENOTYPE_GENE"} );
 $addon_gene_disease_weight   = 1.0  unless (defined $addon_gene_disease_weight);
 $addon_gene_gene_weight      = 1.0  unless (defined $addon_gene_gene_weight);
+$user_nproc                  = 0    unless (defined $user_nproc);
+
+# Test input values
+$user_nproc >= 0 or pod2usage ("       ERROR: number of requested processes is negative");
 
 ##
 ######################################################################
@@ -329,10 +336,21 @@ sub output_gene_prioritization
 	@disease_input <=1000 or die "Too many terms!!! No more than 1000 terms are accepted!!!";
 
 # Process each individual term first
+# Determine number of parallel subprocesses
+  my $n_procs = $user_nproc;
+# If parallel processes are desired, set the number to number of inputs, at most
+  if ($user_nproc != 0 && $user_nproc > @disease_input) {
+		$n_procs = @disease_input;
+	}
+
+	my $parallel_mngr = Parallel::ForkManager->new($n_procs);
 	for my $individual_term(@disease_input) 
 	{
+		$parallel_mngr->start and next;
 		process_individual_term($individual_term);
+		$parallel_mngr->finish;
 	}
+	$parallel_mngr->wait_all_children();
 
 # Finish processing individual terms
 # Merge the gene_score files
@@ -1747,7 +1765,8 @@ sub printHeader{
         --clinvar_weight                the weight for gene disease pairs in Clinvar
         --omim_weight                   the weight for gene disease pairs in OMIM
         --orphanet_weight               the weight for gene disease pairs in Orphanet    
-             
+        --nproc                         max number of parallel processes requested by the user. The code uses as much parallelism as allowed by the data.
+				                                Processes are used, not threads             
   
 Function:       
           automatically expand the input disease term to a list of professional disease names, 
