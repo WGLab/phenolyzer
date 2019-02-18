@@ -198,6 +198,7 @@ sub print_array
 sub process_individual_term
 {
 	my $individual_term = $_[0];
+	my $raw_individual_term = $individual_term;
 
 	if ($individual_term =~ /^\W*$/){ return; } # next if there is no word 
 		$individual_term=TextStandardize($individual_term);
@@ -288,7 +289,7 @@ sub process_individual_term
 		} @diseases;
 
 		@diseases = Unique(@diseases);
-		my ($item,$count) = score_genes (\@diseases, \@hpo_ids);
+		my ($item,$count) = score_genes (\@diseases, \@hpo_ids, $raw_individual_term);
 		my %output=();
 		@{$output{$_}} = @{$item->{$_}} for keys %$item;
 
@@ -306,7 +307,7 @@ sub process_individual_term
 			my $p=$output{$gene}[0]/$count;
 			print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
 		}
-		print STDERR "------------------------------------------------------------------------ \n";
+		print STDERR "$raw_individual_term: -------------------------------------------------- \n";
 		close (OUT_GENE_SCORE);
 	}
 # For the term 'all disease(s)'(case insensitive)
@@ -337,13 +338,21 @@ sub output_gene_prioritization
 
 # Process each individual term first
 # Determine number of parallel subprocesses
-  my $n_procs = $user_nproc;
-# If parallel processes are desired, set the number to number of inputs, at most
-  if ($user_nproc != 0 && $user_nproc > @disease_input) {
-		$n_procs = @disease_input;
+    my $child_procs = $user_nproc;
+	my $n_procs = $child_procs;
+# 0 and 1 correspond to forking 0 subprocesses.
+    if ($child_procs <= 1) {
+		$child_procs = 0;
+		$n_procs = 1;
+	}
+# Otherwise, set the number to number of inputs, at most
+	elsif ($child_procs > @disease_input) {
+		$child_procs = @disease_input;
+		$n_procs = $child_procs;
 	}
 
-	my $parallel_mngr = Parallel::ForkManager->new($n_procs);
+	print STDERR "NOTICE: Processing $n_procs phenotypes at a time!\n";
+	my $parallel_mngr = Parallel::ForkManager->new($child_procs);
 	for my $individual_term(@disease_input) 
 	{
 		$parallel_mngr->start and next;
@@ -545,10 +554,10 @@ sub output_gene_prioritization
 
 # Input some disease terms and return all its extended diseases
 sub disease_extension{
-	print STDERR "NOTICE: The journey to find all related disease names of your query starts!\n";
 	@_==1 or die "The input should be only one string!";
 
 	my $input_term=$_[0];
+	print STDERR "$input_term: The journey to find all related disease names of your query starts!\n";
 	$input_term =~ s/[\W_]+/ /g;
 
 	-f "${path}/$disease_count_file" or die "Could not open ${path}/$disease_count_file";
@@ -562,8 +571,8 @@ sub disease_extension{
 	my @disease_occur=<DISEASE>;
 	my @disease_ctd=<CTD_DISEASE>;
 
-	print STDERR "NOTICE: The item -----$input_term----- was queried in the databases!! \n";
-	print STDERR "NOTICE: The exact match (case non-sensitive) was used for disease/phenotype name match!! \n"
+	print STDERR "$input_term: The item was queried in the databases!! \n";
+	print STDERR "$input_term: The exact match (case non-sensitive) was used for disease/phenotype name match!! \n"
 		if($if_exact_match);
 
 	for (<OMIM_DISEASE_ID>) {
@@ -589,7 +598,7 @@ sub disease_extension{
 		}
 	}
 
-	print STDERR "NOTICE: The word matching in OMIM disease synonyms file has been done!! \n";
+	print STDERR "$input_term: The word matching in OMIM disease synonyms file has been done!! \n";
 
 	$input_term = lc $input_term;
 #Query disease in the compiled list from gene_disease relations
@@ -634,7 +643,7 @@ sub disease_extension{
 	$disease_extend{$_} .= "\tGENE_DISEASE\n" for keys %disease_extend;
 	my @tree_number=();
 
-	print STDERR "NOTICE: The word matching search in the compiled disease databases for gene_disease relations has been done!\n";
+	print STDERR "$input_term: The word matching search in the compiled disease databases for gene_disease relations has been done!\n";
 
 	for my $term(@disease_ctd) {
 		chomp($term);
@@ -669,7 +678,7 @@ sub disease_extension{
 		}
 	}
 
-	print STDERR "NOTICE: The word matching search in the CTD (Medic) databases has been done! \n";
+	print STDERR "$input_term: The word matching search in the CTD (Medic) databases has been done! \n";
 
 #Second find all children of the terms found in the first round
 	for my $term(@disease_ctd) {
@@ -689,7 +698,7 @@ sub disease_extension{
 		}
 	}
 
-	print STDERR "NOTICE: The descendants search in the CTD (Medic) databases has been done! \n";
+	print STDERR "$input_term: The descendants search in the CTD (Medic) databases has been done! \n";
 
 	if (-f "$work_path/ontology_search.pl") {
 		print STDERR "ERROR: The doio.obo file couldn't be found!!! The disease_ontology search wouldn't be conducted properly!! \n"
@@ -711,16 +720,14 @@ sub disease_extension{
 			$disease_extend{$disease_key} .= join(';', ($disease, @synonyms));
 			$disease_extend{$disease_key} .= "\tDISEASE_ONTOLOGY\n";
 		}
-		print STDERR "NOTICE: The descendants search in disease_ontology (DO) database has been done! \n";
+		print STDERR "$input_term: The descendants search in disease_ontology (DO) database has been done! \n";
 	} else {
-		print STDERR "NOTICE: The $work_path/ontology_search.pl file couldn't be found, so the disease_ontology (DO) database won't be used! \n";
+		print STDERR "$input_term: The $work_path/ontology_search.pl file couldn't be found, so the disease_ontology (DO) database won't be used! \n";
 	}
 	return \%disease_extend;
 }
 
 sub phenotype_extension{
-	print STDERR "NOTICE: The phenotype search and annotation process starts!! \n";
-
 	@_==1 or die "ERROR: Only one phenotype term is accepted!!! ";
 
 	my %hpo_score_system = (
@@ -736,6 +743,8 @@ sub phenotype_extension{
 			);
 
 	my $input_term = $_[0];
+	my $raw_input_term = $input_term;
+	print STDERR "$raw_input_term: The phenotype search and annotation process starts!! \n";
 	$input_term =~s/[\W_]+/ /g;
 	my %disease_hash;
 	my @hpo_ids;
@@ -751,9 +760,9 @@ sub phenotype_extension{
 		open (OMIM_DESCRIPTION, "$path/$omim_description_file") or die "ERROR: Can't open $omim_description_file!!! \n";
 
 		my $line = `perl $work_path/ontology_search.pl -o $path/hpo.obo -format id -p '$input_term' `;
-		print STDERR "NOTICE: executing ontology_search.pl to expand phenotype terms\n";
+		print STDERR "$raw_input_term: executing ontology_search.pl to expand phenotype terms\n";
 		@hpo_ids = split("\n", $line);
-		print STDERR "NOTICE: Found ", scalar (@hpo_ids), " additional phenotype terms\n";
+		print STDERR "$raw_input_term: Found ", scalar (@hpo_ids), " additional phenotype terms\n";
 		
 		my @hpo_annotation = <HPO_ANNOTATION>;
 		shift @hpo_annotation;
@@ -883,13 +892,12 @@ sub get_hpo_id_to_name_hash
 
 sub score_genes{
 
-	@_ == 2 or die "input should contain references to two arrays!";
+	@_ == 3 or die "input should contain references to two arrays and a reference input term!";
 
 # item is a hash, keys are gene names, values are an array reference and a the total score for the gene
-	my ($ref1, $ref2) = @_;
+	my ($ref1, $ref2, $individual_term) = @_;
 
 	my @diseases = @{$ref1};
-
 	my @hpo_ids  = @{$ref2};
 
 
@@ -903,17 +911,17 @@ sub score_genes{
 
 	my %phenotype_related_genes_hash; # key = gene name, value = hpo_id 
 
-		foreach (@hpo_ids)
-		{
-			my $hpo_id = $_;
-			if (not exists($hpo_id_to_gene_hash{$hpo_id})){
-				next;
-			}
-			my @gene_array = split(",", $hpo_id_to_gene_hash{$hpo_id});	
-			foreach (@gene_array) {
-				$phenotype_related_genes_hash{$_} = $hpo_id;
-			}
+	foreach (@hpo_ids)
+	{
+		my $hpo_id = $_;
+		if (not exists($hpo_id_to_gene_hash{$hpo_id})){
+			next;
 		}
+		my @gene_array = split(",", $hpo_id_to_gene_hash{$hpo_id});	
+		foreach (@gene_array) {
+			$phenotype_related_genes_hash{$_} = $hpo_id;
+		}
+	}
 
 	my %item=();
 
@@ -941,7 +949,7 @@ sub score_genes{
 			push(@addon_disease_gene_score, <ADDON>);
 			@addon_disease_gene_score = map {s/[\n\r]+//g;$_; } @addon_disease_gene_score;
 			close(ADDON);
-			print STDERR "NOTICE: The ${path}/$each_file is used as addons!!!\n";
+			print STDERR "$individual_term: The ${path}/$each_file is used as addons!!!\n";
 		}
 		push (@disease_gene_score,@addon_disease_gene_score);
 	}
@@ -1034,7 +1042,7 @@ sub score_genes{
 
 	my @value_array;
 
-	print STDERR "NOTICE: The gene score process has been done!!\n";
+	print STDERR "$individual_term: The gene score process has been done!!\n";
 
 	return (\%item,$count);
 }
