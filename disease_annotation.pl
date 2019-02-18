@@ -1773,8 +1773,8 @@ sub printHeader{
         --clinvar_weight                the weight for gene disease pairs in Clinvar
         --omim_weight                   the weight for gene disease pairs in OMIM
         --orphanet_weight               the weight for gene disease pairs in Orphanet    
-        --nproc                         max number of parallel processes requested by the user. The code uses as much parallelism as allowed by the data.
-				                                Processes are used, not threads             
+        --nproc                         number of parallel processes (forks) requested by the user. The code uses as much parallelism as 
+                                        allowed by the data. Setting this to 0 or 1 means no child processes are created.           
   
 Function:       
           automatically expand the input disease term to a list of professional disease names, 
