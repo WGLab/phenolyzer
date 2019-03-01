@@ -168,10 +168,10 @@ $GENE_WEIGHT{"ORPHANET"}     = 1.0  unless (defined $GENE_WEIGHT{"ORPHANET"} );
 $GENE_WEIGHT{"HPO_PHENOTYPE_GENE"}     = 1.0  unless (defined $GENE_WEIGHT{"HPO_PHENOTYPE_GENE"} );
 $addon_gene_disease_weight   = 1.0  unless (defined $addon_gene_disease_weight);
 $addon_gene_gene_weight      = 1.0  unless (defined $addon_gene_gene_weight);
-$user_nproc                  = 0    unless (defined $user_nproc);
+$user_nproc                  = 1    unless (defined $user_nproc);
 
 # Test input values
-$user_nproc >= 0 or pod2usage ("       ERROR: number of requested processes is negative");
+$user_nproc >= 1 or pod2usage ("       ERROR: number of requested processes is zero or negative");
 
 ##
 ######################################################################
@@ -338,19 +338,7 @@ sub process_terms
 	my @disease_input = @_;
 # Process each individual term first
 # Determine number of parallel subprocesses
-  my $child_procs = $user_nproc;
-	my $n_procs = $child_procs;
-# 0 and 1 correspond to forking 0 subprocesses.
-  if ($child_procs <= 1) {
-		$child_procs = 0;
-		$n_procs = 1;
-	}
-# Otherwise, set the number to number of inputs, at most
-	elsif ($child_procs > @disease_input) {
-		$child_procs = @disease_input;
-		$n_procs = $child_procs;
-	}
-
+	my $n_procs = $user_nproc <= @disease_input ? $user_nproc : @disease_input;
 	print STDERR "NOTICE: Processing $n_procs phenotypes at a time!\n";
 	if ($n_procs > 1) {
 # Run in parallel after loading ForkManager. Test if the module is available.
@@ -358,7 +346,7 @@ sub process_terms
 		if ($@) {
 			pod2usage ("Error in argument: you need to install Parallel::ForkManager module before parallelizing with the -nproc argument");
 		}
-		my $parallel_mngr = Parallel::ForkManager->new($child_procs);
+		my $parallel_mngr = Parallel::ForkManager->new($n_procs);
 	  for my $individual_term(@disease_input) 
 		{
 			$parallel_mngr->start and next;
@@ -1797,7 +1785,7 @@ sub printHeader{
         --omim_weight                   the weight for gene disease pairs in OMIM
         --orphanet_weight               the weight for gene disease pairs in Orphanet    
         --nproc                         number of parallel processes (forks) requested by the user. The code uses as much parallelism as 
-                                        allowed by the data. Setting this to 0 or 1 means no child processes are created.           
+                                        allowed by the data. Setting this to 1 means no child processes are created.           
   
 Function:       
           automatically expand the input disease term to a list of professional disease names, 
