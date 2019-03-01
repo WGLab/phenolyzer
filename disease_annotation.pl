@@ -12,7 +12,10 @@ use Cwd;
 use File::Basename;
 use Bio::OntologyIO;
 use Graph::Directed;
-use Parallel::ForkManager;
+
+## LIBRARIES CONDITIONALLY LOADED
+## Shown here for documentation purposes. 
+# Parallel::ForkManager;
 
 ##
 ######################################################################
@@ -330,18 +333,15 @@ sub process_individual_term
 	}
 }
 
-# The main sub to output prioritized genelist
-sub output_gene_prioritization 
+sub process_terms
 {
-	my @disease_input = split (qr/[^ _,\w\.\-'\(\)\[\]\{\}:]+/,lc $query_diseases);		#'
-	@disease_input <=1000 or die "Too many terms!!! No more than 1000 terms are accepted!!!";
-
+	my @disease_input = @_;
 # Process each individual term first
 # Determine number of parallel subprocesses
-    my $child_procs = $user_nproc;
+  my $child_procs = $user_nproc;
 	my $n_procs = $child_procs;
 # 0 and 1 correspond to forking 0 subprocesses.
-    if ($child_procs <= 1) {
+  if ($child_procs <= 1) {
 		$child_procs = 0;
 		$n_procs = 1;
 	}
@@ -352,14 +352,37 @@ sub output_gene_prioritization
 	}
 
 	print STDERR "NOTICE: Processing $n_procs phenotypes at a time!\n";
-	my $parallel_mngr = Parallel::ForkManager->new($child_procs);
-	for my $individual_term(@disease_input) 
-	{
-		$parallel_mngr->start and next;
-		process_individual_term($individual_term);
-		$parallel_mngr->finish;
+	if ($n_procs > 1) {
+# Run in parallel after loading ForkManager. Test if the module is available.
+		eval {require Parallel::ForkManager};
+		if ($@) {
+			pod2usage ("Error in argument: you need to install Parallel::ForkManager module before parallelizing with the -nproc argument");
+		}
+		my $parallel_mngr = Parallel::ForkManager->new($child_procs);
+	  for my $individual_term(@disease_input) 
+		{
+			$parallel_mngr->start and next;
+			process_individual_term($individual_term);
+			$parallel_mngr->finish;
+		}
+		$parallel_mngr->wait_all_children();
+	} else {
+# Process one input at a time.
+		for my $individual_term(@disease_input) 
+		{
+			process_individual_term($individual_term);
+		}
 	}
-	$parallel_mngr->wait_all_children();
+}
+
+# The main sub to output prioritized genelist
+sub output_gene_prioritization 
+{
+	my @disease_input = split (qr/[^ _,\w\.\-'\(\)\[\]\{\}:]+/,lc $query_diseases);		#'
+	@disease_input <=1000 or die "Too many terms!!! No more than 1000 terms are accepted!!!";
+
+# Process individual terms
+  process_terms(@disease_input);
 
 # Finish processing individual terms
 # Merge the gene_score files
