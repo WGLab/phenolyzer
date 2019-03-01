@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 ######################################################################
-## LIBRAIRIES
+## LIBRARIES
 
 use strict;
 use warnings;
@@ -12,6 +12,10 @@ use Cwd;
 use File::Basename;
 use Bio::OntologyIO;
 use Graph::Directed;
+
+## LIBRARIES CONDITIONALLY LOADED
+## Shown here for documentation purposes. 
+# Parallel::ForkManager;
 
 ##
 ######################################################################
@@ -50,7 +54,8 @@ our (
 our (
 		$out,
 		$database_directory,
-		$if_logistic_regression
+		$if_logistic_regression,
+		$user_nproc
 	);
 
 # Declare weight options
@@ -130,6 +135,7 @@ our  (
 				'omim_weight=s'         =>\$GENE_WEIGHT{"OMIM"},
 				'orphanet_weight=s'     =>\$GENE_WEIGHT{"ORPHANET"},
 				'wordcloud'             =>\$if_wordcloud,
+				'nproc=i'               =>\$user_nproc
 				) or pod2usage ();
 
 # Launch help or man
@@ -162,6 +168,10 @@ $GENE_WEIGHT{"ORPHANET"}     = 1.0  unless (defined $GENE_WEIGHT{"ORPHANET"} );
 $GENE_WEIGHT{"HPO_PHENOTYPE_GENE"}     = 1.0  unless (defined $GENE_WEIGHT{"HPO_PHENOTYPE_GENE"} );
 $addon_gene_disease_weight   = 1.0  unless (defined $addon_gene_disease_weight);
 $addon_gene_gene_weight      = 1.0  unless (defined $addon_gene_gene_weight);
+$user_nproc                  = 1    unless (defined $user_nproc);
+
+# Test input values
+$user_nproc >= 1 or pod2usage ("       ERROR: number of requested processes is zero or negative");
 
 ##
 ######################################################################
@@ -188,146 +198,179 @@ sub print_array
 	}
 }
 
+sub process_individual_term
+{
+	my $individual_term = $_[0];
+	my $raw_individual_term = $individual_term;
+
+	if ($individual_term =~ /^\W*$/){ return; } # next if there is no word 
+		$individual_term=TextStandardize($individual_term);
+# For a normal term, disease name extension is needed
+	if ($individual_term !~/^all([\s_\-]diseases?)?$/i) {
+# Expand the disease term and save them into files
+# @diseases are lower case disease array, %disease_hash keeps the original disease name
+		my $diseases_reference = disease_extension($individual_term);
+		my %disease_hash = %$diseases_reference;
+		my @diseases;
+		for my $disease_key (keys %disease_hash) {
+			my  @records =split("\n", $disease_hash{$disease_key});
+			for my $record (@records) {
+				return if(not $record);
+				my ($disease_line, $source) = split("\t", $record);
+				my @disease_terms = split(";", $disease_line);
+				for  (@disease_terms){
+					my $each = $_;
+					$each=TextStandardize($each);
+					my $change2= $each =~ s/\btype //ig;
+					if($change2){
+						push @diseases,$each;
+						$disease_hash{$disease_key} = $each.';'.$disease_hash{$disease_key};
+					}
+				}
+				push @diseases,@disease_terms;
+			}
+		}
+		my ($hash, %disease_score_hash, @hpo_ids);
+		if ($is_phenotype) {
+			($hash, @hpo_ids) = phenotype_extension($individual_term);
+			%disease_score_hash = %$hash;
+			for (@diseases) {
+				my $disease_key = lc $_;
+				delete $disease_score_hash{$disease_key} if($disease_score_hash{$disease_key});
+				$disease_key = TextStandardize($disease_key);
+				delete $disease_score_hash{$disease_key} if($disease_score_hash{$disease_key});
+			}
+			for (keys %disease_score_hash) {
+				my $disease_score = join ("\t", ($disease_score_hash{$_}[1], $disease_score_hash{$_}[0]) );
+				push (@diseases, lc $disease_score);
+			}
+		}
+
+#The non-word characters are changed into '_'
+		$individual_term=~s/\W+/_/g;
+		if(@hpo_ids) {
+			open(OUT_PHENOTYPE, ">$out"."_$individual_term"."_hpo") or die;
+			print OUT_PHENOTYPE $_."\n" for @hpo_ids;
+			close(OUT_PHENOTYPE);
+		}
+
+		open (OUT_DISEASE,">$out"."_$individual_term"."_diseases") or die;
+		for (keys %disease_hash) {
+			my @lines=split("\n", $disease_hash{$_});
+			for my $line (@lines) {
+				return if(not $line);
+				my @words = split("\t", $line);
+				my @diseases = split(";", $words[0]);
+				@diseases = Unique(@diseases);
+				my $disease_line = join(";",@diseases);
+				my $out_line = join("\t",($disease_line,$words[1]));
+				print OUT_DISEASE $out_line."\n";
+			}
+		}
+
+		if ($is_phenotype) {
+			print OUT_DISEASE join ("\t", ($disease_score_hash{$_}[1], $disease_score_hash{$_}[0]) )."\n"
+				for (keys %disease_score_hash);
+		}
+		close (OUT_DISEASE);
+
+		generate_wordcloud($individual_term, \%disease_hash, \%disease_score_hash) if($if_wordcloud);
+		if(@diseases==0){
+			print STDERR "NOTICE: The input term -----$individual_term------ has no corresponding names in the disease database, please check your spelling!!!\n";
+			return;
+		}
+
+		my $i=0;
+#Output the gene_score files
+# $item = {  $gene => [$score, $information_string] }
+# $information_string = "ID (SOURCE)	DISEASE_NAME RAW_SCORE
+		@diseases = map {
+			my @words = split("\t");
+			$words[0] = TextStandardize($words[0]);
+			$words[0] = lc $words[0];
+			join("\t", @words);
+		} @diseases;
+
+		@diseases = Unique(@diseases);
+		my ($item,$count) = score_genes (\@diseases, \@hpo_ids, $raw_individual_term);
+		my %output=();
+		@{$output{$_}} = @{$item->{$_}} for keys %$item;
+
+		if($count==0){
+			print STDERR "NOTICE: The input term -----$individual_term------ has no results!!!\n";
+			return;
+		}
+
+		open( OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
+		push @out_gene_scores_file, "$out"."_$individual_term"."_gene_scores";
+		print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
+
+		for my $gene (sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
+#The probability of the gene when the disease is given
+			my $p=$output{$gene}[0]/$count;
+			print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
+		}
+		print STDERR "$raw_individual_term: -------------------------------------------------- \n";
+		close (OUT_GENE_SCORE);
+	}
+# For the term 'all disease(s)'(case insensitive)
+	else {
+		$individual_term=~s/\W+/_/g;
+		open(OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
+		push @out_gene_scores_file, "$out"."_$individual_term"."_gene_scores";
+		my ($item,$count)=score_all_genes();
+		my %output=();
+		@{$output{$_}} = @{$item->{$_}} for keys %$item;
+
+		print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
+		for my $gene(sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
+#The probability of the gene when the disease is given
+			my $p=$output{$gene}[0]/$count;
+			print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
+		}
+		print STDERR "------------------------------------------------------------------------ \n";
+		close (OUT_GENE_SCORE);
+	}
+}
+
+sub process_terms
+{
+	my @disease_input = @_;
+# Process each individual term first
+# Determine number of parallel subprocesses
+	my $n_procs = $user_nproc <= @disease_input ? $user_nproc : @disease_input;
+	print STDERR "NOTICE: Processing $n_procs phenotypes at a time!\n";
+	if ($n_procs > 1) {
+# Run in parallel after loading ForkManager. Test if the module is available.
+		eval {require Parallel::ForkManager};
+		if ($@) {
+			pod2usage ("Error in argument: you need to install Parallel::ForkManager module before parallelizing with the -nproc argument");
+		}
+		my $parallel_mngr = Parallel::ForkManager->new($n_procs);
+	  for my $individual_term(@disease_input) 
+		{
+			$parallel_mngr->start and next;
+			process_individual_term($individual_term);
+			$parallel_mngr->finish;
+		}
+		$parallel_mngr->wait_all_children();
+	} else {
+# Process one input at a time.
+		for my $individual_term(@disease_input) 
+		{
+			process_individual_term($individual_term);
+		}
+	}
+}
+
 # The main sub to output prioritized genelist
 sub output_gene_prioritization 
 {
 	my @disease_input = split (qr/[^ _,\w\.\-'\(\)\[\]\{\}:]+/,lc $query_diseases);		#'
 	@disease_input <=1000 or die "Too many terms!!! No more than 1000 terms are accepted!!!";
 
-# Process each individual term first
-	for my $individual_term(@disease_input) 
-	{
-		if ($individual_term =~ /^\W*$/){ next; } # next if there is no word 
-			$individual_term=TextStandardize($individual_term);
-
-
-# For a normal term, disease name extension is needed
-		if ($individual_term !~/^all([\s_\-]diseases?)?$/i) {
-# Expand the disease term and save them into files
-# @diseases are lower case disease array, %disease_hash keeps the original disease name
-			my $diseases_reference = disease_extension($individual_term);
-			my %disease_hash = %$diseases_reference;
-			my @diseases;
-			for my $disease_key (keys %disease_hash) {
-				my  @records =split("\n", $disease_hash{$disease_key});
-				for my $record (@records) {
-					next if(not $record);
-					my ($disease_line, $source) = split("\t", $record);
-					my @disease_terms = split(";", $disease_line);
-					for  (@disease_terms){
-						my $each = $_;
-						$each=TextStandardize($each);
-						my $change2= $each =~ s/\btype //ig;
-						if($change2){
-							push @diseases,$each;
-							$disease_hash{$disease_key} = $each.';'.$disease_hash{$disease_key};
-						}
-					}
-					push @diseases,@disease_terms;
-				}
-			}
-			my ($hash, %disease_score_hash, @hpo_ids);
-			if ($is_phenotype) {
-				($hash, @hpo_ids) = phenotype_extension($individual_term);
-				%disease_score_hash = %$hash;
-				for (@diseases) {
-					my $disease_key = lc $_;
-					delete $disease_score_hash{$disease_key} if($disease_score_hash{$disease_key});
-					$disease_key = TextStandardize($disease_key);
-					delete $disease_score_hash{$disease_key} if($disease_score_hash{$disease_key});
-				}
-				for (keys %disease_score_hash) {
-					my $disease_score = join ("\t", ($disease_score_hash{$_}[1], $disease_score_hash{$_}[0]) );
-					push (@diseases, lc $disease_score);
-				}
-			}
-
-#The non-word characters are changed into '_'
-			$individual_term=~s/\W+/_/g;
-			if(@hpo_ids) {
-				open(OUT_PHENOTYPE, ">$out"."_$individual_term"."_hpo") or die;
-				print OUT_PHENOTYPE $_."\n" for @hpo_ids;
-				close(OUT_PHENOTYPE);
-			}
-
-			open (OUT_DISEASE,">$out"."_$individual_term"."_diseases") or die;
-			for (keys %disease_hash) {
-				my @lines=split("\n", $disease_hash{$_});
-				for my $line (@lines) {
-					next if(not $line);
-					my @words = split("\t", $line);
-					my @diseases = split(";", $words[0]);
-					@diseases = Unique(@diseases);
-					my $disease_line = join(";",@diseases);
-					my $out_line = join("\t",($disease_line,$words[1]));
-					print OUT_DISEASE $out_line."\n";
-				}
-			}
-
-			if ($is_phenotype) {
-				print OUT_DISEASE join ("\t", ($disease_score_hash{$_}[1], $disease_score_hash{$_}[0]) )."\n"
-					for (keys %disease_score_hash);
-			}
-			close (OUT_DISEASE);
-
-			generate_wordcloud($individual_term, \%disease_hash, \%disease_score_hash) if($if_wordcloud);
-			if(@diseases==0){
-				print STDERR "NOTICE: The input term -----$individual_term------ has no corresponding names in the disease database, please check your spelling!!!\n";
-				next;
-			}
-
-			my $i=0;
-#Output the gene_score files
-# $item = {  $gene => [$score, $information_string] }
-# $information_string = "ID (SOURCE)	DISEASE_NAME RAW_SCORE
-			@diseases = map {
-				my @words = split("\t");
-				$words[0] = TextStandardize($words[0]);
-				$words[0] = lc $words[0];
-				join("\t", @words);
-			} @diseases;
-
-			@diseases = Unique(@diseases);
-			my ($item,$count) = score_genes (\@diseases, \@hpo_ids);
-			my %output=();
-			@{$output{$_}} = @{$item->{$_}} for keys %$item;
-
-			if($count==0){
-				print STDERR "NOTICE: The input term -----$individual_term------ has no results!!!\n";
-				next;
-			}
-
-			open( OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
-			push @out_gene_scores_file, "$out"."_$individual_term"."_gene_scores";
-			print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
-
-			for my $gene (sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
-#The probability of the gene when the disease is given
-				my $p=$output{$gene}[0]/$count;
-				print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
-			}
-			print STDERR "------------------------------------------------------------------------ \n";
-			close (OUT_GENE_SCORE);
-		}
-# For the term 'all disease(s)'(case insensitive)
-		else {
-			$individual_term=~s/\W+/_/g;
-			open(OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
-			push @out_gene_scores_file, "$out"."_$individual_term"."_gene_scores";
-			my ($item,$count)=score_all_genes();
-			my %output=();
-			@{$output{$_}} = @{$item->{$_}} for keys %$item;
-
-			print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
-			for my $gene(sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
-#The probability of the gene when the disease is given
-				my $p=$output{$gene}[0]/$count;
-				print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
-			}
-			print STDERR "------------------------------------------------------------------------ \n";
-			close (OUT_GENE_SCORE);
-		}
-	}
+# Process individual terms
+  process_terms(@disease_input);
 
 # Finish processing individual terms
 # Merge the gene_score files
@@ -522,10 +565,10 @@ sub output_gene_prioritization
 
 # Input some disease terms and return all its extended diseases
 sub disease_extension{
-	print STDERR "NOTICE: The journey to find all related disease names of your query starts!\n";
 	@_==1 or die "The input should be only one string!";
 
 	my $input_term=$_[0];
+	print STDERR "$input_term: The journey to find all related disease names of your query starts!\n";
 	$input_term =~ s/[\W_]+/ /g;
 
 	-f "${path}/$disease_count_file" or die "Could not open ${path}/$disease_count_file";
@@ -539,8 +582,8 @@ sub disease_extension{
 	my @disease_occur=<DISEASE>;
 	my @disease_ctd=<CTD_DISEASE>;
 
-	print STDERR "NOTICE: The item -----$input_term----- was queried in the databases!! \n";
-	print STDERR "NOTICE: The exact match (case non-sensitive) was used for disease/phenotype name match!! \n"
+	print STDERR "$input_term: The item was queried in the databases!! \n";
+	print STDERR "$input_term: The exact match (case non-sensitive) was used for disease/phenotype name match!! \n"
 		if($if_exact_match);
 
 	for (<OMIM_DISEASE_ID>) {
@@ -566,7 +609,7 @@ sub disease_extension{
 		}
 	}
 
-	print STDERR "NOTICE: The word matching in OMIM disease synonyms file has been done!! \n";
+	print STDERR "$input_term: The word matching in OMIM disease synonyms file has been done!! \n";
 
 	$input_term = lc $input_term;
 #Query disease in the compiled list from gene_disease relations
@@ -611,7 +654,7 @@ sub disease_extension{
 	$disease_extend{$_} .= "\tGENE_DISEASE\n" for keys %disease_extend;
 	my @tree_number=();
 
-	print STDERR "NOTICE: The word matching search in the compiled disease databases for gene_disease relations has been done!\n";
+	print STDERR "$input_term: The word matching search in the compiled disease databases for gene_disease relations has been done!\n";
 
 	for my $term(@disease_ctd) {
 		chomp($term);
@@ -646,7 +689,7 @@ sub disease_extension{
 		}
 	}
 
-	print STDERR "NOTICE: The word matching search in the CTD (Medic) databases has been done! \n";
+	print STDERR "$input_term: The word matching search in the CTD (Medic) databases has been done! \n";
 
 #Second find all children of the terms found in the first round
 	for my $term(@disease_ctd) {
@@ -666,7 +709,7 @@ sub disease_extension{
 		}
 	}
 
-	print STDERR "NOTICE: The descendants search in the CTD (Medic) databases has been done! \n";
+	print STDERR "$input_term: The descendants search in the CTD (Medic) databases has been done! \n";
 
 	if (-f "$work_path/ontology_search.pl") {
 		print STDERR "ERROR: The doio.obo file couldn't be found!!! The disease_ontology search wouldn't be conducted properly!! \n"
@@ -688,16 +731,14 @@ sub disease_extension{
 			$disease_extend{$disease_key} .= join(';', ($disease, @synonyms));
 			$disease_extend{$disease_key} .= "\tDISEASE_ONTOLOGY\n";
 		}
-		print STDERR "NOTICE: The descendants search in disease_ontology (DO) database has been done! \n";
+		print STDERR "$input_term: The descendants search in disease_ontology (DO) database has been done! \n";
 	} else {
-		print STDERR "NOTICE: The $work_path/ontology_search.pl file couldn't be found, so the disease_ontology (DO) database won't be used! \n";
+		print STDERR "$input_term: The $work_path/ontology_search.pl file couldn't be found, so the disease_ontology (DO) database won't be used! \n";
 	}
 	return \%disease_extend;
 }
 
 sub phenotype_extension{
-	print STDERR "NOTICE: The phenotype search and annotation process starts!! \n";
-
 	@_==1 or die "ERROR: Only one phenotype term is accepted!!! ";
 
 	my %hpo_score_system = (
@@ -713,6 +754,8 @@ sub phenotype_extension{
 			);
 
 	my $input_term = $_[0];
+	my $raw_input_term = $input_term;
+	print STDERR "$raw_input_term: The phenotype search and annotation process starts!! \n";
 	$input_term =~s/[\W_]+/ /g;
 	my %disease_hash;
 	my @hpo_ids;
@@ -728,9 +771,9 @@ sub phenotype_extension{
 		open (OMIM_DESCRIPTION, "$path/$omim_description_file") or die "ERROR: Can't open $omim_description_file!!! \n";
 
 		my $line = `perl $work_path/ontology_search.pl -o $path/hpo.obo -format id -p '$input_term' `;
-		print STDERR "NOTICE: executing ontology_search.pl to expand phenotype terms\n";
+		print STDERR "$raw_input_term: executing ontology_search.pl to expand phenotype terms\n";
 		@hpo_ids = split("\n", $line);
-		print STDERR "NTOICE: Found ", scalar (@hpo_ids), " additional phenotype terms\n";
+		print STDERR "$raw_input_term: Found ", scalar (@hpo_ids), " additional phenotype terms\n";
 		
 		my @hpo_annotation = <HPO_ANNOTATION>;
 		shift @hpo_annotation;
@@ -860,13 +903,12 @@ sub get_hpo_id_to_name_hash
 
 sub score_genes{
 
-	@_ == 2 or die "input should contain references to two arrays!";
+	@_ == 3 or die "input should contain references to two arrays and a reference input term!";
 
 # item is a hash, keys are gene names, values are an array reference and a the total score for the gene
-	my ($ref1, $ref2) = @_;
+	my ($ref1, $ref2, $individual_term) = @_;
 
 	my @diseases = @{$ref1};
-
 	my @hpo_ids  = @{$ref2};
 
 
@@ -880,17 +922,17 @@ sub score_genes{
 
 	my %phenotype_related_genes_hash; # key = gene name, value = hpo_id 
 
-		foreach (@hpo_ids)
-		{
-			my $hpo_id = $_;
-			if (not exists($hpo_id_to_gene_hash{$hpo_id})){
-				next;
-			}
-			my @gene_array = split(",", $hpo_id_to_gene_hash{$hpo_id});	
-			foreach (@gene_array) {
-				$phenotype_related_genes_hash{$_} = $hpo_id;
-			}
+	foreach (@hpo_ids)
+	{
+		my $hpo_id = $_;
+		if (not exists($hpo_id_to_gene_hash{$hpo_id})){
+			next;
 		}
+		my @gene_array = split(",", $hpo_id_to_gene_hash{$hpo_id});	
+		foreach (@gene_array) {
+			$phenotype_related_genes_hash{$_} = $hpo_id;
+		}
+	}
 
 	my %item=();
 
@@ -918,7 +960,7 @@ sub score_genes{
 			push(@addon_disease_gene_score, <ADDON>);
 			@addon_disease_gene_score = map {s/[\n\r]+//g;$_; } @addon_disease_gene_score;
 			close(ADDON);
-			print STDERR "NOTICE: The ${path}/$each_file is used as addons!!!\n";
+			print STDERR "$individual_term: The ${path}/$each_file is used as addons!!!\n";
 		}
 		push (@disease_gene_score,@addon_disease_gene_score);
 	}
@@ -1011,7 +1053,7 @@ sub score_genes{
 
 	my @value_array;
 
-	print STDERR "NOTICE: The gene score process has been done!!\n";
+	print STDERR "$individual_term: The gene score process has been done!!\n";
 
 	return (\%item,$count);
 }
@@ -1679,7 +1721,7 @@ sub Unique {
 
 sub TextStandardize {
 	my $word=$_[0];
-
+	
 	$word=~s/^\W*(.*?)\W*$/$1/;
 	$word=~s/'s\b//g;		#'
 	$word=~s/\W+/ /g;
@@ -1742,7 +1784,8 @@ sub printHeader{
         --clinvar_weight                the weight for gene disease pairs in Clinvar
         --omim_weight                   the weight for gene disease pairs in OMIM
         --orphanet_weight               the weight for gene disease pairs in Orphanet    
-             
+        --nproc                         number of parallel processes (forks) requested by the user. The code uses as much parallelism as 
+                                        allowed by the data. Setting this to 1 means no child processes are created.           
   
 Function:       
           automatically expand the input disease term to a list of professional disease names, 

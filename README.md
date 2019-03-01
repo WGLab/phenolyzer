@@ -91,6 +91,11 @@ perl calculate_score.pl <phenolyzer_gene_list> <wannovar_genome_summary.txt>
 perl disease_annotation.pl "alzheimer;brain" -p -ph -logistic -out out/sd
 ```
 
+- Parallelize phenotype processing to speed up calculations (fork subprocesses)
+```
+perl disease_annotation.pl "alzheimer;brain" -p -ph -logistic -nproc 2
+```
+
 ## License Agreement
 By using the software, you acknowledge that you agree to the terms below:
 
