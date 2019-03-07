@@ -12,6 +12,7 @@ use Cwd;
 use File::Basename;
 use Bio::OntologyIO;
 use Graph::Directed;
+use File::Copy;
 
 ## LIBRARIES CONDITIONALLY LOADED
 ## Shown here for documentation purposes. 
@@ -41,7 +42,8 @@ our (
 		$if_exact_match,
 		$prediction,
 		$is_phenotype,
-		$if_wordcloud
+		$if_wordcloud,
+		$if_avoid_precalc
 	);
 
 # Declare test options
@@ -54,6 +56,7 @@ our (
 our (
 		$out,
 		$database_directory,
+		$precalc_db_directory,
 		$if_logistic_regression,
 		$user_nproc
 	);
@@ -110,6 +113,8 @@ our  (
 				'man|m'                 =>\$man,
 				'file|f'                =>\$if_file,
 				'directory|d=s'         =>\$database_directory,
+				# 'precalc_dir=s'         =>\$precalc_db_directory, This options is deactivated. Shouldn't be used.
+				'avoid_precalc'         =>\$if_avoid_precalc,
 				'work_directory|w=s'    =>\$work_path,
 				'out=s'                 =>\$out,
 				'prediction|p'          =>\$prediction,
@@ -333,10 +338,68 @@ sub process_individual_term
 	}
 }
 
+sub get_terms_precalc_db
+{
+	open(DB_MASTER, "$precalc_db_directory/hpos.txt") or die "Can't open $precalc_db_directory/hpos.txt !";
+	chomp(my @lines = <DB_MASTER>);
+	close(DB_MASTER);
+	return @lines
+}
+
 sub process_terms
 {
-	my @disease_input = @_;
-# Process each individual term first
+	my @disease_input = sort @_;
+## Process each individual term
+# Find pre-processed terms from the input
+	my @hpo_list = grep /hp:[0-9]*/, @disease_input;
+	# Search HPO DB only if there are HPO inputs
+	if (!$if_avoid_precalc && @hpo_list > 0) {
+		my @found_list;
+		# Read master table
+		my @db_terms = get_terms_precalc_db();
+		my $i = 0;
+		for my $hpo(@hpo_list) {
+			(my $num = $hpo) =~ s/hp:0*//;
+			# This assumes the HPO inputs are ordered and so are the DB terms
+			for(; $i < @db_terms; $i++) {
+				if( $num == $db_terms[$i] ){
+					push (@found_list, $hpo);
+					$i++;
+					last;
+				} elsif($num < $db_terms[$i]) {
+					last;
+				}
+			}
+		}
+		# Copy preprocessed terms to directory
+		for my $hpo(@found_list) {
+			print("$hpo: Using HPO expansion found in pre-expanded database ...\n");
+			(my $mod_hpo = $hpo) =~ s/:/_/;
+			my $basename = "precalc_db_$mod_hpo";
+			my $zipfile = "$precalc_db_directory/db/$basename";
+			my $tempdir = "$precalc_db_directory/temp";
+			my $dst = "$out"."_$mod_hpo";
+			foreach (qw(_hpo _diseases _gene_scores)) {
+				# Extract from DB
+				if (system("unzip -q $zipfile $basename$_ -d $tempdir")) {
+					die "Failed unzipping file from DB: $zipfile/$basename$_";
+				}
+				if (system("mv $tempdir/$basename$_ $dst$_")) {
+					die "Failed moving file from temp DB: $tempdir/$basename$_ -> $dst$_";
+				}
+			}
+		}
+		# Continue with remaining terms
+		# @disease_input = @remaining_list;
+
+		my %temp;
+		@temp{ @disease_input } = ();
+		delete @temp{ @found_list };
+		@disease_input = keys %temp;
+		if (@disease_input == 0) {
+			return;
+		}
+	}
 # Determine number of parallel subprocesses
 	my $n_procs = $user_nproc <= @disease_input ? $user_nproc : @disease_input;
 	print STDERR "NOTICE: Processing $n_procs phenotypes at a time!\n";
@@ -347,7 +410,7 @@ sub process_terms
 			pod2usage ("Error in argument: you need to install Parallel::ForkManager module before parallelizing with the -nproc argument");
 		}
 		my $parallel_mngr = Parallel::ForkManager->new($n_procs);
-	  for my $individual_term(@disease_input) 
+		for my $individual_term(@disease_input)
 		{
 			$parallel_mngr->start and next;
 			process_individual_term($individual_term);
@@ -1251,6 +1314,12 @@ sub setup_variables{
 	$database_directory and $path=$database_directory;
 	$path =~s/\/$//;
 	$work_path ||= $dirname;
+
+	if (defined $precalc_db_directory) {
+		# pass
+	} else {
+		$precalc_db_directory = "$dirname/lib/precalculated_expansions";
+	}
 	
 	if (defined $out) {
 		$out =~ s/[\\\/]*$//;		#remove trailing "/" or "\" if there are any
@@ -1785,7 +1854,8 @@ sub printHeader{
         --omim_weight                   the weight for gene disease pairs in OMIM
         --orphanet_weight               the weight for gene disease pairs in Orphanet    
         --nproc                         number of parallel processes (forks) requested by the user. The code uses as much parallelism as 
-                                        allowed by the data. Setting this to 1 means no child processes are created.           
+                                        allowed by the data. Setting this to 1 means no child processes are created.
+		--avoid_precalc                 avoid using HPO phenotypes expansion found in the precalculated database
   
 Function:       
           automatically expand the input disease term to a list of professional disease names, 
