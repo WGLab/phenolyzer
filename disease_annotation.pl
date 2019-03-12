@@ -307,7 +307,6 @@ sub process_individual_term
 		}
 
 		open( OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
-		push @out_gene_scores_file, "$out"."_$individual_term"."_gene_scores";
 		print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
 
 		for my $gene (sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
@@ -322,7 +321,6 @@ sub process_individual_term
 	else {
 		$individual_term=~s/\W+/_/g;
 		open(OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
-		push @out_gene_scores_file, "$out"."_$individual_term"."_gene_scores";
 		my ($item,$count)=score_all_genes();
 		my %output=();
 		@{$output{$_}} = @{$item->{$_}} for keys %$item;
@@ -388,6 +386,8 @@ sub process_terms
 					die "Failed moving file from temp DB: $tempdir/$basename$_ -> $dst$_";
 				}
 			}
+			# Push to list of gene_scores files
+			push @out_gene_scores_file, "$dst"."_gene_scores";
 		}
 		# Continue with remaining terms
 		# @disease_input = @remaining_list;
@@ -424,6 +424,13 @@ sub process_terms
 			process_individual_term($individual_term);
 		}
 	}
+## Fill @out_gene_scores_file array
+	for my $individual_term(@disease_input) 
+	{
+		(my $individual_term = $individual_term) =~ s/:/_/;
+		my $dst = "$out"."_$individual_term";
+		push @out_gene_scores_file, "$dst"."_gene_scores";
+	}
 }
 
 # The main sub to output prioritized genelist
@@ -433,7 +440,7 @@ sub output_gene_prioritization
 	@disease_input <=1000 or die "Too many terms!!! No more than 1000 terms are accepted!!!";
 
 # Process individual terms
-  process_terms(@disease_input);
+	process_terms(@disease_input);
 
 # Finish processing individual terms
 # Merge the gene_score files
