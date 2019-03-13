@@ -1862,15 +1862,7 @@ sub printHeader{
         --orphanet_weight               the weight for gene disease pairs in Orphanet    
         --nproc                         number of parallel processes (forks) requested by the user. The code uses as much parallelism as 
                                         allowed by the data. Setting this to 1 means no child processes are created.
-<<<<<<< HEAD
-<<<<<<< HEAD
-		--use_precalc                   using HPO phenotypes expansion found in the precalculated database
-=======
 		--use_precalc                   use HPO phenotypes expansion found in the precalculated database
->>>>>>> fix typo
-=======
-		--avoid_precalc                 avoid using HPO phenotypes expansion found in the precalculated database
->>>>>>> Revert "fix typo"
   
 Function:       
           automatically expand the input disease term to a list of professional disease names, 
