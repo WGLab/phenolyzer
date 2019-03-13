@@ -43,7 +43,7 @@ our (
 		$prediction,
 		$is_phenotype,
 		$if_wordcloud,
-		$if_avoid_precalc
+		$if_use_precalc
 	);
 
 # Declare test options
@@ -113,8 +113,7 @@ our  (
 				'man|m'                 =>\$man,
 				'file|f'                =>\$if_file,
 				'directory|d=s'         =>\$database_directory,
-				# 'precalc_dir=s'         =>\$precalc_db_directory, This options is deactivated. Shouldn't be used.
-				'avoid_precalc'         =>\$if_avoid_precalc,
+				'use_precalc'           =>\$if_use_precalc,
 				'work_directory|w=s'    =>\$work_path,
 				'out=s'                 =>\$out,
 				'prediction|p'          =>\$prediction,
@@ -351,7 +350,7 @@ sub process_terms
 # Find pre-processed terms from the input
 	my @hpo_list = grep /hp:[0-9]*/, @disease_input;
 	# Search HPO DB only if there are HPO inputs
-	if (!$if_avoid_precalc && @hpo_list > 0) {
+	if ($if_use_precalc && @hpo_list > 0) {
 		my @found_list;
 		# Read master table
 		my @db_terms = get_terms_precalc_db();
@@ -419,7 +418,7 @@ sub process_terms
 		$parallel_mngr->wait_all_children();
 	} else {
 # Process one input at a time.
-		for my $individual_term(@disease_input) 
+		for my $individual_term(@disease_input)
 		{
 			process_individual_term($individual_term);
 		}
@@ -429,7 +428,9 @@ sub process_terms
 	{
 		(my $individual_term = $individual_term) =~ s/:/_/;
 		my $dst = "$out"."_$individual_term";
-		push @out_gene_scores_file, "$dst"."_gene_scores";
+		if (-f "$dst"."_gene_scores") {
+			push @out_gene_scores_file, "$dst"."_gene_scores";
+		}
 	}
 }
 

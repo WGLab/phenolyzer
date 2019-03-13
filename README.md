@@ -96,6 +96,11 @@ perl disease_annotation.pl "alzheimer;brain" -p -ph -logistic -out out/sd
 perl disease_annotation.pl "alzheimer;brain" -p -ph -logistic -nproc 2
 ```
 
+- Use precalculated HPO term expansion and gene scores to speed up calculation. This requires the `unzip` command to be available in your system. Alzheimer and brain would be processed in parallel and the HPO terms would be pulled from the DB included in phenolyzer. 
+```
+perl disease_annotation.pl "alzheimer;brain;HP:0004322;HP:0002240" -p -ph -logistic -nproc 2 -use_precalc
+```
+
 ## License Agreement
 By using the software, you acknowledge that you agree to the terms below:
 
