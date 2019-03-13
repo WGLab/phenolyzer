@@ -43,7 +43,7 @@ our (
 		$prediction,
 		$is_phenotype,
 		$if_wordcloud,
-		$if_use_precalc
+		$if_avoid_precalc
 	);
 
 # Declare test options
@@ -113,7 +113,8 @@ our  (
 				'man|m'                 =>\$man,
 				'file|f'                =>\$if_file,
 				'directory|d=s'         =>\$database_directory,
-				'use_precalc'           =>\$if_use_precalc,
+				# 'precalc_dir=s'         =>\$precalc_db_directory, This options is deactivated. Shouldn't be used.
+				'avoid_precalc'         =>\$if_avoid_precalc,
 				'work_directory|w=s'    =>\$work_path,
 				'out=s'                 =>\$out,
 				'prediction|p'          =>\$prediction,
@@ -350,7 +351,7 @@ sub process_terms
 # Find pre-processed terms from the input
 	my @hpo_list = grep /hp:[0-9]*/, @disease_input;
 	# Search HPO DB only if there are HPO inputs
-	if ($if_use_precalc && @hpo_list > 0) {
+	if (!$if_avoid_precalc && @hpo_list > 0) {
 		my @found_list;
 		# Read master table
 		my @db_terms = get_terms_precalc_db();
@@ -1862,10 +1863,14 @@ sub printHeader{
         --nproc                         number of parallel processes (forks) requested by the user. The code uses as much parallelism as 
                                         allowed by the data. Setting this to 1 means no child processes are created.
 <<<<<<< HEAD
+<<<<<<< HEAD
 		--use_precalc                   using HPO phenotypes expansion found in the precalculated database
 =======
 		--use_precalc                   use HPO phenotypes expansion found in the precalculated database
 >>>>>>> fix typo
+=======
+		--avoid_precalc                 avoid using HPO phenotypes expansion found in the precalculated database
+>>>>>>> Revert "fix typo"
   
 Function:       
           automatically expand the input disease term to a list of professional disease names, 
