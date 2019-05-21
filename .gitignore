@@ -5,3 +5,4 @@ lib/humandb/*
 lib/compiled_database/DB_GENECARDS_GENE_DISEASE_SCORE
 out/*
 !out/README
+.vscode/*
