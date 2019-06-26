@@ -53,32 +53,43 @@ perl disease_annotation.pl --help
 
 - Prioritize 'Alzheimer' genes: 
 ```
-perl disease_annotation.pl alzheimer -p -ph -logistic -out out/alzheimer/out
+perl disease_annotation.pl alzheimer -prediction -phenotype -logistic -out ex1
+```
+
+- Prioritize 'Amyotrophic lateral sclerosis' genes:
+
+```
+disease_annotation.pl "Amyotrophic lateral sclerosis" -prediction -phenotype -logistic -out ex2
 ```
 
 - Use the disease terms in 'example_disease.txt' file (without phenotype expansion):
 ```
-perl disease_annotation.pl example_disease.txt -f -p -logistic -out out/disease/out
+perl disease_annotation.pl example_disease.txt -file -prediction -logistic -out ex3
 ```
 
 - Use the phenotype terms in 'example_phenotype.txt' file:
 ```
-perl disease_annotation.pl example_phenotype.txt -f -p -ph -logistic -out out/phenotype/out
+perl disease_annotation.pl example_phenotype.txt -file -prediction -phenotype -logistic -out ex4
+```
+
+- Use the HPO terms in 'example_hpo.txt' file:
+```
+disease_annotation.pl example_hpo.txt -file -prediction -phenotype -logistic -out ex5 -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25
 ```
 
 - Use the cnv.bed region:
 ```
-perl disease_annotation.pl alzheimer -bedfile cnv.bed -p -ph -logistic -out out/alzheimer_cnv/out
+perl disease_annotation.pl alzheimer -bedfile cnv.bed -p -ph -logistic -out ex6
 ```
 
 - Use the Mentha gene-gene interaction database as Addon
 ```
-perl disease_annotation.pl alzheimer -p -ph -logistic -out out/alzheimer_addon/out -addon_gg DB_MENTHA_GENE_GENE_INTERACTION -addon_gg_weight 0.05
+perl disease_annotation.pl alzheimer -p -ph -logistic -out ex7 -addon_gg DB_MENTHA_GENE_GENE_INTERACTION -addon_gg_weight 0.05
 ```
 
 - To generate exactly the same result as Phenolyzer web server default settings
 ```
-perl disease_annotation.pl alzheimer -p -ph -logistic -out out/alzheimer_addon_all/out -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25
+perl disease_annotation.pl alzheimer -p -ph -logistic -out ex8 -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25
 ```
 
 - Integrate with wANNOVAR output to prioritize variant
@@ -88,7 +99,7 @@ perl calculate_score.pl <phenolyzer_gene_list> <wannovar_genome_summary.txt>
 
 - Input multiple diseases (alzheimer and brain)
 ```
-perl disease_annotation.pl "alzheimer;brain" -p -ph -logistic -out out/sd
+perl disease_annotation.pl "alzheimer;brain" -p -ph -logistic -out ex9
 ```
 
 - Parallelize phenotype processing to speed up calculations (fork subprocesses)
