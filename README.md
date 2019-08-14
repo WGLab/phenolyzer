@@ -74,7 +74,7 @@ perl disease_annotation.pl example_phenotype.txt -file -prediction -phenotype -l
 
 - Use the HPO terms in 'example_hpo.txt' file:
 ```
-disease_annotation.pl example_hpo.txt -file -prediction -phenotype -logistic -out ex5 -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25
+perl disease_annotation.pl example_hpo.txt -file -prediction -phenotype -logistic -out ex5 -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25
 ```
 
 - Use the cnv.bed region:
