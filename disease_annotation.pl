@@ -13,6 +13,7 @@ use File::Basename;
 use Bio::OntologyIO;
 use Graph::Directed;
 use File::Copy;
+use JSON;
 
 ## LIBRARIES CONDITIONALLY LOADED
 ## Shown here for documentation purposes. 
@@ -356,7 +357,7 @@ sub process_terms
 		my @db_terms = get_terms_precalc_db();
 		my $i = 0;
 		for my $hpo(@hpo_list) {
-			(my $num = $hpo) =~ s/hp:0*//;
+			(my $num = $hpo) =~ s/hp:*//;
 			# This assumes the HPO inputs are ordered and so are the DB terms
 			for(; $i < @db_terms; $i++) {
 				if( $num == $db_terms[$i] ){
@@ -368,6 +369,11 @@ sub process_terms
 				}
 			}
 		}
+		my $exe_ext = "";
+		unless ($^O =~ /Unix|Linux|unix|linux/) {
+			$exe_ext = ".exe";
+		}
+
 		# Copy preprocessed terms to directory
 		for my $hpo(@found_list) {
 			print("$hpo: Using HPO expansion found in pre-expanded database ...\n");
@@ -378,8 +384,10 @@ sub process_terms
 			my $dst = "$out"."_$mod_hpo";
 			foreach (qw(_hpo _diseases _gene_scores)) {
 				# Extract from DB
-				if (system("unzip -q $zipfile $basename$_ -d $tempdir")) {
-					die "Failed unzipping file from DB file: $zipfile to $basename$_";
+				if (system("unzip$exe_ext -q $zipfile $basename$_ -d $tempdir")) {
+					if (system("7z$exe_ext -e -y $zipfile $basename$_ -o $tempdir")) {
+						die "Failed unzipping file from DB. Install unzip or 7z command line program. File: $zipfile to $basename$_";
+					}
 				}
 				if (system("mv $tempdir/$basename$_ $dst$_")) {
 					die "Failed moving file from temp DB: $tempdir/$basename$_ -> $dst$_";
@@ -439,7 +447,6 @@ sub output_gene_prioritization
 {
 	my @disease_input = split (qr/[^ _,\w\.\-'\(\)\[\]\{\}:]+/,lc $query_diseases);		#'
 	s/^\s+|\s+// for @disease_input;
-	@disease_input <=1000 or die "Too many terms!!! No more than 1000 terms are accepted!!!";
 
 # Process individual terms
 	process_terms(@disease_input);
@@ -465,7 +472,8 @@ sub output_gene_prioritization
 		printHeader($annotated_seed_fh,0);
 	}
 
-	print MERGE     "Tuple number in the gene_disease databse for all the terms: $count \n";
+	# print MERGE     "{\n\"header\": \"Tuple number in the gene_disease database for all the terms: $count\" \n";
+	print MERGE     "[";
 	print ANNOTATED "Tuple number in the gene_disease databse for all the terms: $count \n" if (%gene_hash and not $prediction);
 
 #Find the max and min score
@@ -489,6 +497,7 @@ sub output_gene_prioritization
 		my @content_lines = split("\n", $content);
 		my @content_lines_output;
 		my @content_lines_next;
+		my %content_json_dict;
 		for(@content_lines) {
 			my @words = split("\t");
 			my $detail_score = $words[3];
@@ -498,7 +507,19 @@ sub output_gene_prioritization
 			my $new_line = join("\t", (@words[0,1,2],$new_score));
 			push (@content_lines_output,$line);
 			push (@content_lines_next,  $new_line);
+			# Build disease hash, organized by origin (OMIM, ORPHANET...: words[0])
+			my ($db, $temp) = split(':', $words[0]);
+			my ($db_ids, $db_note) = $words[0] =~ /(.*) \((.*)\)/; # first group captures all
+			$db_note =~ s/(\r)//g; # remove "\r" if present
+			$words[2] =~ s/(\D+)//g; # remove "hp "
+			if (!exists($content_json_dict{$db})) {
+				$content_json_dict{"$db"}=[];
+			} else {
+				my %temp = (Id => $db_ids, IdNote => $db_note, Condition => $words[1], Hp => $words[2], Score => $detail_score);
+				push(@{ $content_json_dict{$db} }, \%temp);
+			}
 		}
+		my $content_json = encode_json \%content_json_dict;
 		$content = join("\n", @content_lines_output)."\n";
 		my $new_content = join("\n", @content_lines_next)."\n";
 
@@ -508,7 +529,8 @@ sub output_gene_prioritization
 		$item->{$gene}[2] = $normalized_score;
 
 #print out results
-		print MERGE $gene."\t"."ID:$gene_id{$gene} -\t$normalized_score\n".$content."\n";
+		print MERGE "{\"Name\":\"$gene\",\"Id\":\"ID:$gene_id{$gene}\",\"Score\":$normalized_score,\"Diseases\":[$content_json]}";
+		# print MERGE $gene."\t"."ID:$gene_id{$gene} -\t$normalized_score\n".$content."\n";
 		print ANNOTATED $gene."\tID:$gene_id{$gene} ".$gene_hash{$gene}."\t$normalized_score\n".$content."\n"
 			if ($gene_hash{$gene} and not $prediction);
 
