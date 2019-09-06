@@ -584,8 +584,8 @@ sub output_gene_prioritization
 		open (PREDICTED, ">$out.predicted_gene_scores");
 		open (my $final_fh,">$out.final_gene_list");
 		printHeader($final_fh, 1);
-		print  PREDICTED   "Tuple number in the gene_disease databse for all the terms: $count \n";
-		print  ANNOTATED   "Tuple number in the gene_disease databse for all the terms: $count \n"
+		print  PREDICTED   "Tuple number in the gene_disease database for all the terms: $count \n";
+		print  ANNOTATED   "Tuple number in the gene_disease database for all the terms: $count \n"
 			if %gene_hash;
 
 #Find the max and min score
@@ -1522,10 +1522,10 @@ sub predict_genes{
 #                     }
 #               )
 
-	open (HPRD, "$path/$hprd_file") or die "Can't open $path/$hprd_file !";
-	open (BIOSYSTEM, "$path/$biosystem_file") or die "Can't open $path/$biosystem_file !";
-	open (GENE_FAMILY, "$path/$gene_family_file") or die "Can't open $path/$gene_family_file!";
-	open (HTRI, "$path/$htri_file") or die "Can't open $path/$htri_file!";
+	# open (HPRD, "$path/$hprd_file") or die "Can't open $path/$hprd_file !";
+	# open (BIOSYSTEM, "$path/$biosystem_file") or die "Can't open $path/$biosystem_file !";
+	# open (GENE_FAMILY, "$path/$gene_family_file") or die "Can't open $path/$gene_family_file!";
+	# open (HTRI, "$path/$htri_file") or die "Can't open $path/$htri_file!";
 
 	my @ggfiles;
 	if($addon_gene_gene_score_file) {
@@ -1576,6 +1576,8 @@ sub predict_genes{
 		print STDOUT "NOTICE: The Addon Database loaded !\n";
 	}
 
+	print STDOUT "NOTICE: Loading HPRD Database ... ";
+	open (HPRD, "$path/$hprd_file") or die "Can't open $path/$hprd_file !";
 #Predict genes based on Human Protein Interactions
 	for my $line (<HPRD>) {
 		if ($i==0) {
@@ -1615,12 +1617,15 @@ sub predict_genes{
 			}
 		}
 	}
-	print STDOUT "NOTICE: The HPRD Database loaded !\n";
+	close(HPRD);
+	print STDOUT "Done!\n";
 
+	print STDOUT "NOTICE: Loading HTRI Database ... ";
 #Predict genes based on transcription interaction
 	$i = 0;
 	my $TF_PENALTY=4;
-#TF	TG	EVIDENCE	PUBMED	SCORE
+	open (HTRI, "$path/$htri_file") or die "Can't open $path/$htri_file!";
+	#TF	TG	EVIDENCE	PUBMED	SCORE
 	for my $line (<HTRI>) {
 		if ($i==0) {
 			$i++;
@@ -1659,9 +1664,12 @@ sub predict_genes{
 			}
 		}
 	}
+	close(HTRI);
+	print STDOUT "Done!\n";
 
 #Predict genes based on gene family
-	print STDOUT "NOTICE: The HGNC Gene Family Database loaded !\n";
+	open (GENE_FAMILY, "$path/$gene_family_file") or die "Can't open $path/$gene_family_file!";
+	print STDOUT "NOTICE: Loading HGNC Gene Family Database ... ";
 	$i = 0;
 	my %in_gene_family = ();
 
@@ -1710,10 +1718,13 @@ sub predict_genes{
 			}
 		}
 	}
+	close (GENE_FAMILY);
+	print STDOUT "Done!\n";
 
+	print STDOUT "NOTICE: Loading Biosystem Database ... ";
+	open (BIOSYSTEM, "$path/$biosystem_file") or die "Can't open $path/$biosystem_file !";
 #Predict genes based on Biosystem
 	my %biosystem_id_name = ();
-	print STDOUT "NOTICE: The Biosystem Database loaded !\n";
 	$i = 0;
 
 	for my $line (<BIOSYSTEM>) {
@@ -1763,6 +1774,8 @@ sub predict_genes{
 			}
 		}
 	}
+	close (BIOSYSTEM);
+	print STDOUT "Done!\n";
 
 	for (keys %output){
 		delete $output{$_} if (not $gene_id{$_});
