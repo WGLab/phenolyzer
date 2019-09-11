@@ -529,6 +529,9 @@ sub output_gene_prioritization
 		$item->{$gene}[2] = $normalized_score;
 
 #print out results
+		if($rank != 1) {
+			print MERGE ","
+		}
 		print MERGE "{\"Name\":\"$gene\",\"Id\":\"ID:$gene_id{$gene}\",\"Score\":$normalized_score,\"Diseases\":[$content_json]}";
 		# print MERGE $gene."\t"."ID:$gene_id{$gene} -\t$normalized_score\n".$content."\n";
 		print ANNOTATED $gene."\tID:$gene_id{$gene} ".$gene_hash{$gene}."\t$normalized_score\n".$content."\n"
@@ -561,7 +564,7 @@ sub output_gene_prioritization
 			print $annotated_seed_fh "\n";
 		}
 	}
-
+	print MERGE "]";
 	close (MERGE);
 	close ($seed_fh);
 	close (ANNOTATED) if (%gene_hash and not $prediction);
