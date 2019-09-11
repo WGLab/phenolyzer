@@ -30,7 +30,7 @@ $chrmt ||= 'M';
 
 if (not $format) {
 	$format = 'pileup';
-	print STDERR "NOTICE: the default --format argument is set as 'pileup'\n";
+	print STDOUT "NOTICE: the default --format argument is set as 'pileup'\n";
 }
 
 if (defined $outfile) {
@@ -41,7 +41,7 @@ defined $snpqual and $format eq 'pileup' || $format eq 'vcf4' || pod2usage ("Err
 defined $snppvalue and $format eq 'gff3-solid' || pod2usage ("Error in argument: the --snppvalue is supported only for the 'gff3-solid' format");
 if (not defined $snpqual and $format eq 'pileup') {
 	$snpqual = 20;
-	print STDERR "NOTICE: the default --snpqual argument for pileup format is set as 20\n";
+	print STDOUT "NOTICE: the default --snpqual argument for pileup format is set as 20\n";
 }
 
 if (not defined $snppvalue) {
@@ -54,14 +54,14 @@ if (not defined $coverage) {
 
 if (defined $fraction) {
 	$format eq 'pileup' or $format eq 'vcf4' or pod2usage ("Error in argument: the '--fraction' argument is supported for the pileup or vcf4 format only");
-	$format eq 'vcf4' and print STDERR "NOTICE: the --fraction argument works ONLY on indels for vcf4 format\n";
+	$format eq 'vcf4' and print STDOUT "NOTICE: the --fraction argument works ONLY on indels for vcf4 format\n";
 	$fraction >= 0 and $fraction <=1 or pod2suage ("Error in argument: the --fraction argument must be between 0 and 1 inclusive");
 } else {
 	$fraction = 0;
 }
 
 if (defined $confraction) {
-	$format eq 'vcf4' and print STDERR "NOTICE: the --confraction argument works ONLY on indels for vcf4 format\n";
+	$format eq 'vcf4' and print STDOUT "NOTICE: the --confraction argument works ONLY on indels for vcf4 format\n";
 	$confraction >= 0 and $fraction <=1 or pod2suage ("Error in argument: the --confraction argument must be between 0 and 1 inclusive");
 } else {
 	$confraction = 0;
@@ -90,10 +90,10 @@ if ($format eq 'pileup') {
 } elsif ($format eq 'gff3-solid') {
 	convertGFF3SolidSNP ($variantfile);
 } elsif ($format eq 'soap') {
-	print STDERR "WARNING: the support for '--format soap' is not well developed yet and may contain bugs for indel analysis.\n";
+	print STDOUT "WARNING: the support for '--format soap' is not well developed yet and may contain bugs for indel analysis.\n";
 	convertSOAP ($variantfile);
 } elsif ($format eq 'maq') {
-	print STDERR "WARNING: the support for '--format maq' is not well developed yet and may contain bugs.\n";
+	print STDOUT "WARNING: the support for '--format maq' is not well developed yet and may contain bugs.\n";
 	convertMAQSNP ($variantfile);
 } elsif ($format eq 'casava') {
 	if (not defined $chr) {
@@ -126,7 +126,7 @@ sub convertBED {
 	}
 
 
-	print STDERR "NOTICE: Converting variants from $variantfile\n";
+	print STDOUT "NOTICE: Converting variants from $variantfile\n";
 	while (<VAR>) {
 		s/[\r\n]+$//;
 		$countline++;
@@ -146,7 +146,7 @@ sub convertBED {
 		
 		
 	}
-	print STDERR "NOTICE: Done with $countline lines and $countvar variants\n";
+	print STDOUT "NOTICE: Done with $countline lines and $countvar variants\n";
 }
 
 

@@ -127,7 +127,7 @@ sub processArguments {
 	$num <= 1 or pod2usage ("Error in argument: please specify only one of --geneanno, -regionanno, --downdb, --filter");
 	if (not $num) {
 		$geneanno++;
-		printerr "NOTICE: The --geneanno operation is set to ON by default\n";
+		print STDOUT "NOTICE: The --geneanno operation is set to ON by default\n";
 	}
 	
 	my %dbtype1 = ('gene'=>'refGene', 'refgene'=>'refGene', 'knowngene'=>'knownGene', 'ensgene'=>'ensGene', 'band'=>'cytoBand', 'cytoband'=>'cytoBand', 'tfbs'=>'tfbsConsSites', 'mirna'=>'wgRna',
@@ -154,7 +154,7 @@ sub processArguments {
 	} elsif ($filter) {
 		defined $dbtype or pod2usage ("Error in argument: please specify --dbtype (required for the --filter operation)");
 		#as of Feb 2012, I no longer check the validity of the database name for -filter operation, to give users the maximum amount of flexibility in designing and using their own favorite databases
-		$dbtype =~ m/^avsift|generic|1000g_(ceu|yri|jptchb)|1000g2010_(ceu|yri|jptchb)|1000g20\d\d[a-z]{3}_[a-z]+|snp\d+\w+?|vcf|(ljb_[\w\+]+)|esp\d+_[\w]+$/ or print STDERR "NOTICE: the --dbtype $dbtype is assumed to be in generic ANNOVAR database format\n";
+		$dbtype =~ m/^avsift|generic|1000g_(ceu|yri|jptchb)|1000g2010_(ceu|yri|jptchb)|1000g20\d\d[a-z]{3}_[a-z]+|snp\d+\w+?|vcf|(ljb_[\w\+]+)|esp\d+_[\w]+$/ or print STDOUT "NOTICE: the --dbtype $dbtype is assumed to be in generic ANNOVAR database format\n";
 		
 		$dbtype1 = $dbtype1{$dbtype} || $dbtype;
 		
@@ -179,7 +179,7 @@ sub processArguments {
 	
 	if (not $buildver) {
 		$buildver = 'hg18';
-		printerr "NOTICE: The --buildver is set as 'hg18' by default\n";
+		print STDOUT "NOTICE: The --buildver is set as 'hg18' by default\n";
 	}
 	
 	if (defined $score_threshold) {
@@ -200,7 +200,7 @@ sub processArguments {
 		$dbtype1 eq 'avsift' or pod2usage ("Error in argument: the --sift_threshold argument can be used only if '--dbtype avsift' is used");
 		$sift_threshold >= 0 and $sift_threshold <= 1 or pod2usage ("Error in argument: the --sift_threshold must be between 0 and 1 inclusive");
 	} else {
-		$dbtype1 eq 'avsift' and printerr "NOTICE: The --sift_threshold is set as 0.05 by default\n";
+		$dbtype1 eq 'avsift' and print STDOUT "NOTICE: The --sift_threshold is set as 0.05 by default\n";
 		$sift_threshold = 0.05;
 	}
 	
@@ -311,7 +311,7 @@ sub processArguments {
 				$valichr{$chr[$i]}++;
 			}
 		}
-		printerr "NOTICE: These chromosomes in database will be examined: ", join (",", sort keys %valichr), "\n";
+		print STDOUT "NOTICE: These chromosomes in database will be examined: ", join (",", sort keys %valichr), "\n";
 	}
 	
 	if (not defined $firstcodondel) {
@@ -339,26 +339,26 @@ sub annotateQueryByGene {
 
 	my ($genedb, $geneidmap, $cdslen, $mrnalen) = readUCSCGeneAnnotation ($dbloc);
 	
-	$time and printerr "NOTICE: Current time (before examining variants) is ", scalar (localtime), "\n";
+	$time and print STDOUT "NOTICE: Current time (before examining variants) is ", scalar (localtime), "\n";
 	while (1) {
 		my ($linecount, $invalidcount) = newprocessNextQueryBatchByGene ($queryfh, $batchcount, $batchsize, $genedb, $geneidmap, $cdslen, $mrnalen);
 		$totalquerycount += $linecount;
 		$totalinvalidcount += $invalidcount;
 		$linecount == $batchsize or last;
 		$batchcount++;
-		printerr "NOTICE: Begin processing batch $batchcount (each batch contains $batchsize variants)\n";
+		print STDOUT "NOTICE: Begin processing batch $batchcount (each batch contains $batchsize variants)\n";
 	}
 	close (INVALID);
 	close (EXONIC);
 	close (OUT);
 	close ($queryfh);
-	$time and printerr "NOTICE: Current time (after examining variants) is ", scalar (localtime), "\n";
+	$time and print STDOUT "NOTICE: Current time (after examining variants) is ", scalar (localtime), "\n";
 
 	$totalinvalidcount or unlink ("$outfile.invalid_input");	#delete the file as it is empty
-	printerr "NOTICE: Finished gene-based annotation on $totalquerycount genetic variants in $queryfile";
-	$totalinvalidcount and printerr " (including $totalinvalidcount with invalid format written to $outfile.invalid_input)";
-	printerr "\n";
-	printerr "NOTICE: Output files were written to $outfile.variant_function, $outfile.exonic_variant_function\n";
+	print STDOUT "NOTICE: Finished gene-based annotation on $totalquerycount genetic variants in $queryfile";
+	$totalinvalidcount and print STDOUT " (including $totalinvalidcount with invalid format written to $outfile.invalid_input)";
+	print STDOUT "\n";
+	print STDOUT "NOTICE: Output files were written to $outfile.variant_function, $outfile.exonic_variant_function\n";
 }
 
 sub newprocessNextQueryBatchByGene {
@@ -435,7 +435,7 @@ sub newprocessNextQueryBatchByGene {
 			exists $genedb->{$chr, $nextbin} or next;		#this genome bin has no annotated gene (a complete intergenic region)
 			for my $nextgene (@{$genedb->{$chr, $nextbin}}) {	#when $genedb->{$chr, $nextbin} is undefined, this automatically create an array!!!
 				($name, $dbstrand, $txstart, $txend, $cdsstart, $cdsend, $exonstart, $exonend, $name2) = @$nextgene;
-				defined $name2 or printerr "WARNING: name2 field is not provided for transcript $name (start=$txstart end=$txend)\n" and $name2='';
+				defined $name2 or print STDOUT "WARNING: name2 field is not provided for transcript $name (start=$txstart end=$txend)\n" and $name2='';
 				$seen{$name, $txstart} and next;		#name and txstart uniquely identify a transcript and chromosome position (sometimes same transcript may map to two nearby positions, such as nearby segmental duplications)
 				$seen{$name, $txstart}++;			#a transcript may be in two adjacent bins, so if one is already scanned, there is no need to work on it again
 				my $current_ncRNA;
@@ -824,7 +824,7 @@ sub newprocessNextQueryBatchByGene {
 			}
 		}
 		$foundgenic or $intergenic{''}++;		#changed $name2 to '' on 20110924
-		$i =~ m/000000$/ and printerr "NOTICE: Finished analyzing $i query variants\n";
+		$i =~ m/000000$/ and print STDOUT "NOTICE: Finished analyzing $i query variants\n";
 
 	
 		my (@txname, %genename);
@@ -1072,7 +1072,7 @@ sub filterQuery {
 	open (DROPPED, ">$outfile.${buildver}_${dbtype1}_dropped") or die "Error: cannot write to output file $outfile.${buildver}_${dbtype1}_dropped: $!\n";
 	open (INVALID, ">$outfile.invalid_input") or die "Error: cannot write to output file $outfile.invalid_input: $!\n";
 	
-	printerr "NOTICE: Variants matching filtering criteria are written to $outfile.${buildver}_${dbtype1}_dropped, other variants are written to $outfile.${buildver}_${dbtype1}_filtered\n";
+	print STDOUT "NOTICE: Variants matching filtering criteria are written to $outfile.${buildver}_${dbtype1}_dropped, other variants are written to $outfile.${buildver}_${dbtype1}_filtered\n";
 	
 	open (QUERY, $queryfile) or die "Error: cannot read from query file $queryfile: $!\n";
 	
@@ -1101,7 +1101,7 @@ sub filterQuery {
 			if ($memfree or $memtotal) {		#if these arguments are specified
 				if ($linecount =~ m/00000$/) {						#about 40Mb memory per 10k lines for a typical input dataset
 					my ($availmem, $allmem) = currentAvailMemory();
-					$verbose and printerr "NOTICE: Current available system memory is $availmem kb (this program uses $allmem bytes memory), after reading $linecount query\n";
+					$verbose and print STDOUT "NOTICE: Current available system memory is $availmem kb (this program uses $allmem bytes memory), after reading $linecount query\n";
 					if ($availmem and $availmem <= $memfree+50_000) {		#some subsequent steps may take ~50Mb memory, so here we try to allocate some more memory
 						$batchdone++;
 					}
@@ -1158,7 +1158,7 @@ sub filterQuery {
 		}
 		
 		if ($filedone or $batchdone) {
-			printerr "NOTICE: Processing next batch with ${\(scalar keys %variant)} unique variants in $batchlinecount input lines\n";
+			print STDOUT "NOTICE: Processing next batch with ${\(scalar keys %variant)} unique variants in $batchlinecount input lines\n";
 			filterNextBatch (\%variant);			#filter the next batch of variants (print output to FIL, DROPPED), then clear %variant hash for next batch
 			%variant = ();
 			$batchlinecount = 0;				#reset the line count for this batch
@@ -1170,7 +1170,7 @@ sub filterQuery {
 	}
 	close (INVALID); close (DROPPED); close (FIL);
 	if ($invalidcount) {
-		printerr "NOTICE: Variants with invalid input format were written to $outfile.invalid_input\n";
+		print STDOUT "NOTICE: Variants with invalid input format were written to $outfile.invalid_input\n";
 	} else {
 		unlink ("$outfile.invalid_input");
 	}
@@ -1209,7 +1209,7 @@ sub readUCSCGeneAnnotation {			#read RefGene annotation database from the UCSC G
 	-f $dbfile or die "Error: The gene annotation database $dbfile does not exist. Please use 'annotate_variation.pl --downdb $dbtype $dbloc -build $buildver' to download the database.\n";
 
 	open (GENEDB, $dbfile) or die "Error: cannot read from gene annotaion database $dbfile: $!\n";
-	printerr "NOTICE: Reading gene annotation from $dbfile ... ";
+	print STDOUT "NOTICE: Reading gene annotation from $dbfile ... ";
 	while (<GENEDB>) {
 		s/[\r\n]+$//;							#deleting the newline characters
 		my @record = split (/\t/, $_);
@@ -1277,12 +1277,12 @@ sub readUCSCGeneAnnotation {			#read RefGene annotation database from the UCSC G
 		
 		if ($cdsstart != $cdsend+1) {		#coding gene
 			if (defined $mrnalen{$name} and $mrnalen{$name} != $mrnalength) {
-				$verbose and printerr "WARNING: $name occurs more than once in $dbfile with different mRNA length. The first occurences with identical mRNA length will be uesd in analysis.\n";
+				$verbose and print STDOUT "WARNING: $name occurs more than once in $dbfile with different mRNA length. The first occurences with identical mRNA length will be uesd in analysis.\n";
 				next;
 			}
 			
 			if (defined $cdslen{$name} and $cdslen{$name} != $cdslength) {
-				$verbose and printerr "WARNING: $name occurs more than once in $dbfile with different CDS length. The first occurences with identical CDS length will be uesd in analysis.\n";
+				$verbose and print STDOUT "WARNING: $name occurs more than once in $dbfile with different CDS length. The first occurences with identical CDS length will be uesd in analysis.\n";
 				next;
 			}
 			
@@ -1311,7 +1311,7 @@ sub readUCSCGeneAnnotation {			#read RefGene annotation database from the UCSC G
 		for my $geneinfo (@{$genedb{$key}}) {
 			if (not $cdslen{$geneinfo->[0]} and $iscoding{$geneinfo->[8]}) {
 				$badgene{$geneinfo->[0]}++;
-				$verbose and printerr "WARNING: $geneinfo->[0] will be ignored in analysis, because it is a non-coding transcript but the associated gene has another coding transcript\n";
+				$verbose and print STDOUT "WARNING: $geneinfo->[0] will be ignored in analysis, because it is a non-coding transcript but the associated gene has another coding transcript\n";
 			} else {
 				push @newgenedb, $geneinfo;
 			}
@@ -1322,8 +1322,8 @@ sub readUCSCGeneAnnotation {			#read RefGene annotation database from the UCSC G
 	for my $key (keys %genedb) {						#pre-sort gene DB by txstart to faciliate future use
 		@{$genedb{$key}} = sort {$a->[2] <=> $b->[2]} @{$genedb{$key}};
 	}
-	printerr "Done with $genecount transcripts (including $ncgenecount without coding sequence annotation) for ", scalar (keys %name2count), " unique genes\n";
-	$verbose and %badgene and printerr "NOTICE: ", scalar (keys %badgene), " noncoding transcripts will be ignored, because their associated genes have annotated coding transcript\n";
+	print STDOUT "Done with $genecount transcripts (including $ncgenecount without coding sequence annotation) for ", scalar (keys %name2count), " unique genes\n";
+	$verbose and %badgene and print STDOUT "NOTICE: ", scalar (keys %badgene), " noncoding transcripts will be ignored, because their associated genes have annotated coding transcript\n";
 	return (\%genedb, \%geneidmap, \%cdslen, \%mrnalen);
 }
 
@@ -1400,7 +1400,7 @@ sub downloadDB {
 	if ($msg =~ m/Usage/) {
 		#checkProgramUpdate ("wget");
 		for my $i (0 .. @urlin-1) {
-			printerr "NOTICE: Downloading annotation database $urlin[$i] ... ";
+			print STDOUT "NOTICE: Downloading annotation database $urlin[$i] ... ";
 			if ($verbose) {
 				$sc = "wget -t 1 -T 30 -O $filein[$i] $urlin[$i]";
 			} else {
@@ -1412,7 +1412,7 @@ sub downloadDB {
 				unlink ($filein[$i]);		#delete the temporary files generated by wget
 				$fail{$i}++;
 			} else {
-				printerr "OK\n";
+				print STDOUT "OK\n";
 				$count_success++;
 			}
 		}
@@ -1431,14 +1431,14 @@ sub downloadDB {
 		#checkProgramUpdate ("lwp");
 		my ($http, $ftp);
 		for my $i (0 .. @urlin-1) {
-			printerr "NOTICE: Downloading annotation database $urlin[$i] ... ";
+			print STDOUT "NOTICE: Downloading annotation database $urlin[$i] ... ";
 			if ($urlin[$i] =~ m/^http/) {
 				$http = LWP::UserAgent->new (timeout=>10, show_progress=>$verbose);
 				$http->env_proxy;
 				
 				my $response = $http->get ($urlin[$i], ':content_file'=>$filein[$i]);
 				if ($response->is_success) {
-					printerr "Done\n";
+					print STDOUT "Done\n";
 					$count_success++;
 				} else {
 					printerr "Failed\n";
@@ -1457,7 +1457,7 @@ sub downloadDB {
 						$verbose and printerr "WARNING: cannot retrieve remote file ($url) in FTP server $urlroot\n";
 						$fail{$i}++;
 					} else {
-						printerr "Done\n";
+						print STDOUT "Done\n";
 						$count_success++;
 					}
 				} else {
@@ -1472,7 +1472,7 @@ sub downloadDB {
 		}
 	}
 	
-	$count_success and printerr "NOTICE: Uncompressing downloaded files\n";
+	$count_success and print STDOUT "NOTICE: Uncompressing downloaded files\n";
 	for my $i (0 .. @filein-1) {
 		$fail{$i} and next;
 		if ($filein[$i] =~ m/\.zip$/) {
@@ -1520,7 +1520,7 @@ sub downloadDB {
 		}
 	}
 	
-	$count_success and printerr "NOTICE: Finished downloading annotation files for $buildver build version, with files saved at the '$dbloc' directory\n";
+	$count_success and print STDOUT "NOTICE: Finished downloading annotation files for $buildver build version, with files saved at the '$dbloc' directory\n";
 	$cwd and chdir ($cwd);
 	if (%fail) {
 		my @failindex = keys %fail;
@@ -1532,14 +1532,14 @@ sub downloadDB {
 		
 		for my $index (@failindex) {
 			if ($urlin[$index] =~ m#^http://www\.openbioinformatics\.org.+Mrna.fa.gz$#) {
-				printerr "---------------------------ADDITIONAL PROCEDURE---------------------------\n";
-				printerr "--------------------------------------------------------------------------\n";
-				printerr "NOTICE: the FASTA file $urlin[$index] is not available to download but can be generated by the ANNOVAR software. ";
-				printerr "PLEASE RUN THE FOLLOWING TWO COMMANDS CONSECUTIVELY TO GENERATE THE FASTA FILES:\n\n";
-				printerr "\tannotate_variation.pl --buildver $buildver --downdb seq $dbloc/${buildver}_seq\n";
-				printerr "\tretrieve_seq_from_fasta.pl $dbloc/${buildver}_$dbtype1.txt -seqdir $dbloc/${buildver}_seq -format $dbtype1 -outfile $dbloc/${buildver}_${dbtype1}Mrna.fa\n";
-				printerr "--------------------------------------------------------------------------\n";
-				printerr "--------------------------------------------------------------------------\n";
+				print STDOUT "---------------------------ADDITIONAL PROCEDURE---------------------------\n";
+				print STDOUT "--------------------------------------------------------------------------\n";
+				print STDOUT "NOTICE: the FASTA file $urlin[$index] is not available to download but can be generated by the ANNOVAR software. ";
+				print STDOUT "PLEASE RUN THE FOLLOWING TWO COMMANDS CONSECUTIVELY TO GENERATE THE FASTA FILES:\n\n";
+				print STDOUT "\tannotate_variation.pl --buildver $buildver --downdb seq $dbloc/${buildver}_seq\n";
+				print STDOUT "\tretrieve_seq_from_fasta.pl $dbloc/${buildver}_$dbtype1.txt -seqdir $dbloc/${buildver}_seq -format $dbtype1 -outfile $dbloc/${buildver}_${dbtype1}Mrna.fa\n";
+				print STDOUT "--------------------------------------------------------------------------\n";
+				print STDOUT "--------------------------------------------------------------------------\n";
 			}
 		}
 	}	

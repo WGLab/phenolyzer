@@ -12,6 +12,8 @@ use Cwd;
 use File::Basename;
 use Bio::OntologyIO;
 use Graph::Directed;
+use File::Copy;
+use JSON;
 
 ## LIBRARIES CONDITIONALLY LOADED
 ## Shown here for documentation purposes. 
@@ -41,7 +43,8 @@ our (
 		$if_exact_match,
 		$prediction,
 		$is_phenotype,
-		$if_wordcloud
+		$if_wordcloud,
+		$if_use_precalc
 	);
 
 # Declare test options
@@ -54,6 +57,7 @@ our (
 our (
 		$out,
 		$database_directory,
+		$precalc_db_directory,
 		$if_logistic_regression,
 		$user_nproc
 	);
@@ -110,6 +114,7 @@ our  (
 				'man|m'                 =>\$man,
 				'file|f'                =>\$if_file,
 				'directory|d=s'         =>\$database_directory,
+				'use_precalc'           =>\$if_use_precalc,
 				'work_directory|w=s'    =>\$work_path,
 				'out=s'                 =>\$out,
 				'prediction|p'          =>\$prediction,
@@ -146,7 +151,7 @@ $man and pod2usage (-verbose=>2, -exitval=>1, -output=>\*STDOUT);
 
 # Initialise logistics regression
 if($if_logistic_regression) {
-	print STDERR "NOTICE: The logistic regression model was used!!!\n";
+	print STDOUT "NOTICE: The logistic regression model was used!!!\n";
 	$GENE_DISEASE_WEIGHT = 9.5331966;
 	$HPRD_WEIGHT         = 0.8335866;
 	$BIOSYSTEM_WEIGHT    = 0.1755904 ;
@@ -276,7 +281,7 @@ sub process_individual_term
 
 		generate_wordcloud($individual_term, \%disease_hash, \%disease_score_hash) if($if_wordcloud);
 		if(@diseases==0){
-			print STDERR "NOTICE: The input term -----$individual_term------ has no corresponding names in the disease database, please check your spelling!!!\n";
+			print STDERR "ERROR: The input term -----$individual_term------ has no corresponding names in the disease database, please check your spelling!!!\n";
 			return;
 		}
 
@@ -297,12 +302,11 @@ sub process_individual_term
 		@{$output{$_}} = @{$item->{$_}} for keys %$item;
 
 		if($count==0){
-			print STDERR "NOTICE: The input term -----$individual_term------ has no results!!!\n";
+			print STDERR "ERROR: The input term -----$individual_term------ has no results!!!\n";
 			return;
 		}
 
 		open( OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
-		push @out_gene_scores_file, "$out"."_$individual_term"."_gene_scores";
 		print OUT_GENE_SCORE "Tuple number in the gene_disease database for the term $individual_term: $count\n";
 
 		for my $gene (sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
@@ -310,14 +314,13 @@ sub process_individual_term
 			my $p=$output{$gene}[0]/$count;
 			print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
 		}
-		print STDERR "$raw_individual_term: -------------------------------------------------- \n";
+		print STDOUT "$raw_individual_term: -------------------------------------------------- \n";
 		close (OUT_GENE_SCORE);
 	}
 # For the term 'all disease(s)'(case insensitive)
 	else {
 		$individual_term=~s/\W+/_/g;
 		open(OUT_GENE_SCORE,">$out"."_$individual_term"."_gene_scores") or die "can't write to "."$out"."_$individual_term"."_gene_scores";
-		push @out_gene_scores_file, "$out"."_$individual_term"."_gene_scores";
 		my ($item,$count)=score_all_genes();
 		my %output=();
 		@{$output{$_}} = @{$item->{$_}} for keys %$item;
@@ -328,18 +331,85 @@ sub process_individual_term
 			my $p=$output{$gene}[0]/$count;
 			print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
 		}
-		print STDERR "------------------------------------------------------------------------ \n";
+		print STDOUT "------------------------------------------------------------------------ \n";
 		close (OUT_GENE_SCORE);
 	}
 }
 
+sub get_terms_precalc_db
+{
+	open(DB_MASTER, "$precalc_db_directory/hpos.txt") or die "Can't open $precalc_db_directory/hpos.txt !";
+	chomp(my @lines = <DB_MASTER>);
+	close(DB_MASTER);
+	return @lines
+}
+
 sub process_terms
 {
-	my @disease_input = @_;
-# Process each individual term first
+	my @disease_input = sort @_;
+## Process each individual term
+# Find pre-processed terms from the input
+	my @hpo_list = grep /hp:[0-9]*/, @disease_input;
+	# Search HPO DB only if there are HPO inputs
+	if ($if_use_precalc && @hpo_list > 0) {
+		my @found_list;
+		# Read master table
+		my @db_terms = get_terms_precalc_db();
+		my $i = 0;
+		for my $hpo(@hpo_list) {
+			(my $num = $hpo) =~ s/hp:*//;
+			# This assumes the HPO inputs are ordered and so are the DB terms
+			for(; $i < @db_terms; $i++) {
+				if( $num == $db_terms[$i] ){
+					push (@found_list, $hpo);
+					$i++;
+					last;
+				} elsif($num < $db_terms[$i]) {
+					last;
+				}
+			}
+		}
+		my $exe_ext = "";
+		unless ($^O =~ /Unix|Linux|unix|linux/) {
+			$exe_ext = ".exe";
+		}
+
+		# Copy preprocessed terms to directory
+		for my $hpo(@found_list) {
+			print("$hpo: Using HPO expansion found in pre-expanded database ...\n");
+			(my $mod_hpo = $hpo) =~ s/:/_/;
+			my $basename = "precalc_db_$mod_hpo";
+			my $zipfile = "$precalc_db_directory/db/$basename";
+			my $tempdir = "$precalc_db_directory/temp";
+			my $dst = "$out"."_$mod_hpo";
+			foreach (qw(_hpo _diseases _gene_scores)) {
+				# Extract from DB
+				if (system("unzip$exe_ext -q $zipfile $basename$_ -d $tempdir")) {
+					if (system("7z$exe_ext -e -y $zipfile $basename$_ -o $tempdir")) {
+						die "Failed unzipping file from DB. Install unzip or 7z command line program. File: $zipfile to $basename$_";
+					}
+				}
+				if (system("mv $tempdir/$basename$_ $dst$_")) {
+					die "Failed moving file from temp DB: $tempdir/$basename$_ -> $dst$_";
+				}
+			}
+			# Push to list of gene_scores files
+			push @out_gene_scores_file, "$dst"."_gene_scores";
+		}
+		# Continue with remaining terms
+		# @disease_input = @remaining_list;
+
+		my %temp;
+		@temp{ @disease_input } = ();
+		delete @temp{ @found_list };
+		@disease_input = keys %temp;
+		if (@disease_input == 0) {
+			return;
+		}
+	}
 # Determine number of parallel subprocesses
 	my $n_procs = $user_nproc <= @disease_input ? $user_nproc : @disease_input;
-	print STDERR "NOTICE: Processing $n_procs phenotypes at a time!\n";
+	print STDOUT "NOTICE: Processing $n_procs phenotypes at a time!\n";
 	if ($n_procs > 1) {
 # Run in parallel after loading ForkManager. Test if the module is available.
 		eval {require Parallel::ForkManager};
@@ -347,7 +417,7 @@ sub process_terms
 			pod2usage ("Error in argument: you need to install Parallel::ForkManager module before parallelizing with the -nproc argument");
 		}
 		my $parallel_mngr = Parallel::ForkManager->new($n_procs);
-	  for my $individual_term(@disease_input) 
+		for my $individual_term(@disease_input)
 		{
 			$parallel_mngr->start and next;
 			process_individual_term($individual_term);
@@ -356,9 +426,18 @@ sub process_terms
 		$parallel_mngr->wait_all_children();
 	} else {
 # Process one input at a time.
-		for my $individual_term(@disease_input) 
+		for my $individual_term(@disease_input)
 		{
 			process_individual_term($individual_term);
+		}
+	}
+## Fill @out_gene_scores_file array
+	for my $individual_term(@disease_input) 
+	{
+		(my $individual_term = $individual_term) =~ s/:/_/;
+		my $dst = "$out"."_$individual_term";
+		if (-f "$dst"."_gene_scores") {
+			push @out_gene_scores_file, "$dst"."_gene_scores";
 		}
 	}
 }
@@ -367,10 +446,10 @@ sub process_terms
 sub output_gene_prioritization 
 {
 	my @disease_input = split (qr/[^ _,\w\.\-'\(\)\[\]\{\}:]+/,lc $query_diseases);		#'
-	@disease_input <=1000 or die "Too many terms!!! No more than 1000 terms are accepted!!!";
+	s/^\s+|\s+// for @disease_input;
 
 # Process individual terms
-  process_terms(@disease_input);
+	process_terms(@disease_input);
 
 # Finish processing individual terms
 # Merge the gene_score files
@@ -382,6 +461,7 @@ sub output_gene_prioritization
 	@{$output{$_}} = @{$item->{$_}} for keys %$item;
 
 	open (MERGE,    ">$out.merge_gene_scores") or die;
+	# open (MERGE_LEGACY,    ">$out.merge_gene_scores_legacy") or die;
 	open (ANNOTATED,">$out.annotated_gene_scores") if (%gene_hash and not $prediction);
 	open (my $seed_fh, ">$out.seed_gene_list");
 
@@ -393,7 +473,8 @@ sub output_gene_prioritization
 		printHeader($annotated_seed_fh,0);
 	}
 
-	print MERGE     "Tuple number in the gene_disease databse for all the terms: $count \n";
+	# print MERGE_LEGACY     "{\n\"header\": \"Tuple number in the gene_disease database for all the terms: $count\" \n";
+	print MERGE     "[";
 	print ANNOTATED "Tuple number in the gene_disease databse for all the terms: $count \n" if (%gene_hash and not $prediction);
 
 #Find the max and min score
@@ -417,6 +498,7 @@ sub output_gene_prioritization
 		my @content_lines = split("\n", $content);
 		my @content_lines_output;
 		my @content_lines_next;
+		my %content_json_dict;
 		for(@content_lines) {
 			my @words = split("\t");
 			my $detail_score = $words[3];
@@ -426,7 +508,18 @@ sub output_gene_prioritization
 			my $new_line = join("\t", (@words[0,1,2],$new_score));
 			push (@content_lines_output,$line);
 			push (@content_lines_next,  $new_line);
+			# Build disease hash, organized by origin (OMIM, ORPHANET...: words[0])
+			my ($db, $temp) = split(':', $words[0]);
+			my ($db_ids, $db_note) = $words[0] =~ /(.*) \((.*)\)/; # first group captures all
+			$db_note =~ s/(\r)//g; # remove "\r" if present
+			$words[2] =~ s/(\D+)//g; # remove "hp "
+			if (!exists($content_json_dict{$db})) {
+				$content_json_dict{"$db"}=[];
+			}
+			my %temp = (Id => $db_ids, IdNote => $db_note, Condition => $words[1], Hp => $words[2], Score => $detail_score);
+			push(@{ $content_json_dict{$db} }, \%temp);
 		}
+		my $content_json = encode_json \%content_json_dict;
 		$content = join("\n", @content_lines_output)."\n";
 		my $new_content = join("\n", @content_lines_next)."\n";
 
@@ -436,7 +529,11 @@ sub output_gene_prioritization
 		$item->{$gene}[2] = $normalized_score;
 
 #print out results
-		print MERGE $gene."\t"."ID:$gene_id{$gene} -\t$normalized_score\n".$content."\n";
+		if($rank != 1) {
+			print MERGE ","
+		}
+		print MERGE "{\"Name\":\"$gene\",\"Id\":\"ID:$gene_id{$gene}\",\"Score\":$normalized_score,\"Diseases\":[$content_json]}";
+		# print MERGE_LEGACY $gene."\t"."ID:$gene_id{$gene} -\t$normalized_score\n".$content."\n";
 		print ANNOTATED $gene."\tID:$gene_id{$gene} ".$gene_hash{$gene}."\t$normalized_score\n".$content."\n"
 			if ($gene_hash{$gene} and not $prediction);
 
@@ -467,8 +564,9 @@ sub output_gene_prioritization
 			print $annotated_seed_fh "\n";
 		}
 	}
-
+	print MERGE "]";
 	close (MERGE);
+	# close (MERGE_LEGACY);
 	close ($seed_fh);
 	close (ANNOTATED) if (%gene_hash and not $prediction);
 	close (ANNOTATED_GENE_LIST) if (%gene_hash and not $prediction);
@@ -490,8 +588,8 @@ sub output_gene_prioritization
 		open (PREDICTED, ">$out.predicted_gene_scores");
 		open (my $final_fh,">$out.final_gene_list");
 		printHeader($final_fh, 1);
-		print  PREDICTED   "Tuple number in the gene_disease databse for all the terms: $count \n";
-		print  ANNOTATED   "Tuple number in the gene_disease databse for all the terms: $count \n"
+		print  PREDICTED   "Tuple number in the gene_disease database for all the terms: $count \n";
+		print  ANNOTATED   "Tuple number in the gene_disease database for all the terms: $count \n"
 			if %gene_hash;
 
 #Find the max and min score
@@ -568,7 +666,7 @@ sub disease_extension{
 	@_==1 or die "The input should be only one string!";
 
 	my $input_term=$_[0];
-	print STDERR "$input_term: The journey to find all related disease names of your query starts!\n";
+	print STDOUT "$input_term: The journey to find all related disease names of your query starts!\n";
 	$input_term =~ s/[\W_]+/ /g;
 
 	-f "${path}/$disease_count_file" or die "Could not open ${path}/$disease_count_file";
@@ -582,8 +680,8 @@ sub disease_extension{
 	my @disease_occur=<DISEASE>;
 	my @disease_ctd=<CTD_DISEASE>;
 
-	print STDERR "$input_term: The item was queried in the databases!! \n";
-	print STDERR "$input_term: The exact match (case non-sensitive) was used for disease/phenotype name match!! \n"
+	print STDOUT "$input_term: The item was queried in the databases!! \n";
+	print STDOUT "$input_term: The exact match (case non-sensitive) was used for disease/phenotype name match!! \n"
 		if($if_exact_match);
 
 	for (<OMIM_DISEASE_ID>) {
@@ -609,7 +707,7 @@ sub disease_extension{
 		}
 	}
 
-	print STDERR "$input_term: The word matching in OMIM disease synonyms file has been done!! \n";
+	print STDOUT "$input_term: The word matching in OMIM disease synonyms file has been done!! \n";
 
 	$input_term = lc $input_term;
 #Query disease in the compiled list from gene_disease relations
@@ -654,7 +752,7 @@ sub disease_extension{
 	$disease_extend{$_} .= "\tGENE_DISEASE\n" for keys %disease_extend;
 	my @tree_number=();
 
-	print STDERR "$input_term: The word matching search in the compiled disease databases for gene_disease relations has been done!\n";
+	print STDOUT "$input_term: The word matching search in the compiled disease databases for gene_disease relations has been done!\n";
 
 	for my $term(@disease_ctd) {
 		chomp($term);
@@ -689,7 +787,7 @@ sub disease_extension{
 		}
 	}
 
-	print STDERR "$input_term: The word matching search in the CTD (Medic) databases has been done! \n";
+	print STDOUT "$input_term: The word matching search in the CTD (Medic) databases has been done! \n";
 
 #Second find all children of the terms found in the first round
 	for my $term(@disease_ctd) {
@@ -709,7 +807,7 @@ sub disease_extension{
 		}
 	}
 
-	print STDERR "$input_term: The descendants search in the CTD (Medic) databases has been done! \n";
+	print STDOUT "$input_term: The descendants search in the CTD (Medic) databases has been done! \n";
 
 	if (-f "$work_path/ontology_search.pl") {
 		print STDERR "ERROR: The doio.obo file couldn't be found!!! The disease_ontology search wouldn't be conducted properly!! \n"
@@ -731,9 +829,9 @@ sub disease_extension{
 			$disease_extend{$disease_key} .= join(';', ($disease, @synonyms));
 			$disease_extend{$disease_key} .= "\tDISEASE_ONTOLOGY\n";
 		}
-		print STDERR "$input_term: The descendants search in disease_ontology (DO) database has been done! \n";
+		print STDOUT "$input_term: The descendants search in disease_ontology (DO) database has been done! \n";
 	} else {
-		print STDERR "$input_term: The $work_path/ontology_search.pl file couldn't be found, so the disease_ontology (DO) database won't be used! \n";
+		print STDERR "ERROR: $input_term: The $work_path/ontology_search.pl file couldn't be found, so the disease_ontology (DO) database won't be used! \n";
 	}
 	return \%disease_extend;
 }
@@ -755,7 +853,7 @@ sub phenotype_extension{
 
 	my $input_term = $_[0];
 	my $raw_input_term = $input_term;
-	print STDERR "$raw_input_term: The phenotype search and annotation process starts!! \n";
+	print STDOUT "$raw_input_term: The phenotype search and annotation process starts!! \n";
 	$input_term =~s/[\W_]+/ /g;
 	my %disease_hash;
 	my @hpo_ids;
@@ -771,9 +869,9 @@ sub phenotype_extension{
 		open (OMIM_DESCRIPTION, "$path/$omim_description_file") or die "ERROR: Can't open $omim_description_file!!! \n";
 
 		my $line = `perl $work_path/ontology_search.pl -o $path/hpo.obo -format id -p '$input_term' `;
-		print STDERR "$raw_input_term: executing ontology_search.pl to expand phenotype terms\n";
+		print STDOUT "$raw_input_term: executing ontology_search.pl to expand phenotype terms\n";
 		@hpo_ids = split("\n", $line);
-		print STDERR "$raw_input_term: Found ", scalar (@hpo_ids), " additional phenotype terms\n";
+		print STDOUT "$raw_input_term: Found ", scalar (@hpo_ids), " additional phenotype terms\n";
 		
 		my @hpo_annotation = <HPO_ANNOTATION>;
 		shift @hpo_annotation;
@@ -960,7 +1058,7 @@ sub score_genes{
 			push(@addon_disease_gene_score, <ADDON>);
 			@addon_disease_gene_score = map {s/[\n\r]+//g;$_; } @addon_disease_gene_score;
 			close(ADDON);
-			print STDERR "$individual_term: The ${path}/$each_file is used as addons!!!\n";
+			print STDOUT "$individual_term: The ${path}/$each_file is used as addons!!!\n";
 		}
 		push (@disease_gene_score,@addon_disease_gene_score);
 	}
@@ -1007,7 +1105,7 @@ sub score_genes{
 			my $gene = $genes[0];
 
 			if( not $gene) {
-				$verbose and print STDERR "WARNING: gene name not found in disease_gene_score array <$disease_gene_score[$j]>\n";		#some entries miss gene name such as "FEBRILE SEIZURES FAMILIAL 1     umls:C1852577   0.3     DISGENET" in DB_DISGENET_GENE_DISEASE_SCORE
+				$verbose and print STDOUT "WARNING: gene name not found in disease_gene_score array <$disease_gene_score[$j]>\n";		#some entries miss gene name such as "FEBRILE SEIZURES FAMILIAL 1     umls:C1852577   0.3     DISGENET" in DB_DISGENET_GENE_DISEASE_SCORE
 				$j++;
 				next;
 			}
@@ -1053,7 +1151,7 @@ sub score_genes{
 
 	my @value_array;
 
-	print STDERR "$individual_term: The gene score process has been done!!\n";
+	print STDOUT "$individual_term: The gene score process has been done!!\n";
 
 	return (\%item,$count);
 }
@@ -1061,12 +1159,12 @@ sub score_genes{
 # Merge gene_scores for each term, return %item reference and $count for the sum of the tuple count
 sub merge_result {
 # %item (  $gene[0] => score, $gene[1] => "SOURCE_ID	 DISEASE_NAME	DISEASE_TERM"     )
-	print STDERR "NOTICE: Start to merge gene scores! \n";
+	print STDOUT "NOTICE: Start to merge gene scores! \n";
 
 	#my $dirname=dirname($out);
 	#my $basename=basename($out);
 	#my @filelist = split("\n",`ls $dirname`);
-	print STDERR "NOTICE: Reading a list of gene_scores files @out_gene_scores_file\n";
+	print STDOUT "NOTICE: Reading a list of gene_scores files @out_gene_scores_file\n";
 
 #item will save the results for output
 	my %item=();
@@ -1123,7 +1221,7 @@ $score eq 'alzheimer' and die "Die gene=$gene score=<$score> current line died a
 
 #GENE	DISEASE	DISEASE_ID	SCORE	SOURCE
 sub score_all_genes{
-	print STDERR "NOTICE: The process to score all genes in the database starts!!\n";
+	print STDOUT "NOTICE: The process to score all genes in the database starts!!\n";
 
 #item is a hash, keys are gene names, values are the total score for the gene an array reference and
 	my %item=();
@@ -1147,7 +1245,7 @@ sub score_all_genes{
 
 			close(ADDON);
 
-			print STDERR "NOTICE: The ${path}/$each_file is used as addons!!!\n";
+			print STDOUT "NOTICE: The ${path}/$each_file is used as addons!!!\n";
 		}
 		push (@disease_gene_score,@addon_disease_gene_score);
 	}
@@ -1183,7 +1281,7 @@ sub score_all_genes{
 
 	}
 
-	print STDERR "NOTICE: The process to score all genes has been done!!\n";
+	print STDOUT "NOTICE: The process to score all genes has been done!!\n";
 
 	for (keys %item){
 		delete $item{$_} if (not $gene_id{$_});
@@ -1196,7 +1294,7 @@ sub score_all_genes{
 sub annotate_bedfile {
 	$buildver = 'hg19' if(not $buildver);
 
-	print STDERR "NOTICE: the --buildver argument is set as 'hg19' by default\n"
+	print STDOUT "NOTICE: the --buildver argument is set as 'hg19' by default\n"
 
 		unless defined $buildver;
 
@@ -1234,7 +1332,7 @@ sub annotate_bedfile {
 	close (VF);
 	close (REGION_GENE);
 
-	print STDERR "NOTICE: Among $countregion BED regions ($totallen base pairs), $countexonic disrupt exons, and ", scalar keys %gene_hash, " genes are affected\n";
+	print STDOUT "NOTICE: Among $countregion BED regions ($totallen base pairs), $countexonic disrupt exons, and ", scalar keys %gene_hash, " genes are affected\n";
 ### Code borrowed from bed2gene.pl
 }
 
@@ -1251,6 +1349,12 @@ sub setup_variables{
 	$database_directory and $path=$database_directory;
 	$path =~s/\/$//;
 	$work_path ||= $dirname;
+
+	if (defined $precalc_db_directory) {
+		# pass
+	} else {
+		$precalc_db_directory = "$dirname/lib/precalculated_expansions";
+	}
 	
 	if (defined $out) {
 		$out =~ s/[\\\/]*$//;		#remove trailing "/" or "\" if there are any
@@ -1278,7 +1382,7 @@ sub setup_variables{
 
 # The disease input will come from file
 	if (defined $if_file) {
-		print STDERR  "NOTICE: The file name option was used!! \n";
+		print STDOUT  "NOTICE: The file name option was used!! \n";
 
 		open(INPUT_DISEASE,"$query_diseases") or die "can't open $query_diseases: $!";
 		my @input=<INPUT_DISEASE>;
@@ -1294,7 +1398,7 @@ sub setup_variables{
 
 #build the haploinsufficiency hash
 	if($if_hi){
-		print STDERR "NOTICE: The haploinsufficency score is used!\n";
+		print STDOUT "NOTICE: The haploinsufficency score is used!\n";
 		open (HI, "$path/$hi_gene_score_file") or die;
 		for (<HI>){
 			s/[\r\n+]//g;
@@ -1306,7 +1410,7 @@ sub setup_variables{
 
 #build the gene intolerance shash
 	if($if_rvis){
-		print STDERR "NOTICE: The gene intolerance score is used!\n";
+		print STDOUT "NOTICE: The gene intolerance score is used!\n";
 		open(RVIS, "$path/$rvis_gene_score_file") or die;
 		for (<RVIS>){
 			s/[\r\n]+//g;
@@ -1390,8 +1494,8 @@ sub setup_variables{
 }
 
 sub predict_genes{
-	print STDERR "----------------------------------------------------------------------\n";
-	print STDERR "NOTICE: The prediction process starts!!!\n";
+	print STDOUT "----------------------------------------------------------------------\n";
+	print STDOUT "NOTICE: The prediction process starts!!!\n";
 
 	@_ == 1 or die "You can only have one input argument!!!";
 
@@ -1422,10 +1526,10 @@ sub predict_genes{
 #                     }
 #               )
 
-	open (HPRD, "$path/$hprd_file") or die "Can't open $path/$hprd_file !";
-	open (BIOSYSTEM, "$path/$biosystem_file") or die "Can't open $path/$biosystem_file !";
-	open (GENE_FAMILY, "$path/$gene_family_file") or die "Can't open $path/$gene_family_file!";
-	open (HTRI, "$path/$htri_file") or die "Can't open $path/$htri_file!";
+	# open (HPRD, "$path/$hprd_file") or die "Can't open $path/$hprd_file !";
+	# open (BIOSYSTEM, "$path/$biosystem_file") or die "Can't open $path/$biosystem_file !";
+	# open (GENE_FAMILY, "$path/$gene_family_file") or die "Can't open $path/$gene_family_file!";
+	# open (HTRI, "$path/$htri_file") or die "Can't open $path/$htri_file!";
 
 	my @ggfiles;
 	if($addon_gene_gene_score_file) {
@@ -1473,9 +1577,11 @@ sub predict_genes{
 
 		}
 		close(ADDON_GG);
-		print STDERR "NOTICE: The Addon Database loaded !\n";
+		print STDOUT "NOTICE: The Addon Database loaded !\n";
 	}
 
+	print STDOUT "NOTICE: Loading HPRD Database ... ";
+	open (HPRD, "$path/$hprd_file") or die "Can't open $path/$hprd_file !";
 #Predict genes based on Human Protein Interactions
 	for my $line (<HPRD>) {
 		if ($i==0) {
@@ -1515,12 +1621,15 @@ sub predict_genes{
 			}
 		}
 	}
-	print STDERR "NOTICE: The HPRD Database loaded !\n";
+	close(HPRD);
+	print STDOUT "Done!\n";
 
+	print STDOUT "NOTICE: Loading HTRI Database ... ";
 #Predict genes based on transcription interaction
 	$i = 0;
 	my $TF_PENALTY=4;
-#TF	TG	EVIDENCE	PUBMED	SCORE
+	open (HTRI, "$path/$htri_file") or die "Can't open $path/$htri_file!";
+	#TF	TG	EVIDENCE	PUBMED	SCORE
 	for my $line (<HTRI>) {
 		if ($i==0) {
 			$i++;
@@ -1559,9 +1668,12 @@ sub predict_genes{
 			}
 		}
 	}
+	close(HTRI);
+	print STDOUT "Done!\n";
 
 #Predict genes based on gene family
-	print STDERR "NOTICE: The HGNC Gene Family Database loaded !\n";
+	open (GENE_FAMILY, "$path/$gene_family_file") or die "Can't open $path/$gene_family_file!";
+	print STDOUT "NOTICE: Loading HGNC Gene Family Database ... ";
 	$i = 0;
 	my %in_gene_family = ();
 
@@ -1610,10 +1722,13 @@ sub predict_genes{
 			}
 		}
 	}
+	close (GENE_FAMILY);
+	print STDOUT "Done!\n";
 
+	print STDOUT "NOTICE: Loading Biosystem Database ... ";
+	open (BIOSYSTEM, "$path/$biosystem_file") or die "Can't open $path/$biosystem_file !";
 #Predict genes based on Biosystem
 	my %biosystem_id_name = ();
-	print STDERR "NOTICE: The Biosystem Database loaded !\n";
 	$i = 0;
 
 	for my $line (<BIOSYSTEM>) {
@@ -1663,6 +1778,8 @@ sub predict_genes{
 			}
 		}
 	}
+	close (BIOSYSTEM);
+	print STDOUT "Done!\n";
 
 	for (keys %output){
 		delete $output{$_} if (not $gene_id{$_});
@@ -1785,7 +1902,8 @@ sub printHeader{
         --omim_weight                   the weight for gene disease pairs in OMIM
         --orphanet_weight               the weight for gene disease pairs in Orphanet    
         --nproc                         number of parallel processes (forks) requested by the user. The code uses as much parallelism as 
-                                        allowed by the data. Setting this to 1 means no child processes are created.           
+                                        allowed by the data. Setting this to 1 means no child processes are created.
+        --use_precalc                   use HPO phenotypes expansion found in the precalculated database
   
 Function:       
           automatically expand the input disease term to a list of professional disease names, 
