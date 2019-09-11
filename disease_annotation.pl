@@ -461,6 +461,7 @@ sub output_gene_prioritization
 	@{$output{$_}} = @{$item->{$_}} for keys %$item;
 
 	open (MERGE,    ">$out.merge_gene_scores") or die;
+	# open (MERGE_LEGACY,    ">$out.merge_gene_scores_legacy") or die;
 	open (ANNOTATED,">$out.annotated_gene_scores") if (%gene_hash and not $prediction);
 	open (my $seed_fh, ">$out.seed_gene_list");
 
@@ -472,7 +473,7 @@ sub output_gene_prioritization
 		printHeader($annotated_seed_fh,0);
 	}
 
-	# print MERGE     "{\n\"header\": \"Tuple number in the gene_disease database for all the terms: $count\" \n";
+	# print MERGE_LEGACY     "{\n\"header\": \"Tuple number in the gene_disease database for all the terms: $count\" \n";
 	print MERGE     "[";
 	print ANNOTATED "Tuple number in the gene_disease databse for all the terms: $count \n" if (%gene_hash and not $prediction);
 
@@ -514,10 +515,9 @@ sub output_gene_prioritization
 			$words[2] =~ s/(\D+)//g; # remove "hp "
 			if (!exists($content_json_dict{$db})) {
 				$content_json_dict{"$db"}=[];
-			} else {
-				my %temp = (Id => $db_ids, IdNote => $db_note, Condition => $words[1], Hp => $words[2], Score => $detail_score);
-				push(@{ $content_json_dict{$db} }, \%temp);
 			}
+			my %temp = (Id => $db_ids, IdNote => $db_note, Condition => $words[1], Hp => $words[2], Score => $detail_score);
+			push(@{ $content_json_dict{$db} }, \%temp);
 		}
 		my $content_json = encode_json \%content_json_dict;
 		$content = join("\n", @content_lines_output)."\n";
@@ -533,7 +533,7 @@ sub output_gene_prioritization
 			print MERGE ","
 		}
 		print MERGE "{\"Name\":\"$gene\",\"Id\":\"ID:$gene_id{$gene}\",\"Score\":$normalized_score,\"Diseases\":[$content_json]}";
-		# print MERGE $gene."\t"."ID:$gene_id{$gene} -\t$normalized_score\n".$content."\n";
+		# print MERGE_LEGACY $gene."\t"."ID:$gene_id{$gene} -\t$normalized_score\n".$content."\n";
 		print ANNOTATED $gene."\tID:$gene_id{$gene} ".$gene_hash{$gene}."\t$normalized_score\n".$content."\n"
 			if ($gene_hash{$gene} and not $prediction);
 
@@ -566,6 +566,7 @@ sub output_gene_prioritization
 	}
 	print MERGE "]";
 	close (MERGE);
+	# close (MERGE_LEGACY);
 	close ($seed_fh);
 	close (ANNOTATED) if (%gene_hash and not $prediction);
 	close (ANNOTATED_GENE_LIST) if (%gene_hash and not $prediction);
