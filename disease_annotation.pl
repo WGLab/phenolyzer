@@ -1137,10 +1137,10 @@ sub score_genes{
 
 		if ( exists($item{$gene}) )
 		{
-			$item{$gene}[0] += 1.0; 
+			$item{$gene}[0] += 0.5; 
 			$item{$gene}[1] .= "$hpo_id (HPO_PHENOTYPE_GENE)\t$hpo_name\t1.0\n";
 		}else{
-			$item{$gene}[0] = 1.0; 
+			$item{$gene}[0] = 0.5; 
 			$item{$gene}[1] = "$hpo_id (HPO_PHENOTYPE_GENE)\t$hpo_name\t1.0\n";
 		}
 	}
