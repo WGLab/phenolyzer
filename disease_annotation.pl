@@ -188,6 +188,11 @@ setup_variables();
 
 annotate_bedfile() if (defined $bedfile);
 
+# output_gene_prioritization() works by: (1) process_terms() to generate output file for input phenotype terms. It uses pre-computed HPO score optionally, and can support multiple threads, and it uses process_individual_terms() subroutine to score each phenotype term. The key subroutine include score_genes() which counts for each term,  (2) it generates merge_gene_scores, annotated_gene_scores and seed_gene_list file, to combine scores from multiple phenotype terms (3) find max/min score for all genes, and then normalize so that max is 1.
+# MERGE file has: MERGE "{\"Name\":\"$gene\",\"Id\":\"ID:$gene_id{$gene}\",\"Score\":$normalized_score,\"Diseases\":[$content_json]}";
+# ANNOTATED file has: $gene."\tID:$gene_id{$gene} ".$gene_hash{$gene}."\t$normalized_score\n".$content."\n"
+# PREDICTED file has: $gene."\t"."ID:$gene_id{$gene} - $status\t".$score."\tNormalized score: $normalized_score\n".$content."\n";
+
 output_gene_prioritization();
 
 ##
@@ -236,7 +241,7 @@ sub process_individual_term
 			}
 		}
 		my ($hash, %disease_score_hash, @hpo_ids);
-		if ($is_phenotype) {
+		if ($is_phenotype) {		#this is controlled by the --phenotype argument in command line; we will perform phenotype extension on the input phenotype, so @diseases array becomes larger
 			($hash, @hpo_ids) = phenotype_extension($individual_term);
 			%disease_score_hash = %$hash;
 			for (@diseases) {
@@ -286,7 +291,7 @@ sub process_individual_term
 		}
 
 		my $i=0;
-#Output the gene_score files
+# Output the gene_score files
 # $item = {  $gene => [$score, $information_string] }
 # $information_string = "ID (SOURCE)	DISEASE_NAME RAW_SCORE
 		@diseases = map {
@@ -434,7 +439,9 @@ sub process_terms
 ## Fill @out_gene_scores_file array
 	for my $individual_term(@disease_input) 
 	{
-		(my $individual_term = $individual_term) =~ s/:/_/;
+		#(my $individual_term = $individual_term) =~ s/:/_/;	#not sure what exactly this is doing (probably change hp:1234 to hp_1234)
+		$individual_term=TextStandardize($individual_term);		#added 20191029, to be identical as process_individual_term
+		$individual_term=~s/\W+/_/g;	#The non-word characters are changed into '_'	(added 20191029)
 		my $dst = "$out"."_$individual_term";
 		if (-f "$dst"."_gene_scores") {
 			push @out_gene_scores_file, "$dst"."_gene_scores";
@@ -445,10 +452,12 @@ sub process_terms
 # The main sub to output prioritized genelist
 sub output_gene_prioritization 
 {
-	my @disease_input = split (qr/[^ _,\w\.\-'\(\)\[\]\{\}:]+/,lc $query_diseases);		#'
-	s/^\s+|\s+// for @disease_input;
+	my @disease_input = split (qr/[^ _,\w\.\-'\(\)\[\]\{\}:]+/,lc $query_diseases);		#' the $query_diseases include all phenotype terms separated by tab or other characters, convert it to lower case and split into separate phrases
+	s/^\s+|\s+$// for @disease_input;		#remove heading and trailing spaces
 
-# Process individual terms
+
+
+# Process individual phenotype terms, possibly with parallel processing and with pre-computed scores where available. Generate $out_${individual_term}_gene_scores file
 	process_terms(@disease_input);
 
 # Finish processing individual terms
@@ -869,7 +878,7 @@ sub phenotype_extension{
 		open (OMIM_DESCRIPTION, "$path/$omim_description_file") or die "ERROR: Can't open $omim_description_file!!! \n";
 
 		my $line = `perl $work_path/ontology_search.pl -o $path/hpo.obo -format id -p '$input_term' `;
-		print STDOUT "$raw_input_term: executing ontology_search.pl to expand phenotype terms\n";
+		print STDOUT "$raw_input_term: executing ontology_search.pl on '$input_term' to expand phenotype terms\n";
 		@hpo_ids = split("\n", $line);
 		print STDOUT "$raw_input_term: Found ", scalar (@hpo_ids), " additional phenotype terms\n";
 		
@@ -1164,7 +1173,7 @@ sub merge_result {
 	#my $dirname=dirname($out);
 	#my $basename=basename($out);
 	#my @filelist = split("\n",`ls $dirname`);
-	print STDOUT "NOTICE: Reading a list of gene_scores files @out_gene_scores_file\n";
+	print STDOUT "NOTICE: Reading a list of gene_scores files: <@out_gene_scores_file>\n";
 
 #item will save the results for output
 	my %item=();
@@ -1380,7 +1389,7 @@ sub setup_variables{
 
 	my %gene_transform;
 
-# The disease input will come from file
+# The phenotype/disease input will come from file
 	if (defined $if_file) {
 		print STDOUT  "NOTICE: The file name option was used!! \n";
 
@@ -1396,7 +1405,7 @@ sub setup_variables{
 		}
 	}
 
-#build the haploinsufficiency hash
+#build the haploinsufficiency hash, by default from lib/compiled_database/DB_HI_SCORE
 	if($if_hi){
 		print STDOUT "NOTICE: The haploinsufficency score is used!\n";
 		open (HI, "$path/$hi_gene_score_file") or die;
@@ -1408,7 +1417,7 @@ sub setup_variables{
 		close(HI);
 	}
 
-#build the gene intolerance shash
+#build the gene intolerance shash, by default from lib/compiled_database/DB_RVIS_SCORE
 	if($if_rvis){
 		print STDOUT "NOTICE: The gene intolerance score is used!\n";
 		open(RVIS, "$path/$rvis_gene_score_file") or die;
@@ -1419,7 +1428,13 @@ sub setup_variables{
 		}
 	}
 
-# Read information from refGene database
+# Read information from gene annotation file (3 tab-delimited columns, see example below), by default lib/compiled_database/DB_HUMAN_GENE_ID
+# %gene_transform maps Entrez ID or gene name synonym to upper case gene name
+#1       A1BG    A1B|ABG|GAB|HYST2477
+#2       A2M     A2MD|CPAMD5|FWP007|S863-7
+#3       A2MP1   A2MP
+#9       NAT1    AAC1|MNAT|NAT-1|NATI
+#10      NAT2    AAC2|NAT-2|PNAT
 	open (GENE_ID, "$path/$gene_annotation_file") or die;
 	my $i=0;
 
@@ -1905,18 +1920,21 @@ sub printHeader{
                                         allowed by the data. Setting this to 1 means no child processes are created.
         --use_precalc                   use HPO phenotypes expansion found in the precalculated database
   
-Function:       
+ Function:       
           automatically expand the input disease term to a list of professional disease names, 
           get a prioritized genelist based on these disease names or phenotypes, score the genes.
 
-Notice: 
+ Notice: 
           If you input 'all diseases' for disease name, then every item in the gene_disease database
           will be used and no disease expansion will be conducted. 
           Addon Gene Gene file should be in the format "GENE A	GENE B	EVIDENCE	SCORE	PMID"
           Addon Gene Disease file should be in the format "GENE	DISEASE	DISEASE_ID SCORE	SOURCE"    
           
-Example:  
+ Example:  
           disease_annotation.pl alzheimer -prediction -phenotype -logistic -out test1 -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25
           disease_annotation.pl 'autism spectrum disorder' -prediction -logistic -out test2 -addon DB_DISGENET_GENE_DISEASE_SCORE,DB_GAD_GENE_DISEASE_SCORE -addon_weight 0.25
+          disease_annotation.pl HP:0001250 -prediction -phenotype -logistic -out test3
+          disease_annotation.pl -file example_hpo.txt -phenotype -out test4
+          disease_annotation.pl -file example_disease.txt -prediction -logistic -out test5
 
 =cut
