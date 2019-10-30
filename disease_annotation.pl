@@ -161,10 +161,10 @@ if($if_logistic_regression) {
 	defined $HTRI_WEIGHT         or $HTRI_WEIGHT         = 4.1003533 ;
 
 	#$GENE_DISEASE_WEIGHT = 1e-9;
-	#$HPRD_WEIGHT         = 1e-9;
+	#$HPRD_WEIGHT         = 1;
 	#$BIOSYSTEM_WEIGHT    = 1e-9;
 	#$GENE_FAMILY_WEIGHT  = 1e-9;
-	#$HTRI_WEIGHT         = 1;
+	#$HTRI_WEIGHT         = 1e-9;
 }
 
 # Initialise variables
@@ -183,7 +183,7 @@ $addon_gene_disease_weight   = 1.0  unless (defined $addon_gene_disease_weight);
 $addon_gene_gene_weight      = 1.0  unless (defined $addon_gene_gene_weight);
 $user_nproc                  = 1    unless (defined $user_nproc);
 
-$HPO_GENE_WEIGHT             = 1	unless (defined $HPO_GENE_WEIGHT);		#In recent version of Phenolyzer, we add HPO annotation (from JAX) to supplement the known phenotype-gene relationships
+$HPO_GENE_WEIGHT             = 0.1	unless (defined $HPO_GENE_WEIGHT);		#In recent version of Phenolyzer, we add HPO annotation (from JAX) to supplement the known phenotype-gene relationships
 
 # Test input values
 $user_nproc >= 1 or pod2usage ("       ERROR: number of requested processes is zero or negative");
