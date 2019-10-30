@@ -70,6 +70,7 @@ our (
 		%GENE_WEIGHT,
 		$HTRI_WEIGHT,
 		$GENE_DISEASE_WEIGHT,
+		$HPO_GENE_WEIGHT,
 		$INTERCEPT
 	);
 
@@ -134,6 +135,7 @@ our  (
 				'biosystem_weight=s'    =>\$BIOSYSTEM_WEIGHT,
 				'gene_family_weight=s'  =>\$GENE_FAMILY_WEIGHT,
 				'htri_weight=s'         =>\$HTRI_WEIGHT,
+				'hpo_gene_weight=s'		=>\$HPO_GENE_WEIGHT,
 				'gwas_weight=s'         =>\$GENE_WEIGHT{"GWAS"},
 				'gene_reviews_weight=s' =>\$GENE_WEIGHT{"GENE_REVIEWS"},
 				'clinvar_weight=s'      =>\$GENE_WEIGHT{"CLINVAR"},
@@ -152,11 +154,17 @@ $man and pod2usage (-verbose=>2, -exitval=>1, -output=>\*STDOUT);
 # Initialise logistics regression
 if($if_logistic_regression) {
 	print STDOUT "NOTICE: The logistic regression model was used!!!\n";
-	$GENE_DISEASE_WEIGHT = 9.5331966;
-	$HPRD_WEIGHT         = 0.8335866;
-	$BIOSYSTEM_WEIGHT    = 0.1755904 ;
-	$GENE_FAMILY_WEIGHT  = 0.3561601 ;
-	$HTRI_WEIGHT         = 4.1003533 ;
+	defined $GENE_DISEASE_WEIGHT or $GENE_DISEASE_WEIGHT = 9.5331966;			#20191029: users can change these parameters through command line
+	defined $HPRD_WEIGHT         or $HPRD_WEIGHT         = 0.8335866;
+	defined $BIOSYSTEM_WEIGHT    or $BIOSYSTEM_WEIGHT    = 0.1755904 ;
+	defined $GENE_FAMILY_WEIGHT  or $GENE_FAMILY_WEIGHT  = 0.3561601 ;
+	defined $HTRI_WEIGHT         or $HTRI_WEIGHT         = 4.1003533 ;
+
+	#$GENE_DISEASE_WEIGHT = 1e-9;
+	#$HPRD_WEIGHT         = 1e-9;
+	#$BIOSYSTEM_WEIGHT    = 1e-9;
+	#$GENE_FAMILY_WEIGHT  = 1e-9;
+	#$HTRI_WEIGHT         = 1;
 }
 
 # Initialise variables
@@ -174,6 +182,8 @@ $GENE_WEIGHT{"HPO_PHENOTYPE_GENE"}     = 1.0  unless (defined $GENE_WEIGHT{"HPO_
 $addon_gene_disease_weight   = 1.0  unless (defined $addon_gene_disease_weight);
 $addon_gene_gene_weight      = 1.0  unless (defined $addon_gene_gene_weight);
 $user_nproc                  = 1    unless (defined $user_nproc);
+
+$HPO_GENE_WEIGHT             = 1	unless (defined $HPO_GENE_WEIGHT);		#In recent version of Phenolyzer, we add HPO annotation (from JAX) to supplement the known phenotype-gene relationships
 
 # Test input values
 $user_nproc >= 1 or pod2usage ("       ERROR: number of requested processes is zero or negative");
@@ -302,7 +312,7 @@ sub process_individual_term
 		} @diseases;
 
 		@diseases = Unique(@diseases);
-		my ($item,$count) = score_genes (\@diseases, \@hpo_ids, $raw_individual_term);
+		my ($item,$count) = score_genes (\@diseases, \@hpo_ids, $raw_individual_term);		#item is hash (key=gene value=[score, information])
 		my %output=();
 		@{$output{$_}} = @{$item->{$_}} for keys %$item;
 
@@ -583,7 +593,7 @@ sub output_gene_prioritization
 # Integrate scores from relation databases
 	if($prediction) {
 		($max_score, $min_score) = (0, 1);
-		my $predicted_item = predict_genes($item);
+		my $predicted_item = predict_genes($item);		#this is a hash with key=gene and value=[predicted_score, evidence]. The predicted_score was calculated in predict_genes() with weights already applied there
 		my %predicted_output = ();
 		my $annotated_fh;
 		@{$predicted_output{$_}} = @{$predicted_item->{$_}} for keys %$predicted_item;
@@ -1146,10 +1156,10 @@ sub score_genes{
 
 		if ( exists($item{$gene}) )
 		{
-			$item{$gene}[0] += 1.0; 
+			$item{$gene}[0] += $HPO_GENE_WEIGHT; 
 			$item{$gene}[1] .= "$hpo_id (HPO_PHENOTYPE_GENE)\t$hpo_name\t1.0\n";
 		}else{
-			$item{$gene}[0] = 1.0; 
+			$item{$gene}[0] = $HPO_GENE_WEIGHT; 
 			$item{$gene}[1] = "$hpo_id (HPO_PHENOTYPE_GENE)\t$hpo_name\t1.0\n";
 		}
 	}
@@ -1617,7 +1627,7 @@ sub predict_genes{
 		$pubmed_id =~s/,/ /g;
 
 		if($item{$gene1}[0] and ($gene1 ne $gene2) ) {
-			$individual_score = $score * $HPRD_WEIGHT * $item{$gene1}[2];   #$item{$gene1}[2] saves the normalized score
+			$individual_score = $score * $HPRD_WEIGHT * $item{$gene1}[2];   #$item{$gene1}[2] saves the normalized score ($normalized_score * $GENE_DISEASE_WEIGHT;$new_content; $normalized_score;)
 				$output{$gene2}[0] = 0 if (not $output{$gene2}[0]);
 			if($individual_score != 0) {
 				$output{$gene2}[0] +=  $individual_score;
@@ -1916,6 +1926,7 @@ sub printHeader{
         --clinvar_weight                the weight for gene disease pairs in Clinvar
         --omim_weight                   the weight for gene disease pairs in OMIM
         --orphanet_weight               the weight for gene disease pairs in Orphanet    
+        --hpo_gene_weight				the weight for gene phenotype pairs documented in HPO
         --nproc                         number of parallel processes (forks) requested by the user. The code uses as much parallelism as 
                                         allowed by the data. Setting this to 1 means no child processes are created.
         --use_precalc                   use HPO phenotypes expansion found in the precalculated database
