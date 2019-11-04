@@ -160,11 +160,11 @@ if($if_logistic_regression) {
 	defined $GENE_FAMILY_WEIGHT  or $GENE_FAMILY_WEIGHT  = 0.3561601 ;
 	defined $HTRI_WEIGHT         or $HTRI_WEIGHT         = 4.1003533 ;
 
-	#$GENE_DISEASE_WEIGHT = 1e-9;
-	#$HPRD_WEIGHT         = 1;
-	#$BIOSYSTEM_WEIGHT    = 1e-9;
-	#$GENE_FAMILY_WEIGHT  = 1e-9;
-	#$HTRI_WEIGHT         = 1e-9;
+	$GENE_DISEASE_WEIGHT = 24.62841;
+	$HPRD_WEIGHT         = 0.61063;
+	$BIOSYSTEM_WEIGHT    = 0.17723;
+	$GENE_FAMILY_WEIGHT  = 0.52574;
+	$HTRI_WEIGHT         = 6.41266;
 }
 
 # Initialise variables
