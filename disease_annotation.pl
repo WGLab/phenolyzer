@@ -59,7 +59,8 @@ our (
 		$database_directory,
 		$precalc_db_directory,
 		$if_logistic_regression,
-		$user_nproc
+		$user_nproc,
+        $track
 	);
 
 # Declare weight options
@@ -70,6 +71,7 @@ our (
 		%GENE_WEIGHT,
 		$HTRI_WEIGHT,
 		$GENE_DISEASE_WEIGHT,
+		$HPO_GENE_WEIGHT,
 		$INTERCEPT
 	);
 
@@ -110,6 +112,7 @@ our  (
 # Declare options
 		GetOptions(
 				'verbose|v'             =>\$verbose,
+                'track|tr'             =>\$track,
 				'help|h'                =>\$help,
 				'man|m'                 =>\$man,
 				'file|f'                =>\$if_file,
@@ -134,6 +137,7 @@ our  (
 				'biosystem_weight=s'    =>\$BIOSYSTEM_WEIGHT,
 				'gene_family_weight=s'  =>\$GENE_FAMILY_WEIGHT,
 				'htri_weight=s'         =>\$HTRI_WEIGHT,
+				'hpo_gene_weight=s'		=>\$HPO_GENE_WEIGHT,
 				'gwas_weight=s'         =>\$GENE_WEIGHT{"GWAS"},
 				'gene_reviews_weight=s' =>\$GENE_WEIGHT{"GENE_REVIEWS"},
 				'clinvar_weight=s'      =>\$GENE_WEIGHT{"CLINVAR"},
@@ -152,11 +156,17 @@ $man and pod2usage (-verbose=>2, -exitval=>1, -output=>\*STDOUT);
 # Initialise logistics regression
 if($if_logistic_regression) {
 	print STDOUT "NOTICE: The logistic regression model was used!!!\n";
-	$GENE_DISEASE_WEIGHT = 9.5331966;
-	$HPRD_WEIGHT         = 0.8335866;
-	$BIOSYSTEM_WEIGHT    = 0.1755904 ;
-	$GENE_FAMILY_WEIGHT  = 0.3561601 ;
-	$HTRI_WEIGHT         = 4.1003533 ;
+	defined $GENE_DISEASE_WEIGHT or $GENE_DISEASE_WEIGHT = 9.5331966;			#20191029: users can change these parameters through command line
+	defined $HPRD_WEIGHT         or $HPRD_WEIGHT         = 0.8335866;
+	defined $BIOSYSTEM_WEIGHT    or $BIOSYSTEM_WEIGHT    = 0.1755904 ;
+	defined $GENE_FAMILY_WEIGHT  or $GENE_FAMILY_WEIGHT  = 0.3561601 ;
+	defined $HTRI_WEIGHT         or $HTRI_WEIGHT         = 4.1003533 ;
+
+	$GENE_DISEASE_WEIGHT = 24.62841;
+	$HPRD_WEIGHT         = 0.61063;
+	$BIOSYSTEM_WEIGHT    = 0.17723;
+	$GENE_FAMILY_WEIGHT  = 0.52574;
+	$HTRI_WEIGHT         = 6.41266;
 }
 
 # Initialise variables
@@ -174,6 +184,8 @@ $GENE_WEIGHT{"HPO_PHENOTYPE_GENE"}     = 1.0  unless (defined $GENE_WEIGHT{"HPO_
 $addon_gene_disease_weight   = 1.0  unless (defined $addon_gene_disease_weight);
 $addon_gene_gene_weight      = 1.0  unless (defined $addon_gene_gene_weight);
 $user_nproc                  = 1    unless (defined $user_nproc);
+
+$HPO_GENE_WEIGHT             = 0.1	unless (defined $HPO_GENE_WEIGHT);		#In recent version of Phenolyzer, we add HPO annotation (from JAX) to supplement the known phenotype-gene relationships
 
 # Test input values
 $user_nproc >= 1 or pod2usage ("       ERROR: number of requested processes is zero or negative");
@@ -302,7 +314,7 @@ sub process_individual_term
 		} @diseases;
 
 		@diseases = Unique(@diseases);
-		my ($item,$count) = score_genes (\@diseases, \@hpo_ids, $raw_individual_term);
+		my ($item,$count) = score_genes (\@diseases, \@hpo_ids, $raw_individual_term);		#item is hash (key=gene value=[score, information])
 		my %output=();
 		@{$output{$_}} = @{$item->{$_}} for keys %$item;
 
@@ -316,7 +328,8 @@ sub process_individual_term
 
 		for my $gene (sort{ $output{$b}[0] <=> $output{$a}[0] }keys %output){
 #The probability of the gene when the disease is given
-			my $p=$output{$gene}[0]/$count;
+			#my $p=$output{$gene}[0]/$count;
+			my $p=$output{$gene}[0];
 			print OUT_GENE_SCORE $gene."\t"."Normalized score: $p\tRaw Score: $output{$gene}[0]\n".$output{$gene}[1]."\n";
 		}
 		print STDOUT "$raw_individual_term: -------------------------------------------------- \n";
@@ -501,7 +514,8 @@ sub output_gene_prioritization
 		my ($score, $content) = ($output{$gene}[0], $output{$gene}[1]);
 #$score = ($score - $min_score)/$diff;
 		my $normalized_score = $score/$max_score;
-
+                #my $normalized_score = $score;
+		my $raw_score = $score;
 #normalize scores of each detail
 		chomp($content);
 		my @content_lines = split("\n", $content);
@@ -512,6 +526,7 @@ sub output_gene_prioritization
 			my @words = split("\t");
 			my $detail_score = $words[3];
 			$detail_score = $detail_score/$max_score;
+			#$detail_score = $detail_score;
 			my $new_score = $detail_score * $GENE_DISEASE_WEIGHT;
 			my $line = join("\t", (@words[0,1,2],$detail_score));
 			my $new_line = join("\t", (@words[0,1,2],$new_score));
@@ -534,9 +549,10 @@ sub output_gene_prioritization
 
 #Normalized the input for prediction
 		$item->{$gene}[0] = $normalized_score * $GENE_DISEASE_WEIGHT;
+		#$item->{$gene}[0] = $score * $GENE_DISEASE_WEIGHT;
 		$item->{$gene}[1] = $new_content;
 		$item->{$gene}[2] = $normalized_score;
-
+		#$item->{$gene}[2] = $score;
 #print out results
 		if($rank != 1) {
 			print MERGE ","
@@ -548,6 +564,8 @@ sub output_gene_prioritization
 
 #Normalized score for the genelist
 		$normalized_score = sprintf('%.4g', $normalized_score);
+		$raw_score = sprintf('%.4g', $raw_score);
+		#print $seed_fh $rank."\t".$gene."\t".$gene_id{$gene}."\t".$raw_score;
 		print $seed_fh $rank."\t".$gene."\t".$gene_id{$gene}."\t".$normalized_score;
 		if($if_hi) {
 			$hi_score{$gene} = 0 if not defined $hi_score{$gene};
@@ -561,6 +579,7 @@ sub output_gene_prioritization
 
 #Normalized score for the annotation list
 		if ($gene_hash{$gene} and not $prediction) {
+			#print $annotated_seed_fh join("\t",(++$annotated_rank, $gene, $gene_id{$gene}, $raw_score));
 			print $annotated_seed_fh join("\t",(++$annotated_rank, $gene, $gene_id{$gene}, $normalized_score));
 			if($if_hi) {
 				$hi_score{$gene} = 0 if not defined $hi_score{$gene};
@@ -583,7 +602,7 @@ sub output_gene_prioritization
 # Integrate scores from relation databases
 	if($prediction) {
 		($max_score, $min_score) = (0, 1);
-		my $predicted_item = predict_genes($item);
+		my $predicted_item = predict_genes($item);		#this is a hash with key=gene and value=[predicted_score, evidence]. The predicted_score was calculated in predict_genes() with weights already applied there
 		my %predicted_output = ();
 		my $annotated_fh;
 		@{$predicted_output{$_}} = @{$predicted_item->{$_}} for keys %$predicted_item;
@@ -630,14 +649,17 @@ sub output_gene_prioritization
 			my ($score, $content) = ($predicted_output{$gene}[0], $predicted_output{$gene}[1]);
 
 			my $normalized_score = $predicted_output{$gene}[0]/$max_score;
-
-			print PREDICTED $gene."\t"."ID:$gene_id{$gene} - $status\t".$score."\tNormalized score: $normalized_score\n".$content."\n";
-			print ANNOTATED $gene."\tID:$gene_id{$gene} $gene_hash{$gene} $status"."\t".$score."\tNormalized score: $normalized_score\n".$content."\n"
+			#my $normalized_score = $predicted_output{$gene}[0];
+			my $raw_score = $predicted_output{$gene}[0];
+			print PREDICTED $gene."\t"."ID:$gene_id{$gene} - $status\t".$score."\tRaw score: $raw_score"."\tNormalized score: $normalized_score\n".$content."\n";
+			print ANNOTATED $gene."\tID:$gene_id{$gene} $gene_hash{$gene} $status"."\t".$score."\tRaw score: $raw_score"."\tNormalized score: $normalized_score\n".$content."\n"
 				if ($gene_hash{$gene});
 
 #Normalize score for the genelist
 			$normalized_score = sprintf('%.4g', $normalized_score);
-			print $final_fh $rank."\t".$gene."\t".$gene_id{$gene}."\t".$normalized_score."\t".$status;
+			$raw_score = sprintf('%.4g', $raw_score);
+			print $final_fh $rank."\t".$gene."\t".$gene_id{$gene}."\t$raw_score"."\t".$status;
+			#print $final_fh $rank."\t".$gene."\t".$gene_id{$gene}."\t".$normalized_score."\t".$status;
 			if($if_hi) {
 				$hi_score{$gene} = 0 if not defined $hi_score{$gene};
 				print $final_fh "\t$hi_score{$gene}";
@@ -1033,11 +1055,15 @@ sub score_genes{
 	{
 		my $hpo_id = $_;
 		if (not exists($hpo_id_to_gene_hash{$hpo_id})){
+            print STDOUT "Notice: $hpo_id not exists!\n";
 			next;
-		}
+		}else{
+             print STDOUT "$hpo_id exists\n $hpo_id_to_gene_hash{$hpo_id} \n";
+        }
 		my @gene_array = split(",", $hpo_id_to_gene_hash{$hpo_id});	
 		foreach (@gene_array) {
 			$phenotype_related_genes_hash{$_} = $hpo_id;
+			print STDOUT "Notice: $_ \n";
 		}
 	}
 
@@ -1142,20 +1168,22 @@ sub score_genes{
 	{
 		my $gene = $_;
 		my $hpo_id = $phenotype_related_genes_hash{$gene};
+		print STDOUT "Notice: $hpo_id => $gene\n";
 		my $hpo_name = $hpo_id_to_name_hash{$hpo_id};
 
 		if ( exists($item{$gene}) )
 		{
-			$item{$gene}[0] += 1.0; 
+			$item{$gene}[0] += $HPO_GENE_WEIGHT; 
 			$item{$gene}[1] .= "$hpo_id (HPO_PHENOTYPE_GENE)\t$hpo_name\t1.0\n";
 		}else{
-			$item{$gene}[0] = 1.0; 
+			$item{$gene}[0] = $HPO_GENE_WEIGHT; 
 			$item{$gene}[1] = "$hpo_id (HPO_PHENOTYPE_GENE)\t$hpo_name\t1.0\n";
 		}
 	}
 
 	for (keys %item){
 		delete  $item{$_}  if (not $gene_id{$_});
+		#print STDOUT "Notice: Deleted $_ \n";
 	}
 
 	my @value_array;
@@ -1513,7 +1541,11 @@ sub predict_genes{
 	print STDOUT "NOTICE: The prediction process starts!!!\n";
 
 	@_ == 1 or die "You can only have one input argument!!!";
-
+    # $track for tracking how the prediction were done.
+    if( $track){
+        my $track = $out.'.prediction_tracking';
+        open(TRACK, '>', $track) or die "cannot open $track !!";
+        }
 	my %item = ();
 	my %output = ();
 	%item = %{$_[0]};
@@ -1617,10 +1649,14 @@ sub predict_genes{
 		$pubmed_id =~s/,/ /g;
 
 		if($item{$gene1}[0] and ($gene1 ne $gene2) ) {
-			$individual_score = $score * $HPRD_WEIGHT * $item{$gene1}[2];   #$item{$gene1}[2] saves the normalized score
+			$individual_score = $score * $HPRD_WEIGHT * $item{$gene1}[2];   #$item{$gene1}[2] saves the normalized score ($normalized_score * $GENE_DISEASE_WEIGHT;$new_content; $normalized_score;)
 				$output{$gene2}[0] = 0 if (not $output{$gene2}[0]);
 			if($individual_score != 0) {
+                # print on $track 
+                if($track){ print TRACK "(HPRD) $gene2 raw score $output{$gene2}[0] +=  $individual_score ";}
 				$output{$gene2}[0] +=  $individual_score;
+                if($track){print TRACK " = $output{$gene2}[0]\n";}
+                
 				$output{$gene2}[1] .= "PUBMED:$pubmed_id (HPRD)\t".$evidence."\t"
 					."With $gene1"."\t".$individual_score."\n";
 			}
@@ -1630,7 +1666,10 @@ sub predict_genes{
 			$individual_score = $score * $HPRD_WEIGHT * $item{$gene2}[2];
 			$output{$gene1}[0] = 0 if (not $output{$gene1}[0]);
 			if($individual_score != 0) {
+                	# print on $track 
+                	if($track){print TRACK "(HPRD) $gene1 raw score $output{$gene1}[0] +=  $individual_score ";}
 				$output{$gene1}[0] += $individual_score;
+                	if($track){print TRACK " = $output{$gene1}[0]\n";}
 				$output{$gene1}[1] .= "PUBMED:$pubmed_id (HPRD)\t".$evidence."\t"
 					."With $gene2"."\t".$individual_score."\n";
 			}
@@ -1667,7 +1706,10 @@ sub predict_genes{
 			$individual_score = $score * $HTRI_WEIGHT * $item{$gene1}[2];
 			$output{$gene2}[0] = 0 if (not $output{$gene2}[0]);
 			if( $individual_score !=0) {
+                # print on $track 
+                 if($track){print TRACK "(HTRI) $gene2 raw score $output{$gene2}[0] +=  $individual_score ";}
 				$output{$gene2}[0] +=  $individual_score;
+                 if($track){print TRACK " = $output{$gene2}[0]\n";}
 				$output{$gene2}[1] .= "PUBMED:$pubmed_id (HTRI)\t".$evidence."\t"
 					."Regulated by $gene1"."\t".$individual_score."\n";
 			}
@@ -1677,7 +1719,10 @@ sub predict_genes{
 			$output{$gene1}[0] = 0 if (not $output{$gene1}[0]);
 			$individual_score = $score * $HTRI_WEIGHT * $item{$gene2}[2];
 			if($individual_score !=0) {
+                # print on $track 
+                 if($track){print TRACK "(HTRI) $gene1 raw score $output{$gene1}[0] +=  $individual_score/$TF_PENALTY ";}
 				$output{$gene1}[0] += $individual_score/$TF_PENALTY;
+                 if($track){print TRACK " = $output{$gene1}[0]\n";}
 				$output{$gene1}[1] .= "PUBMED:$pubmed_id (HTRI)\t".$evidence."\t"
 					."Regulates $gene2"."\t".$individual_score."\n";
 			}
@@ -1725,8 +1770,10 @@ sub predict_genes{
 			my $individual_score = $GENE_FAMILY_WEIGHT * $item{$gene}[2];
 			$output{$related_gene}[0] = 0 if (not$output{$related_gene}[0] );
 			if ($individual_score !=0 ) {
+                # print on $track 
+                 if($track){print TRACK "(Gene family) $related_gene raw score $output{$related_gene}[0] +=  $individual_score";}
 				$output{$related_gene}[0] += $individual_score;
-
+                 if($track){print TRACK " = $output{$related_gene}[0]\n";}
 				my $tag_string = $in_gene_family{$related_gene}{$gene}[0];
 				$tag_string = substr ( $tag_string, 0, length($tag_string)-1 );
 
@@ -1781,8 +1828,11 @@ sub predict_genes{
 			$output{$related_gene}[0] = 0 if (not $output{$related_gene}[0] );
 
 			if ($individual_score !=0) {
+                # print on $track 
+                 if($track){print TRACK "(Biosystem) $related_gene raw score $output{$related_gene}[0] +=  $individual_score";}
 				$output{$related_gene}[0] += $individual_score;
-
+                 if($track){print TRACK " = $output{$related_gene}[0]\n";}
+                
 				my $id_string = $interaction{$related_gene}{$gene}[1];
 				$id_string = substr ( $id_string, 0, length($id_string)-1 );
 
@@ -1799,6 +1849,8 @@ sub predict_genes{
 	for (keys %output){
 		delete $output{$_} if (not $gene_id{$_});
 	}
+    
+    close(TRACK);
 
 	return \%output;
 }
@@ -1916,6 +1968,7 @@ sub printHeader{
         --clinvar_weight                the weight for gene disease pairs in Clinvar
         --omim_weight                   the weight for gene disease pairs in OMIM
         --orphanet_weight               the weight for gene disease pairs in Orphanet    
+        --hpo_gene_weight				the weight for gene phenotype pairs documented in HPO
         --nproc                         number of parallel processes (forks) requested by the user. The code uses as much parallelism as 
                                         allowed by the data. Setting this to 1 means no child processes are created.
         --use_precalc                   use HPO phenotypes expansion found in the precalculated database
