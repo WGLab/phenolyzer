@@ -511,6 +511,7 @@ sub output_gene_prioritization
 		my ($score, $content) = ($output{$gene}[0], $output{$gene}[1]);
 #$score = ($score - $min_score)/$diff;
 		my $normalized_score = $score/$max_score;
+                #my $normalized_score = $score;
 
 #normalize scores of each detail
 		chomp($content);
@@ -639,7 +640,8 @@ sub output_gene_prioritization
 
 			my ($score, $content) = ($predicted_output{$gene}[0], $predicted_output{$gene}[1]);
 
-			my $normalized_score = $predicted_output{$gene}[0]/$max_score;
+			#my $normalized_score = $predicted_output{$gene}[0]/$max_score;
+                        my $normalized_score = $predicted_output{$gene}[0];
 
 			print PREDICTED $gene."\t"."ID:$gene_id{$gene} - $status\t".$score."\tNormalized score: $normalized_score\n".$content."\n";
 			print ANNOTATED $gene."\tID:$gene_id{$gene} $gene_hash{$gene} $status"."\t".$score."\tNormalized score: $normalized_score\n".$content."\n"
@@ -1151,16 +1153,17 @@ sub score_genes{
 	for (keys %phenotype_related_genes_hash)
 	{
 		my $gene = $_;
+		$count++;
 		my $hpo_id = $phenotype_related_genes_hash{$gene};
 		my $hpo_name = $hpo_id_to_name_hash{$hpo_id};
 
 		if ( exists($item{$gene}) )
 		{
 			$item{$gene}[0] += $HPO_GENE_WEIGHT; 
-			$item{$gene}[1] .= "$hpo_id (HPO_PHENOTYPE_GENE)\t$hpo_name\t1.0\n";
+			$item{$gene}[1] .= "$hpo_id (HPO_PHENOTYPE_GENE)\t$hpo_name\t$HPO_GENE_WEIGHT\n"; # !!!!!!!!!!! Li changed on 11/27/2019
 		}else{
 			$item{$gene}[0] = $HPO_GENE_WEIGHT; 
-			$item{$gene}[1] = "$hpo_id (HPO_PHENOTYPE_GENE)\t$hpo_name\t1.0\n";
+			$item{$gene}[1] = "$hpo_id (HPO_PHENOTYPE_GENE)\t$hpo_name\t$HPO_GENE_WEIGHT\n";  # !!!!!!!!!!! Li changed on 11/27/2019
 		}
 	}
 
