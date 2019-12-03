@@ -640,8 +640,8 @@ sub output_gene_prioritization
 
 			my ($score, $content) = ($predicted_output{$gene}[0], $predicted_output{$gene}[1]);
 
-			#my $normalized_score = $predicted_output{$gene}[0]/$max_score;
-                        my $normalized_score = $predicted_output{$gene}[0];
+			my $normalized_score = $predicted_output{$gene}[0]/$max_score;
+                        #my $normalized_score = $predicted_output{$gene}[0];
 
 			print PREDICTED $gene."\t"."ID:$gene_id{$gene} - $status\t".$score."\tNormalized score: $normalized_score\n".$content."\n";
 			print ANNOTATED $gene."\tID:$gene_id{$gene} $gene_hash{$gene} $status"."\t".$score."\tNormalized score: $normalized_score\n".$content."\n"
