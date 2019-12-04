@@ -7,3 +7,9 @@ out/*
 !out/README
 .vscode/*
 .vs/*
+testsetoutput
+testsetoutput/*
+qsub.py
+qsub.sh
+test_pipeline.py
+test_sets/*
